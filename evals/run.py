@@ -31,6 +31,10 @@ RESULTS = ROOT / "evals" / "results"
 
 
 def list_packages(split: str) -> list[Path]:
+    """dev / test / all, or 'reviewed' (cases exported from human review, data/reviewed/)."""
+    if split == "reviewed":
+        base = ROOT / "data" / "reviewed"
+        return sorted(p for p in base.iterdir() if p.is_dir()) if base.exists() else []
     splits = ["dev", "test"] if split == "all" else [split]
     out: list[Path] = []
     for sp in splits:
@@ -76,7 +80,7 @@ def _git_sha() -> str:
 def main(argv: list[str] | None = None) -> dict:
     ap = argparse.ArgumentParser()
     ap.add_argument("--pipeline", default="final")
-    ap.add_argument("--split", default="test", choices=["dev", "test", "all"])
+    ap.add_argument("--split", default="test", choices=["dev", "test", "all", "reviewed"])
     ap.add_argument("--backend", default=os.environ.get("SUBMITIQ_BACKEND", "replay"),
                     choices=["replay", "anthropic", "bedrock"])
     ap.add_argument("--limit", type=int, default=None)

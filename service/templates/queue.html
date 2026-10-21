@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Review queue · SubmitIQ{% endblock %}
+{% block body %}
+<div class="card">
+  <h2 style="margin:0 0 4px">Submissions</h2>
+  <p class="muted">Needs review = at least one critical field is missing, low-confidence, conflicting across documents, or failed a check.
+  The recommendation comes from the deterministic rules engine and is final only after review.</p>
+  <table>
+    <tr><th>Submission</th><th>Insured</th><th>Status</th><th>Recommendation</th><th>Flagged fields</th><th class="hide-sm">Total TIV</th><th class="hide-sm">Reviewed by</th></tr>
+    {% for i in items %}
+    <tr>
+      <td><a href="/ui/submissions/{{ i.id }}">{{ i.id }}</a></td>
+      <td>{{ i.insured }}</td>
+      <td><span class="chip">{{ i.status.replace('_', ' ') }}</span></td>
+      <td>{% if i.decision %}<span class="chip {{ i.decision }}">{{ i.decision }}</span>{% else %}–{% endif %}</td>
+      <td>{{ i.flags }}</td>
+      <td class="hide-sm">{% if i.tiv %}${{ '{:,.0f}'.format(i.tiv) }}{% else %}–{% endif %}</td>
+      <td class="hide-sm">{{ i.reviewed_by or '' }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="7" class="muted">No submissions yet. Run <code>make seed</code> or POST a package to /submissions.</td></tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}
