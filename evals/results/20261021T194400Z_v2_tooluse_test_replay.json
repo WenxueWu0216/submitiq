@@ -4,10 +4,10 @@
   "split": "test",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T193700Z",
-  "git_sha": "a8db849",
+  "timestamp": "20261021T194400Z",
+  "git_sha": "96cec24",
   "n": 40,
-  "wall_seconds": 1.5,
+  "wall_seconds": 1.8,
   "model": "claude-opus-5-5",
   "replay_miss_policy": "abstain"
  },
@@ -718,9 +718,9 @@
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 2062.6,
-   "p50": 165.0,
-   "p95": 8619.4,
+   "mean": 2084.4,
+   "p50": 192.9,
+   "p95": 8612.0,
    "llm_recorded_mean": 0.0
   },
   "cost": {

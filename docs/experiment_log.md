@@ -246,8 +246,8 @@ F1 doesn't change by design: routing never edits values.
   wrong, but most flags here point at real business issues with correct values: the planted conflicts (stale
   application TIV, year built) and genuinely missing information that has to go back to the broker.
 * **One silent wrong value remains on test:** an OCR'd contact email `jsiiva@…` (truth `jsilva@…`)
-  scored 0.816, just above the threshold. It's a non-critical field, so I left the threshold alone. Raising it
-  would cost about 14 points of review rate on dev to catch one contact email.
+  scored 0.816, just above the threshold. It's a non-critical field, so I left the threshold alone. Catching it needs a threshold above 0.816, and 0.85 costs
+  +5 points of review rate on dev (42.5% → 47.5%) to catch one contact email.
 
 **What broke:**
 1. Squared OCR confidence was too harsh (see tuning).
@@ -257,3 +257,50 @@ F1 doesn't change by design: routing never edits values.
 3. An OCR'd producer name ("Danie! Kim") was *caught* (a conflict with the email header) but not *fixed*.
    The application wins for broker fields by rule. Choosing by confidence for fields with no
    business source-of-truth rule is in "what I'd do next".
+
+---
+
+## Stage 5: Deterministic appetite rules and the cited triage summary
+
+**What:**
+* `submitiq/rules_engine.py` applies `rules/appetite.yaml` (class lists, location/account TIV, loss
+  ratio, frequency, large loss, frame + PPC, PPC 10, hurricane and earthquake ZIP zones,
+  sprinklers, building and roof age, missing information). Every triggered rule returns the field
+  paths it used. If any of those fields is flagged for review, the reason says so ("depends on
+  fields under review: …"). This replaces the LLM decision call.
+* **Two implementations, cross-checked:** the generator's labeler (`data/synth/labels.py`) and the engine
+  are written separately. `tests/test_rules_engine.py` asserts they agree on outcome **and**
+  triggered rule IDs on all 120 ground-truth records, plus boundary tests (60% loss ratio exactly is not
+  > 60%, $25,000,000 TIV is not > $25M, and so on).
+* `submitiq/summary.py`: the LLM writes only the narrative, from `path = value` facts, the rules decision and the flags.
+  `validate_summary` rejects any text that cites a field that doesn't exist or is empty, or that
+  contains a number not supported by a cited field or a rule message. On rejection or model failure, a
+  deterministic template summary (same citations) is used.
+
+| variant | split | decision acc. | declines → accept | abstained | summary citation validity |
+|---|---|---|---|---|---|
+| v4 (LLM decides) | dev / test (offline) | 0.0 / 0.0 | 0 | 80 / 40 | – |
+| v4 (LLM decides) | with Claude | **PENDING** | PENDING | | |
+| **v5 (rules)** | dev (offline) | **100.0** | 0 | 0 | 100.0 (template) |
+| **v5 (rules)** | test (offline) | **87.5** | 0 | 0 | 100.0 (template) |
+
+The LLM call count drops by one per submission (no decision call). The LLM narrative itself is PENDING. Offline,
+every summary is the template version.
+
+**Reading it:**
+* All 5 test decision errors are **template-C** packages (accept → refer ×4, decline → refer ×1). The NAICS
+  code can't be read offline, so `MISSING_INFO` refers them. That is the right *failure direction*: an
+  unknown class goes back to a human, never to an automatic accept. 0 of 33 declines were predicted accept on
+  either split.
+* With rules, decision quality becomes a pure function of extraction quality on the critical fields.
+  This is why Stage 4 measured critical-field F1 and the silent-error rate separately.
+
+**What broke:** my own citation validator rejected 100% of my own template summaries at first:
+1. The number regex's `\s*` swallowed the newline after a number (`"332710\n"` ≠ `"332710"`).
+2. The template cited fields that were empty (`[locations[2].protection_class]` on a missing PPC).
+3. Claim dates were printed without citing `date_of_loss`.
+4. Rule-message numbers kept a trailing comma (`2007,`).
+5. Template-C packages fell back to the submission ID in the title (`SUB-0082`).
+
+After the fixes, all 120 pass. I kept the validator strict. Loosening it to make the template pass would also have
+let an LLM narrative with an invented number through.

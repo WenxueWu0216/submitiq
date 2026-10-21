@@ -1,13 +1,13 @@
 {
  "meta": {
-  "pipeline": "v3_consistency",
+  "pipeline": "v2_tooluse",
   "split": "dev",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T193709Z",
-  "git_sha": "a8db849",
+  "timestamp": "20261021T194359Z",
+  "git_sha": "96cec24",
   "n": 80,
-  "wall_seconds": 3.6,
+  "wall_seconds": 4.1,
   "model": "claude-opus-5-5",
   "replay_miss_policy": "abstain"
  },
@@ -15,61 +15,61 @@
   "n_submissions": 80,
   "fields": {
    "overall": {
-    "precision": 0.9996,
-    "recall": 0.9847,
-    "f1": 0.9921,
-    "tp": 10927,
-    "fp": 4,
-    "fn": 170
+    "precision": 0.9984,
+    "recall": 0.9613,
+    "f1": 0.9795,
+    "tp": 10667,
+    "fp": 17,
+    "fn": 430
    },
    "critical": {
     "precision": 0.9997,
-    "recall": 0.9947,
-    "f1": 0.9972,
-    "tp": 2988,
+    "recall": 0.9547,
+    "f1": 0.9767,
+    "tp": 2868,
     "fp": 1,
-    "fn": 16
+    "fn": 136
    },
    "by_group": {
     "insured": {
-     "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 1291,
-     "fp": 0,
-     "fn": 0
+     "precision": 0.9953,
+     "recall": 0.9884,
+     "f1": 0.9918,
+     "tp": 1276,
+     "fp": 6,
+     "fn": 15
     },
     "broker": {
-     "precision": 0.9938,
-     "recall": 0.9938,
-     "f1": 0.9938,
-     "tp": 318,
-     "fp": 2,
-     "fn": 2
+     "precision": 0.9719,
+     "recall": 0.9719,
+     "f1": 0.9719,
+     "tp": 311,
+     "fp": 9,
+     "fn": 9
     },
     "policy": {
      "precision": 1.0,
-     "recall": 0.8326,
-     "f1": 0.9087,
-     "tp": 398,
+     "recall": 0.7573,
+     "f1": 0.8619,
+     "tp": 362,
      "fp": 0,
-     "fn": 80
+     "fn": 116
     },
     "coverage": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 718,
+     "recall": 0.9081,
+     "f1": 0.9518,
+     "tp": 652,
      "fp": 0,
-     "fn": 0
+     "fn": 66
     },
     "locations": {
      "precision": 1.0,
-     "recall": 0.9849,
-     "f1": 0.9924,
-     "tp": 5619,
+     "recall": 0.9616,
+     "f1": 0.9804,
+     "tp": 5486,
      "fp": 0,
-     "fn": 86
+     "fn": 219
     },
     "claims": {
      "precision": 1.0,
@@ -88,30 +88,30 @@
      "fn": 0
     },
     "totals": {
-     "precision": 0.9938,
-     "recall": 0.9938,
-     "f1": 0.9938,
-     "tp": 318,
+     "precision": 0.9937,
+     "recall": 0.9844,
+     "f1": 0.989,
+     "tp": 315,
      "fp": 2,
-     "fn": 2
+     "fn": 5
     }
    },
    "by_template": {
     "A": {
-     "precision": 0.9994,
-     "recall": 0.9803,
-     "f1": 0.9897,
-     "tp": 5262,
-     "fp": 3,
-     "fn": 106
+     "precision": 0.9984,
+     "recall": 0.9544,
+     "f1": 0.9759,
+     "tp": 5123,
+     "fp": 8,
+     "fn": 245
     },
     "B": {
-     "precision": 0.9998,
-     "recall": 0.9888,
-     "f1": 0.9943,
-     "tp": 5665,
-     "fp": 1,
-     "fn": 64
+     "precision": 0.9984,
+     "recall": 0.9677,
+     "f1": 0.9828,
+     "tp": 5544,
+     "fp": 9,
+     "fn": 185
     }
    },
    "by_field": {
@@ -124,12 +124,12 @@
      "fn": 0
     },
     "broker.producer_email": {
-     "precision": 0.975,
-     "recall": 0.975,
-     "f1": 0.975,
-     "tp": 78,
-     "fp": 2,
-     "fn": 2
+     "precision": 0.8875,
+     "recall": 0.8875,
+     "f1": 0.8875,
+     "tp": 71,
+     "fp": 9,
+     "fn": 9
     },
     "broker.producer_name": {
      "precision": 1.0,
@@ -205,27 +205,27 @@
     },
     "coverage.bpp_limit": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.8875,
+     "f1": 0.9404,
+     "tp": 71,
      "fp": 0,
-     "fn": 0
+     "fn": 9
     },
     "coverage.building_limit": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.7875,
+     "f1": 0.8811,
+     "tp": 63,
      "fp": 0,
-     "fn": 0
+     "fn": 17
     },
     "coverage.business_income_limit": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.9125,
+     "f1": 0.9542,
+     "tp": 73,
      "fp": 0,
-     "fn": 0
+     "fn": 7
     },
     "coverage.cause_of_loss_form": {
      "precision": 1.0,
@@ -253,19 +253,19 @@
     },
     "coverage.earthquake_requested": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.8375,
+     "f1": 0.9116,
+     "tp": 67,
      "fp": 0,
-     "fn": 0
+     "fn": 13
     },
     "coverage.flood_requested": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 60,
      "fp": 0,
-     "fn": 0
+     "fn": 20
     },
     "coverage.valuation": {
      "precision": 1.0,
@@ -277,11 +277,11 @@
     },
     "insured.annual_revenue": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.8875,
+     "f1": 0.9404,
+     "tp": 71,
      "fp": 0,
-     "fn": 0
+     "fn": 9
     },
     "insured.business_description": {
      "precision": 1.0,
@@ -292,12 +292,12 @@
      "fn": 0
     },
     "insured.contact_email": {
-     "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
-     "fp": 0,
-     "fn": 0
+     "precision": 0.925,
+     "recall": 0.925,
+     "f1": 0.925,
+     "tp": 74,
+     "fp": 6,
+     "fn": 6
     },
     "insured.contact_name": {
      "precision": 1.0,
@@ -421,19 +421,19 @@
     },
     "locations[].bi_value": {
      "precision": 1.0,
-     "recall": 0.9714,
-     "f1": 0.9855,
-     "tp": 306,
+     "recall": 0.9556,
+     "f1": 0.9773,
+     "tp": 301,
      "fp": 0,
-     "fn": 9
+     "fn": 14
     },
     "locations[].building_value": {
      "precision": 1.0,
-     "recall": 0.9968,
-     "f1": 0.9984,
-     "tp": 314,
+     "recall": 0.9397,
+     "f1": 0.9689,
+     "tp": 296,
      "fp": 0,
-     "fn": 1
+     "fn": 19
     },
     "locations[].city": {
      "precision": 1.0,
@@ -445,19 +445,19 @@
     },
     "locations[].construction": {
      "precision": 1.0,
-     "recall": 0.9968,
-     "f1": 0.9984,
-     "tp": 314,
+     "recall": 0.8667,
+     "f1": 0.9286,
+     "tp": 273,
      "fp": 0,
-     "fn": 1
+     "fn": 42
     },
     "locations[].contents_value": {
      "precision": 1.0,
-     "recall": 0.9841,
-     "f1": 0.992,
-     "tp": 310,
+     "recall": 0.9429,
+     "f1": 0.9706,
+     "tp": 297,
      "fp": 0,
-     "fn": 5
+     "fn": 18
     },
     "locations[].occupancy": {
      "precision": 1.0,
@@ -501,11 +501,11 @@
     },
     "locations[].sprinklered": {
      "precision": 1.0,
-     "recall": 0.9968,
-     "f1": 0.9984,
-     "tp": 314,
+     "recall": 0.873,
+     "f1": 0.9322,
+     "tp": 275,
      "fp": 0,
-     "fn": 1
+     "fn": 40
     },
     "locations[].square_feet": {
      "precision": 1.0,
@@ -541,11 +541,11 @@
     },
     "locations[].tiv": {
      "precision": 1.0,
-     "recall": 0.9841,
-     "f1": 0.992,
-     "tp": 310,
+     "recall": 0.9302,
+     "f1": 0.9638,
+     "tp": 293,
      "fp": 0,
-     "fn": 5
+     "fn": 22
     },
     "locations[].year_built": {
      "precision": 1.0,
@@ -597,19 +597,19 @@
     },
     "policy.effective_date": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 60,
      "fp": 0,
-     "fn": 0
+     "fn": 20
     },
     "policy.expiration_date": {
      "precision": 1.0,
-     "recall": 1.0,
-     "f1": 1.0,
-     "tp": 80,
+     "recall": 0.8,
+     "f1": 0.8889,
+     "tp": 64,
      "fp": 0,
-     "fn": 0
+     "fn": 16
     },
     "policy.prior_carrier": {
      "precision": 1.0,
@@ -668,12 +668,12 @@
      "fn": 1
     },
     "totals.total_tiv": {
-     "precision": 0.9875,
-     "recall": 0.9875,
-     "f1": 0.9875,
-     "tp": 79,
+     "precision": 0.987,
+     "recall": 0.95,
+     "f1": 0.9682,
+     "tp": 76,
      "fp": 1,
-     "fn": 1
+     "fn": 4
     }
    }
   },
@@ -688,46 +688,46 @@
    }
   },
   "review": {
-   "review_rate": 0.35,
-   "submissions_with_critical_error": 2,
-   "silent_critical_error_rate": 0.0125,
-   "flag_precision": 0.1111,
-   "flag_recall_of_errors": 0.0235,
-   "wrong_values": 4,
-   "flag_recall_of_wrong_values": 1.0,
-   "flagged_fields_per_submission": 0.45,
+   "review_rate": 0.0,
+   "submissions_with_critical_error": 32,
+   "silent_critical_error_rate": 0.4,
+   "flag_precision": 0.0,
+   "flag_recall_of_errors": 0.0,
+   "wrong_values": 17,
+   "flag_recall_of_wrong_values": 0.0,
+   "flagged_fields_per_submission": 0.0,
    "degraded_rate": 1.0
   },
   "conflicts": {
-   "precision": 0.8889,
-   "recall": 0.8205,
-   "f1": 0.8533,
-   "tp": 32,
-   "fp": 4,
-   "fn": 7
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 39
   },
   "documents": {
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 1790.7,
-   "p50": 212.0,
-   "p95": 8328.3,
+   "mean": 1815.4,
+   "p50": 235.0,
+   "p95": 8343.0,
    "llm_recorded_mean": 0.0
   },
   "cost": {
    "usd_per_submission": 0.0,
    "input_tokens_per_submission": 0.0,
    "output_tokens_per_submission": 0.0,
-   "est_prompt_tokens_per_submission": 7563.1,
+   "est_prompt_tokens_per_submission": 7831.5,
    "llm_calls_by_source": {
-    "replay:miss": 242
+    "replay:miss": 253
    },
    "llm_calls_by_task": {
     "appetite_decision": 80,
     "extract_application": 80,
     "extract_email": 80,
-    "extract_sov": 2
+    "extract_sov": 13
    }
   },
   "summary": {
@@ -738,12 +738,14 @@
   {
    "id": "SUB-0001",
    "template": "B",
-   "f1": 0.9948,
+   "f1": 0.9845,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
-   "wrong": [],
+   "wrong": [
+    "broker.producer_email"
+   ],
    "missed": [
     "policy.quote_needed_by"
    ],
@@ -771,28 +773,34 @@
    "f1": 0.9959,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[3].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: statement_of_values.xlsx says 56745000.0, Signed_App.pdf says 52008000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0004",
    "template": "B",
-   "f1": 0.9961,
+   "f1": 0.9639,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].sprinklered",
+    "locations[2].construction",
+    "locations[3].building_value",
+    "locations[3].tiv",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -817,12 +825,15 @@
   {
    "id": "SUB-0006",
    "template": "B",
-   "f1": 0.9949,
+   "f1": 0.9746,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
-   "wrong": [],
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
    "missed": [
     "policy.quote_needed_by"
    ],
@@ -832,13 +843,28 @@
   {
    "id": "SUB-0007",
    "template": "A",
-   "f1": 0.998,
+   "f1": 0.9677,
    "decision_gold": "decline",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[10].sprinklered",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "locations[2].tiv",
+    "locations[4].sprinklered",
+    "locations[6].construction",
+    "locations[7].building_value",
+    "locations[7].construction",
+    "locations[7].sprinklered",
+    "locations[9].sprinklered",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -893,14 +919,28 @@
   {
    "id": "SUB-0011",
    "template": "A",
-   "f1": 0.9964,
+   "f1": 0.9438,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
-    "policy.quote_needed_by"
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].construction",
+    "locations[2].tiv",
+    "locations[3].construction",
+    "locations[3].sprinklered",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[4].contents_value",
+    "locations[4].sprinklered",
+    "locations[4].tiv",
+    "policy.effective_date",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
    ],
    "review_reasons": [],
    "errors": []
@@ -923,14 +963,26 @@
   {
    "id": "SUB-0013",
    "template": "A",
-   "f1": 0.9932,
+   "f1": 0.9504,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].construction",
+    "locations[2].bi_value",
+    "locations[2].sprinklered",
     "locations[3].alarm_type",
+    "locations[3].contents_value",
+    "locations[4].construction",
+    "locations[4].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -939,13 +991,17 @@
   {
    "id": "SUB-0014",
    "template": "A",
-   "f1": 0.9957,
+   "f1": 0.978,
    "decision_gold": "decline",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "locations[2].sprinklered",
+    "locations[3].contents_value",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -954,14 +1010,19 @@
   {
    "id": "SUB-0015",
    "template": "B",
-   "f1": 0.9882,
+   "f1": 0.9576,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "locations[1].contents_value",
     "locations[1].sprinkler_pct",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -970,18 +1031,28 @@
   {
    "id": "SUB-0016",
    "template": "B",
-   "f1": 0.9971,
+   "f1": 0.9614,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.business_income_limit",
+    "locations[1].building_value",
+    "locations[1].tiv",
+    "locations[2].construction",
+    "locations[3].contents_value",
+    "locations[4].construction",
+    "locations[5].bi_value",
+    "locations[5].building_value",
+    "locations[5].construction",
+    "locations[5].contents_value",
+    "locations[6].tiv",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "locations[2].year_built: statement_of_values.pdf says 2007, application.pdf says 2000 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1005,37 +1076,32 @@
    "f1": 0.9973,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: statement_of_values.pdf says 28430000.0, ACORD_125_140.pdf says 22331000.0 (kept the derived value per source-of-truth rules)",
-    "locations[2].year_built: statement_of_values.pdf says 1967, ACORD_125_140.pdf says 1990 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0019",
    "template": "A",
-   "f1": 0.9806,
+   "f1": 0.9709,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
-    "broker.producer_email"
+    "broker.producer_email",
+    "insured.contact_email"
    ],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "broker.producer_email: doc42716.pdf says 'robert-hughes@northstarcb.com', email.txt says 'robert.hughes@northstarcb.com' (kept the form_parser value per source-of-truth rules)",
-    "totals.total_tiv: scan88075.xlsx says 8840000.0, doc42716.pdf says 7039000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1061,16 +1127,14 @@
    "f1": 0.9924,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "locations[2].year_built: statement_of_values.pdf says 1960, Signed_App.pdf says 1976 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1078,58 +1142,6 @@
    "template": "B",
    "f1": 0.9983,
    "decision_gold": "accept",
-   "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
-   "wrong": [],
-   "missed": [
-    "policy.quote_needed_by"
-   ],
-   "review_reasons": [
-    "totals.total_tiv: file90944.pdf says 51620000.0, doc32255.pdf says 44474000.0 (kept the derived value per source-of-truth rules)"
-   ],
-   "errors": []
-  },
-  {
-   "id": "SUB-0023",
-   "template": "A",
-   "f1": 0.9949,
-   "decision_gold": "decline",
-   "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
-   "wrong": [],
-   "missed": [
-    "policy.quote_needed_by"
-   ],
-   "review_reasons": [
-    "locations[1].year_built: IMG_2338.xlsx says 1975, IMG_16856.pdf says 2000 (kept the table_parser:local value per source-of-truth rules)"
-   ],
-   "errors": []
-  },
-  {
-   "id": "SUB-0024",
-   "template": "A",
-   "f1": 0.9909,
-   "decision_gold": "decline",
-   "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
-   "wrong": [],
-   "missed": [
-    "locations[1].alarm_type",
-    "policy.quote_needed_by"
-   ],
-   "review_reasons": [
-    "locations[2].year_built: SOV.xlsx says 1972, application.pdf says 1985 (kept the table_parser:local value per source-of-truth rules)"
-   ],
-   "errors": []
-  },
-  {
-   "id": "SUB-0025",
-   "template": "B",
-   "f1": 0.994,
-   "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
@@ -1141,15 +1153,70 @@
    "errors": []
   },
   {
-   "id": "SUB-0026",
+   "id": "SUB-0023",
    "template": "A",
-   "f1": 0.9973,
-   "decision_gold": "refer",
+   "f1": 0.9897,
+   "decision_gold": "decline",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
+    "coverage.bpp_limit",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0024",
+   "template": "A",
+   "f1": 0.9909,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0025",
+   "template": "B",
+   "f1": 0.9818,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "locations[1].sprinklered",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0026",
+   "template": "A",
+   "f1": 0.9809,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "locations[4].construction",
+    "locations[5].construction",
+    "locations[5].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1173,13 +1240,18 @@
   {
    "id": "SUB-0028",
    "template": "A",
-   "f1": 0.9947,
+   "f1": 0.9674,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].contents_value",
+    "locations[2].construction",
+    "locations[2].sprinklered",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1205,12 +1277,14 @@
   {
    "id": "SUB-0030",
    "template": "B",
-   "f1": 0.9881,
+   "f1": 0.9762,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
-   "wrong": [],
+   "wrong": [
+    "broker.producer_email"
+   ],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
@@ -1221,14 +1295,22 @@
   {
    "id": "SUB-0031",
    "template": "B",
-   "f1": 0.9928,
+   "f1": 0.963,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
     "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[1].sprinklered",
+    "locations[2].sprinklered",
+    "locations[3].building_value",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1252,19 +1334,23 @@
   {
    "id": "SUB-0033",
    "template": "B",
-   "f1": 0.9918,
+   "f1": 0.9664,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.flood_requested",
+    "locations[2].construction",
+    "locations[2].sprinklered",
     "locations[3].alarm_type",
+    "locations[3].construction",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "locations[1].year_built: SOV.xlsx says 1977, application.pdf says 1971 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1289,16 +1375,13 @@
    "f1": 0.9973,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: scan51124.xlsx says 27690000.0, doc1864.pdf says 22503000.0 (kept the derived value per source-of-truth rules)",
-    "locations[3].year_built: scan51124.xlsx says 1987, doc1864.pdf says 2003 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1336,20 +1419,29 @@
   {
    "id": "SUB-0038",
    "template": "A",
-   "f1": 0.9097,
+   "f1": 0.8701,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [
-    "totals.location_count",
-    "totals.total_tiv"
+    "totals.location_count"
    ],
    "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "insured.annual_revenue",
+    "locations[1].building_value",
     "locations[1].sprinkler_pct",
+    "locations[1].tiv",
+    "locations[2].building_value",
     "locations[2].sprinkler_pct",
+    "locations[3].building_value",
+    "locations[3].contents_value",
     "locations[3].sprinkler_pct",
     "locations[4].bi_value",
+    "locations[4].construction",
     "locations[4].sprinkler_pct",
     "locations[5].bi_value",
     "locations[5].building_value",
@@ -1369,14 +1461,13 @@
     "locations[5].year_built",
     "locations[5].zip",
     "locations[6].bi_value",
+    "locations[6].construction",
     "locations[6].sprinkler_pct",
-    "policy.quote_needed_by"
+    "locations[6].sprinklered",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
    ],
-   "review_reasons": [
-    "totals.location_count: scan40233.pdf says 5, scan16895.pdf says 6 (kept the derived value per source-of-truth rules)",
-    "totals.total_tiv: scan40233.pdf says 32825000.0, scan16895.pdf says 39620000.0 (kept the derived value per source-of-truth rules)",
-    "locations[3].year_built: scan40233.pdf says 1998, scan16895.pdf says 2009 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1398,13 +1489,19 @@
   {
    "id": "SUB-0040",
    "template": "A",
-   "f1": 0.9935,
+   "f1": 0.953,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "insured.annual_revenue",
+    "locations[1].sprinklered",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1413,13 +1510,19 @@
   {
    "id": "SUB-0041",
    "template": "A",
-   "f1": 0.9936,
+   "f1": 0.9536,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].building_value",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1428,13 +1531,18 @@
   {
    "id": "SUB-0042",
    "template": "A",
-   "f1": 0.9935,
+   "f1": 0.96,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].construction",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1446,32 +1554,31 @@
    "f1": 0.9983,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Harbor Point Foods Inc.', LossRuns.pdf says 'Harbor Point Distribution Inc.'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0044",
    "template": "B",
-   "f1": 0.9945,
+   "f1": 0.9727,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
-   "wrong": [],
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "locations[1].year_built: SOV.xlsx says 2000, Signed_App.pdf says 1993 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1492,20 +1599,21 @@
   {
    "id": "SUB-0046",
    "template": "B",
-   "f1": 0.9904,
+   "f1": 0.9806,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.business_income_limit",
     "locations[2].alarm_type",
     "locations[3].alarm_type",
+    "locations[4].construction",
+    "locations[4].sprinklered",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "locations[1].year_built: SOV.xlsx says 1983, Signed_App.pdf says 1994 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1514,15 +1622,13 @@
    "f1": 0.9977,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: doc65953.xlsx says 50145000.0, doc81497.pdf says 43932000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1543,13 +1649,16 @@
   {
    "id": "SUB-0049",
    "template": "B",
-   "f1": 0.9941,
+   "f1": 0.9759,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "locations[1].sprinklered",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1592,20 +1701,19 @@
   {
    "id": "SUB-0052",
    "template": "A",
-   "f1": 0.9957,
+   "f1": 0.9915,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
-   "wrong": [],
+   "wrong": [
+    "broker.producer_email"
+   ],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: SOV.pdf says 70820000.0, Signed_App.pdf says 61955000.0 (kept the derived value per source-of-truth rules)",
-    "locations[2].year_built: SOV.pdf says 2003, Signed_App.pdf says 1983 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1644,29 +1752,31 @@
    "f1": 0.9953,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: statement_of_values.xlsx says 37210000.0, application.pdf says 30452000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0056",
    "template": "B",
-   "f1": 0.9898,
+   "f1": 0.9688,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
     "locations[1].alarm_type",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1693,28 +1803,27 @@
    "f1": 0.9931,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: SOV.xlsx says 18545000.0, ACORD_125_140.pdf says 16701000.0 (kept the derived value per source-of-truth rules)",
-    "locations[2].year_built: SOV.xlsx says 1966, ACORD_125_140.pdf says 1962 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0059",
    "template": "A",
-   "f1": 0.9189,
+   "f1": 0.907,
    "decision_gold": "decline",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": true,
-   "wrong": [],
+   "wrong": [
+    "insured.contact_email"
+   ],
    "missed": [
     "locations[1].bi_value",
     "locations[1].contents_value",
@@ -1734,6 +1843,7 @@
     "locations[4].contents_value",
     "locations[4].protection_class",
     "locations[4].sprinkler_pct",
+    "locations[4].sprinklered",
     "locations[4].tiv",
     "locations[4].year_built",
     "policy.quote_needed_by"
@@ -1759,13 +1869,18 @@
   {
    "id": "SUB-0061",
    "template": "A",
-   "f1": 0.9952,
+   "f1": 0.9703,
    "decision_gold": "decline",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.bpp_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].sprinklered",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1774,13 +1889,18 @@
   {
    "id": "SUB-0062",
    "template": "B",
-   "f1": 0.9948,
+   "f1": 0.9681,
    "decision_gold": "decline",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
+    "coverage.bpp_limit",
+    "coverage.business_income_limit",
+    "coverage.flood_requested",
+    "locations[1].contents_value",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1789,14 +1909,21 @@
   {
    "id": "SUB-0063",
    "template": "A",
-   "f1": 0.9904,
+   "f1": 0.9552,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.earthquake_requested",
+    "insured.annual_revenue",
+    "locations[1].sprinklered",
     "locations[2].alarm_type",
+    "locations[2].building_value",
+    "locations[2].construction",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1805,13 +1932,26 @@
   {
    "id": "SUB-0064",
    "template": "B",
-   "f1": 0.9972,
+   "f1": 0.9598,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[2].bi_value",
+    "locations[2].construction",
+    "locations[4].bi_value",
+    "locations[4].construction",
+    "locations[4].sprinklered",
+    "locations[5].construction",
+    "locations[5].sprinklered",
+    "locations[5].tiv",
+    "locations[6].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1823,64 +1963,73 @@
    "f1": 0.9982,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Magnolia Motor Works Corporation', LossRuns.pdf says 'Magnolia Motor Distribution Inc.'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0066",
    "template": "B",
-   "f1": 0.9935,
+   "f1": 0.9737,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: IMG_86792.xlsx says 8080000.0, scan892.pdf says 6460000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0067",
    "template": "A",
-   "f1": 0.9959,
+   "f1": 0.9664,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[3].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: statement_of_values.xlsx says 19815000.0, application.pdf says 17384000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0068",
    "template": "B",
-   "f1": 0.9845,
+   "f1": 0.9574,
    "decision_gold": "decline",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "locations[1].construction",
     "locations[1].sprinkler_pct",
+    "locations[1].sprinklered",
     "locations[2].sprinkler_pct",
-    "policy.quote_needed_by"
+    "locations[2].tiv",
+    "policy.effective_date",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
    ],
    "review_reasons": [],
    "errors": []
@@ -1888,48 +2037,66 @@
   {
    "id": "SUB-0069",
    "template": "B",
-   "f1": 0.9924,
+   "f1": 0.9444,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].construction",
     "locations[2].alarm_type",
+    "locations[2].building_value",
+    "locations[2].construction",
+    "locations[3].construction",
+    "locations[3].contents_value",
+    "locations[3].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "locations[1].year_built: SOV.pdf says 1985, Signed_App.pdf says 2009 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0070",
    "template": "B",
-   "f1": 0.9942,
+   "f1": 0.9733,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
     "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[6].construction",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: IMG_92920.xlsx says 32780000.0, scan98325.pdf says 27376000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0071",
    "template": "A",
-   "f1": 0.9935,
+   "f1": 0.9677,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
-   "wrong": [],
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
    "missed": [
     "policy.quote_needed_by"
    ],
@@ -1939,33 +2106,56 @@
   {
    "id": "SUB-0072",
    "template": "A",
-   "f1": 0.9966,
+   "f1": 0.9429,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
-   "wrong": [],
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [
+    "totals.total_tiv"
+   ],
    "missed": [
+    "locations[1].building_value",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "locations[2].building_value",
+    "locations[3].construction",
+    "locations[3].contents_value",
+    "locations[3].sprinklered",
+    "locations[3].tiv",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[4].contents_value",
+    "locations[4].sprinklered",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: statement_of_values.pdf says 23435000.0, ACORD_125_140.pdf says 20474000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0073",
    "template": "A",
-   "f1": 0.9844,
+   "f1": 0.9431,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
-   "critical_error": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
     "locations[1].sprinkler_pct",
+    "locations[2].building_value",
+    "locations[2].construction",
     "locations[2].sprinkler_pct",
+    "locations[2].tiv",
+    "locations[3].bi_value",
+    "locations[3].building_value",
+    "locations[3].construction",
+    "locations[3].contents_value",
     "locations[3].sprinkler_pct",
+    "locations[3].tiv",
     "policy.quote_needed_by"
    ],
    "review_reasons": [],
@@ -1989,19 +2179,21 @@
   {
    "id": "SUB-0075",
    "template": "A",
-   "f1": 0.9868,
+   "f1": 0.9595,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
     "locations[1].alarm_type",
+    "locations[1].construction",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: Attachment_49707.pdf says 9615000.0, scan83151.pdf says 8238000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2010,33 +2202,32 @@
    "f1": 0.9957,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Old Mill Athletic Club LLC', Loss_History.pdf says 'Old Mill Distribution Inc.'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0077",
    "template": "B",
-   "f1": 0.9945,
+   "f1": 0.9778,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "totals.total_tiv: Property_Schedule.xlsx says 1490000.0, Signed_App.pdf says 1340000.0 (kept the derived value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2059,12 +2250,14 @@
   {
    "id": "SUB-0079",
    "template": "B",
-   "f1": 0.9968,
+   "f1": 0.9905,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
    "critical_error": false,
-   "wrong": [],
+   "wrong": [
+    "broker.producer_email"
+   ],
    "missed": [
     "policy.quote_needed_by"
    ],
@@ -2074,22 +2267,34 @@
   {
    "id": "SUB-0080",
    "template": "B",
-   "f1": 0.9904,
+   "f1": 0.9502,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": false,
+   "needs_review": false,
+   "critical_error": true,
    "wrong": [
-    "broker.producer_email"
+    "broker.producer_email",
+    "insured.contact_email"
    ],
    "missed": [
+    "coverage.business_income_limit",
+    "coverage.flood_requested",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "locations[2].construction",
     "locations[3].alarm_type",
+    "locations[3].construction",
+    "locations[3].sprinklered",
+    "locations[4].construction",
+    "locations[5].sprinklered",
+    "locations[6].construction",
+    "locations[6].sprinklered",
+    "locations[7].sprinklered",
+    "locations[8].sprinklered",
+    "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "broker.producer_email: doc23275.pdf says 'nina:alvarez@brightlineins.com', email.txt says 'nina.alvarez@brightlineins.com' (kept the form_parser value per source-of-truth rules)",
-    "locations[2].year_built: Attachment_51271.xlsx says 2004, doc23275.pdf says 2015 (kept the table_parser:local value per source-of-truth rules)"
-   ],
+   "review_reasons": [],
    "errors": []
   }
  ]
