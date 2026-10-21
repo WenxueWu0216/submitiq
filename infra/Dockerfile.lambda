@@ -1,0 +1,18 @@
+# One container image for every workflow Lambda (the CMD picks the handler).
+# A container image rather than a zip because OCR needs the Tesseract binary.
+FROM public.ecr.aws/docker/library/python:3.11-slim-bookworm
+
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends tesseract-ocr tesseract-ocr-osd \
+ && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /var/task
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt awslambdaric
+
+COPY submitiq ./submitiq
+COPY rules ./rules
+
+ENV SUBMITIQ_BACKEND=bedrock OMP_THREAD_LIMIT=1
+ENTRYPOINT ["python", "-m", "awslambdaric"]
+CMD ["submitiq.aws_handlers.classify"]

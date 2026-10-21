@@ -23,7 +23,12 @@ from .textlayout import Word
 os.environ.setdefault("OMP_THREAD_LIMIT", "1")
 
 ROOT = Path(__file__).resolve().parents[1]
-CACHE = Path(os.environ.get("SUBMITIQ_CACHE", ROOT / ".cache")) / "ocr"
+
+
+def cache_dir() -> Path:
+    """Resolved per call so Lambda steps (and tests) can point it at /tmp."""
+    return Path(os.environ.get("SUBMITIQ_CACHE", ROOT / ".cache")) / "ocr"
+
 DPI = 300
 OCR_VERSION = "v2"   # bump to invalidate the cache when this module changes
 
@@ -61,7 +66,7 @@ def _skew_angle(img: Image.Image) -> float:
 
 def ocr_page(pdf_path: Path, page_index: int, sha: str) -> tuple[list[Word], float, dict]:
     """Return (words in PDF points, mean confidence 0-1, info)."""
-    key = CACHE / f"{sha[:16]}_{page_index}_{OCR_VERSION}.json"
+    key = cache_dir() / f"{sha[:16]}_{page_index}_{OCR_VERSION}.json"
     if key.exists():
         data = json.loads(key.read_text())
         return [Word(**w) for w in data["words"]], data["conf"], data["info"]
@@ -90,6 +95,6 @@ def ocr_page(pdf_path: Path, page_index: int, sha: str) -> tuple[list[Word], flo
         confs.append(conf / 100)
     mean = float(np.mean(confs)) if confs else 0.0
     info = {"rotate": rotate, "skew": round(skew, 2), "ocr_ms": round((time.perf_counter() - t0) * 1000, 1)}
-    CACHE.mkdir(parents=True, exist_ok=True)
+    key.parent.mkdir(parents=True, exist_ok=True)
     key.write_text(json.dumps({"words": [w.__dict__ for w in words], "conf": mean, "info": info}))
     return words, mean, info

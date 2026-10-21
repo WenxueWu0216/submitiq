@@ -1,0 +1,8 @@
+{
+  "app": "python3 app.py",
+  "context": {
+    "bedrockModelId": "anthropic.claude-opus-5-5",
+    "alarmEmail": "",
+    "@aws-cdk/aws-iam:minimizePolicies": true
+  }
+}
