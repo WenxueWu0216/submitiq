@@ -5,7 +5,7 @@ PIPELINE ?= final
 SPLIT ?= test
 BACKEND ?= replay
 
-.PHONY: setup data test eval eval-dev eval-all gate demo seed serve synth eval-live eval-live-all export-reviewed clean
+.PHONY: setup data test eval eval-dev eval-all gate demo seed serve synth eval-smoke eval-live-cheap eval-live eval-live-all export-reviewed clean
 
 setup:
 	python3 -m venv $(VENV)
@@ -49,9 +49,18 @@ synth:           ## CDK synth (no AWS account needed)
 	cd infra && npx --yes aws-cdk@2 synth --quiet --app "$(abspath $(PY)) app.py"
 
 LIVE_BACKEND = $(if $(filter replay,$(BACKEND)),anthropic,$(BACKEND))
+SPLITS ?= dev,test
+LIMIT_ARG = $(if $(LIMIT),--limit $(LIMIT),)
+CHEAP_MODELS ?= baseline=claude-haiku-5-5,final=claude-sonnet-5-5
+
+eval-smoke:      ## real model, 5 test submissions on Haiku, nothing recorded: checks key + setup for cents
+	SUBMITIQ_MODEL=claude-haiku-5-5 $(PY) scripts/run_all_evals.py --backend $(LIVE_BACKEND) --pipelines final --splits test --limit 5 --tag smoke
+
+eval-live-cheap: ## real model, test split only: baseline on Haiku, final on Sonnet (~160 calls, a few USD)
+	SUBMITIQ_RECORD=1 $(PY) scripts/run_all_evals.py --backend $(LIVE_BACKEND) --pipelines baseline,final --splits test --models $(CHEAP_MODELS) $(LIMIT_ARG)
 
 eval-live:       ## real model: baseline + final on dev and test, recording replay fixtures (~480 calls)
-	SUBMITIQ_RECORD=1 $(PY) scripts/run_all_evals.py --backend $(LIVE_BACKEND) --pipelines baseline,final
+	SUBMITIQ_RECORD=1 $(PY) scripts/run_all_evals.py --backend $(LIVE_BACKEND) --pipelines baseline,final --splits $(SPLITS) $(LIMIT_ARG)
 
 eval-live-all:   ## real model: every variant (shared calls are reused from the recordings)
 	SUBMITIQ_RECORD=1 $(PY) scripts/run_all_evals.py --backend $(LIVE_BACKEND)

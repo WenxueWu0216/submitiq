@@ -40,3 +40,14 @@ def test_record_then_replay(tmp_path):
     assert replayed.text == "hello" and replayed.source == "replay:recorded"
     miss = ReplayClient(tmp_path).complete(req.model_copy(update={"key_material": "other"}))
     assert miss.source == "replay:miss" and not miss.ok
+
+
+def test_recording_from_another_model_is_not_reused(tmp_path):
+    req = LLMRequest(task="t", prompt_version="v1", system="s", user="u", key_material="k")
+    cheap, real = _Live(), _Live()
+    cheap.model, real.model = "claude-haiku-5-5", "claude-opus-5-5"
+    cheap.complete = lambda r: LLMResponse(text="cheap", model="claude-haiku-5-5", input_tokens=1, output_tokens=1)
+    RecordingClient(cheap, tmp_path).complete(req)                # trial run records a Haiku answer
+    out = RecordingClient(real, tmp_path).complete(req)
+    assert out.text == "hello" and real.calls == 1                # Opus run calls live instead of reusing it
+    assert RecordingClient(real, tmp_path).complete(req).source == "replay:recorded"

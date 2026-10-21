@@ -47,14 +47,23 @@ class RecordingClient:
     def __init__(self, inner: LLMClient, root: Path):
         self.inner = inner
         self.root = root
+        # Model the live client calls (AnthropicClient.model / BedrockClient.model_id); None = unknown.
+        self.model = getattr(inner, "model", None) or getattr(inner, "model_id", None)
+
+    def _same_model(self, recorded: str | None) -> bool:
+        # A recording made with another model is not reused: a cheap trial run must never
+        # stand in for the model the results table claims.
+        if not self.model or not recorded:
+            return True
+        return self.model in recorded or recorded in self.model
 
     def complete(self, req: LLMRequest) -> LLMResponse:
-        # Re-use an existing answer for the same (task, prompt version, inputs): variants that share
-        # a call (e.g. extract_application in v2..v5) pay for it once.
+        # Re-use an existing answer for the same (task, prompt version, inputs, model): variants that
+        # share a call (e.g. extract_application in v2..v5) pay for it once.
         path = fixture_path(self.root, req)
         if path.exists():
             data = json.loads(path.read_text())
-            if data.get("source") == "recorded":
+            if data.get("source") == "recorded" and self._same_model(data["response"].get("model")):
                 resp = LLMResponse.model_validate(data["response"])
                 resp.source = "replay:recorded"
                 return resp
