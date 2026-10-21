@@ -17,6 +17,7 @@ def to_markdown(payload: dict[str, Any]) -> str:
         "",
         f"backend `{meta['backend']}` · model `{meta['model']}` · git `{meta['git_sha']}` · {meta['timestamp']}",
         f"LLM calls by source: {src or 'none'}",
+        f"LLM calls by task: {m['cost'].get('llm_calls_by_task') or 'none'}",
     ]
     if src.get("replay:miss"):
         lines.append(f"> {src['replay:miss']} LLM calls had no replay fixture and **abstained** "

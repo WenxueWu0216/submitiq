@@ -1,0 +1,2625 @@
+{
+ "meta": {
+  "pipeline": "v2_tooluse",
+  "split": "dev",
+  "backend": "replay",
+  "tag": "",
+  "timestamp": "20261021T192654Z",
+  "git_sha": "395f201",
+  "n": 80,
+  "wall_seconds": 3.3,
+  "model": "claude-opus-5-5",
+  "replay_miss_policy": "abstain"
+ },
+ "metrics": {
+  "n_submissions": 80,
+  "fields": {
+   "overall": {
+    "precision": 0.9984,
+    "recall": 0.9613,
+    "f1": 0.9795,
+    "tp": 10667,
+    "fp": 17,
+    "fn": 430
+   },
+   "critical": {
+    "precision": 0.9997,
+    "recall": 0.9547,
+    "f1": 0.9767,
+    "tp": 2868,
+    "fp": 1,
+    "fn": 136
+   },
+   "by_group": {
+    "insured": {
+     "precision": 0.9953,
+     "recall": 0.9884,
+     "f1": 0.9918,
+     "tp": 1276,
+     "fp": 6,
+     "fn": 15
+    },
+    "broker": {
+     "precision": 0.9719,
+     "recall": 0.9719,
+     "f1": 0.9719,
+     "tp": 311,
+     "fp": 9,
+     "fn": 9
+    },
+    "policy": {
+     "precision": 1.0,
+     "recall": 0.7573,
+     "f1": 0.8619,
+     "tp": 362,
+     "fp": 0,
+     "fn": 116
+    },
+    "coverage": {
+     "precision": 1.0,
+     "recall": 0.9081,
+     "f1": 0.9518,
+     "tp": 652,
+     "fp": 0,
+     "fn": 66
+    },
+    "locations": {
+     "precision": 1.0,
+     "recall": 0.9616,
+     "f1": 0.9804,
+     "tp": 5486,
+     "fp": 0,
+     "fn": 219
+    },
+    "claims": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 665,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1600,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals": {
+     "precision": 0.9937,
+     "recall": 0.9844,
+     "f1": 0.989,
+     "tp": 315,
+     "fp": 2,
+     "fn": 5
+    }
+   },
+   "by_template": {
+    "A": {
+     "precision": 0.9984,
+     "recall": 0.9544,
+     "f1": 0.9759,
+     "tp": 5123,
+     "fp": 8,
+     "fn": 245
+    },
+    "B": {
+     "precision": 0.9984,
+     "recall": 0.9677,
+     "f1": 0.9828,
+     "tp": 5544,
+     "fp": 9,
+     "fn": 185
+    }
+   },
+   "by_field": {
+    "broker.agency_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker.producer_email": {
+     "precision": 0.8875,
+     "recall": 0.8875,
+     "f1": 0.8875,
+     "tp": 71,
+     "fp": 9,
+     "fn": 9
+    },
+    "broker.producer_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker.producer_phone": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].cause": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].date_of_loss": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].paid": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].policy_year": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].reserve": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].status": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.bpp_limit": {
+     "precision": 1.0,
+     "recall": 0.8875,
+     "f1": 0.9404,
+     "tp": 71,
+     "fp": 0,
+     "fn": 9
+    },
+    "coverage.building_limit": {
+     "precision": 1.0,
+     "recall": 0.7875,
+     "f1": 0.8811,
+     "tp": 63,
+     "fp": 0,
+     "fn": 17
+    },
+    "coverage.business_income_limit": {
+     "precision": 1.0,
+     "recall": 0.9125,
+     "f1": 0.9542,
+     "tp": 73,
+     "fp": 0,
+     "fn": 7
+    },
+    "coverage.cause_of_loss_form": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.coinsurance_pct": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 78,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.deductible": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.earthquake_requested": {
+     "precision": 1.0,
+     "recall": 0.8375,
+     "f1": 0.9116,
+     "tp": 67,
+     "fp": 0,
+     "fn": 13
+    },
+    "coverage.flood_requested": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 60,
+     "fp": 0,
+     "fn": 20
+    },
+    "coverage.valuation": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.annual_revenue": {
+     "precision": 1.0,
+     "recall": 0.8875,
+     "f1": 0.9404,
+     "tp": 71,
+     "fp": 0,
+     "fn": 9
+    },
+    "insured.business_description": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.contact_email": {
+     "precision": 0.925,
+     "recall": 0.925,
+     "f1": 0.925,
+     "tp": 74,
+     "fp": 6,
+     "fn": 6
+    },
+    "insured.contact_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.contact_phone": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.dba": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 25,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.employee_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 77,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.entity_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.fein": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 78,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.city": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.state": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.street": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.zip": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.naics_code": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.named_insured": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.website": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 74,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.years_in_business": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 77,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].alarm_type": {
+     "precision": 1.0,
+     "recall": 0.8361,
+     "f1": 0.9107,
+     "tp": 153,
+     "fp": 0,
+     "fn": 30
+    },
+    "locations[].bi_value": {
+     "precision": 1.0,
+     "recall": 0.9556,
+     "f1": 0.9773,
+     "tp": 301,
+     "fp": 0,
+     "fn": 14
+    },
+    "locations[].building_value": {
+     "precision": 1.0,
+     "recall": 0.9397,
+     "f1": 0.9689,
+     "tp": 296,
+     "fp": 0,
+     "fn": 19
+    },
+    "locations[].city": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].construction": {
+     "precision": 1.0,
+     "recall": 0.8667,
+     "f1": 0.9286,
+     "tp": 273,
+     "fp": 0,
+     "fn": 42
+    },
+    "locations[].contents_value": {
+     "precision": 1.0,
+     "recall": 0.9429,
+     "f1": 0.9706,
+     "tp": 297,
+     "fp": 0,
+     "fn": 18
+    },
+    "locations[].occupancy": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].protection_class": {
+     "precision": 1.0,
+     "recall": 0.9871,
+     "f1": 0.9935,
+     "tp": 305,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].roof_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 183,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].roof_year": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 309,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].sprinkler_pct": {
+     "precision": 1.0,
+     "recall": 0.9365,
+     "f1": 0.9672,
+     "tp": 295,
+     "fp": 0,
+     "fn": 20
+    },
+    "locations[].sprinklered": {
+     "precision": 1.0,
+     "recall": 0.873,
+     "f1": 0.9322,
+     "tp": 275,
+     "fp": 0,
+     "fn": 40
+    },
+    "locations[].square_feet": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].state": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].stories": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].street": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].tiv": {
+     "precision": 1.0,
+     "recall": 0.9302,
+     "f1": 0.9638,
+     "tp": 293,
+     "fp": 0,
+     "fn": 22
+    },
+    "locations[].year_built": {
+     "precision": 1.0,
+     "recall": 0.9935,
+     "f1": 0.9968,
+     "tp": 308,
+     "fp": 0,
+     "fn": 2
+    },
+    "locations[].zip": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "loss_years[].carrier": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].claim_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].earned_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].total_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.effective_date": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 60,
+     "fp": 0,
+     "fn": 20
+    },
+    "policy.expiration_date": {
+     "precision": 1.0,
+     "recall": 0.8,
+     "f1": 0.8889,
+     "tp": 64,
+     "fp": 0,
+     "fn": 16
+    },
+    "policy.prior_carrier": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 78,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.quote_needed_by": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 80
+    },
+    "policy.submission_received_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.transaction_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.five_year_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.five_year_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.location_count": {
+     "precision": 0.9875,
+     "recall": 0.9875,
+     "f1": 0.9875,
+     "tp": 79,
+     "fp": 1,
+     "fn": 1
+    },
+    "totals.total_tiv": {
+     "precision": 0.987,
+     "recall": 0.95,
+     "f1": 0.9682,
+     "tp": 76,
+     "fp": 1,
+     "fn": 4
+    }
+   }
+  },
+  "decision": {
+   "accuracy": 0.0,
+   "abstained": 80,
+   "declines_predicted_accept": 0,
+   "confusion": {
+    "accept->none": 26,
+    "decline->none": 24,
+    "refer->none": 30
+   }
+  },
+  "review": {
+   "review_rate": 1.0,
+   "submissions_with_critical_error": 32,
+   "silent_critical_error_rate": 0.0,
+   "flag_precision": 0.0,
+   "flag_recall_of_errors": 0.0,
+   "flagged_fields_per_submission": 0.0
+  },
+  "conflicts": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 39
+  },
+  "documents": {
+   "classification_accuracy": 1.0
+  },
+  "latency_ms": {
+   "mean": 1779.1,
+   "p50": 185.4,
+   "p95": 8326.6,
+   "llm_recorded_mean": 0.0
+  },
+  "cost": {
+   "usd_per_submission": 0.0,
+   "input_tokens_per_submission": 0.0,
+   "output_tokens_per_submission": 0.0,
+   "est_prompt_tokens_per_submission": 7831.5,
+   "llm_calls_by_source": {
+    "replay:miss": 253
+   }
+  },
+  "summary": {
+   "citation_valid_rate": null
+  }
+ },
+ "submissions": [
+  {
+   "id": "SUB-0001",
+   "template": "B",
+   "f1": 0.9845,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0002",
+   "template": "A",
+   "f1": 0.9976,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0003",
+   "template": "B",
+   "f1": 0.9959,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0004",
+   "template": "B",
+   "f1": 0.9639,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].sprinklered",
+    "locations[2].construction",
+    "locations[3].building_value",
+    "locations[3].tiv",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "Property_Schedule.xlsx: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0005",
+   "template": "B",
+   "f1": 0.9942,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0006",
+   "template": "B",
+   "f1": 0.9746,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0007",
+   "template": "A",
+   "f1": 0.9677,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[10].sprinklered",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "locations[2].tiv",
+    "locations[4].sprinklered",
+    "locations[6].construction",
+    "locations[7].building_value",
+    "locations[7].construction",
+    "locations[7].sprinklered",
+    "locations[9].sprinklered",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "statement_of_values.xlsx: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0008",
+   "template": "A",
+   "f1": 0.9959,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan22718.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0009",
+   "template": "B",
+   "f1": 0.9935,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0010",
+   "template": "A",
+   "f1": 0.9928,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0011",
+   "template": "A",
+   "f1": 0.9438,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].construction",
+    "locations[2].tiv",
+    "locations[3].construction",
+    "locations[3].sprinklered",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[4].contents_value",
+    "locations[4].sprinklered",
+    "locations[4].tiv",
+    "policy.effective_date",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "Property_Schedule.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0012",
+   "template": "B",
+   "f1": 0.9956,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0013",
+   "template": "A",
+   "f1": 0.9504,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].construction",
+    "locations[2].bi_value",
+    "locations[2].sprinklered",
+    "locations[3].alarm_type",
+    "locations[3].contents_value",
+    "locations[4].construction",
+    "locations[4].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0014",
+   "template": "A",
+   "f1": 0.978,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "locations[2].sprinklered",
+    "locations[3].contents_value",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0015",
+   "template": "B",
+   "f1": 0.9576,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "locations[1].contents_value",
+    "locations[1].sprinkler_pct",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "SOV.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0016",
+   "template": "B",
+   "f1": 0.9614,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.business_income_limit",
+    "locations[1].building_value",
+    "locations[1].tiv",
+    "locations[2].construction",
+    "locations[3].contents_value",
+    "locations[4].construction",
+    "locations[5].bi_value",
+    "locations[5].building_value",
+    "locations[5].construction",
+    "locations[5].contents_value",
+    "locations[6].tiv",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "statement_of_values.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0017",
+   "template": "B",
+   "f1": 0.9945,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0018",
+   "template": "B",
+   "f1": 0.9973,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0019",
+   "template": "A",
+   "f1": 0.9709,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc42716.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0020",
+   "template": "A",
+   "f1": 0.9869,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0021",
+   "template": "B",
+   "f1": 0.9924,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0022",
+   "template": "B",
+   "f1": 0.9983,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc32255.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0023",
+   "template": "A",
+   "f1": 0.9897,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "IMG_16856.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0024",
+   "template": "A",
+   "f1": 0.9909,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0025",
+   "template": "B",
+   "f1": 0.9818,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "locations[1].sprinklered",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "file76645.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0026",
+   "template": "A",
+   "f1": 0.9809,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "locations[4].construction",
+    "locations[5].construction",
+    "locations[5].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "IMG_36577.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0027",
+   "template": "A",
+   "f1": 0.9969,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0028",
+   "template": "A",
+   "f1": 0.9674,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].contents_value",
+    "locations[2].construction",
+    "locations[2].sprinklered",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Attachment_22824.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0029",
+   "template": "A",
+   "f1": 0.9871,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0030",
+   "template": "B",
+   "f1": 0.9762,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "file99567.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0031",
+   "template": "B",
+   "f1": 0.963,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[1].sprinklered",
+    "locations[2].sprinklered",
+    "locations[3].building_value",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "file87427.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0032",
+   "template": "A",
+   "f1": 0.9953,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0033",
+   "template": "B",
+   "f1": 0.9664,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.flood_requested",
+    "locations[2].construction",
+    "locations[2].sprinklered",
+    "locations[3].alarm_type",
+    "locations[3].construction",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0034",
+   "template": "A",
+   "f1": 0.9903,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc8917.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0035",
+   "template": "A",
+   "f1": 0.9973,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc1864.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0036",
+   "template": "B",
+   "f1": 0.9924,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0037",
+   "template": "A",
+   "f1": 0.9907,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0038",
+   "template": "A",
+   "f1": 0.8701,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [
+    "totals.location_count"
+   ],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "insured.annual_revenue",
+    "locations[1].building_value",
+    "locations[1].sprinkler_pct",
+    "locations[1].tiv",
+    "locations[2].building_value",
+    "locations[2].sprinkler_pct",
+    "locations[3].building_value",
+    "locations[3].contents_value",
+    "locations[3].sprinkler_pct",
+    "locations[4].bi_value",
+    "locations[4].construction",
+    "locations[4].sprinkler_pct",
+    "locations[5].bi_value",
+    "locations[5].building_value",
+    "locations[5].city",
+    "locations[5].construction",
+    "locations[5].contents_value",
+    "locations[5].occupancy",
+    "locations[5].protection_class",
+    "locations[5].roof_year",
+    "locations[5].sprinkler_pct",
+    "locations[5].sprinklered",
+    "locations[5].square_feet",
+    "locations[5].state",
+    "locations[5].stories",
+    "locations[5].street",
+    "locations[5].tiv",
+    "locations[5].year_built",
+    "locations[5].zip",
+    "locations[6].bi_value",
+    "locations[6].construction",
+    "locations[6].sprinkler_pct",
+    "locations[6].sprinklered",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan16895.pdf: LLM extraction unavailable (replay miss)",
+    "scan40233.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0039",
+   "template": "A",
+   "f1": 0.9903,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0040",
+   "template": "A",
+   "f1": 0.953,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "insured.annual_revenue",
+    "locations[1].sprinklered",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0041",
+   "template": "A",
+   "f1": 0.9536,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].building_value",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "IMG_30199.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0042",
+   "template": "A",
+   "f1": 0.96,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].construction",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "file49288.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0043",
+   "template": "B",
+   "f1": 0.9983,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0044",
+   "template": "B",
+   "f1": 0.9727,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0045",
+   "template": "B",
+   "f1": 0.9941,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan16195.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0046",
+   "template": "B",
+   "f1": 0.9806,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.business_income_limit",
+    "locations[2].alarm_type",
+    "locations[3].alarm_type",
+    "locations[4].construction",
+    "locations[4].sprinklered",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0047",
+   "template": "A",
+   "f1": 0.9977,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc81497.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0048",
+   "template": "B",
+   "f1": 0.9935,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "IMG_56781.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0049",
+   "template": "B",
+   "f1": 0.9759,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "locations[1].sprinklered",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0050",
+   "template": "A",
+   "f1": 0.9971,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0051",
+   "template": "B",
+   "f1": 0.9733,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].bi_value",
+    "locations[1].sprinkler_pct",
+    "locations[2].bi_value",
+    "locations[2].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0052",
+   "template": "A",
+   "f1": 0.9915,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0053",
+   "template": "A",
+   "f1": 0.9935,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Attachment_91039.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0054",
+   "template": "B",
+   "f1": 0.9982,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0055",
+   "template": "B",
+   "f1": 0.9953,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0056",
+   "template": "B",
+   "f1": 0.9688,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "locations[1].alarm_type",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0057",
+   "template": "A",
+   "f1": 0.9933,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "file59189.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0058",
+   "template": "A",
+   "f1": 0.9931,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0059",
+   "template": "A",
+   "f1": 0.907,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [
+    "insured.contact_email"
+   ],
+   "missed": [
+    "locations[1].bi_value",
+    "locations[1].contents_value",
+    "locations[1].sprinkler_pct",
+    "locations[1].tiv",
+    "locations[2].bi_value",
+    "locations[2].contents_value",
+    "locations[2].protection_class",
+    "locations[2].sprinkler_pct",
+    "locations[2].tiv",
+    "locations[3].bi_value",
+    "locations[3].contents_value",
+    "locations[3].protection_class",
+    "locations[3].sprinkler_pct",
+    "locations[3].tiv",
+    "locations[4].bi_value",
+    "locations[4].contents_value",
+    "locations[4].protection_class",
+    "locations[4].sprinkler_pct",
+    "locations[4].sprinklered",
+    "locations[4].tiv",
+    "locations[4].year_built",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "Property_Schedule.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0060",
+   "template": "A",
+   "f1": 0.9968,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0061",
+   "template": "A",
+   "f1": 0.9703,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].sprinklered",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc33311.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0062",
+   "template": "B",
+   "f1": 0.9681,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.business_income_limit",
+    "coverage.flood_requested",
+    "locations[1].contents_value",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "IMG_79982.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0063",
+   "template": "A",
+   "f1": 0.9552,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "insured.annual_revenue",
+    "locations[1].sprinklered",
+    "locations[2].alarm_type",
+    "locations[2].building_value",
+    "locations[2].construction",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0064",
+   "template": "B",
+   "f1": 0.9598,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[2].bi_value",
+    "locations[2].construction",
+    "locations[4].bi_value",
+    "locations[4].construction",
+    "locations[4].sprinklered",
+    "locations[5].construction",
+    "locations[5].sprinklered",
+    "locations[5].tiv",
+    "locations[6].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc89485.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "IMG_99663.xlsx: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0065",
+   "template": "B",
+   "f1": 0.9982,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0066",
+   "template": "B",
+   "f1": 0.9737,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan892.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0067",
+   "template": "A",
+   "f1": 0.9664,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[3].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "application.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0068",
+   "template": "B",
+   "f1": 0.9574,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "locations[1].construction",
+    "locations[1].sprinkler_pct",
+    "locations[1].sprinklered",
+    "locations[2].sprinkler_pct",
+    "locations[2].tiv",
+    "policy.effective_date",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan25907.pdf: LLM extraction unavailable (replay miss)",
+    "IMG_38252.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0069",
+   "template": "B",
+   "f1": 0.9444,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].construction",
+    "locations[2].alarm_type",
+    "locations[2].building_value",
+    "locations[2].construction",
+    "locations[3].construction",
+    "locations[3].contents_value",
+    "locations[3].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "SOV.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0070",
+   "template": "B",
+   "f1": 0.9733,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[6].construction",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan98325.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0071",
+   "template": "A",
+   "f1": 0.9677,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan48628.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0072",
+   "template": "A",
+   "f1": 0.9429,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [
+    "totals.total_tiv"
+   ],
+   "missed": [
+    "locations[1].building_value",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "locations[2].building_value",
+    "locations[3].construction",
+    "locations[3].contents_value",
+    "locations[3].sprinklered",
+    "locations[3].tiv",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[4].contents_value",
+    "locations[4].sprinklered",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "statement_of_values.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0073",
+   "template": "A",
+   "f1": 0.9431,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].sprinkler_pct",
+    "locations[2].building_value",
+    "locations[2].construction",
+    "locations[2].sprinkler_pct",
+    "locations[2].tiv",
+    "locations[3].bi_value",
+    "locations[3].building_value",
+    "locations[3].construction",
+    "locations[3].contents_value",
+    "locations[3].sprinkler_pct",
+    "locations[3].tiv",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "SOV.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0074",
+   "template": "B",
+   "f1": 0.9935,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0075",
+   "template": "A",
+   "f1": 0.9595,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.flood_requested",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "scan83151.pdf: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0076",
+   "template": "A",
+   "f1": 0.9957,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0077",
+   "template": "B",
+   "f1": 0.9778,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0078",
+   "template": "B",
+   "f1": 0.9928,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "Attachment_13620.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0079",
+   "template": "B",
+   "f1": 0.9905,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "IMG_52528.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0080",
+   "template": "B",
+   "f1": 0.9502,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
+   "missed": [
+    "coverage.business_income_limit",
+    "coverage.flood_requested",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "locations[2].construction",
+    "locations[3].alarm_type",
+    "locations[3].construction",
+    "locations[3].sprinklered",
+    "locations[4].construction",
+    "locations[5].sprinklered",
+    "locations[6].construction",
+    "locations[6].sprinklered",
+    "locations[7].sprinklered",
+    "locations[8].sprinklered",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "doc23275.pdf: LLM extraction unavailable (replay miss)",
+    "email.txt: LLM extraction unavailable (replay miss)",
+    "Attachment_51271.xlsx: LLM extraction unavailable (replay miss)",
+    "no appetite decision (model unavailable)"
+   ],
+   "errors": []
+  }
+ ]
+}

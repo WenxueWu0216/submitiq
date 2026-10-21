@@ -70,11 +70,11 @@ The parsed tables take precedence over the LLM for location, claim and loss-year
 
 | split | field F1 | critical F1 | locations F1 | claims F1 | loss-years F1 | totals F1 |
 |---|---|---|---|---|---|---|
-| dev (offline) | 0.0 → **81.6** | 0.0 → 92.2 | 0 → 87.7* | 0 → 100.0 | 0 → 100.0 | 0 → 94.1* |
+| dev (offline) | 0.0 → **81.6** | 0.0 → 92.2 | 0 → 94.1 | 0 → 100.0 | 0 → 100.0 | 0 → 97.6 |
 | test (offline) | 0.0 → **80.2** | 0.0 → 90.0 | 0 → 92.8 | 0 → 100.0 | 0 → 100.0 | 0 → 97.1 |
 | with Claude | PENDING | PENDING | | | | |
 
-\*dev figures before the dataset fix below were 87.7 / 94.1. The headline dev F1 is after the fix.
+All figures are after the dataset fix described below. Before it, dev locations F1 was 87.7.
 Precision on the parsed groups is ≥ 99.9%. When a parser can't read a cell, the cell comes
 out empty. The parser does not guess. Insured/broker/policy/coverage stay at 0 offline because only the
 (abstaining) LLM extracts them in this variant.
@@ -94,3 +94,52 @@ application's premises table, which this variant doesn't parse). Normalization i
    the location number column vanished, and location 1 was lost in about 15% of PDF SOVs.
    Fix: the renderer now never lets a header overprint its neighbour. I
    regenerated the dataset (same seed) and re-ran every variant above on the new data.
+
+---
+
+## Stage 4b: Per-document extraction with Claude tool use and strict schemas
+
+**What:** the single prompt is replaced by one extractor per document type, and each one
+produces cited candidates:
+
+* **application:** a deterministic `Label: value` form parser (labels written
+  from the dev templates A/B only) plus the premises table, **and** a Claude call
+  with the `record_application` tool.
+* **email:** deterministic header/signature parsing plus a Claude call (`record_email`)
+  for the free-text facts: quote-needed-by date, requested effective date, the insured's name as the broker wrote it.
+* **SOV / loss run:** the 4a table parsers. Claude (`record_sov`, `record_loss_run`)
+  runs **only when the parser fails its own reconciliation checks**, which is a cost lever.
+* **decision:** a separate Claude call over the assembled record (the rules engine replaces it in Stage 5).
+
+Every tool schema is strict (`strict: true`, `additionalProperties: false`, every
+property required, nullable values). Every leaf is `{value, page, evidence}`, so
+each LLM value carries a page and a verbatim quote. Current Claude models reject forced
+`tool_choice`, so the call uses `auto` plus an explicit instruction, with one
+re-prompt if no tool call comes back. If the API rejects the strict schema, the
+call retries once without `strict`. pydantic validates the output either way.
+
+| split | field F1 | critical F1 | template A | template B | template C (held out) |
+|---|---|---|---|---|---|
+| dev (offline) | 81.6 → **98.0** | 92.2 → 97.7 | 97.6 | 98.3 | – |
+| test (offline) | 80.2 → **94.0** | 90.0 → 94.8 | 96.9 | 97.3 | **82.6** |
+| with Claude | PENDING | PENDING | PENDING | PENDING | PENDING |
+
+LLM calls per submission (all 120): 1 application + 1 email + 1 decision, plus
+21 SOV fallbacks (17.5% of SOVs failed reconciliation under basic normalization). That
+is 3.2 calls per submission, about 7.8K prompt tokens (chars/4 estimate). Offline, all of them abstained.
+
+**Reading this honestly:**
+* The offline dev number (98.0) mostly measures a parser I wrote against templates
+  I also wrote. **Template C is the honest test**: an unseen boxed layout with labels
+  above values and no colons. The label parser extracts nothing from it, so insured/policy/coverage
+  recall collapses (test: insured 74.3 R, policy 56.2 R, coverage 65.5 R) and
+  template C sits at 82.6 F1. Closing that gap is exactly the job of the
+  `record_application` call. **That number is PENDING a live run.**
+* `policy.quote_needed_by` exists only in the email body, so offline it is 0 (40/40 FN on test).
+* `tests/test_per_doc_extraction.py` drives the tool-use path with a fake "perfect"
+  model. On a template-C package it lifts F1 from the offline value to ≥ 97% and gets the
+  decision right. That proves the plumbing (schema → candidates → merge), *not* model quality.
+
+**What broke:** OCR'd emails on scanned applications split `grace.hughes @tidewaterrisk.com`
+at the `@`. The form parser keeps the broken value, which gives 9 producer-email false positives on dev.
+That is a precision error the parser cannot see on its own. 4d's validation checks catch it.
