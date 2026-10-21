@@ -1,0 +1,34 @@
+[
+ {
+  "pipeline": "baseline",
+  "split": "dev",
+  "field F1": 0.0,
+  "critical F1": 0.0,
+  "decision acc.": 0.0,
+  "review rate": 1.0,
+  "silent crit. err.": 0.0,
+  "conflict F1": 0.0,
+  "usd/sub": 0.0,
+  "p50 ms": 132.3,
+  "llm sources": {
+   "replay:miss": 80
+  },
+  "git": "05f4b45"
+ },
+ {
+  "pipeline": "baseline",
+  "split": "test",
+  "field F1": 0.0,
+  "critical F1": 0.0,
+  "decision acc.": 0.0,
+  "review rate": 1.0,
+  "silent crit. err.": 0.0,
+  "conflict F1": 0.0,
+  "usd/sub": 0.0,
+  "p50 ms": 131.8,
+  "llm sources": {
+   "replay:miss": 40
+  },
+  "git": "05f4b45"
+ }
+]
