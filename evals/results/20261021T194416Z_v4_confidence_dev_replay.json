@@ -1,0 +1,2129 @@
+{
+ "meta": {
+  "pipeline": "v4_confidence",
+  "split": "dev",
+  "backend": "replay",
+  "tag": "",
+  "timestamp": "20261021T194416Z",
+  "git_sha": "96cec24",
+  "n": 80,
+  "wall_seconds": 3.5,
+  "model": "claude-opus-5-5",
+  "replay_miss_policy": "abstain"
+ },
+ "metrics": {
+  "n_submissions": 80,
+  "fields": {
+   "overall": {
+    "precision": 0.9996,
+    "recall": 0.9847,
+    "f1": 0.9921,
+    "tp": 10927,
+    "fp": 4,
+    "fn": 170
+   },
+   "critical": {
+    "precision": 0.9997,
+    "recall": 0.9947,
+    "f1": 0.9972,
+    "tp": 2988,
+    "fp": 1,
+    "fn": 16
+   },
+   "by_group": {
+    "insured": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1291,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker": {
+     "precision": 0.9938,
+     "recall": 0.9938,
+     "f1": 0.9938,
+     "tp": 318,
+     "fp": 2,
+     "fn": 2
+    },
+    "policy": {
+     "precision": 1.0,
+     "recall": 0.8326,
+     "f1": 0.9087,
+     "tp": 398,
+     "fp": 0,
+     "fn": 80
+    },
+    "coverage": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 718,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations": {
+     "precision": 1.0,
+     "recall": 0.9849,
+     "f1": 0.9924,
+     "tp": 5619,
+     "fp": 0,
+     "fn": 86
+    },
+    "claims": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 665,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 1600,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals": {
+     "precision": 0.9938,
+     "recall": 0.9938,
+     "f1": 0.9938,
+     "tp": 318,
+     "fp": 2,
+     "fn": 2
+    }
+   },
+   "by_template": {
+    "A": {
+     "precision": 0.9994,
+     "recall": 0.9803,
+     "f1": 0.9897,
+     "tp": 5262,
+     "fp": 3,
+     "fn": 106
+    },
+    "B": {
+     "precision": 0.9998,
+     "recall": 0.9888,
+     "f1": 0.9943,
+     "tp": 5665,
+     "fp": 1,
+     "fn": 64
+    }
+   },
+   "by_field": {
+    "broker.agency_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker.producer_email": {
+     "precision": 0.975,
+     "recall": 0.975,
+     "f1": 0.975,
+     "tp": 78,
+     "fp": 2,
+     "fn": 2
+    },
+    "broker.producer_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker.producer_phone": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].cause": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].date_of_loss": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].paid": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].policy_year": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].reserve": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].status": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 95,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.bpp_limit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.building_limit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.business_income_limit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.cause_of_loss_form": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.coinsurance_pct": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 78,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.deductible": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.earthquake_requested": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.flood_requested": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.valuation": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.annual_revenue": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.business_description": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.contact_email": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.contact_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.contact_phone": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.dba": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 25,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.employee_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 77,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.entity_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.fein": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 78,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.city": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.state": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.street": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.zip": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.naics_code": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.named_insured": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.website": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 74,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.years_in_business": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 77,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].alarm_type": {
+     "precision": 1.0,
+     "recall": 0.8361,
+     "f1": 0.9107,
+     "tp": 153,
+     "fp": 0,
+     "fn": 30
+    },
+    "locations[].bi_value": {
+     "precision": 1.0,
+     "recall": 0.9714,
+     "f1": 0.9855,
+     "tp": 306,
+     "fp": 0,
+     "fn": 9
+    },
+    "locations[].building_value": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].city": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].construction": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].contents_value": {
+     "precision": 1.0,
+     "recall": 0.9841,
+     "f1": 0.992,
+     "tp": 310,
+     "fp": 0,
+     "fn": 5
+    },
+    "locations[].occupancy": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].protection_class": {
+     "precision": 1.0,
+     "recall": 0.9871,
+     "f1": 0.9935,
+     "tp": 305,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].roof_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 183,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].roof_year": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 309,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].sprinkler_pct": {
+     "precision": 1.0,
+     "recall": 0.9365,
+     "f1": 0.9672,
+     "tp": 295,
+     "fp": 0,
+     "fn": 20
+    },
+    "locations[].sprinklered": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].square_feet": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].state": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].stories": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].street": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].tiv": {
+     "precision": 1.0,
+     "recall": 0.9841,
+     "f1": 0.992,
+     "tp": 310,
+     "fp": 0,
+     "fn": 5
+    },
+    "locations[].year_built": {
+     "precision": 1.0,
+     "recall": 0.9935,
+     "f1": 0.9968,
+     "tp": 308,
+     "fp": 0,
+     "fn": 2
+    },
+    "locations[].zip": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 314,
+     "fp": 0,
+     "fn": 1
+    },
+    "loss_years[].carrier": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].claim_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].earned_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].total_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 400,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.effective_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.expiration_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.prior_carrier": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 78,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.quote_needed_by": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 80
+    },
+    "policy.submission_received_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.transaction_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.five_year_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.five_year_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 80,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.location_count": {
+     "precision": 0.9875,
+     "recall": 0.9875,
+     "f1": 0.9875,
+     "tp": 79,
+     "fp": 1,
+     "fn": 1
+    },
+    "totals.total_tiv": {
+     "precision": 0.9875,
+     "recall": 0.9875,
+     "f1": 0.9875,
+     "tp": 79,
+     "fp": 1,
+     "fn": 1
+    }
+   }
+  },
+  "decision": {
+   "accuracy": 0.0,
+   "abstained": 80,
+   "declines_predicted_accept": 0,
+   "confusion": {
+    "accept->none": 26,
+    "decline->none": 24,
+    "refer->none": 30
+   }
+  },
+  "review": {
+   "review_rate": 0.425,
+   "submissions_with_critical_error": 2,
+   "silent_critical_error_rate": 0.0,
+   "flag_precision": 0.1667,
+   "flag_recall_of_errors": 0.0706,
+   "wrong_values": 4,
+   "flag_recall_of_wrong_values": 1.0,
+   "flagged_fields_per_submission": 0.9,
+   "degraded_rate": 1.0
+  },
+  "conflicts": {
+   "precision": 0.8889,
+   "recall": 0.8205,
+   "f1": 0.8533,
+   "tp": 32,
+   "fp": 4,
+   "fn": 7
+  },
+  "documents": {
+   "classification_accuracy": 1.0
+  },
+  "latency_ms": {
+   "mean": 1787.8,
+   "p50": 195.8,
+   "p95": 8337.0,
+   "llm_recorded_mean": 0.0
+  },
+  "cost": {
+   "usd_per_submission": 0.0,
+   "input_tokens_per_submission": 0.0,
+   "output_tokens_per_submission": 0.0,
+   "est_prompt_tokens_per_submission": 7563.1,
+   "llm_calls_by_source": {
+    "replay:miss": 242
+   },
+   "llm_calls_by_task": {
+    "appetite_decision": 80,
+    "extract_application": 80,
+    "extract_email": 80,
+    "extract_sov": 2
+   }
+  },
+  "summary": {
+   "citation_valid_rate": null
+  }
+ },
+ "submissions": [
+  {
+   "id": "SUB-0001",
+   "template": "B",
+   "f1": 0.9948,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0002",
+   "template": "A",
+   "f1": 0.9976,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0003",
+   "template": "B",
+   "f1": 0.9959,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 56745000.0, Signed_App.pdf says 52008000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0004",
+   "template": "B",
+   "f1": 0.9961,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[2].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0005",
+   "template": "B",
+   "f1": 0.9942,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0006",
+   "template": "B",
+   "f1": 0.9949,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0007",
+   "template": "A",
+   "f1": 0.998,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0008",
+   "template": "A",
+   "f1": 0.9959,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0009",
+   "template": "B",
+   "f1": 0.9935,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0010",
+   "template": "A",
+   "f1": 0.9928,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0011",
+   "template": "A",
+   "f1": 0.9964,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0012",
+   "template": "B",
+   "f1": 0.9956,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0013",
+   "template": "A",
+   "f1": 0.9932,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0014",
+   "template": "A",
+   "f1": 0.9957,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0015",
+   "template": "B",
+   "f1": 0.9882,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0016",
+   "template": "B",
+   "f1": 0.9971,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.pdf says 2007, application.pdf says 2000 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0017",
+   "template": "B",
+   "f1": 0.9945,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0018",
+   "template": "B",
+   "f1": 0.9973,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.pdf says 1967, ACORD_125_140.pdf says 1990 (kept the table_parser:local value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.pdf says 28430000.0, ACORD_125_140.pdf says 22331000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0019",
+   "template": "A",
+   "f1": 0.9806,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "broker.producer_email: conflict (broker.producer_email: doc42716.pdf says 'robert-hughes@northstarcb.com', email.txt says 'robert.hughes@northstarcb.com' (kept the form_parser value per source-of-truth rules))",
+    "locations[2].year_built: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: scan88075.xlsx says 8840000.0, doc42716.pdf says 7039000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0020",
+   "template": "A",
+   "f1": 0.9869,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0021",
+   "template": "B",
+   "f1": 0.9924,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.pdf says 1960, Signed_App.pdf says 1976 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0022",
+   "template": "B",
+   "f1": 0.9983,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: file90944.pdf says 51620000.0, doc32255.pdf says 44474000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0023",
+   "template": "A",
+   "f1": 0.9949,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].year_built: conflict (locations[1].year_built: IMG_2338.xlsx says 1975, IMG_16856.pdf says 2000 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0024",
+   "template": "A",
+   "f1": 0.9909,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: SOV.xlsx says 1972, application.pdf says 1985 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0025",
+   "template": "B",
+   "f1": 0.994,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0026",
+   "template": "A",
+   "f1": 0.9973,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[4].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0027",
+   "template": "A",
+   "f1": 0.9969,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0028",
+   "template": "A",
+   "f1": 0.9947,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0029",
+   "template": "A",
+   "f1": 0.9871,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0030",
+   "template": "B",
+   "f1": 0.9881,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0031",
+   "template": "B",
+   "f1": 0.9928,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0032",
+   "template": "A",
+   "f1": 0.9953,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[1].year_built: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0033",
+   "template": "B",
+   "f1": 0.9918,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.xlsx says 1977, application.pdf says 1971 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0034",
+   "template": "A",
+   "f1": 0.9903,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0035",
+   "template": "A",
+   "f1": 0.9973,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[3].year_built: conflict (locations[3].year_built: scan51124.xlsx says 1987, doc1864.pdf says 2003 (kept the table_parser:local value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: scan51124.xlsx says 27690000.0, doc1864.pdf says 22503000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0036",
+   "template": "B",
+   "f1": 0.9924,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0037",
+   "template": "A",
+   "f1": 0.9907,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0038",
+   "template": "A",
+   "f1": 0.9097,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [
+    "totals.location_count",
+    "totals.total_tiv"
+   ],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].sprinkler_pct",
+    "locations[3].sprinkler_pct",
+    "locations[4].bi_value",
+    "locations[4].sprinkler_pct",
+    "locations[5].bi_value",
+    "locations[5].building_value",
+    "locations[5].city",
+    "locations[5].construction",
+    "locations[5].contents_value",
+    "locations[5].occupancy",
+    "locations[5].protection_class",
+    "locations[5].roof_year",
+    "locations[5].sprinkler_pct",
+    "locations[5].sprinklered",
+    "locations[5].square_feet",
+    "locations[5].state",
+    "locations[5].stories",
+    "locations[5].street",
+    "locations[5].tiv",
+    "locations[5].year_built",
+    "locations[5].zip",
+    "locations[6].bi_value",
+    "locations[6].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[1].year_built: missing (required for the appetite rules but not found in any document)",
+    "locations[2].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[3].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[3].year_built: conflict (locations[3].year_built: scan40233.pdf says 1998, scan16895.pdf says 2009 (kept the table_parser:local value per source-of-truth rules))",
+    "locations[4].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[6].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "totals.location_count: conflict (totals.location_count: scan40233.pdf says 5, scan16895.pdf says 6 (kept the derived value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: scan40233.pdf says 32825000.0, scan16895.pdf says 39620000.0 (kept the derived value per source-of-truth rules); table_parser:local read 39615000.0 from the same document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0039",
+   "template": "A",
+   "f1": 0.9903,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0040",
+   "template": "A",
+   "f1": 0.9935,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0041",
+   "template": "A",
+   "f1": 0.9936,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0042",
+   "template": "A",
+   "f1": 0.9935,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0043",
+   "template": "B",
+   "f1": 0.9983,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "insured.named_insured: conflict (insured.named_insured: application says 'Harbor Point Foods Inc.', LossRuns.pdf says 'Harbor Point Distribution Inc.')"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0044",
+   "template": "B",
+   "f1": 0.9945,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.xlsx says 2000, Signed_App.pdf says 1993 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0045",
+   "template": "B",
+   "f1": 0.9941,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0046",
+   "template": "B",
+   "f1": 0.9904,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.xlsx says 1983, Signed_App.pdf says 1994 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0047",
+   "template": "A",
+   "f1": 0.9977,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: doc65953.xlsx says 50145000.0, doc81497.pdf says 43932000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0048",
+   "template": "B",
+   "f1": 0.9935,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0049",
+   "template": "B",
+   "f1": 0.9941,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0050",
+   "template": "A",
+   "f1": 0.9971,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0051",
+   "template": "B",
+   "f1": 0.9733,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].bi_value",
+    "locations[1].sprinkler_pct",
+    "locations[2].bi_value",
+    "locations[2].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0052",
+   "template": "A",
+   "f1": 0.9957,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: SOV.pdf says 2003, Signed_App.pdf says 1983 (kept the table_parser:local value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: SOV.pdf says 70820000.0, Signed_App.pdf says 61955000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0053",
+   "template": "A",
+   "f1": 0.9935,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0054",
+   "template": "B",
+   "f1": 0.9982,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0055",
+   "template": "B",
+   "f1": 0.9953,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 37210000.0, application.pdf says 30452000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0056",
+   "template": "B",
+   "f1": 0.9898,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0057",
+   "template": "A",
+   "f1": 0.9933,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].year_built: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0058",
+   "template": "A",
+   "f1": 0.9931,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: SOV.xlsx says 1966, ACORD_125_140.pdf says 1962 (kept the table_parser:local value per source-of-truth rules))",
+    "locations[3].protection_class: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: SOV.xlsx says 18545000.0, ACORD_125_140.pdf says 16701000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0059",
+   "template": "A",
+   "f1": 0.9189,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "locations[1].bi_value",
+    "locations[1].contents_value",
+    "locations[1].sprinkler_pct",
+    "locations[1].tiv",
+    "locations[2].bi_value",
+    "locations[2].contents_value",
+    "locations[2].protection_class",
+    "locations[2].sprinkler_pct",
+    "locations[2].tiv",
+    "locations[3].bi_value",
+    "locations[3].contents_value",
+    "locations[3].protection_class",
+    "locations[3].sprinkler_pct",
+    "locations[3].tiv",
+    "locations[4].bi_value",
+    "locations[4].contents_value",
+    "locations[4].protection_class",
+    "locations[4].sprinkler_pct",
+    "locations[4].tiv",
+    "locations[4].year_built",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].construction: low_confidence (confidence 0.79 < 0.8)",
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[1].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[1].year_built: low_confidence (confidence 0.79 < 0.8)",
+    "locations[1].zip: low_confidence (confidence 0.79 < 0.8)",
+    "locations[2].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[2].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[3].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[3].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[4].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[4].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[4].year_built: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0060",
+   "template": "A",
+   "f1": 0.9968,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0061",
+   "template": "A",
+   "f1": 0.9952,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0062",
+   "template": "B",
+   "f1": 0.9948,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0063",
+   "template": "A",
+   "f1": 0.9904,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0064",
+   "template": "B",
+   "f1": 0.9972,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0065",
+   "template": "B",
+   "f1": 0.9982,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "insured.named_insured: conflict (insured.named_insured: application says 'Magnolia Motor Works Corporation', LossRuns.pdf says 'Magnolia Motor Distribution Inc.')"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0066",
+   "template": "B",
+   "f1": 0.9935,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: IMG_86792.xlsx says 8080000.0, scan892.pdf says 6460000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0067",
+   "template": "A",
+   "f1": 0.9959,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 19815000.0, application.pdf says 17384000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0068",
+   "template": "B",
+   "f1": 0.9845,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0069",
+   "template": "B",
+   "f1": 0.9924,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.pdf says 1985, Signed_App.pdf says 2009 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0070",
+   "template": "B",
+   "f1": 0.9942,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "locations[4].year_built: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: IMG_92920.xlsx says 32780000.0, scan98325.pdf says 27376000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0071",
+   "template": "A",
+   "f1": 0.9935,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0072",
+   "template": "A",
+   "f1": 0.9966,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.pdf says 23435000.0, ACORD_125_140.pdf says 20474000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0073",
+   "template": "A",
+   "f1": 0.9844,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].sprinkler_pct",
+    "locations[3].sprinkler_pct",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0074",
+   "template": "B",
+   "f1": 0.9935,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0075",
+   "template": "A",
+   "f1": 0.9868,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: Attachment_49707.pdf says 9615000.0, scan83151.pdf says 8238000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0076",
+   "template": "A",
+   "f1": 0.9957,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "insured.named_insured: conflict (insured.named_insured: application says 'Old Mill Athletic Club LLC', Loss_History.pdf says 'Old Mill Distribution Inc.')"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0077",
+   "template": "B",
+   "f1": 0.9945,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: Property_Schedule.xlsx says 1490000.0, Signed_App.pdf says 1340000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0078",
+   "template": "B",
+   "f1": 0.9928,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0079",
+   "template": "B",
+   "f1": 0.9968,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0080",
+   "template": "B",
+   "f1": 0.9904,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [
+    "broker.producer_email: conflict (broker.producer_email: doc23275.pdf says 'nina:alvarez@brightlineins.com', email.txt says 'nina.alvarez@brightlineins.com' (kept the form_parser value per source-of-truth rules))",
+    "locations[2].year_built: conflict (locations[2].year_built: Attachment_51271.xlsx says 2004, doc23275.pdf says 2015 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  }
+ ]
+}

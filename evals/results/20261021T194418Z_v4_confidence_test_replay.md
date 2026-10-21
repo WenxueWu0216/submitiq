@@ -1,6 +1,6 @@
-# Eval: `v3_consistency` on `test` (40 submissions)
+# Eval: `v4_confidence` on `test` (40 submissions)
 
-backend `replay` · model `claude-opus-5-5` · git `a8db849` · 20261021T193711Z
+backend `replay` · model `claude-opus-5-5` · git `96cec24` · 20261021T194418Z
 LLM calls by source: {'replay:miss': 121}
 LLM calls by task: {'appetite_decision': 40, 'extract_application': 40, 'extract_email': 40, 'extract_sov': 1}
 > 121 LLM calls had no replay fixture and **abstained** (returned nothing). These numbers measure the non-LLM components only.
@@ -14,15 +14,15 @@ LLM calls by task: {'appetite_decision': 40, 'extract_application': 40, 'extract
 | **decision accuracy** | **0.0** |
 | decisions abstained | 40 |
 | declines predicted as accept | 0 |
-| review-queue rate | 25.0 |
+| review-queue rate | 57.5 |
 | degraded (model unavailable) | 100.0 |
-| silent critical-error rate | 27.5 |
+| silent critical-error rate | 0.0 |
 | wrong values stated / flagged | 2 / 50.0 |
-| flag recall of all field errors (incl. blanks) | 0.2 |
-| flag precision | 9.1 |
+| flag recall of all field errors (incl. blanks) | 8.0 |
+| flag precision | 49.2 |
 | conflict detection P / R | 90.9 / 50.0 |
 | document classification acc. | 100.0 |
-| latency p50 / p95 (ms, pipeline) | 175 / 8618 |
+| latency p50 / p95 (ms, pipeline) | 202 / 8618 |
 | LLM latency, recorded (ms/sub) | 0 |
 | cost per submission (USD) | 0.0000 |
 | est. prompt tokens / submission | 7459 |

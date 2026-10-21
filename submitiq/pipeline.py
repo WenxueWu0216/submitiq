@@ -7,6 +7,7 @@
     v3a_consistency_raw   + cross-document consistency checks, exact matching
     v3_consistency        + entity normalization and full value normalization
     v4_confidence         + field confidence, validation and review routing
+    v5_rules              + deterministic appetite rules engine + cited triage summary  (= final)
 """
 from __future__ import annotations
 
@@ -32,7 +33,9 @@ from .fields import flatten
 from .llm import LLMClient, get_client
 from .llm.base import call_record
 from .result import PipelineResult
+from .rules_engine import RulesEngine
 from .schema import Submission
+from .summary import summarize
 
 
 @dataclass(frozen=True)
@@ -44,7 +47,8 @@ class PipelineConfig:
     normalization: str = "basic"        # basic | full (4c)
     consistency: bool = False           # 4c: cross-document checks
     confidence: bool = False            # 4d: confidence scoring + routing
-    decision: str = "llm"               # llm | rules
+    decision: str = "llm"               # llm | rules (Stage 5)
+    summary: bool = False               # Stage 5: triage summary
 
 
 VARIANTS: dict[str, PipelineConfig] = {
@@ -56,6 +60,8 @@ VARIANTS: dict[str, PipelineConfig] = {
                                      normalization="full"),
     "v4_confidence": PipelineConfig("v4_confidence", extraction="per_doc", tables=True, consistency=True,
                                     normalization="full", confidence=True),
+    "v5_rules": PipelineConfig("v5_rules", extraction="per_doc", tables=True, consistency=True,
+                               normalization="full", confidence=True, decision="rules", summary=True),
 }
 ORDER = list(VARIANTS)
 VARIANTS["final"] = PipelineConfig(**{**asdict(VARIANTS[ORDER[-1]]), "name": "final"})
@@ -123,9 +129,20 @@ class Pipeline:
             res.llm_calls.append(call_record(req, resp))
             if outcome:
                 res.decision.outcome, res.decision.source = outcome, "llm"  # type: ignore[assignment]
+        elif self.cfg.decision == "rules":
+            res.decision = RulesEngine().evaluate(res.record, res.provenance)
         if res.decision.outcome is None:
             res.degraded_reasons.append("no appetite decision (model unavailable)")
         res.timings_ms["decision"] = (time.perf_counter() - t0) * 1000
+
+        if self.cfg.summary:
+            t0 = time.perf_counter()
+            req, resp, text, source, valid = summarize(res.record, res.decision, res.provenance, self.llm)
+            res.llm_calls.append(call_record(req, resp))
+            res.summary, res.summary_source, res.summary_citations_valid = text, source, valid
+            if not resp.ok:
+                res.degraded_reasons.append("narrative summary model unavailable; template summary used")
+            res.timings_ms["summary"] = (time.perf_counter() - t0) * 1000
 
         # Wall-clock of everything except OCR, which is reported at its originally measured cost.
         res.timings_ms["other"] = max(0.0, (time.perf_counter() - t_start) * 1000 - sum(res.timings_ms.values()))
