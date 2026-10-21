@@ -49,6 +49,15 @@ class RecordingClient:
         self.root = root
 
     def complete(self, req: LLMRequest) -> LLMResponse:
+        # Re-use an existing answer for the same (task, prompt version, inputs): variants that share
+        # a call (e.g. extract_application in v2..v5) pay for it once.
+        path = fixture_path(self.root, req)
+        if path.exists():
+            data = json.loads(path.read_text())
+            if data.get("source") == "recorded":
+                resp = LLMResponse.model_validate(data["response"])
+                resp.source = "replay:recorded"
+                return resp
         resp = self.inner.complete(req)
         if resp.ok:
             path = fixture_path(self.root, req)

@@ -304,3 +304,25 @@ every summary is the template version.
 
 After the fixes, all 120 pass. I kept the validator strict. Loosening it to make the template pass would also have
 let an LLM narrative with an invented number through.
+
+---
+
+## Where things stand (end of build)
+
+Full offline table for every variant on both splits: `evals/results/experiments_replay.md` (regenerate with `make eval-all`).
+CI reference (`evals/baseline.json`, final pipeline on all 120): field F1 98.21, decision accuracy 95.83.
+
+**Measured offline (real numbers, deterministic components only):** everything above.
+
+**Hand-written, not model output:** two replay fixtures for the demo package SUB-0003 (`extract_email`,
+`summary`), stored with `"source": "hand_written"`. They touch one dev submission: one extra email field, and the
+narrative replaces the template summary. Every eval report lists LLM calls by source, so they stay visible.
+
+**PENDING (needs a live model, one command, see README):**
+* baseline (single Claude call) on dev/test: the comparison point for everything else;
+* the final pipeline with Claude: template-C recovery, email-only fields (`quote_needed_by`), email-vs-application
+  date conflicts, LLM-vs-parser agreement as a confidence signal, narrative summary citation validity;
+* real token usage, latency and cost per submission (the deploy cost table then switches from estimate to measured);
+* model comparison (Opus 5.5 vs Sonnet 5.5 vs Haiku 5.5) per document type.
+
+When those runs land, I'll add an entry here with before → after for each, including what broke.

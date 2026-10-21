@@ -9,11 +9,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 140.4,
+  "p50 ms": 125.8,
   "llm sources": {
    "replay:miss": 80
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "baseline",
@@ -25,11 +25,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 182.4,
+  "p50 ms": 167.0,
   "llm sources": {
    "replay:miss": 40
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v1_tables",
@@ -41,11 +41,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 222.0,
+  "p50 ms": 164.4,
   "llm sources": {
    "replay:miss": 80
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v1_tables",
@@ -57,11 +57,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 204.2,
+  "p50 ms": 172.5,
   "llm sources": {
    "replay:miss": 40
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v2_tooluse",
@@ -73,11 +73,12 @@
   "silent crit. err.": 0.4,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 235.0,
+  "p50 ms": 196.4,
   "llm sources": {
-   "replay:miss": 253
+   "replay:hand_written": 1,
+   "replay:miss": 252
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v2_tooluse",
@@ -89,11 +90,11 @@
   "silent crit. err.": 0.675,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 192.9,
+  "p50 ms": 188.5,
   "llm sources": {
    "replay:miss": 128
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v3a_consistency_raw",
@@ -105,11 +106,12 @@
   "silent crit. err.": 0.0375,
   "conflict F1": 0.4025,
   "usd/sub": 0.0,
-  "p50 ms": 225.9,
+  "p50 ms": 192.2,
   "llm sources": {
-   "replay:miss": 253
+   "replay:hand_written": 1,
+   "replay:miss": 252
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v3a_consistency_raw",
@@ -121,11 +123,11 @@
   "silent crit. err.": 0.25,
   "conflict F1": 0.3051,
   "usd/sub": 0.0,
-  "p50 ms": 213.6,
+  "p50 ms": 185.8,
   "llm sources": {
    "replay:miss": 128
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v3_consistency",
@@ -137,11 +139,12 @@
   "silent crit. err.": 0.0125,
   "conflict F1": 0.8533,
   "usd/sub": 0.0,
-  "p50 ms": 195.2,
+  "p50 ms": 191.0,
   "llm sources": {
-   "replay:miss": 242
+   "replay:hand_written": 1,
+   "replay:miss": 241
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v3_consistency",
@@ -153,11 +156,11 @@
   "silent crit. err.": 0.275,
   "conflict F1": 0.6452,
   "usd/sub": 0.0,
-  "p50 ms": 165.4,
+  "p50 ms": 204.8,
   "llm sources": {
    "replay:miss": 121
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v4_confidence",
@@ -169,11 +172,12 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.8533,
   "usd/sub": 0.0,
-  "p50 ms": 195.8,
+  "p50 ms": 185.6,
   "llm sources": {
-   "replay:miss": 242
+   "replay:hand_written": 1,
+   "replay:miss": 241
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v4_confidence",
@@ -185,11 +189,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.6452,
   "usd/sub": 0.0,
-  "p50 ms": 201.9,
+  "p50 ms": 214.3,
   "llm sources": {
    "replay:miss": 121
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v5_rules",
@@ -201,11 +205,12 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.8533,
   "usd/sub": 0.0,
-  "p50 ms": 196.1,
+  "p50 ms": 195.4,
   "llm sources": {
-   "replay:miss": 242
+   "replay:hand_written": 2,
+   "replay:miss": 240
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  },
  {
   "pipeline": "v5_rules",
@@ -217,10 +222,10 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.6452,
   "usd/sub": 0.0,
-  "p50 ms": 187.8,
+  "p50 ms": 194.1,
   "llm sources": {
    "replay:miss": 121
   },
-  "git": "96cec24"
+  "git": "e384c5f"
  }
 ]

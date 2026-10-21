@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "71020c694982c8acc467794aec34d597c333038cff3a78ea01f84f19fd9fa71f",
+ "source": "hand_written",
+ "recorded_at": "2026-10-21T19:56:12.509330+00:00",
+ "note": "Hand-written for the offline demo by reading the document. NOT real model output.",
+ "response": {
+  "text": "**Recommendation:** DECLINE under the appetite rules. One field still needs human review before the file is closed.\n\n**Why**\n- Location 2 in Charleston [locations[2].city] is frame construction [locations[2].construction] in tier-1 hurricane ZIP 29403 [locations[2].zip], which the guidelines decline outright.\n- Location 1's roof dates from 1998 [locations[1].roof_year], 29 years old at the 2027-01-01 inception [policy.effective_date] (refer).\n- Location 6 is unsprinklered [locations[6].sprinklered] with a TIV of $11,345,000 [locations[6].tiv] (refer).\n\n**Account**\n- Summit Crest Precision Machining LLC [insured.named_insured]: CNC machining of metal parts [insured.business_description], NAICS 332710 [insured.naics_code].\n- 10 locations [totals.location_count], total TIV $56.75M [totals.total_tiv]. Broker Laura Thompson [broker.producer_name] of Atlas & Reed Insurance Services [broker.agency_name]; quote needed by 2026-12-25 [policy.quote_needed_by].\n\n**Loss history**\n- One closed [claims[CL2600242].status] Wind/Hail claim of $174,240 [claims[CL2600242].incurred] on 2024-07-25 [claims[CL2600242].date_of_loss]. Five-year incurred $174,240 [totals.five_year_incurred] against $580,260 earned premium [totals.five_year_premium]: a 30% loss ratio.\n\n**Needs attention**\n- Total TIV conflict: the SOV total [totals.total_tiv] is higher than the figure on the signed application. The SOV value is used. Ask the broker which schedule is current.",
+  "tool_input": null,
+  "model": "hand-written",
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "latency_ms": 0.0,
+  "stop_reason": "end_turn"
+ }
+}
