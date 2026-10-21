@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}SubmitIQ{% endblock %}</title>
+<script src="https://unpkg.com/htmx.org@1.9.12"></script>
+<style>
+  :root { --bg:#f6f7f9; --card:#fff; --ink:#1d2430; --muted:#5d6878; --line:#e3e6eb; --accent:#2f5bd3;
+          --ok:#1f7a4d; --warn:#a8650b; --bad:#b42318; --chip:#eef1f6; }
+  * { box-sizing:border-box; }
+  body { margin:0; font:14px/1.45 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background:var(--bg); color:var(--ink); }
+  header { background:#15213a; color:#fff; padding:12px 24px; display:flex; gap:16px; align-items:baseline; }
+  header a { color:#fff; text-decoration:none; font-weight:600; font-size:16px; }
+  header span { color:#b8c3d9; font-size:12px; }
+  main { max-width:1280px; margin:0 auto; padding:20px 16px 60px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:8px; padding:16px 18px; margin-bottom:16px; }
+  table { width:100%; border-collapse:collapse; }
+  th, td { text-align:left; padding:7px 8px; border-bottom:1px solid var(--line); vertical-align:top; }
+  th { font-size:12px; color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.03em; }
+  .chip { display:inline-block; padding:1px 8px; border-radius:10px; font-size:12px; background:var(--chip); white-space:nowrap; }
+  .accept { background:#e3f4ea; color:var(--ok); } .refer { background:#fdf0dc; color:var(--warn); } .decline { background:#fde7e5; color:var(--bad); }
+  .st-ok { color:var(--ok); } .st-low_confidence { color:var(--warn); } .st-conflict, .st-invalid, .st-missing { color:var(--bad); font-weight:600; }
+  tr.flag { background:#fffaf0; } tr.flag.crit { background:#fff3f1; }
+  .bar { height:6px; background:var(--line); border-radius:3px; width:70px; display:inline-block; vertical-align:middle; }
+  .bar i { display:block; height:6px; border-radius:3px; }
+  .snip { font-family: ui-monospace, Menlo, Consolas, monospace; font-size:12px; color:#33415c; background:#f3f5f9; padding:2px 5px; border-radius:4px; }
+  .muted { color:var(--muted); font-size:12px; }
+  input[type=text] { width:100%; padding:4px 6px; border:1px solid var(--line); border-radius:4px; font:inherit; }
+  button { font:inherit; padding:5px 12px; border-radius:5px; border:1px solid var(--accent); background:var(--accent); color:#fff; cursor:pointer; }
+  button.ghost { background:#fff; color:var(--accent); }
+  .grid { display:grid; grid-template-columns: 1fr 1fr; gap:16px; }
+  @media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .hide-sm { display:none; } }
+  a.cite { font-family: ui-monospace, Menlo, monospace; font-size:11px; background:#eef2ff; color:var(--accent); padding:0 4px; border-radius:3px; text-decoration:none; }
+  .summary h3 { margin:.2em 0 .6em; } .summary li { margin-left:18px; } .summary p { margin:.35em 0; }
+  .err { color:var(--bad); }
+</style>
+</head>
+<body>
+<header><a href="/">SubmitIQ</a><span>commercial property submission intake · review queue</span></header>
+<main>{% block body %}{% endblock %}</main>
+</body>
+</html>

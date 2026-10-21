@@ -1,0 +1,22 @@
+<tr id="f-{{ r.path }}" class="{% if r.status != 'ok' %}flag{% endif %}{% if r.critical %} crit{% endif %}">
+  <td><code>{{ r.path }}</code>{% if r.critical %} <span class="chip">critical</span>{% endif %}</td>
+  <td style="min-width:200px">
+    <form hx-post="/ui/submissions/{{ row.id }}/fields" hx-target="closest tr" hx-swap="outerHTML" style="display:flex; gap:4px">
+      <input type="hidden" name="path" value="{{ r.path }}">
+      <input type="text" name="value" value="{{ r.value }}" aria-label="value for {{ r.path }}">
+      <button class="ghost" type="submit" title="Save correction">Save</button>
+    </form>
+  </td>
+  <td>
+    {% if r.confidence is not none %}
+    <span class="bar"><i style="width:{{ (r.confidence * 100)|round }}%; background:{% if r.confidence >= 0.8 %}var(--ok){% elif r.confidence >= 0.5 %}var(--warn){% else %}var(--bad){% endif %}"></i></span>
+    {{ '%.2f'|format(r.confidence) }}{% else %}–{% endif %}
+  </td>
+  <td class="st-{{ r.status }}">{{ r.status.replace('_', ' ') }}
+    {% for why in r.reasons[-2:] %}<div class="muted">{{ why }}</div>{% endfor %}
+  </td>
+  <td class="hide-sm">{% if r.doc %}<a href="/submissions/{{ row.id }}/documents/{{ r.doc }}" target="_blank">{{ r.doc }}</a>{% if r.page %} p.{{ r.page }}{% endif %}{% endif %}
+    <div class="muted">{{ r.extractor or '' }}</div></td>
+  <td class="hide-sm">{% if r.snippet %}<span class="snip">{{ r.snippet }}</span>{% endif %}
+    {% for v, d, e in r.alternatives %}<div class="muted">alt: {{ v }} ({{ d }})</div>{% endfor %}</td>
+</tr>

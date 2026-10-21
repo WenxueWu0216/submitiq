@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block title %}{{ row.id }} · SubmitIQ{% endblock %}
+{% block body %}
+<p><a href="/">← queue</a></p>
+<div class="grid">
+  <div class="card">
+    <h2 style="margin:0">{{ res.record.insured.named_insured or row.id }}</h2>
+    <p class="muted">{{ row.id }} · status <strong>{{ row.status.replace('_',' ') }}</strong>{% if row.reviewed_by %} · reviewed by {{ row.reviewed_by }}{% endif %}</p>
+    <p>Recommendation: {% if res.decision.outcome %}<span class="chip {{ res.decision.outcome }}">{{ res.decision.outcome }}</span>{% endif %}
+       <span class="muted">({{ res.decision.source }})</span></p>
+    <ul>{% for h in res.decision.reasons %}<li><strong>{{ h.rule_id }}</strong> ({{ h.outcome }}): {{ h.message }}</li>{% else %}<li>No appetite rule triggered.</li>{% endfor %}</ul>
+    {% if res.degraded_reasons %}<p class="muted">Degraded: {{ res.degraded_reasons|join('; ') }}</p>{% endif %}
+    <p class="muted">Documents: {% for name, t in docs %}<a href="/submissions/{{ row.id }}/documents/{{ name }}" target="_blank">{{ name }}</a> ({{ t }}){% if not loop.last %}, {% endif %}{% endfor %}</p>
+    <form method="post" action="/ui/submissions/{{ row.id }}/approve" style="display:flex; gap:8px; align-items:center">
+      <input type="text" name="reviewer" value="underwriter" style="max-width:180px" aria-label="reviewer">
+      <button type="submit">Approve submission</button>
+      <span class="muted">confirms every remaining flagged value</span>
+    </form>
+  </div>
+  <div class="card summary">
+    {{ summary }}
+    <p class="muted">Summary source: {{ res.summary_source }} · citations valid: {{ res.summary_citations_valid }}</p>
+  </div>
+</div>
+<div class="card">
+  <div style="display:flex; justify-content:space-between; align-items:center">
+    <h3 style="margin:0">Fields <span class="muted">({{ rows|selectattr('status', 'ne', 'ok')|list|length }} flagged of {{ rows|length }})</span></h3>
+    <label class="muted"><input type="checkbox" onchange="document.querySelectorAll('#fields tr.ok-row').forEach(r => r.style.display = this.checked ? 'none' : '')"> show flagged only</label>
+  </div>
+  <table id="fields">
+    <tr><th>Field</th><th>Value</th><th>Confidence</th><th>Status</th><th class="hide-sm">Source</th><th class="hide-sm">Evidence</th></tr>
+    {% for r in rows %}{% include "_row.html" %}{% endfor %}
+  </table>
+</div>
+<script>document.querySelectorAll('#fields tr[id]').forEach(r => { if (!r.classList.contains('flag')) r.classList.add('ok-row'); });</script>
+{% endblock %}

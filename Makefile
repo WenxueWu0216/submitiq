@@ -5,7 +5,7 @@ PIPELINE ?= final
 SPLIT ?= test
 BACKEND ?= replay
 
-.PHONY: setup data test eval eval-dev eval-all gate demo serve synth eval-live clean
+.PHONY: setup data test eval eval-dev eval-all gate demo seed serve synth eval-live export-reviewed clean
 
 setup:
 	python3 -m venv $(VENV)
@@ -35,6 +35,12 @@ gate:            ## what CI runs: eval on all 120 and compare with evals/baselin
 
 demo:            ## run one submission end-to-end and print the triage summary
 	$(PY) -m submitiq.demo
+
+seed:            ## load 12 demo packages into the service database
+	$(PY) scripts/seed_demo.py
+
+export-reviewed: ## approved reviews -> data/reviewed/ eval cases (then: make eval SPLIT=reviewed)
+	$(PY) scripts/export_corrections.py
 
 serve:           ## review UI on http://localhost:8000
 	$(PY) -m uvicorn service.app:app --reload --port 8000
