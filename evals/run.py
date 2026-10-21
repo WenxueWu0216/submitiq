@@ -80,7 +80,7 @@ def main(argv: list[str] | None = None) -> dict:
     ap.add_argument("--backend", default=os.environ.get("SUBMITIQ_BACKEND", "replay"),
                     choices=["replay", "anthropic", "bedrock"])
     ap.add_argument("--limit", type=int, default=None)
-    ap.add_argument("--workers", type=int, default=min(8, os.cpu_count() or 2))
+    ap.add_argument("--workers", type=int, default=os.cpu_count() or 2)
     ap.add_argument("--out", default=str(RESULTS))
     ap.add_argument("--tag", default="")
     ap.add_argument("--quiet", action="store_true")

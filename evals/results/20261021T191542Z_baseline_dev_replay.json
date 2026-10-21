@@ -1,13 +1,13 @@
 {
  "meta": {
-  "pipeline": "null",
+  "pipeline": "baseline",
   "split": "dev",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T185751Z",
-  "git_sha": "1fe71ae",
+  "timestamp": "20261021T191542Z",
+  "git_sha": "05f4b45",
   "n": 80,
-  "wall_seconds": 0.0,
+  "wall_seconds": 2.2,
   "model": "claude-opus-5-5",
   "replay_miss_policy": "abstain"
  },
@@ -688,9 +688,9 @@
    }
   },
   "review": {
-   "review_rate": 0.0,
+   "review_rate": 1.0,
    "submissions_with_critical_error": 80,
-   "silent_critical_error_rate": 1.0,
+   "silent_critical_error_rate": 0.0,
    "flag_precision": 0.0,
    "flag_recall_of_errors": 0.0,
    "flagged_fields_per_submission": 0.0
@@ -704,20 +704,22 @@
    "fn": 39
   },
   "documents": {
-   "classification_accuracy": 0.0
+   "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 0.1,
-   "p50": 0.0,
-   "p95": 0.1,
+   "mean": 1810.6,
+   "p50": 132.3,
+   "p95": 8722.4,
    "llm_recorded_mean": 0.0
   },
   "cost": {
    "usd_per_submission": 0.0,
    "input_tokens_per_submission": 0.0,
    "output_tokens_per_submission": 0.0,
-   "est_prompt_tokens_per_submission": 0.0,
-   "llm_calls_by_source": {}
+   "est_prompt_tokens_per_submission": 4274.8,
+   "llm_calls_by_source": {
+    "replay:miss": 80
+   }
   },
   "summary": {
    "citation_valid_rate": null
@@ -730,7 +732,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -775,7 +777,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -784,7 +788,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -829,7 +833,9 @@
     "insured.naics_code",
     "insured.named_insured"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -838,7 +844,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -883,7 +889,9 @@
     "locations[10].city",
     "locations[10].construction"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -892,7 +900,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -937,7 +945,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -946,7 +956,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -991,7 +1001,9 @@
     "locations[1].city",
     "locations[1].construction"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1000,7 +1012,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1045,7 +1057,9 @@
     "insured.contact_phone",
     "insured.employee_count"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1054,7 +1068,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1099,7 +1113,9 @@
     "insured.contact_phone",
     "insured.employee_count"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1108,7 +1124,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1153,7 +1169,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1162,7 +1180,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1207,7 +1225,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1216,7 +1236,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1261,7 +1281,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1270,7 +1292,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1315,7 +1337,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1324,7 +1348,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1369,7 +1393,9 @@
     "locations[1].sprinkler_pct",
     "locations[1].sprinklered"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1378,7 +1404,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1423,7 +1449,9 @@
     "insured.mailing_address.street",
     "insured.mailing_address.zip"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1432,7 +1460,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1477,7 +1505,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1486,7 +1516,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1531,7 +1561,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1540,7 +1572,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1585,7 +1617,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1594,7 +1628,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1639,7 +1673,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1648,7 +1684,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1693,7 +1729,9 @@
     "claims[BWA202687625].status",
     "claims[CL3251239].cause"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1702,7 +1740,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1747,7 +1785,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1756,7 +1796,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1801,7 +1841,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1810,7 +1852,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1855,7 +1897,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1864,7 +1908,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1909,7 +1953,9 @@
     "insured.contact_phone",
     "insured.employee_count"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1918,7 +1964,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1963,7 +2009,9 @@
     "locations[1].roof_type",
     "locations[1].roof_year"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -1972,7 +2020,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2017,7 +2065,9 @@
     "insured.mailing_address.street",
     "insured.mailing_address.zip"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2026,7 +2076,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2071,7 +2121,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2080,7 +2132,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2125,7 +2177,9 @@
     "insured.contact_phone",
     "insured.dba"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2134,7 +2188,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2179,7 +2233,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2188,7 +2244,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2233,7 +2289,9 @@
     "locations[1].sprinkler_pct",
     "locations[1].sprinklered"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2242,7 +2300,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2287,7 +2345,9 @@
     "insured.contact_phone",
     "insured.employee_count"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2296,7 +2356,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2341,7 +2401,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2350,7 +2412,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2395,7 +2457,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2404,7 +2468,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2449,7 +2513,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2458,7 +2524,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2503,7 +2569,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2512,7 +2580,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2557,7 +2625,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2566,7 +2636,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2611,7 +2681,9 @@
     "insured.contact_phone",
     "insured.employee_count"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2620,7 +2692,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2665,7 +2737,9 @@
     "locations[1].roof_type",
     "locations[1].roof_year"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2674,7 +2748,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2719,7 +2793,9 @@
     "insured.naics_code",
     "insured.named_insured"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2728,7 +2804,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2773,7 +2849,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2782,7 +2860,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2827,7 +2905,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2836,7 +2916,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2881,7 +2961,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2890,7 +2972,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2935,7 +3017,9 @@
     "locations[1].roof_type",
     "locations[1].roof_year"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2944,7 +3028,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2989,7 +3073,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -2998,7 +3084,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3043,7 +3129,9 @@
     "insured.contact_phone",
     "insured.dba"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3052,7 +3140,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3097,7 +3185,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3106,7 +3196,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3151,7 +3241,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3160,7 +3252,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3205,7 +3297,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3214,7 +3308,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3259,7 +3353,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3268,7 +3364,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3313,7 +3409,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3322,7 +3420,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3367,7 +3465,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3376,7 +3476,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3421,7 +3521,9 @@
     "locations[1].city",
     "locations[1].construction"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3430,7 +3532,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3475,7 +3577,9 @@
     "locations[1].sprinkler_pct",
     "locations[1].sprinklered"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3484,7 +3588,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3529,7 +3633,9 @@
     "locations[10].sprinklered",
     "locations[10].square_feet"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3538,7 +3644,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3583,7 +3689,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3592,7 +3700,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3637,7 +3745,9 @@
     "insured.mailing_address.street",
     "insured.mailing_address.zip"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3646,7 +3756,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3691,7 +3801,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3700,7 +3812,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3745,7 +3857,9 @@
     "insured.contact_phone",
     "insured.employee_count"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3754,7 +3868,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3799,7 +3913,9 @@
     "locations[1].sprinklered",
     "locations[1].square_feet"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3808,7 +3924,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3853,7 +3969,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3862,7 +3980,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3907,7 +4025,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3916,7 +4036,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -3961,7 +4081,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -3970,7 +4092,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4015,7 +4137,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4024,7 +4148,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4069,7 +4193,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4078,7 +4204,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4123,7 +4249,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4132,7 +4260,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4177,7 +4305,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4186,7 +4316,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4231,7 +4361,9 @@
     "insured.mailing_address.street",
     "insured.mailing_address.zip"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4240,7 +4372,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4285,7 +4417,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4294,7 +4428,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4339,7 +4473,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4348,7 +4484,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4393,7 +4529,9 @@
     "locations[1].roof_type",
     "locations[1].roof_year"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4402,7 +4540,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4447,7 +4585,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4456,7 +4596,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4501,7 +4641,9 @@
     "locations[1].building_value",
     "locations[1].city"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4510,7 +4652,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4555,7 +4697,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4564,7 +4708,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4609,7 +4753,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4618,7 +4764,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4663,7 +4809,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4672,7 +4820,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4717,7 +4865,9 @@
     "locations[1].roof_year",
     "locations[1].sprinkler_pct"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4726,7 +4876,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4771,7 +4921,9 @@
     "locations[1].sprinkler_pct",
     "locations[1].sprinklered"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4780,7 +4932,7 @@
    "f1": 0.0,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4825,7 +4977,9 @@
     "locations[10].sprinklered",
     "locations[10].square_feet"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4834,7 +4988,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4879,7 +5033,9 @@
     "insured.mailing_address.zip",
     "insured.naics_code"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4888,7 +5044,7 @@
    "f1": 0.0,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4933,7 +5089,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4942,7 +5100,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -4987,7 +5145,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   },
   {
@@ -4996,7 +5156,7 @@
    "f1": 0.0,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -5041,7 +5201,9 @@
     "locations[1].bi_value",
     "locations[1].building_value"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "extraction model returned no usable output (replay miss)"
+   ],
    "errors": []
   }
  ]
