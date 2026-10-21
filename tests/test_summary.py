@@ -43,7 +43,7 @@ def test_good_llm_summary_is_used():
     good = (f"Recommendation: accept. {rec.insured.named_insured} [insured.named_insured], NAICS "
             f"{rec.insured.naics_code} [insured.naics_code], effective {rec.policy.effective_date} [policy.effective_date].")
     _, _, text, source, valid = summarize(rec, d, {}, FakeClient(lambda r: LLMResponse(text=good, model="fake")))
-    assert source == "llm" and valid and text == good
+    assert source.startswith("llm") and valid and text == good
 
 
 def test_final_pipeline_always_decides_and_summarises_offline():

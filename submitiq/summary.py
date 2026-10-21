@@ -72,6 +72,14 @@ def _numbers_in(v: Any) -> set[str]:
     return set(re.findall(r"\d+", str(v)))
 
 
+def _to_number(tok: str) -> float | None:
+    mult = {"M": 1e6, "K": 1e3}.get(tok[-1:], 1.0)
+    try:
+        return float(tok.rstrip("MK%").replace(",", "")) * mult
+    except ValueError:
+        return None
+
+
 def validate_summary(text: str, rec: Submission, allowed_extra: set[str] | None = None) -> tuple[bool, list[str]]:
     values = flatten(rec)
     problems: list[str] = []
@@ -85,11 +93,16 @@ def validate_summary(text: str, rec: Submission, allowed_extra: set[str] | None 
     for p in cited:
         if values.get(p) is not None:
             supported |= _numbers_in(values[p])
+    cited_numbers = [float(values[p]) for p in cited if isinstance(values.get(p), (int, float))
+                     and not isinstance(values.get(p), bool)]
     stripped = CITE.sub("", text)
     for raw in NUM.findall(stripped):
         tok = re.sub(r"[\s$]", "", raw).rstrip(".,")
         if not tok or tok in supported or tok.rstrip("%") in supported or len(tok.replace(",", "").rstrip("%")) <= 2:
             continue
+        x = _to_number(tok)
+        if x is not None and any(abs(x - v) <= 0.005 * max(abs(v), 1.0) for v in cited_numbers):
+            continue  # a rounded rendering of a cited value ("$56.75M" for 56,745,000)
         problems.append(f"number {raw.strip()!r} is not supported by a cited field")
     return not problems, problems
 
@@ -169,7 +182,8 @@ def summarize(rec: Submission, decision: Decision, prov: dict[str, FieldProvenan
     if resp.ok and resp.text:
         ok, _ = validate_summary(resp.text, rec, allowed)
         if ok:
-            return req, resp, resp.text, "llm", True
+            # Label replayed answers: a hand-written fixture must never pass for model output.
+            return req, resp, resp.text, "llm" if resp.source == "live" else f"llm ({resp.source})", True
     text = template_summary(rec, decision, prov)
     ok, _ = validate_summary(text, rec, allowed)
     source = "template (LLM summary failed validation)" if resp.ok and resp.text else "template"

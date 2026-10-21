@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "529f4fe9aa8ff1f23c6184e786e22deef299deeece93a23709cf17a31c7852ac",
+ "source": "hand_written",
+ "recorded_at": "2026-10-21T19:55:43.950364+00:00",
+ "note": "Hand-written for the offline demo by reading the document. NOT real model output.",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "SUMMIT CREST PRECISION MACHINING LLC",
+    "page": null,
+    "evidence": "a new submission for SUMMIT CREST PRECISION MACHINING LLC"
+   },
+   "effective_date": {
+    "value": "2027-01-01",
+    "page": null,
+    "evidence": "with an inception date of 1/1/27"
+   },
+   "quote_needed_by": {
+    "value": "2026-12-25",
+    "page": null,
+    "evidence": "Quote needed by 12/25/2026."
+   },
+   "producer_name": {
+    "value": "Laura Thompson",
+    "page": null,
+    "evidence": "Thanks,\nLaura Thompson"
+   },
+   "producer_email": {
+    "value": "laura.thompson@atlasreed.com",
+    "page": null,
+    "evidence": "laura.thompson@atlasreed.com"
+   },
+   "producer_phone": {
+    "value": "(263) 418-4284",
+    "page": null,
+    "evidence": "(263) 418-4284"
+   },
+   "agency_name": {
+    "value": "Atlas & Reed Insurance Services",
+    "page": null,
+    "evidence": "Atlas & Reed Insurance Services"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "hand-written",
+  "input_tokens": 0,
+  "output_tokens": 0,
+  "latency_ms": 0.0,
+  "stop_reason": "end_turn"
+ }
+}
