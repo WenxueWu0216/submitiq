@@ -1,0 +1,12 @@
+[project]
+name = "submitiq"
+version = "0.1.0"
+description = "Insurance submission intake agent: extraction, appetite rules, triage summary"
+requires-python = ">=3.11"
+
+[tool.setuptools]
+packages = ["submitiq"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

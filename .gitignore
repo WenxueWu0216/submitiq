@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+.cache/
+*.egg-info/
+infra/cdk.out/
+service/*.db
+.env
+evals/results/scratch/
