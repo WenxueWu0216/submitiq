@@ -1,0 +1,147 @@
+{
+  "record": {
+    "submission_id": "SUB-0030",
+    "insured": {
+      "named_insured": "Summit Crest Auto Care LLC",
+      "dba": null,
+      "fein": "35-1433812",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "1531 Maple Parkway",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80205"
+      },
+      "business_description": "General automotive repair and maintenance garage",
+      "naics_code": "811111",
+      "years_in_business": 23,
+      "annual_revenue": 1130000.0,
+      "employee_count": 13,
+      "website": "www.summitcrest.com",
+      "contact_name": "James Johnson",
+      "contact_phone": "(391) 658-7262",
+      "contact_email": "jjohnson@summitcrest.com"
+    },
+    "broker": {
+      "agency_name": "Copperfield Risk Advisors",
+      "producer_name": "Chen Alvarez",
+      "producer_email": "chen.alvarez@copperfieldrisk.com",
+      "producer_phone": "(544) 887-9658"
+    },
+    "policy": {
+      "effective_date": "2027-03-15",
+      "expiration_date": "2028-03-15",
+      "transaction_type": "new",
+      "prior_carrier": "Bridgewater Assurance",
+      "quote_needed_by": "2027-02-28",
+      "submission_received_date": "2027-02-04"
+    },
+    "coverage": {
+      "building_limit": 470000.0,
+      "bpp_limit": 220000.0,
+      "business_income_limit": 85000.0,
+      "deductible": 1000.0,
+      "valuation": "actual_cash_value",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "1531 Maple Parkway",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80205",
+        "occupancy": "Auto Repair",
+        "construction": "masonry_non_combustible",
+        "year_built": 1956,
+        "stories": 5,
+        "square_feet": 2600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "built_up",
+        "roof_year": 2008,
+        "alarm_type": "none",
+        "building_value": 470000.0,
+        "contents_value": 220000.0,
+        "bi_value": 85000.0,
+        "tiv": 775000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL2739304",
+        "policy_year": 2026,
+        "date_of_loss": "2026-10-03",
+        "cause": "Theft/Burglary",
+        "status": "open",
+        "paid": 1260.0,
+        "reserve": 1060.0,
+        "incurred": 2320.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 1660.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 1720.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 1770.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 1830.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 1890.0,
+        "claim_count": 1,
+        "total_incurred": 2320.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 775000.0,
+      "location_count": 1,
+      "five_year_incurred": 2320.0,
+      "five_year_premium": 8870.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "file99567.pdf": "application",
+      "file87494.pdf": "loss_run",
+      "IMG_55392.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "rotated:application",
+      "scanned:application"
+    ]
+  }
+}

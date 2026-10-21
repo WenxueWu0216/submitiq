@@ -1,0 +1,157 @@
+{
+  "record": {
+    "submission_id": "SUB-0104",
+    "insured": {
+      "named_insured": "Blue Ridge Tool & Die Inc.",
+      "dba": null,
+      "fein": "31-4573472",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "6478 Mill Lane",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95824"
+      },
+      "business_description": "CNC machining of metal parts for industrial customers",
+      "naics_code": "332710",
+      "years_in_business": 33,
+      "annual_revenue": 5810000.0,
+      "employee_count": null,
+      "website": "www.blueridge.com",
+      "contact_name": "Mei Levine",
+      "contact_phone": "(722) 745-9307",
+      "contact_email": "mlevine@blueridge.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Laura O'Brien",
+      "producer_email": "laura.obrien@atlasreed.com",
+      "producer_phone": "(223) 759-3465"
+    },
+    "policy": {
+      "effective_date": "2027-01-01",
+      "expiration_date": "2028-01-01",
+      "transaction_type": "new",
+      "prior_carrier": "Continental Mutual Insurance Co.",
+      "quote_needed_by": "2026-12-22",
+      "submission_received_date": "2026-11-17"
+    },
+    "coverage": {
+      "building_limit": 3650000.0,
+      "bpp_limit": 570000.0,
+      "business_income_limit": 515000.0,
+      "deductible": 2500.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "broad",
+      "flood_requested": false,
+      "earthquake_requested": true
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6478 Mill Lane",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95824",
+        "occupancy": "Machine Shop",
+        "construction": "joisted_masonry",
+        "year_built": 1995,
+        "stories": 1,
+        "square_feet": 16000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2014,
+        "alarm_type": "none",
+        "building_value": 3650000.0,
+        "contents_value": 570000.0,
+        "bi_value": 515000.0,
+        "tiv": 4735000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CMI-2022-65517",
+        "policy_year": 2022,
+        "date_of_loss": "2022-06-20",
+        "cause": "Lightning",
+        "status": "closed",
+        "paid": 9050.0,
+        "reserve": 0.0,
+        "incurred": 9050.0
+      },
+      {
+        "claim_number": "CL1471273",
+        "policy_year": 2025,
+        "date_of_loss": "2025-05-28",
+        "cause": "Roof Leak",
+        "status": "closed",
+        "paid": 7120.0,
+        "reserve": 0.0,
+        "incurred": 7120.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 11690.0,
+        "claim_count": 1,
+        "total_incurred": 9050.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 12090.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 12490.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 12880.0,
+        "claim_count": 1,
+        "total_incurred": 7120.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 13280.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 4735000.0,
+      "location_count": 1,
+      "five_year_incurred": 16170.0,
+      "five_year_premium": 62430.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "C",
+    "doc_types": {
+      "email.txt": "email",
+      "scan57296.pdf": "application",
+      "file17322.pdf": "loss_run",
+      "IMG_35137.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "messy_formats",
+      "missing:insured.employee_count"
+    ]
+  }
+}

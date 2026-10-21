@@ -1,0 +1,148 @@
+{
+  "record": {
+    "submission_id": "SUB-0015",
+    "insured": {
+      "named_insured": "Blue Ridge Properties Inc.",
+      "dba": "Blue Office",
+      "fein": "35-4871980",
+      "entity_type": "nonprofit",
+      "mailing_address": {
+        "street": "PO Box 2702",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60617"
+      },
+      "business_description": "Owns and leases multi-tenant office buildings",
+      "naics_code": "531120",
+      "years_in_business": 52,
+      "annual_revenue": 11260000.0,
+      "employee_count": 179,
+      "website": "www.blueridge.com",
+      "contact_name": "Aisha Okafor",
+      "contact_phone": "(759) 887-6149",
+      "contact_email": "aokafor@blueridge.com"
+    },
+    "broker": {
+      "agency_name": "Tidewater Risk Partners",
+      "producer_name": "Kevin Reyes",
+      "producer_email": "kevin.reyes@tidewaterrisk.com",
+      "producer_phone": "(854) 250-9639"
+    },
+    "policy": {
+      "effective_date": "2027-02-01",
+      "expiration_date": "2028-02-01",
+      "transaction_type": "new",
+      "prior_carrier": "Continental Mutual Insurance Co.",
+      "quote_needed_by": "2027-01-12",
+      "submission_received_date": "2026-12-14"
+    },
+    "coverage": {
+      "building_limit": 7170000.0,
+      "bpp_limit": 1955000.0,
+      "business_income_limit": 670000.0,
+      "deductible": 5000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6980 Commerce Boulevard",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60617",
+        "occupancy": "Office",
+        "construction": "frame",
+        "year_built": 2012,
+        "stories": 2,
+        "square_feet": 40800,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "built_up",
+        "roof_year": 2016,
+        "alarm_type": "local",
+        "building_value": 7170000.0,
+        "contents_value": 1955000.0,
+        "bi_value": 670000.0,
+        "tiv": 9795000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "25C780542",
+        "policy_year": 2025,
+        "date_of_loss": "2025-12-03",
+        "cause": "Lightning",
+        "status": "closed",
+        "paid": 7630.0,
+        "reserve": 0.0,
+        "incurred": 7630.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 12620.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 13050.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 13480.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 13910.0,
+        "claim_count": 1,
+        "total_incurred": 7630.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 14340.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 9795000.0,
+      "location_count": 1,
+      "five_year_incurred": 7630.0,
+      "five_year_premium": 67400.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "Signed_App.pdf": "application",
+      "loss_run.pdf": "loss_run",
+      "LossRuns_2.pdf": "loss_run",
+      "SOV.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "messy_formats",
+      "scanned:sov"
+    ]
+  }
+}

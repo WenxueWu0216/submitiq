@@ -1,0 +1,164 @@
+{
+  "record": {
+    "submission_id": "SUB-0099",
+    "insured": {
+      "named_insured": "Evergreen Sports Center LLC",
+      "dba": "Evergreen Fitness Center",
+      "fein": "84-7085801",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "1978 Harbor Way",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02130"
+      },
+      "business_description": "Fitness center with weights, classes and locker rooms",
+      "naics_code": "713940",
+      "years_in_business": 22,
+      "annual_revenue": 8890000.0,
+      "employee_count": 83,
+      "website": "www.evergreensports.com",
+      "contact_name": "David Yamamoto",
+      "contact_phone": "(837) 962-9256",
+      "contact_email": "dyamamoto@evergreensports.com"
+    },
+    "broker": {
+      "agency_name": "Northstar Commercial Brokerage",
+      "producer_name": "Kevin Reyes",
+      "producer_email": "kevin.reyes@northstarcb.com",
+      "producer_phone": "(402) 325-9738"
+    },
+    "policy": {
+      "effective_date": "2026-11-01",
+      "expiration_date": "2027-11-01",
+      "transaction_type": "renewal",
+      "prior_carrier": "Sterling National Insurance",
+      "quote_needed_by": "2026-10-11",
+      "submission_received_date": "2026-09-26"
+    },
+    "coverage": {
+      "building_limit": 5995000.0,
+      "bpp_limit": 1945000.0,
+      "business_income_limit": 1440000.0,
+      "deductible": 1000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "1978 Harbor Way",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02130",
+        "occupancy": "Fitness Center",
+        "construction": "modified_fire_resistive",
+        "year_built": 1988,
+        "stories": 3,
+        "square_feet": 33300,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "metal",
+        "roof_year": 2008,
+        "alarm_type": "central_station",
+        "building_value": 5995000.0,
+        "contents_value": 1945000.0,
+        "bi_value": 1440000.0,
+        "tiv": 9380000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "22S667191",
+        "policy_year": 2021,
+        "date_of_loss": "2022-06-27",
+        "cause": "Smoke",
+        "status": "closed",
+        "paid": 800.0,
+        "reserve": 0.0,
+        "incurred": 800.0
+      },
+      {
+        "claim_number": "SNI-2026-32006",
+        "policy_year": 2025,
+        "date_of_loss": "2026-06-18",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 290000.0,
+        "reserve": 0.0,
+        "incurred": 290000.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 21350.0,
+        "claim_count": 1,
+        "total_incurred": 800.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 22080.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 22810.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 23540.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 24260.0,
+        "claim_count": 1,
+        "total_incurred": 290000.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 9380000.0,
+      "location_count": 1,
+      "five_year_incurred": 290800.0,
+      "five_year_premium": 114040.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "doc56976.pdf": "application",
+      "IMG_21232.pdf": "loss_run",
+      "scan83894.pdf": "sov"
+    },
+    "expected_conflicts": [
+      "locations[1].year_built",
+      "totals.total_tiv"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "LARGE_LOSS",
+      "LOSS_RATIO"
+    ],
+    "mess": [
+      "tiv_conflict",
+      "trigger:large_loss",
+      "year_built_conflict"
+    ]
+  }
+}

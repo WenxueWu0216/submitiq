@@ -1,0 +1,238 @@
+{
+  "record": {
+    "submission_id": "SUB-0110",
+    "insured": {
+      "named_insured": "Copper Hill Machine Works Corporation",
+      "dba": "Copper Machine Shop",
+      "fein": "88-3107350",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "PO Box 3975",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64122"
+      },
+      "business_description": "CNC machining of metal parts for industrial customers",
+      "naics_code": "332710",
+      "years_in_business": 32,
+      "annual_revenue": 35670000.0,
+      "employee_count": 56,
+      "website": "www.copperhill.com",
+      "contact_name": "Sarah Reyes",
+      "contact_phone": "(550) 696-5200",
+      "contact_email": "sreyes@copperhill.com"
+    },
+    "broker": {
+      "agency_name": "Brightline Insurance Partners",
+      "producer_name": "Brian Reyes",
+      "producer_email": "brian.reyes@brightlineins.com",
+      "producer_phone": "(433) 480-9888"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": "Harborline Indemnity Company",
+      "quote_needed_by": "2026-11-24",
+      "submission_received_date": "2026-10-24"
+    },
+    "coverage": {
+      "building_limit": 21585000.0,
+      "bpp_limit": 8030000.0,
+      "business_income_limit": 1455000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "9664 Maple Road",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64122",
+        "occupancy": "Machine Shop",
+        "construction": "joisted_masonry",
+        "year_built": 1961,
+        "stories": 3,
+        "square_feet": 13800,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": "tile",
+        "roof_year": 2023,
+        "alarm_type": "local",
+        "building_value": 3585000.0,
+        "contents_value": 925000.0,
+        "bi_value": 380000.0,
+        "tiv": 4890000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "3483 Lincoln Street",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55449",
+        "occupancy": "Machine Shop",
+        "construction": "joisted_masonry",
+        "year_built": 1991,
+        "stories": 3,
+        "square_feet": 25200,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "tile",
+        "roof_year": 2010,
+        "alarm_type": "central_station",
+        "building_value": 6215000.0,
+        "contents_value": 2120000.0,
+        "bi_value": 475000.0,
+        "tiv": 8810000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "9199 Market Drive",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68178",
+        "occupancy": "Machine Shop",
+        "construction": "frame",
+        "year_built": 2013,
+        "stories": 1,
+        "square_feet": 3900,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "built_up",
+        "roof_year": 2021,
+        "alarm_type": "local",
+        "building_value": 700000.0,
+        "contents_value": 390000.0,
+        "bi_value": 25000.0,
+        "tiv": 1115000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "5103 Market Road",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75256",
+        "occupancy": "Machine Shop",
+        "construction": "non_combustible",
+        "year_built": 2017,
+        "stories": 3,
+        "square_feet": 25600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": null,
+        "roof_year": 2020,
+        "alarm_type": null,
+        "building_value": 4330000.0,
+        "contents_value": 1435000.0,
+        "bi_value": 375000.0,
+        "tiv": 6140000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "3744 Airport Boulevard",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84111",
+        "occupancy": "Machine Shop",
+        "construction": "masonry_non_combustible",
+        "year_built": 2009,
+        "stories": 5,
+        "square_feet": 37500,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 7,
+        "roof_type": null,
+        "roof_year": 2017,
+        "alarm_type": null,
+        "building_value": 6755000.0,
+        "contents_value": 3160000.0,
+        "bi_value": 200000.0,
+        "tiv": 10115000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL9353546",
+        "policy_year": 2022,
+        "date_of_loss": "2023-04-07",
+        "cause": "Wind/Hail",
+        "status": "closed",
+        "paid": 90630.0,
+        "reserve": 0.0,
+        "incurred": 90630.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 79930.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 82660.0,
+        "claim_count": 1,
+        "total_incurred": 90630.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 85380.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 88110.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 90830.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 31070000.0,
+      "location_count": 5,
+      "five_year_incurred": 90630.0,
+      "five_year_premium": 426910.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "Signed_App.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "loss_run_2.pdf": "loss_run",
+      "statement_of_values.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "locations[2].year_built"
+    ],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "messy_formats",
+      "year_built_conflict"
+    ]
+  }
+}

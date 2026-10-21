@@ -1,0 +1,208 @@
+{
+  "record": {
+    "submission_id": "SUB-0105",
+    "insured": {
+      "named_insured": "Evergreen Sports Center L.L.C.",
+      "dba": "Evergreen Fitness Center",
+      "fein": "29-4352719",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "PO Box 7765",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68117"
+      },
+      "business_description": "Fitness center with weights, classes and locker rooms",
+      "naics_code": "713940",
+      "years_in_business": 47,
+      "annual_revenue": 20190000.0,
+      "employee_count": 276,
+      "website": "www.evergreensports.com",
+      "contact_name": "David Novak",
+      "contact_phone": "(386) 287-6687",
+      "contact_email": "dnovak@evergreensports.com"
+    },
+    "broker": {
+      "agency_name": "Copperfield Risk Advisors",
+      "producer_name": "Chen Hughes",
+      "producer_email": "chen.hughes@copperfieldrisk.com",
+      "producer_phone": "(692) 865-4985"
+    },
+    "policy": {
+      "effective_date": "2027-02-01",
+      "expiration_date": "2028-02-01",
+      "transaction_type": "new",
+      "prior_carrier": "Pinecrest Property & Casualty",
+      "quote_needed_by": "2027-01-11",
+      "submission_received_date": "2026-12-20"
+    },
+    "coverage": {
+      "building_limit": 20245000.0,
+      "bpp_limit": 8195000.0,
+      "business_income_limit": 2005000.0,
+      "deductible": 1000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "basic",
+      "flood_requested": true,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "5925 Park Lane",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68117",
+        "occupancy": "Fitness Center",
+        "construction": "frame",
+        "year_built": 1956,
+        "stories": 1,
+        "square_feet": 16600,
+        "sprinklered": true,
+        "sprinkler_pct": 90,
+        "protection_class": 5,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2020,
+        "alarm_type": "central_station",
+        "building_value": 3980000.0,
+        "contents_value": 1100000.0,
+        "bi_value": 825000.0,
+        "tiv": 5905000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "8525 Washington Lane",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15290",
+        "occupancy": "Fitness Center",
+        "construction": "masonry_non_combustible",
+        "year_built": 1967,
+        "stories": 3,
+        "square_feet": 27100,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 2,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2009,
+        "alarm_type": "local",
+        "building_value": 6475000.0,
+        "contents_value": 2895000.0,
+        "bi_value": 340000.0,
+        "tiv": 9710000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "869 Market Street",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28289",
+        "occupancy": "Fitness Center",
+        "construction": "masonry_non_combustible",
+        "year_built": 1994,
+        "stories": 4,
+        "square_feet": 41400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 6,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2026,
+        "alarm_type": "local",
+        "building_value": 7120000.0,
+        "contents_value": 3750000.0,
+        "bi_value": 655000.0,
+        "tiv": 11525000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "331 River Street",
+        "city": "Nashville",
+        "state": "TN",
+        "zip": "37202",
+        "occupancy": "Fitness Center",
+        "construction": "frame",
+        "year_built": 2011,
+        "stories": 3,
+        "square_feet": 12400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2014,
+        "alarm_type": null,
+        "building_value": 2670000.0,
+        "contents_value": 450000.0,
+        "bi_value": 185000.0,
+        "tiv": 3305000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 42440.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 43880.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 45330.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 46780.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 48220.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 30445000.0,
+      "location_count": 4,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 226650.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "loss_run.pdf": "loss_run",
+      "statement_of_values.pdf": "sov"
+    },
+    "expected_conflicts": [
+      "totals.total_tiv"
+    ],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "messy_formats",
+      "name_affiliate_variant",
+      "scanned:sov",
+      "tiv_conflict"
+    ]
+  }
+}

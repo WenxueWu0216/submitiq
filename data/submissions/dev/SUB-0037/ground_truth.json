@@ -1,0 +1,178 @@
+{
+  "record": {
+    "submission_id": "SUB-0037",
+    "insured": {
+      "named_insured": "Juniper Tool & Die Corporation",
+      "dba": null,
+      "fein": null,
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "7456 River Parkway",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84102"
+      },
+      "business_description": "CNC machining of metal parts for industrial customers",
+      "naics_code": "332710",
+      "years_in_business": 12,
+      "annual_revenue": 4660000.0,
+      "employee_count": 135,
+      "website": null,
+      "contact_name": "Brian Yamamoto",
+      "contact_phone": "(515) 624-2972",
+      "contact_email": "byamamoto@junipertool.com"
+    },
+    "broker": {
+      "agency_name": "Brightline Insurance Partners",
+      "producer_name": "Daniel Martinez",
+      "producer_email": "daniel.martinez@brightlineins.com",
+      "producer_phone": "(422) 898-1032"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": "Continental Mutual Insurance Co.",
+      "quote_needed_by": "2026-11-15",
+      "submission_received_date": "2026-10-19"
+    },
+    "coverage": {
+      "building_limit": 10580000.0,
+      "bpp_limit": 2355000.0,
+      "business_income_limit": 1005000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "7456 River Parkway",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84102",
+        "occupancy": "Machine Shop",
+        "construction": "non_combustible",
+        "year_built": 1967,
+        "stories": 5,
+        "square_feet": 41900,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "tile",
+        "roof_year": 2018,
+        "alarm_type": "local",
+        "building_value": 6670000.0,
+        "contents_value": 1455000.0,
+        "bi_value": 350000.0,
+        "tiv": 8475000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "3689 Airport Boulevard",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64112",
+        "occupancy": "Machine Shop",
+        "construction": "joisted_masonry",
+        "year_built": 1990,
+        "stories": 3,
+        "square_feet": 15100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2015,
+        "alarm_type": "none",
+        "building_value": 3910000.0,
+        "contents_value": 900000.0,
+        "bi_value": 655000.0,
+        "tiv": 5465000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CMI-2023-54851",
+        "policy_year": 2022,
+        "date_of_loss": "2023-01-26",
+        "cause": "Fire",
+        "status": "closed",
+        "paid": 5860.0,
+        "reserve": 0.0,
+        "incurred": 5860.0
+      },
+      {
+        "claim_number": "CL2166527",
+        "policy_year": 2024,
+        "date_of_loss": "2025-08-07",
+        "cause": "Fire",
+        "status": "open",
+        "paid": 7600.0,
+        "reserve": 7620.0,
+        "incurred": 15220.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 21410.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 22140.0,
+        "claim_count": 1,
+        "total_incurred": 5860.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 22870.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 23600.0,
+        "claim_count": 1,
+        "total_incurred": 15220.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 24330.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 13940000.0,
+      "location_count": 2,
+      "five_year_incurred": 21080.0,
+      "five_year_premium": 114350.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "Property_Schedule.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "missing:insured.fein,insured.website"
+    ]
+  }
+}

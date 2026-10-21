@@ -1,0 +1,203 @@
+{
+  "record": {
+    "submission_id": "SUB-0108",
+    "insured": {
+      "named_insured": "Pioneer Valley Industrial Supply Inc.",
+      "dba": null,
+      "fein": "27-8103648",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "PO Box 6243",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84158"
+      },
+      "business_description": "Wholesale distribution of hardware and fasteners",
+      "naics_code": "423710",
+      "years_in_business": 2,
+      "annual_revenue": 34630000.0,
+      "employee_count": 129,
+      "website": "www.pioneervalley.com",
+      "contact_name": "Priya Reyes",
+      "contact_phone": "(920) 396-5349",
+      "contact_email": "preyes@pioneervalley.com"
+    },
+    "broker": {
+      "agency_name": "Brightline Insurance Partners",
+      "producer_name": "Daniel Patel",
+      "producer_email": "daniel.patel@brightlineins.com",
+      "producer_phone": "(726) 845-3630"
+    },
+    "policy": {
+      "effective_date": "2026-12-15",
+      "expiration_date": "2027-12-15",
+      "transaction_type": "new",
+      "prior_carrier": "Bridgewater Assurance",
+      "quote_needed_by": "2026-12-06",
+      "submission_received_date": "2026-11-07"
+    },
+    "coverage": {
+      "building_limit": 63520000.0,
+      "bpp_limit": 3605000.0,
+      "business_income_limit": 1000000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": true
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "5074 Franklin Way",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84158",
+        "occupancy": "Wholesale Hardware",
+        "construction": "frame",
+        "year_built": 1978,
+        "stories": 3,
+        "square_feet": 321300,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 3,
+        "roof_type": "metal",
+        "roof_year": 2006,
+        "alarm_type": "local",
+        "building_value": 57835000.0,
+        "contents_value": 710000.0,
+        "bi_value": 635000.0,
+        "tiv": 59180000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "3227 Mill Way",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90070",
+        "occupancy": "Wholesale Hardware",
+        "construction": "non_combustible",
+        "year_built": 1974,
+        "stories": 2,
+        "square_feet": 13900,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "metal",
+        "roof_year": 2015,
+        "alarm_type": "central_station",
+        "building_value": 3375000.0,
+        "contents_value": 1535000.0,
+        "bi_value": 365000.0,
+        "tiv": 5275000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "3914 Technology Street",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80201",
+        "occupancy": "Wholesale Hardware",
+        "construction": "frame",
+        "year_built": 2012,
+        "stories": 2,
+        "square_feet": 12000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "membrane",
+        "roof_year": 2021,
+        "alarm_type": "none",
+        "building_value": 2310000.0,
+        "contents_value": 1360000.0,
+        "bi_value": 0.0,
+        "tiv": 3670000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "23B831659",
+        "policy_year": 2022,
+        "date_of_loss": "2023-02-08",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 52330.0,
+        "reserve": 0.0,
+        "incurred": 52330.0
+      },
+      {
+        "claim_number": "BWA-2023-75355",
+        "policy_year": 2022,
+        "date_of_loss": "2023-05-29",
+        "cause": "Smoke",
+        "status": "closed",
+        "paid": 35790.0,
+        "reserve": 0.0,
+        "incurred": 35790.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 94260.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 97480.0,
+        "claim_count": 2,
+        "total_incurred": 88120.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 100690.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 103900.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 107120.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 68125000.0,
+      "location_count": 3,
+      "five_year_incurred": 88120.0,
+      "five_year_premium": 503450.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "loss_run.pdf": "loss_run",
+      "Property_Schedule.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "LOCATION_TIV"
+    ],
+    "mess": [
+      "messy_formats",
+      "trigger:loc_tiv_decline"
+    ]
+  }
+}

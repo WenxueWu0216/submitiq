@@ -1,0 +1,313 @@
+{
+  "record": {
+    "submission_id": "SUB-0117",
+    "insured": {
+      "named_insured": "Falcon Ridge Lounge LLC",
+      "dba": null,
+      "fein": "79-6627474",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "7912 Jefferson Drive",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77007"
+      },
+      "business_description": "Bar and nightclub with live music, open until 2 a.m.",
+      "naics_code": "722410",
+      "years_in_business": 24,
+      "annual_revenue": 21850000.0,
+      "employee_count": 136,
+      "website": "www.falconridge.com",
+      "contact_name": "Grace Yamamoto",
+      "contact_phone": "(452) 552-8624",
+      "contact_email": "gyamamoto@falconridge.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Thomas Reyes",
+      "producer_email": "thomas.reyes@atlasreed.com",
+      "producer_phone": "(299) 534-7186"
+    },
+    "policy": {
+      "effective_date": "2027-02-01",
+      "expiration_date": "2028-02-01",
+      "transaction_type": "renewal",
+      "prior_carrier": "Harborline Indemnity Company",
+      "quote_needed_by": "2027-01-16",
+      "submission_received_date": "2026-12-30"
+    },
+    "coverage": {
+      "building_limit": 33055000.0,
+      "bpp_limit": 10810000.0,
+      "business_income_limit": 3845000.0,
+      "deductible": 2500.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": true,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "7912 Jefferson Drive",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77007",
+        "occupancy": "Bar / Nightclub",
+        "construction": "non_combustible",
+        "year_built": 2020,
+        "stories": 2,
+        "square_feet": 28600,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 6,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2026,
+        "alarm_type": "central_station",
+        "building_value": 4225000.0,
+        "contents_value": 1560000.0,
+        "bi_value": 845000.0,
+        "tiv": 6630000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "7845 Franklin Street",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30339",
+        "occupancy": "Bar / Nightclub",
+        "construction": "masonry_non_combustible",
+        "year_built": 2020,
+        "stories": 4,
+        "square_feet": 8300,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 8,
+        "roof_type": "tile",
+        "roof_year": 2021,
+        "alarm_type": "central_station",
+        "building_value": 1165000.0,
+        "contents_value": 655000.0,
+        "bi_value": 0.0,
+        "tiv": 1820000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "1693 Elm Parkway",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80270",
+        "occupancy": "Bar / Nightclub",
+        "construction": "modified_fire_resistive",
+        "year_built": 2000,
+        "stories": 4,
+        "square_feet": 20200,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "membrane",
+        "roof_year": 2021,
+        "alarm_type": "central_station",
+        "building_value": 5085000.0,
+        "contents_value": 935000.0,
+        "bi_value": 995000.0,
+        "tiv": 7015000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "3631 Washington Road",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64167",
+        "occupancy": "Bar / Nightclub",
+        "construction": "joisted_masonry",
+        "year_built": 1956,
+        "stories": 3,
+        "square_feet": 17600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2025,
+        "alarm_type": null,
+        "building_value": 4175000.0,
+        "contents_value": 545000.0,
+        "bi_value": 0.0,
+        "tiv": 4720000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "3852 Technology Street",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30375",
+        "occupancy": "Bar / Nightclub",
+        "construction": "non_combustible",
+        "year_built": 2012,
+        "stories": 4,
+        "square_feet": 22600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 3,
+        "roof_type": null,
+        "roof_year": 2015,
+        "alarm_type": null,
+        "building_value": 5855000.0,
+        "contents_value": 1885000.0,
+        "bi_value": 1040000.0,
+        "tiv": 8780000.0
+      },
+      {
+        "loc_number": 6,
+        "street": "8227 Mill Avenue",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33176",
+        "occupancy": "Bar / Nightclub",
+        "construction": "modified_fire_resistive",
+        "year_built": 1996,
+        "stories": 5,
+        "square_feet": 11000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 3,
+        "roof_type": null,
+        "roof_year": 2022,
+        "alarm_type": null,
+        "building_value": 2350000.0,
+        "contents_value": 870000.0,
+        "bi_value": 145000.0,
+        "tiv": 3365000.0
+      },
+      {
+        "loc_number": 7,
+        "street": "9205 Main Street",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30343",
+        "occupancy": "Bar / Nightclub",
+        "construction": "non_combustible",
+        "year_built": 2012,
+        "stories": 6,
+        "square_feet": 34400,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": null,
+        "roof_year": 2026,
+        "alarm_type": null,
+        "building_value": 6795000.0,
+        "contents_value": 3365000.0,
+        "bi_value": 775000.0,
+        "tiv": 10935000.0
+      },
+      {
+        "loc_number": 8,
+        "street": "3416 Elm Drive",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68124",
+        "occupancy": "Bar / Nightclub",
+        "construction": "joisted_masonry",
+        "year_built": 1956,
+        "stories": 2,
+        "square_feet": 17500,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2021,
+        "alarm_type": null,
+        "building_value": 3405000.0,
+        "contents_value": 995000.0,
+        "bi_value": 45000.0,
+        "tiv": 4445000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL2122699",
+        "policy_year": 2025,
+        "date_of_loss": "2025-03-16",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 11580.0,
+        "reserve": 0.0,
+        "incurred": 11580.0
+      },
+      {
+        "claim_number": "HIC-2026-31617",
+        "policy_year": 2026,
+        "date_of_loss": "2026-03-18",
+        "cause": "Wind/Hail",
+        "status": "open",
+        "paid": 14910.0,
+        "reserve": 5020.0,
+        "incurred": 19930.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 114350.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 118250.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 122150.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 126040.0,
+        "claim_count": 1,
+        "total_incurred": 11580.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 129940.0,
+        "claim_count": 1,
+        "total_incurred": 19930.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 47710000.0,
+      "location_count": 8,
+      "five_year_incurred": 31510.0,
+      "five_year_premium": 610730.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "Loss_History_2.pdf": "loss_run",
+      "statement_of_values.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_PROHIBITED"
+    ],
+    "mess": [
+      "messy_formats"
+    ]
+  }
+}

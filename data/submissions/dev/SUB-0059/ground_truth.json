@@ -1,0 +1,219 @@
+{
+  "record": {
+    "submission_id": "SUB-0059",
+    "insured": {
+      "named_insured": "Riverbend Living L.L.C.",
+      "dba": "Riverbend Apartments",
+      "fein": "10-8677571",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "1354 River Boulevard",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68185"
+      },
+      "business_description": "Owns and operates garden-style apartment buildings",
+      "naics_code": "531110",
+      "years_in_business": 11,
+      "annual_revenue": 11070000.0,
+      "employee_count": 282,
+      "website": "www.riverbendliving.com",
+      "contact_name": "Thomas Yamamoto",
+      "contact_phone": "(691) 305-9906",
+      "contact_email": "tyamamoto@riverbendliving.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Maria Rossi",
+      "producer_email": "maria.rossi@atlasreed.com",
+      "producer_phone": "(486) 554-9978"
+    },
+    "policy": {
+      "effective_date": "2027-01-15",
+      "expiration_date": "2028-01-15",
+      "transaction_type": "new",
+      "prior_carrier": "Sterling National Insurance",
+      "quote_needed_by": "2027-01-06",
+      "submission_received_date": "2026-12-17"
+    },
+    "coverage": {
+      "building_limit": 15095000.0,
+      "bpp_limit": 5030000.0,
+      "business_income_limit": 2425000.0,
+      "deductible": 5000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "broad",
+      "flood_requested": true,
+      "earthquake_requested": true
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "1354 River Boulevard",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68185",
+        "occupancy": "Apartments",
+        "construction": "masonry_non_combustible",
+        "year_built": 1991,
+        "stories": 4,
+        "square_feet": 46100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": null,
+        "roof_type": "membrane",
+        "roof_year": 2015,
+        "alarm_type": "local",
+        "building_value": 5990000.0,
+        "contents_value": 2570000.0,
+        "bi_value": 1420000.0,
+        "tiv": 9980000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "249 Commerce Drive",
+        "city": "Fort Lauderdale",
+        "state": "FL",
+        "zip": "33327",
+        "occupancy": "Apartments",
+        "construction": "frame",
+        "year_built": 1987,
+        "stories": 1,
+        "square_feet": 26600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": "metal",
+        "roof_year": 2009,
+        "alarm_type": "central_station",
+        "building_value": 3250000.0,
+        "contents_value": 1580000.0,
+        "bi_value": 355000.0,
+        "tiv": 5185000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "9065 Washington Parkway",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90078",
+        "occupancy": "Apartments",
+        "construction": "frame",
+        "year_built": 2001,
+        "stories": 3,
+        "square_feet": 24500,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 8,
+        "roof_type": "built_up",
+        "roof_year": 2009,
+        "alarm_type": "central_station",
+        "building_value": 4120000.0,
+        "contents_value": 475000.0,
+        "bi_value": 460000.0,
+        "tiv": 5055000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "5138 Main Road",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95804",
+        "occupancy": "Apartments",
+        "construction": "joisted_masonry",
+        "year_built": 1988,
+        "stories": 3,
+        "square_feet": 8000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 8,
+        "roof_type": null,
+        "roof_year": 2017,
+        "alarm_type": null,
+        "building_value": 1735000.0,
+        "contents_value": 405000.0,
+        "bi_value": 190000.0,
+        "tiv": 2330000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL1620889",
+        "policy_year": 2024,
+        "date_of_loss": "2024-04-09",
+        "cause": "Fire",
+        "status": "closed",
+        "paid": 52160.0,
+        "reserve": 0.0,
+        "incurred": 52160.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 29650.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 30660.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 31670.0,
+        "claim_count": 1,
+        "total_incurred": 52160.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 32680.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 33690.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 22550000.0,
+      "location_count": 4,
+      "five_year_incurred": 52160.0,
+      "five_year_premium": 158350.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "Signed_App.pdf": "application",
+      "loss_run.pdf": "loss_run",
+      "loss_run_2.pdf": "loss_run",
+      "Property_Schedule.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_REFER",
+      "HURRICANE_ZONE",
+      "MISSING_INFO"
+    ],
+    "mess": [
+      "missing:locations[1].protection_class",
+      "scanned:application",
+      "scanned:sov"
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "record": {
+    "submission_id": "SUB-0097",
+    "insured": {
+      "named_insured": "Blue Ridge Breads LLC",
+      "dba": null,
+      "fein": "59-9640882",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "PO Box 1005",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77032"
+      },
+      "business_description": "Retail bakery producing breads and pastries on premises",
+      "naics_code": "311811",
+      "years_in_business": 27,
+      "annual_revenue": 17980000.0,
+      "employee_count": 372,
+      "website": "www.blueridge.com",
+      "contact_name": "Laura Silva",
+      "contact_phone": "(689) 234-5112",
+      "contact_email": "lsilva@blueridge.com"
+    },
+    "broker": {
+      "agency_name": "Copperfield Risk Advisors",
+      "producer_name": "Grace Silva",
+      "producer_email": "grace.silva@copperfieldrisk.com",
+      "producer_phone": "(379) 270-4453"
+    },
+    "policy": {
+      "effective_date": "2026-12-15",
+      "expiration_date": "2027-12-15",
+      "transaction_type": "new",
+      "prior_carrier": "Pinecrest Property & Casualty",
+      "quote_needed_by": "2026-11-26",
+      "submission_received_date": "2026-11-01"
+    },
+    "coverage": {
+      "building_limit": 12985000.0,
+      "bpp_limit": 2705000.0,
+      "business_income_limit": 1250000.0,
+      "deductible": 1000.0,
+      "valuation": "actual_cash_value",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "7713 Oak Parkway",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77032",
+        "occupancy": "Retail Bakery",
+        "construction": "fire_resistive",
+        "year_built": 2015,
+        "stories": 11,
+        "square_feet": 20400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "membrane",
+        "roof_year": 2021,
+        "alarm_type": "local",
+        "building_value": 4215000.0,
+        "contents_value": 490000.0,
+        "bi_value": 160000.0,
+        "tiv": 4865000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "1640 Railroad Street",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64138",
+        "occupancy": "Retail Bakery",
+        "construction": "frame",
+        "year_built": 2002,
+        "stories": 3,
+        "square_feet": 7200,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": "built_up",
+        "roof_year": 2007,
+        "alarm_type": "local",
+        "building_value": 1735000.0,
+        "contents_value": 220000.0,
+        "bi_value": 0.0,
+        "tiv": 1955000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "8149 Pine Drive",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95861",
+        "occupancy": "Retail Bakery",
+        "construction": "joisted_masonry",
+        "year_built": 2012,
+        "stories": 2,
+        "square_feet": 28200,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 7,
+        "roof_type": "built_up",
+        "roof_year": 2022,
+        "alarm_type": "central_station",
+        "building_value": 7035000.0,
+        "contents_value": 1995000.0,
+        "bi_value": 1090000.0,
+        "tiv": 10120000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL6807608",
+        "policy_year": 2025,
+        "date_of_loss": "2026-06-07",
+        "cause": "Water Damage",
+        "status": "open",
+        "paid": 8240.0,
+        "reserve": 5810.0,
+        "incurred": 14050.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 38510.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 39820.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 41130.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 42440.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 43760.0,
+        "claim_count": 1,
+        "total_incurred": 14050.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 16940000.0,
+      "location_count": 3,
+      "five_year_incurred": 14050.0,
+      "five_year_premium": 205660.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "C",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "statement_of_values.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "policy.effective_date",
+      "totals.total_tiv"
+    ],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "effective_date_conflict",
+      "messy_formats",
+      "scanned:application",
+      "tiv_conflict"
+    ]
+  }
+}

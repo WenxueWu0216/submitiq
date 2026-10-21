@@ -1,0 +1,193 @@
+{
+  "record": {
+    "submission_id": "SUB-0082",
+    "insured": {
+      "named_insured": "Old Mill Salvage L.L.C.",
+      "dba": "Old Scrap Yard",
+      "fein": "92-9790147",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "8619 Mill Street",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77073"
+      },
+      "business_description": "Scrap metal recycling yard with shredding equipment",
+      "naics_code": "423930",
+      "years_in_business": 28,
+      "annual_revenue": 13480000.0,
+      "employee_count": 57,
+      "website": null,
+      "contact_name": "Michael Novak",
+      "contact_phone": "(511) 754-7034",
+      "contact_email": "mnovak@oldmill.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Nina Patel",
+      "producer_email": "nina.patel@atlasreed.com",
+      "producer_phone": "(957) 858-6281"
+    },
+    "policy": {
+      "effective_date": "2027-03-01",
+      "expiration_date": "2028-03-01",
+      "transaction_type": "renewal",
+      "prior_carrier": "Harborline Indemnity Company",
+      "quote_needed_by": "2027-02-14",
+      "submission_received_date": "2027-01-01"
+    },
+    "coverage": {
+      "building_limit": 7685000.0,
+      "bpp_limit": 3470000.0,
+      "business_income_limit": 455000.0,
+      "deductible": 1000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "8619 Mill Street",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77073",
+        "occupancy": "Scrap Yard",
+        "construction": "frame",
+        "year_built": 1998,
+        "stories": 3,
+        "square_feet": 37900,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "built_up",
+        "roof_year": 2015,
+        "alarm_type": "local",
+        "building_value": 6730000.0,
+        "contents_value": 3210000.0,
+        "bi_value": 265000.0,
+        "tiv": 10205000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "4882 Elm Way",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33135",
+        "occupancy": "Scrap Yard",
+        "construction": "joisted_masonry",
+        "year_built": 1964,
+        "stories": 1,
+        "square_feet": 7000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 3,
+        "roof_type": "membrane",
+        "roof_year": 2025,
+        "alarm_type": "none",
+        "building_value": 955000.0,
+        "contents_value": 260000.0,
+        "bi_value": 190000.0,
+        "tiv": 1405000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL8230651",
+        "policy_year": 2022,
+        "date_of_loss": "2022-03-30",
+        "cause": "Equipment Breakdown",
+        "status": "closed",
+        "paid": 5060.0,
+        "reserve": 0.0,
+        "incurred": 5060.0
+      },
+      {
+        "claim_number": "25H641863",
+        "policy_year": 2025,
+        "date_of_loss": "2025-03-18",
+        "cause": "Water Damage",
+        "status": "closed",
+        "paid": 6830.0,
+        "reserve": 0.0,
+        "incurred": 6830.0
+      },
+      {
+        "claim_number": "HIC-2027-68782",
+        "policy_year": 2026,
+        "date_of_loss": "2027-01-04",
+        "cause": "Theft/Burglary",
+        "status": "closed",
+        "paid": 1990.0,
+        "reserve": 0.0,
+        "incurred": 1990.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 23950.0,
+        "claim_count": 1,
+        "total_incurred": 5060.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 24770.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 25590.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 26400.0,
+        "claim_count": 1,
+        "total_incurred": 6830.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 27220.0,
+        "claim_count": 1,
+        "total_incurred": 1990.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 11610000.0,
+      "location_count": 2,
+      "five_year_incurred": 13880.0,
+      "five_year_premium": 127930.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "C",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "Loss_History.pdf": "loss_run",
+      "statement_of_values.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "insured.named_insured"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_PROHIBITED"
+    ],
+    "mess": [
+      "missing:insured.website",
+      "name_conflict"
+    ]
+  }
+}

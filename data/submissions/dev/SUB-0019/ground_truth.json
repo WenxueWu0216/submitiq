@@ -1,0 +1,177 @@
+{
+  "record": {
+    "submission_id": "SUB-0019",
+    "insured": {
+      "named_insured": "Highland Park Office Holdings Inc.",
+      "dba": "Highland Office",
+      "fein": "53-6235808",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "6385 Lincoln Street",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95897"
+      },
+      "business_description": "Owns and leases multi-tenant office buildings",
+      "naics_code": "531120",
+      "years_in_business": 60,
+      "annual_revenue": 9250000.0,
+      "employee_count": 47,
+      "website": "www.highlandpark.com",
+      "contact_name": "Elena Novak",
+      "contact_phone": "(242) 312-1966",
+      "contact_email": "enovak@highlandpark.com"
+    },
+    "broker": {
+      "agency_name": "Northstar Commercial Brokerage",
+      "producer_name": "Robert Hughes",
+      "producer_email": "robert.hughes@northstarcb.com",
+      "producer_phone": "(821) 386-8906"
+    },
+    "policy": {
+      "effective_date": "2027-02-01",
+      "expiration_date": "2028-02-01",
+      "transaction_type": "new",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2027-01-18",
+      "submission_received_date": "2026-12-13"
+    },
+    "coverage": {
+      "building_limit": 5495000.0,
+      "bpp_limit": 2575000.0,
+      "business_income_limit": 770000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6385 Lincoln Street",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95897",
+        "occupancy": "Office",
+        "construction": "frame",
+        "year_built": 1958,
+        "stories": 3,
+        "square_feet": 3100,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 9,
+        "roof_type": "built_up",
+        "roof_year": 2013,
+        "alarm_type": "none",
+        "building_value": 565000.0,
+        "contents_value": 295000.0,
+        "bi_value": 30000.0,
+        "tiv": 890000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "7081 Franklin Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98105",
+        "occupancy": "Office",
+        "construction": "joisted_masonry",
+        "year_built": null,
+        "stories": 2,
+        "square_feet": 28400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2016,
+        "alarm_type": "central_station",
+        "building_value": 4930000.0,
+        "contents_value": 2280000.0,
+        "bi_value": 740000.0,
+        "tiv": 7950000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "26G529523",
+        "policy_year": 2025,
+        "date_of_loss": "2026-01-11",
+        "cause": "Theft/Burglary",
+        "status": "closed",
+        "paid": 17390.0,
+        "reserve": 0.0,
+        "incurred": 17390.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 11000.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 11370.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 11750.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 12120.0,
+        "claim_count": 1,
+        "total_incurred": 17390.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 12500.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 8840000.0,
+      "location_count": 2,
+      "five_year_incurred": 17390.0,
+      "five_year_premium": 58740.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "doc42716.pdf": "application",
+      "scan64343.pdf": "loss_run",
+      "Attachment_27273.pdf": "loss_run",
+      "scan88075.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "totals.total_tiv"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "FRAME_POOR_PROTECTION",
+      "MISSING_INFO"
+    ],
+    "mess": [
+      "missing:locations[2].year_built",
+      "scanned:application",
+      "tiv_conflict",
+      "trigger:frame_pc"
+    ]
+  }
+}

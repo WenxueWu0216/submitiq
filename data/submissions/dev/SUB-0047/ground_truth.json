@@ -1,0 +1,316 @@
+{
+  "record": {
+    "submission_id": "SUB-0047",
+    "insured": {
+      "named_insured": "Brookstone Pyrotechnics L.L.C.",
+      "dba": null,
+      "fein": "78-2191540",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "6959 Commerce Street",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55421"
+      },
+      "business_description": "Manufacture of commercial explosives and pyrotechnics",
+      "naics_code": "325920",
+      "years_in_business": 11,
+      "annual_revenue": 56820000.0,
+      "employee_count": 60,
+      "website": "www.brookstonepyrotechnics.com",
+      "contact_name": "Laura Novak",
+      "contact_phone": "(602) 971-3012",
+      "contact_email": "lnovak@brookstonepyrotechnics.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Rosa Kim",
+      "producer_email": "rosa.kim@atlasreed.com",
+      "producer_phone": "(623) 228-4147"
+    },
+    "policy": {
+      "effective_date": "2027-01-01",
+      "expiration_date": "2028-01-01",
+      "transaction_type": "new",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2026-12-12",
+      "submission_received_date": "2026-12-03"
+    },
+    "coverage": {
+      "building_limit": 34785000.0,
+      "bpp_limit": 11405000.0,
+      "business_income_limit": 3955000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": true,
+      "earthquake_requested": true
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6959 Commerce Street",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55421",
+        "occupancy": "Explosives Mfg",
+        "construction": "modified_fire_resistive",
+        "year_built": 1991,
+        "stories": 4,
+        "square_feet": 34400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": "metal",
+        "roof_year": 2025,
+        "alarm_type": "central_station",
+        "building_value": 6665000.0,
+        "contents_value": 3005000.0,
+        "bi_value": 1065000.0,
+        "tiv": 10735000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "4064 Washington Street",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95802",
+        "occupancy": "Explosives Mfg",
+        "construction": "fire_resistive",
+        "year_built": 1977,
+        "stories": 4,
+        "square_feet": 12000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "built_up",
+        "roof_year": 2009,
+        "alarm_type": "central_station",
+        "building_value": 1635000.0,
+        "contents_value": 875000.0,
+        "bi_value": 145000.0,
+        "tiv": 2655000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "9247 Center Parkway",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68171",
+        "occupancy": "Explosives Mfg",
+        "construction": "joisted_masonry",
+        "year_built": 1956,
+        "stories": 1,
+        "square_feet": 30000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "built_up",
+        "roof_year": 2019,
+        "alarm_type": "central_station",
+        "building_value": 5990000.0,
+        "contents_value": 1530000.0,
+        "bi_value": 1290000.0,
+        "tiv": 8810000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "587 Technology Road",
+        "city": "Fort Lauderdale",
+        "state": "FL",
+        "zip": "33392",
+        "occupancy": "Explosives Mfg",
+        "construction": "frame",
+        "year_built": 2015,
+        "stories": 1,
+        "square_feet": 29300,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2022,
+        "alarm_type": null,
+        "building_value": 3945000.0,
+        "contents_value": 710000.0,
+        "bi_value": 830000.0,
+        "tiv": 5485000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "9235 Commerce Way",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30320",
+        "occupancy": "Explosives Mfg",
+        "construction": "masonry_non_combustible",
+        "year_built": 1992,
+        "stories": 6,
+        "square_feet": 8100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": null,
+        "roof_year": 2024,
+        "alarm_type": null,
+        "building_value": 2095000.0,
+        "contents_value": 785000.0,
+        "bi_value": 325000.0,
+        "tiv": 3205000.0
+      },
+      {
+        "loc_number": 6,
+        "street": "5082 Mill Street",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94124",
+        "occupancy": "Explosives Mfg",
+        "construction": "masonry_non_combustible",
+        "year_built": 2016,
+        "stories": 3,
+        "square_feet": 25000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 7,
+        "roof_type": null,
+        "roof_year": 2021,
+        "alarm_type": null,
+        "building_value": 6205000.0,
+        "contents_value": 1045000.0,
+        "bi_value": 55000.0,
+        "tiv": 7305000.0
+      },
+      {
+        "loc_number": 7,
+        "street": "3557 Main Avenue",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15290",
+        "occupancy": "Explosives Mfg",
+        "construction": "masonry_non_combustible",
+        "year_built": 2017,
+        "stories": 6,
+        "square_feet": 19000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": null,
+        "roof_year": 2024,
+        "alarm_type": null,
+        "building_value": 3345000.0,
+        "contents_value": 1200000.0,
+        "bi_value": 245000.0,
+        "tiv": 4790000.0
+      },
+      {
+        "loc_number": 8,
+        "street": "9065 Industrial Way",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75244",
+        "occupancy": "Explosives Mfg",
+        "construction": "masonry_non_combustible",
+        "year_built": 2005,
+        "stories": 5,
+        "square_feet": 22900,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2024,
+        "alarm_type": null,
+        "building_value": 4905000.0,
+        "contents_value": 2255000.0,
+        "bi_value": 0.0,
+        "tiv": 7160000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "23G144397",
+        "policy_year": 2023,
+        "date_of_loss": "2023-10-26",
+        "cause": "Smoke",
+        "status": "closed",
+        "paid": 136390.0,
+        "reserve": 0.0,
+        "incurred": 136390.0
+      },
+      {
+        "claim_number": "GPC-2024-41402",
+        "policy_year": 2024,
+        "date_of_loss": "2024-06-21",
+        "cause": "Wind/Hail",
+        "status": "closed",
+        "paid": 82400.0,
+        "reserve": 0.0,
+        "incurred": 82400.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 113530.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 117400.0,
+        "claim_count": 1,
+        "total_incurred": 136390.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 121270.0,
+        "claim_count": 1,
+        "total_incurred": 82400.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 125140.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 129010.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 50145000.0,
+      "location_count": 8,
+      "five_year_incurred": 218790.0,
+      "five_year_premium": 606350.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "doc81497.pdf": "application",
+      "IMG_44178.pdf": "loss_run",
+      "doc65953.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "totals.total_tiv"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_PROHIBITED",
+      "HURRICANE_ZONE",
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "tiv_conflict"
+    ]
+  }
+}

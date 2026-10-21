@@ -1,0 +1,172 @@
+{
+  "record": {
+    "submission_id": "SUB-0098",
+    "insured": {
+      "named_insured": "Granite State Bake Shop Inc.",
+      "dba": "Granite Retail Bakery",
+      "fein": "16-2543374",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "8240 Harbor Way",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77035"
+      },
+      "business_description": "Retail bakery producing breads and pastries on premises",
+      "naics_code": "311811",
+      "years_in_business": 57,
+      "annual_revenue": 5900000.0,
+      "employee_count": 63,
+      "website": "www.granitestate.com",
+      "contact_name": "Priya Yamamoto",
+      "contact_phone": "(688) 437-3693",
+      "contact_email": "pyamamoto@granitestate.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Chen Patel",
+      "producer_email": "chen.patel@atlasreed.com",
+      "producer_phone": "(948) 926-1003"
+    },
+    "policy": {
+      "effective_date": "2026-11-01",
+      "expiration_date": "2027-11-01",
+      "transaction_type": "renewal",
+      "prior_carrier": "Sterling National Insurance",
+      "quote_needed_by": "2026-10-17",
+      "submission_received_date": "2026-09-07"
+    },
+    "coverage": {
+      "building_limit": 4595000.0,
+      "bpp_limit": 1440000.0,
+      "business_income_limit": 390000.0,
+      "deductible": 2500.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": null,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "8240 Harbor Way",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77035",
+        "occupancy": "Retail Bakery",
+        "construction": "fire_resistive",
+        "year_built": 2021,
+        "stories": 9,
+        "square_feet": 2200,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": null,
+        "roof_type": "built_up",
+        "roof_year": 2023,
+        "alarm_type": "local",
+        "building_value": 400000.0,
+        "contents_value": 120000.0,
+        "bi_value": 15000.0,
+        "tiv": 535000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "5190 Elm Street",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64136",
+        "occupancy": "Retail Bakery",
+        "construction": "modified_fire_resistive",
+        "year_built": 2008,
+        "stories": 4,
+        "square_feet": 23500,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "built_up",
+        "roof_year": 2020,
+        "alarm_type": "local",
+        "building_value": 4195000.0,
+        "contents_value": 1320000.0,
+        "bi_value": 375000.0,
+        "tiv": 5890000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "22S518984",
+        "policy_year": 2021,
+        "date_of_loss": "2022-08-02",
+        "cause": "Frozen Pipes",
+        "status": "closed",
+        "paid": 10070.0,
+        "reserve": 0.0,
+        "incurred": 10070.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 13720.0,
+        "claim_count": 1,
+        "total_incurred": 10070.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 14180.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 14650.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 15120.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 15590.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 6425000.0,
+      "location_count": 2,
+      "five_year_incurred": 10070.0,
+      "five_year_premium": 73260.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "Loss_History.pdf": "loss_run",
+      "SOV.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "MISSING_INFO"
+    ],
+    "mess": [
+      "messy_formats",
+      "missing:coverage.coinsurance_pct,locations[1].protection_class",
+      "scanned:loss_run"
+    ]
+  }
+}

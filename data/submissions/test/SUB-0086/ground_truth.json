@@ -1,0 +1,221 @@
+{
+  "record": {
+    "submission_id": "SUB-0086",
+    "insured": {
+      "named_insured": "Riverbend Tavern LLC",
+      "dba": null,
+      "fein": "89-6469467",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "4960 Pine Lane",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68193"
+      },
+      "business_description": "Bar and nightclub with live music, open until 2 a.m.",
+      "naics_code": "722410",
+      "years_in_business": 15,
+      "annual_revenue": 43490000.0,
+      "employee_count": 261,
+      "website": "www.riverbendtavern.com",
+      "contact_name": "Elena Johnson",
+      "contact_phone": "(216) 706-2206",
+      "contact_email": "ejohnson@riverbendtavern.com"
+    },
+    "broker": {
+      "agency_name": "Copperfield Risk Advisors",
+      "producer_name": "Elena O'Brien",
+      "producer_email": "elena.obrien@copperfieldrisk.com",
+      "producer_phone": "(348) 444-1529"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2026-11-17",
+      "submission_received_date": "2026-11-05"
+    },
+    "coverage": {
+      "building_limit": 23135000.0,
+      "bpp_limit": 7015000.0,
+      "business_income_limit": 2745000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "4960 Pine Lane",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68193",
+        "occupancy": "Bar / Nightclub",
+        "construction": "joisted_masonry",
+        "year_built": 1974,
+        "stories": 1,
+        "square_feet": 70000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "membrane",
+        "roof_year": 2023,
+        "alarm_type": "central_station",
+        "building_value": 12420000.0,
+        "contents_value": 2800000.0,
+        "bi_value": 1460000.0,
+        "tiv": 16680000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "4599 Main Lane",
+        "city": "San Jose",
+        "state": "CA",
+        "zip": "95164",
+        "occupancy": "Bar / Nightclub",
+        "construction": "joisted_masonry",
+        "year_built": 1961,
+        "stories": 3,
+        "square_feet": 40000,
+        "sprinklered": true,
+        "sprinkler_pct": 50,
+        "protection_class": 4,
+        "roof_type": "built_up",
+        "roof_year": 2014,
+        "alarm_type": "none",
+        "building_value": 5180000.0,
+        "contents_value": 1715000.0,
+        "bi_value": 525000.0,
+        "tiv": 7420000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "6840 Mill Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98163",
+        "occupancy": "Bar / Nightclub",
+        "construction": "fire_resistive",
+        "year_built": 2010,
+        "stories": 8,
+        "square_feet": 6300,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "membrane",
+        "roof_year": 2024,
+        "alarm_type": "local",
+        "building_value": 965000.0,
+        "contents_value": 155000.0,
+        "bi_value": 35000.0,
+        "tiv": 1155000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "8747 Commerce Drive",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68151",
+        "occupancy": "Bar / Nightclub",
+        "construction": "non_combustible",
+        "year_built": 2004,
+        "stories": 1,
+        "square_feet": 21300,
+        "sprinklered": true,
+        "sprinkler_pct": 60,
+        "protection_class": 7,
+        "roof_type": null,
+        "roof_year": 2018,
+        "alarm_type": null,
+        "building_value": 4570000.0,
+        "contents_value": 2345000.0,
+        "bi_value": 725000.0,
+        "tiv": 7640000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "25G855947",
+        "policy_year": 2024,
+        "date_of_loss": "2025-06-10",
+        "cause": "Lightning",
+        "status": "closed",
+        "paid": 52800.0,
+        "reserve": 0.0,
+        "incurred": 52800.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 43150.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 44620.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 46090.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 47560.0,
+        "claim_count": 1,
+        "total_incurred": 52800.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 49030.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 32895000.0,
+      "location_count": 4,
+      "five_year_incurred": 52800.0,
+      "five_year_premium": 230450.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "Property_Schedule.pdf": "sov"
+    },
+    "expected_conflicts": [
+      "insured.named_insured"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_PROHIBITED",
+      "EARTHQUAKE_ZONE",
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "name_conflict",
+      "rotated:sov",
+      "scanned:loss_run",
+      "scanned:sov"
+    ]
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "record": {
+    "submission_id": "SUB-0036",
+    "insured": {
+      "named_insured": "Highland Park Office Holdings L.L.C.",
+      "dba": "Highland Office",
+      "fein": "94-9051719",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "7664 Enterprise Street",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33090"
+      },
+      "business_description": "Owns and leases multi-tenant office buildings",
+      "naics_code": "531120",
+      "years_in_business": 14,
+      "annual_revenue": 29300000.0,
+      "employee_count": 42,
+      "website": "www.highlandpark.com",
+      "contact_name": "Kevin Nguyen",
+      "contact_phone": "(952) 308-9983",
+      "contact_email": "knguyen@highlandpark.com"
+    },
+    "broker": {
+      "agency_name": "Brightline Insurance Partners",
+      "producer_name": "Laura Rossi",
+      "producer_email": "laura.rossi@brightlineins.com",
+      "producer_phone": "(595) 635-1787"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": null,
+      "quote_needed_by": "2026-11-21",
+      "submission_received_date": "2026-10-05"
+    },
+    "coverage": {
+      "building_limit": 17140000.0,
+      "bpp_limit": 7290000.0,
+      "business_income_limit": 2455000.0,
+      "deductible": 2500.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": true,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "7664 Enterprise Street",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33090",
+        "occupancy": "Office",
+        "construction": "joisted_masonry",
+        "year_built": 1955,
+        "stories": 3,
+        "square_feet": 76800,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 2,
+        "roof_type": "membrane",
+        "roof_year": 2018,
+        "alarm_type": "none",
+        "building_value": 13825000.0,
+        "contents_value": 5960000.0,
+        "bi_value": 1825000.0,
+        "tiv": 21610000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "2037 Mill Parkway",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98153",
+        "occupancy": "Office",
+        "construction": "masonry_non_combustible",
+        "year_built": 2011,
+        "stories": 4,
+        "square_feet": 9000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2013,
+        "alarm_type": "central_station",
+        "building_value": 1755000.0,
+        "contents_value": 880000.0,
+        "bi_value": 395000.0,
+        "tiv": 3030000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "9351 River Parkway",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33116",
+        "occupancy": "Office",
+        "construction": "masonry_non_combustible",
+        "year_built": 1991,
+        "stories": 3,
+        "square_feet": 3000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": "metal",
+        "roof_year": 2011,
+        "alarm_type": "local",
+        "building_value": 520000.0,
+        "contents_value": 260000.0,
+        "bi_value": 30000.0,
+        "tiv": 810000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "204 Park Parkway",
+        "city": "Galveston",
+        "state": "TX",
+        "zip": "77598",
+        "occupancy": "Office",
+        "construction": "non_combustible",
+        "year_built": 1995,
+        "stories": 2,
+        "square_feet": 6500,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": null,
+        "roof_year": 2011,
+        "alarm_type": null,
+        "building_value": 1040000.0,
+        "contents_value": 190000.0,
+        "bi_value": 205000.0,
+        "tiv": 1435000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 47000.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 48610.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 50210.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 51810.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 53410.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 26885000.0,
+      "location_count": 4,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 251040.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "SOV.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "HURRICANE_ZONE",
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "missing:policy.prior_carrier",
+      "trigger:unsprinklered_big"
+    ]
+  }
+}
