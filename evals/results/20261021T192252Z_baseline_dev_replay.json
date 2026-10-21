@@ -4,8 +4,8 @@
   "split": "dev",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T191542Z",
-  "git_sha": "05f4b45",
+  "timestamp": "20261021T192252Z",
+  "git_sha": "0e9deed",
   "n": 80,
   "wall_seconds": 2.2,
   "model": "claude-opus-5-5",
@@ -707,16 +707,16 @@
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 1810.6,
-   "p50": 132.3,
-   "p95": 8722.4,
+   "mean": 1725.7,
+   "p50": 126.1,
+   "p95": 8280.4,
    "llm_recorded_mean": 0.0
   },
   "cost": {
    "usd_per_submission": 0.0,
    "input_tokens_per_submission": 0.0,
    "output_tokens_per_submission": 0.0,
-   "est_prompt_tokens_per_submission": 4274.8,
+   "est_prompt_tokens_per_submission": 4274.7,
    "llm_calls_by_source": {
     "replay:miss": 80
    }

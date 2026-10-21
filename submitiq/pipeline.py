@@ -1,21 +1,25 @@
 """Pipeline variants. Each variant is one row of docs/experiment_log.md.
 
-    baseline   classify -> text/OCR -> one Claude call returns JSON (+ decision)
+    baseline    classify -> text/OCR -> one Claude call returns JSON (+ decision)
+    v1_tables   + deterministic table-aware parsing of SOVs and loss runs
 """
 from __future__ import annotations
 
 import time
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from .assemble import assemble, extraction_from_record
 from .classify import classify
 from .coerce import coerce_submission
 from .documents import Document, load_package
 from .extract import baseline as baseline_extract
-from .fields import flatten
+from .extract.loss_run import extract_loss_run
+from .extract.sov import extract_sov
+from .extract.types import DocExtraction
 from .llm import LLMClient, get_client
 from .llm.base import call_record
-from .result import Citation, FieldProvenance, PipelineResult
+from .result import PipelineResult
 from .schema import Submission
 
 
@@ -23,14 +27,16 @@ from .schema import Submission
 class PipelineConfig:
     name: str
     extraction: str = "baseline"        # baseline | per_doc
+    tables: bool = False                # 4a: table-aware SOV / loss-run parsing
     decision: str = "llm"               # llm | rules
 
 
 VARIANTS: dict[str, PipelineConfig] = {
     "baseline": PipelineConfig("baseline"),
+    "v1_tables": PipelineConfig("v1_tables", tables=True),
 }
 ORDER = list(VARIANTS)
-VARIANTS["final"] = PipelineConfig("final", **{k: v for k, v in VARIANTS[ORDER[-1]].__dict__.items() if k != "name"})
+VARIANTS["final"] = PipelineConfig(**{**asdict(VARIANTS[ORDER[-1]]), "name": "final"})
 
 
 class NullPipeline:
@@ -64,31 +70,42 @@ class Pipeline:
         res.timings_ms["classify"] = (time.perf_counter() - t0) * 1000
 
         t0 = time.perf_counter()
-        self._extract_baseline(docs, res)
+        extractions: list[DocExtraction] = []
+        extractions += self._extract_baseline(docs, res)
+        if self.cfg.tables:
+            extractions += self._extract_tables(docs)
+        res.record, res.provenance = assemble(sub_id, extractions)
         res.timings_ms["extract"] = (time.perf_counter() - t0) * 1000
+
         # Wall-clock of everything except OCR, which is reported at its originally measured cost.
         res.timings_ms["other"] = max(0.0, (time.perf_counter() - t_start) * 1000 - sum(res.timings_ms.values()))
         return res
 
     # ------------------------------------------------------------------ baseline
-    def _extract_baseline(self, docs: list[Document], res: PipelineResult) -> None:
+    def _extract_baseline(self, docs: list[Document], res: PipelineResult) -> list[DocExtraction]:
         req, resp, parsed = baseline_extract.run(docs, self.llm)
         res.llm_calls.append(call_record(req, resp))
         if parsed is None:
             res.needs_review = True
             res.review_reasons.append(f"extraction model returned no usable output ({resp.error or 'unparseable'})")
-            return
+            return []
         rec, errors = coerce_submission(parsed.get("record") or {}, res.submission_id, mode="basic")
-        res.record = rec
         res.errors += errors
-        for path, value in flatten(rec).items():
-            if value is not None:
-                res.provenance[path] = FieldProvenance(path=path, extractor="llm:baseline",
-                                                       citations=[Citation(doc="(package)", doc_type="package")])
         decision = parsed.get("appetite_decision")
         if decision in ("accept", "refer", "decline"):
             res.decision.outcome = decision
             res.decision.source = "llm"
+        return [extraction_from_record(rec, "(package)", "package", "llm:baseline", 0.6)]
+
+    # ------------------------------------------------------------------ 4a tables
+    def _extract_tables(self, docs: list[Document]) -> list[DocExtraction]:
+        out = []
+        for d in docs:
+            if d.doc_type == "sov":
+                out.append(extract_sov(d, mode="basic"))
+            elif d.doc_type == "loss_run":
+                out.append(extract_loss_run(d, mode="basic"))
+        return out
 
 
 def build_pipeline(name: str, backend: str = "replay"):

@@ -1038,7 +1038,7 @@
   "decision": "accept",
   "mess": [
    "messy_formats",
-   "rotated:sov",
+   "rotated:application",
    "scanned:application",
    "scanned:sov",
    "tiv_conflict"

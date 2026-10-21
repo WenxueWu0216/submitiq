@@ -417,7 +417,7 @@ def render_sov_pdf(w: World, g: Submission, rng: random.Random) -> bytes:
 
 
 def _short(h: str) -> str:
-    return {"Street Address": "Street Address", "Location Address": "Address", "Total Insured Value": "TIV",
+    return {"Location No.": "Loc No.", "Street Address": "Street Address", "Location Address": "Address", "Total Insured Value": "TIV",
             "Sprinklered (Y/N)": "Sprk Y/N", "Square Footage": "Sq Ft", "ISO Construction": "Construction",
             "Occupancy / Use": "Occupancy", "Business Income": "BI", "No. of Floors": "Floors",
             "% Sprinklered": "% Sprk", "Roof Updated": "Roof Upd", "Protection Class": "Prot. Class",
