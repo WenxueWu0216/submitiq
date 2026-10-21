@@ -1,0 +1,161 @@
+{
+  "record": {
+    "submission_id": "SUB-0068",
+    "insured": {
+      "named_insured": "Copper Hill Pyrotechnics LLC",
+      "dba": "Copper Explosives Mfg",
+      "fein": "65-3418958",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "6719 Commerce Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98161"
+      },
+      "business_description": "Manufacture of commercial explosives and pyrotechnics",
+      "naics_code": "325920",
+      "years_in_business": 37,
+      "annual_revenue": 8020000.0,
+      "employee_count": 156,
+      "website": "www.copperhill.com",
+      "contact_name": "Michael Novak",
+      "contact_phone": "(726) 755-3790",
+      "contact_email": "mnovak@copperhill.com"
+    },
+    "broker": {
+      "agency_name": "Brightline Insurance Partners",
+      "producer_name": "Laura Carter",
+      "producer_email": "laura.carter@brightlineins.com",
+      "producer_phone": "(989) 786-9162"
+    },
+    "policy": {
+      "effective_date": "2027-01-15",
+      "expiration_date": "2028-01-15",
+      "transaction_type": "renewal",
+      "prior_carrier": "Pinecrest Property & Casualty",
+      "quote_needed_by": "2026-12-29",
+      "submission_received_date": "2026-12-18"
+    },
+    "coverage": {
+      "building_limit": 7380000.0,
+      "bpp_limit": 3675000.0,
+      "business_income_limit": 365000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6719 Commerce Way",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98161",
+        "occupancy": "Explosives Mfg",
+        "construction": "masonry_non_combustible",
+        "year_built": 1976,
+        "stories": 1,
+        "square_feet": 26000,
+        "sprinklered": true,
+        "sprinkler_pct": 50,
+        "protection_class": 5,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2020,
+        "alarm_type": "central_station",
+        "building_value": 5350000.0,
+        "contents_value": 3080000.0,
+        "bi_value": 0.0,
+        "tiv": 8430000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "6936 Commerce Drive",
+        "city": "Galveston",
+        "state": "TX",
+        "zip": "77536",
+        "occupancy": "Explosives Mfg",
+        "construction": "frame",
+        "year_built": 2018,
+        "stories": 1,
+        "square_feet": 8900,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": "membrane",
+        "roof_year": 2023,
+        "alarm_type": "central_station",
+        "building_value": 2030000.0,
+        "contents_value": 595000.0,
+        "bi_value": 365000.0,
+        "tiv": 2990000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 13500.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 13960.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 14420.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 14880.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 15340.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 11420000.0,
+      "location_count": 2,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 72100.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "scan25907.pdf": "application",
+      "scan53398.pdf": "loss_run",
+      "IMG_38252.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_PROHIBITED",
+      "HURRICANE_ZONE"
+    ],
+    "mess": [
+      "messy_formats",
+      "scanned:sov"
+    ]
+  }
+}

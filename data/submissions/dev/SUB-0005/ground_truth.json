@@ -1,0 +1,260 @@
+{
+  "record": {
+    "submission_id": "SUB-0005",
+    "insured": {
+      "named_insured": "Granite State Automotive Inc.",
+      "dba": null,
+      "fein": "58-7635556",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "6011 Maple Parkway",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98199"
+      },
+      "business_description": "General automotive repair and maintenance garage",
+      "naics_code": "811111",
+      "years_in_business": 9,
+      "annual_revenue": 71030000.0,
+      "employee_count": null,
+      "website": "www.granitestate.com",
+      "contact_name": "Michael Nguyen",
+      "contact_phone": "(881) 322-8490",
+      "contact_email": "mnguyen@granitestate.com"
+    },
+    "broker": {
+      "agency_name": "Copperfield Risk Advisors",
+      "producer_name": "Nina Patel",
+      "producer_email": "nina.patel@copperfieldrisk.com",
+      "producer_phone": "(420) 825-6244"
+    },
+    "policy": {
+      "effective_date": "2026-11-01",
+      "expiration_date": "2027-11-01",
+      "transaction_type": "renewal",
+      "prior_carrier": "Continental Mutual Insurance Co.",
+      "quote_needed_by": "2026-10-18",
+      "submission_received_date": "2026-09-25"
+    },
+    "coverage": {
+      "building_limit": 39250000.0,
+      "bpp_limit": 8630000.0,
+      "business_income_limit": 2425000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6011 Maple Parkway",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98199",
+        "occupancy": "Auto Repair",
+        "construction": "modified_fire_resistive",
+        "year_built": 1987,
+        "stories": 4,
+        "square_feet": 156000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 8,
+        "roof_type": "membrane",
+        "roof_year": 2008,
+        "alarm_type": "central_station",
+        "building_value": 28075000.0,
+        "contents_value": 6260000.0,
+        "bi_value": 2295000.0,
+        "tiv": 36630000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "9092 Railroad Drive",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30312",
+        "occupancy": "Auto Repair",
+        "construction": "fire_resistive",
+        "year_built": 1956,
+        "stories": 8,
+        "square_feet": 25100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "metal",
+        "roof_year": 2014,
+        "alarm_type": "none",
+        "building_value": 5945000.0,
+        "contents_value": 685000.0,
+        "bi_value": 0.0,
+        "tiv": 6630000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "4628 Elm Avenue",
+        "city": "Galveston",
+        "state": "TX",
+        "zip": "77544",
+        "occupancy": "Auto Repair",
+        "construction": "non_combustible",
+        "year_built": 1974,
+        "stories": 4,
+        "square_feet": 7000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "built_up",
+        "roof_year": 2012,
+        "alarm_type": "local",
+        "building_value": 1345000.0,
+        "contents_value": 145000.0,
+        "bi_value": 15000.0,
+        "tiv": 1505000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "448 Pine Parkway",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85071",
+        "occupancy": "Auto Repair",
+        "construction": "joisted_masonry",
+        "year_built": 2011,
+        "stories": 3,
+        "square_feet": 6000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 7,
+        "roof_type": null,
+        "roof_year": 2025,
+        "alarm_type": null,
+        "building_value": 1235000.0,
+        "contents_value": 265000.0,
+        "bi_value": 0.0,
+        "tiv": 1500000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "2167 River Drive",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68166",
+        "occupancy": "Auto Repair",
+        "construction": "non_combustible",
+        "year_built": 2015,
+        "stories": 1,
+        "square_feet": 6100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": null,
+        "roof_year": 2018,
+        "alarm_type": null,
+        "building_value": 1445000.0,
+        "contents_value": 740000.0,
+        "bi_value": 115000.0,
+        "tiv": 2300000.0
+      },
+      {
+        "loc_number": 6,
+        "street": "6675 Airport Road",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84143",
+        "occupancy": "Auto Repair",
+        "construction": "joisted_masonry",
+        "year_built": 1956,
+        "stories": 1,
+        "square_feet": 5100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 8,
+        "roof_type": null,
+        "roof_year": 2009,
+        "alarm_type": null,
+        "building_value": 1205000.0,
+        "contents_value": 535000.0,
+        "bi_value": 0.0,
+        "tiv": 1740000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "23C272717",
+        "policy_year": 2022,
+        "date_of_loss": "2023-02-22",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 187490.0,
+        "reserve": 0.0,
+        "incurred": 187490.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 100730.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 104160.0,
+        "claim_count": 1,
+        "total_incurred": 187490.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 107590.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 111030.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 114460.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 50305000.0,
+      "location_count": 6,
+      "five_year_incurred": 187490.0,
+      "five_year_premium": 537970.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "Signed_App.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "SOV.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "LOCATION_TIV"
+    ],
+    "mess": [
+      "missing:insured.employee_count",
+      "name_affiliate_variant",
+      "trigger:loc_tiv_refer"
+    ]
+  }
+}

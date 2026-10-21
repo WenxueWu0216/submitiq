@@ -1,0 +1,163 @@
+{
+  "record": {
+    "submission_id": "SUB-0077",
+    "insured": {
+      "named_insured": "Clearwater Scrap Metal LLC",
+      "dba": null,
+      "fein": "31-9820759",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "3633 Enterprise Road",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98125"
+      },
+      "business_description": "Scrap metal recycling yard with shredding equipment",
+      "naics_code": "423930",
+      "years_in_business": 21,
+      "annual_revenue": 1480000.0,
+      "employee_count": 359,
+      "website": "www.clearwaterscrap.com",
+      "contact_name": "David Thompson",
+      "contact_phone": "(873) 773-8059",
+      "contact_email": "dthompson@clearwaterscrap.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Daniel Patel",
+      "producer_email": "daniel.patel@atlasreed.com",
+      "producer_phone": "(223) 326-1398"
+    },
+    "policy": {
+      "effective_date": "2027-02-15",
+      "expiration_date": "2028-02-15",
+      "transaction_type": "renewal",
+      "prior_carrier": "Sterling National Insurance",
+      "quote_needed_by": "2027-02-08",
+      "submission_received_date": "2026-12-21"
+    },
+    "coverage": {
+      "building_limit": 1125000.0,
+      "bpp_limit": 120000.0,
+      "business_income_limit": 245000.0,
+      "deductible": 2500.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "3633 Enterprise Road",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98125",
+        "occupancy": "Scrap Yard",
+        "construction": "masonry_non_combustible",
+        "year_built": 1993,
+        "stories": 5,
+        "square_feet": 6900,
+        "sprinklered": true,
+        "sprinkler_pct": 60,
+        "protection_class": 4,
+        "roof_type": "built_up",
+        "roof_year": 2022,
+        "alarm_type": "local",
+        "building_value": 1125000.0,
+        "contents_value": 120000.0,
+        "bi_value": 245000.0,
+        "tiv": 1490000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL3670079",
+        "policy_year": 2024,
+        "date_of_loss": "2024-06-02",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 1960.0,
+        "reserve": 0.0,
+        "incurred": 1960.0
+      },
+      {
+        "claim_number": "26S508580",
+        "policy_year": 2026,
+        "date_of_loss": "2026-04-09",
+        "cause": "Equipment Breakdown",
+        "status": "closed",
+        "paid": 1630.0,
+        "reserve": 0.0,
+        "incurred": 1630.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 1770.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 1830.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 1900.0,
+        "claim_count": 1,
+        "total_incurred": 1960.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 1960.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 2020.0,
+        "claim_count": 1,
+        "total_incurred": 1630.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 1490000.0,
+      "location_count": 1,
+      "five_year_incurred": 3590.0,
+      "five_year_premium": 9480.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "Signed_App.pdf": "application",
+      "Loss_History.pdf": "loss_run",
+      "LossRuns_2.pdf": "loss_run",
+      "Property_Schedule.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "totals.total_tiv"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_PROHIBITED"
+    ],
+    "mess": [
+      "messy_formats",
+      "name_affiliate_variant",
+      "tiv_conflict"
+    ]
+  }
+}

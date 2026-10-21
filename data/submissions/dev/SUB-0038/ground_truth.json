@@ -1,0 +1,264 @@
+{
+  "record": {
+    "submission_id": "SUB-0038",
+    "insured": {
+      "named_insured": "Oak Hollow Market Inc.",
+      "dba": null,
+      "fein": "27-8524217",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "5379 Pine Avenue",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80291"
+      },
+      "business_description": "Independent grocery store with deli and bakery counter",
+      "naics_code": "445110",
+      "years_in_business": 24,
+      "annual_revenue": 48840000.0,
+      "employee_count": 235,
+      "website": "www.oakhollow.com",
+      "contact_name": "Mei Patel",
+      "contact_phone": "(781) 226-3474",
+      "contact_email": "mpatel@oakhollow.com"
+    },
+    "broker": {
+      "agency_name": "Brightline Insurance Partners",
+      "producer_name": "Michael O'Brien",
+      "producer_email": "michael.obrien@brightlineins.com",
+      "producer_phone": "(208) 817-1336"
+    },
+    "policy": {
+      "effective_date": "2027-01-01",
+      "expiration_date": "2028-01-01",
+      "transaction_type": "new",
+      "prior_carrier": "Pinecrest Property & Casualty",
+      "quote_needed_by": "2026-12-17",
+      "submission_received_date": "2026-11-19"
+    },
+    "coverage": {
+      "building_limit": 30315000.0,
+      "bpp_limit": 8660000.0,
+      "business_income_limit": 640000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "basic",
+      "flood_requested": true,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "5379 Pine Avenue",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80291",
+        "occupancy": "Grocery Store",
+        "construction": "joisted_masonry",
+        "year_built": null,
+        "stories": 2,
+        "square_feet": 16000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": "tile",
+        "roof_year": 2014,
+        "alarm_type": "local",
+        "building_value": 2895000.0,
+        "contents_value": 470000.0,
+        "bi_value": 555000.0,
+        "tiv": 3920000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "2810 Jefferson Parkway",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60682",
+        "occupancy": "Grocery Store",
+        "construction": "joisted_masonry",
+        "year_built": 1955,
+        "stories": 2,
+        "square_feet": 14800,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 7,
+        "roof_type": "metal",
+        "roof_year": 2010,
+        "alarm_type": "local",
+        "building_value": 3625000.0,
+        "contents_value": 1330000.0,
+        "bi_value": 0.0,
+        "tiv": 4955000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "8805 Lincoln Way",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28217",
+        "occupancy": "Grocery Store",
+        "construction": "joisted_masonry",
+        "year_built": 1998,
+        "stories": 2,
+        "square_feet": 36000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2012,
+        "alarm_type": "central_station",
+        "building_value": 7155000.0,
+        "contents_value": 2005000.0,
+        "bi_value": 0.0,
+        "tiv": 9160000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "22 Lake Way",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15231",
+        "occupancy": "Grocery Store",
+        "construction": "masonry_non_combustible",
+        "year_built": 2003,
+        "stories": 6,
+        "square_feet": 47400,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2019,
+        "alarm_type": null,
+        "building_value": 5805000.0,
+        "contents_value": 2865000.0,
+        "bi_value": 85000.0,
+        "tiv": 8755000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "211 Lake Lane",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55474",
+        "occupancy": "Grocery Store",
+        "construction": "frame",
+        "year_built": 1975,
+        "stories": 3,
+        "square_feet": 26100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": null,
+        "roof_year": 2012,
+        "alarm_type": null,
+        "building_value": 5945000.0,
+        "contents_value": 845000.0,
+        "bi_value": 0.0,
+        "tiv": 6790000.0
+      },
+      {
+        "loc_number": 6,
+        "street": "3431 Maple Lane",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85010",
+        "occupancy": "Grocery Store",
+        "construction": "frame",
+        "year_built": 1968,
+        "stories": 3,
+        "square_feet": 22100,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 7,
+        "roof_type": null,
+        "roof_year": 2018,
+        "alarm_type": null,
+        "building_value": 4890000.0,
+        "contents_value": 1145000.0,
+        "bi_value": 0.0,
+        "tiv": 6035000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "PPC-2023-50142",
+        "policy_year": 2023,
+        "date_of_loss": "2023-04-12",
+        "cause": "Roof Leak",
+        "status": "closed",
+        "paid": 148140.0,
+        "reserve": 0.0,
+        "incurred": 148140.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 88100.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 91110.0,
+        "claim_count": 1,
+        "total_incurred": 148140.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 94110.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 97110.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 100120.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 39615000.0,
+      "location_count": 6,
+      "five_year_incurred": 148140.0,
+      "five_year_premium": 470550.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "scan16895.pdf": "application",
+      "file77662.pdf": "loss_run",
+      "scan40233.pdf": "sov"
+    },
+    "expected_conflicts": [
+      "locations[3].year_built"
+    ],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "MISSING_INFO"
+    ],
+    "mess": [
+      "messy_formats",
+      "missing:locations[1].year_built",
+      "rotated:sov",
+      "scanned:sov",
+      "year_built_conflict"
+    ]
+  }
+}

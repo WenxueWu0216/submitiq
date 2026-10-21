@@ -1,0 +1,198 @@
+{
+  "record": {
+    "submission_id": "SUB-0033",
+    "insured": {
+      "named_insured": "Westfield Logistics Inc.",
+      "dba": null,
+      "fein": "69-7173558",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "6873 Railroad Boulevard",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30353"
+      },
+      "business_description": "Dry goods warehousing and third-party distribution",
+      "naics_code": "493110",
+      "years_in_business": 31,
+      "annual_revenue": 9600000.0,
+      "employee_count": 328,
+      "website": "www.westfieldlogistics.com",
+      "contact_name": "Priya Schmidt",
+      "contact_phone": "(725) 343-5115",
+      "contact_email": "pschmidt@westfieldlogistics.com"
+    },
+    "broker": {
+      "agency_name": "Tidewater Risk Partners",
+      "producer_name": "Nina Levine",
+      "producer_email": "nina.levine@tidewaterrisk.com",
+      "producer_phone": "(811) 211-5497"
+    },
+    "policy": {
+      "effective_date": "2027-03-01",
+      "expiration_date": "2028-03-01",
+      "transaction_type": "new",
+      "prior_carrier": "Harborline Indemnity Company",
+      "quote_needed_by": "2027-02-20",
+      "submission_received_date": "2027-01-26"
+    },
+    "coverage": {
+      "building_limit": 10125000.0,
+      "bpp_limit": 5545000.0,
+      "business_income_limit": 945000.0,
+      "deductible": 2500.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6873 Railroad Boulevard",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30353",
+        "occupancy": "Warehouse",
+        "construction": "frame",
+        "year_built": 1977,
+        "stories": 2,
+        "square_feet": 11600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 9,
+        "roof_type": "built_up",
+        "roof_year": 2024,
+        "alarm_type": "local",
+        "building_value": 2095000.0,
+        "contents_value": 1035000.0,
+        "bi_value": 280000.0,
+        "tiv": 3410000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "8860 Washington Street",
+        "city": "Galveston",
+        "state": "TX",
+        "zip": "77542",
+        "occupancy": "Warehouse",
+        "construction": "non_combustible",
+        "year_built": 2020,
+        "stories": 6,
+        "square_feet": 7000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": "membrane",
+        "roof_year": 2026,
+        "alarm_type": "local",
+        "building_value": 1360000.0,
+        "contents_value": 675000.0,
+        "bi_value": 40000.0,
+        "tiv": 2075000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "1054 Maple Street",
+        "city": "New Orleans",
+        "state": "LA",
+        "zip": "70174",
+        "occupancy": "Warehouse",
+        "construction": "joisted_masonry",
+        "year_built": 2019,
+        "stories": 2,
+        "square_feet": 44900,
+        "sprinklered": true,
+        "sprinkler_pct": 60,
+        "protection_class": 5,
+        "roof_type": "tile",
+        "roof_year": 2025,
+        "alarm_type": "none",
+        "building_value": 6670000.0,
+        "contents_value": 3835000.0,
+        "bi_value": 625000.0,
+        "tiv": 11130000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL1422150",
+        "policy_year": 2026,
+        "date_of_loss": "2026-06-14",
+        "cause": "Lightning",
+        "status": "open",
+        "paid": 40450.0,
+        "reserve": 10280.0,
+        "incurred": 50730.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 32440.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 33550.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 34650.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 35760.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 36860.0,
+        "claim_count": 1,
+        "total_incurred": 50730.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 16615000.0,
+      "location_count": 3,
+      "five_year_incurred": 50730.0,
+      "five_year_premium": 173260.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "loss_run.pdf": "loss_run",
+      "SOV.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "locations[1].year_built"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "FRAME_POOR_PROTECTION",
+      "HURRICANE_ZONE"
+    ],
+    "mess": [
+      "messy_formats",
+      "name_affiliate_variant",
+      "trigger:frame_pc",
+      "year_built_conflict"
+    ]
+  }
+}

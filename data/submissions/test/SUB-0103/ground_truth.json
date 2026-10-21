@@ -1,0 +1,190 @@
+{
+  "record": {
+    "submission_id": "SUB-0103",
+    "insured": {
+      "named_insured": "Keystone Automotive LLC",
+      "dba": null,
+      "fein": "10-4568056",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "514 Oak Way",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02129"
+      },
+      "business_description": "General automotive repair and maintenance garage",
+      "naics_code": "811111",
+      "years_in_business": 26,
+      "annual_revenue": 3750000.0,
+      "employee_count": 176,
+      "website": "www.keystoneautomotive.com",
+      "contact_name": "Aisha Reyes",
+      "contact_phone": "(629) 223-5495",
+      "contact_email": "areyes@keystoneautomotive.com"
+    },
+    "broker": {
+      "agency_name": "Lantern Specialty Brokers",
+      "producer_name": "Nina Carter",
+      "producer_email": "nina.carter@lanternspecialty.com",
+      "producer_phone": "(338) 473-7039"
+    },
+    "policy": {
+      "effective_date": "2026-11-01",
+      "expiration_date": "2027-11-01",
+      "transaction_type": "new",
+      "prior_carrier": "Bridgewater Assurance",
+      "quote_needed_by": "2026-10-11",
+      "submission_received_date": "2026-09-24"
+    },
+    "coverage": {
+      "building_limit": 2990000.0,
+      "bpp_limit": 485000.0,
+      "business_income_limit": 615000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "514 Oak Way",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02129",
+        "occupancy": "Auto Repair",
+        "construction": "joisted_masonry",
+        "year_built": 1968,
+        "stories": 1,
+        "square_feet": 3200,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "metal",
+        "roof_year": 2008,
+        "alarm_type": "local",
+        "building_value": 595000.0,
+        "contents_value": 60000.0,
+        "bi_value": 80000.0,
+        "tiv": 735000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "6903 Industrial Street",
+        "city": "Houston",
+        "state": "TX",
+        "zip": "77005",
+        "occupancy": "Auto Repair",
+        "construction": "fire_resistive",
+        "year_built": 2014,
+        "stories": 12,
+        "square_feet": 15100,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2025,
+        "alarm_type": "central_station",
+        "building_value": 2395000.0,
+        "contents_value": 425000.0,
+        "bi_value": 535000.0,
+        "tiv": 3355000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "GPC-2022-35289",
+        "policy_year": 2021,
+        "date_of_loss": "2022-10-11",
+        "cause": "Smoke",
+        "status": "closed",
+        "paid": 1860.0,
+        "reserve": 0.0,
+        "incurred": 1860.0
+      },
+      {
+        "claim_number": "24B453661",
+        "policy_year": 2023,
+        "date_of_loss": "2024-06-05",
+        "cause": "Frozen Pipes",
+        "status": "closed",
+        "paid": 3300.0,
+        "reserve": 0.0,
+        "incurred": 3300.0
+      },
+      {
+        "claim_number": "CL5591575",
+        "policy_year": 2024,
+        "date_of_loss": "2025-04-12",
+        "cause": "Equipment Breakdown",
+        "status": "closed",
+        "paid": 1490.0,
+        "reserve": 0.0,
+        "incurred": 1490.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 4940.0,
+        "claim_count": 1,
+        "total_incurred": 1860.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 5110.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 5270.0,
+        "claim_count": 1,
+        "total_incurred": 3300.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 5440.0,
+        "claim_count": 1,
+        "total_incurred": 1490.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 5610.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 4090000.0,
+      "location_count": 2,
+      "five_year_incurred": 6650.0,
+      "five_year_premium": 26370.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "Attachment_87673.pdf": "application",
+      "scan82984.pdf": "loss_run",
+      "Attachment_44452.pdf": "loss_run",
+      "file16694.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "messy_formats",
+      "name_affiliate_variant"
+    ]
+  }
+}

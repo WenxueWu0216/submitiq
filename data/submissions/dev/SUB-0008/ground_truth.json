@@ -1,0 +1,190 @@
+{
+  "record": {
+    "submission_id": "SUB-0008",
+    "insured": {
+      "named_insured": "Westfield Warehousing L.L.C.",
+      "dba": null,
+      "fein": "76-1394079",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "PO Box 5504",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28230"
+      },
+      "business_description": "Dry goods warehousing and third-party distribution",
+      "naics_code": "493110",
+      "years_in_business": 12,
+      "annual_revenue": 8960000.0,
+      "employee_count": 315,
+      "website": "www.westfieldwarehousing.com",
+      "contact_name": "James Alvarez",
+      "contact_phone": "(956) 223-3837",
+      "contact_email": "jalvarez@westfieldwarehousing.com"
+    },
+    "broker": {
+      "agency_name": "Granite Peak Insurance Group",
+      "producer_name": "Maria Patel",
+      "producer_email": "maria.patel@granitepeakins.com",
+      "producer_phone": "(265) 223-8076"
+    },
+    "policy": {
+      "effective_date": "2026-11-01",
+      "expiration_date": "2027-11-01",
+      "transaction_type": "renewal",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2026-10-17",
+      "submission_received_date": "2026-09-10"
+    },
+    "coverage": {
+      "building_limit": 6305000.0,
+      "bpp_limit": 2615000.0,
+      "business_income_limit": 1455000.0,
+      "deductible": 2500.0,
+      "valuation": "actual_cash_value",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "broad",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "5551 Jefferson Boulevard",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28230",
+        "occupancy": "Warehouse",
+        "construction": "masonry_non_combustible",
+        "year_built": 2001,
+        "stories": 5,
+        "square_feet": 13200,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "metal",
+        "roof_year": 2007,
+        "alarm_type": "central_station",
+        "building_value": 3230000.0,
+        "contents_value": 1640000.0,
+        "bi_value": 795000.0,
+        "tiv": 5665000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "5942 Maple Parkway",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98193",
+        "occupancy": "Warehouse",
+        "construction": "frame",
+        "year_built": 1989,
+        "stories": 1,
+        "square_feet": 1800,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": "built_up",
+        "roof_year": 2011,
+        "alarm_type": "central_station",
+        "building_value": 455000.0,
+        "contents_value": 50000.0,
+        "bi_value": 60000.0,
+        "tiv": 565000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "5052 Jefferson Way",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15292",
+        "occupancy": "Warehouse",
+        "construction": "masonry_non_combustible",
+        "year_built": 1998,
+        "stories": 5,
+        "square_feet": 16500,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2015,
+        "alarm_type": "central_station",
+        "building_value": 2620000.0,
+        "contents_value": 925000.0,
+        "bi_value": 600000.0,
+        "tiv": 4145000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "24G134918",
+        "policy_year": 2024,
+        "date_of_loss": "2024-12-23",
+        "cause": "Wind/Hail",
+        "status": "closed",
+        "paid": 18790.0,
+        "reserve": 0.0,
+        "incurred": 18790.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 15580.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 16110.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 16640.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 17170.0,
+        "claim_count": 1,
+        "total_incurred": 18790.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 17710.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 10375000.0,
+      "location_count": 3,
+      "five_year_incurred": 18790.0,
+      "five_year_premium": 83210.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "scan22718.pdf": "application",
+      "IMG_9084.pdf": "loss_run",
+      "scan77951.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "name_affiliate_variant"
+    ]
+  }
+}

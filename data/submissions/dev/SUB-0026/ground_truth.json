@@ -1,0 +1,283 @@
+{
+  "record": {
+    "submission_id": "SUB-0026",
+    "insured": {
+      "named_insured": "Juniper Hardware Inc.",
+      "dba": "Juniper Wholesale Hardware",
+      "fein": "79-7852312",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "2479 Commerce Boulevard",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02144"
+      },
+      "business_description": "Wholesale distribution of hardware and fasteners",
+      "naics_code": "423710",
+      "years_in_business": 57,
+      "annual_revenue": 85180000.0,
+      "employee_count": 175,
+      "website": "www.juniperhardware.com",
+      "contact_name": "Chen Novak",
+      "contact_phone": "(304) 402-9646",
+      "contact_email": "cnovak@juniperhardware.com"
+    },
+    "broker": {
+      "agency_name": "Lantern Specialty Brokers",
+      "producer_name": "Nina Alvarez",
+      "producer_email": "nina.alvarez@lanternspecialty.com",
+      "producer_phone": "(420) 333-5001"
+    },
+    "policy": {
+      "effective_date": "2027-02-01",
+      "expiration_date": "2028-02-01",
+      "transaction_type": "new",
+      "prior_carrier": "Sterling National Insurance",
+      "quote_needed_by": "2027-01-13",
+      "submission_received_date": "2026-12-13"
+    },
+    "coverage": {
+      "building_limit": 46430000.0,
+      "bpp_limit": 11545000.0,
+      "business_income_limit": 4825000.0,
+      "deductible": 2500.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": true,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "2479 Commerce Boulevard",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02144",
+        "occupancy": "Wholesale Hardware",
+        "construction": "non_combustible",
+        "year_built": 1967,
+        "stories": 4,
+        "square_feet": 144200,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 3,
+        "roof_type": "membrane",
+        "roof_year": 2016,
+        "alarm_type": "local",
+        "building_value": 25950000.0,
+        "contents_value": 1735000.0,
+        "bi_value": 1135000.0,
+        "tiv": 28820000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "7440 Railroad Road",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60658",
+        "occupancy": "Wholesale Hardware",
+        "construction": "joisted_masonry",
+        "year_built": 2015,
+        "stories": 3,
+        "square_feet": 19800,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "built_up",
+        "roof_year": 2020,
+        "alarm_type": "local",
+        "building_value": 5125000.0,
+        "contents_value": 3025000.0,
+        "bi_value": 970000.0,
+        "tiv": 9120000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "3304 Lake Avenue",
+        "city": "Indianapolis",
+        "state": "IN",
+        "zip": "46232",
+        "occupancy": "Wholesale Hardware",
+        "construction": "joisted_masonry",
+        "year_built": 2001,
+        "stories": 2,
+        "square_feet": 31400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 7,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2007,
+        "alarm_type": "local",
+        "building_value": 6890000.0,
+        "contents_value": 3725000.0,
+        "bi_value": 1710000.0,
+        "tiv": 12325000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "3413 River Avenue",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33198",
+        "occupancy": "Wholesale Hardware",
+        "construction": "joisted_masonry",
+        "year_built": 1984,
+        "stories": 2,
+        "square_feet": 5500,
+        "sprinklered": true,
+        "sprinkler_pct": 90,
+        "protection_class": null,
+        "roof_type": null,
+        "roof_year": null,
+        "alarm_type": null,
+        "building_value": 1225000.0,
+        "contents_value": 575000.0,
+        "bi_value": 125000.0,
+        "tiv": 1925000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "9106 Maple Road",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85077",
+        "occupancy": "Wholesale Hardware",
+        "construction": "joisted_masonry",
+        "year_built": 1959,
+        "stories": 3,
+        "square_feet": 27500,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": null,
+        "roof_year": 2019,
+        "alarm_type": null,
+        "building_value": 5010000.0,
+        "contents_value": 1990000.0,
+        "bi_value": 760000.0,
+        "tiv": 7760000.0
+      },
+      {
+        "loc_number": 6,
+        "street": "2328 Commerce Street",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30349",
+        "occupancy": "Wholesale Hardware",
+        "construction": "joisted_masonry",
+        "year_built": 2001,
+        "stories": 3,
+        "square_feet": 16500,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 7,
+        "roof_type": null,
+        "roof_year": 2021,
+        "alarm_type": null,
+        "building_value": 2230000.0,
+        "contents_value": 495000.0,
+        "bi_value": 125000.0,
+        "tiv": 2850000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "SNI-2024-67295",
+        "policy_year": 2024,
+        "date_of_loss": "2024-07-01",
+        "cause": "Smoke",
+        "status": "closed",
+        "paid": 69050.0,
+        "reserve": 0.0,
+        "incurred": 69050.0
+      },
+      {
+        "claim_number": "SNI-2024-72982",
+        "policy_year": 2024,
+        "date_of_loss": "2024-11-20",
+        "cause": "Theft/Burglary",
+        "status": "closed",
+        "paid": 15290.0,
+        "reserve": 0.0,
+        "incurred": 15290.0
+      },
+      {
+        "claim_number": "26S180899",
+        "policy_year": 2026,
+        "date_of_loss": "2026-04-30",
+        "cause": "Lightning",
+        "status": "open",
+        "paid": 11630.0,
+        "reserve": 3550.0,
+        "incurred": 15180.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 86210.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 89150.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 92090.0,
+        "claim_count": 2,
+        "total_incurred": 84340.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 95030.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Sterling National Insurance",
+        "earned_premium": 97970.0,
+        "claim_count": 1,
+        "total_incurred": 15180.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 62800000.0,
+      "location_count": 6,
+      "five_year_incurred": 99520.0,
+      "five_year_premium": 460450.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "IMG_36577.pdf": "application",
+      "doc53979.pdf": "loss_run",
+      "doc78625.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "LOCATION_TIV",
+      "MISSING_INFO",
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "messy_formats",
+      "missing:locations[4].protection_class,locations[4].roof_year",
+      "name_affiliate_variant",
+      "trigger:loc_tiv_refer"
+    ]
+  }
+}

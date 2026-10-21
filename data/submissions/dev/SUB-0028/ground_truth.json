@@ -1,0 +1,159 @@
+{
+  "record": {
+    "submission_id": "SUB-0028",
+    "insured": {
+      "named_insured": "Brookstone Automotive Inc.",
+      "dba": null,
+      "fein": null,
+      "entity_type": "nonprofit",
+      "mailing_address": {
+        "street": "PO Box 6019",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68125"
+      },
+      "business_description": "General automotive repair and maintenance garage",
+      "naics_code": "811111",
+      "years_in_business": 29,
+      "annual_revenue": 20350000.0,
+      "employee_count": 188,
+      "website": "www.brookstoneautomotive.com",
+      "contact_name": "Laura Novak",
+      "contact_phone": "(430) 432-6888",
+      "contact_email": "lnovak@brookstoneautomotive.com"
+    },
+    "broker": {
+      "agency_name": "Lantern Specialty Brokers",
+      "producer_name": "Maria Reyes",
+      "producer_email": "maria.reyes@lanternspecialty.com",
+      "producer_phone": "(892) 429-8361"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": null,
+      "quote_needed_by": "2026-11-20",
+      "submission_received_date": "2026-10-25"
+    },
+    "coverage": {
+      "building_limit": 12300000.0,
+      "bpp_limit": 3020000.0,
+      "business_income_limit": 845000.0,
+      "deductible": 10000.0,
+      "valuation": "actual_cash_value",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": true,
+      "earthquake_requested": true
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "5493 Cedar Lane",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68125",
+        "occupancy": "Auto Repair",
+        "construction": "frame",
+        "year_built": 1986,
+        "stories": 1,
+        "square_feet": 29600,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 2,
+        "roof_type": "built_up",
+        "roof_year": 2017,
+        "alarm_type": "central_station",
+        "building_value": 5210000.0,
+        "contents_value": 1425000.0,
+        "bi_value": 795000.0,
+        "tiv": 7430000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "4364 Center Drive",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95883",
+        "occupancy": "Auto Repair",
+        "construction": "masonry_non_combustible",
+        "year_built": 2020,
+        "stories": 5,
+        "square_feet": 41300,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 8,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2020,
+        "alarm_type": "central_station",
+        "building_value": 7090000.0,
+        "contents_value": 1595000.0,
+        "bi_value": 50000.0,
+        "tiv": 8735000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 30620.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 31670.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 32710.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 33750.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 34800.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 16165000.0,
+      "location_count": 2,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 163550.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "Attachment_22824.pdf": "application",
+      "file59669.pdf": "loss_run",
+      "Attachment_75610.pdf": "loss_run",
+      "Attachment_77763.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "messy_formats",
+      "missing:insured.fein,policy.prior_carrier"
+    ]
+  }
+}

@@ -1,0 +1,229 @@
+{
+  "record": {
+    "submission_id": "SUB-0072",
+    "insured": {
+      "named_insured": "Bayview Sports Center Inc.",
+      "dba": null,
+      "fein": "58-6723197",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "1331 Lincoln Way",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75294"
+      },
+      "business_description": "Fitness center with weights, classes and locker rooms",
+      "naics_code": "713940",
+      "years_in_business": 58,
+      "annual_revenue": 23240000.0,
+      "employee_count": 147,
+      "website": "www.bayviewsports.com",
+      "contact_name": "David Novak",
+      "contact_phone": "(617) 248-9924",
+      "contact_email": "dnovak@bayviewsports.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Elena Novak",
+      "producer_email": "elena.novak@atlasreed.com",
+      "producer_phone": "(816) 312-5022"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2026-11-15",
+      "submission_received_date": "2026-10-15"
+    },
+    "coverage": {
+      "building_limit": 15030000.0,
+      "bpp_limit": 7310000.0,
+      "business_income_limit": 1085000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "1331 Lincoln Way",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75294",
+        "occupancy": "Fitness Center",
+        "construction": "non_combustible",
+        "year_built": 1997,
+        "stories": 4,
+        "square_feet": 15300,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "membrane",
+        "roof_year": 2013,
+        "alarm_type": "central_station",
+        "building_value": 2755000.0,
+        "contents_value": 1365000.0,
+        "bi_value": 415000.0,
+        "tiv": 4535000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "6263 Center Avenue",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75216",
+        "occupancy": "Fitness Center",
+        "construction": "non_combustible",
+        "year_built": 1960,
+        "stories": 1,
+        "square_feet": 19100,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": "membrane",
+        "roof_year": 2012,
+        "alarm_type": "central_station",
+        "building_value": 3185000.0,
+        "contents_value": 1550000.0,
+        "bi_value": 145000.0,
+        "tiv": 4880000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "6745 Pine Boulevard",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80251",
+        "occupancy": "Fitness Center",
+        "construction": "joisted_masonry",
+        "year_built": 1956,
+        "stories": 3,
+        "square_feet": 35900,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 7,
+        "roof_type": "membrane",
+        "roof_year": 2025,
+        "alarm_type": "local",
+        "building_value": 5095000.0,
+        "contents_value": 2725000.0,
+        "bi_value": 525000.0,
+        "tiv": 8345000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "3701 Market Lane",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55462",
+        "occupancy": "Fitness Center",
+        "construction": "frame",
+        "year_built": 1971,
+        "stories": 3,
+        "square_feet": 32200,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 6,
+        "roof_type": null,
+        "roof_year": 2007,
+        "alarm_type": null,
+        "building_value": 3995000.0,
+        "contents_value": 1670000.0,
+        "bi_value": 0.0,
+        "tiv": 5665000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "GPC-2022-97113",
+        "policy_year": 2021,
+        "date_of_loss": "2022-07-15",
+        "cause": "Lightning",
+        "status": "closed",
+        "paid": 360000.0,
+        "reserve": 0.0,
+        "incurred": 360000.0
+      },
+      {
+        "claim_number": "GPC-2024-84382",
+        "policy_year": 2023,
+        "date_of_loss": "2024-03-16",
+        "cause": "Fire",
+        "status": "closed",
+        "paid": 800.0,
+        "reserve": 0.0,
+        "incurred": 800.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 35690.0,
+        "claim_count": 1,
+        "total_incurred": 360000.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 36900.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 38120.0,
+        "claim_count": 1,
+        "total_incurred": 800.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 39340.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 40550.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 23425000.0,
+      "location_count": 4,
+      "five_year_incurred": 360800.0,
+      "five_year_premium": 190600.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "statement_of_values.pdf": "sov"
+    },
+    "expected_conflicts": [
+      "totals.total_tiv"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "LARGE_LOSS",
+      "LOSS_RATIO"
+    ],
+    "mess": [
+      "messy_formats",
+      "tiv_conflict",
+      "trigger:large_loss"
+    ]
+  }
+}

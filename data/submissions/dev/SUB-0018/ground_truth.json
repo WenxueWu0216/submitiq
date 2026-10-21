@@ -1,0 +1,280 @@
+{
+  "record": {
+    "submission_id": "SUB-0018",
+    "insured": {
+      "named_insured": "Ironwood Engineering Group Corp.",
+      "dba": "Ironwood Engineering Office",
+      "fein": "88-5414941",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "9580 Main Avenue",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02184"
+      },
+      "business_description": "Civil and structural engineering consulting office",
+      "naics_code": "541330",
+      "years_in_business": 48,
+      "annual_revenue": 32040000.0,
+      "employee_count": 385,
+      "website": "www.ironwoodengineering.com",
+      "contact_name": "Sarah Johnson",
+      "contact_phone": "(964) 603-7088",
+      "contact_email": "sjohnson@ironwoodengineering.com"
+    },
+    "broker": {
+      "agency_name": "Hollis Benton Agency",
+      "producer_name": "Thomas Schmidt",
+      "producer_email": "thomas.schmidt@hollisbenton.com",
+      "producer_phone": "(625) 522-7212"
+    },
+    "policy": {
+      "effective_date": "2026-12-15",
+      "expiration_date": "2027-12-15",
+      "transaction_type": "new",
+      "prior_carrier": "Bridgewater Assurance",
+      "quote_needed_by": "2026-12-06",
+      "submission_received_date": "2026-10-30"
+    },
+    "coverage": {
+      "building_limit": 18735000.0,
+      "bpp_limit": 8035000.0,
+      "business_income_limit": 1660000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": true
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "9580 Main Avenue",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02184",
+        "occupancy": "Engineering Office",
+        "construction": "joisted_masonry",
+        "year_built": 1975,
+        "stories": 1,
+        "square_feet": 39200,
+        "sprinklered": true,
+        "sprinkler_pct": 75,
+        "protection_class": 2,
+        "roof_type": "tile",
+        "roof_year": 2023,
+        "alarm_type": "central_station",
+        "building_value": 7050000.0,
+        "contents_value": 2950000.0,
+        "bi_value": 415000.0,
+        "tiv": 10415000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "5983 Railroad Drive",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90099",
+        "occupancy": "Engineering Office",
+        "construction": "frame",
+        "year_built": 1967,
+        "stories": 3,
+        "square_feet": 22200,
+        "sprinklered": true,
+        "sprinkler_pct": 60,
+        "protection_class": 6,
+        "roof_type": "metal",
+        "roof_year": 2023,
+        "alarm_type": "local",
+        "building_value": 4785000.0,
+        "contents_value": 2330000.0,
+        "bi_value": 930000.0,
+        "tiv": 8045000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "1290 Lake Drive",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98148",
+        "occupancy": "Engineering Office",
+        "construction": "frame",
+        "year_built": 1985,
+        "stories": 3,
+        "square_feet": 5800,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2013,
+        "alarm_type": "local",
+        "building_value": 1270000.0,
+        "contents_value": 660000.0,
+        "bi_value": 315000.0,
+        "tiv": 2245000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "9287 Technology Avenue",
+        "city": "New Orleans",
+        "state": "LA",
+        "zip": "70151",
+        "occupancy": "Engineering Office",
+        "construction": "non_combustible",
+        "year_built": 1994,
+        "stories": 2,
+        "square_feet": 24800,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 3,
+        "roof_type": null,
+        "roof_year": 2019,
+        "alarm_type": null,
+        "building_value": 5630000.0,
+        "contents_value": 2095000.0,
+        "bi_value": 0.0,
+        "tiv": 7725000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL3251239",
+        "policy_year": 2021,
+        "date_of_loss": "2022-03-04",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 13940.0,
+        "reserve": 0.0,
+        "incurred": 13940.0
+      },
+      {
+        "claim_number": "BWA-2023-77089",
+        "policy_year": 2022,
+        "date_of_loss": "2023-01-21",
+        "cause": "Theft/Burglary",
+        "status": "closed",
+        "paid": 10040.0,
+        "reserve": 0.0,
+        "incurred": 10040.0
+      },
+      {
+        "claim_number": "CL5152113",
+        "policy_year": 2022,
+        "date_of_loss": "2023-04-12",
+        "cause": "Frozen Pipes",
+        "status": "closed",
+        "paid": 14930.0,
+        "reserve": 0.0,
+        "incurred": 14930.0
+      },
+      {
+        "claim_number": "23B623448",
+        "policy_year": 2022,
+        "date_of_loss": "2023-07-22",
+        "cause": "Lightning",
+        "status": "closed",
+        "paid": 16350.0,
+        "reserve": 0.0,
+        "incurred": 16350.0
+      },
+      {
+        "claim_number": "BWA-2023-46161",
+        "policy_year": 2022,
+        "date_of_loss": "2023-09-16",
+        "cause": "Wind/Hail",
+        "status": "closed",
+        "paid": 11340.0,
+        "reserve": 0.0,
+        "incurred": 11340.0
+      },
+      {
+        "claim_number": "BWA-2026-87625",
+        "policy_year": 2025,
+        "date_of_loss": "2026-02-19",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 12520.0,
+        "reserve": 0.0,
+        "incurred": 12520.0
+      },
+      {
+        "claim_number": "BWA-2026-61313",
+        "policy_year": 2025,
+        "date_of_loss": "2026-02-19",
+        "cause": "Equipment Breakdown",
+        "status": "closed",
+        "paid": 13390.0,
+        "reserve": 0.0,
+        "incurred": 13390.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 48990.0,
+        "claim_count": 1,
+        "total_incurred": 13940.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 50660.0,
+        "claim_count": 4,
+        "total_incurred": 52660.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 52330.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 54000.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 55670.0,
+        "claim_count": 2,
+        "total_incurred": 25910.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 28430000.0,
+      "location_count": 4,
+      "five_year_incurred": 92510.0,
+      "five_year_premium": 261650.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "ACORD_125_140.pdf": "application",
+      "Loss_History.pdf": "loss_run",
+      "statement_of_values.pdf": "sov"
+    },
+    "expected_conflicts": [
+      "locations[2].year_built",
+      "totals.total_tiv"
+    ],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "HURRICANE_ZONE",
+      "LOSS_FREQUENCY"
+    ],
+    "mess": [
+      "tiv_conflict",
+      "trigger:frequency",
+      "year_built_conflict"
+    ]
+  }
+}

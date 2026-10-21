@@ -1,0 +1,192 @@
+{
+  "record": {
+    "submission_id": "SUB-0029",
+    "insured": {
+      "named_insured": "Westfield Kitchen LLC",
+      "dba": null,
+      "fein": "66-3650346",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "5300 Market Drive",
+        "city": "Galveston",
+        "state": "TX",
+        "zip": "77565"
+      },
+      "business_description": "Full-service restaurant with bar and commercial cooking",
+      "naics_code": "722511",
+      "years_in_business": 45,
+      "annual_revenue": 7000000.0,
+      "employee_count": 275,
+      "website": "www.westfieldkitchen.com",
+      "contact_name": "Kevin Hughes",
+      "contact_phone": "(702) 351-5995",
+      "contact_email": "khughes@westfieldkitchen.com"
+    },
+    "broker": {
+      "agency_name": "Hollis Benton Agency",
+      "producer_name": "Mei Yamamoto",
+      "producer_email": "mei.yamamoto@hollisbenton.com",
+      "producer_phone": "(576) 641-2306"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": "Harborline Indemnity Company",
+      "quote_needed_by": "2026-11-14",
+      "submission_received_date": "2026-10-21"
+    },
+    "coverage": {
+      "building_limit": 4530000.0,
+      "bpp_limit": 655000.0,
+      "business_income_limit": 755000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "5300 Market Drive",
+        "city": "Galveston",
+        "state": "TX",
+        "zip": "77565",
+        "occupancy": "Restaurant",
+        "construction": "modified_fire_resistive",
+        "year_built": 1990,
+        "stories": 5,
+        "square_feet": 8600,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": "metal",
+        "roof_year": 2017,
+        "alarm_type": "local",
+        "building_value": 1730000.0,
+        "contents_value": 265000.0,
+        "bi_value": 410000.0,
+        "tiv": 2405000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "9431 Center Street",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98182",
+        "occupancy": "Restaurant",
+        "construction": "non_combustible",
+        "year_built": 1966,
+        "stories": 4,
+        "square_feet": 12400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 8,
+        "roof_type": "tile",
+        "roof_year": 2019,
+        "alarm_type": "central_station",
+        "building_value": 2800000.0,
+        "contents_value": 390000.0,
+        "bi_value": 345000.0,
+        "tiv": 3535000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "HIC-2022-95489",
+        "policy_year": 2021,
+        "date_of_loss": "2022-07-12",
+        "cause": "Lightning",
+        "status": "closed",
+        "paid": 8030.0,
+        "reserve": 0.0,
+        "incurred": 8030.0
+      },
+      {
+        "claim_number": "CL8482603",
+        "policy_year": 2023,
+        "date_of_loss": "2024-07-26",
+        "cause": "Theft/Burglary",
+        "status": "closed",
+        "paid": 7020.0,
+        "reserve": 0.0,
+        "incurred": 7020.0
+      },
+      {
+        "claim_number": "CL8169354",
+        "policy_year": 2023,
+        "date_of_loss": "2024-10-09",
+        "cause": "Smoke",
+        "status": "closed",
+        "paid": 5780.0,
+        "reserve": 0.0,
+        "incurred": 5780.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 11400.0,
+        "claim_count": 1,
+        "total_incurred": 8030.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 11790.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 12180.0,
+        "claim_count": 2,
+        "total_incurred": 12800.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 12570.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 12960.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 5940000.0,
+      "location_count": 2,
+      "five_year_incurred": 20830.0,
+      "five_year_premium": 60900.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "Loss_History.pdf": "loss_run",
+      "Property_Schedule.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "CLASS_REFER"
+    ],
+    "mess": [
+      "rotated:sov",
+      "scanned:loss_run",
+      "scanned:sov"
+    ]
+  }
+}

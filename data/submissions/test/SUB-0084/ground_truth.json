@@ -1,0 +1,169 @@
+{
+  "record": {
+    "submission_id": "SUB-0084",
+    "insured": {
+      "named_insured": "Clearwater Grocers Partners LP",
+      "dba": null,
+      "fein": "32-7642249",
+      "entity_type": "partnership",
+      "mailing_address": {
+        "street": "PO Box 2155",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55458"
+      },
+      "business_description": "Independent grocery store with deli and bakery counter",
+      "naics_code": "445110",
+      "years_in_business": 26,
+      "annual_revenue": 7020000.0,
+      "employee_count": 235,
+      "website": "www.clearwatergrocers.com",
+      "contact_name": "Maria Reyes",
+      "contact_phone": "(979) 816-5460",
+      "contact_email": "mreyes@clearwatergrocers.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Priya Silva",
+      "producer_email": "priya.silva@atlasreed.com",
+      "producer_phone": "(693) 640-1536"
+    },
+    "policy": {
+      "effective_date": "2027-01-15",
+      "expiration_date": "2028-01-15",
+      "transaction_type": "new",
+      "prior_carrier": "Continental Mutual Insurance Co.",
+      "quote_needed_by": "2026-12-26",
+      "submission_received_date": "2026-11-29"
+    },
+    "coverage": {
+      "building_limit": 4590000.0,
+      "bpp_limit": 695000.0,
+      "business_income_limit": 960000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "4671 Park Drive",
+        "city": "Minneapolis",
+        "state": "MN",
+        "zip": "55458",
+        "occupancy": "Grocery Store",
+        "construction": "fire_resistive",
+        "year_built": 2012,
+        "stories": 5,
+        "square_feet": 25500,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2022,
+        "alarm_type": "local",
+        "building_value": 4590000.0,
+        "contents_value": 695000.0,
+        "bi_value": 960000.0,
+        "tiv": 6245000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CMI-2023-41710",
+        "policy_year": 2023,
+        "date_of_loss": "2023-03-20",
+        "cause": "Frozen Pipes",
+        "status": "closed",
+        "paid": 33880.0,
+        "reserve": 0.0,
+        "incurred": 33880.0
+      },
+      {
+        "claim_number": "CMI-2023-21655",
+        "policy_year": 2023,
+        "date_of_loss": "2023-06-30",
+        "cause": "Wind/Hail",
+        "status": "closed",
+        "paid": 57790.0,
+        "reserve": 0.0,
+        "incurred": 57790.0
+      },
+      {
+        "claim_number": "CL6741491",
+        "policy_year": 2024,
+        "date_of_loss": "2024-02-03",
+        "cause": "Wind/Hail",
+        "status": "closed",
+        "paid": 35010.0,
+        "reserve": 0.0,
+        "incurred": 35010.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 13910.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 14380.0,
+        "claim_count": 2,
+        "total_incurred": 91670.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 14860.0,
+        "claim_count": 1,
+        "total_incurred": 35010.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 15330.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 15810.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 6245000.0,
+      "location_count": 1,
+      "five_year_incurred": 126680.0,
+      "five_year_premium": 74290.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "Signed_App.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "statement_of_values.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "LOSS_RATIO"
+    ],
+    "mess": [
+      "messy_formats",
+      "trigger:loss_ratio_bad"
+    ]
+  }
+}

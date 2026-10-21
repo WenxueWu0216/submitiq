@@ -1,0 +1,175 @@
+{
+  "record": {
+    "submission_id": "SUB-0091",
+    "insured": {
+      "named_insured": "Stonebridge Industrial Supply LLC",
+      "dba": null,
+      "fein": "70-2822304",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "PO Box 2497",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02154"
+      },
+      "business_description": "Wholesale distribution of hardware and fasteners",
+      "naics_code": "423710",
+      "years_in_business": 10,
+      "annual_revenue": 11430000.0,
+      "employee_count": 83,
+      "website": "www.stonebridgeindustrial.com",
+      "contact_name": "Daniel Silva",
+      "contact_phone": "(369) 830-2078",
+      "contact_email": "dsilva@stonebridgeindustrial.com"
+    },
+    "broker": {
+      "agency_name": "Tidewater Risk Partners",
+      "producer_name": "Thomas Hughes",
+      "producer_email": "thomas.hughes@tidewaterrisk.com",
+      "producer_phone": "(269) 305-3325"
+    },
+    "policy": {
+      "effective_date": "2027-02-15",
+      "expiration_date": "2028-02-15",
+      "transaction_type": "new",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2027-02-08",
+      "submission_received_date": "2027-01-13"
+    },
+    "coverage": {
+      "building_limit": 16930000.0,
+      "bpp_limit": 4600000.0,
+      "business_income_limit": 1585000.0,
+      "deductible": 1000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "broad",
+      "flood_requested": true,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "1564 Franklin Street",
+        "city": "Boston",
+        "state": "MA",
+        "zip": "02154",
+        "occupancy": "Wholesale Hardware",
+        "construction": "masonry_non_combustible",
+        "year_built": 1955,
+        "stories": 5,
+        "square_feet": 62100,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2015,
+        "alarm_type": "central_station",
+        "building_value": 11180000.0,
+        "contents_value": 1990000.0,
+        "bi_value": 855000.0,
+        "tiv": 14025000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "6621 Cedar Street",
+        "city": "Chicago",
+        "state": "IL",
+        "zip": "60662",
+        "occupancy": "Wholesale Hardware",
+        "construction": "non_combustible",
+        "year_built": 1995,
+        "stories": 3,
+        "square_feet": 26800,
+        "sprinklered": true,
+        "sprinkler_pct": 60,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2026,
+        "alarm_type": "central_station",
+        "building_value": 5750000.0,
+        "contents_value": 2610000.0,
+        "bi_value": 730000.0,
+        "tiv": 9090000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "26G788805",
+        "policy_year": 2025,
+        "date_of_loss": "2026-02-05",
+        "cause": "Equipment Breakdown",
+        "status": "open",
+        "paid": 57110.0,
+        "reserve": 22940.0,
+        "incurred": 80050.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 44180.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 45690.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 47200.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 48700.0,
+        "claim_count": 1,
+        "total_incurred": 80050.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 50210.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 23115000.0,
+      "location_count": 2,
+      "five_year_incurred": 80050.0,
+      "five_year_premium": 235980.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "C",
+    "doc_types": {
+      "email.txt": "email",
+      "Attachment_25187.pdf": "application",
+      "IMG_44268.pdf": "loss_run",
+      "scan99931.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "locations[2].year_built",
+      "totals.total_tiv"
+    ],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "tiv_conflict",
+      "trigger:unsprinklered_big",
+      "year_built_conflict"
+    ]
+  }
+}

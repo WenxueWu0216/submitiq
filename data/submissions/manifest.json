@@ -1,0 +1,1343 @@
+[
+ {
+  "id": "SUB-0001",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "scanned:application",
+   "trigger:old_building"
+  ]
+ },
+ {
+  "id": "SUB-0002",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "missing:coverage.coinsurance_pct,insured.website,insured.years_in_business",
+   "trigger:old_building"
+  ]
+ },
+ {
+  "id": "SUB-0003",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "tiv_conflict",
+   "trigger:roof_age"
+  ]
+ },
+ {
+  "id": "SUB-0004",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "missing:coverage.coinsurance_pct,locations[2].protection_class"
+  ]
+ },
+ {
+  "id": "SUB-0005",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "missing:insured.employee_count",
+   "name_affiliate_variant",
+   "trigger:loc_tiv_refer"
+  ]
+ },
+ {
+  "id": "SUB-0006",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "scanned:application",
+   "trigger:unsprinklered_big"
+  ]
+ },
+ {
+  "id": "SUB-0007",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "scanned:loss_run",
+   "trigger:loss_ratio_bad"
+  ]
+ },
+ {
+  "id": "SUB-0008",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "name_affiliate_variant"
+  ]
+ },
+ {
+  "id": "SUB-0009",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "scanned:loss_run"
+  ]
+ },
+ {
+  "id": "SUB-0010",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": []
+ },
+ {
+  "id": "SUB-0011",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0012",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "missing:insured.website",
+   "name_affiliate_variant"
+  ]
+ },
+ {
+  "id": "SUB-0013",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "scanned:loss_run",
+   "trigger:quake_jm"
+  ]
+ },
+ {
+  "id": "SUB-0014",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0015",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "scanned:sov"
+  ]
+ },
+ {
+  "id": "SUB-0016",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0017",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "missing:locations[1].roof_year"
+  ]
+ },
+ {
+  "id": "SUB-0018",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "tiv_conflict",
+   "trigger:frequency",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0019",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "missing:locations[2].year_built",
+   "scanned:application",
+   "tiv_conflict",
+   "trigger:frame_pc"
+  ]
+ },
+ {
+  "id": "SUB-0020",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": []
+ },
+ {
+  "id": "SUB-0021",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0022",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0023",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0024",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "effective_date_conflict",
+   "missing:locations[2].roof_year",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0025",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "effective_date_conflict",
+   "messy_formats",
+   "missing:locations[1].protection_class",
+   "name_conflict",
+   "scanned:loss_run"
+  ]
+ },
+ {
+  "id": "SUB-0026",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "missing:locations[4].protection_class,locations[4].roof_year",
+   "name_affiliate_variant",
+   "trigger:loc_tiv_refer"
+  ]
+ },
+ {
+  "id": "SUB-0027",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": []
+ },
+ {
+  "id": "SUB-0028",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "missing:insured.fein,policy.prior_carrier"
+  ]
+ },
+ {
+  "id": "SUB-0029",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "rotated:sov",
+   "scanned:loss_run",
+   "scanned:sov"
+  ]
+ },
+ {
+  "id": "SUB-0030",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "rotated:application",
+   "scanned:application"
+  ]
+ },
+ {
+  "id": "SUB-0031",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "effective_date_conflict",
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0032",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "missing:insured.website,locations[1].protection_class,locations[1].year_built"
+  ]
+ },
+ {
+  "id": "SUB-0033",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "trigger:frame_pc",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0034",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": []
+ },
+ {
+  "id": "SUB-0035",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "missing:insured.website",
+   "tiv_conflict",
+   "trigger:frame_pc",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0036",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "missing:policy.prior_carrier",
+   "trigger:unsprinklered_big"
+  ]
+ },
+ {
+  "id": "SUB-0037",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "missing:insured.fein,insured.website"
+  ]
+ },
+ {
+  "id": "SUB-0038",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "missing:locations[1].year_built",
+   "rotated:sov",
+   "scanned:sov",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0039",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": []
+ },
+ {
+  "id": "SUB-0040",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "trigger:roof_age"
+  ]
+ },
+ {
+  "id": "SUB-0041",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0042",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0043",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "name_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0044",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "scanned:application",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0045",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "trigger:unsprinklered_big"
+  ]
+ },
+ {
+  "id": "SUB-0046",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "trigger:large_loss",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0047",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0048",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "trigger:old_building"
+  ]
+ },
+ {
+  "id": "SUB-0049",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "scanned:loss_run"
+  ]
+ },
+ {
+  "id": "SUB-0050",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "missing:insured.website"
+  ]
+ },
+ {
+  "id": "SUB-0051",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "missing:insured.years_in_business",
+   "name_affiliate_variant",
+   "scanned:sov"
+  ]
+ },
+ {
+  "id": "SUB-0052",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "scanned:application",
+   "scanned:loss_run",
+   "tiv_conflict",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0053",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "trigger:hurricane_frame"
+  ]
+ },
+ {
+  "id": "SUB-0054",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "scanned:loss_run",
+   "trigger:loss_ratio"
+  ]
+ },
+ {
+  "id": "SUB-0055",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "effective_date_conflict",
+   "missing:insured.employee_count",
+   "name_affiliate_variant",
+   "tiv_conflict",
+   "trigger:frame_pc"
+  ]
+ },
+ {
+  "id": "SUB-0056",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "trigger:quake_jm"
+  ]
+ },
+ {
+  "id": "SUB-0057",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "missing:insured.employee_count,locations[1].roof_year,locations[1].year_built"
+  ]
+ },
+ {
+  "id": "SUB-0058",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "missing:locations[3].protection_class",
+   "tiv_conflict",
+   "trigger:loss_ratio",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0059",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "missing:locations[1].protection_class",
+   "scanned:application",
+   "scanned:sov"
+  ]
+ },
+ {
+  "id": "SUB-0060",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "effective_date_conflict",
+   "name_affiliate_variant"
+  ]
+ },
+ {
+  "id": "SUB-0061",
+  "split": "dev",
+  "template": "A",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant"
+  ]
+ },
+ {
+  "id": "SUB-0062",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0063",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0064",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "trigger:loss_ratio"
+  ]
+ },
+ {
+  "id": "SUB-0065",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "name_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0066",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0067",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "scanned:loss_run",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0068",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "scanned:sov"
+  ]
+ },
+ {
+  "id": "SUB-0069",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "missing:insured.years_in_business",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0070",
+  "split": "dev",
+  "template": "B",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "missing:locations[4].year_built",
+   "name_affiliate_variant",
+   "tiv_conflict",
+   "trigger:old_building"
+  ]
+ },
+ {
+  "id": "SUB-0071",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "name_affiliate_variant",
+   "name_conflict",
+   "scanned:application",
+   "trigger:loc_tiv_refer"
+  ]
+ },
+ {
+  "id": "SUB-0072",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "tiv_conflict",
+   "trigger:large_loss"
+  ]
+ },
+ {
+  "id": "SUB-0073",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "rotated:loss_run",
+   "scanned:loss_run",
+   "scanned:sov",
+   "trigger:old_building"
+  ]
+ },
+ {
+  "id": "SUB-0074",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": []
+ },
+ {
+  "id": "SUB-0075",
+  "split": "dev",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "missing:locations[1].roof_year",
+   "name_affiliate_variant",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0076",
+  "split": "dev",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "name_conflict",
+   "trigger:loc_tiv_refer"
+  ]
+ },
+ {
+  "id": "SUB-0077",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0078",
+  "split": "dev",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "name_affiliate_variant",
+   "trigger:hurricane_frame"
+  ]
+ },
+ {
+  "id": "SUB-0079",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "name_affiliate_variant",
+   "scanned:application"
+  ]
+ },
+ {
+  "id": "SUB-0080",
+  "split": "dev",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "rotated:application",
+   "scanned:application",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0081",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "scanned:application"
+  ]
+ },
+ {
+  "id": "SUB-0082",
+  "split": "test",
+  "template": "C",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "missing:insured.website",
+   "name_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0083",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "scanned:application",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0084",
+  "split": "test",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "trigger:loss_ratio_bad"
+  ]
+ },
+ {
+  "id": "SUB-0085",
+  "split": "test",
+  "template": "C",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "trigger:hurricane_big"
+  ]
+ },
+ {
+  "id": "SUB-0086",
+  "split": "test",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "name_conflict",
+   "rotated:sov",
+   "scanned:loss_run",
+   "scanned:sov"
+  ]
+ },
+ {
+  "id": "SUB-0087",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0088",
+  "split": "test",
+  "template": "C",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0089",
+  "split": "test",
+  "template": "B",
+  "target": "accept",
+  "decision": "refer",
+  "mess": []
+ },
+ {
+  "id": "SUB-0090",
+  "split": "test",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant"
+  ]
+ },
+ {
+  "id": "SUB-0091",
+  "split": "test",
+  "template": "C",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "tiv_conflict",
+   "trigger:unsprinklered_big",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0092",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0093",
+  "split": "test",
+  "template": "B",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "missing:insured.years_in_business,locations[3].roof_year"
+  ]
+ },
+ {
+  "id": "SUB-0094",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "rotated:sov",
+   "scanned:application",
+   "scanned:sov",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0095",
+  "split": "test",
+  "template": "A",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "scanned:loss_run",
+   "trigger:large_loss"
+  ]
+ },
+ {
+  "id": "SUB-0096",
+  "split": "test",
+  "template": "B",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "trigger:unsprinklered_big"
+  ]
+ },
+ {
+  "id": "SUB-0097",
+  "split": "test",
+  "template": "C",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "effective_date_conflict",
+   "messy_formats",
+   "scanned:application",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0098",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "missing:coverage.coinsurance_pct,locations[1].protection_class",
+   "scanned:loss_run"
+  ]
+ },
+ {
+  "id": "SUB-0099",
+  "split": "test",
+  "template": "B",
+  "target": "refer",
+  "decision": "decline",
+  "mess": [
+   "tiv_conflict",
+   "trigger:large_loss",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0100",
+  "split": "test",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "scanned:loss_run",
+   "trigger:large_loss"
+  ]
+ },
+ {
+  "id": "SUB-0101",
+  "split": "test",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "name_affiliate_variant",
+   "name_conflict",
+   "trigger:frequency"
+  ]
+ },
+ {
+  "id": "SUB-0102",
+  "split": "test",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "effective_date_conflict",
+   "messy_formats",
+   "scanned:loss_run",
+   "trigger:pc10"
+  ]
+ },
+ {
+  "id": "SUB-0103",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant"
+  ]
+ },
+ {
+  "id": "SUB-0104",
+  "split": "test",
+  "template": "C",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "missing:insured.employee_count"
+  ]
+ },
+ {
+  "id": "SUB-0105",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "scanned:sov",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0106",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "name_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0107",
+  "split": "test",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "trigger:hurricane_frame"
+  ]
+ },
+ {
+  "id": "SUB-0108",
+  "split": "test",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats",
+   "trigger:loc_tiv_decline"
+  ]
+ },
+ {
+  "id": "SUB-0109",
+  "split": "test",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "scanned:application"
+  ]
+ },
+ {
+  "id": "SUB-0110",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "year_built_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0111",
+  "split": "test",
+  "template": "C",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "missing:locations[1].protection_class",
+   "trigger:loc_tiv_refer"
+  ]
+ },
+ {
+  "id": "SUB-0112",
+  "split": "test",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "name_affiliate_variant",
+   "trigger:pc10"
+  ]
+ },
+ {
+  "id": "SUB-0113",
+  "split": "test",
+  "template": "C",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "missing:insured.employee_count,insured.fein,locations[1].roof_year"
+  ]
+ },
+ {
+  "id": "SUB-0114",
+  "split": "test",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "missing:insured.employee_count,locations[1].roof_year,locations[1].year_built"
+  ]
+ },
+ {
+  "id": "SUB-0115",
+  "split": "test",
+  "template": "A",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "scanned:application"
+  ]
+ },
+ {
+  "id": "SUB-0116",
+  "split": "test",
+  "template": "C",
+  "target": "accept",
+  "decision": "refer",
+  "mess": [
+   "messy_formats",
+   "missing:insured.website,locations[1].protection_class",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0117",
+  "split": "test",
+  "template": "B",
+  "target": "decline",
+  "decision": "decline",
+  "mess": [
+   "messy_formats"
+  ]
+ },
+ {
+  "id": "SUB-0118",
+  "split": "test",
+  "template": "B",
+  "target": "refer",
+  "decision": "refer",
+  "mess": [
+   "missing:locations[1].roof_year,locations[2].year_built",
+   "scanned:application",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0119",
+  "split": "test",
+  "template": "C",
+  "target": "accept",
+  "decision": "accept",
+  "mess": [
+   "messy_formats",
+   "tiv_conflict"
+  ]
+ },
+ {
+  "id": "SUB-0120",
+  "split": "test",
+  "template": "A",
+  "target": "refer",
+  "decision": "refer",
+  "mess": []
+ }
+]

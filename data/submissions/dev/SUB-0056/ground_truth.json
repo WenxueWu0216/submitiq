@@ -1,0 +1,170 @@
+{
+  "record": {
+    "submission_id": "SUB-0056",
+    "insured": {
+      "named_insured": "Falcon Ridge Market LLC",
+      "dba": null,
+      "fein": "37-2564004",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "1055 Harbor Drive",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90052"
+      },
+      "business_description": "Independent grocery store with deli and bakery counter",
+      "naics_code": "445110",
+      "years_in_business": 51,
+      "annual_revenue": 4980000.0,
+      "employee_count": 168,
+      "website": "www.falconridge.com",
+      "contact_name": "Grace Okafor",
+      "contact_phone": "(620) 562-8875",
+      "contact_email": "gokafor@falconridge.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Laura Yamamoto",
+      "producer_email": "laura.yamamoto@atlasreed.com",
+      "producer_phone": "(446) 962-9621"
+    },
+    "policy": {
+      "effective_date": "2026-12-01",
+      "expiration_date": "2027-12-01",
+      "transaction_type": "new",
+      "prior_carrier": "Harborline Indemnity Company",
+      "quote_needed_by": "2026-11-19",
+      "submission_received_date": "2026-10-30"
+    },
+    "coverage": {
+      "building_limit": 3120000.0,
+      "bpp_limit": 1600000.0,
+      "business_income_limit": 105000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "1055 Harbor Drive",
+        "city": "Los Angeles",
+        "state": "CA",
+        "zip": "90052",
+        "occupancy": "Grocery Store",
+        "construction": "joisted_masonry",
+        "year_built": 1958,
+        "stories": 4,
+        "square_feet": 17300,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 6,
+        "roof_type": "membrane",
+        "roof_year": 2015,
+        "alarm_type": "none",
+        "building_value": 3120000.0,
+        "contents_value": 1600000.0,
+        "bi_value": 105000.0,
+        "tiv": 4825000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL6642301",
+        "policy_year": 2023,
+        "date_of_loss": "2024-06-12",
+        "cause": "Roof Leak",
+        "status": "closed",
+        "paid": 4200.0,
+        "reserve": 0.0,
+        "incurred": 4200.0
+      },
+      {
+        "claim_number": "CL5187972",
+        "policy_year": 2024,
+        "date_of_loss": "2025-01-14",
+        "cause": "Fire",
+        "status": "closed",
+        "paid": 2950.0,
+        "reserve": 0.0,
+        "incurred": 2950.0
+      },
+      {
+        "claim_number": "26H136425",
+        "policy_year": 2025,
+        "date_of_loss": "2026-07-02",
+        "cause": "Equipment Breakdown",
+        "status": "open",
+        "paid": 4170.0,
+        "reserve": 3090.0,
+        "incurred": 7260.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 11890.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 12300.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 12700.0,
+        "claim_count": 1,
+        "total_incurred": 4200.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 13110.0,
+        "claim_count": 1,
+        "total_incurred": 2950.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Harborline Indemnity Company",
+        "earned_premium": 13510.0,
+        "claim_count": 1,
+        "total_incurred": 7260.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 4825000.0,
+      "location_count": 1,
+      "five_year_incurred": 14410.0,
+      "five_year_premium": 63510.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "loss_run_2.pdf": "loss_run",
+      "statement_of_values.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "EARTHQUAKE_ZONE"
+    ],
+    "mess": [
+      "messy_formats",
+      "trigger:quake_jm"
+    ]
+  }
+}

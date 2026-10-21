@@ -1,0 +1,259 @@
+{
+  "record": {
+    "submission_id": "SUB-0016",
+    "insured": {
+      "named_insured": "Sunrise Athletic Club Inc.",
+      "dba": "Sunrise Fitness Center",
+      "fein": "54-7406703",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "PO Box 4912",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84104"
+      },
+      "business_description": "Fitness center with weights, classes and locker rooms",
+      "naics_code": "713940",
+      "years_in_business": 18,
+      "annual_revenue": 15560000.0,
+      "employee_count": 155,
+      "website": "www.sunriseathletic.com",
+      "contact_name": "James Thompson",
+      "contact_phone": "(340) 243-8615",
+      "contact_email": "jthompson@sunriseathletic.com"
+    },
+    "broker": {
+      "agency_name": "Northstar Commercial Brokerage",
+      "producer_name": "Omar Carter",
+      "producer_email": "omar.carter@northstarcb.com",
+      "producer_phone": "(282) 372-6333"
+    },
+    "policy": {
+      "effective_date": "2027-01-01",
+      "expiration_date": "2028-01-01",
+      "transaction_type": "renewal",
+      "prior_carrier": "Pinecrest Property & Casualty",
+      "quote_needed_by": "2026-12-17",
+      "submission_received_date": "2026-11-23"
+    },
+    "coverage": {
+      "building_limit": 24365000.0,
+      "bpp_limit": 9300000.0,
+      "business_income_limit": 3335000.0,
+      "deductible": 1000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "4986 River Boulevard",
+        "city": "Salt Lake City",
+        "state": "UT",
+        "zip": "84104",
+        "occupancy": "Fitness Center",
+        "construction": "fire_resistive",
+        "year_built": 1992,
+        "stories": 10,
+        "square_feet": 24200,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2022,
+        "alarm_type": "local",
+        "building_value": 5470000.0,
+        "contents_value": 2300000.0,
+        "bi_value": 1335000.0,
+        "tiv": 9105000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "6982 Center Lane",
+        "city": "Seattle",
+        "state": "WA",
+        "zip": "98107",
+        "occupancy": "Fitness Center",
+        "construction": "frame",
+        "year_built": 2007,
+        "stories": 1,
+        "square_feet": 4000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": "built_up",
+        "roof_year": 2024,
+        "alarm_type": "local",
+        "building_value": 855000.0,
+        "contents_value": 415000.0,
+        "bi_value": 210000.0,
+        "tiv": 1480000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "9223 Mill Avenue",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68182",
+        "occupancy": "Fitness Center",
+        "construction": "fire_resistive",
+        "year_built": 2010,
+        "stories": 10,
+        "square_feet": 43700,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": "membrane",
+        "roof_year": 2010,
+        "alarm_type": "central_station",
+        "building_value": 6655000.0,
+        "contents_value": 3140000.0,
+        "bi_value": 65000.0,
+        "tiv": 9860000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "9215 Jefferson Drive",
+        "city": "Columbus",
+        "state": "OH",
+        "zip": "43249",
+        "occupancy": "Fitness Center",
+        "construction": "non_combustible",
+        "year_built": 1989,
+        "stories": 6,
+        "square_feet": 3000,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2017,
+        "alarm_type": null,
+        "building_value": 640000.0,
+        "contents_value": 265000.0,
+        "bi_value": 0.0,
+        "tiv": 905000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "2753 Market Parkway",
+        "city": "Omaha",
+        "state": "NE",
+        "zip": "68175",
+        "occupancy": "Fitness Center",
+        "construction": "non_combustible",
+        "year_built": 1987,
+        "stories": 3,
+        "square_feet": 53600,
+        "sprinklered": true,
+        "sprinkler_pct": 90,
+        "protection_class": 6,
+        "roof_type": null,
+        "roof_year": 2025,
+        "alarm_type": null,
+        "building_value": 6995000.0,
+        "contents_value": 2140000.0,
+        "bi_value": 1440000.0,
+        "tiv": 10575000.0
+      },
+      {
+        "loc_number": 6,
+        "street": "6814 Commerce Road",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28213",
+        "occupancy": "Fitness Center",
+        "construction": "joisted_masonry",
+        "year_built": 1974,
+        "stories": 1,
+        "square_feet": 19400,
+        "sprinklered": true,
+        "sprinkler_pct": 60,
+        "protection_class": 6,
+        "roof_type": null,
+        "roof_year": 2009,
+        "alarm_type": null,
+        "building_value": 3750000.0,
+        "contents_value": 1040000.0,
+        "bi_value": 285000.0,
+        "tiv": 5075000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "PPC-2023-30999",
+        "policy_year": 2023,
+        "date_of_loss": "2023-03-21",
+        "cause": "Frozen Pipes",
+        "status": "closed",
+        "paid": 42760.0,
+        "reserve": 0.0,
+        "incurred": 42760.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 85520.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 88430.0,
+        "claim_count": 1,
+        "total_incurred": 42760.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 91350.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 94260.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 97180.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 37000000.0,
+      "location_count": 6,
+      "five_year_incurred": 42760.0,
+      "five_year_premium": 456740.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "loss_run.pdf": "loss_run",
+      "statement_of_values.pdf": "sov"
+    },
+    "expected_conflicts": [
+      "locations[2].year_built"
+    ],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "messy_formats",
+      "year_built_conflict"
+    ]
+  }
+}

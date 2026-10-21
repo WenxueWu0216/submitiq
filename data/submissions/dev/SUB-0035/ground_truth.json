@@ -1,0 +1,285 @@
+{
+  "record": {
+    "submission_id": "SUB-0035",
+    "insured": {
+      "named_insured": "Prairie Wind Properties",
+      "dba": null,
+      "fein": "51-1909297",
+      "entity_type": "sole_proprietor",
+      "mailing_address": {
+        "street": "6754 Commerce Parkway",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64187"
+      },
+      "business_description": "Owns and leases multi-tenant office buildings",
+      "naics_code": "531120",
+      "years_in_business": 49,
+      "annual_revenue": 32200000.0,
+      "employee_count": 288,
+      "website": null,
+      "contact_name": "Nina Yamamoto",
+      "contact_phone": "(731) 808-9087",
+      "contact_email": "nyamamoto@prairiewind.com"
+    },
+    "broker": {
+      "agency_name": "Granite Peak Insurance Group",
+      "producer_name": "Thomas Okafor",
+      "producer_email": "thomas.okafor@granitepeakins.com",
+      "producer_phone": "(697) 461-8192"
+    },
+    "policy": {
+      "effective_date": "2027-02-15",
+      "expiration_date": "2028-02-15",
+      "transaction_type": "new",
+      "prior_carrier": "Bridgewater Assurance",
+      "quote_needed_by": "2027-02-04",
+      "submission_received_date": "2027-01-02"
+    },
+    "coverage": {
+      "building_limit": 20320000.0,
+      "bpp_limit": 6610000.0,
+      "business_income_limit": 760000.0,
+      "deductible": 5000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6754 Commerce Parkway",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64187",
+        "occupancy": "Office",
+        "construction": "frame",
+        "year_built": 2017,
+        "stories": 6,
+        "square_feet": 5000,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 9,
+        "roof_type": "metal",
+        "roof_year": 2025,
+        "alarm_type": "local",
+        "building_value": 900000.0,
+        "contents_value": 210000.0,
+        "bi_value": 185000.0,
+        "tiv": 1295000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "7304 Jefferson Street",
+        "city": "Sacramento",
+        "state": "CA",
+        "zip": "95846",
+        "occupancy": "Office",
+        "construction": "frame",
+        "year_built": 1967,
+        "stories": 2,
+        "square_feet": 20300,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "membrane",
+        "roof_year": 2021,
+        "alarm_type": "central_station",
+        "building_value": 4830000.0,
+        "contents_value": 1185000.0,
+        "bi_value": 15000.0,
+        "tiv": 6030000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "8849 Enterprise Parkway",
+        "city": "Kansas City",
+        "state": "MO",
+        "zip": "64109",
+        "occupancy": "Office",
+        "construction": "joisted_masonry",
+        "year_built": 1987,
+        "stories": 2,
+        "square_feet": 33800,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "tile",
+        "roof_year": 2017,
+        "alarm_type": "central_station",
+        "building_value": 6895000.0,
+        "contents_value": 2460000.0,
+        "bi_value": 0.0,
+        "tiv": 9355000.0
+      },
+      {
+        "loc_number": 4,
+        "street": "6133 Pine Lane",
+        "city": "Charleston",
+        "state": "SC",
+        "zip": "29459",
+        "occupancy": "Office",
+        "construction": "non_combustible",
+        "year_built": 1956,
+        "stories": 3,
+        "square_feet": 21600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 5,
+        "roof_type": null,
+        "roof_year": 2009,
+        "alarm_type": null,
+        "building_value": 3445000.0,
+        "contents_value": 665000.0,
+        "bi_value": 0.0,
+        "tiv": 4110000.0
+      },
+      {
+        "loc_number": 5,
+        "street": "6649 Railroad Drive",
+        "city": "New Orleans",
+        "state": "LA",
+        "zip": "70106",
+        "occupancy": "Office",
+        "construction": "non_combustible",
+        "year_built": 1987,
+        "stories": 5,
+        "square_feet": 12400,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": null,
+        "roof_year": 2023,
+        "alarm_type": null,
+        "building_value": 2960000.0,
+        "contents_value": 1740000.0,
+        "bi_value": 400000.0,
+        "tiv": 5100000.0
+      },
+      {
+        "loc_number": 6,
+        "street": "9736 Center Avenue",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75275",
+        "occupancy": "Office",
+        "construction": "masonry_non_combustible",
+        "year_built": 1986,
+        "stories": 2,
+        "square_feet": 6600,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 4,
+        "roof_type": null,
+        "roof_year": 2025,
+        "alarm_type": null,
+        "building_value": 1290000.0,
+        "contents_value": 350000.0,
+        "bi_value": 160000.0,
+        "tiv": 1800000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL6835567",
+        "policy_year": 2024,
+        "date_of_loss": "2025-01-06",
+        "cause": "Vandalism",
+        "status": "closed",
+        "paid": 46200.0,
+        "reserve": 0.0,
+        "incurred": 46200.0
+      },
+      {
+        "claim_number": "CL6536648",
+        "policy_year": 2024,
+        "date_of_loss": "2025-01-22",
+        "cause": "Equipment Breakdown",
+        "status": "closed",
+        "paid": 9970.0,
+        "reserve": 0.0,
+        "incurred": 9970.0
+      },
+      {
+        "claim_number": "CL4182936",
+        "policy_year": 2026,
+        "date_of_loss": "2026-06-02",
+        "cause": "Frozen Pipes",
+        "status": "closed",
+        "paid": 45910.0,
+        "reserve": 0.0,
+        "incurred": 45910.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 49860.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 51560.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 53260.0,
+        "claim_count": 2,
+        "total_incurred": 56170.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 54960.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 56660.0,
+        "claim_count": 1,
+        "total_incurred": 45910.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 27690000.0,
+      "location_count": 6,
+      "five_year_incurred": 102080.0,
+      "five_year_premium": 266300.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "doc1864.pdf": "application",
+      "doc95213.pdf": "loss_run",
+      "scan51124.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "locations[3].year_built",
+      "totals.total_tiv"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "FRAME_POOR_PROTECTION",
+      "HURRICANE_ZONE"
+    ],
+    "mess": [
+      "missing:insured.website",
+      "tiv_conflict",
+      "trigger:frame_pc",
+      "year_built_conflict"
+    ]
+  }
+}

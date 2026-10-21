@@ -1,0 +1,62 @@
+# Commercial property appetite guidelines (synthetic client).
+# Data, not code: underwriting leadership owns this file. The rules engine in
+# submitiq/rules_engine.py interprets it, and data/generate.py reads the same
+# thresholds to label expected decisions. Any change here must go through the eval gate.
+version: "2026-10-01"
+
+outcome_order: [accept, refer, decline]   # most severe wins
+
+classes:
+  # NAICS code -> occupancy label used in documents
+  accept:
+    "531120": "Lessor of nonresidential buildings (office)"
+    "493110": "General warehousing and storage"
+    "332710": "Machine shop"
+    "445110": "Grocery store"
+    "311811": "Retail bakery"
+    "713940": "Fitness and recreational sports center"
+    "423710": "Hardware wholesaler"
+    "541330": "Engineering services office"
+    "811111": "General automotive repair"
+  refer:
+    "531110": "Lessor of residential buildings (habitational)"
+    "721110": "Hotel / motel"
+    "722511": "Full-service restaurant"
+    "325998": "Chemical product manufacturing"
+  decline:
+    "325920": "Explosives manufacturing"
+    "423930": "Recyclable material / scrap yard"
+    "722410": "Drinking place (bar / nightclub)"
+
+tiv:
+  location_refer_above: 25000000
+  location_decline_above: 50000000
+  account_refer_above: 100000000
+
+losses:
+  loss_ratio_refer_above: 0.60
+  loss_ratio_decline_above: 1.00
+  claim_count_refer_at_or_above: 5
+  large_loss_refer_above: 250000
+
+construction_protection:
+  decline_frame_with_pc_at_or_above: 9
+  refer_pc_at_or_above: 10
+
+cat_zones:
+  hurricane_tier1_zip3: ["330", "331", "332", "333", "334", "339", "775", "700", "701", "294"]
+  hurricane_refer_location_tiv_above: 5000000
+  earthquake_zip3: ["900", "901", "902", "913", "914", "940", "941", "945", "946", "951"]
+  earthquake_refer_jm_built_before: 1980
+
+sprinklers:
+  refer_unsprinklered_location_tiv_above: 10000000
+
+age:
+  refer_year_built_before: 1950
+  refer_roof_age_over_years: 25
+
+required_fields:
+  # Missing any of these -> refer back to broker for information.
+  account: ["insured.naics_code"]
+  location: ["construction", "year_built", "protection_class", "tiv"]

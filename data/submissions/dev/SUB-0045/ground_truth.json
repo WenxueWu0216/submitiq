@@ -1,0 +1,148 @@
+{
+  "record": {
+    "submission_id": "SUB-0045",
+    "insured": {
+      "named_insured": "Westfield Automotive LLC",
+      "dba": null,
+      "fein": "31-7189408",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "6956 Jefferson Lane",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30339"
+      },
+      "business_description": "General automotive repair and maintenance garage",
+      "naics_code": "811111",
+      "years_in_business": 41,
+      "annual_revenue": 24660000.0,
+      "employee_count": 235,
+      "website": "www.westfieldautomotive.com",
+      "contact_name": "Priya Yamamoto",
+      "contact_phone": "(533) 837-1754",
+      "contact_email": "pyamamoto@westfieldautomotive.com"
+    },
+    "broker": {
+      "agency_name": "Tidewater Risk Partners",
+      "producer_name": "Kevin Okafor",
+      "producer_email": "kevin.okafor@tidewaterrisk.com",
+      "producer_phone": "(597) 986-5428"
+    },
+    "policy": {
+      "effective_date": "2027-01-15",
+      "expiration_date": "2028-01-15",
+      "transaction_type": "renewal",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2026-12-28",
+      "submission_received_date": "2026-12-20"
+    },
+    "coverage": {
+      "building_limit": 14710000.0,
+      "bpp_limit": 1620000.0,
+      "business_income_limit": 190000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "6956 Jefferson Lane",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30339",
+        "occupancy": "Auto Repair",
+        "construction": "masonry_non_combustible",
+        "year_built": 1999,
+        "stories": 3,
+        "square_feet": 81700,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "tile",
+        "roof_year": 2021,
+        "alarm_type": "local",
+        "building_value": 14710000.0,
+        "contents_value": 1620000.0,
+        "bi_value": 190000.0,
+        "tiv": 16520000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "25G926870",
+        "policy_year": 2025,
+        "date_of_loss": "2025-10-28",
+        "cause": "Water Damage",
+        "status": "open",
+        "paid": 15930.0,
+        "reserve": 23410.0,
+        "incurred": 39340.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 43220.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 44690.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 46170.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 47640.0,
+        "claim_count": 1,
+        "total_incurred": 39340.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 49110.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 16520000.0,
+      "location_count": 1,
+      "five_year_incurred": 39340.0,
+      "five_year_premium": 230830.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "scan16195.pdf": "application",
+      "IMG_3764.pdf": "loss_run",
+      "scan70749.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "trigger:unsprinklered_big"
+    ]
+  }
+}

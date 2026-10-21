@@ -1,0 +1,138 @@
+{
+  "record": {
+    "submission_id": "SUB-0041",
+    "insured": {
+      "named_insured": "Brookstone Hotel Group LP",
+      "dba": "Brookstone Hotel",
+      "fein": "85-7250142",
+      "entity_type": "partnership",
+      "mailing_address": {
+        "street": "3066 Airport Avenue",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33048"
+      },
+      "business_description": "Limited-service hotel with no restaurant",
+      "naics_code": "721110",
+      "years_in_business": 18,
+      "annual_revenue": 3510000.0,
+      "employee_count": 226,
+      "website": "www.brookstonehotel.com",
+      "contact_name": "Elena Hughes",
+      "contact_phone": "(814) 362-9523",
+      "contact_email": "ehughes@brookstonehotel.com"
+    },
+    "broker": {
+      "agency_name": "Hollis Benton Agency",
+      "producer_name": "Robert Thompson",
+      "producer_email": "robert.thompson@hollisbenton.com",
+      "producer_phone": "(684) 682-3484"
+    },
+    "policy": {
+      "effective_date": "2027-03-01",
+      "expiration_date": "2028-03-01",
+      "transaction_type": "new",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2027-02-14",
+      "submission_received_date": "2027-01-11"
+    },
+    "coverage": {
+      "building_limit": 1610000.0,
+      "bpp_limit": 900000.0,
+      "business_income_limit": 295000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "3066 Airport Avenue",
+        "city": "Miami",
+        "state": "FL",
+        "zip": "33048",
+        "occupancy": "Hotel",
+        "construction": "joisted_masonry",
+        "year_built": 1971,
+        "stories": 1,
+        "square_feet": 8000,
+        "sprinklered": true,
+        "sprinkler_pct": 50,
+        "protection_class": 5,
+        "roof_type": "tile",
+        "roof_year": 2023,
+        "alarm_type": "central_station",
+        "building_value": 1610000.0,
+        "contents_value": 900000.0,
+        "bi_value": 295000.0,
+        "tiv": 2805000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 3830.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 3960.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 4090.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 4220.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 4350.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 2805000.0,
+      "location_count": 1,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 20450.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "IMG_30199.pdf": "application",
+      "file81784.pdf": "loss_run",
+      "doc87300.pdf": "loss_run",
+      "IMG_19737.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "CLASS_REFER"
+    ],
+    "mess": [
+      "messy_formats"
+    ]
+  }
+}

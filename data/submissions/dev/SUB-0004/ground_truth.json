@@ -1,0 +1,203 @@
+{
+  "record": {
+    "submission_id": "SUB-0004",
+    "insured": {
+      "named_insured": "Sunrise Machine Works Inc.",
+      "dba": "Sunrise Machine Shop",
+      "fein": "40-8295217",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "PO Box 7736",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80230"
+      },
+      "business_description": "CNC machining of metal parts for industrial customers",
+      "naics_code": "332710",
+      "years_in_business": 26,
+      "annual_revenue": 7910000.0,
+      "employee_count": 361,
+      "website": "www.sunrisemachine.com",
+      "contact_name": "Chen Levine",
+      "contact_phone": "(379) 459-2188",
+      "contact_email": "clevine@sunrisemachine.com"
+    },
+    "broker": {
+      "agency_name": "Northstar Commercial Brokerage",
+      "producer_name": "Brian Martinez",
+      "producer_email": "brian.martinez@northstarcb.com",
+      "producer_phone": "(865) 485-1135"
+    },
+    "policy": {
+      "effective_date": "2027-01-01",
+      "expiration_date": "2028-01-01",
+      "transaction_type": "new",
+      "prior_carrier": "Continental Mutual Insurance Co.",
+      "quote_needed_by": "2026-12-17",
+      "submission_received_date": "2026-11-17"
+    },
+    "coverage": {
+      "building_limit": 11710000.0,
+      "bpp_limit": 6370000.0,
+      "business_income_limit": 1785000.0,
+      "deductible": 25000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": null,
+      "cause_of_loss_form": "broad",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "2475 Harbor Boulevard",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80230",
+        "occupancy": "Machine Shop",
+        "construction": "masonry_non_combustible",
+        "year_built": 1963,
+        "stories": 3,
+        "square_feet": 10500,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": "metal",
+        "roof_year": 2023,
+        "alarm_type": "local",
+        "building_value": 2385000.0,
+        "contents_value": 1250000.0,
+        "bi_value": 510000.0,
+        "tiv": 4145000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "6426 Madison Way",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30392",
+        "occupancy": "Machine Shop",
+        "construction": "non_combustible",
+        "year_built": 1978,
+        "stories": 5,
+        "square_feet": 27300,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": null,
+        "roof_type": "metal",
+        "roof_year": 2010,
+        "alarm_type": "local",
+        "building_value": 4970000.0,
+        "contents_value": 2780000.0,
+        "bi_value": 1060000.0,
+        "tiv": 8810000.0
+      },
+      {
+        "loc_number": 3,
+        "street": "6998 Elm Lane",
+        "city": "Phoenix",
+        "state": "AZ",
+        "zip": "85001",
+        "occupancy": "Machine Shop",
+        "construction": "frame",
+        "year_built": 2016,
+        "stories": 3,
+        "square_feet": 32900,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 2,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2016,
+        "alarm_type": "central_station",
+        "building_value": 4355000.0,
+        "contents_value": 2340000.0,
+        "bi_value": 215000.0,
+        "tiv": 6910000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CMI-2023-72382",
+        "policy_year": 2023,
+        "date_of_loss": "2023-04-01",
+        "cause": "Smoke",
+        "status": "closed",
+        "paid": 29930.0,
+        "reserve": 0.0,
+        "incurred": 29930.0
+      },
+      {
+        "claim_number": "24C835879",
+        "policy_year": 2024,
+        "date_of_loss": "2024-10-23",
+        "cause": "Lightning",
+        "status": "closed",
+        "paid": 13920.0,
+        "reserve": 0.0,
+        "incurred": 13920.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 45810.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 47380.0,
+        "claim_count": 1,
+        "total_incurred": 29930.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 48940.0,
+        "claim_count": 1,
+        "total_incurred": 13920.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 50500.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 52060.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 19865000.0,
+      "location_count": 3,
+      "five_year_incurred": 43850.0,
+      "five_year_premium": 244690.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "Property_Schedule.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "MISSING_INFO"
+    ],
+    "mess": [
+      "messy_formats",
+      "missing:coverage.coinsurance_pct,locations[2].protection_class"
+    ]
+  }
+}

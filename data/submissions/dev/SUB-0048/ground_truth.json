@@ -1,0 +1,137 @@
+{
+  "record": {
+    "submission_id": "SUB-0048",
+    "insured": {
+      "named_insured": "Prairie Wind Engineering Group LLC",
+      "dba": null,
+      "fein": "28-3634662",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "51 Elm Lane",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75273"
+      },
+      "business_description": "Civil and structural engineering consulting office",
+      "naics_code": "541330",
+      "years_in_business": 52,
+      "annual_revenue": 9430000.0,
+      "employee_count": 379,
+      "website": "www.prairiewind.com",
+      "contact_name": "Omar Johnson",
+      "contact_phone": "(232) 891-9971",
+      "contact_email": "ojohnson@prairiewind.com"
+    },
+    "broker": {
+      "agency_name": "Northstar Commercial Brokerage",
+      "producer_name": "James Novak",
+      "producer_email": "james.novak@northstarcb.com",
+      "producer_phone": "(826) 848-4016"
+    },
+    "policy": {
+      "effective_date": "2027-03-01",
+      "expiration_date": "2028-03-01",
+      "transaction_type": "new",
+      "prior_carrier": "Pinecrest Property & Casualty",
+      "quote_needed_by": "2027-02-18",
+      "submission_received_date": "2027-01-05"
+    },
+    "coverage": {
+      "building_limit": 5510000.0,
+      "bpp_limit": 2500000.0,
+      "business_income_limit": 615000.0,
+      "deductible": 1000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "51 Elm Lane",
+        "city": "Dallas",
+        "state": "TX",
+        "zip": "75273",
+        "occupancy": "Engineering Office",
+        "construction": "joisted_masonry",
+        "year_built": 1937,
+        "stories": 3,
+        "square_feet": 30600,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 5,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2021,
+        "alarm_type": "central_station",
+        "building_value": 5510000.0,
+        "contents_value": 2500000.0,
+        "bi_value": 615000.0,
+        "tiv": 8625000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 11830.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 12230.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 12640.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 13040.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Pinecrest Property & Casualty",
+        "earned_premium": 13440.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 8625000.0,
+      "location_count": 1,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 63180.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "IMG_56781.pdf": "application",
+      "scan88144.pdf": "loss_run",
+      "doc18695.pdf": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "BUILDING_AGE"
+    ],
+    "mess": [
+      "trigger:old_building"
+    ]
+  }
+}

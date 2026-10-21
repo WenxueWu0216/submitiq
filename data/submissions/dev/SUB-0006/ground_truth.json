@@ -1,0 +1,169 @@
+{
+  "record": {
+    "submission_id": "SUB-0006",
+    "insured": {
+      "named_insured": "Magnolia Engineering Corp.",
+      "dba": null,
+      "fein": "30-5286755",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "972 Airport Drive",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80289"
+      },
+      "business_description": "Civil and structural engineering consulting office",
+      "naics_code": "541330",
+      "years_in_business": 39,
+      "annual_revenue": 15340000.0,
+      "employee_count": 81,
+      "website": "www.magnoliaengineering.com",
+      "contact_name": "Priya Alvarez",
+      "contact_phone": "(447) 530-9340",
+      "contact_email": "palvarez@magnoliaengineering.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Omar Levine",
+      "producer_email": "omar.levine@atlasreed.com",
+      "producer_phone": "(667) 655-5885"
+    },
+    "policy": {
+      "effective_date": "2026-12-15",
+      "expiration_date": "2027-12-15",
+      "transaction_type": "new",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2026-11-30",
+      "submission_received_date": "2026-10-23"
+    },
+    "coverage": {
+      "building_limit": 11350000.0,
+      "bpp_limit": 1595000.0,
+      "business_income_limit": 0.0,
+      "deductible": 1000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "broad",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "972 Airport Drive",
+        "city": "Denver",
+        "state": "CO",
+        "zip": "80289",
+        "occupancy": "Engineering Office",
+        "construction": "non_combustible",
+        "year_built": 1994,
+        "stories": 4,
+        "square_feet": 63100,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 2,
+        "roof_type": "tile",
+        "roof_year": 2015,
+        "alarm_type": "central_station",
+        "building_value": 11350000.0,
+        "contents_value": 1595000.0,
+        "bi_value": 0.0,
+        "tiv": 12945000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CL4856853",
+        "policy_year": 2023,
+        "date_of_loss": "2024-01-09",
+        "cause": "Roof Leak",
+        "status": "closed",
+        "paid": 13270.0,
+        "reserve": 0.0,
+        "incurred": 13270.0
+      },
+      {
+        "claim_number": "24G266901",
+        "policy_year": 2023,
+        "date_of_loss": "2024-09-19",
+        "cause": "Frozen Pipes",
+        "status": "closed",
+        "paid": 37600.0,
+        "reserve": 0.0,
+        "incurred": 37600.0
+      },
+      {
+        "claim_number": "GPC-2025-57109",
+        "policy_year": 2024,
+        "date_of_loss": "2025-05-21",
+        "cause": "Roof Leak",
+        "status": "closed",
+        "paid": 19290.0,
+        "reserve": 0.0,
+        "incurred": 19290.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 33100.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 34220.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 35350.0,
+        "claim_count": 2,
+        "total_incurred": 50870.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 36480.0,
+        "claim_count": 1,
+        "total_incurred": 19290.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 37610.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 12945000.0,
+      "location_count": 1,
+      "five_year_incurred": 70160.0,
+      "five_year_premium": 176760.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "Loss_History.pdf": "loss_run",
+      "Property_Schedule.xlsx": "sov"
+    },
+    "expected_conflicts": [],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "UNSPRINKLERED"
+    ],
+    "mess": [
+      "scanned:application",
+      "trigger:unsprinklered_big"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "record": {
+    "submission_id": "SUB-0092",
+    "insured": {
+      "named_insured": "Juniper Engineering Group Corporation",
+      "dba": null,
+      "fein": "87-7938892",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "8473 Park Lane",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15284"
+      },
+      "business_description": "Civil and structural engineering consulting office",
+      "naics_code": "541330",
+      "years_in_business": 4,
+      "annual_revenue": 17060000.0,
+      "employee_count": 180,
+      "website": "www.juniperengineering.com",
+      "contact_name": "Nina Levine",
+      "contact_phone": "(341) 889-4546",
+      "contact_email": "nlevine@juniperengineering.com"
+    },
+    "broker": {
+      "agency_name": "Copperfield Risk Advisors",
+      "producer_name": "David O'Brien",
+      "producer_email": "david.obrien@copperfieldrisk.com",
+      "producer_phone": "(489) 663-6636"
+    },
+    "policy": {
+      "effective_date": "2026-11-15",
+      "expiration_date": "2027-11-15",
+      "transaction_type": "renewal",
+      "prior_carrier": "Great Plains Casualty",
+      "quote_needed_by": "2026-10-29",
+      "submission_received_date": "2026-09-30"
+    },
+    "coverage": {
+      "building_limit": 13540000.0,
+      "bpp_limit": 4875000.0,
+      "business_income_limit": 1390000.0,
+      "deductible": 5000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 90,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "8473 Park Lane",
+        "city": "Pittsburgh",
+        "state": "PA",
+        "zip": "15284",
+        "occupancy": "Engineering Office",
+        "construction": "non_combustible",
+        "year_built": 1990,
+        "stories": 4,
+        "square_feet": 29300,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 4,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2007,
+        "alarm_type": "central_station",
+        "building_value": 6920000.0,
+        "contents_value": 1355000.0,
+        "bi_value": 1390000.0,
+        "tiv": 9665000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "5741 Park Road",
+        "city": "Charlotte",
+        "state": "NC",
+        "zip": "28285",
+        "occupancy": "Engineering Office",
+        "construction": "joisted_masonry",
+        "year_built": 1996,
+        "stories": 1,
+        "square_feet": 29000,
+        "sprinklered": true,
+        "sprinkler_pct": 75,
+        "protection_class": 1,
+        "roof_type": "tile",
+        "roof_year": 2006,
+        "alarm_type": "none",
+        "building_value": 6620000.0,
+        "contents_value": 3520000.0,
+        "bi_value": 0.0,
+        "tiv": 10140000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 37870.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 39160.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 40450.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 41750.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Great Plains Casualty",
+        "earned_premium": 43040.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 19805000.0,
+      "location_count": 2,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 202270.0
+    }
+  },
+  "meta": {
+    "split": "test",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "application.pdf": "application",
+      "loss_run.pdf": "loss_run",
+      "statement_of_values.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "locations[2].year_built"
+    ],
+    "expected_decision": "accept",
+    "expected_reasons": [],
+    "mess": [
+      "messy_formats",
+      "year_built_conflict"
+    ]
+  }
+}

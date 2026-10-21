@@ -1,0 +1,163 @@
+{
+  "record": {
+    "submission_id": "SUB-0023",
+    "insured": {
+      "named_insured": "Highland Park Pyrotechnics LLC",
+      "dba": "Highland Explosives Mfg",
+      "fein": "61-3568010",
+      "entity_type": "llc",
+      "mailing_address": {
+        "street": "8881 Main Street",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30384"
+      },
+      "business_description": "Manufacture of commercial explosives and pyrotechnics",
+      "naics_code": "325920",
+      "years_in_business": 46,
+      "annual_revenue": 17540000.0,
+      "employee_count": 135,
+      "website": "www.highlandpark.com",
+      "contact_name": "Priya Carter",
+      "contact_phone": "(964) 527-4107",
+      "contact_email": "pcarter@highlandpark.com"
+    },
+    "broker": {
+      "agency_name": "Granite Peak Insurance Group",
+      "producer_name": "Chen O'Brien",
+      "producer_email": "chen.obrien@granitepeakins.com",
+      "producer_phone": "(982) 264-7778"
+    },
+    "policy": {
+      "effective_date": "2026-11-01",
+      "expiration_date": "2027-11-01",
+      "transaction_type": "new",
+      "prior_carrier": "Bridgewater Assurance",
+      "quote_needed_by": "2026-10-25",
+      "submission_received_date": "2026-09-14"
+    },
+    "coverage": {
+      "building_limit": 12785000.0,
+      "bpp_limit": 3305000.0,
+      "business_income_limit": 1850000.0,
+      "deductible": 10000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 80,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "8881 Main Street",
+        "city": "Atlanta",
+        "state": "GA",
+        "zip": "30384",
+        "occupancy": "Explosives Mfg",
+        "construction": "fire_resistive",
+        "year_built": 1975,
+        "stories": 8,
+        "square_feet": 43000,
+        "sprinklered": true,
+        "sprinkler_pct": 50,
+        "protection_class": 2,
+        "roof_type": "asphalt_shingle",
+        "roof_year": 2007,
+        "alarm_type": "local",
+        "building_value": 5805000.0,
+        "contents_value": 1155000.0,
+        "bi_value": 1245000.0,
+        "tiv": 8205000.0
+      },
+      {
+        "loc_number": 2,
+        "street": "7354 Enterprise Boulevard",
+        "city": "Nashville",
+        "state": "TN",
+        "zip": "37225",
+        "occupancy": "Explosives Mfg",
+        "construction": "masonry_non_combustible",
+        "year_built": 2021,
+        "stories": 5,
+        "square_feet": 57900,
+        "sprinklered": true,
+        "sprinkler_pct": 100,
+        "protection_class": 6,
+        "roof_type": "metal",
+        "roof_year": 2021,
+        "alarm_type": "central_station",
+        "building_value": 6980000.0,
+        "contents_value": 2150000.0,
+        "bi_value": 605000.0,
+        "tiv": 9735000.0
+      }
+    ],
+    "claims": [],
+    "loss_years": [
+      {
+        "policy_year": 2021,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 40910.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2022,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 42300.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 43700.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 45090.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Bridgewater Assurance",
+        "earned_premium": 46490.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 17940000.0,
+      "location_count": 2,
+      "five_year_incurred": 0.0,
+      "five_year_premium": 218490.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "A",
+    "doc_types": {
+      "email.txt": "email",
+      "IMG_16856.pdf": "application",
+      "doc10164.pdf": "loss_run",
+      "IMG_2338.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "locations[1].year_built"
+    ],
+    "expected_decision": "decline",
+    "expected_reasons": [
+      "CLASS_PROHIBITED"
+    ],
+    "mess": [
+      "messy_formats",
+      "name_affiliate_variant",
+      "year_built_conflict"
+    ]
+  }
+}

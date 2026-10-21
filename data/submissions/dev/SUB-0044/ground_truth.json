@@ -1,0 +1,161 @@
+{
+  "record": {
+    "submission_id": "SUB-0044",
+    "insured": {
+      "named_insured": "Highland Park Chemical Corporation",
+      "dba": null,
+      "fein": "13-3155493",
+      "entity_type": "corporation",
+      "mailing_address": {
+        "street": "PO Box 6426",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94123"
+      },
+      "business_description": "Blending and packaging of industrial cleaning chemicals",
+      "naics_code": "325998",
+      "years_in_business": 48,
+      "annual_revenue": 5400000.0,
+      "employee_count": 231,
+      "website": "www.highlandpark.com",
+      "contact_name": "Sarah Thompson",
+      "contact_phone": "(399) 336-8592",
+      "contact_email": "sthompson@highlandpark.com"
+    },
+    "broker": {
+      "agency_name": "Atlas & Reed Insurance Services",
+      "producer_name": "Maria Yamamoto",
+      "producer_email": "maria.yamamoto@atlasreed.com",
+      "producer_phone": "(238) 935-2240"
+    },
+    "policy": {
+      "effective_date": "2027-01-01",
+      "expiration_date": "2028-01-01",
+      "transaction_type": "new",
+      "prior_carrier": "Continental Mutual Insurance Co.",
+      "quote_needed_by": "2026-12-17",
+      "submission_received_date": "2026-11-15"
+    },
+    "coverage": {
+      "building_limit": 3115000.0,
+      "bpp_limit": 885000.0,
+      "business_income_limit": 500000.0,
+      "deductible": 5000.0,
+      "valuation": "replacement_cost",
+      "coinsurance_pct": 100,
+      "cause_of_loss_form": "special",
+      "flood_requested": false,
+      "earthquake_requested": false
+    },
+    "locations": [
+      {
+        "loc_number": 1,
+        "street": "8470 Industrial Road",
+        "city": "San Francisco",
+        "state": "CA",
+        "zip": "94123",
+        "occupancy": "Chemical Mfg",
+        "construction": "joisted_masonry",
+        "year_built": 2000,
+        "stories": 1,
+        "square_feet": 16400,
+        "sprinklered": false,
+        "sprinkler_pct": 0,
+        "protection_class": 3,
+        "roof_type": "tile",
+        "roof_year": 2019,
+        "alarm_type": "central_station",
+        "building_value": 3115000.0,
+        "contents_value": 885000.0,
+        "bi_value": 500000.0,
+        "tiv": 4500000.0
+      }
+    ],
+    "claims": [
+      {
+        "claim_number": "CMI-2025-79600",
+        "policy_year": 2025,
+        "date_of_loss": "2025-01-25",
+        "cause": "Fire",
+        "status": "closed",
+        "paid": 4060.0,
+        "reserve": 0.0,
+        "incurred": 4060.0
+      },
+      {
+        "claim_number": "25C283196",
+        "policy_year": 2025,
+        "date_of_loss": "2025-07-21",
+        "cause": "Roof Leak",
+        "status": "closed",
+        "paid": 6500.0,
+        "reserve": 0.0,
+        "incurred": 6500.0
+      }
+    ],
+    "loss_years": [
+      {
+        "policy_year": 2022,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 7190.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2023,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 7440.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2024,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 7680.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      },
+      {
+        "policy_year": 2025,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 7930.0,
+        "claim_count": 2,
+        "total_incurred": 10560.0
+      },
+      {
+        "policy_year": 2026,
+        "carrier": "Continental Mutual Insurance Co.",
+        "earned_premium": 8170.0,
+        "claim_count": 0,
+        "total_incurred": 0.0
+      }
+    ],
+    "totals": {
+      "total_tiv": 4500000.0,
+      "location_count": 1,
+      "five_year_incurred": 10560.0,
+      "five_year_premium": 38410.0
+    }
+  },
+  "meta": {
+    "split": "dev",
+    "template": "B",
+    "doc_types": {
+      "email.txt": "email",
+      "Signed_App.pdf": "application",
+      "LossRuns.pdf": "loss_run",
+      "SOV.xlsx": "sov"
+    },
+    "expected_conflicts": [
+      "locations[1].year_built"
+    ],
+    "expected_decision": "refer",
+    "expected_reasons": [
+      "CLASS_REFER"
+    ],
+    "mess": [
+      "scanned:application",
+      "year_built_conflict"
+    ]
+  }
+}
