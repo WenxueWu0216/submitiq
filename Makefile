@@ -46,7 +46,7 @@ serve:           ## review UI on http://localhost:8000
 	$(PY) -m uvicorn service.app:app --reload --port 8000
 
 synth:           ## CDK synth (no AWS account needed)
-	cd infra && npx --yes aws-cdk@2 synth --quiet
+	cd infra && npx --yes aws-cdk@2 synth --quiet --app "$(abspath $(PY)) app.py"
 
 LIVE_BACKEND = $(if $(filter replay,$(BACKEND)),anthropic,$(BACKEND))
 
