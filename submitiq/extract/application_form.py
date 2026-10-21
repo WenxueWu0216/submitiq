@@ -82,7 +82,7 @@ def extract_application_form(doc: Document, mode: str = "basic") -> DocExtractio
                     continue
                 cite = Citation(doc=doc.name, doc_type="application", page=page.number,
                                 locator=f"page {page.number} line {n}", snippet=seg.strip()[:200])
-                conf = 0.88 * (line.conf if page.ocr else 1.0)
+                conf = line.conf if page.ocr else 1.0   # reading quality; priors live in confidence.py
                 if path == "insured.mailing_address":
                     am = _ADDRESS.match(raw)
                     if am:
@@ -120,4 +120,4 @@ def _premises(doc: Document, ex: DocExtraction, mode: str) -> None:
 
 def _cand(value, cite: Citation, conf: float):
     from ..result import Candidate
-    return Candidate(value=value, extractor="form_parser:premises", citation=cite, confidence=0.85 * conf)
+    return Candidate(value=value, extractor="form_parser:premises", citation=cite, confidence=conf)

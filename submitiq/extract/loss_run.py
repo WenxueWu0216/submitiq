@@ -70,8 +70,8 @@ def extract_loss_run(doc: Document, mode: str = "basic", tables: str | None = No
     for y, keys in year_claims.items():
         inc = [ex.candidates[f"claims[{k}].incurred"].value for k in keys if f"claims[{k}].incurred" in ex.candidates]
         cite = Citation(doc=doc.name, doc_type="loss_run", locator=f"policy year {y}")
-        ex.add(f"loss_years[{y}].claim_count", len(keys), cite, 0.9)
-        ex.add(f"loss_years[{y}].total_incurred", round(sum(inc), 2), cite, 0.9)
+        ex.add(f"loss_years[{y}].claim_count", len(keys), cite, 1.0)
+        ex.add(f"loss_years[{y}].total_incurred", round(sum(inc), 2), cite, 1.0)
         if y in stated_year_totals:
             n, total = stated_year_totals[y]
             ok = n == len(keys) and (total is None or abs(total - sum(inc)) <= 1.0)

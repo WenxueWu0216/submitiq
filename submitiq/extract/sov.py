@@ -53,7 +53,8 @@ def extract_sov(doc: Document, mode: str = "basic", tables: str | None = None) -
         parts = [ex.candidates.get(f"locations[{n}].{k}") for k in ("building_value", "contents_value", "bi_value")]
         tiv = ex.candidates.get(f"locations[{n}].tiv")
         if tiv and all(parts):
-            ok = abs(sum(p.value for p in parts) - tiv.value) <= max(1.0, 0.001 * tiv.value)
+            # 0.5%: brokers print rounded values ("$1.12M" for 1,125,000), so exact sums fail on honest rows
+            ok = abs(sum(p.value for p in parts) - tiv.value) <= max(1.0, 0.005 * tiv.value)
             ex.validations.append(Validation("sov_row_adds_up", ok, f"location {n}: building+contents+BI vs TIV",
                                              [f"locations[{n}].{k}" for k in ("building_value", "contents_value", "bi_value", "tiv")]))
     if not nums:
@@ -64,7 +65,7 @@ def extract_sov(doc: Document, mode: str = "basic", tables: str | None = None) -
 
 def _cand(value, ex: DocExtraction, doc: Document):
     from ..result import Candidate
-    return Candidate(value=value, extractor=ex.extractor, citation=Citation(doc=doc.name, doc_type="sov"), confidence=0.9)
+    return Candidate(value=value, extractor=ex.extractor, citation=Citation(doc=doc.name, doc_type="sov"), confidence=1.0)
 
 
 def _last_money(text: str):

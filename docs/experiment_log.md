@@ -198,3 +198,62 @@ All offline. Template C (test) goes from 82.6 to 84.5. The decision model calls 
   lets the email's "Harbor Point" match, so I kept it and listed the miss as a known limitation.
 * Test silent-error rate is still 27.5%. Those are mostly *missing* critical fields (template C), which
   nothing flags yet. That is 4d.
+
+---
+
+## Stage 4d: Confidence scoring and review routing
+
+**What:** `submitiq/confidence.py` scores every field:
+
+`confidence = prior(extractor) × OCR line confidence`. Then:
+* **Boost** when an independent reading agrees (another document or extractor; noisy-OR) and when the
+  field passed a reconciliation check (SOV totals, row sums, loss-year totals).
+* **Penalties:**
+  * a different extractor read something else from the *same* document → ×0.5
+  * the field failed a reconciliation check → ×0.5 and `invalid`
+  * an implausible value (roof older than the building, PPC outside 1–10, a 9-digit
+    "phone", "unsprinklered" with sprinkler % > 0, loss date outside its policy year, bad email/FEIN/ZIP) → ×0.3 and `invalid`
+  * an LLM value whose evidence quote can't be found in the document → ×0.6
+* Required fields the rules need (NAICS, and construction / year built / PPC / TIV per location, plus named insured,
+  effective date, total TIV) that no document supplied are added as `missing`.
+
+**Routing rule:** review if any *critical* field is flagged, or any field anywhere is `conflict` or `invalid`.
+Low-confidence non-critical fields (a website, an OCR'd contact phone) are highlighted in the
+UI but don't block. Infrastructure failures (model down, replay miss) are counted as `degraded`
+and go to a retry queue, not to underwriters.
+
+**Tuning (dev only, `scripts/tune_routing.py`):** I swept the threshold (0.6–0.9) and the OCR-confidence exponent (1 vs 2).
+Silent critical errors were 0 on dev for every setting. Review rate was flat at 42.5% for thresholds
+≤ 0.80 with exponent 1 and rose quickly above that. I chose threshold 0.80 and exponent 1, the most conservative setting
+on the flat part. Squaring OCR confidence pushed correct OCR'd loss-run premiums into the queue
+for no gain.
+
+| variant | split | field F1 | review rate | silent crit. err. | wrong values stated → flagged | flag precision |
+|---|---|---|---|---|---|---|
+| v3 | dev | 99.2 | 35.0 | 1.2 | – | – |
+| **v4** | dev | 99.2 | **42.5** | **0.0** | 4 → 4 (100%) | 16.7 |
+| v3 | test | 96.1 | 25.0 | 27.5 | – | – |
+| **v4** | test | 96.1 | **57.5** | **0.0** | 2 → 1 (50%) | 49.2 |
+
+F1 doesn't change by design: routing never edits values.
+
+**Reading it:**
+* The point of this step: on test, **27.5% → 0%** of submissions carry a wrong or missing critical
+  field without being routed. That costs review volume (25% → 57.5% on test). Most of the increase is
+  template-C packages whose application fields are missing offline, and those *should* go to a person
+  until the LLM path is measured. On the A/B-only dev split the cost is 35% → 42.5%.
+* Flag precision looks low (16.7% dev). The metric only counts a flag as "right" when the value is
+  wrong, but most flags here point at real business issues with correct values: the planted conflicts (stale
+  application TIV, year built) and genuinely missing information that has to go back to the broker.
+* **One silent wrong value remains on test:** an OCR'd contact email `jsiiva@…` (truth `jsilva@…`)
+  scored 0.816, just above the threshold. It's a non-critical field, so I left the threshold alone. Raising it
+  would cost about 14 points of review rate on dev to catch one contact email.
+
+**What broke:**
+1. Squared OCR confidence was too harsh (see tuning).
+2. The SOV row check (building + contents + BI = TIV) failed on *honest* rows: brokers print `$1.12M` for
+   1,125,000. I relaxed the tolerance to 0.5% (the precision "$x.xxM" implies). The row-level validation flags on
+   dev went from 9 to 3 (scans with real misreads).
+3. An OCR'd producer name ("Danie! Kim") was *caught* (a conflict with the email header) but not *fixed*.
+   The application wins for broker fields by rule. Choosing by confidence for fields with no
+   business source-of-truth rule is in "what I'd do next".

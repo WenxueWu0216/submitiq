@@ -28,6 +28,7 @@ class DocExtraction:
     note: str = ""
 
     def add(self, path: str, value, citation: Citation, confidence: float) -> None:
+        """confidence here is reading quality (1.0 = text layer, else OCR confidence)."""
         if value is None:
             return
         self.candidates[path] = Candidate(value=value, extractor=self.extractor, citation=citation, confidence=confidence)

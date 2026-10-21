@@ -6,6 +6,7 @@
                 (LLM on SOV / loss runs only when the table parser fails its own checks)
     v3a_consistency_raw   + cross-document consistency checks, exact matching
     v3_consistency        + entity normalization and full value normalization
+    v4_confidence         + field confidence, validation and review routing
 """
 from __future__ import annotations
 
@@ -16,6 +17,7 @@ from pathlib import Path
 from . import consistency
 from .assemble import assemble, extraction_from_record
 from .classify import classify
+from .confidence import score_and_route
 from .coerce import coerce_submission
 from .documents import Document, load_package
 from .extract import baseline as baseline_extract
@@ -41,6 +43,7 @@ class PipelineConfig:
     llm_tables: str = "fallback"        # 4b: LLM on SOV/loss runs: fallback (parser failed) | always | never
     normalization: str = "basic"        # basic | full (4c)
     consistency: bool = False           # 4c: cross-document checks
+    confidence: bool = False            # 4d: confidence scoring + routing
     decision: str = "llm"               # llm | rules
 
 
@@ -51,6 +54,8 @@ VARIANTS: dict[str, PipelineConfig] = {
     "v3a_consistency_raw": PipelineConfig("v3a_consistency_raw", extraction="per_doc", tables=True, consistency=True),
     "v3_consistency": PipelineConfig("v3_consistency", extraction="per_doc", tables=True, consistency=True,
                                      normalization="full"),
+    "v4_confidence": PipelineConfig("v4_confidence", extraction="per_doc", tables=True, consistency=True,
+                                    normalization="full", confidence=True),
 }
 ORDER = list(VARIANTS)
 VARIANTS["final"] = PipelineConfig(**{**asdict(VARIANTS[ORDER[-1]]), "name": "final"})
@@ -100,10 +105,16 @@ class Pipeline:
         res.timings_ms["extract"] = (time.perf_counter() - t0) * 1000
 
         t0 = time.perf_counter()
+        values = flatten(res.record)
         if self.cfg.consistency:
-            conflicts = consistency.check(res.provenance, flatten(res.record), extractions, self.cfg.normalization)
-            res.review_reasons += conflicts
-            res.needs_review = res.needs_review or bool(conflicts)
+            conflicts = consistency.check(res.provenance, values, extractions, self.cfg.normalization)
+            if not self.cfg.confidence:
+                res.review_reasons += conflicts
+                res.needs_review = res.needs_review or bool(conflicts)
+        if self.cfg.confidence:
+            needs, reasons = score_and_route(res.provenance, values, extractions, docs)
+            res.review_reasons += reasons
+            res.needs_review = res.needs_review or needs
         res.timings_ms["validate"] = (time.perf_counter() - t0) * 1000
 
         t0 = time.perf_counter()

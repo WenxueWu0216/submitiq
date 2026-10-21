@@ -1,11 +1,11 @@
 {
  "meta": {
-  "pipeline": "v3a_consistency_raw",
+  "pipeline": "v3_consistency",
   "split": "test",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T193011Z",
-  "git_sha": "0aef363",
+  "timestamp": "20261021T193711Z",
+  "git_sha": "a8db849",
   "n": 40,
   "wall_seconds": 1.6,
   "model": "claude-opus-5-5",
@@ -15,61 +15,61 @@
   "n_submissions": 40,
   "fields": {
    "overall": {
-    "precision": 0.9983,
-    "recall": 0.889,
-    "f1": 0.9405,
-    "tp": 4725,
-    "fp": 8,
-    "fn": 590
+    "precision": 0.9996,
+    "recall": 0.9246,
+    "f1": 0.9606,
+    "tp": 4914,
+    "fp": 2,
+    "fn": 401
    },
    "critical": {
     "precision": 1.0,
-    "recall": 0.901,
-    "f1": 0.9479,
-    "tp": 1247,
+    "recall": 0.9776,
+    "f1": 0.9887,
+    "tp": 1353,
     "fp": 0,
-    "fn": 137
+    "fn": 31
    },
    "by_group": {
     "insured": {
-     "precision": 0.9959,
-     "recall": 0.743,
-     "f1": 0.8511,
-     "tp": 480,
-     "fp": 2,
-     "fn": 166
+     "precision": 0.9979,
+     "recall": 0.7523,
+     "f1": 0.8579,
+     "tp": 486,
+     "fp": 1,
+     "fn": 160
     },
     "broker": {
-     "precision": 0.9688,
-     "recall": 0.9688,
-     "f1": 0.9688,
-     "tp": 155,
-     "fp": 5,
-     "fn": 5
+     "precision": 0.9938,
+     "recall": 0.9938,
+     "f1": 0.9938,
+     "tp": 159,
+     "fp": 1,
+     "fn": 1
     },
     "policy": {
      "precision": 1.0,
-     "recall": 0.5625,
-     "f1": 0.72,
-     "tp": 135,
+     "recall": 0.6667,
+     "f1": 0.8,
+     "tp": 160,
      "fp": 0,
-     "fn": 105
+     "fn": 80
     },
     "coverage": {
      "precision": 1.0,
-     "recall": 0.6546,
-     "f1": 0.7912,
-     "tp": 235,
+     "recall": 0.7493,
+     "f1": 0.8567,
+     "tp": 269,
      "fp": 0,
-     "fn": 124
+     "fn": 90
     },
     "locations": {
-     "precision": 0.9996,
-     "recall": 0.9269,
-     "f1": 0.9619,
-     "tp": 2345,
-     "fp": 1,
-     "fn": 185
+     "precision": 1.0,
+     "recall": 0.9723,
+     "f1": 0.986,
+     "tp": 2460,
+     "fp": 0,
+     "fn": 70
     },
     "claims": {
      "precision": 1.0,
@@ -89,37 +89,37 @@
     },
     "totals": {
      "precision": 1.0,
-     "recall": 0.9688,
-     "f1": 0.9841,
-     "tp": 155,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 160,
      "fp": 0,
-     "fn": 5
+     "fn": 0
     }
    },
    "by_template": {
     "A": {
-     "precision": 0.9957,
-     "recall": 0.9427,
-     "f1": 0.9685,
-     "tp": 1628,
-     "fp": 7,
-     "fn": 99
+     "precision": 0.9994,
+     "recall": 0.9803,
+     "f1": 0.9898,
+     "tp": 1693,
+     "fp": 1,
+     "fn": 34
     },
     "B": {
-     "precision": 0.9995,
-     "recall": 0.9487,
-     "f1": 0.9734,
-     "tp": 2217,
+     "precision": 0.9996,
+     "recall": 0.9863,
+     "f1": 0.9929,
+     "tp": 2305,
      "fp": 1,
-     "fn": 120
+     "fn": 32
     },
     "C": {
      "precision": 1.0,
-     "recall": 0.7034,
-     "f1": 0.8259,
-     "tp": 880,
+     "recall": 0.7322,
+     "f1": 0.8454,
+     "tp": 916,
      "fp": 0,
-     "fn": 371
+     "fn": 335
     }
    },
    "by_field": {
@@ -132,12 +132,12 @@
      "fn": 0
     },
     "broker.producer_email": {
-     "precision": 0.9,
-     "recall": 0.9,
-     "f1": 0.9,
-     "tp": 36,
-     "fp": 4,
-     "fn": 4
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
     },
     "broker.producer_name": {
      "precision": 0.975,
@@ -213,27 +213,27 @@
     },
     "coverage.bpp_limit": {
      "precision": 1.0,
-     "recall": 0.625,
-     "f1": 0.7692,
-     "tp": 25,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 15
+     "fn": 10
     },
     "coverage.building_limit": {
      "precision": 1.0,
-     "recall": 0.6,
-     "f1": 0.75,
-     "tp": 24,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 16
+     "fn": 10
     },
     "coverage.business_income_limit": {
      "precision": 1.0,
-     "recall": 0.6,
-     "f1": 0.75,
-     "tp": 24,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 16
+     "fn": 10
     },
     "coverage.cause_of_loss_form": {
      "precision": 1.0,
@@ -261,19 +261,19 @@
     },
     "coverage.earthquake_requested": {
      "precision": 1.0,
-     "recall": 0.525,
-     "f1": 0.6885,
-     "tp": 21,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 19
+     "fn": 10
     },
     "coverage.flood_requested": {
      "precision": 1.0,
-     "recall": 0.55,
-     "f1": 0.7097,
-     "tp": 22,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 18
+     "fn": 10
     },
     "coverage.valuation": {
      "precision": 1.0,
@@ -285,11 +285,11 @@
     },
     "insured.annual_revenue": {
      "precision": 1.0,
-     "recall": 0.625,
-     "f1": 0.7692,
-     "tp": 25,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 15
+     "fn": 10
     },
     "insured.business_description": {
      "precision": 1.0,
@@ -300,12 +300,12 @@
      "fn": 10
     },
     "insured.contact_email": {
-     "precision": 0.9333,
-     "recall": 0.7,
-     "f1": 0.8,
-     "tp": 28,
-     "fp": 2,
-     "fn": 12
+     "precision": 0.9667,
+     "recall": 0.725,
+     "f1": 0.8286,
+     "tp": 29,
+     "fp": 1,
+     "fn": 11
     },
     "insured.contact_name": {
      "precision": 1.0,
@@ -429,19 +429,19 @@
     },
     "locations[].bi_value": {
      "precision": 1.0,
-     "recall": 0.9712,
-     "f1": 0.9854,
-     "tp": 135,
+     "recall": 0.9856,
+     "f1": 0.9928,
+     "tp": 137,
      "fp": 0,
-     "fn": 4
+     "fn": 2
     },
     "locations[].building_value": {
      "precision": 1.0,
-     "recall": 0.8993,
-     "f1": 0.947,
-     "tp": 125,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
      "fp": 0,
-     "fn": 14
+     "fn": 0
     },
     "locations[].city": {
      "precision": 1.0,
@@ -453,19 +453,19 @@
     },
     "locations[].construction": {
      "precision": 1.0,
-     "recall": 0.6619,
-     "f1": 0.7965,
-     "tp": 92,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
      "fp": 0,
-     "fn": 47
+     "fn": 0
     },
     "locations[].contents_value": {
      "precision": 1.0,
-     "recall": 0.9353,
-     "f1": 0.9665,
-     "tp": 130,
+     "recall": 0.9856,
+     "f1": 0.9928,
+     "tp": 137,
      "fp": 0,
-     "fn": 9
+     "fn": 2
     },
     "locations[].occupancy": {
      "precision": 1.0,
@@ -509,11 +509,11 @@
     },
     "locations[].sprinklered": {
      "precision": 1.0,
-     "recall": 0.7626,
-     "f1": 0.8653,
-     "tp": 106,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
      "fp": 0,
-     "fn": 33
+     "fn": 0
     },
     "locations[].square_feet": {
      "precision": 1.0,
@@ -524,12 +524,12 @@
      "fn": 1
     },
     "locations[].state": {
-     "precision": 0.9928,
-     "recall": 0.9928,
-     "f1": 0.9928,
-     "tp": 138,
-     "fp": 1,
-     "fn": 1
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
     },
     "locations[].stories": {
      "precision": 1.0,
@@ -549,11 +549,11 @@
     },
     "locations[].tiv": {
      "precision": 1.0,
-     "recall": 0.9209,
-     "f1": 0.9588,
-     "tp": 128,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
      "fp": 0,
-     "fn": 11
+     "fn": 0
     },
     "locations[].year_built": {
      "precision": 1.0,
@@ -605,19 +605,19 @@
     },
     "policy.effective_date": {
      "precision": 1.0,
-     "recall": 0.5,
-     "f1": 0.6667,
-     "tp": 20,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 20
+     "fn": 10
     },
     "policy.expiration_date": {
      "precision": 1.0,
-     "recall": 0.375,
-     "f1": 0.5455,
-     "tp": 15,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
      "fp": 0,
-     "fn": 25
+     "fn": 10
     },
     "policy.prior_carrier": {
      "precision": 1.0,
@@ -677,11 +677,11 @@
     },
     "totals.total_tiv": {
      "precision": 1.0,
-     "recall": 0.875,
-     "f1": 0.9333,
-     "tp": 35,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
      "fp": 0,
-     "fn": 5
+     "fn": 0
     }
    }
   },
@@ -696,44 +696,46 @@
    }
   },
   "review": {
-   "review_rate": 0.725,
-   "submissions_with_critical_error": 27,
-   "silent_critical_error_rate": 0.25,
-   "flag_precision": 0.1282,
-   "flag_recall_of_errors": 0.0085,
-   "flagged_fields_per_submission": 0.97,
+   "review_rate": 0.25,
+   "submissions_with_critical_error": 11,
+   "silent_critical_error_rate": 0.275,
+   "flag_precision": 0.0909,
+   "flag_recall_of_errors": 0.0025,
+   "wrong_values": 2,
+   "flag_recall_of_wrong_values": 0.5,
+   "flagged_fields_per_submission": 0.28,
    "degraded_rate": 1.0
   },
   "conflicts": {
-   "precision": 0.2308,
-   "recall": 0.45,
-   "f1": 0.3051,
-   "tp": 9,
-   "fp": 30,
-   "fn": 11
+   "precision": 0.9091,
+   "recall": 0.5,
+   "f1": 0.6452,
+   "tp": 10,
+   "fp": 1,
+   "fn": 10
   },
   "documents": {
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 2075.1,
-   "p50": 183.2,
-   "p95": 8608.9,
+   "mean": 2071.6,
+   "p50": 174.8,
+   "p95": 8617.6,
    "llm_recorded_mean": 0.0
   },
   "cost": {
    "usd_per_submission": 0.0,
    "input_tokens_per_submission": 0.0,
    "output_tokens_per_submission": 0.0,
-   "est_prompt_tokens_per_submission": 7793.2,
+   "est_prompt_tokens_per_submission": 7459.4,
    "llm_calls_by_source": {
-    "replay:miss": 128
+    "replay:miss": 121
    },
    "llm_calls_by_task": {
     "appetite_decision": 40,
     "extract_application": 40,
     "extract_email": 40,
-    "extract_sov": 8
+    "extract_sov": 1
    }
   },
   "summary": {
@@ -744,22 +746,16 @@
   {
    "id": "SUB-0081",
    "template": "A",
-   "f1": 0.9892,
+   "f1": 0.9964,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
-   "wrong": [
-    "broker.producer_email"
-   ],
+   "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "broker.producer_email: application.pdf says 'laura.okafor @brightlineins.com', email.txt says 'laura.okafor@brightlineins.com' (kept the form_parser value per source-of-truth rules)",
-    "insured.named_insured: application says 'Summit Crest Auto Care Corporation', Loss_History.pdf says 'Summit Crest'",
-    "insured.named_insured: application says 'Summit Crest Auto Care Corporation', Property_Schedule.xlsx says 'Summit Crest'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -825,35 +821,29 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[2].year_built: Attachment_22765.pdf says 1971, file28141.pdf says 1989 (kept the table_parser:local value per source-of-truth rules)",
-    "insured.named_insured: application says 'Northgate Warehousing Corp.', Attachment_22765.pdf says 'NORTHGATE WAREHOUSING CORP.'",
-    "insured.named_insured: application says 'Northgate Warehousing Corp.', doc99044.pdf says 'Northgate Warehousing'"
+    "locations[2].year_built: Attachment_22765.pdf says 1971, file28141.pdf says 1989 (kept the table_parser:local value per source-of-truth rules)"
    ],
    "errors": []
   },
   {
    "id": "SUB-0084",
    "template": "B",
-   "f1": 0.9898,
+   "f1": 0.9949,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.earthquake_requested",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Clearwater Grocers Partners LP', LossRuns.pdf says 'Clearwater Grocers'",
-    "insured.named_insured: application says 'Clearwater Grocers Partners LP', statement_of_values.pdf says 'CLEARWATER GROCERS PARTNERS LP'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0085",
    "template": "C",
-   "f1": 0.7927,
+   "f1": 0.8072,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
@@ -886,9 +876,7 @@
     "insured.website",
     "insured.years_in_business",
     "locations[1].alarm_type",
-    "locations[1].construction",
     "locations[1].roof_type",
-    "locations[1].sprinklered",
     "policy.effective_date",
     "policy.expiration_date",
     "policy.prior_carrier",
@@ -903,10 +891,10 @@
   {
    "id": "SUB-0086",
    "template": "B",
-   "f1": 0.9668,
+   "f1": 0.9706,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -916,44 +904,32 @@
     "locations[3].sprinkler_pct",
     "locations[4].protection_class",
     "locations[4].sprinkler_pct",
-    "locations[4].sprinklered",
     "locations[4].stories",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Riverbend Tavern LLC', LossRuns.pdf says 'Riverbend Tavern Distribution Inc.'",
-    "insured.named_insured: application says 'Riverbend Tavern LLC', Property_Schedule.pdf says 'RIVERBEND TAVERN, LLC'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0087",
    "template": "A",
-   "f1": 0.9699,
+   "f1": 0.9926,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.bpp_limit",
-    "coverage.building_limit",
-    "coverage.earthquake_requested",
-    "locations[1].construction",
-    "locations[1].sprinklered",
     "locations[3].alarm_type",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Summit Crest Grocers', IMG_39328.pdf says 'Summit Crest Grocers, Grocers'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0088",
    "template": "C",
-   "f1": 0.9048,
+   "f1": 0.9302,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
@@ -985,21 +961,17 @@
     "insured.named_insured",
     "insured.website",
     "insured.years_in_business",
-    "locations[10].sprinklered",
-    "locations[11].construction",
-    "locations[11].sprinklered",
-    "locations[12].building_value",
     "locations[1].alarm_type",
-    "locations[1].construction",
     "locations[1].roof_type",
     "locations[2].alarm_type",
-    "locations[2].construction",
     "locations[2].roof_type",
     "locations[3].alarm_type",
     "locations[3].roof_type",
-    "locations[5].sprinklered",
-    "locations[6].contents_value",
-    "locations[7].construction"
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type"
    ],
    "review_reasons": [
     "application.pdf: no known form labels found (unfamiliar layout?)"
@@ -1012,53 +984,29 @@
    "f1": 0.998,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Northgate Hardware', loss_run.pdf says 'Northgate Hardware, Hardware'",
-    "insured.named_insured: application says 'Northgate Hardware', loss_run_2.pdf says 'Northgate Hardware, Hardware'",
-    "insured.named_insured: application says 'Northgate Hardware', statement_of_values.xlsx says 'Northgate Hardware, Hardware'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0090",
    "template": "B",
-   "f1": 0.9615,
+   "f1": 0.9961,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.bpp_limit",
-    "coverage.building_limit",
-    "coverage.business_income_limit",
-    "coverage.flood_requested",
-    "insured.annual_revenue",
-    "locations[10].construction",
     "locations[1].alarm_type",
-    "locations[2].building_value",
-    "locations[4].construction",
-    "locations[5].sprinklered",
-    "locations[6].construction",
-    "locations[6].sprinklered",
-    "locations[7].construction",
-    "locations[7].sprinklered",
-    "locations[8].construction",
-    "locations[8].sprinklered",
-    "policy.effective_date",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Redstone Distribution LLC', loss_run.pdf says 'REDSTONE DISTRIBUTION HOLDINGS'",
-    "insured.named_insured: application says 'Redstone Distribution LLC', statement_of_values.xlsx says 'Redstone Distribution, LLC'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1114,22 +1062,18 @@
   {
    "id": "SUB-0092",
    "template": "A",
-   "f1": 0.9735,
+   "f1": 0.9896,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": true,
-   "critical_error": true,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.flood_requested",
-    "locations[1].construction",
     "locations[2].alarm_type",
-    "policy.effective_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[2].year_built: statement_of_values.xlsx says 1996, application.pdf says 1990 (kept the table_parser:local value per source-of-truth rules)",
-    "insured.named_insured: application says 'Juniper Engineering Group Corporation', statement_of_values.xlsx says 'Juniper Engineering Group, Corporation'"
+    "locations[2].year_built: statement_of_values.xlsx says 1996, application.pdf says 1990 (kept the table_parser:local value per source-of-truth rules)"
    ],
    "errors": []
   },
@@ -1139,52 +1083,38 @@
    "f1": 0.9912,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Falcon Ridge Motor Works LLC', IMG_30365.pdf says 'FALCON RIDGE MOTOR WORKS LLC'",
-    "insured.named_insured: application says 'Falcon Ridge Motor Works LLC', IMG_99832.pdf says 'Falcon Ridge Motor Works, LLC'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0094",
    "template": "A",
-   "f1": 0.9016,
+   "f1": 0.9548,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": true,
-   "critical_error": true,
-   "wrong": [
-    "broker.producer_email",
-    "insured.contact_email"
-   ],
+   "critical_error": false,
+   "wrong": [],
    "missed": [
-    "coverage.bpp_limit",
-    "coverage.earthquake_requested",
-    "coverage.flood_requested",
     "locations[1].alarm_type",
     "locations[1].bi_value",
-    "locations[1].building_value",
     "locations[1].contents_value",
     "locations[1].sprinkler_pct",
     "locations[2].bi_value",
-    "locations[2].construction",
     "locations[2].contents_value",
     "locations[2].sprinkler_pct",
     "locations[2].square_feet",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "broker.producer_email: Signed_App.pdf says 'maria.reyes @granitepeakins.com', email.txt says 'maria.reyes@granitepeakins.com' (kept the form_parser value per source-of-truth rules)",
-    "insured.named_insured: application says 'Copper Hill Auto Care LLC', Loss_History.pdf says 'Copper Hill Auto Care, LLC'",
-    "insured.named_insured: application says 'Copper Hill Auto Care LLC', Property_Schedule.pdf says 'COPPER HILL'"
+    "totals.total_tiv: Property_Schedule.pdf says 16525000.0, Signed_App.pdf says 15150000.0 (kept the derived value per source-of-truth rules)"
    ],
    "errors": []
   },
@@ -1194,44 +1124,35 @@
    "f1": 0.9903,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Silver Creek Foods Inc.', IMG_28884.pdf says 'Silver Creek Foods, Inc.'",
-    "insured.named_insured: application says 'Silver Creek Foods Inc.', scan95130.pdf says 'SILVER CREEK'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0096",
    "template": "B",
-   "f1": 0.9701,
+   "f1": 0.9942,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.flood_requested",
-    "locations[1].construction",
-    "policy.effective_date",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Prairie Wind Properties Inc.', LossRuns.pdf says 'PRAIRIE WIND HOLDINGS'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0097",
    "template": "C",
-   "f1": 0.8173,
+   "f1": 0.8286,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
@@ -1264,11 +1185,9 @@
     "insured.website",
     "insured.years_in_business",
     "locations[1].alarm_type",
-    "locations[1].construction",
     "locations[1].roof_type",
     "locations[2].alarm_type",
     "locations[2].roof_type",
-    "locations[2].sprinklered",
     "locations[3].alarm_type",
     "locations[3].roof_type",
     "policy.effective_date",
@@ -1285,26 +1204,16 @@
   {
    "id": "SUB-0098",
    "template": "A",
-   "f1": 0.9596,
+   "f1": 0.9951,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.building_limit",
-    "coverage.earthquake_requested",
-    "coverage.flood_requested",
-    "locations[2].construction",
-    "locations[2].contents_value",
-    "locations[2].tiv",
-    "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Granite State Bake Shop Inc.', Loss_History.pdf says 'Granite State'",
-    "insured.named_insured: application says 'Granite State Bake Shop Inc.', SOV.pdf says 'GRANITE STATE BAKE SHOP INC.'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1321,49 +1230,25 @@
    ],
    "review_reasons": [
     "totals.total_tiv: scan83894.pdf says 9380000.0, doc56976.pdf says 7879000.0 (kept the derived value per source-of-truth rules)",
-    "locations[1].year_built: scan83894.pdf says 1988, doc56976.pdf says 1977 (kept the table_parser:local value per source-of-truth rules)",
-    "insured.named_insured: application says 'Evergreen Sports Center LLC', IMG_21232.pdf says 'Evergreen Sports Center'",
-    "insured.named_insured: application says 'Evergreen Sports Center LLC', scan83894.pdf says 'EVERGREEN SPORTS CENTER LLC'"
+    "locations[1].year_built: scan83894.pdf says 1988, doc56976.pdf says 1977 (kept the table_parser:local value per source-of-truth rules)"
    ],
    "errors": []
   },
   {
    "id": "SUB-0100",
    "template": "B",
-   "f1": 0.9585,
+   "f1": 0.9945,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.bpp_limit",
-    "coverage.business_income_limit",
-    "coverage.earthquake_requested",
-    "locations[10].construction",
-    "locations[10].tiv",
-    "locations[11].construction",
-    "locations[11].sprinklered",
-    "locations[12].construction",
-    "locations[12].sprinklered",
-    "locations[1].construction",
-    "locations[1].sprinklered",
     "locations[2].alarm_type",
-    "locations[2].sprinklered",
     "locations[3].alarm_type",
-    "locations[4].sprinklered",
-    "locations[6].sprinklered",
-    "locations[8].construction",
-    "locations[8].sprinklered",
-    "locations[8].tiv",
-    "policy.effective_date",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Magnolia Engineering LLC', Property_Schedule.xlsx says 'Magnolia Engineering'",
-    "insured.named_insured: application says 'Magnolia Engineering LLC', loss_run.pdf says 'MAGNOLIA ENGINEERING LLC'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1381,8 +1266,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "insured.named_insured: application says 'Prairie Wind Engineering Group LLC', Loss_History.pdf says 'Prairie Wind Distribution Inc.'",
-    "insured.named_insured: application says 'Prairie Wind Engineering Group LLC', statement_of_values.xlsx says 'Prairie Wind Engineering Group'"
+    "insured.named_insured: application says 'Prairie Wind Engineering Group LLC', Loss_History.pdf says 'Prairie Wind Distribution Inc.'"
    ],
    "errors": []
   },
@@ -1392,45 +1276,34 @@
    "f1": 0.9945,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Evergreen Automotive LLC', Attachment_51183.pdf says 'Evergreen Automotive'",
-    "insured.named_insured: application says 'Evergreen Automotive LLC', file19536.xlsx says 'Evergreen Automotive'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0103",
    "template": "A",
-   "f1": 0.9739,
+   "f1": 0.9957,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.earthquake_requested",
-    "coverage.flood_requested",
-    "insured.annual_revenue",
-    "policy.effective_date",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Keystone Automotive LLC', Attachment_44452.pdf says 'KEYSTONE AUTOMOTIVE HOLDINGS'",
-    "insured.named_insured: application says 'Keystone Automotive LLC', scan82984.pdf says 'KEYSTONE AUTOMOTIVE HOLDINGS'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0104",
    "template": "C",
-   "f1": 0.7703,
+   "f1": 0.7947,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
@@ -1462,15 +1335,12 @@
     "insured.website",
     "insured.years_in_business",
     "locations[1].alarm_type",
-    "locations[1].construction",
     "locations[1].roof_type",
-    "locations[1].tiv",
     "policy.effective_date",
     "policy.expiration_date",
     "policy.prior_carrier",
     "policy.quote_needed_by",
-    "policy.transaction_type",
-    "totals.total_tiv"
+    "policy.transaction_type"
    ],
    "review_reasons": [
     "scan57296.pdf: no known form labels found (unfamiliar layout?)"
@@ -1480,38 +1350,21 @@
   {
    "id": "SUB-0105",
    "template": "A",
-   "f1": 0.9157,
+   "f1": 0.981,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": true,
-   "critical_error": true,
-   "wrong": [
-    "locations[4].state"
-   ],
+   "critical_error": false,
+   "wrong": [],
    "missed": [
-    "coverage.building_limit",
-    "coverage.business_income_limit",
-    "insured.annual_revenue",
-    "locations[1].contents_value",
     "locations[1].sprinkler_pct",
-    "locations[2].building_value",
-    "locations[2].contents_value",
     "locations[2].sprinkler_pct",
-    "locations[3].building_value",
     "locations[3].sprinkler_pct",
-    "locations[3].tiv",
-    "locations[4].building_value",
-    "locations[4].construction",
     "locations[4].sprinkler_pct",
-    "locations[4].tiv",
-    "policy.effective_date",
-    "policy.expiration_date",
-    "policy.quote_needed_by",
-    "totals.total_tiv"
+    "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "insured.named_insured: application says 'Evergreen Sports Center L.L.C.', loss_run.pdf says 'EVERGREEN SPORTS HOLDINGS'",
-    "insured.named_insured: application says 'Evergreen Sports Center L.L.C.', statement_of_values.pdf says 'EVERGREEN SPORTS CENTER L.L.C.'"
+    "totals.total_tiv: statement_of_values.pdf says 30455000.0, ACORD_125_140.pdf says 28390000.0 (kept the derived value per source-of-truth rules)"
    ],
    "errors": []
   },
@@ -1530,129 +1383,82 @@
    ],
    "review_reasons": [
     "insured.named_insured: application says 'Oak Hollow Office Holdings LLC', file21321.pdf says 'Oak Hollow Distribution Inc.'",
-    "insured.named_insured: application says 'Oak Hollow Office Holdings LLC', file60005.pdf says 'Oak Hollow Distribution Inc.'",
-    "insured.named_insured: application says 'Oak Hollow Office Holdings LLC', scan29636.xlsx says 'Oak Hollow'"
+    "insured.named_insured: application says 'Oak Hollow Office Holdings LLC', file60005.pdf says 'Oak Hollow Distribution Inc.'"
    ],
    "errors": []
   },
   {
    "id": "SUB-0107",
    "template": "B",
-   "f1": 0.964,
+   "f1": 0.9953,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.bpp_limit",
     "locations[1].alarm_type",
-    "locations[3].sprinklered",
-    "locations[4].construction",
-    "locations[4].sprinklered",
-    "locations[5].construction",
-    "locations[5].sprinklered",
-    "locations[6].building_value",
-    "locations[6].construction",
-    "locations[7].construction",
-    "locations[8].construction",
-    "locations[8].sprinklered",
-    "policy.effective_date",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Clearwater Properties Corp.', Property_Schedule.xlsx says 'Clearwater Properties'",
-    "insured.named_insured: application says 'Clearwater Properties Corp.', loss_run.pdf says 'Clearwater Properties'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0108",
    "template": "B",
-   "f1": 0.96,
+   "f1": 0.9922,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.business_income_limit",
-    "coverage.flood_requested",
-    "insured.annual_revenue",
-    "locations[1].construction",
-    "locations[2].construction",
-    "locations[2].contents_value",
     "locations[3].alarm_type",
-    "locations[3].sprinklered",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Pioneer Valley Industrial Supply Inc.', Property_Schedule.xlsx says 'PIONEER VALLEY INDUSTRIAL SUPPLY INC.'",
-    "insured.named_insured: application says 'Pioneer Valley Industrial Supply Inc.', loss_run.pdf says 'Pioneer Valley Industrial Supply'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0109",
    "template": "A",
-   "f1": 0.9412,
+   "f1": 0.9845,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": true,
-   "critical_error": true,
+   "critical_error": false,
    "wrong": [
-    "broker.producer_email",
     "broker.producer_name"
    ],
    "missed": [
-    "coverage.building_limit",
-    "coverage.business_income_limit",
-    "coverage.earthquake_requested",
-    "locations[1].construction",
-    "locations[2].construction",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "broker.producer_name: application.pdf says 'Danie! Kim', email.txt says 'Daniel Kim' (kept the form_parser value per source-of-truth rules)",
-    "broker.producer_email: application.pdf says 'daniel.kim @tidewaterrisk.com', email.txt says 'daniel.kim@tidewaterrisk.com' (kept the form_parser value per source-of-truth rules)",
-    "insured.named_insured: application says 'Silver Creek Hospitality LLC', Loss_History.pdf says 'SILVER CREEK HOSPITALITY LLC'",
-    "insured.named_insured: application says 'Silver Creek Hospitality LLC', Property_Schedule.xlsx says 'Silver Creek'"
+    "broker.producer_name: application.pdf says 'Danie! Kim', email.txt says 'Daniel Kim' (kept the form_parser value per source-of-truth rules)"
    ],
    "errors": []
   },
   {
    "id": "SUB-0110",
    "template": "A",
-   "f1": 0.9773,
+   "f1": 0.9968,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": true,
-   "critical_error": true,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.flood_requested",
-    "locations[2].sprinklered",
-    "locations[2].tiv",
-    "locations[4].construction",
-    "locations[5].construction",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[2].year_built: statement_of_values.xlsx says 1991, Signed_App.pdf says 2010 (kept the table_parser:local value per source-of-truth rules)",
-    "insured.named_insured: application says 'Copper Hill Machine Works Corporation', LossRuns.pdf says 'Copper Hill Machine Works, Corporation'",
-    "insured.named_insured: application says 'Copper Hill Machine Works Corporation', loss_run_2.pdf says 'Copper Hill Machine Works, Corporation'",
-    "insured.named_insured: application says 'Copper Hill Machine Works Corporation', statement_of_values.xlsx says 'Copper Hill Machine Works, Corporation'"
+    "locations[2].year_built: statement_of_values.xlsx says 1991, Signed_App.pdf says 2010 (kept the table_parser:local value per source-of-truth rules)"
    ],
    "errors": []
   },
   {
    "id": "SUB-0111",
    "template": "C",
-   "f1": 0.7121,
+   "f1": 0.7591,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
@@ -1686,17 +1492,12 @@
     "insured.website",
     "insured.years_in_business",
     "locations[1].alarm_type",
-    "locations[1].construction",
-    "locations[1].contents_value",
     "locations[1].roof_type",
-    "locations[1].sprinklered",
-    "locations[1].tiv",
     "policy.effective_date",
     "policy.expiration_date",
     "policy.prior_carrier",
     "policy.quote_needed_by",
-    "policy.transaction_type",
-    "totals.total_tiv"
+    "policy.transaction_type"
    ],
    "review_reasons": [
     "Signed_App.pdf: no known form labels found (unfamiliar layout?)"
@@ -1706,24 +1507,16 @@
   {
    "id": "SUB-0112",
    "template": "B",
-   "f1": 0.9652,
+   "f1": 0.9952,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.building_limit",
-    "coverage.earthquake_requested",
-    "locations[1].construction",
-    "locations[2].tiv",
-    "policy.effective_date",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Copper Hill Foods Inc.', Loss_History.pdf says 'COPPER HILL HOLDINGS'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1776,51 +1569,38 @@
   {
    "id": "SUB-0114",
    "template": "A",
-   "f1": 0.9753,
+   "f1": 0.9878,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
-    "insured.annual_revenue",
     "locations[1].alarm_type",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Twin Pines Living Inc.', scan4291.xlsx says 'Twin Pines Living, Inc.'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0115",
    "template": "A",
-   "f1": 0.9655,
+   "f1": 0.9952,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
-   "wrong": [
-    "broker.producer_email"
-   ],
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
    "missed": [
-    "coverage.earthquake_requested",
-    "locations[1].construction",
-    "policy.effective_date",
-    "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "broker.producer_email: scan48825.pdf says 'james.novak @lanternspecialty.com', email.txt says 'james.novak@lanternspecialty.com' (kept the form_parser value per source-of-truth rules)",
-    "insured.named_insured: application says 'Meridian Motor Works LLC', Attachment_32536.xlsx says 'Meridian Motor Works, LLC'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
    "id": "SUB-0116",
    "template": "C",
-   "f1": 0.8495,
+   "f1": 0.8867,
    "decision_gold": "refer",
    "decision_pred": null,
    "needs_review": false,
@@ -1853,20 +1633,15 @@
     "insured.years_in_business",
     "locations[1].alarm_type",
     "locations[1].roof_type",
-    "locations[1].sprinklered",
     "locations[2].alarm_type",
-    "locations[2].construction",
     "locations[2].roof_type",
-    "locations[2].sprinklered",
     "locations[3].alarm_type",
-    "locations[3].bi_value",
-    "locations[3].building_value",
     "locations[3].roof_type",
-    "locations[3].sprinklered",
-    "locations[4].construction",
-    "locations[5].building_value",
-    "locations[5].sprinklered",
-    "locations[6].construction"
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type"
    ],
    "review_reasons": [
     "application.pdf: no known form labels found (unfamiliar layout?)"
@@ -1876,39 +1651,16 @@
   {
    "id": "SUB-0117",
    "template": "B",
-   "f1": 0.9512,
+   "f1": 0.9977,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
-   "critical_error": true,
+   "needs_review": false,
+   "critical_error": false,
    "wrong": [],
    "missed": [
-    "coverage.business_income_limit",
-    "locations[1].building_value",
-    "locations[2].building_value",
-    "locations[2].construction",
-    "locations[2].sprinklered",
-    "locations[3].tiv",
-    "locations[4].building_value",
-    "locations[4].construction",
-    "locations[4].sprinklered",
-    "locations[5].bi_value",
-    "locations[5].construction",
-    "locations[5].contents_value",
-    "locations[6].building_value",
-    "locations[6].sprinklered",
-    "locations[7].construction",
-    "locations[8].building_value",
-    "locations[8].construction",
-    "policy.expiration_date",
-    "policy.quote_needed_by",
-    "totals.total_tiv"
+    "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "insured.named_insured: application says 'Falcon Ridge Lounge LLC', LossRuns.pdf says 'Falcon Ridge'",
-    "insured.named_insured: application says 'Falcon Ridge Lounge LLC', Loss_History_2.pdf says 'Falcon Ridge'",
-    "insured.named_insured: application says 'Falcon Ridge Lounge LLC', statement_of_values.pdf says 'FALCON RIDGE LOUNGE, LLC'"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1934,7 +1686,7 @@
   {
    "id": "SUB-0119",
    "template": "C",
-   "f1": 0.7682,
+   "f1": 0.7843,
    "decision_gold": "accept",
    "decision_pred": null,
    "needs_review": false,
@@ -1969,13 +1721,11 @@
     "insured.years_in_business",
     "locations[1].alarm_type",
     "locations[1].roof_type",
-    "locations[1].tiv",
     "policy.effective_date",
     "policy.expiration_date",
     "policy.prior_carrier",
     "policy.quote_needed_by",
-    "policy.transaction_type",
-    "totals.total_tiv"
+    "policy.transaction_type"
    ],
    "review_reasons": [
     "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)"
