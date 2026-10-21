@@ -24,12 +24,12 @@ def extract_email_headers(doc: Document) -> DocExtraction:
         if line.lower().startswith("from:"):
             name, addr = parseaddr(line.split(":", 1)[1])
             if name:
-                ex.add("broker.producer_name", name.strip(), cite, 0.9)
+                ex.add("broker.producer_name", name.strip(), cite, 1.0)
             if addr:
-                ex.add("broker.producer_email", addr.strip().lower(), cite, 0.95)
+                ex.add("broker.producer_email", addr.strip().lower(), cite, 1.0)
         elif line.lower().startswith("date:"):
             try:
-                ex.add("policy.submission_received_date", parsedate_to_datetime(line.split(":", 1)[1].strip()).date(), cite, 0.95)
+                ex.add("policy.submission_received_date", parsedate_to_datetime(line.split(":", 1)[1].strip()).date(), cite, 1.0)
             except (TypeError, ValueError):
                 pass
     # Signature: the lines after a sign-off, e.g. "Thanks,\nName\nAgency\nPhone\nEmail"
@@ -40,8 +40,8 @@ def extract_email_headers(doc: Document) -> DocExtraction:
             for j, s in enumerate(sig):
                 cite = Citation(doc=doc.name, doc_type="email", locator=f"signature line {j + 1}", snippet=s)
                 if PHONE.match(s):
-                    ex.add("broker.producer_phone", s, cite, 0.85)
+                    ex.add("broker.producer_phone", s, cite, 1.0)
                 elif j == 1 and "@" not in s:
-                    ex.add("broker.agency_name", s, cite, 0.7)
+                    ex.add("broker.agency_name", s, cite, 1.0)
             break
     return ex

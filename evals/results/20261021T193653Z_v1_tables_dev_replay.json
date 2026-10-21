@@ -4,8 +4,8 @@
   "split": "dev",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T192959Z",
-  "git_sha": "0aef363",
+  "timestamp": "20261021T193653Z",
+  "git_sha": "a8db849",
   "n": 80,
   "wall_seconds": 2.9,
   "model": "claude-opus-5-5",
@@ -693,6 +693,8 @@
    "silent_critical_error_rate": 0.0,
    "flag_precision": 0.0,
    "flag_recall_of_errors": 0.0,
+   "wrong_values": 1,
+   "flag_recall_of_wrong_values": 0.0,
    "flagged_fields_per_submission": 0.0,
    "degraded_rate": 1.0
   },
@@ -708,9 +710,9 @@
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 1757.6,
-   "p50": 161.7,
-   "p95": 8300.3,
+   "mean": 1759.2,
+   "p50": 161.6,
+   "p95": 8292.5,
    "llm_recorded_mean": 0.0
   },
   "cost": {

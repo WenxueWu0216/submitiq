@@ -51,6 +51,7 @@ class SubmissionScore:
     wrong_paths: list[str] = field(default_factory=list)         # pred non-null and wrong
     missed_paths: list[str] = field(default_factory=list)        # gold non-null, pred null
     flagged_wrong: int = 0
+    flagged_wrong_values: int = 0
     flagged_total: int = 0
     critical_error: bool = False
     any_error: bool = False
@@ -108,6 +109,7 @@ def score(gt: GroundTruth, res: PipelineResult) -> SubmissionScore:
             s.any_error = True
     s.flagged_total = len(flagged)
     s.flagged_wrong = len(flagged & (set(s.wrong_paths) | set(s.missed_paths)))
+    s.flagged_wrong_values = len(flagged & set(s.wrong_paths))
 
     s.decision_gold = gt.meta.expected_decision
     s.decision_pred = res.decision.outcome
@@ -187,6 +189,7 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
     reviewed = [s for s in scores if s.needs_review]
     with_err = [s for s in scores if s.critical_error]
     wrong_total = sum(len(s.wrong_paths) + len(s.missed_paths) for s in scores)
+    wrong_values = sum(len(s.wrong_paths) for s in scores)
     flagged_total = sum(s.flagged_total for s in scores)
     flagged_wrong = sum(s.flagged_wrong for s in scores)
     lat = [s.latency_ms for s in scores]
@@ -212,6 +215,9 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
             "silent_critical_error_rate": round(sum(1 for s in with_err if not s.needs_review) / n, 4) if n else 0.0,
             "flag_precision": round(flagged_wrong / flagged_total, 4) if flagged_total else 0.0,
             "flag_recall_of_errors": round(flagged_wrong / wrong_total, 4) if wrong_total else 0.0,
+            # Of the values the pipeline *stated* that were wrong, how many did it flag? (silent-wrong-value guard)
+            "wrong_values": wrong_values,
+            "flag_recall_of_wrong_values": round(sum(s.flagged_wrong_values for s in scores) / wrong_values, 4) if wrong_values else None,
             "flagged_fields_per_submission": round(flagged_total / n, 2) if n else 0.0,
             "degraded_rate": round(sum(1 for s in scores if s.degraded) / n, 4) if n else 0.0,
         },

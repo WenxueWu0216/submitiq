@@ -1,13 +1,13 @@
 {
  "meta": {
-  "pipeline": "v3_consistency",
+  "pipeline": "v4_confidence",
   "split": "dev",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T193014Z",
-  "git_sha": "0aef363",
+  "timestamp": "20261021T193715Z",
+  "git_sha": "a8db849",
   "n": 80,
-  "wall_seconds": 3.2,
+  "wall_seconds": 3.4,
   "model": "claude-opus-5-5",
   "replay_miss_policy": "abstain"
  },
@@ -688,12 +688,14 @@
    }
   },
   "review": {
-   "review_rate": 0.35,
+   "review_rate": 0.425,
    "submissions_with_critical_error": 2,
-   "silent_critical_error_rate": 0.0125,
-   "flag_precision": 0.1111,
-   "flag_recall_of_errors": 0.0235,
-   "flagged_fields_per_submission": 0.45,
+   "silent_critical_error_rate": 0.0,
+   "flag_precision": 0.1667,
+   "flag_recall_of_errors": 0.0706,
+   "wrong_values": 4,
+   "flag_recall_of_wrong_values": 1.0,
+   "flagged_fields_per_submission": 0.9,
    "degraded_rate": 1.0
   },
   "conflicts": {
@@ -708,24 +710,24 @@
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 1771.5,
-   "p50": 178.7,
-   "p95": 8316.0,
+   "mean": 1783.3,
+   "p50": 193.4,
+   "p95": 8350.3,
    "llm_recorded_mean": 0.0
   },
   "cost": {
    "usd_per_submission": 0.0,
    "input_tokens_per_submission": 0.0,
    "output_tokens_per_submission": 0.0,
-   "est_prompt_tokens_per_submission": 7720.9,
+   "est_prompt_tokens_per_submission": 7563.1,
    "llm_calls_by_source": {
-    "replay:miss": 248
+    "replay:miss": 242
    },
    "llm_calls_by_task": {
     "appetite_decision": 80,
     "extract_application": 80,
     "extract_email": 80,
-    "extract_sov": 8
+    "extract_sov": 2
    }
   },
   "summary": {
@@ -777,7 +779,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: statement_of_values.xlsx says 56745000.0, Signed_App.pdf says 52008000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 56745000.0, Signed_App.pdf says 52008000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -787,13 +789,15 @@
    "f1": 0.9961,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "locations[2].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
    "errors": []
   },
   {
@@ -978,7 +982,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[2].year_built: statement_of_values.pdf says 2007, application.pdf says 2000 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.pdf says 2007, application.pdf says 2000 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1010,8 +1014,8 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: statement_of_values.pdf says 28430000.0, ACORD_125_140.pdf says 22331000.0 (kept the derived value per source-of-truth rules)",
-    "locations[2].year_built: statement_of_values.pdf says 1967, ACORD_125_140.pdf says 1990 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.pdf says 1967, ACORD_125_140.pdf says 1990 (kept the table_parser:local value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.pdf says 28430000.0, ACORD_125_140.pdf says 22331000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1031,8 +1035,9 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "broker.producer_email: doc42716.pdf says 'robert-hughes@northstarcb.com', email.txt says 'robert.hughes@northstarcb.com' (kept the form_parser value per source-of-truth rules)",
-    "totals.total_tiv: scan88075.xlsx says 8840000.0, doc42716.pdf says 7039000.0 (kept the derived value per source-of-truth rules)"
+    "broker.producer_email: conflict (broker.producer_email: doc42716.pdf says 'robert-hughes@northstarcb.com', email.txt says 'robert.hughes@northstarcb.com' (kept the form_parser value per source-of-truth rules))",
+    "locations[2].year_built: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: scan88075.xlsx says 8840000.0, doc42716.pdf says 7039000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1067,7 +1072,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[2].year_built: statement_of_values.pdf says 1960, Signed_App.pdf says 1976 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.pdf says 1960, Signed_App.pdf says 1976 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1084,7 +1089,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: file90944.pdf says 51620000.0, doc32255.pdf says 44474000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: file90944.pdf says 51620000.0, doc32255.pdf says 44474000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1101,7 +1106,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[1].year_built: IMG_2338.xlsx says 1975, IMG_16856.pdf says 2000 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[1].year_built: conflict (locations[1].year_built: IMG_2338.xlsx says 1975, IMG_16856.pdf says 2000 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1119,7 +1124,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[2].year_built: SOV.xlsx says 1972, application.pdf says 1985 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[2].year_built: conflict (locations[2].year_built: SOV.xlsx says 1972, application.pdf says 1985 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1129,13 +1134,15 @@
    "f1": 0.994,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
    "errors": []
   },
   {
@@ -1144,13 +1151,15 @@
    "f1": 0.9973,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "locations[4].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
    "errors": []
   },
   {
@@ -1238,13 +1247,16 @@
    "f1": 0.9953,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[1].year_built: missing (required for the appetite rules but not found in any document)"
+   ],
    "errors": []
   },
   {
@@ -1261,7 +1273,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[1].year_built: SOV.xlsx says 1977, application.pdf says 1971 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.xlsx says 1977, application.pdf says 1971 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1294,8 +1306,8 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: scan51124.xlsx says 27690000.0, doc1864.pdf says 22503000.0 (kept the derived value per source-of-truth rules)",
-    "locations[3].year_built: scan51124.xlsx says 1987, doc1864.pdf says 2003 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[3].year_built: conflict (locations[3].year_built: scan51124.xlsx says 1987, doc1864.pdf says 2003 (kept the table_parser:local value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: scan51124.xlsx says 27690000.0, doc1864.pdf says 22503000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1371,9 +1383,15 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.location_count: scan40233.pdf says 5, scan16895.pdf says 6 (kept the derived value per source-of-truth rules)",
-    "totals.total_tiv: scan40233.pdf says 32825000.0, scan16895.pdf says 39620000.0 (kept the derived value per source-of-truth rules)",
-    "locations[3].year_built: scan40233.pdf says 1998, scan16895.pdf says 2009 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[1].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[1].year_built: missing (required for the appetite rules but not found in any document)",
+    "locations[2].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[3].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[3].year_built: conflict (locations[3].year_built: scan40233.pdf says 1998, scan16895.pdf says 2009 (kept the table_parser:local value per source-of-truth rules))",
+    "locations[4].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "locations[6].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+    "totals.location_count: conflict (totals.location_count: scan40233.pdf says 5, scan16895.pdf says 6 (kept the derived value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: scan40233.pdf says 32825000.0, scan16895.pdf says 39620000.0 (kept the derived value per source-of-truth rules); table_parser:local read 39615000.0 from the same document)"
    ],
    "errors": []
   },
@@ -1451,7 +1469,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "insured.named_insured: application says 'Harbor Point Foods Inc.', LossRuns.pdf says 'Harbor Point Distribution Inc.'"
+    "insured.named_insured: conflict (insured.named_insured: application says 'Harbor Point Foods Inc.', LossRuns.pdf says 'Harbor Point Distribution Inc.')"
    ],
    "errors": []
   },
@@ -1468,7 +1486,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[1].year_built: SOV.xlsx says 2000, Signed_App.pdf says 1993 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.xlsx says 2000, Signed_App.pdf says 1993 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1502,7 +1520,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[1].year_built: SOV.xlsx says 1983, Signed_App.pdf says 1994 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.xlsx says 1983, Signed_App.pdf says 1994 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1519,7 +1537,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: doc65953.xlsx says 50145000.0, doc81497.pdf says 43932000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: doc65953.xlsx says 50145000.0, doc81497.pdf says 43932000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1601,8 +1619,8 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: SOV.pdf says 70820000.0, Signed_App.pdf says 61955000.0 (kept the derived value per source-of-truth rules)",
-    "locations[2].year_built: SOV.pdf says 2003, Signed_App.pdf says 1983 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[2].year_built: conflict (locations[2].year_built: SOV.pdf says 2003, Signed_App.pdf says 1983 (kept the table_parser:local value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: SOV.pdf says 70820000.0, Signed_App.pdf says 61955000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1650,7 +1668,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: statement_of_values.xlsx says 37210000.0, application.pdf says 30452000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 37210000.0, application.pdf says 30452000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1676,13 +1694,15 @@
    "f1": 0.9933,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "locations[1].year_built: missing (required for the appetite rules but not found in any document)"
+   ],
    "errors": []
   },
   {
@@ -1699,8 +1719,9 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: SOV.xlsx says 18545000.0, ACORD_125_140.pdf says 16701000.0 (kept the derived value per source-of-truth rules)",
-    "locations[2].year_built: SOV.xlsx says 1966, ACORD_125_140.pdf says 1962 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[2].year_built: conflict (locations[2].year_built: SOV.xlsx says 1966, ACORD_125_140.pdf says 1962 (kept the table_parser:local value per source-of-truth rules))",
+    "locations[3].protection_class: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: SOV.xlsx says 18545000.0, ACORD_125_140.pdf says 16701000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1710,7 +1731,7 @@
    "f1": 0.9189,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": false,
+   "needs_review": true,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1736,7 +1757,20 @@
     "locations[4].year_built",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [],
+   "review_reasons": [
+    "locations[1].construction: low_confidence (confidence 0.79 < 0.8)",
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[1].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[1].year_built: low_confidence (confidence 0.79 < 0.8)",
+    "locations[1].zip: low_confidence (confidence 0.79 < 0.8)",
+    "locations[2].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[2].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[3].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[3].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[4].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[4].tiv: missing (required for the appetite rules but not found in any document)",
+    "locations[4].year_built: missing (required for the appetite rules but not found in any document)"
+   ],
    "errors": []
   },
   {
@@ -1828,7 +1862,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "insured.named_insured: application says 'Magnolia Motor Works Corporation', LossRuns.pdf says 'Magnolia Motor Distribution Inc.'"
+    "insured.named_insured: conflict (insured.named_insured: application says 'Magnolia Motor Works Corporation', LossRuns.pdf says 'Magnolia Motor Distribution Inc.')"
    ],
    "errors": []
   },
@@ -1845,7 +1879,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: IMG_86792.xlsx says 8080000.0, scan892.pdf says 6460000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: IMG_86792.xlsx says 8080000.0, scan892.pdf says 6460000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1862,7 +1896,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: statement_of_values.xlsx says 19815000.0, application.pdf says 17384000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 19815000.0, application.pdf says 17384000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1897,7 +1931,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "locations[1].year_built: SOV.pdf says 1985, Signed_App.pdf says 2009 (kept the table_parser:local value per source-of-truth rules)"
+    "locations[1].year_built: conflict (locations[1].year_built: SOV.pdf says 1985, Signed_App.pdf says 2009 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1915,7 +1949,8 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: IMG_92920.xlsx says 32780000.0, scan98325.pdf says 27376000.0 (kept the derived value per source-of-truth rules)"
+    "locations[4].year_built: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: IMG_92920.xlsx says 32780000.0, scan98325.pdf says 27376000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1947,7 +1982,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: statement_of_values.pdf says 23435000.0, ACORD_125_140.pdf says 20474000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.pdf says 23435000.0, ACORD_125_140.pdf says 20474000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -1998,7 +2033,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: Attachment_49707.pdf says 9615000.0, scan83151.pdf says 8238000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: Attachment_49707.pdf says 9615000.0, scan83151.pdf says 8238000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -2016,7 +2051,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "insured.named_insured: application says 'Old Mill Athletic Club LLC', Loss_History.pdf says 'Old Mill Distribution Inc.'"
+    "insured.named_insured: conflict (insured.named_insured: application says 'Old Mill Athletic Club LLC', Loss_History.pdf says 'Old Mill Distribution Inc.')"
    ],
    "errors": []
   },
@@ -2033,7 +2068,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "totals.total_tiv: Property_Schedule.xlsx says 1490000.0, Signed_App.pdf says 1340000.0 (kept the derived value per source-of-truth rules)"
+    "totals.total_tiv: conflict (totals.total_tiv: Property_Schedule.xlsx says 1490000.0, Signed_App.pdf says 1340000.0 (kept the derived value per source-of-truth rules))"
    ],
    "errors": []
   },
@@ -2085,8 +2120,8 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "broker.producer_email: doc23275.pdf says 'nina:alvarez@brightlineins.com', email.txt says 'nina.alvarez@brightlineins.com' (kept the form_parser value per source-of-truth rules)",
-    "locations[2].year_built: Attachment_51271.xlsx says 2004, doc23275.pdf says 2015 (kept the table_parser:local value per source-of-truth rules)"
+    "broker.producer_email: conflict (broker.producer_email: doc23275.pdf says 'nina:alvarez@brightlineins.com', email.txt says 'nina.alvarez@brightlineins.com' (kept the form_parser value per source-of-truth rules))",
+    "locations[2].year_built: conflict (locations[2].year_built: Attachment_51271.xlsx says 2004, doc23275.pdf says 2015 (kept the table_parser:local value per source-of-truth rules))"
    ],
    "errors": []
   }

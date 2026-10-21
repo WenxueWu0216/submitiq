@@ -1,6 +1,6 @@
 # Eval: `baseline` on `test` (40 submissions)
 
-backend `replay` · model `claude-opus-5-5` · git `0aef363` · 20261021T192956Z
+backend `replay` · model `claude-opus-5-5` · git `a8db849` · 20261021T193650Z
 LLM calls by source: {'replay:miss': 40}
 LLM calls by task: {'baseline_extract': 40}
 > 40 LLM calls had no replay fixture and **abstained** (returned nothing). These numbers measure the non-LLM components only.
@@ -17,11 +17,12 @@ LLM calls by task: {'baseline_extract': 40}
 | review-queue rate | 100.0 |
 | degraded (model unavailable) | 100.0 |
 | silent critical-error rate | 0.0 |
-| flag recall of field errors | 0.0 |
+| wrong values stated / flagged | 0 / n/a |
+| flag recall of all field errors (incl. blanks) | 0.0 |
 | flag precision | 0.0 |
 | conflict detection P / R | 0.0 / 0.0 |
 | document classification acc. | 100.0 |
-| latency p50 / p95 (ms, pipeline) | 153 / 8558 |
+| latency p50 / p95 (ms, pipeline) | 161 / 8554 |
 | LLM latency, recorded (ms/sub) | 0 |
 | cost per submission (USD) | 0.0000 |
 | est. prompt tokens / submission | 4251 |

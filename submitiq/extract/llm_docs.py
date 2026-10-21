@@ -149,7 +149,7 @@ def build_request(doc: Document) -> LLMRequest:
                       tool=tool, max_tokens=32000, key_material=doc.sha256)
 
 
-def _add(ex: DocExtraction, path: str, item: dict | None, doc: Document, mode: str, conf: float = 0.8) -> None:
+def _add(ex: DocExtraction, path: str, item: dict | None, doc: Document, mode: str, conf: float = 1.0) -> None:
     if not item or item.get("value") is None:
         return
     val = parse_value(path, item["value"], mode)
@@ -193,7 +193,7 @@ def to_extraction(doc: Document, data: dict, mode: str) -> DocExtraction:
             _add(ex, f"loss_years[{y}].earned_premium", py.get("earned_premium"), doc, mode)
             _add(ex, f"loss_years[{y}].carrier", carrier, doc, mode)
             claims = py.get("claims") or []
-            ex.add(f"loss_years[{y}].claim_count", len(claims), Citation(doc=doc.name, doc_type="loss_run", locator="llm"), 0.75)
+            ex.add(f"loss_years[{y}].claim_count", len(claims), Citation(doc=doc.name, doc_type="loss_run", locator="llm"), 1.0)
             total = 0.0
             for cl in claims:
                 num = (cl.get("claim_number") or {}).get("value")
@@ -201,12 +201,12 @@ def to_extraction(doc: Document, data: dict, mode: str) -> DocExtraction:
                     continue
                 key = claim_key(str(num))
                 ex.claim_numbers[key] = str(num)
-                ex.add(f"claims[{key}].policy_year", y, Citation(doc=doc.name, doc_type="loss_run", locator="llm"), 0.8)
+                ex.add(f"claims[{key}].policy_year", y, Citation(doc=doc.name, doc_type="loss_run", locator="llm"), 1.0)
                 for k in ("date_of_loss", "cause", "status", "paid", "reserve", "incurred"):
                     _add(ex, f"claims[{key}].{k}", cl.get(k), doc, mode)
                 inc = (cl.get("incurred") or {}).get("value")
                 total += float(inc) if isinstance(inc, (int, float)) else 0.0
-            ex.add(f"loss_years[{y}].total_incurred", round(total, 2), Citation(doc=doc.name, doc_type="loss_run", locator="llm"), 0.75)
+            ex.add(f"loss_years[{y}].total_incurred", round(total, 2), Citation(doc=doc.name, doc_type="loss_run", locator="llm"), 1.0)
         name = data.get("insured_name") or {}
         if name.get("value"):
             ex.names.append((str(name["value"]), Citation(doc=doc.name, doc_type="loss_run", snippet=name.get("evidence"))))

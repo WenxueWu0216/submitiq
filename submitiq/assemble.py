@@ -93,17 +93,17 @@ def derive_totals(values: dict[str, Candidate], extractions: list[DocExtraction]
     if sov_docs and loc_nums:
         out["totals.location_count"] = Candidate(value=len(loc_nums), extractor="derived",
                                                  citation=Citation(doc=sov_docs[0].doc, doc_type="sov", locator="row count"),
-                                                 confidence=0.9)
+                                                 confidence=1.0)
     years = {p: c for p, c in values.items() if p.startswith("loss_years[") and p.endswith(".earned_premium")}
     year_keys = {p.split("]")[0] for p in values if p.startswith("loss_years[")}
     lr_docs = [e for e in extractions if e.doc_type == "loss_run" and e.candidates]
     if lr_docs and year_keys:
         cite = Citation(doc=", ".join(e.doc for e in lr_docs), doc_type="loss_run", locator="sum of claims")
         inc = [c.value for p, c in values.items() if p.startswith("claims[") and p.endswith(".incurred")]
-        out["totals.five_year_incurred"] = Candidate(value=round(sum(inc), 2), extractor="derived", citation=cite, confidence=0.9)
+        out["totals.five_year_incurred"] = Candidate(value=round(sum(inc), 2), extractor="derived", citation=cite, confidence=1.0)
         if len(years) == len(year_keys):
             out["totals.five_year_premium"] = Candidate(value=round(sum(c.value for c in years.values()), 2), extractor="derived",
-                                                        citation=cite, confidence=0.9)
+                                                        citation=cite, confidence=1.0)
     return out
 
 
