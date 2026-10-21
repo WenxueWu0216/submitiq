@@ -9,11 +9,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 126.9,
+  "p50 ms": 133.0,
   "llm sources": {
    "replay:miss": 80
   },
-  "git": "395f201"
+  "git": "0aef363"
  },
  {
   "pipeline": "baseline",
@@ -25,11 +25,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 152.2,
+  "p50 ms": 153.2,
   "llm sources": {
    "replay:miss": 40
   },
-  "git": "395f201"
+  "git": "0aef363"
  },
  {
   "pipeline": "v1_tables",
@@ -41,11 +41,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 168.3,
+  "p50 ms": 161.7,
   "llm sources": {
    "replay:miss": 80
   },
-  "git": "395f201"
+  "git": "0aef363"
  },
  {
   "pipeline": "v1_tables",
@@ -57,11 +57,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 182.3,
+  "p50 ms": 146.6,
   "llm sources": {
    "replay:miss": 40
   },
-  "git": "395f201"
+  "git": "0aef363"
  },
  {
   "pipeline": "v2_tooluse",
@@ -69,15 +69,15 @@
   "field F1": 0.9795,
   "critical F1": 0.9767,
   "decision acc.": 0.0,
-  "review rate": 1.0,
-  "silent crit. err.": 0.0,
+  "review rate": 0.0,
+  "silent crit. err.": 0.4,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 185.4,
+  "p50 ms": 191.3,
   "llm sources": {
    "replay:miss": 253
   },
-  "git": "395f201"
+  "git": "0aef363"
  },
  {
   "pipeline": "v2_tooluse",
@@ -85,14 +85,78 @@
   "field F1": 0.9405,
   "critical F1": 0.9479,
   "decision acc.": 0.0,
-  "review rate": 1.0,
-  "silent crit. err.": 0.0,
+  "review rate": 0.0,
+  "silent crit. err.": 0.675,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 195.1,
+  "p50 ms": 198.8,
   "llm sources": {
    "replay:miss": 128
   },
-  "git": "395f201"
+  "git": "0aef363"
+ },
+ {
+  "pipeline": "v3a_consistency_raw",
+  "split": "dev",
+  "field F1": 0.9795,
+  "critical F1": 0.9767,
+  "decision acc.": 0.0,
+  "review rate": 0.95,
+  "silent crit. err.": 0.0375,
+  "conflict F1": 0.4025,
+  "usd/sub": 0.0,
+  "p50 ms": 189.9,
+  "llm sources": {
+   "replay:miss": 253
+  },
+  "git": "0aef363"
+ },
+ {
+  "pipeline": "v3a_consistency_raw",
+  "split": "test",
+  "field F1": 0.9405,
+  "critical F1": 0.9479,
+  "decision acc.": 0.0,
+  "review rate": 0.725,
+  "silent crit. err.": 0.25,
+  "conflict F1": 0.3051,
+  "usd/sub": 0.0,
+  "p50 ms": 183.2,
+  "llm sources": {
+   "replay:miss": 128
+  },
+  "git": "0aef363"
+ },
+ {
+  "pipeline": "v3_consistency",
+  "split": "dev",
+  "field F1": 0.9921,
+  "critical F1": 0.9972,
+  "decision acc.": 0.0,
+  "review rate": 0.35,
+  "silent crit. err.": 0.0125,
+  "conflict F1": 0.8533,
+  "usd/sub": 0.0,
+  "p50 ms": 178.7,
+  "llm sources": {
+   "replay:miss": 248
+  },
+  "git": "0aef363"
+ },
+ {
+  "pipeline": "v3_consistency",
+  "split": "test",
+  "field F1": 0.9606,
+  "critical F1": 0.9887,
+  "decision acc.": 0.0,
+  "review rate": 0.25,
+  "silent crit. err.": 0.275,
+  "conflict F1": 0.6452,
+  "usd/sub": 0.0,
+  "p50 ms": 195.1,
+  "llm sources": {
+   "replay:miss": 125
+  },
+  "git": "0aef363"
  }
 ]

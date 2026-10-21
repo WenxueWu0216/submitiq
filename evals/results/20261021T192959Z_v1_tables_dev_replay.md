@@ -1,7 +1,8 @@
 # Eval: `v1_tables` on `dev` (80 submissions)
 
-backend `replay` · model `claude-opus-5-5` · git `395f201` · 20261021T192649Z
+backend `replay` · model `claude-opus-5-5` · git `0aef363` · 20261021T192959Z
 LLM calls by source: {'replay:miss': 80}
+LLM calls by task: {'baseline_extract': 80}
 > 80 LLM calls had no replay fixture and **abstained** (returned nothing). These numbers measure the non-LLM components only.
 
 | metric | value |
@@ -14,12 +15,13 @@ LLM calls by source: {'replay:miss': 80}
 | decisions abstained | 80 |
 | declines predicted as accept | 0 |
 | review-queue rate | 100.0 |
+| degraded (model unavailable) | 100.0 |
 | silent critical-error rate | 0.0 |
 | flag recall of field errors | 0.0 |
 | flag precision | 0.0 |
 | conflict detection P / R | 0.0 / 0.0 |
 | document classification acc. | 100.0 |
-| latency p50 / p95 (ms, pipeline) | 168 / 8306 |
+| latency p50 / p95 (ms, pipeline) | 162 / 8300 |
 | LLM latency, recorded (ms/sub) | 0 |
 | cost per submission (USD) | 0.0000 |
 | est. prompt tokens / submission | 4275 |

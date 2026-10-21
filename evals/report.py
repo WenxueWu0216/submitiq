@@ -33,6 +33,7 @@ def to_markdown(payload: dict[str, Any]) -> str:
         f"| decisions abstained | {m['decision']['abstained']} |",
         f"| declines predicted as accept | {m['decision']['declines_predicted_accept']} |",
         f"| review-queue rate | {_pct(m['review']['review_rate'])} |",
+        f"| degraded (model unavailable) | {_pct(m['review'].get('degraded_rate'))} |",
         f"| silent critical-error rate | {_pct(m['review']['silent_critical_error_rate'])} |",
         f"| flag recall of field errors | {_pct(m['review']['flag_recall_of_errors'])} |",
         f"| flag precision | {_pct(m['review']['flag_precision'])} |",

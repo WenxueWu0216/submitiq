@@ -143,3 +143,58 @@ is 3.2 calls per submission, about 7.8K prompt tokens (chars/4 estimate). Offlin
 **What broke:** OCR'd emails on scanned applications split `grace.hughes @tidewaterrisk.com`
 at the `@`. The form parser keeps the broken value, which gives 9 producer-email false positives on dev.
 That is a precision error the parser cannot see on its own. 4d's validation checks catch it.
+
+---
+
+## Stage 4c: Cross-document consistency checks and entity normalization
+
+**What:** two separate changes, so I measured them separately.
+
+* **v3a, consistency checks with exact matching.** After merging, every chosen value is
+  compared with the readings from *other documents*: application vs SOV for location
+  COPE, the stated application TIV and the SOV's printed total vs the TIV derived from the SOV rows,
+  stated location count vs rows, email vs application dates, and every printed insured name
+  vs the legal name. A disagreement never changes the chosen value (the source-of-truth
+  rules still decide). It marks the field `conflict`, keeps both readings with citations,
+  and routes the submission to review.
+* **v3, plus normalization.** Value synonyms ("JM", "ISO 4", "Metal Bldg", "Yes",
+  "100%", "$1.25M", "Jan 5, 2027"), OCR clean-up (`grace.hughes @x.com`, `CO.`,
+  `_Los Angeles`, `S12,500`), and **entity matching** for names: legal suffixes and generic words
+  ("Holdings", "Group") are dropped, and two names are the same entity when one name's tokens are a
+  subset of the other's or the overlap is ≥ 75%.
+
+| variant | split | field F1 | crit. F1 | review rate | silent crit. err. | conflict P / R | SOV LLM fallbacks |
+|---|---|---|---|---|---|---|---|
+| v2 (no checks) | dev | 98.0 | 97.7 | 0.0 | **40.0** | – | 13 |
+| v3a raw checks | dev | 98.0 | 97.7 | 95.0 | 3.8 | 26.7 / 82.0 | 13 |
+| v3 + normalization | dev | **99.2** | **99.7** | **35.0** | 1.2 | **88.9** / 82.0 | 8 |
+| v2 (no checks) | test | 94.0 | 94.8 | 0.0 | **67.5** | – | 8 |
+| v3a raw checks | test | 94.0 | 94.8 | 72.5 | 25.0 | 23.1 / 45.0 | 8 |
+| v3 + normalization | test | **96.1** | **98.9** | **25.0** | 27.5 | **90.9** / 50.0 | 5 |
+
+All offline. Template C (test) goes from 82.6 to 84.5. The decision model calls still abstain.
+
+**What the numbers say:**
+1. **v2 fails silently.** 40% of dev and 67.5% of test submissions had a wrong or missing
+   critical field and nothing flagged them. This is the main failure the project has to fix.
+2. **Checks without normalization are useless in practice.** They flagged 95% of dev submissions,
+   and 73% of the flags were false alarms ("ACME HOLDINGS" vs "Acme Logistics LLC",
+   "Harbor Point" vs "Harbor Point Logistics LLC"). An underwriter would learn to
+   ignore that queue.
+3. **Normalization made the flags trustworthy.** Conflict precision went from 26.7% to 88.9% and review rate
+   from 95% to 35%. F1 improved because synonyms now parse, and SOV reconciliation failures (and so
+   LLM fallback calls) fell by a third.
+4. **Most remaining "false positive" conflicts are real.** On dev, 15 of the 20 non-planted
+   conflicts were OCR misreads that the cross-check *caught* (a broken email address, `CO.`, a
+   dropped SOV row on a scan detected through the stated-total check). The OCR clean-up fixed the
+   systematic ones. The rest is the review queue doing its job.
+
+**Still missing (and why):**
+* Test conflict recall is 50%. Template-C applications don't parse offline, so there is no application
+  value to compare against the SOV. Email-vs-application date conflicts need the
+  email LLM call, which abstains offline (5 of 9 missed dev conflicts). PENDING a live run.
+* Two planted name conflicts are missed *by design* of the subset rule.
+  "Ironwood Logistics Distribution Inc." contains every token of "Ironwood Logistics LLC". The subset rule is what
+  lets the email's "Harbor Point" match, so I kept it and listed the miss as a known limitation.
+* Test silent-error rate is still 27.5%. Those are mostly *missing* critical fields (template C), which
+  nothing flags yet. That is 4d.

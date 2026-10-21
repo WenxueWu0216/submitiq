@@ -1,0 +1,1908 @@
+{
+ "meta": {
+  "pipeline": "v2_tooluse",
+  "split": "test",
+  "backend": "replay",
+  "tag": "",
+  "timestamp": "20261021T193006Z",
+  "git_sha": "0aef363",
+  "n": 40,
+  "wall_seconds": 1.7,
+  "model": "claude-opus-5-5",
+  "replay_miss_policy": "abstain"
+ },
+ "metrics": {
+  "n_submissions": 40,
+  "fields": {
+   "overall": {
+    "precision": 0.9983,
+    "recall": 0.889,
+    "f1": 0.9405,
+    "tp": 4725,
+    "fp": 8,
+    "fn": 590
+   },
+   "critical": {
+    "precision": 1.0,
+    "recall": 0.901,
+    "f1": 0.9479,
+    "tp": 1247,
+    "fp": 0,
+    "fn": 137
+   },
+   "by_group": {
+    "insured": {
+     "precision": 0.9959,
+     "recall": 0.743,
+     "f1": 0.8511,
+     "tp": 480,
+     "fp": 2,
+     "fn": 166
+    },
+    "broker": {
+     "precision": 0.9688,
+     "recall": 0.9688,
+     "f1": 0.9688,
+     "tp": 155,
+     "fp": 5,
+     "fn": 5
+    },
+    "policy": {
+     "precision": 1.0,
+     "recall": 0.5625,
+     "f1": 0.72,
+     "tp": 135,
+     "fp": 0,
+     "fn": 105
+    },
+    "coverage": {
+     "precision": 1.0,
+     "recall": 0.6546,
+     "f1": 0.7912,
+     "tp": 235,
+     "fp": 0,
+     "fn": 124
+    },
+    "locations": {
+     "precision": 0.9996,
+     "recall": 0.9269,
+     "f1": 0.9619,
+     "tp": 2345,
+     "fp": 1,
+     "fn": 185
+    },
+    "claims": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 420,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 800,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals": {
+     "precision": 1.0,
+     "recall": 0.9688,
+     "f1": 0.9841,
+     "tp": 155,
+     "fp": 0,
+     "fn": 5
+    }
+   },
+   "by_template": {
+    "A": {
+     "precision": 0.9957,
+     "recall": 0.9427,
+     "f1": 0.9685,
+     "tp": 1628,
+     "fp": 7,
+     "fn": 99
+    },
+    "B": {
+     "precision": 0.9995,
+     "recall": 0.9487,
+     "f1": 0.9734,
+     "tp": 2217,
+     "fp": 1,
+     "fn": 120
+    },
+    "C": {
+     "precision": 1.0,
+     "recall": 0.7034,
+     "f1": 0.8259,
+     "tp": 880,
+     "fp": 0,
+     "fn": 371
+    }
+   },
+   "by_field": {
+    "broker.agency_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker.producer_email": {
+     "precision": 0.9,
+     "recall": 0.9,
+     "f1": 0.9,
+     "tp": 36,
+     "fp": 4,
+     "fn": 4
+    },
+    "broker.producer_name": {
+     "precision": 0.975,
+     "recall": 0.975,
+     "f1": 0.975,
+     "tp": 39,
+     "fp": 1,
+     "fn": 1
+    },
+    "broker.producer_phone": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].cause": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].date_of_loss": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].paid": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].policy_year": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].reserve": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].status": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.bpp_limit": {
+     "precision": 1.0,
+     "recall": 0.625,
+     "f1": 0.7692,
+     "tp": 25,
+     "fp": 0,
+     "fn": 15
+    },
+    "coverage.building_limit": {
+     "precision": 1.0,
+     "recall": 0.6,
+     "f1": 0.75,
+     "tp": 24,
+     "fp": 0,
+     "fn": 16
+    },
+    "coverage.business_income_limit": {
+     "precision": 1.0,
+     "recall": 0.6,
+     "f1": 0.75,
+     "tp": 24,
+     "fp": 0,
+     "fn": 16
+    },
+    "coverage.cause_of_loss_form": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "coverage.coinsurance_pct": {
+     "precision": 1.0,
+     "recall": 0.7436,
+     "f1": 0.8529,
+     "tp": 29,
+     "fp": 0,
+     "fn": 10
+    },
+    "coverage.deductible": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "coverage.earthquake_requested": {
+     "precision": 1.0,
+     "recall": 0.525,
+     "f1": 0.6885,
+     "tp": 21,
+     "fp": 0,
+     "fn": 19
+    },
+    "coverage.flood_requested": {
+     "precision": 1.0,
+     "recall": 0.55,
+     "f1": 0.7097,
+     "tp": 22,
+     "fp": 0,
+     "fn": 18
+    },
+    "coverage.valuation": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.annual_revenue": {
+     "precision": 1.0,
+     "recall": 0.625,
+     "f1": 0.7692,
+     "tp": 25,
+     "fp": 0,
+     "fn": 15
+    },
+    "insured.business_description": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.contact_email": {
+     "precision": 0.9333,
+     "recall": 0.7,
+     "f1": 0.8,
+     "tp": 28,
+     "fp": 2,
+     "fn": 12
+    },
+    "insured.contact_name": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.contact_phone": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.dba": {
+     "precision": 1.0,
+     "recall": 0.6923,
+     "f1": 0.8182,
+     "tp": 9,
+     "fp": 0,
+     "fn": 4
+    },
+    "insured.employee_count": {
+     "precision": 1.0,
+     "recall": 0.7838,
+     "f1": 0.8788,
+     "tp": 29,
+     "fp": 0,
+     "fn": 8
+    },
+    "insured.entity_type": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.fein": {
+     "precision": 1.0,
+     "recall": 0.7692,
+     "f1": 0.8696,
+     "tp": 30,
+     "fp": 0,
+     "fn": 9
+    },
+    "insured.mailing_address.city": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.mailing_address.state": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.mailing_address.street": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.mailing_address.zip": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.naics_code": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.named_insured": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "insured.website": {
+     "precision": 1.0,
+     "recall": 0.7895,
+     "f1": 0.8824,
+     "tp": 30,
+     "fp": 0,
+     "fn": 8
+    },
+    "insured.years_in_business": {
+     "precision": 1.0,
+     "recall": 0.7436,
+     "f1": 0.8529,
+     "tp": 29,
+     "fp": 0,
+     "fn": 10
+    },
+    "locations[].alarm_type": {
+     "precision": 1.0,
+     "recall": 0.6023,
+     "f1": 0.7518,
+     "tp": 53,
+     "fp": 0,
+     "fn": 35
+    },
+    "locations[].bi_value": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].building_value": {
+     "precision": 1.0,
+     "recall": 0.8993,
+     "f1": 0.947,
+     "tp": 125,
+     "fp": 0,
+     "fn": 14
+    },
+    "locations[].city": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].construction": {
+     "precision": 1.0,
+     "recall": 0.6619,
+     "f1": 0.7965,
+     "tp": 92,
+     "fp": 0,
+     "fn": 47
+    },
+    "locations[].contents_value": {
+     "precision": 1.0,
+     "recall": 0.9353,
+     "f1": 0.9665,
+     "tp": 130,
+     "fp": 0,
+     "fn": 9
+    },
+    "locations[].occupancy": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].protection_class": {
+     "precision": 1.0,
+     "recall": 0.9926,
+     "f1": 0.9963,
+     "tp": 135,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].roof_type": {
+     "precision": 1.0,
+     "recall": 0.7955,
+     "f1": 0.8861,
+     "tp": 70,
+     "fp": 0,
+     "fn": 18
+    },
+    "locations[].roof_year": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 135,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].sprinkler_pct": {
+     "precision": 1.0,
+     "recall": 0.9281,
+     "f1": 0.9627,
+     "tp": 129,
+     "fp": 0,
+     "fn": 10
+    },
+    "locations[].sprinklered": {
+     "precision": 1.0,
+     "recall": 0.7626,
+     "f1": 0.8653,
+     "tp": 106,
+     "fp": 0,
+     "fn": 33
+    },
+    "locations[].square_feet": {
+     "precision": 1.0,
+     "recall": 0.9928,
+     "f1": 0.9964,
+     "tp": 138,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].state": {
+     "precision": 0.9928,
+     "recall": 0.9928,
+     "f1": 0.9928,
+     "tp": 138,
+     "fp": 1,
+     "fn": 1
+    },
+    "locations[].stories": {
+     "precision": 1.0,
+     "recall": 0.9928,
+     "f1": 0.9964,
+     "tp": 138,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].street": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].tiv": {
+     "precision": 1.0,
+     "recall": 0.9209,
+     "f1": 0.9588,
+     "tp": 128,
+     "fp": 0,
+     "fn": 11
+    },
+    "locations[].year_built": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 137,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].zip": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].carrier": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].claim_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].earned_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].total_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.effective_date": {
+     "precision": 1.0,
+     "recall": 0.5,
+     "f1": 0.6667,
+     "tp": 20,
+     "fp": 0,
+     "fn": 20
+    },
+    "policy.expiration_date": {
+     "precision": 1.0,
+     "recall": 0.375,
+     "f1": 0.5455,
+     "tp": 15,
+     "fp": 0,
+     "fn": 25
+    },
+    "policy.prior_carrier": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "policy.quote_needed_by": {
+     "precision": 0.0,
+     "recall": 0.0,
+     "f1": 0.0,
+     "tp": 0,
+     "fp": 0,
+     "fn": 40
+    },
+    "policy.submission_received_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.transaction_type": {
+     "precision": 1.0,
+     "recall": 0.75,
+     "f1": 0.8571,
+     "tp": 30,
+     "fp": 0,
+     "fn": 10
+    },
+    "totals.five_year_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.five_year_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.location_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.total_tiv": {
+     "precision": 1.0,
+     "recall": 0.875,
+     "f1": 0.9333,
+     "tp": 35,
+     "fp": 0,
+     "fn": 5
+    }
+   }
+  },
+  "decision": {
+   "accuracy": 0.0,
+   "abstained": 40,
+   "declines_predicted_accept": 0,
+   "confusion": {
+    "accept->none": 13,
+    "decline->none": 9,
+    "refer->none": 18
+   }
+  },
+  "review": {
+   "review_rate": 0.0,
+   "submissions_with_critical_error": 27,
+   "silent_critical_error_rate": 0.675,
+   "flag_precision": 0.0,
+   "flag_recall_of_errors": 0.0,
+   "flagged_fields_per_submission": 0.0,
+   "degraded_rate": 1.0
+  },
+  "conflicts": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 20
+  },
+  "documents": {
+   "classification_accuracy": 1.0
+  },
+  "latency_ms": {
+   "mean": 2078.5,
+   "p50": 198.8,
+   "p95": 8636.6,
+   "llm_recorded_mean": 0.0
+  },
+  "cost": {
+   "usd_per_submission": 0.0,
+   "input_tokens_per_submission": 0.0,
+   "output_tokens_per_submission": 0.0,
+   "est_prompt_tokens_per_submission": 7793.2,
+   "llm_calls_by_source": {
+    "replay:miss": 128
+   },
+   "llm_calls_by_task": {
+    "appetite_decision": 40,
+    "extract_application": 40,
+    "extract_email": 40,
+    "extract_sov": 8
+   }
+  },
+  "summary": {
+   "citation_valid_rate": null
+  }
+ },
+ "submissions": [
+  {
+   "id": "SUB-0081",
+   "template": "A",
+   "f1": 0.9892,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0082",
+   "template": "C",
+   "f1": 0.8317,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.dba",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].roof_type",
+    "locations[2].alarm_type",
+    "locations[2].roof_type",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0083",
+   "template": "A",
+   "f1": 0.9949,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0084",
+   "template": "B",
+   "f1": 0.9898,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0085",
+   "template": "C",
+   "f1": 0.7927,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[1].roof_type",
+    "locations[1].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type"
+   ],
+   "review_reasons": [
+    "scan18340.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0086",
+   "template": "B",
+   "f1": 0.9668,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].alarm_type",
+    "locations[2].sprinkler_pct",
+    "locations[3].sprinkler_pct",
+    "locations[4].protection_class",
+    "locations[4].sprinkler_pct",
+    "locations[4].sprinklered",
+    "locations[4].stories",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0087",
+   "template": "A",
+   "f1": 0.9699,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "locations[1].construction",
+    "locations[1].sprinklered",
+    "locations[3].alarm_type",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0088",
+   "template": "C",
+   "f1": 0.9048,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[10].sprinklered",
+    "locations[11].construction",
+    "locations[11].sprinklered",
+    "locations[12].building_value",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[1].roof_type",
+    "locations[2].alarm_type",
+    "locations[2].construction",
+    "locations[2].roof_type",
+    "locations[3].alarm_type",
+    "locations[3].roof_type",
+    "locations[5].sprinklered",
+    "locations[6].contents_value",
+    "locations[7].construction"
+   ],
+   "review_reasons": [
+    "application.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0089",
+   "template": "B",
+   "f1": 0.998,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0090",
+   "template": "B",
+   "f1": 0.9615,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[10].construction",
+    "locations[1].alarm_type",
+    "locations[2].building_value",
+    "locations[4].construction",
+    "locations[5].sprinklered",
+    "locations[6].construction",
+    "locations[6].sprinklered",
+    "locations[7].construction",
+    "locations[7].sprinklered",
+    "locations[8].construction",
+    "locations[8].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0091",
+   "template": "C",
+   "f1": 0.8046,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].roof_type",
+    "locations[2].alarm_type",
+    "locations[2].roof_type",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type"
+   ],
+   "review_reasons": [
+    "Attachment_25187.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0092",
+   "template": "A",
+   "f1": 0.9735,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.flood_requested",
+    "locations[1].construction",
+    "locations[2].alarm_type",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0093",
+   "template": "B",
+   "f1": 0.9912,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0094",
+   "template": "A",
+   "f1": 0.9016,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [
+    "broker.producer_email",
+    "insured.contact_email"
+   ],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[1].alarm_type",
+    "locations[1].bi_value",
+    "locations[1].building_value",
+    "locations[1].contents_value",
+    "locations[1].sprinkler_pct",
+    "locations[2].bi_value",
+    "locations[2].construction",
+    "locations[2].contents_value",
+    "locations[2].sprinkler_pct",
+    "locations[2].square_feet",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0095",
+   "template": "A",
+   "f1": 0.9903,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0096",
+   "template": "B",
+   "f1": 0.9701,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.flood_requested",
+    "locations[1].construction",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0097",
+   "template": "C",
+   "f1": 0.8173,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[1].roof_type",
+    "locations[2].alarm_type",
+    "locations[2].roof_type",
+    "locations[2].sprinklered",
+    "locations[3].alarm_type",
+    "locations[3].roof_type",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0098",
+   "template": "A",
+   "f1": 0.9596,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "locations[2].construction",
+    "locations[2].contents_value",
+    "locations[2].tiv",
+    "policy.effective_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0099",
+   "template": "B",
+   "f1": 0.9946,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0100",
+   "template": "B",
+   "f1": 0.9585,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "locations[10].construction",
+    "locations[10].tiv",
+    "locations[11].construction",
+    "locations[11].sprinklered",
+    "locations[12].construction",
+    "locations[12].sprinklered",
+    "locations[1].construction",
+    "locations[1].sprinklered",
+    "locations[2].alarm_type",
+    "locations[2].sprinklered",
+    "locations[3].alarm_type",
+    "locations[4].sprinklered",
+    "locations[6].sprinklered",
+    "locations[8].construction",
+    "locations[8].sprinklered",
+    "locations[8].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0101",
+   "template": "B",
+   "f1": 0.99,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].alarm_type",
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0102",
+   "template": "B",
+   "f1": 0.9945,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0103",
+   "template": "A",
+   "f1": 0.9739,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0104",
+   "template": "C",
+   "f1": 0.7703,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[1].roof_type",
+    "locations[1].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [
+    "scan57296.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0105",
+   "template": "A",
+   "f1": 0.9157,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [
+    "locations[4].state"
+   ],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "insured.annual_revenue",
+    "locations[1].contents_value",
+    "locations[1].sprinkler_pct",
+    "locations[2].building_value",
+    "locations[2].contents_value",
+    "locations[2].sprinkler_pct",
+    "locations[3].building_value",
+    "locations[3].sprinkler_pct",
+    "locations[3].tiv",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[4].sprinkler_pct",
+    "locations[4].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0106",
+   "template": "A",
+   "f1": 0.9914,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[3].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0107",
+   "template": "B",
+   "f1": 0.964,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "locations[1].alarm_type",
+    "locations[3].sprinklered",
+    "locations[4].construction",
+    "locations[4].sprinklered",
+    "locations[5].construction",
+    "locations[5].sprinklered",
+    "locations[6].building_value",
+    "locations[6].construction",
+    "locations[7].construction",
+    "locations[8].construction",
+    "locations[8].sprinklered",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0108",
+   "template": "B",
+   "f1": 0.96,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.business_income_limit",
+    "coverage.flood_requested",
+    "insured.annual_revenue",
+    "locations[1].construction",
+    "locations[2].construction",
+    "locations[2].contents_value",
+    "locations[3].alarm_type",
+    "locations[3].sprinklered",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0109",
+   "template": "A",
+   "f1": 0.9412,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [
+    "broker.producer_email",
+    "broker.producer_name"
+   ],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "locations[1].construction",
+    "locations[2].construction",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0110",
+   "template": "A",
+   "f1": 0.9773,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.flood_requested",
+    "locations[2].sprinklered",
+    "locations[2].tiv",
+    "locations[4].construction",
+    "locations[5].construction",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0111",
+   "template": "C",
+   "f1": 0.7121,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.dba",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].construction",
+    "locations[1].contents_value",
+    "locations[1].roof_type",
+    "locations[1].sprinklered",
+    "locations[1].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [
+    "Signed_App.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0112",
+   "template": "B",
+   "f1": 0.9652,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.building_limit",
+    "coverage.earthquake_requested",
+    "locations[1].construction",
+    "locations[2].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0113",
+   "template": "C",
+   "f1": 0.7919,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.dba",
+    "insured.entity_type",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].roof_type",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type"
+   ],
+   "review_reasons": [
+    "Attachment_34731.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0114",
+   "template": "A",
+   "f1": 0.9753,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "insured.annual_revenue",
+    "locations[1].alarm_type",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0115",
+   "template": "A",
+   "f1": 0.9655,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [
+    "broker.producer_email"
+   ],
+   "missed": [
+    "coverage.earthquake_requested",
+    "locations[1].construction",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0116",
+   "template": "C",
+   "f1": 0.8495,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].roof_type",
+    "locations[1].sprinklered",
+    "locations[2].alarm_type",
+    "locations[2].construction",
+    "locations[2].roof_type",
+    "locations[2].sprinklered",
+    "locations[3].alarm_type",
+    "locations[3].bi_value",
+    "locations[3].building_value",
+    "locations[3].roof_type",
+    "locations[3].sprinklered",
+    "locations[4].construction",
+    "locations[5].building_value",
+    "locations[5].sprinklered",
+    "locations[6].construction"
+   ],
+   "review_reasons": [
+    "application.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0117",
+   "template": "B",
+   "f1": 0.9512,
+   "decision_gold": "decline",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.business_income_limit",
+    "locations[1].building_value",
+    "locations[2].building_value",
+    "locations[2].construction",
+    "locations[2].sprinklered",
+    "locations[3].tiv",
+    "locations[4].building_value",
+    "locations[4].construction",
+    "locations[4].sprinklered",
+    "locations[5].bi_value",
+    "locations[5].construction",
+    "locations[5].contents_value",
+    "locations[6].building_value",
+    "locations[6].sprinklered",
+    "locations[7].construction",
+    "locations[8].building_value",
+    "locations[8].construction",
+    "policy.expiration_date",
+    "policy.quote_needed_by",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0118",
+   "template": "B",
+   "f1": 0.9815,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [
+    "insured.contact_email"
+   ],
+   "missed": [
+    "locations[1].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0119",
+   "template": "C",
+   "f1": 0.7682,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.dba",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].roof_type",
+    "locations[1].tiv",
+    "policy.effective_date",
+    "policy.expiration_date",
+    "policy.prior_carrier",
+    "policy.quote_needed_by",
+    "policy.transaction_type",
+    "totals.total_tiv"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0120",
+   "template": "A",
+   "f1": 0.9924,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[2].alarm_type",
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  }
+ ]
+}

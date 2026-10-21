@@ -5,6 +5,7 @@ fails to parse ends up null, and review routing sees it as missing.
 """
 from __future__ import annotations
 
+import re
 from typing import Any
 
 from . import normalize as N
@@ -32,6 +33,10 @@ def parse_value(path: str, value: Any, mode: str = "basic") -> Any:
         return N.parse_date(value, mode)
     if kind == "bool":
         return N.parse_bool(value, mode)
+    if mode == "full" and isinstance(value, str):
+        value = _ocr_clean(field, kind, value)
+        if value is None:
+            return None
     if kind in ("digits", "zip"):
         s = str(value).strip()
         if field == "naics_code":
@@ -42,6 +47,19 @@ def parse_value(path: str, value: Any, mode: str = "basic") -> Any:
             return s.zfill(5) if s.replace("-", "").isdigit() else None
         return s
     return str(value).strip()
+
+
+def _ocr_clean(field: str, kind: str, s: str) -> str | None:
+    """Undo common OCR artifacts: 'a.b @c.com', 'CO.', '_Los Angeles'."""
+    s = s.strip()
+    if kind == "email":
+        return re.sub(r"\s+", "", s).lower()
+    if kind == "state":
+        letters = re.sub(r"[^A-Za-z]", "", s).upper()
+        return letters if len(letters) == 2 else None
+    if field in ("city", "street", "occupancy"):
+        return re.sub(r"^[^A-Za-z0-9]+|[^A-Za-z0-9.)]+$", "", s) or None
+    return s
 
 
 def _group(data: dict, group: str, mode: str, errors: list[str]) -> dict:

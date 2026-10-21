@@ -4,10 +4,10 @@
   "split": "test",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T192651Z",
-  "git_sha": "395f201",
+  "timestamp": "20261021T193000Z",
+  "git_sha": "0aef363",
   "n": 40,
-  "wall_seconds": 1.5,
+  "wall_seconds": 1.4,
   "model": "claude-opus-5-5",
   "replay_miss_policy": "abstain"
  },
@@ -701,7 +701,8 @@
    "silent_critical_error_rate": 0.0,
    "flag_precision": 0.0,
    "flag_recall_of_errors": 0.0,
-   "flagged_fields_per_submission": 0.0
+   "flagged_fields_per_submission": 0.0,
+   "degraded_rate": 1.0
   },
   "conflicts": {
    "precision": 0.0,
@@ -715,9 +716,9 @@
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 2058.2,
-   "p50": 182.3,
-   "p95": 8620.0,
+   "mean": 2049.4,
+   "p50": 146.6,
+   "p95": 8598.0,
    "llm_recorded_mean": 0.0
   },
   "cost": {
@@ -727,6 +728,9 @@
    "est_prompt_tokens_per_submission": 4251.2,
    "llm_calls_by_source": {
     "replay:miss": 40
+   },
+   "llm_calls_by_task": {
+    "baseline_extract": 40
    }
   },
   "summary": {
@@ -786,8 +790,7 @@
     "policy.submission_received_date"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -842,8 +845,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -899,8 +901,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -954,8 +955,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1010,8 +1010,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1067,8 +1066,7 @@
     "locations[3].alarm_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1124,8 +1122,7 @@
     "policy.expiration_date"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1181,8 +1178,7 @@
     "locations[3].alarm_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1238,8 +1234,7 @@
     "policy.submission_received_date"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1295,8 +1290,7 @@
     "locations[4].construction"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1351,8 +1345,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1408,8 +1401,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1465,8 +1457,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1522,8 +1513,7 @@
     "locations[2].construction"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1578,8 +1568,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1635,8 +1624,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1692,8 +1680,7 @@
     "policy.prior_carrier"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1749,8 +1736,7 @@
     "policy.prior_carrier"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1804,8 +1790,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1861,8 +1846,7 @@
     "locations[2].alarm_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1918,8 +1902,7 @@
     "policy.submission_received_date"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1973,8 +1956,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2029,8 +2011,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2085,8 +2066,7 @@
     "totals.total_tiv"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2144,8 +2124,7 @@
     "locations[2].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2201,8 +2180,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2258,8 +2236,7 @@
     "locations[4].construction"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2315,8 +2292,7 @@
     "locations[3].roof_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2372,8 +2348,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2429,8 +2404,7 @@
     "locations[3].sprinklered"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2486,8 +2460,7 @@
     "policy.quote_needed_by"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2543,8 +2516,7 @@
     "policy.prior_carrier"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2596,8 +2568,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2650,8 +2621,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2707,8 +2677,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2764,8 +2733,7 @@
     "locations[3].sprinklered"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2821,8 +2789,7 @@
     "locations[3].tiv"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2877,8 +2844,7 @@
     "policy.transaction_type"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2934,8 +2900,7 @@
     "totals.total_tiv"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2991,8 +2956,7 @@
     "policy.submission_received_date"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   }
