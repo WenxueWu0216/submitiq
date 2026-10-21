@@ -1,6 +1,6 @@
 # Eval: `baseline` on `test` (40 submissions)
 
-backend `replay` · model `claude-opus-5-5` · git `05f4b45` · 20261021T191543Z
+backend `replay` · model `claude-opus-5-5` · git `0e9deed` · 20261021T192314Z
 LLM calls by source: {'replay:miss': 40}
 > 40 LLM calls had no replay fixture and **abstained** (returned nothing). These numbers measure the non-LLM components only.
 
@@ -19,10 +19,10 @@ LLM calls by source: {'replay:miss': 40}
 | flag precision | 0.0 |
 | conflict detection P / R | 0.0 / 0.0 |
 | document classification acc. | 100.0 |
-| latency p50 / p95 (ms, pipeline) | 132 / 8336 |
+| latency p50 / p95 (ms, pipeline) | 141 / 8796 |
 | LLM latency, recorded (ms/sub) | 0 |
 | cost per submission (USD) | 0.0000 |
-| est. prompt tokens / submission | 4252 |
+| est. prompt tokens / submission | 4251 |
 | summary citation validity | n/a |
 
 ## F1 by field group

@@ -156,7 +156,7 @@
       "email.txt": "email",
       "Signed_App.pdf": "application",
       "Loss_History.pdf": "loss_run",
-      "statement_of_values.pdf": "sov"
+      "Property_Schedule.pdf": "sov"
     },
     "expected_conflicts": [
       "totals.total_tiv"
@@ -165,7 +165,7 @@
     "expected_reasons": [],
     "mess": [
       "messy_formats",
-      "rotated:sov",
+      "rotated:application",
       "scanned:application",
       "scanned:sov",
       "tiv_conflict"

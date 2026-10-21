@@ -92,8 +92,12 @@ class PdfDoc:
         def header() -> None:
             x = x0
             for col in cols:
-                self.c.setFont(self.bold, self._fit(col.header, col.width, size, bold=True))
-                self.c.drawString(x + 2, self.y, col.header)
+                label = col.header
+                fs = self._fit(label, col.width, size, bold=True)
+                while len(label) > 2 and self.c.stringWidth(label, self.bold, fs) > col.width - 3:
+                    label = label[:-1]  # never let a header overprint its neighbour
+                self.c.setFont(self.bold, fs)
+                self.c.drawString(x + 2, self.y, label)
                 x += col.width
             self.c.setLineWidth(0.4)
             self.c.line(x0, self.y - 3, x, self.y - 3)

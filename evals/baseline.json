@@ -1,8 +1,8 @@
 {
   "final/all/replay": {
     "decision_accuracy": 0.0,
-    "field_f1": 0.0,
-    "git_sha": "05f4b45",
-    "timestamp": "20261021T191611Z"
+    "field_f1": 0.8114,
+    "git_sha": "0e9deed",
+    "timestamp": "20261021T192324Z"
   }
 }
