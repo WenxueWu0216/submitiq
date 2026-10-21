@@ -64,6 +64,7 @@ class SubmissionScore:
     llm_latency_ms: float = 0.0
     cost_usd: float = 0.0
     llm_sources: Counter = field(default_factory=Counter)
+    llm_tasks: Counter = field(default_factory=Counter)
     input_tokens: int = 0
     output_tokens: int = 0
     est_input_tokens: int = 0
@@ -124,6 +125,7 @@ def score(gt: GroundTruth, res: PipelineResult) -> SubmissionScore:
         s.llm_latency_ms += call.latency_ms
         s.cost_usd += call.cost_usd
         s.llm_sources[call.source] += 1
+        s.llm_tasks[call.task] += 1
         s.input_tokens += call.input_tokens
         s.output_tokens += call.output_tokens
         s.est_input_tokens += call.est_input_tokens
@@ -165,6 +167,7 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
     by_template: dict[str, Counts] = defaultdict(Counts)
     confusion: Counter = Counter()
     sources: Counter = Counter()
+    tasks: Counter = Counter()
     for s in scores:
         overall.add(s.overall)
         critical.add(s.critical)
@@ -176,6 +179,7 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
             fields_[f].add(c)
         confusion[(s.decision_gold, s.decision_pred or "none")] += 1
         sources.update(s.llm_sources)
+        tasks.update(s.llm_tasks)
 
     correct = sum(1 for s in scores if s.decision_pred == s.decision_gold)
     reviewed = [s for s in scores if s.needs_review]
@@ -223,6 +227,7 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
             "output_tokens_per_submission": round(sum(s.output_tokens for s in scores) / n, 1) if n else 0.0,
             "est_prompt_tokens_per_submission": round(sum(s.est_input_tokens for s in scores) / n, 1) if n else 0.0,
             "llm_calls_by_source": dict(sorted(sources.items())),
+            "llm_calls_by_task": dict(sorted(tasks.items())),
         },
         "summary": {
             "citation_valid_rate": round(sum(summaries) / len(summaries), 4) if summaries else None,

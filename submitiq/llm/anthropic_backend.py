@@ -44,6 +44,16 @@ class AnthropicClient:
         return kw
 
     def _call(self, kw: dict):
+        try:
+            return self._call_once(kw)
+        except anthropic.BadRequestError as exc:
+            if not any(t.get("strict") for t in kw.get("tools", [])):
+                raise
+            # Strict mode limits schema complexity; keep going without it (pydantic validates downstream).
+            log.warning("strict tool schema rejected (%s); retrying without strict", exc)
+            return self._call_once({**kw, "tools": [{k: v for k, v in t.items() if k != "strict"} for t in kw["tools"]]})
+
+    def _call_once(self, kw: dict):
         if self.use_fallbacks:
             try:
                 with self.client.beta.messages.stream(**kw, betas=[FALLBACK_BETA], fallbacks="default") as s:

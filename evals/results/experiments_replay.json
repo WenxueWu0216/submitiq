@@ -9,11 +9,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 126.1,
+  "p50 ms": 126.9,
   "llm sources": {
    "replay:miss": 80
   },
-  "git": "0e9deed"
+  "git": "395f201"
  },
  {
   "pipeline": "baseline",
@@ -25,11 +25,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 141.2,
+  "p50 ms": 152.2,
   "llm sources": {
    "replay:miss": 40
   },
-  "git": "0e9deed"
+  "git": "395f201"
  },
  {
   "pipeline": "v1_tables",
@@ -41,11 +41,11 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 151.3,
+  "p50 ms": 168.3,
   "llm sources": {
    "replay:miss": 80
   },
-  "git": "0e9deed"
+  "git": "395f201"
  },
  {
   "pipeline": "v1_tables",
@@ -57,10 +57,42 @@
   "silent crit. err.": 0.0,
   "conflict F1": 0.0,
   "usd/sub": 0.0,
-  "p50 ms": 164.2,
+  "p50 ms": 182.3,
   "llm sources": {
    "replay:miss": 40
   },
-  "git": "0e9deed"
+  "git": "395f201"
+ },
+ {
+  "pipeline": "v2_tooluse",
+  "split": "dev",
+  "field F1": 0.9795,
+  "critical F1": 0.9767,
+  "decision acc.": 0.0,
+  "review rate": 1.0,
+  "silent crit. err.": 0.0,
+  "conflict F1": 0.0,
+  "usd/sub": 0.0,
+  "p50 ms": 185.4,
+  "llm sources": {
+   "replay:miss": 253
+  },
+  "git": "395f201"
+ },
+ {
+  "pipeline": "v2_tooluse",
+  "split": "test",
+  "field F1": 0.9405,
+  "critical F1": 0.9479,
+  "decision acc.": 0.0,
+  "review rate": 1.0,
+  "silent crit. err.": 0.0,
+  "conflict F1": 0.0,
+  "usd/sub": 0.0,
+  "p50 ms": 195.1,
+  "llm sources": {
+   "replay:miss": 128
+  },
+  "git": "395f201"
  }
 ]
