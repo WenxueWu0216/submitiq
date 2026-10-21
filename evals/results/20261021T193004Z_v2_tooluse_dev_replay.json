@@ -4,10 +4,10 @@
   "split": "dev",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T192654Z",
-  "git_sha": "395f201",
+  "timestamp": "20261021T193004Z",
+  "git_sha": "0aef363",
   "n": 80,
-  "wall_seconds": 3.3,
+  "wall_seconds": 3.4,
   "model": "claude-opus-5-5",
   "replay_miss_policy": "abstain"
  },
@@ -688,12 +688,13 @@
    }
   },
   "review": {
-   "review_rate": 1.0,
+   "review_rate": 0.0,
    "submissions_with_critical_error": 32,
-   "silent_critical_error_rate": 0.0,
+   "silent_critical_error_rate": 0.4,
    "flag_precision": 0.0,
    "flag_recall_of_errors": 0.0,
-   "flagged_fields_per_submission": 0.0
+   "flagged_fields_per_submission": 0.0,
+   "degraded_rate": 1.0
   },
   "conflicts": {
    "precision": 0.0,
@@ -707,9 +708,9 @@
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 1779.1,
-   "p50": 185.4,
-   "p95": 8326.6,
+   "mean": 1781.6,
+   "p50": 191.3,
+   "p95": 8325.1,
    "llm_recorded_mean": 0.0
   },
   "cost": {
@@ -719,6 +720,12 @@
    "est_prompt_tokens_per_submission": 7831.5,
    "llm_calls_by_source": {
     "replay:miss": 253
+   },
+   "llm_calls_by_task": {
+    "appetite_decision": 80,
+    "extract_application": 80,
+    "extract_email": 80,
+    "extract_sov": 13
    }
   },
   "summary": {
@@ -732,7 +739,7 @@
    "f1": 0.9845,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email"
@@ -740,11 +747,7 @@
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -753,17 +756,13 @@
    "f1": 0.9976,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -772,18 +771,14 @@
    "f1": 0.9959,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[3].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -792,7 +787,7 @@
    "f1": 0.9639,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -806,12 +801,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "Property_Schedule.xlsx: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -820,18 +810,14 @@
    "f1": 0.9942,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -840,7 +826,7 @@
    "f1": 0.9746,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email",
@@ -849,11 +835,7 @@
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -862,7 +844,7 @@
    "f1": 0.9677,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -883,12 +865,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "statement_of_values.xlsx: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -897,17 +874,13 @@
    "f1": 0.9959,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan22718.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -916,17 +889,13 @@
    "f1": 0.9935,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -935,18 +904,14 @@
    "f1": 0.9928,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -955,7 +920,7 @@
    "f1": 0.9438,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -975,12 +940,7 @@
     "policy.quote_needed_by",
     "totals.total_tiv"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "Property_Schedule.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -989,17 +949,13 @@
    "f1": 0.9956,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1008,7 +964,7 @@
    "f1": 0.9504,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1027,11 +983,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1040,7 +992,7 @@
    "f1": 0.978,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1050,11 +1002,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1063,7 +1011,7 @@
    "f1": 0.9576,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1075,12 +1023,7 @@
     "locations[1].tiv",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "SOV.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1089,7 +1032,7 @@
    "f1": 0.9614,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1107,12 +1050,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "statement_of_values.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1121,17 +1059,13 @@
    "f1": 0.9945,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1140,17 +1074,13 @@
    "f1": 0.9973,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1159,7 +1089,7 @@
    "f1": 0.9709,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email",
@@ -1169,11 +1099,7 @@
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc42716.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1182,7 +1108,7 @@
    "f1": 0.9869,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
@@ -1190,11 +1116,7 @@
     "locations[3].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1203,18 +1125,14 @@
    "f1": 0.9924,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1223,17 +1141,13 @@
    "f1": 0.9983,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc32255.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1242,18 +1156,14 @@
    "f1": 0.9897,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "coverage.bpp_limit",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "IMG_16856.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1262,18 +1172,14 @@
    "f1": 0.9909,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1282,7 +1188,7 @@
    "f1": 0.9818,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1290,11 +1196,7 @@
     "locations[1].sprinklered",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "file76645.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1303,7 +1205,7 @@
    "f1": 0.9809,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1315,11 +1217,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "IMG_36577.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1328,17 +1226,13 @@
    "f1": 0.9969,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1347,7 +1241,7 @@
    "f1": 0.9674,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1358,11 +1252,7 @@
     "locations[2].sprinklered",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Attachment_22824.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1371,7 +1261,7 @@
    "f1": 0.9871,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
@@ -1379,11 +1269,7 @@
     "locations[2].sprinkler_pct",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1392,7 +1278,7 @@
    "f1": 0.9762,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email"
@@ -1401,11 +1287,7 @@
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "file99567.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1414,7 +1296,7 @@
    "f1": 0.963,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1429,11 +1311,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "file87427.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1442,17 +1320,13 @@
    "f1": 0.9953,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1461,7 +1335,7 @@
    "f1": 0.9664,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1474,11 +1348,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1487,18 +1357,14 @@
    "f1": 0.9903,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc8917.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1507,17 +1373,13 @@
    "f1": 0.9973,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc1864.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1526,18 +1388,14 @@
    "f1": 0.9924,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1546,18 +1404,14 @@
    "f1": 0.9907,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1566,7 +1420,7 @@
    "f1": 0.8701,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [
     "totals.location_count"
@@ -1611,12 +1465,7 @@
     "policy.quote_needed_by",
     "totals.total_tiv"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan16895.pdf: LLM extraction unavailable (replay miss)",
-    "scan40233.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1625,18 +1474,14 @@
    "f1": 0.9903,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1645,7 +1490,7 @@
    "f1": 0.953,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1657,11 +1502,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1670,7 +1511,7 @@
    "f1": 0.9536,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1682,11 +1523,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "IMG_30199.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1695,7 +1532,7 @@
    "f1": 0.96,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1706,11 +1543,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "file49288.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1719,17 +1552,13 @@
    "f1": 0.9983,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1738,7 +1567,7 @@
    "f1": 0.9727,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email",
@@ -1747,11 +1576,7 @@
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1760,17 +1585,13 @@
    "f1": 0.9941,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan16195.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1779,7 +1600,7 @@
    "f1": 0.9806,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1790,11 +1611,7 @@
     "locations[4].sprinklered",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1803,17 +1620,13 @@
    "f1": 0.9977,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc81497.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1822,17 +1635,13 @@
    "f1": 0.9935,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "IMG_56781.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1841,7 +1650,7 @@
    "f1": 0.9759,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1850,11 +1659,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1863,17 +1668,13 @@
    "f1": 0.9971,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1882,7 +1683,7 @@
    "f1": 0.9733,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
@@ -1892,11 +1693,7 @@
     "locations[2].sprinkler_pct",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1905,7 +1702,7 @@
    "f1": 0.9915,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email"
@@ -1914,11 +1711,7 @@
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1927,17 +1720,13 @@
    "f1": 0.9935,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Attachment_91039.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1946,17 +1735,13 @@
    "f1": 0.9982,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1965,18 +1750,14 @@
    "f1": 0.9953,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[1].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -1985,7 +1766,7 @@
    "f1": 0.9688,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -1996,11 +1777,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2009,17 +1786,13 @@
    "f1": 0.9933,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "file59189.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2028,18 +1801,14 @@
    "f1": 0.9931,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2048,7 +1817,7 @@
    "f1": 0.907,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [
     "insured.contact_email"
@@ -2077,12 +1846,7 @@
     "locations[4].year_built",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "Property_Schedule.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2091,17 +1855,13 @@
    "f1": 0.9968,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2110,7 +1870,7 @@
    "f1": 0.9703,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2121,11 +1881,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc33311.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2134,7 +1890,7 @@
    "f1": 0.9681,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
@@ -2145,11 +1901,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "IMG_79982.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2158,7 +1910,7 @@
    "f1": 0.9552,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2172,11 +1924,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2185,7 +1933,7 @@
    "f1": 0.9598,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2204,12 +1952,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc89485.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "IMG_99663.xlsx: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2218,17 +1961,13 @@
    "f1": 0.9982,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2237,7 +1976,7 @@
    "f1": 0.9737,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2246,11 +1985,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan892.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2259,7 +1994,7 @@
    "f1": 0.9664,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2272,11 +2007,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "application.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2285,7 +2016,7 @@
    "f1": 0.9574,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2298,12 +2029,7 @@
     "policy.quote_needed_by",
     "totals.total_tiv"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan25907.pdf: LLM extraction unavailable (replay miss)",
-    "IMG_38252.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2312,7 +2038,7 @@
    "f1": 0.9444,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2331,12 +2057,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "SOV.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2345,7 +2066,7 @@
    "f1": 0.9733,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2359,11 +2080,7 @@
     "locations[6].construction",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan98325.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2372,7 +2089,7 @@
    "f1": 0.9677,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email",
@@ -2381,11 +2098,7 @@
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan48628.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2394,7 +2107,7 @@
    "f1": 0.9429,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [
     "totals.total_tiv"
@@ -2415,12 +2128,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "statement_of_values.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2429,7 +2137,7 @@
    "f1": 0.9431,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2448,12 +2156,7 @@
     "locations[3].tiv",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "SOV.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2462,17 +2165,13 @@
    "f1": 0.9935,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2481,7 +2180,7 @@
    "f1": 0.9595,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [],
    "missed": [
@@ -2492,11 +2191,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "scan83151.pdf: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2505,18 +2200,14 @@
    "f1": 0.9957,
    "decision_gold": "refer",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
     "locations[2].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "ACORD_125_140.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2525,7 +2216,7 @@
    "f1": 0.9778,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
@@ -2534,11 +2225,7 @@
     "policy.expiration_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Signed_App.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2547,7 +2234,7 @@
    "f1": 0.9928,
    "decision_gold": "decline",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [],
    "missed": [
@@ -2555,11 +2242,7 @@
     "locations[3].alarm_type",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "Attachment_13620.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2568,7 +2251,7 @@
    "f1": 0.9905,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": false,
    "wrong": [
     "broker.producer_email"
@@ -2576,11 +2259,7 @@
    "missed": [
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "IMG_52528.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   },
   {
@@ -2589,7 +2268,7 @@
    "f1": 0.9502,
    "decision_gold": "accept",
    "decision_pred": null,
-   "needs_review": true,
+   "needs_review": false,
    "critical_error": true,
    "wrong": [
     "broker.producer_email",
@@ -2613,12 +2292,7 @@
     "policy.effective_date",
     "policy.quote_needed_by"
    ],
-   "review_reasons": [
-    "doc23275.pdf: LLM extraction unavailable (replay miss)",
-    "email.txt: LLM extraction unavailable (replay miss)",
-    "Attachment_51271.xlsx: LLM extraction unavailable (replay miss)",
-    "no appetite decision (model unavailable)"
-   ],
+   "review_reasons": [],
    "errors": []
   }
  ]

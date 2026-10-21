@@ -4,6 +4,8 @@
     v1_tables   + deterministic table-aware parsing of SOVs and loss runs
     v2_tooluse  per-document extraction: layout parsers + Claude tool use with strict schemas
                 (LLM on SOV / loss runs only when the table parser fails its own checks)
+    v3a_consistency_raw   + cross-document consistency checks, exact matching
+    v3_consistency        + entity normalization and full value normalization
 """
 from __future__ import annotations
 
@@ -11,6 +13,7 @@ import time
 from dataclasses import asdict, dataclass
 from pathlib import Path
 
+from . import consistency
 from .assemble import assemble, extraction_from_record
 from .classify import classify
 from .coerce import coerce_submission
@@ -23,6 +26,7 @@ from .extract.llm_docs import extract_with_llm
 from .extract.loss_run import extract_loss_run
 from .extract.sov import extract_sov
 from .extract.types import DocExtraction
+from .fields import flatten
 from .llm import LLMClient, get_client
 from .llm.base import call_record
 from .result import PipelineResult
@@ -36,6 +40,7 @@ class PipelineConfig:
     tables: bool = False                # 4a: table-aware SOV / loss-run parsing
     llm_tables: str = "fallback"        # 4b: LLM on SOV/loss runs: fallback (parser failed) | always | never
     normalization: str = "basic"        # basic | full (4c)
+    consistency: bool = False           # 4c: cross-document checks
     decision: str = "llm"               # llm | rules
 
 
@@ -43,6 +48,9 @@ VARIANTS: dict[str, PipelineConfig] = {
     "baseline": PipelineConfig("baseline"),
     "v1_tables": PipelineConfig("v1_tables", tables=True),
     "v2_tooluse": PipelineConfig("v2_tooluse", extraction="per_doc", tables=True),
+    "v3a_consistency_raw": PipelineConfig("v3a_consistency_raw", extraction="per_doc", tables=True, consistency=True),
+    "v3_consistency": PipelineConfig("v3_consistency", extraction="per_doc", tables=True, consistency=True,
+                                     normalization="full"),
 }
 ORDER = list(VARIANTS)
 VARIANTS["final"] = PipelineConfig(**{**asdict(VARIANTS[ORDER[-1]]), "name": "final"})
@@ -92,14 +100,20 @@ class Pipeline:
         res.timings_ms["extract"] = (time.perf_counter() - t0) * 1000
 
         t0 = time.perf_counter()
+        if self.cfg.consistency:
+            conflicts = consistency.check(res.provenance, flatten(res.record), extractions, self.cfg.normalization)
+            res.review_reasons += conflicts
+            res.needs_review = res.needs_review or bool(conflicts)
+        res.timings_ms["validate"] = (time.perf_counter() - t0) * 1000
+
+        t0 = time.perf_counter()
         if self.cfg.extraction != "baseline" and self.cfg.decision == "llm":
             req, resp, outcome = llm_decide(res.record, self.llm)
             res.llm_calls.append(call_record(req, resp))
             if outcome:
                 res.decision.outcome, res.decision.source = outcome, "llm"  # type: ignore[assignment]
         if res.decision.outcome is None:
-            res.needs_review = True
-            res.review_reasons.append("no appetite decision (model unavailable)")
+            res.degraded_reasons.append("no appetite decision (model unavailable)")
         res.timings_ms["decision"] = (time.perf_counter() - t0) * 1000
 
         # Wall-clock of everything except OCR, which is reported at its originally measured cost.
@@ -138,7 +152,7 @@ class Pipeline:
         req, resp, ex = extract_with_llm(doc, self.llm, self.cfg.normalization)
         res.llm_calls.append(call_record(req, resp))
         if ex is None:
-            res.review_reasons.append(f"{doc.name}: LLM extraction unavailable ({resp.error or 'no tool call'})")
+            res.degraded_reasons.append(f"{doc.name}: LLM extraction unavailable ({resp.error or 'no tool call'})")
             return []
         return [ex]
 

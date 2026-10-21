@@ -69,6 +69,7 @@ class SubmissionScore:
     output_tokens: int = 0
     est_input_tokens: int = 0
     summary_valid: bool | None = None
+    degraded: bool = False
 
 
 def score(gt: GroundTruth, res: PipelineResult) -> SubmissionScore:
@@ -130,6 +131,7 @@ def score(gt: GroundTruth, res: PipelineResult) -> SubmissionScore:
         s.output_tokens += call.output_tokens
         s.est_input_tokens += call.est_input_tokens
     s.summary_valid = res.summary_citations_valid
+    s.degraded = bool(res.degraded_reasons)
     return s
 
 
@@ -211,6 +213,7 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
             "flag_precision": round(flagged_wrong / flagged_total, 4) if flagged_total else 0.0,
             "flag_recall_of_errors": round(flagged_wrong / wrong_total, 4) if wrong_total else 0.0,
             "flagged_fields_per_submission": round(flagged_total / n, 2) if n else 0.0,
+            "degraded_rate": round(sum(1 for s in scores if s.degraded) / n, 4) if n else 0.0,
         },
         "conflicts": conflicts.prf(),
         "documents": {

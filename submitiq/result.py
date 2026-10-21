@@ -68,6 +68,9 @@ class PipelineResult(BaseModel):
     decision: Decision = Field(default_factory=Decision)
     needs_review: bool = False
     review_reasons: list[str] = Field(default_factory=list)
+    # Infrastructure problems (model unavailable, replay miss). They go to the retry queue,
+    # not the human review queue, and are shown in the UI and counted by the evals.
+    degraded_reasons: list[str] = Field(default_factory=list)
     doc_types: dict[str, str] = Field(default_factory=dict)
     llm_calls: list[LLMCallRecord] = Field(default_factory=list)
     timings_ms: dict[str, float] = Field(default_factory=dict)

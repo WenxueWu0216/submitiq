@@ -4,10 +4,10 @@
   "split": "dev",
   "backend": "replay",
   "tag": "",
-  "timestamp": "20261021T192645Z",
-  "git_sha": "395f201",
+  "timestamp": "20261021T192954Z",
+  "git_sha": "0aef363",
   "n": 80,
-  "wall_seconds": 2.3,
+  "wall_seconds": 2.4,
   "model": "claude-opus-5-5",
   "replay_miss_policy": "abstain"
  },
@@ -693,7 +693,8 @@
    "silent_critical_error_rate": 0.0,
    "flag_precision": 0.0,
    "flag_recall_of_errors": 0.0,
-   "flagged_fields_per_submission": 0.0
+   "flagged_fields_per_submission": 0.0,
+   "degraded_rate": 1.0
   },
   "conflicts": {
    "precision": 0.0,
@@ -707,9 +708,9 @@
    "classification_accuracy": 1.0
   },
   "latency_ms": {
-   "mean": 1727.3,
-   "p50": 126.9,
-   "p95": 8278.7,
+   "mean": 1732.3,
+   "p50": 133.0,
+   "p95": 8291.7,
    "llm_recorded_mean": 0.0
   },
   "cost": {
@@ -719,6 +720,9 @@
    "est_prompt_tokens_per_submission": 4274.7,
    "llm_calls_by_source": {
     "replay:miss": 80
+   },
+   "llm_calls_by_task": {
+    "baseline_extract": 80
    }
   },
   "summary": {
@@ -778,8 +782,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -835,8 +838,7 @@
     "insured.named_insured"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -892,8 +894,7 @@
     "locations[10].construction"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -949,8 +950,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1006,8 +1006,7 @@
     "locations[1].construction"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1063,8 +1062,7 @@
     "insured.employee_count"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1120,8 +1118,7 @@
     "insured.employee_count"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1177,8 +1174,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1234,8 +1230,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1291,8 +1286,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1348,8 +1342,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1405,8 +1398,7 @@
     "locations[1].sprinklered"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1462,8 +1454,7 @@
     "insured.mailing_address.zip"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1519,8 +1510,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1576,8 +1566,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1633,8 +1622,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1690,8 +1678,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1747,8 +1734,7 @@
     "claims[CL3251239].cause"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1804,8 +1790,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1861,8 +1846,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1918,8 +1902,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -1975,8 +1958,7 @@
     "insured.employee_count"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2032,8 +2014,7 @@
     "locations[1].roof_year"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2089,8 +2070,7 @@
     "insured.mailing_address.zip"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2146,8 +2126,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2203,8 +2182,7 @@
     "insured.dba"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2260,8 +2238,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2317,8 +2294,7 @@
     "locations[1].sprinklered"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2374,8 +2350,7 @@
     "insured.employee_count"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2431,8 +2406,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2488,8 +2462,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2545,8 +2518,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2602,8 +2574,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2659,8 +2630,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2716,8 +2686,7 @@
     "insured.employee_count"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2773,8 +2742,7 @@
     "locations[1].roof_year"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2830,8 +2798,7 @@
     "insured.named_insured"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2887,8 +2854,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -2944,8 +2910,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3001,8 +2966,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3058,8 +3022,7 @@
     "locations[1].roof_year"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3115,8 +3078,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3172,8 +3134,7 @@
     "insured.dba"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3229,8 +3190,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3286,8 +3246,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3343,8 +3302,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3400,8 +3358,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3457,8 +3414,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3514,8 +3470,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3571,8 +3526,7 @@
     "locations[1].construction"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3628,8 +3582,7 @@
     "locations[1].sprinklered"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3685,8 +3638,7 @@
     "locations[10].square_feet"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3742,8 +3694,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3799,8 +3750,7 @@
     "insured.mailing_address.zip"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3856,8 +3806,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3913,8 +3862,7 @@
     "insured.employee_count"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -3970,8 +3918,7 @@
     "locations[1].square_feet"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4027,8 +3974,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4084,8 +4030,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4141,8 +4086,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4198,8 +4142,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4255,8 +4198,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4312,8 +4254,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4369,8 +4310,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4426,8 +4366,7 @@
     "insured.mailing_address.zip"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4483,8 +4422,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4540,8 +4478,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4597,8 +4534,7 @@
     "locations[1].roof_year"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4654,8 +4590,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4711,8 +4646,7 @@
     "locations[1].city"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4768,8 +4702,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4825,8 +4758,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4882,8 +4814,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4939,8 +4870,7 @@
     "locations[1].sprinkler_pct"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -4996,8 +4926,7 @@
     "locations[1].sprinklered"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -5053,8 +4982,7 @@
     "locations[10].square_feet"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -5110,8 +5038,7 @@
     "insured.naics_code"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -5167,8 +5094,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -5224,8 +5150,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   },
@@ -5281,8 +5206,7 @@
     "locations[1].building_value"
    ],
    "review_reasons": [
-    "extraction model returned no usable output (replay miss)",
-    "no appetite decision (model unavailable)"
+    "extraction model returned no usable output (replay miss)"
    ],
    "errors": []
   }
