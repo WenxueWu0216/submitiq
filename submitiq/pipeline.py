@@ -34,6 +34,7 @@ from .llm import LLMClient, get_client
 from .llm.base import call_record
 from .result import PipelineResult
 from .rules_engine import RulesEngine
+from .runstate import RunState
 from .schema import Submission
 from .summary import summarize
 
@@ -82,21 +83,42 @@ class Pipeline:
         self.cfg = cfg
         self.llm = llm
 
+    # The steps below are the Step Functions states in infra/ (classify -> extract -> validate
+    # -> rules -> summarize). Locally they run back to back; on AWS each runs in its own Lambda
+    # and the RunState is persisted between them (see submitiq/runstate.py).
     def run(self, pkg: Path) -> PipelineResult:
-        t_start = time.perf_counter()
-        sub_id = pkg.name
-        res = PipelineResult(submission_id=sub_id, pipeline=self.cfg.name, record=Submission(submission_id=sub_id))
+        st = self.start(pkg)
+        for step in (self.classify, self.extract, self.validate, self.decide, self.summarize):
+            step(st)
+        return self.finish(st)
 
-        docs = load_package(pkg)
+    def start(self, pkg: Path) -> RunState:
+        sub_id = pkg.name
+        st = RunState(pkg=pkg, res=PipelineResult(submission_id=sub_id, pipeline=self.cfg.name,
+                                                  record=Submission(submission_id=sub_id)))
+        st.t_start = time.perf_counter()
+        return st
+
+    def _docs(self, st: RunState) -> list[Document]:
+        if st.docs is None:
+            st.docs = load_package(st.pkg)
+            for d in st.docs:
+                d.doc_type = st.res.doc_types.get(d.name, d.doc_type)
+        return st.docs
+
+    def classify(self, st: RunState) -> None:
+        res = st.res
+        docs = self._docs(st)
         res.timings_ms["text_extraction"] = sum(d.timings_ms.get("text", 0.0) for d in docs)
         res.timings_ms["ocr"] = sum(d.timings_ms.get("ocr", 0.0) for d in docs)
-
         t0 = time.perf_counter()
         for d in docs:
             d.doc_type, _, _ = classify(d, self.llm, res.llm_calls)
             res.doc_types[d.name] = d.doc_type
         res.timings_ms["classify"] = (time.perf_counter() - t0) * 1000
 
+    def extract(self, st: RunState) -> None:
+        res, docs = st.res, self._docs(st)
         t0 = time.perf_counter()
         extractions: list[DocExtraction] = []
         if self.cfg.extraction == "baseline":
@@ -107,9 +129,12 @@ class Pipeline:
             extractions += self._extract_tables(docs)
             if self.cfg.extraction == "per_doc":
                 extractions += self._llm_table_fallback(docs, extractions, res)
-        res.record, res.provenance = assemble(sub_id, extractions)
+        res.record, res.provenance = assemble(res.submission_id, extractions)
+        st.extractions = extractions
         res.timings_ms["extract"] = (time.perf_counter() - t0) * 1000
 
+    def validate(self, st: RunState) -> None:
+        res, extractions = st.res, st.extractions
         t0 = time.perf_counter()
         values = flatten(res.record)
         if self.cfg.consistency:
@@ -118,11 +143,13 @@ class Pipeline:
                 res.review_reasons += conflicts
                 res.needs_review = res.needs_review or bool(conflicts)
         if self.cfg.confidence:
-            needs, reasons = score_and_route(res.provenance, values, extractions, docs)
+            needs, reasons = score_and_route(res.provenance, values, extractions, self._docs(st))
             res.review_reasons += reasons
             res.needs_review = res.needs_review or needs
         res.timings_ms["validate"] = (time.perf_counter() - t0) * 1000
 
+    def decide(self, st: RunState) -> None:
+        res = st.res
         t0 = time.perf_counter()
         if self.cfg.extraction != "baseline" and self.cfg.decision == "llm":
             req, resp, outcome = llm_decide(res.record, self.llm)
@@ -135,17 +162,23 @@ class Pipeline:
             res.degraded_reasons.append("no appetite decision (model unavailable)")
         res.timings_ms["decision"] = (time.perf_counter() - t0) * 1000
 
-        if self.cfg.summary:
-            t0 = time.perf_counter()
-            req, resp, text, source, valid = summarize(res.record, res.decision, res.provenance, self.llm)
-            res.llm_calls.append(call_record(req, resp))
-            res.summary, res.summary_source, res.summary_citations_valid = text, source, valid
-            if not resp.ok:
-                res.degraded_reasons.append("narrative summary model unavailable; template summary used")
-            res.timings_ms["summary"] = (time.perf_counter() - t0) * 1000
+    def summarize(self, st: RunState) -> None:
+        if not self.cfg.summary:
+            return
+        res = st.res
+        t0 = time.perf_counter()
+        req, resp, text, source, valid = summarize(res.record, res.decision, res.provenance, self.llm)
+        res.llm_calls.append(call_record(req, resp))
+        res.summary, res.summary_source, res.summary_citations_valid = text, source, valid
+        if not resp.ok:
+            res.degraded_reasons.append("narrative summary model unavailable; template summary used")
+        res.timings_ms["summary"] = (time.perf_counter() - t0) * 1000
 
-        # Wall-clock of everything except OCR, which is reported at its originally measured cost.
-        res.timings_ms["other"] = max(0.0, (time.perf_counter() - t_start) * 1000 - sum(res.timings_ms.values()))
+    def finish(self, st: RunState) -> PipelineResult:
+        res = st.res
+        if st.t_start is not None:
+            # Wall-clock of everything except OCR, which is reported at its originally measured cost.
+            res.timings_ms["other"] = max(0.0, (time.perf_counter() - st.t_start) * 1000 - sum(res.timings_ms.values()))
         return res
 
     # ------------------------------------------------------------------ baseline

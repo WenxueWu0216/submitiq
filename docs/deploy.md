@@ -1,0 +1,121 @@
+# Deploying SubmitIQ to AWS
+
+`infra/` is an AWS CDK (Python) app:
+
+```
+broker upload ─► S3 intake bucket (KMS, versioned)
+                   incoming/<submission_id>/*.pdf|xlsx|txt  … then manifest.json (written last)
+                         │ EventBridge "Object Created" on */manifest.json
+                         ▼
+               Step Functions (standard workflow, X-Ray, retries with backoff)
+     Start ─► Classify ─► Extract ─► Validate ─► Rules ─► Summarize ─► Done
+     (each state = the same container-image Lambda, different handler; Tesseract inside)
+                  │           │                             │
+                  │      Bedrock (Claude)              Bedrock (Claude)
+                  ▼
+     S3 artifacts bucket: <id>/state.json, <id>/cache/ocr/*, <id>/result.json
+     DynamoDB "Submissions" (status, decision, flags; GSI by_status)
+     any failure ─► MarkFailed (status=failed in DynamoDB) ─► Fail
+     CloudWatch: EMF metrics (Processed, NeedsReview, Degraded, FlaggedFields, LLMCostUsd, latency,
+                 decisions), dashboard "SubmitIQ", alarms → SNS
+```
+
+Each state runs the same `Pipeline` step the eval harness measures (`submitiq/aws_handlers.py`).
+`tests/test_runstate.py` proves that a step-by-step run with JSON serialization between steps gives the same result as a local run.
+`tests/test_aws_handlers.py` runs the whole Lambda chain against in-memory S3/DynamoDB fakes.
+
+## 0. Verify without an AWS account
+
+```bash
+make synth                      # = cd infra && npx aws-cdk@2 synth --quiet
+python -m pytest tests/test_infra.py tests/test_aws_handlers.py tests/test_runstate.py
+```
+
+`cdk synth` needs no credentials. It does not build the Docker image (that happens at deploy).
+
+## 1. Prerequisites
+
+* An AWS account and a role allowed to deploy CloudFormation, IAM, Lambda, S3, KMS, DynamoDB, Step Functions,
+  EventBridge, CloudWatch, SNS and ECR (bootstrap creates the ECR repo).
+* AWS CLI v2 configured (`aws sts get-caller-identity` works), Node.js ≥ 18, Python 3.11, and **Docker running**.
+* **Bedrock model access:** in the Bedrock console for your region, open *Model access* and enable the
+  Anthropic Claude model. Copy the exact **model ID or inference-profile ID** the console shows. Some
+  regions require a cross-region inference profile (an ID with a `us.` / `eu.` prefix).
+
+## 2. Deploy
+
+```bash
+cd infra
+python3 -m venv .venv && . .venv/bin/activate
+pip install -r requirements.txt
+export CDK_DEFAULT_ACCOUNT=$(aws sts get-caller-identity --query Account --output text)
+export CDK_DEFAULT_REGION=us-east-1            # a region where your Claude model is enabled
+npx aws-cdk@2 bootstrap aws://$CDK_DEFAULT_ACCOUNT/$CDK_DEFAULT_REGION
+npx aws-cdk@2 deploy \
+  -c bedrockModelId=<model-or-inference-profile-id-from-the-console> \
+  -c alarmEmail=you@example.com
+```
+
+Note the outputs: `IntakeBucketName`, `ArtifactBucketName`, `TableName`, `StateMachineArn`. Confirm the SNS email subscription.
+
+## 3. Smoke test with a synthetic package
+
+```bash
+B=<IntakeBucketName>
+aws s3 cp data/submissions/dev/SUB-0010/ s3://$B/incoming/SUB-0010/ --recursive --exclude ground_truth.json
+echo '{"files": 4}' | aws s3 cp - s3://$B/incoming/SUB-0010/manifest.json      # starts the workflow
+aws stepfunctions list-executions --state-machine-arn <StateMachineArn> --max-results 5
+aws dynamodb get-item --table-name <TableName> --key '{"submission_id": {"S": "SUB-0010"}}'
+aws s3 cp s3://<ArtifactBucketName>/SUB-0010/result.json - | python -m json.tool | head -50
+```
+
+Expected: one execution. It succeeds, or it ends in `MarkFailed` with `status=failed` (never silently missing).
+The DynamoDB item has `status` `needs_review` or `auto_cleared`, the decision and the flagged-field count.
+The metrics show up on the *SubmitIQ* CloudWatch dashboard within a few minutes.
+
+## 4. Operate / tear down
+
+* Logs: one log group per Lambda (1-year retention). The workflow logs errors to its own log group.
+* Model problems (throttling, access denied) show up as `Degraded` and trip the *ModelDegraded* alarm. Submissions then still
+  complete with deterministic parsers plus rules, and they are flagged.
+* `npx aws-cdk@2 destroy` removes compute. **Buckets, table and KMS key are RETAINED** on purpose (regulated data).
+  Empty and delete them by hand if this was a test account.
+
+## Production hardening not in this stack (deliberately out of scope)
+
+VPC with interface endpoints for S3/DynamoDB/Bedrock/KMS (no internet egress); the review UI on
+App Runner/ECS behind Cognito or SSO, reading the DynamoDB table (locally it uses SQLite/Postgres);
+Object Lock on the intake bucket for retention requirements; per-tenant KMS keys;
+Bedrock Guardrails / prompt-injection screening of broker emails; and a manifest that lists the expected
+files, so a partial upload fails fast instead of running.
+
+## Estimated monthly cost at 1,000 submissions/month
+
+Generated by `python scripts/cost_estimate.py` from the latest offline eval run. **The token figures
+are estimates until a live run exists.** After `make eval-live`, re-run the script on the
+live result and it switches to measured token usage automatically. Bedrock prices are set by AWS and can differ
+from the Anthropic list price used here. Check the Bedrock pricing page for your region and model.
+
+Basis: ESTIMATED: prompt tokens = chars/4 recorded by the harness (7,433/submission over 3.0 calls), output = 2500 tokens/call assumed
+
+| item (1,000 submissions/month) | USD/month |
+|---|---|
+| Bedrock claude-opus-5-5 tokens (1P list price as proxy) | 180.98 |
+| Lambda compute + requests | 1.51 |
+| Step Functions (standard) | 0.20 |
+| S3 storage (first month) + requests | 0.61 |
+| DynamoDB on-demand | 0.00 |
+| KMS key + requests | 1.45 |
+| CloudWatch logs, EMF metrics, dashboard, alarms | 6.33 |
+| ECR image storage | 0.10 |
+| **total** | **191.18** |
+
+per submission: $0.191 (model share 95%)
+  with claude-sonnet-5-5: model $90.49/month
+  with claude-haiku-5-5: model $4.52/month
+  optional Textract TABLES for scanned pages (~30% of packages x 3 pages x $0.015): $13.50/month
+
+What dominates: **model tokens are about 95% of the bill.** Everything else is under $15/month at this volume.
+The cost levers, in order: avoid calls (in the offline eval the deterministic parsers vouched for all but 3 of the ~260 SOVs and loss runs, so the LLM fallback ran on about 1%);
+prompt caching of the static system prompt and tool schemas; a cheaper model for the email and summary calls; batch
+inference for non-urgent submissions. Each lever has to be measured with `make eval-live` before it ships.
