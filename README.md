@@ -73,6 +73,7 @@ pages, split tables, name variants, broker abbreviations, missing fields and pla
 <!-- RESULTS:START -->
 | test split (40 submissions) | Baseline, offline | Final, offline | Baseline, Claude | Final, Claude |
 |---|---|---|---|---|
+| Model | none (offline) | none (offline) | — | — |
 | Field F1 (all fields) | 0.0 | 96.1 | **PENDING** | **PENDING** |
 | Critical-field F1 | 0.0 | 98.9 | **PENDING** | **PENDING** |
 | F1 on held-out template C | 0.0 | 84.5 | **PENDING** | **PENDING** |
@@ -90,6 +91,7 @@ pages, split tables, name variants, broker abbreviations, missing fields and pla
 
 | dev split (80 submissions) | Baseline, offline | Final, offline | Baseline, Claude | Final, Claude |
 |---|---|---|---|---|
+| Model | none (offline) | none (offline) | — | — |
 | Field F1 (all fields) | 0.0 | 99.2 | **PENDING** | **PENDING** |
 | Critical-field F1 | 0.0 | 99.7 | **PENDING** | **PENDING** |
 | F1 on held-out template C | n/a | n/a | **PENDING** | **PENDING** |
@@ -139,21 +141,33 @@ The human-time row is an assumption to validate with the client in a pilot. The 
 
 ## Produce the real model numbers
 
-On a laptop with an API key (about 480 Claude calls; at Opus 5.5 list prices roughly $40, an estimate):
+On a laptop with an API key. The cheap path costs a few dollars:
 
 ```bash
 git clone <this repo> && cd submitiq
 make setup
 export ANTHROPIC_API_KEY=sk-ant-...         # or: ant auth login
-make eval-live                              # baseline + final on dev and test; records fixtures/replay/
-.venv/bin/python scripts/results_table.py   # fills the "Claude" columns above from the new result files
+make eval-smoke                             # 5 submissions on Haiku, nothing recorded: checks the key for cents
+make eval-live-cheap                        # test split only: baseline on Haiku, final on Sonnet (~160 calls)
+.venv/bin/python scripts/results_table.py   # fills the "Claude" columns above, with the model used for each
 .venv/bin/python scripts/cost_estimate.py evals/results/<latest>_final_test_anthropic.json   # measured cost
 ```
 
-Optional: `make eval-live-all` (every variant, reusing recorded calls), `SUBMITIQ_MODEL=claude-sonnet-5-5`
-(cost-vs-accuracy comparison), `BACKEND=bedrock make eval-live` (Bedrock, needs AWS credentials and
-`SUBMITIQ_BEDROCK_MODEL_ID`). Commit the new `fixtures/replay/` files and CI will replay the real answers offline.
-Then refresh the reference with `python -m evals.gate <run>.json --update`.
+Each run prints its cost as it goes. Other options:
+
+| command | calls | what it buys |
+|---|---|---|
+| `make eval-live-cheap CHEAP_MODELS=baseline=claude-haiku-5-5,final=claude-haiku-5-5` | ~160 | cheapest full test-split run |
+| `make eval-live-cheap` | ~160 | default: Sonnet on the pipeline that matters |
+| `make eval-live SPLITS=test` | ~160 | Opus 5.5 on the test split |
+| `make eval-live` | ~480 | Opus 5.5 on dev and test (roughly $40 at list prices, an estimate) |
+| `make eval-live-all` | more | every variant; shared calls are reused from the recordings |
+
+Add `LIMIT=10` to any of them to cap submissions per split. A recording is reused only for the same
+model, so a cheap trial never stands in for the model a column claims. `BACKEND=bedrock make eval-live`
+runs on Bedrock (needs AWS credentials and `SUBMITIQ_BEDROCK_MODEL_ID`). Commit the new
+`fixtures/replay/` files and CI will replay the real answers offline. Then refresh the reference with
+`python -m evals.gate <run>.json --update`.
 
 ## Repository map
 
