@@ -59,6 +59,12 @@ def main() -> None:
             if args.limit:
                 argv += ["--limit", str(args.limit)]
             payload = eval_run.main(argv)
+            subs = payload["submissions"]
+            if subs and all(x["errors"] for x in subs):
+                # Every package crashed (missing API key, bad model ID, ...): stop before paying for more.
+                sys.exit(f"\nERROR: all {len(subs)} submissions failed in {name}/{split}. First error:\n  "
+                         f"{subs[0]['errors'][0]}\nFix it, delete the bad result files "
+                         f"(rm evals/results/*_{args.backend}*), and run again.")
             m = payload["metrics"]
             run_usd = m["cost"]["usd_per_submission"] * payload["meta"]["n"]
             spent += run_usd
