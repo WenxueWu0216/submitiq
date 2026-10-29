@@ -30,6 +30,8 @@ class AnthropicClient:
         self.client = anthropic.Anthropic(max_retries=4)
         # Server-side refusal fallback; set SUBMITIQ_FALLBACKS=0 to turn it off.
         self.use_fallbacks = os.environ.get("SUBMITIQ_FALLBACKS", "1") == "1"
+        # Tools whose schema the API refused in strict mode; later calls skip the doomed strict attempt.
+        self.non_strict_tools: set[str] = set()
 
     def _kwargs(self, req: LLMRequest, user: str) -> dict:
         kw: dict = {
@@ -39,7 +41,8 @@ class AnthropicClient:
         }
         if req.tool:
             # Forced tool_choice is rejected on current models: use auto + strict schema + instruction.
-            kw["tools"] = [{**req.tool, "strict": True}]
+            strict = req.tool["name"] not in self.non_strict_tools
+            kw["tools"] = [{**req.tool, "strict": True} if strict else dict(req.tool)]
             kw["tool_choice"] = {"type": "auto"}
         return kw
 
@@ -51,6 +54,7 @@ class AnthropicClient:
                 raise
             # Strict mode limits schema complexity; keep going without it (pydantic validates downstream).
             log.warning("strict tool schema rejected (%s); retrying without strict", exc)
+            self.non_strict_tools.update(t["name"] for t in kw["tools"])
             return self._call_once({**kw, "tools": [{k: v for k, v in t.items() if k != "strict"} for t in kw["tools"]]})
 
     def _call_once(self, kw: dict):
@@ -59,6 +63,8 @@ class AnthropicClient:
                 with self.client.beta.messages.stream(**kw, betas=[FALLBACK_BETA], fallbacks="default") as s:
                     return s.get_final_message()
             except anthropic.BadRequestError as exc:
+                if "fallback" not in str(exc).lower():
+                    raise          # e.g. a schema error: not the fallback's fault, keep fallbacks on
                 log.warning("request with fallbacks rejected (%s); retrying without", exc)
                 self.use_fallbacks = False
         with self.client.messages.stream(**kw) as s:
