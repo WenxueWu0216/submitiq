@@ -51,3 +51,21 @@ def test_final_pipeline_always_decides_and_summarises_offline():
     res = Pipeline(VARIANTS["final"], FakeClient(lambda r: None)).run(pkg)
     assert res.decision.source == "rules" and res.decision.outcome in ("accept", "refer", "decline")
     assert res.summary and res.summary_citations_valid
+
+
+def test_validator_accepts_several_fields_in_one_bracket_but_still_checks_numbers():
+    rec = _gt().record
+    tiv = rec.totals.total_tiv
+    ok, problems = validate_summary(
+        f"Total TIV {tiv:,.0f} [totals.total_tiv; insured.naics_code, policy.effective_date].", rec)
+    assert ok, problems
+    ok, problems = validate_summary(
+        "Total TIV 99,999,999 [totals.total_tiv; insured.naics_code; policy.effective_date].", rec)
+    assert not ok                                   # grouping citations doesn't loosen the number check
+
+
+def test_validator_rejects_an_address_number_without_its_field():
+    rec = _gt().record
+    ok, problems = validate_summary(
+        "Office at 6090 Lake Street [totals.total_tiv] [insured.naics_code] [policy.effective_date].", rec)
+    assert not ok and any("6090" in p for p in problems)

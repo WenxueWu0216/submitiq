@@ -21,8 +21,11 @@ from .result import Decision, FieldProvenance
 from .schema import Submission
 
 PROMPT_VERSION = "v1"
-CITE = re.compile(r"\[([a-z_]+(?:\[[^\]]+\])?(?:\.[a-z_]+)+)\]")
-NUM = re.compile(r"\$?\d[\d,]*(?:\.\d+)?(?: ?[MK%])?")
+PATH = r"[a-z_]+(?:\[[A-Za-z0-9_-]+\])?(?:\.[a-z_]+)+"
+# One bracket may cite several fields: [a.b] or [a.b; c[1].d, e.f]. Notes like [review_flags: ...] are not citations.
+CITE_GROUP = re.compile(r"\[(" + PATH + r"(?:\s*[;,]\s*" + PATH + r")*)\]")
+CITE_ANY = re.compile(r"\[[^\[\]]*(?:\[[^\[\]]*\][^\[\]]*)*\]")
+NUM = re.compile(r"\$?\d[\d,]*(?:\.\d+)?(?:[MK](?![A-Za-z])|\s?%)?")
 
 SYSTEM = ("You write concise triage notes for commercial property underwriters. Use only the facts provided. "
           "Every factual statement must cite the field path it comes from in square brackets, e.g. "
@@ -80,22 +83,28 @@ def _to_number(tok: str) -> float | None:
         return None
 
 
-def validate_summary(text: str, rec: Submission, allowed_extra: set[str] | None = None) -> tuple[bool, list[str]]:
+def validate_summary(text: str, rec: Submission, allowed_extra: set[str] | None = None,
+                     flagged_paths: set[str] | None = None) -> tuple[bool, list[str]]:
+    """flagged_paths: fields the review flags mention; citing one while it is empty is allowed
+    (the narrative is saying it is missing)."""
     values = flatten(rec)
+    flagged_paths = flagged_paths or set()
     problems: list[str] = []
-    cited = CITE.findall(text)
+    cited = [p for grp in CITE_GROUP.findall(text) for p in re.split(r"\s*[;,]\s*", grp)]
     if len(cited) < 3:
         problems.append("fewer than 3 field citations")
     for p in cited:
-        if values.get(p) is None:
+        if values.get(p) is None and p not in flagged_paths:
             problems.append(f"cites unknown or empty field [{p}]")
     supported: set[str] = set(allowed_extra or set())
     for p in cited:
         if values.get(p) is not None:
             supported |= _numbers_in(values[p])
+        for idx in re.findall(r"\[([A-Za-z0-9_-]+)\]", p):   # loss_years[2022], claims[CL8459682]
+            supported |= {idx} | set(re.findall(r"\d+", idx))
     cited_numbers = [float(values[p]) for p in cited if isinstance(values.get(p), (int, float))
                      and not isinstance(values.get(p), bool)]
-    stripped = CITE.sub("", text)
+    stripped = CITE_ANY.sub("", text)
     for raw in NUM.findall(stripped):
         tok = re.sub(r"[\s$]", "", raw).rstrip(".,")
         if not tok or tok in supported or tok.rstrip("%") in supported or len(tok.replace(",", "").rstrip("%")) <= 2:
@@ -164,11 +173,16 @@ def _allowed_numbers(rec: Submission, decision: Decision, prov: dict[str, FieldP
     """Numbers the summary may use without citing a field: rule messages, flags, the loss ratio, counts."""
     text = " ".join(h.message for h in decision.reasons) + " " + " ".join(r for fp in prov.values() for r in fp.reasons)
     out = {re.sub(r"[\s$]", "", m).rstrip(".,") for m in NUM.findall(text)}
+    for tok in list(out):   # flag messages print raw floats ("says 20786000.0"); allow their usual renderings
+        try:
+            out |= _numbers_in(float(tok.replace(",", "").rstrip("%")))
+        except ValueError:
+            pass
     out |= set(re.findall(r"\d+", rec.submission_id))
     premium = sum(y.earned_premium or 0 for y in rec.loss_years)
     incurred = sum(c.incurred or 0 for c in rec.claims)
     if premium:
-        out |= {f"{incurred / premium:.0%}", f"{100 * incurred / premium:.0f}%"}
+        out |= {f"{incurred / premium:.0%}", f"{100 * incurred / premium:.0f}%", f"{incurred / premium:.1%}"}
     out |= {_money(incurred).lstrip("$"), _money(premium).lstrip("$"), f"{incurred:,.0f}", f"{premium:,.0f}"}
     return out
 
@@ -179,12 +193,13 @@ def summarize(rec: Submission, decision: Decision, prov: dict[str, FieldProvenan
     req = build_request(rec, decision, prov)
     resp = llm.complete(req)
     allowed = _allowed_numbers(rec, decision, prov)
+    flagged = {p for p, fp in prov.items() if fp.reasons}
     if resp.ok and resp.text:
-        ok, _ = validate_summary(resp.text, rec, allowed)
+        ok, _ = validate_summary(resp.text, rec, allowed, flagged)
         if ok:
             # Label replayed answers: a hand-written fixture must never pass for model output.
             return req, resp, resp.text, "llm" if resp.source == "live" else f"llm ({resp.source})", True
     text = template_summary(rec, decision, prov)
-    ok, _ = validate_summary(text, rec, allowed)
+    ok, _ = validate_summary(text, rec, allowed, flagged)
     source = "template (LLM summary failed validation)" if resp.ok and resp.text else "template"
     return req, resp, text, source, ok

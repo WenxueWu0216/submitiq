@@ -70,6 +70,7 @@ class SubmissionScore:
     output_tokens: int = 0
     est_input_tokens: int = 0
     summary_valid: bool | None = None
+    summary_from_llm: bool | None = None   # None: no narrative was attempted
     degraded: bool = False
 
 
@@ -133,6 +134,9 @@ def score(gt: GroundTruth, res: PipelineResult) -> SubmissionScore:
         s.output_tokens += call.output_tokens
         s.est_input_tokens += call.est_input_tokens
     s.summary_valid = res.summary_citations_valid
+    src = res.summary_source or ""
+    if src.startswith("llm") or "failed validation" in src:
+        s.summary_from_llm = src.startswith("llm")
     s.degraded = bool(res.degraded_reasons)
     return s
 
@@ -194,6 +198,7 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
     flagged_wrong = sum(s.flagged_wrong for s in scores)
     lat = [s.latency_ms for s in scores]
     summaries = [s.summary_valid for s in scores if s.summary_valid is not None]
+    llm_ok = [s.summary_from_llm for s in scores if s.summary_from_llm is not None]
     return {
         "n_submissions": n,
         "fields": {
@@ -240,5 +245,7 @@ def aggregate(scores: list[SubmissionScore]) -> dict[str, Any]:
         },
         "summary": {
             "citation_valid_rate": round(sum(summaries) / len(summaries), 4) if summaries else None,
+            # Share of model narratives that passed the validator (the rest fell back to the template).
+            "llm_narrative_accept_rate": (round(sum(llm_ok) / len(llm_ok), 4) if llm_ok else None),
         },
     }
