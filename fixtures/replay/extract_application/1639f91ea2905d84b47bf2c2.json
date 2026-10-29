@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "b3fecef9ae74178f59a39a6273cb4517d189effabf1094d49d235c07b0921fd9",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:46.785133+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Juniper Engineering Group Corporation",
+     "page": 1,
+     "evidence": "Named Insured: Juniper Engineering Group Corporation"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "87-7938892",
+     "page": 1,
+     "evidence": "FEIN: 87-7938892"
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "Entity Type: Corporation"
+    },
+    "mailing_street": {
+     "value": "8473 Park Lane",
+     "page": 1,
+     "evidence": "Mailing Address: 8473 Park Lane, Pittsburgh, PA 15284"
+    },
+    "mailing_city": {
+     "value": "Pittsburgh",
+     "page": 1,
+     "evidence": "Mailing Address: 8473 Park Lane, Pittsburgh, PA 15284"
+    },
+    "mailing_state": {
+     "value": "PA",
+     "page": 1,
+     "evidence": "Mailing Address: 8473 Park Lane, Pittsburgh, PA 15284"
+    },
+    "mailing_zip": {
+     "value": "15284",
+     "page": 1,
+     "evidence": "Mailing Address: 8473 Park Lane, Pittsburgh, PA 15284"
+    },
+    "business_description": {
+     "value": "Civil and structural engineering consulting office",
+     "page": 1,
+     "evidence": "Nature of Business: Civil and structural engineering consulting office"
+    },
+    "naics_code": {
+     "value": "541330",
+     "page": 1,
+     "evidence": "NAICS Code: 541330"
+    },
+    "years_in_business": {
+     "value": 4,
+     "page": 1,
+     "evidence": "Years in Business: 4"
+    },
+    "annual_revenue": {
+     "value": 17060000,
+     "page": 1,
+     "evidence": "Annual Revenue: $17,060,000"
+    },
+    "employee_count": {
+     "value": 180,
+     "page": 1,
+     "evidence": "Number of Employees: 180"
+    },
+    "website": {
+     "value": "www.juniperengineering.com",
+     "page": 1,
+     "evidence": "Website: www.juniperengineering.com"
+    },
+    "contact_name": {
+     "value": "Nina Levine",
+     "page": 1,
+     "evidence": "Contact Name: Nina Levine"
+    },
+    "contact_phone": {
+     "value": "(341) 889-4546",
+     "page": 1,
+     "evidence": "Contact Phone: (341) 889-4546"
+    },
+    "contact_email": {
+     "value": "nlevine@juniperengineering.com",
+     "page": 1,
+     "evidence": "Contact Email: nlevine@juniperengineering.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Copperfield Risk Advisors",
+     "page": 1,
+     "evidence": "Agency: Copperfield Risk Advisors"
+    },
+    "producer_name": {
+     "value": "David O'Brien",
+     "page": 1,
+     "evidence": "Producer: David O'Brien"
+    },
+    "producer_email": {
+     "value": "david.obrien@copperfieldrisk.com",
+     "page": 1,
+     "evidence": "Producer Email: david.obrien@copperfieldrisk.com"
+    },
+    "producer_phone": {
+     "value": "(489) 663-6636",
+     "page": 1,
+     "evidence": "Producer Phone: (489) 663-6636"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-11-15",
+     "page": 1,
+     "evidence": "Proposed Effective Date: 15-Nov-2026"
+    },
+    "expiration_date": {
+     "value": "2027-11-15",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: 11/15/2027"
+    },
+    "transaction_type": {
+     "value": "renewal",
+     "page": 1,
+     "evidence": "Transaction: Renewal"
+    },
+    "prior_carrier": {
+     "value": "Great Plains Casualty",
+     "page": 1,
+     "evidence": "Prior Carrier: Great Plains Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 13540000,
+     "page": 2,
+     "evidence": "Building Limit: $13,540,000"
+    },
+    "bpp_limit": {
+     "value": 4875000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $4,875,000"
+    },
+    "business_income_limit": {
+     "value": 1390000,
+     "page": 2,
+     "evidence": "Business Income Limit: 1390000"
+    },
+    "deductible": {
+     "value": 5000,
+     "page": 2,
+     "evidence": "Deductible: $5,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 2,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 2,
+     "evidence": "Coinsurance: 90%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: No"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 19805000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $19,805,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "8473 Park Lane",
+      "page": 2,
+      "evidence": "1   8473 Park Lane   Pittsburgh   PA   15284"
+     },
+     "city": {
+      "value": "Pittsburgh",
+      "page": 2,
+      "evidence": "8473 Park Lane   Pittsburgh   PA"
+     },
+     "state": {
+      "value": "PA",
+      "page": 2,
+      "evidence": "Pittsburgh   PA   15284"
+     },
+     "zip": {
+      "value": "15284",
+      "page": 2,
+      "evidence": "PA   15284"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "ISO 3"
+     },
+     "year_built": {
+      "value": 1990,
+      "page": 2,
+      "evidence": "ISO 3   1990   4   29,300"
+     },
+     "stories": {
+      "value": 4,
+      "page": 2,
+      "evidence": "1990   4   29,300 N"
+     },
+     "square_feet": {
+      "value": 29300,
+      "page": 2,
+      "evidence": "29,300 N   4"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "29,300 N   4"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle   2007"
+     },
+     "roof_year": {
+      "value": 2007,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2007   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "5741 Park Road",
+      "page": 2,
+      "evidence": "2   5741 Park Road   Charlotte   NC   28285"
+     },
+     "city": {
+      "value": "Charlotte",
+      "page": 2,
+      "evidence": "5741 Park Road   Charlotte   NC"
+     },
+     "state": {
+      "value": "NC",
+      "page": 2,
+      "evidence": "Charlotte   NC   28285"
+     },
+     "zip": {
+      "value": "28285",
+      "page": 2,
+      "evidence": "NC   28285"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Brick/Joisted"
+     },
+     "year_built": {
+      "value": 1990,
+      "page": 2,
+      "evidence": "Brick/Joisted   1990   1   29,000 Y"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "1990   1   29,000 Y"
+     },
+     "square_feet": {
+      "value": 29000,
+      "page": 2,
+      "evidence": "29,000 Y   1   Tile"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "29,000 Y   1   Tile"
+     },
+     "protection_class": {
+      "value": 1,
+      "page": 2,
+      "evidence": "Y   1   Tile   2006"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Tile   2006   None"
+     },
+     "roof_year": {
+      "value": 2006,
+      "page": 2,
+      "evidence": "Tile   2006   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "Tile   2006   None"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9320,
+  "output_tokens": 2790,
+  "latency_ms": 12839.011551,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

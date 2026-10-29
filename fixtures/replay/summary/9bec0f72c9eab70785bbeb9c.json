@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "df3da602ca065f354d08b00ec17e59f648f7934d09e8c2bb7ec5cdad5ae5e758",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:20.231016+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept, per the rules decision [decision]. This is a new-business submission [policy.transaction_type] for a 2027-02-15 to 2028-02-15 term [policy.effective_date, policy.expiration_date]. Quote is needed by 2027-02-05 [policy.quote_needed_by].\n\n**Why**\nFive-year incurred is 44,500 [totals.five_year_incurred] against five-year premium of 173,420 [totals.five_year_premium], a loss ratio of about 25.7%. The single claim is closed with zero reserve [claims[24C458791].status, claims[24C458791].reserve]. The other four years show no claims [loss_years[2022].claim_count, loss_years[2023].claim_count, loss_years[2025].claim_count, loss_years[2026].claim_count].\n\n**Account**\nCopper Hill Auto Care LLC [insured.named_insured], a general automotive repair garage [insured.business_description] with 55 years in business [insured.years_in_business]. Total TIV is 16,525,000 across 2 locations [totals.total_tiv, totals.location_count]. Special form, replacement cost, 90% coinsurance, 2,500 deductible [coverage.cause_of_loss_form, coverage.valuation, coverage.coinsurance_pct, coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested, coverage.earthquake_requested].\n\n**Locations & COPE**\n- Atlanta, GA: non-combustible, built 2017, 6 stories, sprinklered, PC 3, no alarm [locations[1].construction, locations[1].year_built, locations[1].stories, locations[1].sprinklered, locations[1].protection_class, locations[1].alarm_type]. TIV 8,135,000 [locations[1].tiv].\n- Columbus, OH: joisted masonry, built 1982, 2 stories, not sprinklered, PC 6, local alarm [locations[2].construction, locations[2].year_built, locations[2].stories, locations[2].sprinklered, locations[2].protection_class, locations[2].alarm_type]. TIV 8,390,000 [locations[2].tiv].\n\n**Loss history**\nOne 2024 theft/burglary claim, 44,500 paid, closed [claims[24C458791].cause, claims[24C458791].paid, claims[24C458791].status]. Prior carrier is Continental Mutual [policy.prior_carrier].\n\n**Needs attention**\n- TIV conflict: the property schedule shows 16,525,000, while the signed application shows 15,150,000. The system kept the derived value [totals.total_tiv review flag]. Confirm with the broker.\n- Theft claim at a location with no alarm in Atlanta [locations[1].alarm_type]. The claim record does not state which location had the loss.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1894,
+  "output_tokens": 953,
+  "latency_ms": 5598.972484000001,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

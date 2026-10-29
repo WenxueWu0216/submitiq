@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "7cb403d1a099f41d3bcf1f4540e628e6971e4d19dface7a97a34781914879020",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:33.992334+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules decision is MISSING_INFO: location 1 has no protection_class, which the appetite rules require [locations[1].protection_class].\n\n**Why**\nProtection class for 2444 Commerce Way, Houston, is missing and was not found in any document [locations[1].street, locations[1].protection_class]. The appetite rules cannot be fully applied until it is supplied.\n\n**Account**\nWestfield Engineering LLC, a civil and structural engineering consulting office, 30 years in business [insured.named_insured, insured.business_description, insured.years_in_business]. New business, effective 2027-03-15, prior carrier Pinecrest Property & Casualty [policy.transaction_type, policy.effective_date, policy.prior_carrier]. Quote is needed by 2027-02-23 [policy.quote_needed_by]. Coverage is special form, replacement cost, 90% coinsurance, $10,000 deductible, with flood requested [coverage.cause_of_loss_form, coverage.valuation, coverage.coinsurance_pct, coverage.deductible, coverage.flood_requested]. Total TIV is 35,345,000 across 6 locations [totals.total_tiv, totals.location_count].\n\n**Locations & COPE**\n- Loc 1 (Houston): frame, built 1980, 3 stories, 100% sprinklered, central station alarm [locations[1].construction, locations[1].year_built, locations[1].stories, locations[1].sprinkler_pct, locations[1].alarm_type].\n- Loc 2 (Atlanta): frame, unsprinklered [locations[2].construction, locations[2].sprinklered].\n- Loc 4 (Houston): built 1958, unsprinklered, TIV 8,310,000 [locations[4].year_built, locations[4].sprinklered, locations[4].tiv].\n- Loc 6 (Columbus): frame, built 1965, unsprinklered [locations[6].construction, locations[6].year_built, locations[6].sprinklered].\n- Loc 3 is the largest TIV at 12,175,000 [locations[3].tiv].\n\n**Loss history**\nOne closed water damage claim on 2022-08-17, paid 66,350 with no reserve [claims[PPC202233138].cause, claims[PPC202233138].date_of_loss, claims[PPC202233138].status, claims[PPC202233138].paid, claims[PPC202233138].reserve]. Five-year incurred is 66,350 against five-year premium of 218,590 [totals.five_year_incurred, totals.five_year_premium]. That is a 30.4% loss ratio. No claims in 2023 through 2026 [loss_years[2023].claim_count, loss_years[2024].claim_count, loss_years[2025].claim_count, loss_years[2026].claim_count].\n\n**Needs attention**\n- Obtain protection class for location 1 [locations[1].protection_class].\n- TIV conflict: the property schedule says 35,345,000, while the application says 32,410,000. The derived value was kept per source-of-truth rules [totals.total_tiv].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 3032,
+  "output_tokens": 1044,
+  "latency_ms": 6064.941784999974,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

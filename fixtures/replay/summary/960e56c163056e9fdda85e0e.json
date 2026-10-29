@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "9fce263fc58df9b4e5b90bb9bb310bb12da3de6626f669980bb96b801c008943",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:23.629220+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept [decision]. New business [policy.transaction_type], effective 2027-03-15 to 2028-03-15 [policy.effective_date] [policy.expiration_date]. Quote needed by 2027-02-28 [policy.quote_needed_by].\n\n**Why**\nThe rules engine returned accept [decision]. Supporting facts: one closed claim in five years [claims[HIC202378503].status], incurred 23,940 [totals.five_year_incurred] against 130,780 premium [totals.five_year_premium]. Loss ratio is 18.3%. The insured has 31 years in business [insured.years_in_business].\n\n**Account**\nMeridian Motor Works LLC [insured.named_insured], general automotive repair and maintenance garage [insured.business_description]. Revenue 11,690,000 [insured.annual_revenue], 130 employees [insured.employee_count]. Broker: Lantern Specialty Brokers [broker.agency_name]. Prior carrier: Harborline Indemnity Company [policy.prior_carrier]. Total TIV 11,260,000 [totals.total_tiv] across 2 locations [totals.location_count]. Building limit 8,290,000 [coverage.building_limit], BPP 2,405,000 [coverage.bpp_limit], BI 565,000 [coverage.business_income_limit]. Broad form [coverage.cause_of_loss_form], replacement cost [coverage.valuation], 100% coinsurance [coverage.coinsurance_pct], 5,000 deductible [coverage.deductible]. Flood and earthquake not requested [coverage.flood_requested] [coverage.earthquake_requested].\n\n**Locations & COPE**\n- Boston, MA: 1965 masonry non-combustible, 1 story [locations[1].year_built] [locations[1].construction] [locations[1].stories], 32,600 sq ft [locations[1].square_feet]. Not sprinklered [locations[1].sprinklered], protection class 1 [locations[1].protection_class], central station alarm [locations[1].alarm_type], tile roof from 2018 [locations[1].roof_type] [locations[1].roof_year]. TIV 7,130,000 [locations[1].tiv].\n- Salt Lake City, UT: 2019 non-combustible, 4 stories [locations[2].year_built] [locations[2].construction] [locations[2].stories], 20,900 sq ft [locations[2].square_feet]. 75% sprinklered [locations[2].sprinkler_pct], protection class 2 [locations[2].protection_class], local alarm [locations[2].alarm_type], asphalt shingle roof from 2019 [locations[2].roof_type] [locations[2].roof_year]. TIV 4,130,000 [locations[2].tiv].\n\n**Loss history**\nThe only claim was 2023 vandalism [claims[HIC202378503].cause] [claims[HIC202378503].date_of_loss], closed with 0 reserve [claims[HIC202378503].reserve], paid 23,940 [claims[HIC202378503].paid]. All other years show zero claims [loss_years[2022].claim_count] [loss_years[2024].claim_count] [loss_years[2025].claim_count] [loss_years[2026].claim_count].\n\n**Needs attention**\n- Construction conflict at Salt Lake City: the spreadsheet says non_combustible, while the scan says joisted_masonry. The non_combustible value was kept per source-of-truth rules [locations[2].construction]. Verify before binding.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1990,
+  "output_tokens": 1197,
+  "latency_ms": 6900.802053000007,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

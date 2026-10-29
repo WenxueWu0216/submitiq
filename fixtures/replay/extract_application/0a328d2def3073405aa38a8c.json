@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "0cb0696158383f0fe0e0f0cfe8b0c7f8bf259eaec4cb4bb5841214ca4cd161e0",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:36.997535+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Silver Creek Foods Inc.",
+     "page": 1,
+     "evidence": "Named Insured: Silver Creek Foods Inc."
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "22-9558402",
+     "page": 1,
+     "evidence": "FEIN: 22-9558402"
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "Entity Type: Corporation"
+    },
+    "mailing_street": {
+     "value": "PO Box 954",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 954, Los Angeles, CA 90059"
+    },
+    "mailing_city": {
+     "value": "Los Angeles",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 954, Los Angeles, CA 90059"
+    },
+    "mailing_state": {
+     "value": "CA",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 954, Los Angeles, CA 90059"
+    },
+    "mailing_zip": {
+     "value": "90059",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 954, Los Angeles, CA 90059"
+    },
+    "business_description": {
+     "value": "Independent grocery store with deli and bakery counter",
+     "page": 1,
+     "evidence": "Nature of Business: Independent grocery store with deli and bakery counter"
+    },
+    "naics_code": {
+     "value": "445110",
+     "page": 1,
+     "evidence": "NAICS Code: 445110"
+    },
+    "years_in_business": {
+     "value": 57,
+     "page": 1,
+     "evidence": "Years in Business: 57"
+    },
+    "annual_revenue": {
+     "value": 9060000,
+     "page": 1,
+     "evidence": "Annual Revenue: $9,060,000"
+    },
+    "employee_count": {
+     "value": 133,
+     "page": 1,
+     "evidence": "Number of Employees: 133"
+    },
+    "website": {
+     "value": "www.silvercreek.com",
+     "page": 1,
+     "evidence": "Website: www.silvercreek.com"
+    },
+    "contact_name": {
+     "value": "Nina Martinez",
+     "page": 1,
+     "evidence": "Contact Name: Nina Martinez"
+    },
+    "contact_phone": {
+     "value": "(575) 685-1104",
+     "page": 1,
+     "evidence": "Contact Phone: (575) 685-1104"
+    },
+    "contact_email": {
+     "value": "nmartinez@silvercreek.com",
+     "page": 1,
+     "evidence": "Contact Email: nmartinez@silvercreek.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Lantern Specialty Brokers",
+     "page": 1,
+     "evidence": "Agency: Lantern Specialty Brokers"
+    },
+    "producer_name": {
+     "value": "Robert Yamamoto",
+     "page": 1,
+     "evidence": "Producer: Robert Yamamoto"
+    },
+    "producer_email": {
+     "value": "robert.yamamoto@lanternspecialty.com",
+     "page": 1,
+     "evidence": "Producer Email: robert.yamamoto@lanternspecialty.com"
+    },
+    "producer_phone": {
+     "value": "(881) 241-9698",
+     "page": 1,
+     "evidence": "Producer Phone: (881) 241-9698"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-03-01",
+     "page": 1,
+     "evidence": "Proposed Effective Date: 03/01/2027"
+    },
+    "expiration_date": {
+     "value": "2028-03-01",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: 03/01/2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "Transaction: New"
+    },
+    "prior_carrier": {
+     "value": "Sterling National Insurance",
+     "page": 1,
+     "evidence": "Prior Carrier: Sterling National Insurance"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 9675000,
+     "page": 2,
+     "evidence": "Building Limit: $9,675,000"
+    },
+    "bpp_limit": {
+     "value": 3760000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $3,760,000"
+    },
+    "business_income_limit": {
+     "value": 1655000,
+     "page": 2,
+     "evidence": "Business Income Limit: $1,655,000"
+    },
+    "deductible": {
+     "value": 2500,
+     "page": 2,
+     "evidence": "Deductible: $2,500"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 2,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 80,
+     "page": 2,
+     "evidence": "Coinsurance: 80%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: N"
+    },
+    "earthquake_requested": {
+     "value": true,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: Y"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 15090000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $15,090,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "7784 Pine Drive",
+      "page": 2,
+      "evidence": "7784 Pine Drive   Los Angeles   CA   90059"
+     },
+     "city": {
+      "value": "Los Angeles",
+      "page": 2,
+      "evidence": "7784 Pine Drive   Los Angeles   CA   90059"
+     },
+     "state": {
+      "value": "CA",
+      "page": 2,
+      "evidence": "7784 Pine Drive   Los Angeles   CA   90059"
+     },
+     "zip": {
+      "value": "90059",
+      "page": 2,
+      "evidence": "7784 Pine Drive   Los Angeles   CA   90059"
+     },
+     "construction": {
+      "value": "non_combustible",
+      "page": 2,
+      "evidence": "Non-Combustible   2004   5   37,200 N"
+     },
+     "year_built": {
+      "value": 2004,
+      "page": 2,
+      "evidence": "Non-Combustible   2004   5   37,200 N"
+     },
+     "stories": {
+      "value": 5,
+      "page": 2,
+      "evidence": "Non-Combustible   2004   5   37,200 N"
+     },
+     "square_feet": {
+      "value": 37200,
+      "page": 2,
+      "evidence": "Non-Combustible   2004   5   37,200 N"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "37,200 N   6   Tile   2013"
+     },
+     "protection_class": {
+      "value": 6,
+      "page": 2,
+      "evidence": "37,200 N   6   Tile   2013"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "6   Tile   2013   Central Station"
+     },
+     "roof_year": {
+      "value": 2013,
+      "page": 2,
+      "evidence": "6   Tile   2013   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Tile   2013   Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "5439 Jefferson Way",
+      "page": 2,
+      "evidence": "5439 Jefferson Way   Kansas City   MO   64119"
+     },
+     "city": {
+      "value": "Kansas City",
+      "page": 2,
+      "evidence": "5439 Jefferson Way   Kansas City   MO   64119"
+     },
+     "state": {
+      "value": "MO",
+      "page": 2,
+      "evidence": "5439 Jefferson Way   Kansas City   MO   64119"
+     },
+     "zip": {
+      "value": "64119",
+      "page": 2,
+      "evidence": "5439 Jefferson Way   Kansas City   MO   64119"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Joisted Masonry   1987   3   16,900 Y"
+     },
+     "year_built": {
+      "value": 1987,
+      "page": 2,
+      "evidence": "Joisted Masonry   1987   3   16,900 Y"
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "Joisted Masonry   1987   3   16,900 Y"
+     },
+     "square_feet": {
+      "value": 16900,
+      "page": 2,
+      "evidence": "Joisted Masonry   1987   3   16,900 Y"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "16,900 Y   8   Tile   2009   None"
+     },
+     "protection_class": {
+      "value": 8,
+      "page": 2,
+      "evidence": "16,900 Y   8   Tile   2009   None"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "8   Tile   2009   None"
+     },
+     "roof_year": {
+      "value": 2009,
+      "page": 2,
+      "evidence": "8   Tile   2009   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "Tile   2009   None"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9323,
+  "output_tokens": 2938,
+  "latency_ms": 13431.201111000064,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

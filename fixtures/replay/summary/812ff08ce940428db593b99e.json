@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "56e0cdc6b481789b2554aa0a1bc6455e35fbee6cf84a4d048ce93788b1bd3a23",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:49:11.543266+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept [decision]. New business [policy.transaction_type], effective 2027-03-01 [policy.effective_date]. Quote needed by 2027-02-12 [policy.quote_needed_by].\n\n**Why**\nThe rules engine returned accept [decision]. Supporting facts: 17 years in business [insured.years_in_business], one location [totals.location_count], and five-year incurred of 19,490 [totals.five_year_incurred] against five-year premium of 66,640 [totals.five_year_premium]. Loss ratio: 19,490 / 66,640 = 29.2%.\n\n**Account**\nSunrise Auto Care LLC, dba Sunrise Auto Repair [insured.named_insured][insured.dba], general automotive repair and maintenance garage [insured.business_description] in Kansas City, MO [insured.mailing_address.city][insured.mailing_address.state]. Revenue 4,920,000 [insured.annual_revenue]; 169 employees [insured.employee_count]. Broker: Hollis Benton Agency, producer Rosa Carter [broker.agency_name][broker.producer_name]. Prior carrier: Pinecrest Property & Casualty [policy.prior_carrier].\n\n**Locations & COPE**\n4261 Commerce Boulevard [locations[1].street]: frame construction [locations[1].construction], built 1973 [locations[1].year_built], 2 stories [locations[1].stories], 12,500 sq ft [locations[1].square_feet]. Not sprinklered [locations[1].sprinklered]. Protection class 4 [locations[1].protection_class]. Asphalt shingle roof from 2007 [locations[1].roof_type][locations[1].roof_year]. Central station alarm [locations[1].alarm_type]. TIV 4,990,000 [totals.total_tiv]. Replacement cost, 90% coinsurance, broad form, 10,000 deductible [coverage.valuation][coverage.coinsurance_pct][coverage.cause_of_loss_form][coverage.deductible].\n\n**Loss history**\nTwo claims, both in 2024 and both closed [loss_years[2024].claim_count][claims[PPC202441411].status][claims[CL4928961].status]: wind/hail, 13,170 incurred [claims[PPC202441411].cause][claims[PPC202441411].incurred]; equipment breakdown, 6,320 incurred [claims[CL4928961].cause][claims[CL4928961].incurred]. No claims in 2022, 2023, 2025, or 2026 [loss_years[2022].claim_count][loss_years[2023].claim_count][loss_years[2025].claim_count][loss_years[2026].claim_count].\n\n**Needs attention**\n- TIV conflict: the statement of values shows 4,990,000 while the ACORD 125/140 shows 4,213,000. The 4,990,000 figure was kept under source-of-truth rules [totals.total_tiv].\n- BPP limit is 1,270,000 [coverage.bpp_limit] while contents value is 1,275,000 [locations[1].contents_value].\n- Frame, 1973 construction without sprinklers [locations[1].construction][locations[1].year_built][locations[1].sprinklered] and a 2007 roof [locations[1].roof_year] are worth confirming.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1889,
+  "output_tokens": 1126,
+  "latency_ms": 6506.130630999905,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

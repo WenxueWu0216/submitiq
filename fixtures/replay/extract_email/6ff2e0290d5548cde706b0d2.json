@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "2bd8de343163604313d42d5833c80b2e6182bedc66a7bb5a24cc4e2ed5cce418",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:49:14.389195+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Summit Crest Restaurant Group",
+    "page": null,
+    "evidence": "new submission for Summit Crest Restaurant Group for property"
+   },
+   "effective_date": {
+    "value": "2027-02-01",
+    "page": null,
+    "evidence": "effective February 1, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-01-13",
+    "page": null,
+    "evidence": "Quote needed by 01/13/2027."
+   },
+   "producer_name": {
+    "value": "James Nguyen",
+    "page": null,
+    "evidence": "James Nguyen\nGranite Peak Insurance Group"
+   },
+   "producer_email": {
+    "value": "james.nguyen@granitepeakins.com",
+    "page": null,
+    "evidence": "james.nguyen@granitepeakins.com"
+   },
+   "producer_phone": {
+    "value": "(861) 798-8931",
+    "page": null,
+    "evidence": "(861) 798-8931"
+   },
+   "agency_name": {
+    "value": "Granite Peak Insurance Group",
+    "page": null,
+    "evidence": "Granite Peak Insurance Group"
+   },
+   "approximate_total_tiv": {
+    "value": 19400000,
+    "page": null,
+    "evidence": "Total values are roughly $19.4M across 4 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2084,
+  "output_tokens": 539,
+  "latency_ms": 3541.053393999846,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

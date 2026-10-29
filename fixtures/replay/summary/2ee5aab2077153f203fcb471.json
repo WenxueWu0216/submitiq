@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "3ee696ad2cb0b5b3be2bf81b5d621c60e1b6797861ce75077e0066039e51f61e",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:57.945273+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline, per the rules decision [decision]. The HURRICANE_ZONE rule triggered the decline.\n\n**Why**\n- HURRICANE_ZONE (decline): Location 1 is a frame building [locations[1].construction] in ZIP 77596 [locations[1].zip], which the rule treats as a tier-1 hurricane zone.\n- UNSPRINKLERED (refer): Location 3 is unsprinklered [locations[3].sprinklered] with TIV of $11,065,000 [locations[3].tiv]. This is a referral trigger only and does not change the decline.\n\n**Account**\nClearwater Properties Corp. [insured.named_insured] owns and leases multi-tenant office buildings [insured.business_description]. It is a new business submission [policy.transaction_type] with a 2026-12-01 effective date [policy.effective_date]. The prior carrier is Pinecrest Property & Casualty [policy.prior_carrier]. Total TIV is $51,395,000 [totals.total_tiv] across 8 locations [totals.location_count]. Flood is requested [coverage.flood_requested]. The broker needs a quote by 2026-11-11 [policy.quote_needed_by].\n\n**Locations & COPE**\n- Location 1 (Galveston, TX): frame, built 1998, 2 stories, unsprinklered, no alarm [locations[1].construction] [locations[1].year_built] [locations[1].stories] [locations[1].sprinklered] [locations[1].alarm_type]. TIV is $7,140,000 [locations[1].tiv].\n- Location 3 (Dallas, TX): modified fire resistive, 6 stories, unsprinklered [locations[3].construction] [locations[3].stories] [locations[3].sprinklered].\n- Locations 5 and 6 are 100% sprinklered [locations[5].sprinkler_pct] [locations[6].sprinkler_pct].\n\n**Loss history**\nFive-year incurred is $24,940 [totals.five_year_incurred] against five-year premium of $292,020 [totals.five_year_premium]. The two claims are both closed:\n- Theft/Burglary, $8,710 incurred [claims[PPC202214945].cause] [claims[PPC202214945].incurred]\n- Roof Leak, $16,230 incurred [claims[CL6859487].cause] [claims[CL6859487].incurred]\n\n**Needs attention**\n- No review flags were raised [review_flags].\n- The decline stands on Location 1 alone [decision]. The broker should be told that the Galveston frame location drives it.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 3667,
+  "output_tokens": 875,
+  "latency_ms": 5199.818303000029,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

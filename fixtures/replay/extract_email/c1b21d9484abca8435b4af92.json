@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "ed3faacb27869f27a2454e9023a0cc07b22aca68ad428633be15f6913a280cac",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:41.988360+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "COPPER HILL FOODS INC.",
+    "page": null,
+    "evidence": "new submission for COPPER HILL FOODS INC. for property"
+   },
+   "effective_date": {
+    "value": "2027-01-15",
+    "page": null,
+    "evidence": "with an inception date of 1/15/27"
+   },
+   "quote_needed_by": {
+    "value": "2027-01-04",
+    "page": null,
+    "evidence": "get us terms no later than Monday, January 4, 2027"
+   },
+   "producer_name": {
+    "value": "Robert O'Brien",
+    "page": null,
+    "evidence": "Robert O'Brien"
+   },
+   "producer_email": {
+    "value": "robert.obrien@northstarcb.com",
+    "page": null,
+    "evidence": "robert.obrien@northstarcb.com"
+   },
+   "producer_phone": {
+    "value": "(809) 909-5900",
+    "page": null,
+    "evidence": "(809) 909-5900"
+   },
+   "agency_name": {
+    "value": "Northstar Commercial Brokerage",
+    "page": null,
+    "evidence": "Northstar Commercial Brokerage"
+   },
+   "approximate_total_tiv": {
+    "value": 6200000,
+    "page": null,
+    "evidence": "Total values are roughly $6.2M across 2 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2094,
+  "output_tokens": 539,
+  "latency_ms": 3227.8986200001327,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "53e1d42c92cc7c606a4340de158b655a5e967617dda920a0fb1e017523dfd12b",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:41:51.889554+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Summit Crest",
+    "page": null,
+    "evidence": "new submission for Summit Crest for commercial property"
+   },
+   "effective_date": {
+    "value": "2027-03-01",
+    "page": null,
+    "evidence": "with an inception date of 3/1/27"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-16",
+    "page": null,
+    "evidence": "Quote needed by 02/16/2027."
+   },
+   "producer_name": {
+    "value": "Laura Okafor",
+    "page": null,
+    "evidence": "Laura Okafor"
+   },
+   "producer_email": {
+    "value": "laura.okafor@brightlineins.com",
+    "page": null,
+    "evidence": "laura.okafor@brightlineins.com"
+   },
+   "producer_phone": {
+    "value": "(612) 221-9767",
+    "page": null,
+    "evidence": "(612) 221-9767"
+   },
+   "agency_name": {
+    "value": "Brightline Insurance Partners",
+    "page": null,
+    "evidence": "Brightline Insurance Partners"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2038,
+  "output_tokens": 492,
+  "latency_ms": 2736.029220999967,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "320af51f695f05176ed853fe191d20efb551cd7aebedffd524b4886cccd91d0e",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:30.055504+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The LARGE_LOSS rule triggered: claim HIC-2023-05504 incurred $285,000 for Water Damage [claims[HIC202305504].incurred] [claims[HIC202305504].cause].\n\n**Why**\nThe single claim is closed, with $285,000 paid and $0.00 reserve [claims[HIC202305504].status] [claims[HIC202305504].paid] [claims[HIC202305504].reserve]. Date of loss was 2023-10-09 [claims[HIC202305504].date_of_loss].\n\n**Account**\nMagnolia Engineering LLC, a civil and structural engineering consulting office [insured.business_description], in business 4 years [insured.years_in_business]. New business [policy.transaction_type] effective 2027-01-15 [policy.effective_date]; quote needed by 2027-01-04 [policy.quote_needed_by]. Prior carrier is Harborline Indemnity Company [policy.prior_carrier]. Total TIV is 77,055,000 across 12 locations [totals.total_tiv] [totals.location_count]. Special form, replacement cost, 90% coinsurance, $10,000 deductible [coverage.cause_of_loss_form] [coverage.valuation] [coverage.coinsurance_pct] [coverage.deductible]. Flood and earthquake not requested [coverage.flood_requested] [coverage.earthquake_requested].\n\n**Locations & COPE**\nAll locations are engineering offices (example: [locations[1].occupancy]). Several are unsprinklered: Omaha, 6001 Franklin Road [locations[2].sprinklered], San Francisco [locations[4].sprinklered], and Los Angeles [locations[5].sprinklered]. Pittsburgh is 60% sprinklered [locations[10].sprinkler_pct]. Franklin Road is frame construction, built 1987, with no alarm [locations[2].construction] [locations[2].year_built] [locations[2].alarm_type].\n\n**Loss history**\nFive-year incurred is 285,000 against five-year premium of 752,080 [totals.five_year_incurred] [totals.five_year_premium]. That gives a loss ratio of about 37.9%. The only year with a claim was 2023 (1 claim) [loss_years[2023].claim_count]; all other years show 0 claims [loss_years[2022].claim_count] [loss_years[2024].claim_count] [loss_years[2025].claim_count] [loss_years[2026].claim_count].\n\n**Needs attention**\n- Construction conflict at 6001 Franklin Road: the schedule says frame, the signed app says joisted_masonry; frame was kept [locations[2].construction].\n- Construction conflict at 1696 Jefferson Avenue: the schedule says joisted_masonry, the signed app says masonry_non_combustible; joisted_masonry was kept [locations[3].construction].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 4607,
+  "output_tokens": 983,
+  "latency_ms": 5723.049930999991,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

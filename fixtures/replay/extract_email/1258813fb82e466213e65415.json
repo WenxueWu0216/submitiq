@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "f854d3cb820cbf260060eef63b9e77a88cc61e02faee4f4b23f575552ae39fc9",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:27.734415+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Evergreen Sports Center L.L.C.",
+    "page": null,
+    "evidence": "new submission for Evergreen Sports Center L.L.C. for commercial property"
+   },
+   "effective_date": {
+    "value": "2027-02-01",
+    "page": null,
+    "evidence": "effective February 1, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-01-11",
+    "page": null,
+    "evidence": "We need indications by January 11 if at all possible."
+   },
+   "producer_name": {
+    "value": "Chen Hughes",
+    "page": null,
+    "evidence": "Chen Hughes\nCopperfield Risk Advisors"
+   },
+   "producer_email": {
+    "value": "chen.hughes@copperfieldrisk.com",
+    "page": null,
+    "evidence": "chen.hughes@copperfieldrisk.com"
+   },
+   "producer_phone": {
+    "value": "(692) 865-4985",
+    "page": null,
+    "evidence": "(692) 865-4985"
+   },
+   "agency_name": {
+    "value": "Copperfield Risk Advisors",
+    "page": null,
+    "evidence": "Copperfield Risk Advisors"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2070,
+  "output_tokens": 532,
+  "latency_ms": 3317.3297329999514,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

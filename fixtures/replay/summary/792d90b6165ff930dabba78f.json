@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "4df516372b0f1a9744f1edfc94e8fd2a238de9291fd1fb2ba6060d17ef8613e1",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:20.535495+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept, per the rules decision [decision]. No review flags were raised [review_flags]. Quote is needed by 2026-12-06 [policy.quote_needed_by]; submission was received 2026-11-20 [policy.submission_received_date].\n\n**Why**\nThe rules engine returned accept with no flags [decision][review_flags]. The five-year incurred is 0.00 [totals.five_year_incurred] against five-year premium of 216,580 [totals.five_year_premium], so the loss ratio is 0%. All five loss years show zero claims [loss_years[2021].claim_count][loss_years[2022].claim_count][loss_years[2023].claim_count][loss_years[2024].claim_count][loss_years[2025].claim_count].\n\n**Account**\nFalcon Ridge Motor Works LLC [insured.named_insured], a general automotive repair and maintenance garage [insured.business_description], NAICS 811111 [insured.naics_code]. Revenue is 19,330,000 [insured.annual_revenue] with 367 employees [insured.employee_count]. New business [policy.transaction_type], term 2026-12-15 to 2027-12-15 [policy.effective_date][policy.expiration_date]. Prior carrier is Bridgewater Assurance [policy.prior_carrier]. Broker: Lantern Specialty Brokers, producer Brian Carter [broker.agency_name][broker.producer_name]. Total TIV is 19,545,000 across 3 locations [totals.total_tiv][totals.location_count]. Coverage is special form, replacement cost, 90% coinsurance, 25,000 deductible [coverage.cause_of_loss_form][coverage.valuation][coverage.coinsurance_pct][coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested][coverage.earthquake_requested].\n\n**Locations & COPE**\n- Pittsburgh, PA: joisted masonry, built 1974, unsprinklered, no alarm, PC 3, membrane roof from 2007, TIV 5,425,000 [locations[1].construction][locations[1].year_built][locations[1].sprinklered][locations[1].alarm_type][locations[1].protection_class][locations[1].roof_year][locations[1].tiv].\n- Minneapolis, MN: joisted masonry, built 1972, 3 stories, 100% sprinklered, central station alarm, PC 6, metal roof from 2012, TIV 10,540,000 [locations[2].year_built][locations[2].stories][locations[2].sprinkler_pct][locations[2].alarm_type][locations[2].protection_class][locations[2].roof_year][locations[2].tiv].\n- Indianapolis, IN: joisted masonry, built 1980, 3 stories, unsprinklered, local alarm, PC 6, asphalt shingle roof, TIV 3,580,000 [locations[3].year_built][locations[3].stories][locations[3].sprinklered][locations[3].alarm_type][locations[3].protection_class][locations[3].roof_type][locations[3].tiv].\n\n**Loss history**\nBridgewater Assurance carried all years 2021\u20132025 with no claims and 0.00 incurred each year [loss_years[2021].carrier][loss_years[2025].total_incurred][totals.five_year_incurred].\n\n**Needs attention**\nNo flags were raised [review_flags]. For file completeness: the Indianapolis roof year is not provided [locations[3].roof_type], and Indianapolis carries no BI value [locations[3].bi_value].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2037,
+  "output_tokens": 1211,
+  "latency_ms": 6661.411986999951,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "40a100ee0cf0d929d73542f84b124c687e87fe1275bb7faf5ae21a0d61a9b6a9",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:41:46.510457+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Old Mill Salvage L.L.C.",
+     "page": 1,
+     "evidence": "Old Mill Salvage L.L.C."
+    },
+    "dba": {
+     "value": "Old Scrap Yard",
+     "page": 1,
+     "evidence": "Old Scrap Yard"
+    },
+    "fein": {
+     "value": "92-9790147",
+     "page": 1,
+     "evidence": "92-9790147"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "ORGANIZATION LLC"
+    },
+    "mailing_street": {
+     "value": "8619 Mill Street",
+     "page": 1,
+     "evidence": "8619 Mill Street   Houston   TX   77073"
+    },
+    "mailing_city": {
+     "value": "Houston",
+     "page": 1,
+     "evidence": "8619 Mill Street   Houston   TX   77073"
+    },
+    "mailing_state": {
+     "value": "TX",
+     "page": 1,
+     "evidence": "8619 Mill Street   Houston   TX   77073"
+    },
+    "mailing_zip": {
+     "value": "77073",
+     "page": 1,
+     "evidence": "8619 Mill Street   Houston   TX   77073"
+    },
+    "business_description": {
+     "value": "Scrap metal recycling yard with shredding equipment",
+     "page": 1,
+     "evidence": "Scrap metal recycling yard with shredding equipment"
+    },
+    "naics_code": {
+     "value": "423930",
+     "page": 1,
+     "evidence": "INDUSTRY CODE 423930"
+    },
+    "years_in_business": {
+     "value": 28,
+     "page": 1,
+     "evidence": "YEARS IN OPERATION   ANNUAL SALES   FULL-TIME STAFF 28"
+    },
+    "annual_revenue": {
+     "value": 13480000,
+     "page": 1,
+     "evidence": "$13,480,000"
+    },
+    "employee_count": {
+     "value": 57,
+     "page": 1,
+     "evidence": "FULL-TIME STAFF 57"
+    },
+    "website": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "contact_name": {
+     "value": "Michael Novak",
+     "page": 1,
+     "evidence": "INSPECTION CONTACT Michael Novak"
+    },
+    "contact_phone": {
+     "value": "(511) 754-7034",
+     "page": 1,
+     "evidence": "(511) 754-7034"
+    },
+    "contact_email": {
+     "value": "mnovak@oldmill.com",
+     "page": 1,
+     "evidence": "mnovak@oldmill.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Atlas & Reed Insurance Services",
+     "page": 1,
+     "evidence": "Atlas & Reed Insurance Services"
+    },
+    "producer_name": {
+     "value": "Nina Patel",
+     "page": 1,
+     "evidence": "Nina Patel"
+    },
+    "producer_email": {
+     "value": "nina.patel@atlasreed.com",
+     "page": 1,
+     "evidence": "nina.patel@atlasreed.com"
+    },
+    "producer_phone": {
+     "value": "(957) 858-6281",
+     "page": 1,
+     "evidence": "(957) 858-6281"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-03-01",
+     "page": 1,
+     "evidence": "INCEPTION 03/01/2027"
+    },
+    "expiration_date": {
+     "value": "2028-03-01",
+     "page": 1,
+     "evidence": "EXPIRY 03/01/2028"
+    },
+    "transaction_type": {
+     "value": "renewal",
+     "page": 1,
+     "evidence": "Renewal"
+    },
+    "prior_carrier": {
+     "value": "Harborline Indemnity Company",
+     "page": 1,
+     "evidence": "Harborline Indemnity Company"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 7685000,
+     "page": 1,
+     "evidence": "$7,685,000"
+    },
+    "bpp_limit": {
+     "value": 3470000,
+     "page": 1,
+     "evidence": "$3,470,000"
+    },
+    "business_income_limit": {
+     "value": 455000,
+     "page": 1,
+     "evidence": "$455,000"
+    },
+    "deductible": {
+     "value": 1000,
+     "page": 1,
+     "evidence": "AOP DEDUCTIBLE $1,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 80,
+     "page": 1,
+     "evidence": "80%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "PERILS Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "FLOOD? N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "QUAKE? N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 11610000,
+    "page": 1,
+    "evidence": "TOTAL VALUES $11,610,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 1,
+    "evidence": "LOCATIONS 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "8619 Mill Street",
+      "page": 2,
+      "evidence": "8619 Mill Street, Houston, TX 77073"
+     },
+     "city": {
+      "value": "Houston",
+      "page": 2,
+      "evidence": "8619 Mill Street, Houston, TX 77073"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "8619 Mill Street, Houston, TX 77073"
+     },
+     "zip": {
+      "value": "77073",
+      "page": 2,
+      "evidence": "8619 Mill Street, Houston, TX 77073"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Frame   1998   3   37,900"
+     },
+     "year_built": {
+      "value": 1998,
+      "page": 2,
+      "evidence": "Frame   1998   3   37,900"
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "Frame   1998   3   37,900"
+     },
+     "square_feet": {
+      "value": 37900,
+      "page": 2,
+      "evidence": "Frame   1998   3   37,900"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "Y   4   Built-Up   2015   Local"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "Y   4   Built-Up   2015   Local"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Y   4   Built-Up   2015   Local"
+     },
+     "roof_year": {
+      "value": 2015,
+      "page": 2,
+      "evidence": "Y   4   Built-Up   2015   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "Y   4   Built-Up   2015   Local"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "4882 Elm Way",
+      "page": 2,
+      "evidence": "4882 Elm Way, Miami, FL 33135"
+     },
+     "city": {
+      "value": "Miami",
+      "page": 2,
+      "evidence": "4882 Elm Way, Miami, FL 33135"
+     },
+     "state": {
+      "value": "FL",
+      "page": 2,
+      "evidence": "4882 Elm Way, Miami, FL 33135"
+     },
+     "zip": {
+      "value": "33135",
+      "page": 2,
+      "evidence": "4882 Elm Way, Miami, FL 33135"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Joisted Masonry   1964   1   7,000"
+     },
+     "year_built": {
+      "value": 1964,
+      "page": 2,
+      "evidence": "Joisted Masonry   1964   1   7,000"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "Joisted Masonry   1964   1   7,000"
+     },
+     "square_feet": {
+      "value": 7000,
+      "page": 2,
+      "evidence": "Joisted Masonry   1964   1   7,000"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "Y   3   Membrane (TPO)   2025   None"
+     },
+     "protection_class": {
+      "value": 3,
+      "page": 2,
+      "evidence": "Y   3   Membrane (TPO)   2025   None"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Y   3   Membrane (TPO)   2025   None"
+     },
+     "roof_year": {
+      "value": 2025,
+      "page": 2,
+      "evidence": "Y   3   Membrane (TPO)   2025   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "Y   3   Membrane (TPO)   2025   None"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9454,
+  "output_tokens": 2761,
+  "latency_ms": 12713.57333499998,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

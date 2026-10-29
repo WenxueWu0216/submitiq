@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "a71171c7d3acd6bf8e8ffe0a4a72d8e847f3678c3994af4df0924849b1aa00ce",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:03.376297+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Twin Pines",
+    "page": null,
+    "evidence": "Please find attached a new submission for Twin Pines for commercial property"
+   },
+   "effective_date": {
+    "value": "2027-01-01",
+    "page": null,
+    "evidence": "effective January 1, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2026-12-20",
+    "page": null,
+    "evidence": "We need indications by December 20 if at all possible."
+   },
+   "producer_name": {
+    "value": "Mei Kim",
+    "page": null,
+    "evidence": "Mei Kim"
+   },
+   "producer_email": {
+    "value": "mei.kim@brightlineins.com",
+    "page": null,
+    "evidence": "mei.kim@brightlineins.com"
+   },
+   "producer_phone": {
+    "value": "(736) 915-8049",
+    "page": null,
+    "evidence": "(736) 915-8049"
+   },
+   "agency_name": {
+    "value": "Brightline Insurance Partners",
+    "page": null,
+    "evidence": "Brightline Insurance Partners"
+   },
+   "approximate_total_tiv": {
+    "value": 4000000,
+    "page": null,
+    "evidence": "Total values are roughly $4.0M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2062,
+  "output_tokens": 515,
+  "latency_ms": 3355.541912000035,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

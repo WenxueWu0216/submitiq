@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "d5c72fea0b8116be9f31f7fe6df4cfbc92dbb3175d923042603d63f87596b506",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:49:04.983431+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "SUNRISE AUTO CARE LLC",
+    "page": null,
+    "evidence": "New submission for SUNRISE AUTO CARE LLC for property (building, BPP, BI)"
+   },
+   "effective_date": {
+    "value": "2027-03-01",
+    "page": null,
+    "evidence": "requested effective date of 03/01/2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-12",
+    "page": null,
+    "evidence": "get us terms no later than Friday, February 12, 2027"
+   },
+   "producer_name": {
+    "value": "Rosa Carter",
+    "page": null,
+    "evidence": "Rosa Carter"
+   },
+   "producer_email": {
+    "value": "rosa.carter@hollisbenton.com",
+    "page": null,
+    "evidence": "rosa.carter@hollisbenton.com"
+   },
+   "producer_phone": {
+    "value": "(617) 327-9885",
+    "page": null,
+    "evidence": "(617) 327-9885"
+   },
+   "agency_name": {
+    "value": "Hollis Benton Agency",
+    "page": null,
+    "evidence": "Hollis Benton Agency"
+   },
+   "approximate_total_tiv": {
+    "value": 5000000,
+    "page": null,
+    "evidence": "Total values are roughly $5.0M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2091,
+  "output_tokens": 548,
+  "latency_ms": 3588.8193050000154,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

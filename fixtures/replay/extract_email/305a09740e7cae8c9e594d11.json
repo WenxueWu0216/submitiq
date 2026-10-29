@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "35948cf8c460893a775b80c66143653bfca81c3f02fae9a8da096d6c88a6ea78",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:14.593260+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Copper Hill",
+    "page": null,
+    "evidence": "Please find attached a new submission for Copper Hill for property"
+   },
+   "effective_date": {
+    "value": "2027-02-15",
+    "page": null,
+    "evidence": "requested effective date of 02/15/2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-05",
+    "page": null,
+    "evidence": "Quote needed by 02/05/2027."
+   },
+   "producer_name": {
+    "value": "Maria Reyes",
+    "page": null,
+    "evidence": "Maria Reyes\nGranite Peak Insurance Group"
+   },
+   "producer_email": {
+    "value": "maria.reyes@granitepeakins.com",
+    "page": null,
+    "evidence": "From: Maria Reyes <maria.reyes@granitepeakins.com>"
+   },
+   "producer_phone": {
+    "value": "(763) 834-9416",
+    "page": null,
+    "evidence": "(763) 834-9416"
+   },
+   "agency_name": {
+    "value": "Granite Peak Insurance Group",
+    "page": null,
+    "evidence": "Granite Peak Insurance Group"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2047,
+  "output_tokens": 534,
+  "latency_ms": 3394.7593550000192,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

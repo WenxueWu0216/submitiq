@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "6ebdf450dac545dd9f46b27612b12425fd42faabcc453cb01b4ec3fc9fb2f181",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:18.059271+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline. The rules engine returned a decline on the LOSS_RATIO rule [decision: LOSS_RATIO (decline)].\n\n**Why**\nThe 5-year loss ratio is 171%, above the 100% threshold. It is based on five-year incurred of 126,680 [totals.five_year_incurred] against five-year premium of 74,290 [totals.five_year_premium]. No review flags were raised [review_flags].\n\n**Account**\nClearwater Grocers Partners LP [insured.named_insured], a partnership [insured.entity_type], operates an independent grocery store with deli and bakery counter [insured.business_description]. It has 26 years in business [insured.years_in_business] and revenue of 7,020,000 [insured.annual_revenue]. This is a new transaction [policy.transaction_type] effective 2027-01-15 [policy.effective_date]. Prior carrier is Continental Mutual Insurance Co. [policy.prior_carrier]. Quote was needed by 2026-12-26 [policy.quote_needed_by]. Broker is Atlas & Reed Insurance Services [broker.agency_name].\n\n**Locations & COPE**\nOne location [totals.location_count] at 4671 Park Drive, Minneapolis, MN [locations[1].street, locations[1].city, locations[1].state]. It is a fire-resistive [locations[1].construction], 5-story [locations[1].stories] building built in 2012 [locations[1].year_built], 100% sprinklered [locations[1].sprinkler_pct], with protection class 4 [locations[1].protection_class] and a local alarm [locations[1].alarm_type]. The roof is asphalt shingle, dated 2022 [locations[1].roof_type, locations[1].roof_year]. Total TIV is 6,245,000 [totals.total_tiv].\n\n**Loss history**\nThree closed claims, all with zero reserve:\n- Frozen pipes, 2023-03-20, incurred 33,880 [claims[CMI202341710].cause, claims[CMI202341710].date_of_loss, claims[CMI202341710].incurred]\n- Wind/hail, 2023-06-30, incurred 57,790 [claims[CMI202321655].cause, claims[CMI202321655].date_of_loss, claims[CMI202321655].incurred]\n- Wind/hail, 2024-02-03, incurred 35,010 [claims[CL6741491].cause, claims[CL6741491].date_of_loss, claims[CL6741491].incurred]\n\nLoss years 2022, 2025 and 2026 show zero claims [loss_years[2022].claim_count, loss_years[2025].claim_count, loss_years[2026].claim_count].\n\n**Needs attention**\nNothing is flagged for review [review_flags]. The decision rests on the loss ratio rule alone.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1989,
+  "output_tokens": 958,
+  "latency_ms": 5526.039208999919,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

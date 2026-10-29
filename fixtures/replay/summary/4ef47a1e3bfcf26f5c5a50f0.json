@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "97c5c761526469c7df0ea55ebb15a0705873128bef1a69747d80f1028f6d9b2e",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:55.279095+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules decision is \"refer\" on two triggers: CLASS_REFER and MISSING_INFO.\n\n**Why**\n- CLASS_REFER: NAICS 721110 (Hotel / motel) requires referral [insured.naics_code].\n- MISSING_INFO: location 2 has no year built [locations[2].year_built]. It is required for the appetite rules and was not found in any document [review_flags: locations[2].year_built].\n\n**Account**\nRedstone Inn Corp., a corporation [insured.entity_type], operates a limited-service hotel with no restaurant [insured.business_description]. It has been in business 58 years [insured.years_in_business], with 144 employees [insured.employee_count]. This is new business [policy.transaction_type], effective 2027-01-01 [policy.effective_date]. The prior carrier is Great Plains Casualty [policy.prior_carrier] and the quote is needed by 2026-12-16 [policy.quote_needed_by]. Requested limits are building 4,055,000 [coverage.building_limit], BPP 900,000 [coverage.bpp_limit] and BI 400,000 [coverage.business_income_limit], on a broad form [coverage.cause_of_loss_form] with a 1,000 deductible [coverage.deductible].\n\n**Locations & COPE**\n- Loc 1, Charlotte NC: joisted masonry [locations[1].construction], built 1972 [locations[1].year_built], 2 stories [locations[1].stories], unsprinklered [locations[1].sprinklered], no alarm [locations[1].alarm_type], PC 8 [locations[1].protection_class], TIV 1,415,000 [locations[1].tiv].\n- Loc 2, Salt Lake City UT: fire resistive [locations[2].construction], 8 stories [locations[2].stories], unsprinklered [locations[2].sprinklered], central station alarm [locations[2].alarm_type], roof year 2019 [locations[2].roof_year], PC 7 [locations[2].protection_class], TIV 3,940,000 [locations[2].tiv].\n\n**Loss history**\nFive-year incurred is 24,440 [totals.five_year_incurred] against premium of 72,470 [totals.five_year_premium], a loss ratio of 33.7%. There are two closed claims: 2023 water damage, 13,540 incurred [claims[CL2872928].incurred], and 2024 equipment breakdown, 10,900 incurred [claims[GPC202410877].incurred]. Both have zero reserve [claims[CL2872928].reserve] [claims[GPC202410877].reserve].\n\n**Needs attention**\n- Obtain the year built for location 2 [locations[2].year_built].\n- TIV conflict: one source shows 5,355,000 and another 4,497,000. The derived value, 5,355,000, was kept [totals.total_tiv].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2197,
+  "output_tokens": 978,
+  "latency_ms": 5534.579838000127,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

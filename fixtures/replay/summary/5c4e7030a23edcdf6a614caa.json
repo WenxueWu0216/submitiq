@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "cc4917227b2d4d6f898dae83dab2838edf9df1aedaa3e882a12a28bb9e6b1348",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:00.634492+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept, per the rules decision [decision]. This is a new-business submission [policy.transaction_type] for a policy period of 2027-02-15 to 2028-02-15 [policy.effective_date][policy.expiration_date]. Quote is needed by 2027-02-03 [policy.quote_needed_by].\n\n**Why**\nLoss experience is light: five-year incurred of 15,740 [totals.five_year_incurred] against five-year premium of 40,300 [totals.five_year_premium], a loss ratio of 39.1%. Both claims are closed with zero reserve [claims[CL9496574].status][claims[CL2823255].status]. The single location is sprinklered, with central station alarm [locations[1].sprinklered][locations[1].alarm_type].\n\n**Account**\nSunrise Engineering Group Corporation [insured.named_insured], a civil and structural engineering consulting office [insured.business_description] in Sacramento, CA [insured.mailing_address.city][insured.mailing_address.state]. Broker is Tidewater Risk Partners [broker.agency_name]. Prior carrier is Great Plains Casualty [policy.prior_carrier]. Total TIV is 3,970,000 [totals.total_tiv].\n\n**Locations & COPE**\nOne location [totals.location_count] at 1617 Main Avenue [locations[1].street]: a 1-story [locations[1].stories], 17,400 sq ft [locations[1].square_feet] non-combustible building [locations[1].construction] built in 1966 [locations[1].year_built]. Sprinkler coverage is 60% [locations[1].sprinkler_pct], protection class 6 [locations[1].protection_class], roof is asphalt shingle [locations[1].roof_type].\n\n**Loss history**\n- 2022 water damage, incurred 10,670 [claims[CL9496574].cause][claims[CL9496574].incurred]\n- 2024 frozen pipes, incurred 5,070 [claims[CL2823255].cause][claims[CL2823255].incurred]\n- No claims in 2023, 2025, or 2026 [loss_years[2023].claim_count][loss_years[2025].claim_count][loss_years[2026].claim_count]\n\n**Needs attention**\nMany extracted fields are flagged low confidence (0.51\u20130.57 vs 0.8 threshold) and should be verified against the submission:\n- Coverage terms: building limit, BPP limit, business income limit (listed as 0.00), deductible, cause of loss form, flood and earthquake requests [coverage.building_limit][coverage.bpp_limit][coverage.business_income_limit][coverage.deductible][coverage.cause_of_loss_form][coverage.flood_requested][coverage.earthquake_requested]\n- Policy dates and transaction type [policy.effective_date][policy.expiration_date][policy.transaction_type]\n- Insured details: revenue, contact name, entity type, years in business [insured.annual_revenue][insured.contact_name][insured.entity_type][insured.years_in_business]",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2172,
+  "output_tokens": 1031,
+  "latency_ms": 6184.433945999899,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

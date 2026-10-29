@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "e6fc853629b99b7393251cb559806e0e9c2197fc0677cd99cbfb04b01516356c",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:27.488832+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Northgate Hardware",
+    "page": null,
+    "evidence": "Please find attached a new submission for Northgate Hardware for a property quote"
+   },
+   "effective_date": {
+    "value": "2027-02-01",
+    "page": null,
+    "evidence": "effective February 1, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-01-22",
+    "page": null,
+    "evidence": "get us terms no later than Friday, January 22, 2027"
+   },
+   "producer_name": {
+    "value": "Brian Nguyen",
+    "page": null,
+    "evidence": "Brian Nguyen\nHollis Benton Agency"
+   },
+   "producer_email": {
+    "value": "brian.nguyen@hollisbenton.com",
+    "page": null,
+    "evidence": "From: Brian Nguyen <brian.nguyen@hollisbenton.com>"
+   },
+   "producer_phone": {
+    "value": "(973) 897-2672",
+    "page": null,
+    "evidence": "(973) 897-2672"
+   },
+   "agency_name": {
+    "value": "Hollis Benton Agency",
+    "page": null,
+    "evidence": "Hollis Benton Agency"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2059,
+  "output_tokens": 531,
+  "latency_ms": 3117.452866000008,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

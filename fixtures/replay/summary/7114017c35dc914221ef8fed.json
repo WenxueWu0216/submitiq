@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "30d79c49396cbf1485d944968881b6f699f0d8f1f3c4c0fb74b374027fdc962f",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:41.470663+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine returned refer on two triggers: missing protection class and location TIV above the $25,000,000 threshold [decision].\n\n**Why**\n- Location 1 TIV is $32,850,000, above the $25,000,000 limit [locations[1].tiv].\n- Protection class is missing and was not found in any document [locations[1].protection_class].\n\n**Account**\nCopper Hill Sports Center LLC, dba Copper Fitness Center [insured.named_insured][insured.dba], a fitness center with weights, classes and locker rooms [insured.business_description]. In business 45 years [insured.years_in_business]; 315 employees [insured.employee_count]. Renewal from Sterling National Insurance [policy.transaction_type][policy.prior_carrier], effective 2026-12-01 [policy.effective_date]. Quote needed by 2026-11-17 [policy.quote_needed_by]. Broker: Lantern Specialty Brokers [broker.agency_name].\n\n**Locations & COPE**\nOne location at 3338 Maple Avenue, San Francisco, CA [totals.location_count][locations[1].street][locations[1].city][locations[1].state]. Masonry non-combustible, built 2021, 5 stories, 166,800 sq ft [locations[1].construction][locations[1].year_built][locations[1].stories][locations[1].square_feet]. 100% sprinklered, central station alarm, tile roof from 2021 [locations[1].sprinkler_pct][locations[1].alarm_type][locations[1].roof_type][locations[1].roof_year]. Building $30,030,000, contents $1,860,000, BI $960,000 [locations[1].building_value][locations[1].contents_value][locations[1].bi_value].\n\n**Loss history**\nOne claim: theft/burglary, loss date 2022-10-05, closed, $53,530 paid, $0 reserve [claims[CL5068947].cause][claims[CL5068947].date_of_loss][claims[CL5068947].status][claims[CL5068947].paid][claims[CL5068947].reserve]. Five-year incurred is $53,530 against $381,600 premium [totals.five_year_incurred][totals.five_year_premium], a loss ratio of 14.0%. No claims in the other four years [loss_years[2022].claim_count][loss_years[2023].claim_count][loss_years[2024].claim_count][loss_years[2025].claim_count].\n\n**Needs attention**\n- Obtain protection class [locations[1].protection_class].\n- Low-confidence extractions (0.51) need verification: building, BPP and BI limits, deductible, cause of loss form, flood and earthquake flags, contact name and entity type [coverage.building_limit][coverage.bpp_limit][coverage.business_income_limit][coverage.deductible][coverage.cause_of_loss_form][coverage.flood_requested][coverage.earthquake_requested][insured.contact_name][insured.entity_type].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2052,
+  "output_tokens": 1003,
+  "latency_ms": 6875.68116500006,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

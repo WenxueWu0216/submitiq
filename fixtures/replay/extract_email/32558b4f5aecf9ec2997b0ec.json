@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "c02ff424730e1db82467f9648466fb7342548eab7b8aa435749d5164671220dd",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:41.536526+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Prairie Wind Engineering Group, LLC",
+    "page": null,
+    "evidence": "new submission for Prairie Wind Engineering Group, LLC for property"
+   },
+   "effective_date": {
+    "value": "2026-12-15",
+    "page": null,
+    "evidence": "requested effective date of 12/15/2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-28",
+    "page": null,
+    "evidence": "We need indications by November 28 if at all possible."
+   },
+   "producer_name": {
+    "value": "Brian Novak",
+    "page": null,
+    "evidence": "Brian Novak\nLantern Specialty Brokers"
+   },
+   "producer_email": {
+    "value": "brian.novak@lanternspecialty.com",
+    "page": null,
+    "evidence": "From: Brian Novak <brian.novak@lanternspecialty.com>"
+   },
+   "producer_phone": {
+    "value": "(487) 592-8665",
+    "page": null,
+    "evidence": "(487) 592-8665"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2071,
+  "output_tokens": 547,
+  "latency_ms": 3671.6813900000034,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

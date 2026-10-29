@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "b38b58f6adb6972a1733d8a5610a9da4e1638d7322c0a0d8e004b211a2173f7b",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:10.417498+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept, as decided by the rules engine [decision]. No review flags were raised [review_flags].\n\n**Why**\nThe submission is a new-business, 3-location grocery account [policy.transaction_type] [totals.location_count] with TIV of 18,860,000 [totals.total_tiv]. Five-year incurred losses are 43,680 against 172,720 in premium [totals.five_year_incurred] [totals.five_year_premium], a 25.3% loss ratio.\n\n**Account**\n- Summit Crest Grocers, a sole proprietor, in business 11 years [insured.named_insured] [insured.entity_type] [insured.years_in_business].\n- Prior carrier is Bridgewater Assurance [policy.prior_carrier].\n- Term runs 2027-02-01 to 2028-02-01 [policy.effective_date] [policy.expiration_date]. The quote is needed by 2027-01-21 [policy.quote_needed_by].\n- Coverage is on a broad form at actual cash value, 100% coinsurance, with a 5,000 deductible [coverage.cause_of_loss_form] [coverage.valuation] [coverage.coinsurance_pct] [coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested] [coverage.earthquake_requested].\n\n**Locations & COPE**\n- Indianapolis: joisted masonry, built 2010, 75% sprinklered, PC 6, central station alarm, TIV 11,415,000 [locations[1].construction] [locations[1].year_built] [locations[1].sprinkler_pct] [locations[1].protection_class] [locations[1].alarm_type] [locations[1].tiv].\n- Columbus: frame, built 1965, 50% sprinklered, roof replaced 2024, TIV 5,650,000 [locations[2].construction] [locations[2].year_built] [locations[2].sprinkler_pct] [locations[2].roof_year] [locations[2].tiv].\n- Minneapolis: non-combustible, 90% sprinklered, no alarm, TIV 1,795,000 [locations[3].construction] [locations[3].sprinkler_pct] [locations[3].alarm_type] [locations[3].tiv].\n\n**Loss history**\n- 2023 vandalism claim is closed, 10,270 incurred [claims[BWA202309192].status] [claims[BWA202309192].incurred].\n- Two 2026 claims are open. Lightning has 11,490 incurred and Wind/Hail has 21,920 incurred [claims[CL8095905].status] [claims[CL8095905].incurred] [claims[26B349999].status] [claims[26B349999].incurred].\n- Reserves remain on both open claims [claims[CL8095905].reserve] [claims[26B349999].reserve].\n\n**Needs attention**\n- Monitor development of the two open 2026 claims.\n- Minneapolis has no alarm [locations[3].alarm_type].\n- Columbus is an older frame building with partial sprinklers [locations[2].construction] [locations[2].sprinkler_pct].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2431,
+  "output_tokens": 1676,
+  "latency_ms": 11830.376405999914,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

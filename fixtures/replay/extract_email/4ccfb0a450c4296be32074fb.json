@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "8b15121decedfdb2885ea75cfd1c738e7fc32b61e578d650690e15ac54e66a70",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:02.539021+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Blue Ridge Properties L.L.C.",
+    "page": null,
+    "evidence": "new submission for Blue Ridge Properties L.L.C. for commercial property"
+   },
+   "effective_date": {
+    "value": "2026-11-01",
+    "page": null,
+    "evidence": "effective November 1, 2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-19",
+    "page": null,
+    "evidence": "terms no later than Monday, October 19, 2026"
+   },
+   "producer_name": {
+    "value": "Robert Silva",
+    "page": null,
+    "evidence": "Robert Silva\nLantern Specialty Brokers"
+   },
+   "producer_email": {
+    "value": "robert.silva@lanternspecialty.com",
+    "page": null,
+    "evidence": "From: Robert Silva <robert.silva@lanternspecialty.com>"
+   },
+   "producer_phone": {
+    "value": "(502) 756-7024",
+    "page": null,
+    "evidence": "(502) 756-7024"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": 47400000,
+    "page": null,
+    "evidence": "Total values are roughly $47.4M across 12 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2090,
+  "output_tokens": 569,
+  "latency_ms": 3398.0823230000397,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "6be2aa6baef46c1581f458cc55a18c15619d0b4f0f0178a115d46a8d5bf3a36e",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:56.392129+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules decision is UNSPRINKLERED: location 1 is unsprinklered with TIV of $14,025,000 [locations[1].sprinklered, locations[1].tiv].\n\n**Why**\nLocation 1 has no sprinklers [locations[1].sprinklered] (0% [locations[1].sprinkler_pct]) and carries $14,025,000 TIV [locations[1].tiv]. It is a 5-story, masonry non-combustible building [locations[1].stories, locations[1].construction] built in 1955 [locations[1].year_built], with a central station alarm [locations[1].alarm_type].\n\n**Account**\nStonebridge Industrial Supply LLC, a wholesale distributor of hardware and fasteners [insured.named_insured, insured.business_description]. 10 years in business, 83 employees, revenue $11,430,000 [insured.years_in_business, insured.employee_count, insured.annual_revenue]. New business; prior carrier Great Plains Casualty [policy.transaction_type, policy.prior_carrier]. Broker: Tidewater Risk Partners [broker.agency_name]. Quote needed by 2027-02-08 [policy.quote_needed_by]. Total TIV $23,115,000 across 2 locations [totals.total_tiv, totals.location_count].\n\n**Locations & COPE**\n- Loc 1, Boston MA: roof asphalt shingle, 2015 [locations[1].roof_type, locations[1].roof_year]; protection class 4 [locations[1].protection_class].\n- Loc 2, Chicago IL: non-combustible, 3 stories, built 1995 [locations[2].construction, locations[2].stories, locations[2].year_built]; sprinklered at 60% [locations[2].sprinklered, locations[2].sprinkler_pct]; roof 2026 [locations[2].roof_year]; TIV $9,090,000 [locations[2].tiv].\n\n**Loss history**\nOne open claim: Equipment Breakdown, loss date 2026-02-05, incurred $80,050 (paid $57,110, reserve $22,940) [claims[26G788805].cause, claims[26G788805].date_of_loss, claims[26G788805].status, claims[26G788805].incurred, claims[26G788805].paid, claims[26G788805].reserve]. Five-year incurred is $80,050 against premium of $235,980 [totals.five_year_incurred, totals.five_year_premium]. The other four years show zero claims [loss_years[2022].claim_count, loss_years[2023].claim_count, loss_years[2024].claim_count, loss_years[2026].claim_count].\n\n**Needs attention**\n- Conflict: total TIV is $23,115,000 in one source and $20,786,000 in another; the derived value was kept [totals.total_tiv].\n- Conflict: location 2 year built is 1995 in one source and 2013 in another; 1995 was kept [locations[2].year_built].\n- Low confidence: effective and expiration dates, transaction type [policy.effective_date, policy.expiration_date, policy.transaction_type].\n- Low confidence: deductible, cause of loss form, flood and earthquake requests [coverage.deductible, coverage.cause_of_loss_form, coverage.flood_requested, coverage.earthquake_requested].\n- Low confidence: contact name [insured.contact_name].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2378,
+  "output_tokens": 1144,
+  "latency_ms": 6962.079729000038,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

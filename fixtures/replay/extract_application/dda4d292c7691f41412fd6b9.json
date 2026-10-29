@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "72995b0e6cb28a65c5d7ed4329f7d919e32bd388722b22b399681064c7e31e5d",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:16.709021+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Meridian Motor Works LLC",
+     "page": 1,
+     "evidence": "Named Insured: Meridian Motor Works LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "28-1879414",
+     "page": 1,
+     "evidence": "FEIN: 28-1879414"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "Entity Type: LLC"
+    },
+    "mailing_street": {
+     "value": "PO Box 1920",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 1920, Boston, MA 02113"
+    },
+    "mailing_city": {
+     "value": "Boston",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 1920, Boston, MA 02113"
+    },
+    "mailing_state": {
+     "value": "MA",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 1920, Boston, MA 02113"
+    },
+    "mailing_zip": {
+     "value": "02113",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 1920, Boston, MA 02113"
+    },
+    "business_description": {
+     "value": "General automotive repair and maintenance garage",
+     "page": 1,
+     "evidence": "Nature of Business: General automotive repair and maintenance garage"
+    },
+    "naics_code": {
+     "value": "811111",
+     "page": 1,
+     "evidence": "NAICS Code: 811111"
+    },
+    "years_in_business": {
+     "value": 31,
+     "page": 1,
+     "evidence": "Years in Business: 31"
+    },
+    "annual_revenue": {
+     "value": 11690000,
+     "page": 1,
+     "evidence": "Annual Revenue: $11,690,000"
+    },
+    "employee_count": {
+     "value": 130,
+     "page": 1,
+     "evidence": "Number of Employees: 130"
+    },
+    "website": {
+     "value": "www.meridianmotor.com",
+     "page": 1,
+     "evidence": "Website: www.meridianmotor.com"
+    },
+    "contact_name": {
+     "value": "Mei Reyes",
+     "page": 1,
+     "evidence": "Contact Name: Mei Reyes"
+    },
+    "contact_phone": {
+     "value": "(816) 237-9419",
+     "page": 1,
+     "evidence": "Contact Phone: (816) 237-9419"
+    },
+    "contact_email": {
+     "value": "mreyes@meridianmotor.com",
+     "page": 1,
+     "evidence": "Contact Email: mreyes@meridianmotor.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Lantern Specialty Brokers",
+     "page": 1,
+     "evidence": "Agency: Lantern Specialty Brokers"
+    },
+    "producer_name": {
+     "value": "James Novak",
+     "page": 1,
+     "evidence": "Producer: James Novak"
+    },
+    "producer_email": {
+     "value": "james.novak@lanternspecialty.com",
+     "page": 1,
+     "evidence": "Producer Email: james.novak @lanternspecialty.com"
+    },
+    "producer_phone": {
+     "value": "(810) 909-9211",
+     "page": 1,
+     "evidence": "Producer Phone: (810) 909-9211"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-03-15",
+     "page": 1,
+     "evidence": "Proposed Effective Date: 15-Mar-2027"
+    },
+    "expiration_date": {
+     "value": "2028-03-15",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: March 15, 2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "Transaction: New"
+    },
+    "prior_carrier": {
+     "value": "Harborline Indemnity Company",
+     "page": 1,
+     "evidence": "Prior Carrier: Harborline Indemnity Company"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 8290000,
+     "page": 2,
+     "evidence": "Building Limit: $8,290,000"
+    },
+    "bpp_limit": {
+     "value": 2405000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $2,405,000"
+    },
+    "business_income_limit": {
+     "value": 565000,
+     "page": 2,
+     "evidence": "Business Income Limit: $565,000"
+    },
+    "deductible": {
+     "value": 5000,
+     "page": 2,
+     "evidence": "Deductible: $5,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 2,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 100,
+     "page": 2,
+     "evidence": "Coinsurance: 100%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Broad"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 11260000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $11.26M"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "3025 Mill Way",
+      "page": 2,
+      "evidence": "1   3025 Mill Way   Boston   MA   02113"
+     },
+     "city": {
+      "value": "Boston",
+      "page": 2,
+      "evidence": "3025 Mill Way   Boston   MA"
+     },
+     "state": {
+      "value": "MA",
+      "page": 2,
+      "evidence": "Boston   MA   02113"
+     },
+     "zip": {
+      "value": "02113",
+      "page": 2,
+      "evidence": "Boston   MA   02113"
+     },
+     "construction": {
+      "value": "masonry_non_combustible",
+      "page": 2,
+      "evidence": "ISO 4   1965"
+     },
+     "year_built": {
+      "value": 1965,
+      "page": 2,
+      "evidence": "ISO 4   1965   1   32,600 N"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "1965   1   32,600 N"
+     },
+     "square_feet": {
+      "value": 32600,
+      "page": 2,
+      "evidence": "32,600 N   1"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "32,600 N   1   Tile"
+     },
+     "protection_class": {
+      "value": 1,
+      "page": 2,
+      "evidence": "N   1   Tile   2018"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Tile   2018   Central Station"
+     },
+     "roof_year": {
+      "value": 2018,
+      "page": 2,
+      "evidence": "Tile   2018   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "1746 Maple Lane",
+      "page": 2,
+      "evidence": "2   1746 Maple Lane   Salt Lake City   UT   84143"
+     },
+     "city": {
+      "value": "Salt Lake City",
+      "page": 2,
+      "evidence": "1746 Maple Lane   Salt Lake City   UT"
+     },
+     "state": {
+      "value": "UT",
+      "page": 2,
+      "evidence": "Salt Lake City   UT   84143"
+     },
+     "zip": {
+      "value": "84143",
+      "page": 2,
+      "evidence": "Salt Lake City   UT   84143"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "ISO 3   2019   4   20,900 Yes"
+     },
+     "year_built": {
+      "value": 2019,
+      "page": 2,
+      "evidence": "ISO 3   2019   4   20,900 Yes"
+     },
+     "stories": {
+      "value": 4,
+      "page": 2,
+      "evidence": "2019   4   20,900 Yes"
+     },
+     "square_feet": {
+      "value": 20900,
+      "page": 2,
+      "evidence": "20,900 Yes   2"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "20,900 Yes   2"
+     },
+     "protection_class": {
+      "value": 2,
+      "page": 2,
+      "evidence": "Yes   2   Asphalt Shingle   2019"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle   2019   Local"
+     },
+     "roof_year": {
+      "value": 2019,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2019   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "Asphalt Shingle   2019   Local"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9320,
+  "output_tokens": 2799,
+  "latency_ms": 12876.076263000186,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,412 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "4bd4e3fe0406db0109621b39a4306e822abf5c8e5cedbcd1794f60561ab13577",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:54.315178+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Blue Ridge Breads LLC",
+     "page": 1,
+     "evidence": "Blue Ridge Breads LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "59-9640882",
+     "page": 1,
+     "evidence": "59-9640882"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "LLC"
+    },
+    "mailing_street": {
+     "value": "PO Box 1005",
+     "page": 1,
+     "evidence": "PO Box 1005   Houston"
+    },
+    "mailing_city": {
+     "value": "Houston",
+     "page": 1,
+     "evidence": "PO Box 1005   Houston"
+    },
+    "mailing_state": {
+     "value": "TX",
+     "page": 1,
+     "evidence": "T\u2122   77032"
+    },
+    "mailing_zip": {
+     "value": "77032",
+     "page": 1,
+     "evidence": "T\u2122   77032"
+    },
+    "business_description": {
+     "value": "Retail bakery producing breads and pastries on premises",
+     "page": 1,
+     "evidence": "Retail bakery producing breads and pastries on premises"
+    },
+    "naics_code": {
+     "value": "311811",
+     "page": 1,
+     "evidence": "311811"
+    },
+    "years_in_business": {
+     "value": 27,
+     "page": 1,
+     "evidence": "YEARS IN OPERATION 27"
+    },
+    "annual_revenue": {
+     "value": 17980000,
+     "page": 1,
+     "evidence": "$17,980,000"
+    },
+    "employee_count": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "website": {
+     "value": "www.blueridge.com",
+     "page": 1,
+     "evidence": "www.blueridge.com"
+    },
+    "contact_name": {
+     "value": "Laura Silva",
+     "page": 1,
+     "evidence": "Laura Silva"
+    },
+    "contact_phone": {
+     "value": "(689) 234-5112",
+     "page": 1,
+     "evidence": "(689) 234-5112"
+    },
+    "contact_email": {
+     "value": "lsilva@blueridge.com",
+     "page": 1,
+     "evidence": "lsilva@blueridge.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Copperfield Risk Advisors",
+     "page": 1,
+     "evidence": "Copperfield Risk Advisors"
+    },
+    "producer_name": {
+     "value": "Grace Silva",
+     "page": 1,
+     "evidence": "Grace Silva"
+    },
+    "producer_email": {
+     "value": "grace.silva@copperfieldrisk.com",
+     "page": 1,
+     "evidence": "grace.silva @copperfieldrisk.com"
+    },
+    "producer_phone": {
+     "value": "(379) 270-4453",
+     "page": 1,
+     "evidence": "(379) 270-4453"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-12-15",
+     "page": 1,
+     "evidence": "12/15/2026"
+    },
+    "expiration_date": {
+     "value": "2027-12-15",
+     "page": 1,
+     "evidence": "15-Dec-2027"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "INCEPTION   New"
+    },
+    "prior_carrier": {
+     "value": "Pinecrest Property & Casualty",
+     "page": 1,
+     "evidence": "Pinecrest Property & Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 12985000,
+     "page": 1,
+     "evidence": "$12,985,000"
+    },
+    "bpp_limit": {
+     "value": 2705000,
+     "page": 1,
+     "evidence": "$2,705,000"
+    },
+    "business_income_limit": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "deductible": {
+     "value": 1000,
+     "page": 1,
+     "evidence": "$1,000"
+    },
+    "valuation": {
+     "value": "actual_cash_value",
+     "page": 1,
+     "evidence": "Actual Cash Value"
+    },
+    "coinsurance_pct": {
+     "value": 80,
+     "page": 1,
+     "evidence": "COINS. 80%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "PERILS Special"
+    },
+    "flood_requested": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "earthquake_requested": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    }
+   },
+   "stated_total_tiv": {
+    "value": 14540000,
+    "page": 1,
+    "evidence": "$14.54M"
+   },
+   "stated_location_count": {
+    "value": 3,
+    "page": 1,
+    "evidence": "LOCATIONS 3"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "7713 Oak Parkway",
+      "page": 2,
+      "evidence": "7713 Oak Parkway, Houston, TX 77032"
+     },
+     "city": {
+      "value": "Houston",
+      "page": 2,
+      "evidence": "7713 Oak Parkway, Houston, TX 77032"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "7713 Oak Parkway, Houston, TX 77032"
+     },
+     "zip": {
+      "value": "77032",
+      "page": 2,
+      "evidence": "7713 Oak Parkway, Houston, TX 77032"
+     },
+     "construction": {
+      "value": "fire_resistive",
+      "page": 2,
+      "evidence": "Fire-Resistive"
+     },
+     "year_built": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "stories": {
+      "value": 11,
+      "page": 2,
+      "evidence": "11   20,400"
+     },
+     "square_feet": {
+      "value": 20400,
+      "page": 2,
+      "evidence": "11   20,400"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "N   4   Membrane (TPO)"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "N   4   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Membrane (TPO)"
+     },
+     "roof_year": {
+      "value": 2021,
+      "page": 2,
+      "evidence": "SPRINKLERS   2021   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "2021   Local"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "1640 Railroad Street",
+      "page": 2,
+      "evidence": "1640 Railroad Street, Kansas City, MO 64138"
+     },
+     "city": {
+      "value": "Kansas City",
+      "page": 2,
+      "evidence": "1640 Railroad Street, Kansas City, MO 64138"
+     },
+     "state": {
+      "value": "MO",
+      "page": 2,
+      "evidence": "1640 Railroad Street, Kansas City, MO 64138"
+     },
+     "zip": {
+      "value": "64138",
+      "page": 2,
+      "evidence": "1640 Railroad Street, Kansas City, MO 64138"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Frame"
+     },
+     "year_built": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "3   7,200"
+     },
+     "square_feet": {
+      "value": 7200,
+      "page": 2,
+      "evidence": "3   7,200"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "Y   5"
+     },
+     "protection_class": {
+      "value": 5,
+      "page": 2,
+      "evidence": "Y   5"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Built-Up   2007   Local"
+     },
+     "roof_year": {
+      "value": 2007,
+      "page": 2,
+      "evidence": "Built-Up   2007   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "Built-Up   2007   Local"
+     }
+    },
+    {
+     "loc_number": 3,
+     "street": {
+      "value": "8149 Pine Drive",
+      "page": 2,
+      "evidence": "8149 Pine Drive, Sacramento, CA 95861"
+     },
+     "city": {
+      "value": "Sacramento",
+      "page": 2,
+      "evidence": "8149 Pine Drive, Sacramento, CA 95861"
+     },
+     "state": {
+      "value": "CA",
+      "page": 2,
+      "evidence": "8149 Pine Drive, Sacramento, CA 95861"
+     },
+     "zip": {
+      "value": "95861",
+      "page": 2,
+      "evidence": "8149 Pine Drive, Sacramento, CA 95861"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Joisted Masonry"
+     },
+     "year_built": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "2   28,200"
+     },
+     "square_feet": {
+      "value": 28200,
+      "page": 2,
+      "evidence": "2   28,200"
+     },
+     "sprinklered": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "protection_class": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "rg   Built-Up"
+     },
+     "roof_year": {
+      "value": 2022,
+      "page": 2,
+      "evidence": "2022   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2022   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9540,
+  "output_tokens": 2928,
+  "latency_ms": 13795.792065000001,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

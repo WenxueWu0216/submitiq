@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "c05508f5288bddd45b542735ed26fcfd666e30031915c94139bf7bf7f96fa654",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:32.020366+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Oak Hollow Office Holdings LLC",
+    "page": null,
+    "evidence": "Property submission: Oak Hollow Office Holdings LLC"
+   },
+   "effective_date": {
+    "value": "2027-01-01",
+    "page": null,
+    "evidence": "requested effective date of 01/01/2027"
+   },
+   "quote_needed_by": {
+    "value": "2026-12-24",
+    "page": null,
+    "evidence": "Quote needed by 12/24/2026."
+   },
+   "producer_name": {
+    "value": "James Thompson",
+    "page": null,
+    "evidence": "James Thompson\nAtlas & Reed Insurance Services"
+   },
+   "producer_email": {
+    "value": "james.thompson@atlasreed.com",
+    "page": null,
+    "evidence": "james.thompson@atlasreed.com"
+   },
+   "producer_phone": {
+    "value": "(653) 581-5860",
+    "page": null,
+    "evidence": "(653) 581-5860"
+   },
+   "agency_name": {
+    "value": "Atlas & Reed Insurance Services",
+    "page": null,
+    "evidence": "Atlas & Reed Insurance Services"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2064,
+  "output_tokens": 525,
+  "latency_ms": 3171.607571999971,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

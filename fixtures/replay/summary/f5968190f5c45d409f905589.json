@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "7b95a856b22269e825283c1c266ea60e14dbf90ffd8bdec7066955bb175799d4",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:33.372200+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules decision is \"refer\" for an unsprinklered location with high TIV: location 9 is unsprinklered [locations[9].sprinklered] with TIV $10,220,000 [locations[9].tiv]. No review flags were raised [review_flags].\n\n**Why**\nLocation 9 (Nashville, TN [locations[9].city], [locations[9].state]) is non-combustible [locations[9].construction], 4 stories [locations[9].stories], 49,300 sq ft [locations[9].square_feet], protection class 3 [locations[9].protection_class], with a 2026 roof [locations[9].roof_year]. It is the largest location by TIV in the schedule.\n\n**Account**\nNorthgate Hardware, a sole proprietor [insured.entity_type], is a wholesale distributor of hardware and fasteners [insured.business_description], 51 years in business [insured.years_in_business]. This is a renewal [policy.transaction_type] from Bridgewater Assurance [policy.prior_carrier], effective 2027-02-01 [policy.effective_date]. Quote is needed by 2027-01-22 [policy.quote_needed_by]. Total TIV is $55,790,000 across 10 locations [totals.total_tiv], [totals.location_count]. The form is special [coverage.cause_of_loss_form], replacement cost [coverage.valuation], 80% coinsurance [coverage.coinsurance_pct], $2,500 deductible [coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested], [coverage.earthquake_requested].\n\n**Locations & COPE**\nOther unsprinklered locations: 5 Denver, frame [locations[5].sprinklered], [locations[5].construction]; 7 Seattle [locations[7].sprinklered]; 8 Omaha [locations[8].sprinklered]; 10 Salt Lake City, protection class 8 [locations[10].sprinklered], [locations[10].protection_class]. Location 4 Dallas is 75% sprinklered [locations[4].sprinkler_pct]; location 2 Minneapolis is 90% [locations[2].sprinkler_pct].\n\n**Loss history**\nThree closed claims: equipment breakdown $6,880 [claims[BWA202496715].incurred], vandalism $8,080 [claims[25B966187].incurred], frozen pipes $9,530 [claims[26B929775].incurred]. Five-year incurred is $24,490 against premium of $467,750 [totals.five_year_incurred], [totals.five_year_premium], a loss ratio of 5.2%.\n\n**Needs attention**\n- Underwriter review of location 9's lack of sprinklers [locations[9].sprinklered].\n- Note the other unsprinklered locations listed above.\n- Submission was received 2027-01-04 [policy.submission_received_date]; the quote deadline is 2027-01-22 [policy.quote_needed_by].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 4244,
+  "output_tokens": 999,
+  "latency_ms": 5855.858374000036,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

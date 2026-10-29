@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "d2c6674bcf76ef342ec22e3362fb98cf55d626df7389651d7cd2588a7ad8bd75",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:23.534933+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Silver Creek Foods, Inc.",
+    "page": null,
+    "evidence": "Property submission: Silver Creek Foods, Inc."
+   },
+   "effective_date": {
+    "value": "2027-03-01",
+    "page": null,
+    "evidence": "for a property quote, effective March 1, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-20",
+    "page": null,
+    "evidence": "Quote needed by 02/20/2027."
+   },
+   "producer_name": {
+    "value": "Robert Yamamoto",
+    "page": null,
+    "evidence": "Robert Yamamoto"
+   },
+   "producer_email": {
+    "value": "robert.yamamoto@lanternspecialty.com",
+    "page": null,
+    "evidence": "robert.yamamoto@lanternspecialty.com"
+   },
+   "producer_phone": {
+    "value": "(881) 241-9698",
+    "page": null,
+    "evidence": "(881) 241-9698"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2063,
+  "output_tokens": 520,
+  "latency_ms": 3157.7652099999796,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

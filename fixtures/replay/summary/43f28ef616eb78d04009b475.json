@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "5c480e4f9607bdfa8e371c37930261df28e1af19f4d1e958693d8b5afed4e7e5",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:01.601878+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline. The rules engine flagged LOCATION_TIV: location 1 TIV of $59,180,000 [locations[1].tiv] exceeds the $50,000,000 threshold [decision].\n\n**Why**\nLocation 1 (5074 Franklin Way, Salt Lake City, UT) [locations[1].street] [locations[1].city] [locations[1].state] carries a TIV of $59,180,000 [locations[1].tiv]. Its building value is $57,835,000 [locations[1].building_value]. Total TIV is $68,125,000 across 3 locations [totals.total_tiv] [totals.location_count].\n\n**Account**\nPioneer Valley Industrial Supply Inc., a corporation [insured.named_insured] [insured.entity_type], is a wholesale distributor of hardware and fasteners [insured.business_description]. It has been in business 2 years [insured.years_in_business], with revenue of $34,630,000 and 129 employees [insured.annual_revenue] [insured.employee_count]. This is a new-business submission [policy.transaction_type] from Brightline Insurance Partners [broker.agency_name], effective 2026-12-15 [policy.effective_date]. The prior carrier is Bridgewater Assurance [policy.prior_carrier]. Quote is needed by 2026-12-06 [policy.quote_needed_by]. Earthquake coverage is requested [coverage.earthquake_requested]; flood is not [coverage.flood_requested].\n\n**Locations & COPE**\n- Loc 1: frame, built 1978, 3 stories, 321,300 sq ft, 100% sprinklered, local alarm [locations[1].construction] [locations[1].year_built] [locations[1].stories] [locations[1].square_feet] [locations[1].sprinkler_pct] [locations[1].alarm_type].\n- Loc 2 (Los Angeles, CA): non-combustible, 100% sprinklered, central station alarm [locations[2].construction] [locations[2].sprinkler_pct] [locations[2].alarm_type].\n- Loc 3 (Denver, CO): frame, unsprinklered, no alarm [locations[3].construction] [locations[3].sprinklered] [locations[3].alarm_type].\n\n**Loss history**\nFive-year incurred is $88,120 [totals.five_year_incurred] against premium of $503,450 [totals.five_year_premium], a loss ratio of 17.5%. Both claims fall in policy year 2022: vandalism at $52,330 and smoke at $35,790, both closed [claims[23B831659].cause] [claims[23B831659].incurred] [claims[BWA202375355].cause] [claims[BWA202375355].incurred] [claims[23B831659].status] [claims[BWA202375355].status]. Every other year shows zero claims [loss_years[2021].claim_count] [loss_years[2023].claim_count] [loss_years[2024].claim_count] [loss_years[2025].claim_count].\n\n**Needs attention**\n- Construction conflict at location 2: the property schedule says 'non_combustible', but the application says 'joisted_masonry'. The schedule value was kept per source-of-truth rules [locations[2].construction].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2428,
+  "output_tokens": 1089,
+  "latency_ms": 5961.862643999893,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

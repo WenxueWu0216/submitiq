@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "1ddc6c7fd01b147ec5eef6b45e230e4f0d123774329e70d80bfa911ea1088dbc",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:41:57.379304+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline, per the rules engine: CLASS_PROHIBITED, NAICS 423930 (recyclable material / scrap yard) is prohibited [insured.naics_code]. Note that the NAICS field is flagged low_confidence (0.51 < 0.8) [insured.naics_code].\n\n**Why**\nThe decision rests on the class code [insured.naics_code]. The business is described as a scrap metal recycling yard with shredding equipment [insured.business_description]. Both locations are occupancy \"Scrap Yard\" [locations[1].occupancy] [locations[2].occupancy].\n\n**Account**\nOld Mill Salvage L.L.C., dba Old Scrap Yard [insured.named_insured] [insured.dba], Houston, TX [insured.mailing_address.city] [insured.mailing_address.state]. 28 years in business [insured.years_in_business]; revenue 13,480,000 [insured.annual_revenue]. Renewal [policy.transaction_type], prior carrier Harborline Indemnity Company [policy.prior_carrier]. Broker: Atlas & Reed Insurance Services [broker.agency_name]. Quote needed by 2027-02-14 [policy.quote_needed_by]. Total TIV 11,610,000 across 2 locations [totals.total_tiv] [totals.location_count].\n\n**Locations & COPE**\n- Loc 1, Houston TX: frame, built 1998, 3 stories, 37,900 sq ft [locations[1].construction] [locations[1].year_built] [locations[1].stories] [locations[1].square_feet]. 100% sprinklered, PC 4, local alarm [locations[1].sprinkler_pct] [locations[1].protection_class] [locations[1].alarm_type]. TIV 10,205,000 [locations[1].tiv].\n- Loc 2, Miami FL: joisted masonry, built 1964, 1 story, 7,000 sq ft [locations[2].construction] [locations[2].year_built] [locations[2].stories] [locations[2].square_feet]. 100% sprinklered, PC 3, no alarm [locations[2].sprinkler_pct] [locations[2].protection_class] [locations[2].alarm_type]. TIV 1,405,000 [locations[2].tiv].\n\n**Loss history**\nFive-year incurred 13,880 on premium of 127,930 [totals.five_year_incurred] [totals.five_year_premium], a loss ratio of about 10.9%. Three closed claims: equipment breakdown 2022 (5,060) [claims[CL8230651].incurred], water damage 2025 (6,830) [claims[25H641863].incurred], theft/burglary dated 2027-01-04 (1,990) [claims[HIC202768782].date_of_loss] [claims[HIC202768782].incurred].\n\n**Needs attention**\nLow-confidence fields (all 0.51 unless noted): NAICS code, cause of loss form, deductible, flood and earthquake requests, employee count, entity type, expiration date, and effective date (0.57) [insured.naics_code] [coverage.cause_of_loss_form] [coverage.deductible] [coverage.flood_requested] [coverage.earthquake_requested] [insured.employee_count] [insured.entity_type] [policy.expiration_date] [policy.effective_date]. The name variant \"Old Mill\" on the SOV was treated as the same entity [insured.named_insured]. The theft claim's date of loss (2027-01-04) falls after the submission received date (2027-01-01) [claims[HIC202768782].date_of_loss] [policy.submission_received_date], and its policy year is listed as 2026 [claims[HIC202768782].policy_year].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2548,
+  "output_tokens": 1258,
+  "latency_ms": 7377.182537000067,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

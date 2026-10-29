@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "e63b4d9aff9e4624a06e5fb18de69bd7600532d6c3196af766eb99a314703911",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:33.746110+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept, per the rules decision [decision]. No review flags were raised [review_flags]. Quote is needed by 2026-10-24 [policy.quote_needed_by] for a new policy [policy.transaction_type] effective 2026-11-01 [policy.effective_date].\n\n**Why**\nThe rules engine returned accept with no flags [decision][review_flags]. Supporting facts: 55 years in business [insured.years_in_business], three closed claims with zero reserves [claims[GPC202272686].reserve][claims[24G996988].reserve][claims[CL4824519].reserve], and a five-year loss ratio of 315,420 incurred [totals.five_year_incurred] against 839,850 premium [totals.five_year_premium], i.e. 37.6%.\n\n**Account**\nRedstone Distribution LLC [insured.named_insured], dry goods warehousing and third-party distribution [insured.business_description], revenue 26,110,000 [insured.annual_revenue], 307 employees [insured.employee_count]. Broker: Hollis Benton Agency, Laura Carter [broker.agency_name][broker.producer_name]. Prior carrier: Great Plains Casualty [policy.prior_carrier]. Total TIV 65,750,000 across 10 locations [totals.total_tiv][totals.location_count]. Special form, replacement cost, 100% coinsurance, 10,000 deductible [coverage.cause_of_loss_form][coverage.valuation][coverage.coinsurance_pct][coverage.deductible]. Flood and earthquake not requested [coverage.flood_requested][coverage.earthquake_requested].\n\n**Locations & COPE**\nAll 10 locations are warehouses [locations[1].occupancy]. Four are sprinklered: locations 1, 4 and 10 at 100% and location 8 at 75% [locations[1].sprinkler_pct][locations[4].sprinkler_pct][locations[10].sprinkler_pct][locations[8].sprinkler_pct]. Six are unsprinklered, including the largest TIV, location 7 at 9,125,000 [locations[7].sprinklered][locations[7].tiv]. Location 9 is protection class 8 and unsprinklered [locations[9].protection_class][locations[9].sprinklered]. Location 10 was built in 1957 with a 2009 roof [locations[10].year_built][locations[10].roof_year]. Location 6 has a 2006 roof [locations[6].roof_year].\n\n**Loss history**\nTwo roof leak claims, 77,450 and 164,850 [claims[GPC202272686].incurred][claims[24G996988].incurred], and one lightning claim at 73,120 [claims[CL4824519].incurred]. No claims in 2022 or 2025 [loss_years[2022].claim_count][loss_years[2025].claim_count].\n\n**Needs attention**\n- Repeat roof leak losses; location 1 has a tile roof from 2023 [locations[1].roof_type][locations[1].roof_year].\n- Location 1 has no alarm [locations[1].alarm_type].\n- Roof type and alarm data are absent for locations 4 through 10.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 4128,
+  "output_tokens": 1070,
+  "latency_ms": 6188.061341999969,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "1957e0706ae1f4640cb6ec910182d9701814e3ec587a62931e39385d6b1e1a40",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:03.800824+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Meridian Motor Works, LLC",
+    "page": null,
+    "evidence": "new submission for Meridian Motor Works, LLC for a property quote"
+   },
+   "effective_date": {
+    "value": "2027-03-15",
+    "page": null,
+    "evidence": "requested effective date of 03/15/2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-28",
+    "page": null,
+    "evidence": "terms no later than Sunday, February 28, 2027"
+   },
+   "producer_name": {
+    "value": "James Novak",
+    "page": null,
+    "evidence": "James Novak"
+   },
+   "producer_email": {
+    "value": "james.novak@lanternspecialty.com",
+    "page": null,
+    "evidence": "james.novak@lanternspecialty.com"
+   },
+   "producer_phone": {
+    "value": "(810) 909-9211",
+    "page": null,
+    "evidence": "(810) 909-9211"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2059,
+  "output_tokens": 507,
+  "latency_ms": 3054.238469999973,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

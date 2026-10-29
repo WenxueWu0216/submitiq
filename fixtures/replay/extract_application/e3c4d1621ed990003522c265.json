@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "ec77d744c9047add91ad9442416765fcb96410f39bc2f718daad5c387299d76f",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:00.781881+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Keystone Automotive LLC",
+     "page": 1,
+     "evidence": "Named Insured: Keystone Automotive LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "10-4568056",
+     "page": 1,
+     "evidence": "FEIN: 10-4568056"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "Entity Type: LLC"
+    },
+    "mailing_street": {
+     "value": "514 Oak Way",
+     "page": 1,
+     "evidence": "Mailing Address: 514 Oak Way, Boston, MA 02129"
+    },
+    "mailing_city": {
+     "value": "Boston",
+     "page": 1,
+     "evidence": "Mailing Address: 514 Oak Way, Boston, MA 02129"
+    },
+    "mailing_state": {
+     "value": "MA",
+     "page": 1,
+     "evidence": "Mailing Address: 514 Oak Way, Boston, MA 02129"
+    },
+    "mailing_zip": {
+     "value": "02129",
+     "page": 1,
+     "evidence": "Mailing Address: 514 Oak Way, Boston, MA 02129"
+    },
+    "business_description": {
+     "value": "General automotive repair and maintenance garage",
+     "page": 1,
+     "evidence": "Nature of Business: General automotive repair and maintenance garage"
+    },
+    "naics_code": {
+     "value": "811111",
+     "page": 1,
+     "evidence": "NAICS Code: 811111"
+    },
+    "years_in_business": {
+     "value": 26,
+     "page": 1,
+     "evidence": "Years in Business: 26"
+    },
+    "annual_revenue": {
+     "value": 3750000,
+     "page": 1,
+     "evidence": "Annual Revenue: $3.75M"
+    },
+    "employee_count": {
+     "value": 176,
+     "page": 1,
+     "evidence": "Number of Employees: 176"
+    },
+    "website": {
+     "value": "www.keystoneautomotive.com",
+     "page": 1,
+     "evidence": "Website: www.keystoneautomotive.com"
+    },
+    "contact_name": {
+     "value": "Aisha Reyes",
+     "page": 1,
+     "evidence": "Contact Name: Aisha Reyes"
+    },
+    "contact_phone": {
+     "value": "(629) 223-5495",
+     "page": 1,
+     "evidence": "Contact Phone: (629) 223-5495"
+    },
+    "contact_email": {
+     "value": "areyes@keystoneautomotive.com",
+     "page": 1,
+     "evidence": "Contact Email: areyes@keystoneautomotive.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Lantern Specialty Brokers",
+     "page": 1,
+     "evidence": "Agency: Lantern Specialty Brokers"
+    },
+    "producer_name": {
+     "value": "Nina Carter",
+     "page": 1,
+     "evidence": "Producer: Nina Carter"
+    },
+    "producer_email": {
+     "value": "nina.carter@lanternspecialty.com",
+     "page": 1,
+     "evidence": "Producer Email: nina.carter@lanternspecialty.com"
+    },
+    "producer_phone": {
+     "value": "(338) 473-7039",
+     "page": 1,
+     "evidence": "Producer Phone: (338) 473-7039"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-11-01",
+     "page": 1,
+     "evidence": "Proposed Effective Date: November 1, 2026"
+    },
+    "expiration_date": {
+     "value": "2027-11-01",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: 01-Nov-2027"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "Transaction: New"
+    },
+    "prior_carrier": {
+     "value": "Bridgewater Assurance",
+     "page": 1,
+     "evidence": "Prior Carrier: Bridgewater Assurance"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 2990000,
+     "page": 2,
+     "evidence": "Building Limit: 2990000"
+    },
+    "bpp_limit": {
+     "value": 485000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $485,000"
+    },
+    "business_income_limit": {
+     "value": 615000,
+     "page": 2,
+     "evidence": "Business Income Limit: $615,000"
+    },
+    "deductible": {
+     "value": 25000,
+     "page": 2,
+     "evidence": "Deductible: $25,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 2,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 100,
+     "page": 2,
+     "evidence": "Coinsurance: 100%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: No"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 4090000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $4,090,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "514 Oak Way",
+      "page": 2,
+      "evidence": "1   514 Oak Way   Boston   MA   02129"
+     },
+     "city": {
+      "value": "Boston",
+      "page": 2,
+      "evidence": "514 Oak Way   Boston   MA"
+     },
+     "state": {
+      "value": "MA",
+      "page": 2,
+      "evidence": "Boston   MA   02129"
+     },
+     "zip": {
+      "value": "02129",
+      "page": 2,
+      "evidence": "MA   02129"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Joisted Masonry   1968"
+     },
+     "year_built": {
+      "value": 1968,
+      "page": 2,
+      "evidence": "Joisted Masonry   1968   1   3,200"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "1968   1   3,200"
+     },
+     "square_feet": {
+      "value": 3200,
+      "page": 2,
+      "evidence": "1   3,200 Y   2"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "3,200 Y   2   Metal"
+     },
+     "protection_class": {
+      "value": 2,
+      "page": 2,
+      "evidence": "Y   2   Metal   2008"
+     },
+     "roof_type": {
+      "value": "metal",
+      "page": 2,
+      "evidence": "Metal   2008   Local"
+     },
+     "roof_year": {
+      "value": 2008,
+      "page": 2,
+      "evidence": "Metal   2008   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "Metal   2008   Local"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "6903 Industrial Street",
+      "page": 2,
+      "evidence": "2   6903 Industrial Street   Houston   TX   77005"
+     },
+     "city": {
+      "value": "Houston",
+      "page": 2,
+      "evidence": "6903 Industrial Street   Houston   TX"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "Houston   TX   77005"
+     },
+     "zip": {
+      "value": "77005",
+      "page": 2,
+      "evidence": "TX   77005"
+     },
+     "construction": {
+      "value": "fire_resistive",
+      "page": 2,
+      "evidence": "77005   FR   2014   12"
+     },
+     "year_built": {
+      "value": 2014,
+      "page": 2,
+      "evidence": "FR   2014   12   15,100"
+     },
+     "stories": {
+      "value": 12,
+      "page": 2,
+      "evidence": "2014   12   15,100 N"
+     },
+     "square_feet": {
+      "value": 15100,
+      "page": 2,
+      "evidence": "12   15,100 N   4"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "15,100 N   4   Asphalt Shingle"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle   2025"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "4   Asphalt Shingle   2025"
+     },
+     "roof_year": {
+      "value": 2025,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2025   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2025   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9309,
+  "output_tokens": 2762,
+  "latency_ms": 12819.923611000035,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

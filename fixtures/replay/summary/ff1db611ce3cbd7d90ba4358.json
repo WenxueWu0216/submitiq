@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "08ea00b507d29ef15785aeb2b39ee573027a9d9c49a3b9d2aa9c77ca2a26860b",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:47.767346+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine returned \"refer\" under LOSS_FREQUENCY. [decision]\n\n**Why**\nFive claims in five years triggered the rule: 1 in 2021, 3 in 2022, 1 in 2023, 0 in 2024, 0 in 2025. [loss_years[2021].claim_count] [loss_years[2022].claim_count] [loss_years[2023].claim_count] [loss_years[2024].claim_count] [loss_years[2025].claim_count]\n\n**Account**\nPrairie Wind Engineering Group LLC, a civil and structural engineering consulting office, has been in business 20 years. [insured.named_insured] [insured.business_description] [insured.years_in_business] This is a new transaction, effective 2026-12-15, with Bridgewater Assurance as prior carrier. [policy.transaction_type] [policy.effective_date] [policy.prior_carrier] Quote is needed by 2026-11-28. [policy.quote_needed_by] Total TIV is 10,050,000 across 3 locations. [totals.total_tiv] [totals.location_count] Coverage is replacement cost, broad form, 10,000 deductible, 90% coinsurance. [coverage.valuation] [coverage.cause_of_loss_form] [coverage.deductible] [coverage.coinsurance_pct]\n\n**Locations & COPE**\n- San Francisco, CA: 4-story modified fire resistive, built 2007, 100% sprinklered, no alarm, TIV 5,865,000. [locations[1].construction] [locations[1].year_built] [locations[1].sprinkler_pct] [locations[1].alarm_type] [locations[1].tiv]\n- Dallas, TX: 3-story joisted masonry, built 1982, 100% sprinklered, no alarm, TIV 650,000. [locations[2].construction] [locations[2].year_built] [locations[2].sprinkler_pct] [locations[2].alarm_type] [locations[2].tiv]\n- Nashville, TN: 1-story masonry non-combustible, built 1985, 100% sprinklered, central station alarm, TIV 3,535,000. [locations[3].construction] [locations[3].year_built] [locations[3].sprinkler_pct] [locations[3].alarm_type] [locations[3].tiv]\n\n**Loss history**\nFive-year incurred is 32,300 against five-year premium of 83,080. [totals.five_year_incurred] [totals.five_year_premium] That is a loss ratio of about 38.9%. All five claims are closed with zero reserve. [claims[BWA202212439].status] [claims[23B685298].status] [claims[23B914842].status] [claims[CL4190836].status] [claims[24B905869].status] Causes: smoke, water damage, two wind/hail, frozen pipes. [claims[BWA202212439].cause] [claims[23B685298].cause] [claims[23B914842].cause] [claims[CL4190836].cause] [claims[24B905869].cause]\n\n**Needs attention**\n- Named insured conflict: the application says \"Prairie Wind Engineering Group LLC\" but Loss_History.pdf says \"Prairie Wind Distribution Inc.\" Confirm that the loss history belongs to this insured. [review_flags]",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2834,
+  "output_tokens": 1110,
+  "latency_ms": 6191.300100000035,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "9805c4a1f0b938710378260b73bebc234a6808137fd00b9d8af6b3b0be158fe2",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:52.720990+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Clearwater Properties Corp.",
+    "page": null,
+    "evidence": "Please find attached a new submission for Clearwater Properties Corp. for commercial property"
+   },
+   "effective_date": {
+    "value": "2026-12-01",
+    "page": null,
+    "evidence": "with an inception date of 12/1/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-11",
+    "page": null,
+    "evidence": "Quote needed by 11/11/2026."
+   },
+   "producer_name": {
+    "value": "Brian Nguyen",
+    "page": null,
+    "evidence": "Brian Nguyen"
+   },
+   "producer_email": {
+    "value": "brian.nguyen@copperfieldrisk.com",
+    "page": null,
+    "evidence": "brian.nguyen@copperfieldrisk.com"
+   },
+   "producer_phone": {
+    "value": "(655) 519-8275",
+    "page": null,
+    "evidence": "(655) 519-8275"
+   },
+   "agency_name": {
+    "value": "Copperfield Risk Advisors",
+    "page": null,
+    "evidence": "Copperfield Risk Advisors"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2063,
+  "output_tokens": 522,
+  "latency_ms": 3055.5555540000796,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

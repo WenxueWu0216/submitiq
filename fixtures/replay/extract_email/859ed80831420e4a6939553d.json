@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "d86ca05cf77d70983e4ca459241c1450081d0e8a14a8c6ac32591fffd7983772",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:50.319296+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Juniper Engineering Group",
+    "page": null,
+    "evidence": "Please find attached a new submission for Juniper Engineering Group for a property quote"
+   },
+   "effective_date": {
+    "value": "2026-11-15",
+    "page": null,
+    "evidence": "with an inception date of 11/15/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-29",
+    "page": null,
+    "evidence": "We need indications by October 29 if at all possible."
+   },
+   "producer_name": {
+    "value": "David O'Brien",
+    "page": null,
+    "evidence": "David O'Brien <david.obrien@copperfieldrisk.com>"
+   },
+   "producer_email": {
+    "value": "david.obrien@copperfieldrisk.com",
+    "page": null,
+    "evidence": "david.obrien@copperfieldrisk.com"
+   },
+   "producer_phone": {
+    "value": "(489) 663-6636",
+    "page": null,
+    "evidence": "(489) 663-6636"
+   },
+   "agency_name": {
+    "value": "Copperfield Risk Advisors",
+    "page": null,
+    "evidence": "Copperfield Risk Advisors"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2049,
+  "output_tokens": 529,
+  "latency_ms": 3532.7684559999852,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

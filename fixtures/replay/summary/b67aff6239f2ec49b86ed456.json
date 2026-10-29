@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "ed6223d87aa65f2a11c146a1add54d807273ce7d6b410de65372a8eb0930a9ba",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:26.093476+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept, per the rules decision [decision]. This is a new business submission [policy.transaction_type] effective 2026-12-01 [policy.effective_date], with a quote needed by 2026-11-24 [policy.quote_needed_by].\n\n**Why**\nThe rules engine returned accept [decision]. Supporting facts: five-year incurred is 90,630 [totals.five_year_incurred] against five-year premium of 426,910 [totals.five_year_premium], a loss ratio of about 21.2%. There is a single closed claim with no reserve [claims[CL9353546].status, claims[CL9353546].reserve]. The insured has 32 years in business [insured.years_in_business].\n\n**Account**\nCopper Hill Machine Works Corporation [insured.named_insured], dba Copper Machine Shop [insured.dba], does CNC machining of metal parts [insured.business_description]. Revenue is 35,670,000 [insured.annual_revenue] with 56 employees [insured.employee_count]. Broker is Brightline Insurance Partners [broker.agency_name]. Prior carrier is Harborline Indemnity Company [policy.prior_carrier]. Total TIV is 31,070,000 across 5 locations [totals.total_tiv, totals.location_count]. Special form, replacement cost, 90% coinsurance, 25,000 deductible [coverage.cause_of_loss_form, coverage.valuation, coverage.coinsurance_pct, coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested, coverage.earthquake_requested].\n\n**Locations & COPE**\nAll five locations are machine shops [locations[1].occupancy]. The largest by TIV is Salt Lake City at 10,115,000 [locations[5].tiv], five stories, protection class 7 [locations[5].stories, locations[5].protection_class]. Minneapolis (8,810,000) is not sprinklered [locations[2].tiv, locations[2].sprinklered]. Omaha is frame construction [locations[3].construction]. Kansas City is 1961 joisted masonry [locations[1].year_built, locations[1].construction]. Dallas is non-combustible, sprinklered 100% [locations[4].construction, locations[4].sprinkler_pct].\n\n**Loss history**\nOne wind/hail claim, dated 2023-04-07, paid 90,630 [claims[CL9353546].date_of_loss, claims[CL9353546].cause, claims[CL9353546].paid]. All other years show zero claims [loss_years[2021].claim_count, loss_years[2023].claim_count, loss_years[2024].claim_count, loss_years[2025].claim_count].\n\n**Needs attention**\n- Year built conflict at Minneapolis: the SOV says 1991, the signed app says 2010. The 1991 value was kept per source-of-truth rules [locations[2].year_built].\n- Minneapolis is unsprinklered [locations[2].sprinklered].\n- Dallas and Salt Lake City have no roof type or alarm type listed in the data provided [locations[4].roof_year, locations[5].roof_year].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2744,
+  "output_tokens": 1060,
+  "latency_ms": 6187.089828999888,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

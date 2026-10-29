@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "23542852109dd547442ac0a8ffa0664bba58bbd5bbf0f7b53da1d655bceacb04",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:49.894988+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline, per the rules decision. No review flags were raised [review_flags].\n\n**Why**\nThe rules engine returned CLASS_PROHIBITED: NAICS 722410 (drinking place, bar/nightclub) is a prohibited class [insured.naics_code]. The business is described as a bar and nightclub with live music, open until 2 a.m. [insured.business_description].\n\n**Account**\n- Falcon Ridge Lounge LLC, Houston, TX [insured.named_insured][insured.mailing_address.city][insured.mailing_address.state]\n- 24 years in business, 136 employees [insured.years_in_business][insured.employee_count]\n- Broker: Atlas & Reed Insurance Services [broker.agency_name]\n- Renewal effective 2027-02-01, prior carrier Harborline Indemnity Company [policy.transaction_type][policy.effective_date][policy.prior_carrier]\n- Quote needed by 2027-01-16 [policy.quote_needed_by]\n- Total TIV 47,705,000 across 8 locations [totals.total_tiv][totals.location_count]\n- Flood requested [coverage.flood_requested]\n\n**Locations & COPE**\n- All 8 locations are Bar / Nightclub occupancy [locations[1].occupancy][locations[8].occupancy].\n- Locations 1, 2 and 3 are unsprinklered [locations[1].sprinklered][locations[2].sprinklered][locations[3].sprinklered]. Locations 4 through 8 are 100% sprinklered [locations[4].sprinkler_pct][locations[8].sprinkler_pct].\n- The largest location by TIV is Atlanta, GA at 10,935,000 [locations[7].tiv].\n\n**Loss history**\n- Five-year incurred is 31,510 against premium of 610,730 [totals.five_year_incurred][totals.five_year_premium]. That is a loss ratio of about 5.2%.\n- Closed vandalism claim, incurred 11,580 [claims[CL2122699].cause][claims[CL2122699].status][claims[CL2122699].incurred].\n- Open wind/hail claim, incurred 19,930, with 5,020 reserved [claims[HIC202631617].status][claims[HIC202631617].incurred][claims[HIC202631617].reserve].\n\n**Needs attention**\n- Communicate the decline to the broker before the quote deadline [policy.quote_needed_by].\n- The decision rests on class alone. Loss experience is not a factor in it [totals.five_year_incurred].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 3630,
+  "output_tokens": 1235,
+  "latency_ms": 8248.77834200015,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

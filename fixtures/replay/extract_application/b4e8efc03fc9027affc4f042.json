@@ -1,0 +1,276 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "469e98cb13cb3421544be35241f6511b44da125bd3fcf8ea070d235e4169eb70",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:32.684528+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Bayview Sports Center LLC",
+     "page": 1,
+     "evidence": "Bayview Sports Center LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "78-3709065",
+     "page": 1,
+     "evidence": "78-3709065"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "78-3709065   LLC   713940"
+    },
+    "mailing_street": {
+     "value": "6548 Madison Lane",
+     "page": 1,
+     "evidence": "6548 Madison Lane   Charleston   SC   29447"
+    },
+    "mailing_city": {
+     "value": "Charleston",
+     "page": 1,
+     "evidence": "6548 Madison Lane   Charleston   SC   29447"
+    },
+    "mailing_state": {
+     "value": "SC",
+     "page": 1,
+     "evidence": "6548 Madison Lane   Charleston   SC   29447"
+    },
+    "mailing_zip": {
+     "value": "29447",
+     "page": 1,
+     "evidence": "6548 Madison Lane   Charleston   SC   29447"
+    },
+    "business_description": {
+     "value": "Fitness center with weights, classes and locker rooms",
+     "page": 1,
+     "evidence": "Fitness center with weights, classes and locker rooms"
+    },
+    "naics_code": {
+     "value": "713940",
+     "page": 1,
+     "evidence": "78-3709065   LLC   713940"
+    },
+    "years_in_business": {
+     "value": 13,
+     "page": 1,
+     "evidence": "YEARS IN OPERATION   ANNUAL SALES   FULL-TIME STAFF 13"
+    },
+    "annual_revenue": {
+     "value": 6330000,
+     "page": 1,
+     "evidence": "$6.33M"
+    },
+    "employee_count": {
+     "value": 304,
+     "page": 1,
+     "evidence": "13   $6.33M   304"
+    },
+    "website": {
+     "value": "www.bayviewsports.com",
+     "page": 1,
+     "evidence": "www.bayviewsports.com"
+    },
+    "contact_name": {
+     "value": "Chen Yamamoto",
+     "page": 1,
+     "evidence": "Chen Yamamoto"
+    },
+    "contact_phone": {
+     "value": "(323) 835-1153",
+     "page": 1,
+     "evidence": "(323) 835-1153"
+    },
+    "contact_email": {
+     "value": "cyamamoto@bayviewsports.com",
+     "page": 1,
+     "evidence": "cyamamoto@bayviewsports.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Tidewater Risk Partners",
+     "page": 1,
+     "evidence": "Maria Rossi   Tidewater Risk Partners"
+    },
+    "producer_name": {
+     "value": "Maria Rossi",
+     "page": 1,
+     "evidence": "Maria Rossi   Tidewater Risk Partners"
+    },
+    "producer_email": {
+     "value": "maria.rossi@tidewaterrisk.com",
+     "page": 1,
+     "evidence": "maria.rossi@tidewaterrisk.com"
+    },
+    "producer_phone": {
+     "value": "(574) 410-9356",
+     "page": 1,
+     "evidence": "(574) 410-9356"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-11-01",
+     "page": 1,
+     "evidence": "November 1, 2026"
+    },
+    "expiration_date": {
+     "value": "2027-11-01",
+     "page": 1,
+     "evidence": "01-Nov-2027"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "BUSINESS TYPE New"
+    },
+    "prior_carrier": {
+     "value": "Continental Mutual Insurance Co.",
+     "page": 1,
+     "evidence": "Continental Mutual Insurance Co."
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 6520000,
+     "page": 1,
+     "evidence": "$6,520,000"
+    },
+    "bpp_limit": {
+     "value": 930000,
+     "page": 1,
+     "evidence": "930000"
+    },
+    "business_income_limit": {
+     "value": 820000,
+     "page": 1,
+     "evidence": "$820,000"
+    },
+    "deductible": {
+     "value": 1000,
+     "page": 1,
+     "evidence": "AOP DEDUCTIBLE $1,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 1,
+     "evidence": "Replacement Cost   90%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "PERILS Special"
+    },
+    "flood_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "Special   Yes   No"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Special   Yes   No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 8270000,
+    "page": 1,
+    "evidence": "$8,270,000"
+   },
+   "stated_location_count": {
+    "value": 1,
+    "page": 1,
+    "evidence": "$8,270,000   1"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "6548 Madison Lane",
+      "page": 2,
+      "evidence": "6548 Madison Lane, Charleston, SC 29447"
+     },
+     "city": {
+      "value": "Charleston",
+      "page": 2,
+      "evidence": "6548 Madison Lane, Charleston, SC 29447"
+     },
+     "state": {
+      "value": "SC",
+      "page": 2,
+      "evidence": "6548 Madison Lane, Charleston, SC 29447"
+     },
+     "zip": {
+      "value": "29447",
+      "page": 2,
+      "evidence": "6548 Madison Lane, Charleston, SC 29447"
+     },
+     "construction": {
+      "value": "non_combustible",
+      "page": 2,
+      "evidence": "Metal Bldg"
+     },
+     "year_built": {
+      "value": 1980,
+      "page": 2,
+      "evidence": "Metal Bldg   1980   6   36,200"
+     },
+     "stories": {
+      "value": 6,
+      "page": 2,
+      "evidence": "Metal Bldg   1980   6   36,200"
+     },
+     "square_feet": {
+      "value": 36200,
+      "page": 2,
+      "evidence": "Metal Bldg   1980   6   36,200"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "SPRINKLERS ... No   1"
+     },
+     "protection_class": {
+      "value": 1,
+      "page": 2,
+      "evidence": "No   1   Asphalt Shingle   2011   None"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle"
+     },
+     "roof_year": {
+      "value": 2011,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2011   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "2011   None"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9320,
+  "output_tokens": 2216,
+  "latency_ms": 10521.433488999946,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

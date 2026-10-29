@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "6669334d52e45b7e79eae5f256462c48f0ded29602268120618489532ffdc141",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:03.763755+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "KEYSTONE AUTOMOTIVE LLC",
+    "page": null,
+    "evidence": "Please find attached a new submission for KEYSTONE AUTOMOTIVE LLC for a property quote"
+   },
+   "effective_date": {
+    "value": "2026-11-01",
+    "page": null,
+    "evidence": "with an inception date of 11/1/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-11",
+    "page": null,
+    "evidence": "get us terms no later than Sunday, October 11, 2026"
+   },
+   "producer_name": {
+    "value": "Nina Carter",
+    "page": null,
+    "evidence": "Nina Carter"
+   },
+   "producer_email": {
+    "value": "nina.carter@lanternspecialty.com",
+    "page": null,
+    "evidence": "nina.carter@lanternspecialty.com"
+   },
+   "producer_phone": {
+    "value": "(338) 473-7039",
+    "page": null,
+    "evidence": "(338) 473-7039"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2079,
+  "output_tokens": 534,
+  "latency_ms": 2980.4051310001114,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

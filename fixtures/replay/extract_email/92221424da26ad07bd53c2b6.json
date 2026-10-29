@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "30c6bb65b83ae1d5df1c2bda7942daa94ba529c3025f64e5d4b3ed66d47c4baa",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:43.964482+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Evergreen Automotive, LLC",
+    "page": null,
+    "evidence": "new submission for Evergreen Automotive, LLC for a property quote"
+   },
+   "effective_date": {
+    "value": "2026-11-15",
+    "page": null,
+    "evidence": "with an inception date of 11/15/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-11",
+    "page": null,
+    "evidence": "We need indications by October 11 if at all possible."
+   },
+   "producer_name": {
+    "value": "Elena Hughes",
+    "page": null,
+    "evidence": "Elena Hughes\nAtlas & Reed Insurance Services"
+   },
+   "producer_email": {
+    "value": "elena.hughes@atlasreed.com",
+    "page": null,
+    "evidence": "elena.hughes@atlasreed.com"
+   },
+   "producer_phone": {
+    "value": "(498) 338-1463",
+    "page": null,
+    "evidence": "(498) 338-1463"
+   },
+   "agency_name": {
+    "value": "Atlas & Reed Insurance Services",
+    "page": null,
+    "evidence": "Atlas & Reed Insurance Services"
+   },
+   "approximate_total_tiv": {
+    "value": 1100000,
+    "page": null,
+    "evidence": "Total values are roughly $1.1M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2085,
+  "output_tokens": 561,
+  "latency_ms": 3441.140236000024,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

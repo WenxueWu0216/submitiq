@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "c3f247823d3210cb15c0f4eb7e52b038e3613585ba4c706af823cfb24058a1ee",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:46.347899+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Stonebridge Industrial Supply LLC",
+     "page": 1,
+     "evidence": "Stonebridge Industrial Supply LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "70-2822304",
+     "page": 1,
+     "evidence": "70-2822304   LLC   423710"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "70-2822304   LLC   423710"
+    },
+    "mailing_street": {
+     "value": "PO Box 2497",
+     "page": 1,
+     "evidence": "PO Box 2497   Boston   MA   02154"
+    },
+    "mailing_city": {
+     "value": "Boston",
+     "page": 1,
+     "evidence": "PO Box 2497   Boston   MA   02154"
+    },
+    "mailing_state": {
+     "value": "MA",
+     "page": 1,
+     "evidence": "PO Box 2497   Boston   MA   02154"
+    },
+    "mailing_zip": {
+     "value": "02154",
+     "page": 1,
+     "evidence": "PO Box 2497   Boston   MA   02154"
+    },
+    "business_description": {
+     "value": "Wholesale distribution of hardware and fasteners",
+     "page": 1,
+     "evidence": "Wholesale distribution of hardware and fasteners"
+    },
+    "naics_code": {
+     "value": "423710",
+     "page": 1,
+     "evidence": "70-2822304   LLC   423710"
+    },
+    "years_in_business": {
+     "value": 10,
+     "page": 1,
+     "evidence": "YEARS IN OPERATION   ANNUAL SALES   FULL-TIME STAFF 10"
+    },
+    "annual_revenue": {
+     "value": 11430000,
+     "page": 1,
+     "evidence": "$11,430,000"
+    },
+    "employee_count": {
+     "value": 83,
+     "page": 1,
+     "evidence": "10   $11,430,000   83"
+    },
+    "website": {
+     "value": "www.stonebridgeindustrial.com",
+     "page": 1,
+     "evidence": "www.stonebridgeindustrial.com"
+    },
+    "contact_name": {
+     "value": "Daniel Silva",
+     "page": 1,
+     "evidence": "INSPECTION CONTACT Daniel Silva"
+    },
+    "contact_phone": {
+     "value": "(369) 830-2078",
+     "page": 1,
+     "evidence": "(369) 830-2078"
+    },
+    "contact_email": {
+     "value": "dsilva@stonebridgeindustrial.com",
+     "page": 1,
+     "evidence": "dsilva@stonebridgeindustrial.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Tidewater Risk Partners",
+     "page": 1,
+     "evidence": "Thomas Hughes   Tidewater Risk Partners"
+    },
+    "producer_name": {
+     "value": "Thomas Hughes",
+     "page": 1,
+     "evidence": "Thomas Hughes   Tidewater Risk Partners"
+    },
+    "producer_email": {
+     "value": "thomas.hughes@tidewaterrisk.com",
+     "page": 1,
+     "evidence": "thomas.hughes@tidewaterrisk.com"
+    },
+    "producer_phone": {
+     "value": "(269) 305-3325",
+     "page": 1,
+     "evidence": "(269) 305-3325"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-02-15",
+     "page": 1,
+     "evidence": "INCEPTION 02/15/2027"
+    },
+    "expiration_date": {
+     "value": "2028-02-15",
+     "page": 1,
+     "evidence": "EXPIRY 02/15/2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "BUSINESS TYPE New"
+    },
+    "prior_carrier": {
+     "value": "Great Plains Casualty",
+     "page": 1,
+     "evidence": "Great Plains Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 16930000,
+     "page": 1,
+     "evidence": "$16,930,000"
+    },
+    "bpp_limit": {
+     "value": 4600000,
+     "page": 1,
+     "evidence": "$4,600,000"
+    },
+    "business_income_limit": {
+     "value": 1585000,
+     "page": 1,
+     "evidence": "$1,585,000"
+    },
+    "deductible": {
+     "value": 1000,
+     "page": 1,
+     "evidence": "AOP DEDUCTIBLE $1,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 80,
+     "page": 1,
+     "evidence": "80%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 1,
+     "evidence": "PERILS Broad"
+    },
+    "flood_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "FLOOD? Y"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "QUAKE? N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 20786000,
+    "page": 1,
+    "evidence": "TOTAL VALUES $20,786,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 1,
+    "evidence": "LOCATIONS 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "1564 Franklin Street",
+      "page": 2,
+      "evidence": "1564 Franklin Street, Boston, MA 02154"
+     },
+     "city": {
+      "value": "Boston",
+      "page": 2,
+      "evidence": "1564 Franklin Street, Boston, MA 02154"
+     },
+     "state": {
+      "value": "MA",
+      "page": 2,
+      "evidence": "1564 Franklin Street, Boston, MA 02154"
+     },
+     "zip": {
+      "value": "02154",
+      "page": 2,
+      "evidence": "1564 Franklin Street, Boston, MA 02154"
+     },
+     "construction": {
+      "value": "masonry_non_combustible",
+      "page": 2,
+      "evidence": "Masonry Non-Combustible"
+     },
+     "year_built": {
+      "value": 1955,
+      "page": 2,
+      "evidence": "1955   5   62,100"
+     },
+     "stories": {
+      "value": 5,
+      "page": 2,
+      "evidence": "1955   5   62,100"
+     },
+     "square_feet": {
+      "value": 62100,
+      "page": 2,
+      "evidence": "1955   5   62,100"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "SPRINKLERS ... N   4"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle   2015"
+     },
+     "roof_year": {
+      "value": 2015,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2015"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2015   Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "6621 Cedar Street",
+      "page": 2,
+      "evidence": "6621 Cedar Street, Chicago, IL 60662"
+     },
+     "city": {
+      "value": "Chicago",
+      "page": 2,
+      "evidence": "6621 Cedar Street, Chicago, IL 60662"
+     },
+     "state": {
+      "value": "IL",
+      "page": 2,
+      "evidence": "6621 Cedar Street, Chicago, IL 60662"
+     },
+     "zip": {
+      "value": "60662",
+      "page": 2,
+      "evidence": "6621 Cedar Street, Chicago, IL 60662"
+     },
+     "construction": {
+      "value": "non_combustible",
+      "page": 2,
+      "evidence": "Non-Combustible   2013   3   26,800"
+     },
+     "year_built": {
+      "value": 2013,
+      "page": 2,
+      "evidence": "Non-Combustible   2013   3   26,800"
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "2013   3   26,800"
+     },
+     "square_feet": {
+      "value": 26800,
+      "page": 2,
+      "evidence": "2013   3   26,800"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "Y   4   Asphalt Shingle   2026"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "Y   4   Asphalt Shingle   2026"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle   2026"
+     },
+     "roof_year": {
+      "value": 2026,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2026"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2026   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9486,
+  "output_tokens": 2769,
+  "latency_ms": 12751.76666099992,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

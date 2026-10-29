@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "a2375a381f0ca286efb8d465004ea8d595d4dd6e38922f061ab1957e73ff43fc",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:34.476066+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules decision is UNSPRINKLERED (refer) because location 3 is unsprinklered with a TIV of $11,530,000 [locations[3].sprinklered] [locations[3].tiv].\n\n**Why**\nLocation 3 (869 Market Street, Charlotte, NC) is masonry non-combustible, 4 stories, 41,400 sq ft [locations[3].street] [locations[3].city] [locations[3].construction] [locations[3].stories] [locations[3].square_feet]. It has local alarm only and protection class 6 [locations[3].alarm_type] [locations[3].protection_class].\n\n**Account**\nEvergreen Sports Center L.L.C., dba Evergreen Fitness Center [insured.named_insured] [insured.dba]. New business [policy.transaction_type], effective 2027-02-01 [policy.effective_date]. Prior carrier is Pinecrest Property & Casualty [policy.prior_carrier]. Quote is needed by 2027-01-11 [policy.quote_needed_by]. Broker is Copperfield Risk Advisors [broker.agency_name]. Requested: building limit 20,250,000, BPP 8,195,000, BI 2,000,000 [coverage.building_limit] [coverage.bpp_limit] [coverage.business_income_limit]. Basic form, replacement cost, 90% coinsurance, $1,000 deductible, flood requested [coverage.cause_of_loss_form] [coverage.valuation] [coverage.coinsurance_pct] [coverage.deductible] [coverage.flood_requested].\n\n**Locations & COPE**\n- Four locations, total TIV 30,455,000 [totals.location_count] [totals.total_tiv].\n- Location 2 (Pittsburgh) is also unsprinklered, with local alarm, 3 stories, and a 2009 roof [locations[2].sprinklered] [locations[2].alarm_type] [locations[2].stories] [locations[2].roof_year]. Its TIV is 9,710,000 [locations[2].tiv].\n- Location 1 (Omaha) is frame, built 1956, sprinklered, with central station alarm [locations[1].construction] [locations[1].year_built] [locations[1].sprinklered] [locations[1].alarm_type].\n- Location 4 (Nashville) is frame and unsprinklered, with TIV 3,310,000 [locations[4].construction] [locations[4].sprinklered] [locations[4].tiv].\n\n**Loss history**\nFive-year incurred is 0.00 against premium of 226,650 [totals.five_year_incurred] [totals.five_year_premium]. Claim count is 0 in each year from 2022 to 2026 [loss_years[2022].claim_count] [loss_years[2023].claim_count] [loss_years[2024].claim_count] [loss_years[2025].claim_count] [loss_years[2026].claim_count]. The loss ratio is 0%.\n\n**Needs attention**\n- Total TIV conflict: the statement of values shows 30,455,000 and the ACORD shows 28,390,000. The derived value was kept [totals.total_tiv].\n- Location 4 has low-confidence extraction on every field, including address, construction, sprinklered status, and protection class (confidence 0.79). Verify these before relying on them [locations[4].street] [locations[4].sprinklered] [locations[4].protection_class].\n- Occupancy is low confidence for locations 1 and 3 [locations[1].occupancy] [locations[3].occupancy].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2818,
+  "output_tokens": 1200,
+  "latency_ms": 6689.914313000031,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

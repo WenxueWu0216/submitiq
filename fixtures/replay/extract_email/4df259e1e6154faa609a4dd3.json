@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "cf4b91101f6cdd6d5d93fee098a78f63e0ce5c410623c04d590d47bbc3ecd7a1",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:00.668311+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Northgate Warehousing, Corp.",
+    "page": null,
+    "evidence": "New submission for Northgate Warehousing, Corp. for a property quote"
+   },
+   "effective_date": {
+    "value": "2026-12-01",
+    "page": null,
+    "evidence": "requested effective date of 12/01/2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-18",
+    "page": null,
+    "evidence": "Quote needed by 11/18/2026."
+   },
+   "producer_name": {
+    "value": "Laura Silva",
+    "page": null,
+    "evidence": "Thanks,\nLaura Silva"
+   },
+   "producer_email": {
+    "value": "laura.silva@brightlineins.com",
+    "page": null,
+    "evidence": "From: Laura Silva <laura.silva@brightlineins.com>"
+   },
+   "producer_phone": {
+    "value": "(237) 873-9690",
+    "page": null,
+    "evidence": "(237) 873-9690"
+   },
+   "agency_name": {
+    "value": "Brightline Insurance Partners",
+    "page": null,
+    "evidence": "Brightline Insurance Partners"
+   },
+   "approximate_total_tiv": {
+    "value": 18500000,
+    "page": null,
+    "evidence": "Total values are roughly $18.5M across 2 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2072,
+  "output_tokens": 545,
+  "latency_ms": 3198.9243609999676,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

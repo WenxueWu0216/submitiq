@@ -1,0 +1,412 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "c8da6ee5e5608f7dda238b67306a8db3dc24287fab3319a30327bce7f1de37e1",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:49.663975+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Clearwater Properties Corp.",
+     "page": 1,
+     "evidence": "Applicant Name: Clearwater Properties Corp."
+    },
+    "dba": {
+     "value": "Clearwater Office",
+     "page": 1,
+     "evidence": "DBA / Trade Name: Clearwater Office"
+    },
+    "fein": {
+     "value": "19-5075617",
+     "page": 1,
+     "evidence": "FEIN/Tax ID: 19-5075617"
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "Business Entity: Corporation"
+    },
+    "mailing_street": {
+     "value": "4836 Madison Street",
+     "page": 1,
+     "evidence": "Street: 4836 Madison Street"
+    },
+    "mailing_city": {
+     "value": "Galveston",
+     "page": 1,
+     "evidence": "City: Galveston"
+    },
+    "mailing_state": {
+     "value": "TX",
+     "page": 1,
+     "evidence": "State: TX"
+    },
+    "mailing_zip": {
+     "value": "77596",
+     "page": 1,
+     "evidence": "ZIP: 77596"
+    },
+    "business_description": {
+     "value": "Owns and leases multi-tenant office buildings",
+     "page": 1,
+     "evidence": "Owns and leases multi-tenant office buildings"
+    },
+    "naics_code": {
+     "value": "531120",
+     "page": 1,
+     "evidence": "NAICS: 531120"
+    },
+    "years_in_business": {
+     "value": 15,
+     "page": 1,
+     "evidence": "Yrs in Bus.: 15"
+    },
+    "annual_revenue": {
+     "value": 52140000,
+     "page": 1,
+     "evidence": "Gross Revenue: $52,140,000"
+    },
+    "employee_count": {
+     "value": 69,
+     "page": 1,
+     "evidence": "Employees: 69"
+    },
+    "website": {
+     "value": "www.clearwaterproperties.com",
+     "page": 1,
+     "evidence": "Web Address: www.clearwaterproperties.com"
+    },
+    "contact_name": {
+     "value": "Maria Levine",
+     "page": 1,
+     "evidence": "Primary Contact: Maria Levine"
+    },
+    "contact_phone": {
+     "value": "(385) 912-2712",
+     "page": 1,
+     "evidence": "Contact Phone: (385) 912-2712"
+    },
+    "contact_email": {
+     "value": "mlevine@clearwaterproperties.com",
+     "page": 1,
+     "evidence": "Contact E-mail: mlevine@clearwaterproperties.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Copperfield Risk Advisors",
+     "page": 1,
+     "evidence": "Agency Name: Copperfield Risk Advisors"
+    },
+    "producer_name": {
+     "value": "Brian Nguyen",
+     "page": 1,
+     "evidence": "Producer Name: Brian Nguyen"
+    },
+    "producer_email": {
+     "value": "brian.nguyen@copperfieldrisk.com",
+     "page": 1,
+     "evidence": "Producer E-mail: brian.nguyen@copperfieldrisk.com"
+    },
+    "producer_phone": {
+     "value": "(655) 519-8275",
+     "page": 1,
+     "evidence": "Producer Phone: (655) 519-8275"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-12-01",
+     "page": 1,
+     "evidence": "Effective Date: 01-Dec-2026"
+    },
+    "expiration_date": {
+     "value": "2027-12-01",
+     "page": 1,
+     "evidence": "Expiration Date: December 1, 2027"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "New / Renewal: New"
+    },
+    "prior_carrier": {
+     "value": "Pinecrest Property & Casualty",
+     "page": 1,
+     "evidence": "Current Carrier: Pinecrest Property & Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 33780000,
+     "page": 1,
+     "evidence": "Building: 33780000"
+    },
+    "bpp_limit": {
+     "value": 12820000,
+     "page": 1,
+     "evidence": "Business Personal Property: $12.82M"
+    },
+    "business_income_limit": {
+     "value": 4790000,
+     "page": 1,
+     "evidence": "Business Income: 4790000"
+    },
+    "deductible": {
+     "value": 5000,
+     "page": 1,
+     "evidence": "Deductible: $5,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 100,
+     "page": 1,
+     "evidence": "Coinsurance: 100%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "Cause of Loss: Special"
+    },
+    "flood_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "Flood: Y"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Earthquake: N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 51400000,
+    "page": 1,
+    "evidence": "Total TIV: $51.40M"
+   },
+   "stated_location_count": {
+    "value": 8,
+    "page": 2,
+    "evidence": "Number of Locations: 8"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "4836 Madison Street",
+      "page": 2,
+      "evidence": "4836 Madison Street   Galveston   TX   77596"
+     },
+     "city": {
+      "value": "Galveston",
+      "page": 2,
+      "evidence": "4836 Madison Street   Galveston"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "Galveston   TX   77596"
+     },
+     "zip": {
+      "value": "77596",
+      "page": 2,
+      "evidence": "TX   77596"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Frame   1998   2   26,600"
+     },
+     "year_built": {
+      "value": 1998,
+      "page": 2,
+      "evidence": "Frame   1998   2   26,600"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "Frame   1998   2   26,600"
+     },
+     "square_feet": {
+      "value": 26600,
+      "page": 2,
+      "evidence": "Frame   1998   2   26,600"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "26,600 No   3   Tile"
+     },
+     "protection_class": {
+      "value": 3,
+      "page": 2,
+      "evidence": "26,600 No   3   Tile"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Tile   2019   None"
+     },
+     "roof_year": {
+      "value": 2019,
+      "page": 2,
+      "evidence": "Tile   2019   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "Tile   2019   None"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "3097 Pine Avenue",
+      "page": 2,
+      "evidence": "3097 Pine Avenue   Kansas City   MO   64176"
+     },
+     "city": {
+      "value": "Kansas City",
+      "page": 2,
+      "evidence": "3097 Pine Avenue   Kansas City"
+     },
+     "state": {
+      "value": "MO",
+      "page": 2,
+      "evidence": "Kansas City   MO   64176"
+     },
+     "zip": {
+      "value": "64176",
+      "page": 2,
+      "evidence": "MO   64176"
+     },
+     "construction": {
+      "value": "modified_fire_resistive",
+      "page": 2,
+      "evidence": "Modified Fire Resistive   2018   6"
+     },
+     "year_built": {
+      "value": 2018,
+      "page": 2,
+      "evidence": "Modified Fire Resistive   2018   6   14,200"
+     },
+     "stories": {
+      "value": 6,
+      "page": 2,
+      "evidence": "Modified Fire Resistive   2018   6   14,200"
+     },
+     "square_feet": {
+      "value": 14200,
+      "page": 2,
+      "evidence": "6   14,200 No   1   Tile"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "14,200 No   1   Tile   2024"
+     },
+     "protection_class": {
+      "value": 1,
+      "page": 2,
+      "evidence": "14,200 No   1   Tile   2024"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Tile   2024   Central Station"
+     },
+     "roof_year": {
+      "value": 2024,
+      "page": 2,
+      "evidence": "Tile   2024   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Tile   2024   Central Station"
+     }
+    },
+    {
+     "loc_number": 3,
+     "street": {
+      "value": "7973 Harbor Road",
+      "page": 2,
+      "evidence": "7973 Harbor Road   Dallas   TX   75289"
+     },
+     "city": {
+      "value": "Dallas",
+      "page": 2,
+      "evidence": "7973 Harbor Road   Dallas"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "Dallas   TX   75289"
+     },
+     "zip": {
+      "value": "75289",
+      "page": 2,
+      "evidence": "TX   75289"
+     },
+     "construction": {
+      "value": "modified_fire_resistive",
+      "page": 2,
+      "evidence": "MFR   2010   6   45,600"
+     },
+     "year_built": {
+      "value": 2010,
+      "page": 2,
+      "evidence": "MFR   2010   6   45,600"
+     },
+     "stories": {
+      "value": 6,
+      "page": 2,
+      "evidence": "MFR   2010   6   45,600"
+     },
+     "square_feet": {
+      "value": 45600,
+      "page": 2,
+      "evidence": "MFR   2010   6   45,600"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "45,600 No   3   Membrane (TPO)"
+     },
+     "protection_class": {
+      "value": 3,
+      "page": 2,
+      "evidence": "45,600 No   3   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Membrane (TPO)   2017"
+     },
+     "roof_year": {
+      "value": 2017,
+      "page": 2,
+      "evidence": "Membrane (TPO)   2017"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2017   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9383,
+  "output_tokens": 3232,
+  "latency_ms": 15010.991944000012,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

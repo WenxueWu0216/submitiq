@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "bed106d858ab81c9bbfbff96d899ea50f79a59cf3cd8119f73253ad17cc90974",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:39.594424+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine triggered HURRICANE_ZONE: location 1 carries TIV of $8,270,000 in a tier-1 hurricane zone, ZIP 29447 [locations[1].tiv, locations[1].zip].\n\n**Why**\nSingle location, TIV $8,270,000 [totals.total_tiv, totals.location_count] in Charleston, SC [locations[1].city, locations[1].state]. Flood is requested [coverage.flood_requested]. Earthquake is not [coverage.earthquake_requested].\n\n**Account**\nBayview Sports Center LLC, a fitness center with 13 years in business [insured.named_insured, insured.business_description, insured.years_in_business]. Revenue is 6,330,000 with 304 employees [insured.annual_revenue, insured.employee_count]. New business [policy.transaction_type], effective 2026-11-01 [policy.effective_date]. Prior carrier is Continental Mutual Insurance Co. [policy.prior_carrier]. Quote is needed by 2026-10-18 [policy.quote_needed_by]. Broker is Tidewater Risk Partners [broker.agency_name].\n\n**Locations & COPE**\n6548 Madison Lane [locations[1].street]. Non-combustible construction, built 1980, 6 stories, 36,200 sq ft [locations[1].construction, locations[1].year_built, locations[1].stories, locations[1].square_feet]. Not sprinklered, no alarm [locations[1].sprinklered, locations[1].alarm_type]. Protection class 1 [locations[1].protection_class]. Asphalt shingle roof, 2011 [locations[1].roof_type, locations[1].roof_year]. Limits: building 6,520,000, BPP 930,000, BI 820,000 [coverage.building_limit, coverage.bpp_limit, coverage.business_income_limit].\n\n**Loss history**\nFive-year incurred is 29,500 on premium of 82,210 [totals.five_year_incurred, totals.five_year_premium]. Loss ratio is 35.9%. Claims:\n- Lightning, 2026-01-25, open, incurred 10,150 [claims[CL5263141].cause, claims[CL5263141].date_of_loss, claims[CL5263141].status, claims[CL5263141].incurred]\n- Frozen pipes, 2026-05-07, open, incurred 9,090 [claims[CL7931011].cause, claims[CL7931011].date_of_loss, claims[CL7931011].status, claims[CL7931011].incurred]\n- Fire, 2023-11-28, closed, incurred 10,260 [claims[23P799469].cause, claims[23P799469].date_of_loss, claims[23P799469].status, claims[23P799469].incurred]\n\n**Needs attention**\nLow-confidence extractions (0.51) need verification: cause of loss form (listed as special), deductible (1,000), and transaction type [coverage.cause_of_loss_form, coverage.deductible, policy.transaction_type].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2064,
+  "output_tokens": 1035,
+  "latency_ms": 6885.175490999927,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

@@ -1,0 +1,1380 @@
+{
+ "meta": {
+  "pipeline": "final",
+  "split": "test",
+  "backend": "replay",
+  "tag": "rescored",
+  "timestamp": "20261029T235508Z",
+  "git_sha": "455650f",
+  "n": 40,
+  "wall_seconds": 3.6,
+  "model": "claude-opus-5-5",
+  "replay_miss_policy": "abstain"
+ },
+ "metrics": {
+  "n_submissions": 40,
+  "fields": {
+   "overall": {
+    "precision": 0.9996,
+    "recall": 0.9959,
+    "f1": 0.9977,
+    "tp": 5293,
+    "fp": 2,
+    "fn": 22
+   },
+   "critical": {
+    "precision": 1.0,
+    "recall": 0.9993,
+    "f1": 0.9996,
+    "tp": 1383,
+    "fp": 0,
+    "fn": 1
+   },
+   "by_group": {
+    "insured": {
+     "precision": 0.9984,
+     "recall": 0.9969,
+     "f1": 0.9977,
+     "tp": 644,
+     "fp": 1,
+     "fn": 2
+    },
+    "broker": {
+     "precision": 0.9938,
+     "recall": 0.9938,
+     "f1": 0.9938,
+     "tp": 159,
+     "fp": 1,
+     "fn": 1
+    },
+    "policy": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 240,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage": {
+     "precision": 1.0,
+     "recall": 0.9916,
+     "f1": 0.9958,
+     "tp": 356,
+     "fp": 0,
+     "fn": 3
+    },
+    "locations": {
+     "precision": 1.0,
+     "recall": 0.9937,
+     "f1": 0.9968,
+     "tp": 2514,
+     "fp": 0,
+     "fn": 16
+    },
+    "claims": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 420,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 800,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 160,
+     "fp": 0,
+     "fn": 0
+    }
+   },
+   "by_template": {
+    "A": {
+     "precision": 0.9994,
+     "recall": 0.9936,
+     "f1": 0.9965,
+     "tp": 1716,
+     "fp": 1,
+     "fn": 11
+    },
+    "B": {
+     "precision": 0.9996,
+     "recall": 0.997,
+     "f1": 0.9983,
+     "tp": 2330,
+     "fp": 1,
+     "fn": 7
+    },
+    "C": {
+     "precision": 1.0,
+     "recall": 0.9968,
+     "f1": 0.9984,
+     "tp": 1247,
+     "fp": 0,
+     "fn": 4
+    }
+   },
+   "by_field": {
+    "broker.agency_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker.producer_email": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "broker.producer_name": {
+     "precision": 0.975,
+     "recall": 0.975,
+     "f1": 0.975,
+     "tp": 39,
+     "fp": 1,
+     "fn": 1
+    },
+    "broker.producer_phone": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].cause": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].date_of_loss": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].paid": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].policy_year": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].reserve": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "claims[].status": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 60,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.bpp_limit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.building_limit": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.business_income_limit": {
+     "precision": 1.0,
+     "recall": 0.975,
+     "f1": 0.9873,
+     "tp": 39,
+     "fp": 0,
+     "fn": 1
+    },
+    "coverage.cause_of_loss_form": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.coinsurance_pct": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 39,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.deductible": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "coverage.earthquake_requested": {
+     "precision": 1.0,
+     "recall": 0.975,
+     "f1": 0.9873,
+     "tp": 39,
+     "fp": 0,
+     "fn": 1
+    },
+    "coverage.flood_requested": {
+     "precision": 1.0,
+     "recall": 0.975,
+     "f1": 0.9873,
+     "tp": 39,
+     "fp": 0,
+     "fn": 1
+    },
+    "coverage.valuation": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.annual_revenue": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.business_description": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.contact_email": {
+     "precision": 0.975,
+     "recall": 0.975,
+     "f1": 0.975,
+     "tp": 39,
+     "fp": 1,
+     "fn": 1
+    },
+    "insured.contact_name": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.contact_phone": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.dba": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 13,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.employee_count": {
+     "precision": 1.0,
+     "recall": 0.973,
+     "f1": 0.9863,
+     "tp": 36,
+     "fp": 0,
+     "fn": 1
+    },
+    "insured.entity_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.fein": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 39,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.city": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.state": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.street": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.mailing_address.zip": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.naics_code": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.named_insured": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.website": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 38,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.years_in_business": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 39,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].alarm_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 88,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].bi_value": {
+     "precision": 1.0,
+     "recall": 0.9856,
+     "f1": 0.9928,
+     "tp": 137,
+     "fp": 0,
+     "fn": 2
+    },
+    "locations[].building_value": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].city": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].construction": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].contents_value": {
+     "precision": 1.0,
+     "recall": 0.9856,
+     "f1": 0.9928,
+     "tp": 137,
+     "fp": 0,
+     "fn": 2
+    },
+    "locations[].occupancy": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].protection_class": {
+     "precision": 1.0,
+     "recall": 0.9926,
+     "f1": 0.9963,
+     "tp": 135,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].roof_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 88,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].roof_year": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 135,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].sprinkler_pct": {
+     "precision": 1.0,
+     "recall": 0.9281,
+     "f1": 0.9627,
+     "tp": 129,
+     "fp": 0,
+     "fn": 10
+    },
+    "locations[].sprinklered": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].square_feet": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].state": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].stories": {
+     "precision": 1.0,
+     "recall": 0.9928,
+     "f1": 0.9964,
+     "tp": 138,
+     "fp": 0,
+     "fn": 1
+    },
+    "locations[].street": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].tiv": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].year_built": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 137,
+     "fp": 0,
+     "fn": 0
+    },
+    "locations[].zip": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 139,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].carrier": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].claim_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].earned_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "loss_years[].total_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 200,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.effective_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.expiration_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.prior_carrier": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.quote_needed_by": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.submission_received_date": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "policy.transaction_type": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.five_year_incurred": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.five_year_premium": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.location_count": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    },
+    "totals.total_tiv": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 40,
+     "fp": 0,
+     "fn": 0
+    }
+   }
+  },
+  "decision": {
+   "accuracy": 1.0,
+   "abstained": 0,
+   "declines_predicted_accept": 0,
+   "confusion": {
+    "accept->accept": 13,
+    "decline->decline": 9,
+    "refer->refer": 18
+   }
+  },
+  "review": {
+   "review_rate": 0.675,
+   "submissions_with_critical_error": 1,
+   "silent_critical_error_rate": 0.0,
+   "flag_precision": 0.02,
+   "flag_recall_of_errors": 0.0909,
+   "wrong_values": 2,
+   "flag_recall_of_wrong_values": 0.5,
+   "flagged_fields_per_submission": 2.5,
+   "degraded_rate": 0.0
+  },
+  "conflicts": {
+   "precision": 0.6552,
+   "recall": 0.95,
+   "f1": 0.7755,
+   "tp": 19,
+   "fp": 10,
+   "fn": 1
+  },
+  "documents": {
+   "classification_accuracy": 1.0
+  },
+  "latency_ms": {
+   "mean": 2190.9,
+   "p50": 197.8,
+   "p95": 9166.5,
+   "llm_recorded_mean": 22908.8
+  },
+  "cost": {
+   "usd_per_submission": 0.07271,
+   "input_tokens_per_submission": 14026.8,
+   "output_tokens_per_submission": 4465.8,
+   "est_prompt_tokens_per_submission": 7537.1,
+   "llm_calls_by_source": {
+    "replay:recorded": 121
+   },
+   "llm_calls_by_task": {
+    "extract_application": 40,
+    "extract_email": 40,
+    "extract_sov": 1,
+    "summary": 40
+   }
+  },
+  "summary": {
+   "citation_valid_rate": 1.0,
+   "llm_narrative_accept_rate": 0.725
+  }
+ },
+ "submissions": [
+  {
+   "id": "SUB-0081",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0082",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)",
+    "insured.naics_code: low_confidence (LLM evidence quote not found in the document; confidence 0.51 < 0.8)",
+    "insured.named_insured: conflict (insured.named_insured: application says 'Old Mill Salvage L.L.C.', Loss_History.pdf says 'Old Mill Distribution Inc.'; name variant on statement_of_values.xlsx: 'Old Mill' (treated as the same entity))",
+    "policy.effective_date: low_confidence (LLM evidence quote not found in the document; confidence 0.57 < 0.8)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0083",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: Attachment_22765.pdf says 1971, file28141.pdf says 1989 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0084",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0085",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "scan18340.pdf: no known form labels found (unfamiliar layout?)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0086",
+   "template": "B",
+   "f1": 0.9781,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].sprinkler_pct",
+    "locations[3].sprinkler_pct",
+    "locations[4].protection_class",
+    "locations[4].sprinkler_pct",
+    "locations[4].stories"
+   ],
+   "review_reasons": [
+    "locations[4].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0087",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0088",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "application.pdf: no known form labels found (unfamiliar layout?)",
+    "totals.total_tiv: conflict (totals.total_tiv: SOV.xlsx says 47410000.0, application.pdf says 41959000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0089",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0090",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0091",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "Attachment_25187.pdf: no known form labels found (unfamiliar layout?)",
+    "locations[2].year_built: conflict (locations[2].year_built: scan99931.xlsx says 1995, Attachment_25187.pdf says 2013 (kept the table_parser:local value per source-of-truth rules))",
+    "policy.effective_date: low_confidence (LLM evidence quote not found in the document; confidence 0.57 < 0.8)",
+    "totals.total_tiv: conflict (totals.total_tiv: scan99931.xlsx says 23115000.0, Attachment_25187.pdf says 20786000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0092",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[1].construction: conflict (locations[1].construction: statement_of_values.xlsx says 'non_combustible', application.pdf says 'joisted_masonry' (kept the table_parser:local value per source-of-truth rules))",
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.xlsx says 1996, application.pdf says 1990 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0093",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0094",
+   "template": "A",
+   "f1": 0.9703,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].bi_value",
+    "locations[1].contents_value",
+    "locations[1].sprinkler_pct",
+    "locations[2].bi_value",
+    "locations[2].contents_value",
+    "locations[2].sprinkler_pct"
+   ],
+   "review_reasons": [
+    "totals.total_tiv: conflict (totals.total_tiv: Property_Schedule.pdf says 16525000.0, Signed_App.pdf says 15150000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0095",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0096",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0097",
+   "template": "C",
+   "f1": 0.9835,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "insured.employee_count"
+   ],
+   "review_reasons": [
+    "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)",
+    "policy.effective_date: conflict (policy.effective_date: ACORD_125_140.pdf says datetime.date(2026, 12, 15), email.txt says datetime.date(2026, 12, 29) (kept the llm:application value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 16940000.0, ACORD_125_140.pdf says 14540000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0098",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[1].construction: conflict (locations[1].construction: SOV.pdf says 'fire_resistive', ACORD_125_140.pdf says 'frame' (kept the table_parser:local value per source-of-truth rules))",
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)",
+    "locations[2].construction: conflict (locations[2].construction: SOV.pdf says 'modified_fire_resistive', ACORD_125_140.pdf says 'joisted_masonry' (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0099",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[1].year_built: conflict (locations[1].year_built: scan83894.pdf says 1988, doc56976.pdf says 1977 (kept the table_parser:local value per source-of-truth rules))",
+    "totals.total_tiv: conflict (totals.total_tiv: scan83894.pdf says 9380000.0, doc56976.pdf says 7879000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0100",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[2].construction: conflict (locations[2].construction: Property_Schedule.xlsx says 'frame', Signed_App.pdf says 'joisted_masonry' (kept the table_parser:local value per source-of-truth rules))",
+    "locations[3].construction: conflict (locations[3].construction: Property_Schedule.xlsx says 'joisted_masonry', Signed_App.pdf says 'masonry_non_combustible' (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0101",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "insured.named_insured: conflict (insured.named_insured: application says 'Prairie Wind Engineering Group LLC', Loss_History.pdf says 'Prairie Wind Distribution Inc.')"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0102",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "policy.effective_date: conflict (policy.effective_date: Attachment_58785.pdf says datetime.date(2026, 11, 1), email.txt says datetime.date(2026, 11, 15) (kept the form_parser value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0103",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0104",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "scan57296.pdf: no known form labels found (unfamiliar layout?)",
+    "locations[1].tiv: invalid (sov_total_reconciles: sum of TIV column 4,740,000 vs stated total 4,735,000)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0105",
+   "template": "A",
+   "f1": 0.9848,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "locations[1].sprinkler_pct",
+    "locations[2].sprinkler_pct",
+    "locations[3].sprinkler_pct",
+    "locations[4].sprinkler_pct"
+   ],
+   "review_reasons": [
+    "locations[4].construction: low_confidence (confidence 0.79 < 0.8)",
+    "locations[4].protection_class: low_confidence (confidence 0.79 < 0.8)",
+    "locations[4].roof_year: low_confidence (confidence 0.79 < 0.8)",
+    "locations[4].sprinklered: low_confidence (confidence 0.79 < 0.8)",
+    "locations[4].year_built: low_confidence (confidence 0.79 < 0.8)",
+    "locations[4].zip: low_confidence (confidence 0.79 < 0.8)",
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.pdf says 30455000.0, ACORD_125_140.pdf says 28390000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0106",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "insured.named_insured: conflict (insured.named_insured: application says 'Oak Hollow Office Holdings LLC', file60005.pdf says 'Oak Hollow Distribution Inc.'; name variant on scan29636.xlsx: 'Oak Hollow' (treated as the same entity))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0107",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0108",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[2].construction: conflict (locations[2].construction: Property_Schedule.xlsx says 'non_combustible', application.pdf says 'joisted_masonry' (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0109",
+   "template": "A",
+   "f1": 0.9897,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "broker.producer_name"
+   ],
+   "missed": [],
+   "review_reasons": [
+    "broker.producer_name: conflict (broker.producer_name: application.pdf says 'Danie! Kim', email.txt says 'Daniel Kim' (kept the form_parser value per source-of-truth rules); llm:application read 'Daniel Kim' from the same document)",
+    "locations[2].construction: conflict (locations[2].construction: Property_Schedule.xlsx says 'non_combustible', application.pdf says 'joisted_masonry' (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0110",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[2].year_built: conflict (locations[2].year_built: statement_of_values.xlsx says 1991, Signed_App.pdf says 2010 (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0111",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "Signed_App.pdf: no known form labels found (unfamiliar layout?)",
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0112",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[1].construction: conflict (locations[1].construction: statement_of_values.xlsx says 'joisted_masonry', ACORD_125_140.pdf says 'masonry_non_combustible' (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0113",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "Attachment_34731.pdf: no known form labels found (unfamiliar layout?)",
+    "policy.effective_date: low_confidence (LLM evidence quote not found in the document; confidence 0.57 < 0.8)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0114",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[1].year_built: missing (required for the appetite rules but not found in any document)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0115",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "locations[2].construction: conflict (locations[2].construction: Attachment_32536.xlsx says 'non_combustible', scan48825.pdf says 'joisted_masonry' (kept the table_parser:local value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0116",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "application.pdf: no known form labels found (unfamiliar layout?)",
+    "locations[1].protection_class: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: Property_Schedule.pdf says 35345000.0, application.pdf says 32410000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0117",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0118",
+   "template": "B",
+   "f1": 0.9908,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [
+    "insured.contact_email"
+   ],
+   "missed": [],
+   "review_reasons": [
+    "locations[2].year_built: missing (required for the appetite rules but not found in any document)",
+    "totals.total_tiv: conflict (totals.total_tiv: IMG_63831.xlsx says 5355000.0, file75325.pdf says 4497000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0119",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": true,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [
+    "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)",
+    "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.pdf says 4990000.0, ACORD_125_140.pdf says 4213000.0 (kept the derived value per source-of-truth rules))"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0120",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  }
+ ]
+}

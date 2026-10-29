@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "c0ae413c08fb4cfd3503f0b6a99d2c602f00ad9c3de62199c1914e8b1dfc54e3",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:37.761982+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Riverbend Tavern LLC",
+    "page": null,
+    "evidence": "Property submission: Riverbend Tavern LLC"
+   },
+   "effective_date": {
+    "value": "2026-12-01",
+    "page": null,
+    "evidence": "requested effective date of 12/01/2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-17",
+    "page": null,
+    "evidence": "Quote needed by 11/17/2026."
+   },
+   "producer_name": {
+    "value": "Elena O'Brien",
+    "page": null,
+    "evidence": "Elena O'Brien"
+   },
+   "producer_email": {
+    "value": "elena.obrien@copperfieldrisk.com",
+    "page": null,
+    "evidence": "elena.obrien@copperfieldrisk.com"
+   },
+   "producer_phone": {
+    "value": "(348) 444-1529",
+    "page": null,
+    "evidence": "(348) 444-1529"
+   },
+   "agency_name": {
+    "value": "Copperfield Risk Advisors",
+    "page": null,
+    "evidence": "Copperfield Risk Advisors"
+   },
+   "approximate_total_tiv": {
+    "value": 32900000,
+    "page": null,
+    "evidence": "Total values are roughly $32.9M across 4 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2091,
+  "output_tokens": 534,
+  "latency_ms": 3105.8518689999346,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "4f18216eabf03e226764324059368990b7948fc2ff12f26a4d38b84434e56d0a",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:55.981421+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept [decision]. This is a renewal [policy.transaction_type] effective 2026-11-15 [policy.effective_date]. The quote is needed by 2026-10-29 [policy.quote_needed_by].\n\n**Why**\nThe rules decision is accept [decision]. Five-year incurred losses are 0.00 [totals.five_year_incurred] against five-year premium of 202,270 [totals.five_year_premium], so the loss ratio is 0%. All five loss years show zero claims [loss_years[2021].claim_count] [loss_years[2025].claim_count].\n\n**Account**\nJuniper Engineering Group Corporation [insured.named_insured], a civil and structural engineering consulting office [insured.business_description], has been in business 4 years [insured.years_in_business]. It has 180 employees [insured.employee_count] and revenue of 17,060,000 [insured.annual_revenue]. Prior carrier is Great Plains Casualty [policy.prior_carrier]. Broker is Copperfield Risk Advisors [broker.agency_name].\n\n**Locations & COPE**\nTotal TIV is 19,805,000 [totals.total_tiv] across 2 locations [totals.location_count]. Coverage is special form [coverage.cause_of_loss_form], replacement cost [coverage.valuation], 90% coinsurance [coverage.coinsurance_pct], with a 5,000 deductible [coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested] [coverage.earthquake_requested].\n- Loc 1, Pittsburgh PA: 4 stories [locations[1].stories], 29,300 sq ft [locations[1].square_feet], not sprinklered [locations[1].sprinklered], central station alarm [locations[1].alarm_type], PC 4 [locations[1].protection_class], asphalt shingle roof from 2007 [locations[1].roof_type] [locations[1].roof_year], TIV 9,665,000 [locations[1].tiv].\n- Loc 2, Charlotte NC: 1 story [locations[2].stories], 29,000 sq ft [locations[2].square_feet], 75% sprinklered [locations[2].sprinkler_pct], no alarm [locations[2].alarm_type], PC 1 [locations[2].protection_class], tile roof from 2006 [locations[2].roof_type] [locations[2].roof_year], TIV 10,140,000 [locations[2].tiv].\n\n**Loss history**\nNo claims and 0.00 incurred in 2021\u20132025 with Great Plains Casualty [totals.five_year_incurred] [loss_years[2025].carrier].\n\n**Needs attention**\n- Construction for location 1 conflicts between sources: the statement of values says non_combustible and the application says joisted_masonry. The non_combustible value was kept [locations[1].construction].\n- Year built for location 2 conflicts: the statement of values says 1996 and the application says 1990. The 1996 value was kept [locations[2].year_built].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1927,
+  "output_tokens": 1022,
+  "latency_ms": 5644.350042999918,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

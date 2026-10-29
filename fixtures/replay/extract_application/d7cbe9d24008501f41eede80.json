@@ -1,0 +1,276 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "3d09899ae02ba203c33ee540d0ebcdaecc900687f9f37d7e5d729739534ce025",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:09.227296+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Clearwater Grocers Partners LP",
+     "page": 1,
+     "evidence": "Applicant Name: Clearwater Grocers Partners LP"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "32-7642249",
+     "page": 1,
+     "evidence": "FEIN/Tax ID: 32-7642249"
+    },
+    "entity_type": {
+     "value": "partnership",
+     "page": 1,
+     "evidence": "Business Entity: Partnership"
+    },
+    "mailing_street": {
+     "value": "PO Box 2155",
+     "page": 1,
+     "evidence": "Street: PO Box 2155"
+    },
+    "mailing_city": {
+     "value": "Minneapolis",
+     "page": 1,
+     "evidence": "City: Minneapolis"
+    },
+    "mailing_state": {
+     "value": "MN",
+     "page": 1,
+     "evidence": "State: MN"
+    },
+    "mailing_zip": {
+     "value": "55458",
+     "page": 1,
+     "evidence": "ZIP: 55458"
+    },
+    "business_description": {
+     "value": "Independent grocery store with deli and bakery counter",
+     "page": 1,
+     "evidence": "Independent grocery store with deli and bakery counter"
+    },
+    "naics_code": {
+     "value": "445110",
+     "page": 1,
+     "evidence": "NAICS: 445110"
+    },
+    "years_in_business": {
+     "value": 26,
+     "page": 1,
+     "evidence": "Yrs in Bus.: 26"
+    },
+    "annual_revenue": {
+     "value": 7020000,
+     "page": 1,
+     "evidence": "Gross Revenue: $7,020,000"
+    },
+    "employee_count": {
+     "value": 235,
+     "page": 1,
+     "evidence": "Employees: 235"
+    },
+    "website": {
+     "value": "www.clearwatergrocers.com",
+     "page": 1,
+     "evidence": "Web Address: www.clearwatergrocers.com"
+    },
+    "contact_name": {
+     "value": "Maria Reyes",
+     "page": 1,
+     "evidence": "Primary Contact: Maria Reyes"
+    },
+    "contact_phone": {
+     "value": "(979) 816-5460",
+     "page": 1,
+     "evidence": "Contact Phone: (979) 816-5460"
+    },
+    "contact_email": {
+     "value": "mreyes@clearwatergrocers.com",
+     "page": 1,
+     "evidence": "Contact E-mail: mreyes@clearwatergrocers.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Atlas & Reed Insurance Services",
+     "page": 1,
+     "evidence": "Agency Name: Atlas & Reed Insurance Services"
+    },
+    "producer_name": {
+     "value": "Priya Silva",
+     "page": 1,
+     "evidence": "Producer Name: Priya Silva"
+    },
+    "producer_email": {
+     "value": "priya.silva@atlasreed.com",
+     "page": 1,
+     "evidence": "Producer E-mail: priya.silva@atlasreed.com"
+    },
+    "producer_phone": {
+     "value": "(693) 640-1536",
+     "page": 1,
+     "evidence": "Producer Phone: (693) 640-1536"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-01-15",
+     "page": 1,
+     "evidence": "Effective Date: 2027-01-15"
+    },
+    "expiration_date": {
+     "value": "2028-01-15",
+     "page": 1,
+     "evidence": "Expiration Date: 2028-01-15"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "New / Renewal: New"
+    },
+    "prior_carrier": {
+     "value": "Continental Mutual Insurance Co.",
+     "page": 1,
+     "evidence": "Current Carrier: Continental Mutual Insurance Co."
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 4590000,
+     "page": 1,
+     "evidence": "Building: $4,590,000"
+    },
+    "bpp_limit": {
+     "value": 695000,
+     "page": 1,
+     "evidence": "Business Personal Property: $695,000"
+    },
+    "business_income_limit": {
+     "value": 960000,
+     "page": 1,
+     "evidence": "Business Income: $960,000"
+    },
+    "deductible": {
+     "value": 10000,
+     "page": 1,
+     "evidence": "Deductible: $10,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 1,
+     "evidence": "Coinsurance: 90%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "Cause of Loss: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Flood: N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Earthquake: No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 6245000,
+    "page": 1,
+    "evidence": "Total TIV: $6,245,000"
+   },
+   "stated_location_count": {
+    "value": 1,
+    "page": 2,
+    "evidence": "Number of Locations: 1"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "4671 Park Drive",
+      "page": 2,
+      "evidence": "1   4671 Park Drive   Minneapolis   MN   55458"
+     },
+     "city": {
+      "value": "Minneapolis",
+      "page": 2,
+      "evidence": "4671 Park Drive   Minneapolis   MN"
+     },
+     "state": {
+      "value": "MN",
+      "page": 2,
+      "evidence": "Minneapolis   MN   55458"
+     },
+     "zip": {
+      "value": "55458",
+      "page": 2,
+      "evidence": "MN   55458   FR"
+     },
+     "construction": {
+      "value": "fire_resistive",
+      "page": 2,
+      "evidence": "55458   FR   2012"
+     },
+     "year_built": {
+      "value": 2012,
+      "page": 2,
+      "evidence": "FR   2012   5   25,500"
+     },
+     "stories": {
+      "value": 5,
+      "page": 2,
+      "evidence": "2012   5   25,500"
+     },
+     "square_feet": {
+      "value": 25500,
+      "page": 2,
+      "evidence": "5   25,500 Y   4"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "25,500 Y   4"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "Y   4   Asphalt Shingle"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "4   Asphalt Shingle   2022"
+     },
+     "roof_year": {
+      "value": 2022,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2022   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "2022   Local"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9251,
+  "output_tokens": 2196,
+  "latency_ms": 10411.480721999964,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

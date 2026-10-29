@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "821275445571e220b6a320f41f924fd3a0eee5638eac531a28b6aa9df5f9d79f",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:27.534998+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Redstone Distribution",
+    "page": null,
+    "evidence": "Property submission: Redstone Distribution"
+   },
+   "effective_date": {
+    "value": "2026-11-01",
+    "page": null,
+    "evidence": "requested effective date of 11/01/2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-24",
+    "page": null,
+    "evidence": "Quote needed by 10/24/2026."
+   },
+   "producer_name": {
+    "value": "Laura Carter",
+    "page": null,
+    "evidence": "Laura Carter"
+   },
+   "producer_email": {
+    "value": "laura.carter@hollisbenton.com",
+    "page": null,
+    "evidence": "laura.carter@hollisbenton.com"
+   },
+   "producer_phone": {
+    "value": "(963) 450-6917",
+    "page": null,
+    "evidence": "(963) 450-6917"
+   },
+   "agency_name": {
+    "value": "Hollis Benton Agency",
+    "page": null,
+    "evidence": "Hollis Benton Agency"
+   },
+   "approximate_total_tiv": {
+    "value": 65800000,
+    "page": null,
+    "evidence": "Total values are roughly $65.8M across 10 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2068,
+  "output_tokens": 512,
+  "latency_ms": 3350.4199719999406,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

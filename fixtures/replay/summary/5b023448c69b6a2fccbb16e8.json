@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "521332bf2c5566d3e5e190b3993829449842fff60435ad2e400474f8bb6f9469",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:49:21.004269+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine returned CLASS_REFER because NAICS 722511 (full-service restaurant) requires referral [insured.naics_code]. No review flags were raised [review_flags].\n\n**Why**\nThe referral is class-driven only. The insured is a full-service restaurant with bar and commercial cooking [insured.business_description], coded NAICS 722511 [insured.naics_code].\n\n**Account**\nSummit Crest Restaurant Group L.L.C. [insured.named_insured], Minneapolis, MN [insured.mailing_address.city], [insured.mailing_address.state]. 53 years in business [insured.years_in_business], revenue 20,400,000 [insured.annual_revenue], 72 employees [insured.employee_count]. Renewal [policy.transaction_type] effective 2027-02-01 [policy.effective_date]; prior carrier Sterling National Insurance [policy.prior_carrier]. Quote needed by 2027-01-13 [policy.quote_needed_by]; submission received 2027-01-02 [policy.submission_received_date]. Broker: Granite Peak Insurance Group [broker.agency_name]. Total TIV 19,370,000 across 4 locations [totals.total_tiv], [totals.location_count]. Building limit 12,805,000 [coverage.building_limit], BPP 4,760,000 [coverage.bpp_limit], BI 1,805,000 [coverage.business_income_limit]; deductible 25,000 [coverage.deductible], ACV valuation [coverage.valuation], 90% coinsurance [coverage.coinsurance_pct], special form [coverage.cause_of_loss_form]. Flood and earthquake not requested [coverage.flood_requested], [coverage.earthquake_requested].\n\n**Locations & COPE**\n- Minneapolis: largest TIV at 9,000,000 [locations[1].tiv]; non-combustible [locations[1].construction], not sprinklered [locations[1].sprinklered], local alarm [locations[1].alarm_type].\n- Chicago: TIV 5,885,000 [locations[2].tiv]; not sprinklered [locations[2].sprinklered], no alarm [locations[2].alarm_type].\n- Houston: TIV 1,190,000 [locations[3].tiv]; frame [locations[3].construction], 100% sprinklered [locations[3].sprinkler_pct], central station alarm [locations[3].alarm_type].\n- Fort Lauderdale: TIV 3,295,000 [locations[4].tiv]; 100% sprinklered [locations[4].sprinkler_pct]. Roof type and alarm type are not provided in the fields.\n\n**Loss history**\nFive-year incurred is 0.00 [totals.five_year_incurred] against five-year premium of 142,870 [totals.five_year_premium], for a 0% loss ratio. Zero claims were reported in each year 2022\u20132026 [loss_years[2022].claim_count], [loss_years[2023].claim_count], [loss_years[2024].claim_count], [loss_years[2025].claim_count], [loss_years[2026].claim_count].\n\n**Needs attention**\n- Confirm referral handling for the restaurant class [insured.naics_code].\n- Missing Fort Lauderdale roof type and alarm type (no field values provided).\n- Quote deadline is 2027-01-13 [policy.quote_needed_by].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2342,
+  "output_tokens": 1157,
+  "latency_ms": 6597.078569999894,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

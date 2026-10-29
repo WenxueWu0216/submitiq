@@ -1,0 +1,276 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "2a754b5c0d9244bb3527501c1f13540ea982a60a2ca1d2d9b5ad2a68482e3a2e",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:49:01.393081+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Sunrise Auto Care LLC",
+     "page": 1,
+     "evidence": "Sunrise Auto Care LLC   Sunrise Auto Repair"
+    },
+    "dba": {
+     "value": "Sunrise Auto Repair",
+     "page": 1,
+     "evidence": "Sunrise Auto Care LLC   Sunrise Auto Repair"
+    },
+    "fein": {
+     "value": "60-8775946",
+     "page": 1,
+     "evidence": "60-8775946   LLC   811111"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "60-8775946   LLC   811111"
+    },
+    "mailing_street": {
+     "value": "4261 Commerce Boulevard",
+     "page": 1,
+     "evidence": "4261 Commerce Boulevard   Kansas City   MO   64153"
+    },
+    "mailing_city": {
+     "value": "Kansas City",
+     "page": 1,
+     "evidence": "4261 Commerce Boulevard   Kansas City   MO   64153"
+    },
+    "mailing_state": {
+     "value": "MO",
+     "page": 1,
+     "evidence": "4261 Commerce Boulevard   Kansas City   MO   64153"
+    },
+    "mailing_zip": {
+     "value": "64153",
+     "page": 1,
+     "evidence": "4261 Commerce Boulevard   Kansas City   MO   64153"
+    },
+    "business_description": {
+     "value": "General automotive repair and maintenance garage",
+     "page": 1,
+     "evidence": "General automotive repair and maintenance garage"
+    },
+    "naics_code": {
+     "value": "811111",
+     "page": 1,
+     "evidence": "60-8775946   LLC   811111"
+    },
+    "years_in_business": {
+     "value": 17,
+     "page": 1,
+     "evidence": "17   $4,920,000   169"
+    },
+    "annual_revenue": {
+     "value": 4920000,
+     "page": 1,
+     "evidence": "17   $4,920,000   169"
+    },
+    "employee_count": {
+     "value": 169,
+     "page": 1,
+     "evidence": "17   $4,920,000   169"
+    },
+    "website": {
+     "value": "www.sunriseauto.com",
+     "page": 1,
+     "evidence": "www.sunriseauto.com   Aisha Silva"
+    },
+    "contact_name": {
+     "value": "Aisha Silva",
+     "page": 1,
+     "evidence": "www.sunriseauto.com   Aisha Silva"
+    },
+    "contact_phone": {
+     "value": "(919) 747-8623",
+     "page": 1,
+     "evidence": "(919) 747-8623   asilva@sunriseauto.com"
+    },
+    "contact_email": {
+     "value": "asilva@sunriseauto.com",
+     "page": 1,
+     "evidence": "(919) 747-8623   asilva@sunriseauto.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Hollis Benton Agency",
+     "page": 1,
+     "evidence": "Rosa Carter   Hollis Benton Agency"
+    },
+    "producer_name": {
+     "value": "Rosa Carter",
+     "page": 1,
+     "evidence": "Rosa Carter   Hollis Benton Agency"
+    },
+    "producer_email": {
+     "value": "rosa.carter@hollisbenton.com",
+     "page": 1,
+     "evidence": "rosa.carter@hollisbenton.com"
+    },
+    "producer_phone": {
+     "value": "(617) 327-9885",
+     "page": 1,
+     "evidence": "(617) 327-9885"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-03-01",
+     "page": 1,
+     "evidence": "03/01/2027   03/01/2028   New"
+    },
+    "expiration_date": {
+     "value": "2028-03-01",
+     "page": 1,
+     "evidence": "03/01/2027   03/01/2028   New"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "03/01/2027   03/01/2028   New"
+    },
+    "prior_carrier": {
+     "value": "Pinecrest Property & Casualty",
+     "page": 1,
+     "evidence": "Pinecrest Property & Casualty   $4,213,000   1"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 3110000,
+     "page": 1,
+     "evidence": "$3,110,000   $1.27M   $605,000"
+    },
+    "bpp_limit": {
+     "value": 1270000,
+     "page": 1,
+     "evidence": "$3,110,000   $1.27M   $605,000"
+    },
+    "business_income_limit": {
+     "value": 605000,
+     "page": 1,
+     "evidence": "$3,110,000   $1.27M   $605,000"
+    },
+    "deductible": {
+     "value": 10000,
+     "page": 1,
+     "evidence": "$10,000   Replacement Cost   90%"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "$10,000   Replacement Cost   90%"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 1,
+     "evidence": "$10,000   Replacement Cost   90%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 1,
+     "evidence": "Broad   No   No"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Broad   No   No"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Broad   No   No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 4213000,
+    "page": 1,
+    "evidence": "Pinecrest Property & Casualty   $4,213,000   1"
+   },
+   "stated_location_count": {
+    "value": 1,
+    "page": 1,
+    "evidence": "Pinecrest Property & Casualty   $4,213,000   1"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "4261 Commerce Boulevard",
+      "page": 2,
+      "evidence": "4261 Commerce Boulevard, Kansas City, MO 64153"
+     },
+     "city": {
+      "value": "Kansas City",
+      "page": 2,
+      "evidence": "4261 Commerce Boulevard, Kansas City, MO 64153"
+     },
+     "state": {
+      "value": "MO",
+      "page": 2,
+      "evidence": "4261 Commerce Boulevard, Kansas City, MO 64153"
+     },
+     "zip": {
+      "value": "64153",
+      "page": 2,
+      "evidence": "4261 Commerce Boulevard, Kansas City, MO 64153"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Wood Frame   1973   2   12,500"
+     },
+     "year_built": {
+      "value": 1973,
+      "page": 2,
+      "evidence": "Wood Frame   1973   2   12,500"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "Wood Frame   1973   2   12,500"
+     },
+     "square_feet": {
+      "value": 12500,
+      "page": 2,
+      "evidence": "Wood Frame   1973   2   12,500"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle   2007   Central Station"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle   2007   Central Station"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle   2007   Central Station"
+     },
+     "roof_year": {
+      "value": 2007,
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle   2007   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle   2007   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9332,
+  "output_tokens": 2469,
+  "latency_ms": 11332.322327000156,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

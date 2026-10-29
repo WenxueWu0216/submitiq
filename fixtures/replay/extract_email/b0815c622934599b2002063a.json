@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "6901c541db17b404298b584983efea8ee3e5963b68d863a31a12146986875af6",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:12.493499+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Clearwater Grocers Partners",
+    "page": null,
+    "evidence": "new submission for Clearwater Grocers Partners for property"
+   },
+   "effective_date": {
+    "value": "2027-01-15",
+    "page": null,
+    "evidence": "effective January 15, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2026-12-26",
+    "page": null,
+    "evidence": "Quote needed by 12/26/2026."
+   },
+   "producer_name": {
+    "value": "Priya Silva",
+    "page": null,
+    "evidence": "Priya Silva\nAtlas & Reed Insurance Services"
+   },
+   "producer_email": {
+    "value": "priya.silva@atlasreed.com",
+    "page": null,
+    "evidence": "From: Priya Silva <priya.silva@atlasreed.com>"
+   },
+   "producer_phone": {
+    "value": "(693) 640-1536",
+    "page": null,
+    "evidence": "(693) 640-1536"
+   },
+   "agency_name": {
+    "value": "Atlas & Reed Insurance Services",
+    "page": null,
+    "evidence": "Atlas & Reed Insurance Services"
+   },
+   "approximate_total_tiv": {
+    "value": 6200000,
+    "page": null,
+    "evidence": "Total values are roughly $6.2M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2083,
+  "output_tokens": 558,
+  "latency_ms": 3264.733402000047,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

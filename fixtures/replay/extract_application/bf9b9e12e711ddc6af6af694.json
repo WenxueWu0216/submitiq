@@ -1,0 +1,412 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "ab9abc19b0a5d0a602aaf7fd8a212db83ad740fc4bf80aedd2076b8fa7ccc5c5",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:58.552876+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Summit Crest Grocers",
+     "page": 1,
+     "evidence": "Named Insured: Summit Crest Grocers"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "35-5250901",
+     "page": 1,
+     "evidence": "FEIN: 35-5250901"
+    },
+    "entity_type": {
+     "value": null,
+     "page": 1,
+     "evidence": "Entity Type: Individual"
+    },
+    "mailing_street": {
+     "value": "2532 Main Street",
+     "page": 1,
+     "evidence": "Mailing Address: 2532 Main Street, Indianapolis, IN 46223"
+    },
+    "mailing_city": {
+     "value": "Indianapolis",
+     "page": 1,
+     "evidence": "Mailing Address: 2532 Main Street, Indianapolis, IN 46223"
+    },
+    "mailing_state": {
+     "value": "IN",
+     "page": 1,
+     "evidence": "Mailing Address: 2532 Main Street, Indianapolis, IN 46223"
+    },
+    "mailing_zip": {
+     "value": "46223",
+     "page": 1,
+     "evidence": "Mailing Address: 2532 Main Street, Indianapolis, IN 46223"
+    },
+    "business_description": {
+     "value": "Independent grocery store with deli and bakery counter",
+     "page": 1,
+     "evidence": "Nature of Business: Independent grocery store with deli and bakery counter"
+    },
+    "naics_code": {
+     "value": "445110",
+     "page": 1,
+     "evidence": "NAICS Code: 445110"
+    },
+    "years_in_business": {
+     "value": 11,
+     "page": 1,
+     "evidence": "Years in Business: 11"
+    },
+    "annual_revenue": {
+     "value": 25030000,
+     "page": 1,
+     "evidence": "Annual Revenue: $25,030,000"
+    },
+    "employee_count": {
+     "value": 354,
+     "page": 1,
+     "evidence": "Number of Employees: 354"
+    },
+    "website": {
+     "value": "www.summitcrest.com",
+     "page": 1,
+     "evidence": "Website: www.summitcrest.com"
+    },
+    "contact_name": {
+     "value": "Aisha Yamamoto",
+     "page": 1,
+     "evidence": "Contact Name: Aisha Yamamoto"
+    },
+    "contact_phone": {
+     "value": "(324) 396-9908",
+     "page": 1,
+     "evidence": "Contact Phone: (324) 396-9908"
+    },
+    "contact_email": {
+     "value": "ayamamoto@summitcrest.com",
+     "page": 1,
+     "evidence": "Contact Email: ayamamoto@summitcrest.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Northstar Commercial Brokerage",
+     "page": 1,
+     "evidence": "Agency: Northstar Commercial Brokerage"
+    },
+    "producer_name": {
+     "value": "Michael Silva",
+     "page": 1,
+     "evidence": "Producer: Michael Silva"
+    },
+    "producer_email": {
+     "value": "michael.silva@northstarcb.com",
+     "page": 1,
+     "evidence": "Producer Email: michael.silva@northstarcb.com"
+    },
+    "producer_phone": {
+     "value": "(632) 349-6109",
+     "page": 1,
+     "evidence": "Producer Phone: (632) 349-6109"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-02-01",
+     "page": 1,
+     "evidence": "Proposed Effective Date: 02/01/2027"
+    },
+    "expiration_date": {
+     "value": "2028-02-01",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: 01-Feb-2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "Transaction: New"
+    },
+    "prior_carrier": {
+     "value": "Bridgewater Assurance",
+     "page": 1,
+     "evidence": "Prior Carrier: Bridgewater Assurance"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 12530000,
+     "page": 2,
+     "evidence": "Building Limit: $12.53M"
+    },
+    "bpp_limit": {
+     "value": 5050000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $5.05M"
+    },
+    "business_income_limit": {
+     "value": 1280000,
+     "page": 2,
+     "evidence": "Business Income Limit: $1,280,000"
+    },
+    "deductible": {
+     "value": 5000,
+     "page": 2,
+     "evidence": "Deductible: $5,000"
+    },
+    "valuation": {
+     "value": "actual_cash_value",
+     "page": 2,
+     "evidence": "Valuation: Actual Cash Value"
+    },
+    "coinsurance_pct": {
+     "value": 100,
+     "page": 2,
+     "evidence": "Coinsurance: 100%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Broad"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 18860000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $18.86M"
+   },
+   "stated_location_count": {
+    "value": 3,
+    "page": 2,
+    "evidence": "Number of Locations: 3"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "2532 Main Street",
+      "page": 2,
+      "evidence": "1   2532 Main Street   Indianapolis   IN   46223"
+     },
+     "city": {
+      "value": "Indianapolis",
+      "page": 2,
+      "evidence": "2532 Main Street   Indianapolis   IN"
+     },
+     "state": {
+      "value": "IN",
+      "page": 2,
+      "evidence": "Indianapolis   IN   46223"
+     },
+     "zip": {
+      "value": "46223",
+      "page": 2,
+      "evidence": "IN   46223"
+     },
+     "construction": {
+      "value": null,
+      "page": 2,
+      "evidence": "ISO 2"
+     },
+     "year_built": {
+      "value": 2010,
+      "page": 2,
+      "evidence": "ISO 2   2010   3   32,800"
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "2010   3   32,800"
+     },
+     "square_feet": {
+      "value": 32800,
+      "page": 2,
+      "evidence": "32,800 Yes   6"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "32,800 Yes   6"
+     },
+     "protection_class": {
+      "value": 6,
+      "page": 2,
+      "evidence": "Yes   6   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Membrane (TPO)   2014"
+     },
+     "roof_year": {
+      "value": 2014,
+      "page": 2,
+      "evidence": "Membrane (TPO)   2014"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2014   Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "1694 Market Drive",
+      "page": 2,
+      "evidence": "2   1694 Market Drive   Columbus   OH   43255"
+     },
+     "city": {
+      "value": "Columbus",
+      "page": 2,
+      "evidence": "1694 Market Drive   Columbus   OH"
+     },
+     "state": {
+      "value": "OH",
+      "page": 2,
+      "evidence": "Columbus   OH   43255"
+     },
+     "zip": {
+      "value": "43255",
+      "page": 2,
+      "evidence": "OH   43255"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Wood Frame   1965"
+     },
+     "year_built": {
+      "value": 1965,
+      "page": 2,
+      "evidence": "Wood Frame   1965   2   22,400"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "1965   2   22,400"
+     },
+     "square_feet": {
+      "value": 22400,
+      "page": 2,
+      "evidence": "22,400 Yes   5"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "22,400 Yes   5"
+     },
+     "protection_class": {
+      "value": 5,
+      "page": 2,
+      "evidence": "Yes   5   Built-Up"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Built-Up   2024"
+     },
+     "roof_year": {
+      "value": 2024,
+      "page": 2,
+      "evidence": "Built-Up   2024"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2024   Central Station"
+     }
+    },
+    {
+     "loc_number": 3,
+     "street": {
+      "value": "7914 Elm Lane",
+      "page": 2,
+      "evidence": "3   7914 Elm Lane   Minneapolis   MN   55427"
+     },
+     "city": {
+      "value": "Minneapolis",
+      "page": 2,
+      "evidence": "7914 Elm Lane   Minneapolis   MN"
+     },
+     "state": {
+      "value": "MN",
+      "page": 2,
+      "evidence": "Minneapolis   MN   55427"
+     },
+     "zip": {
+      "value": "55427",
+      "page": 2,
+      "evidence": "MN   55427"
+     },
+     "construction": {
+      "value": "non_combustible",
+      "page": 2,
+      "evidence": "Non-Combustible   1977"
+     },
+     "year_built": {
+      "value": 1977,
+      "page": 2,
+      "evidence": "Non-Combustible   1977   5   6,800"
+     },
+     "stories": {
+      "value": 5,
+      "page": 2,
+      "evidence": "1977   5   6,800"
+     },
+     "square_feet": {
+      "value": 6800,
+      "page": 2,
+      "evidence": "6,800 Y   5"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "6,800 Y   5"
+     },
+     "protection_class": {
+      "value": 5,
+      "page": 2,
+      "evidence": "Y   5   Metal"
+     },
+     "roof_type": {
+      "value": "metal",
+      "page": 2,
+      "evidence": "Metal   2022"
+     },
+     "roof_year": {
+      "value": 2022,
+      "page": 2,
+      "evidence": "Metal   2022"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "2022   None"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9384,
+  "output_tokens": 3233,
+  "latency_ms": 14653.763721000018,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

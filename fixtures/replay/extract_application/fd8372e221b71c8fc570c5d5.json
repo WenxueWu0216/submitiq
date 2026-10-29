@@ -1,0 +1,412 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "15164f9556fda40a20238e03a7cf89fdaa4d47a7f031575be36daacfd3c575e2",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:34.653700+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Riverbend Tavern LLC",
+     "page": 1,
+     "evidence": "Applicant Name: Riverbend Tavern LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "89-6469467",
+     "page": 1,
+     "evidence": "FEIN/Tax ID: 89-6469467"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "Business Entity: LLC"
+    },
+    "mailing_street": {
+     "value": "4960 Pine Lane",
+     "page": 1,
+     "evidence": "Street: 4960 Pine Lane"
+    },
+    "mailing_city": {
+     "value": "Omaha",
+     "page": 1,
+     "evidence": "City: Omaha"
+    },
+    "mailing_state": {
+     "value": "NE",
+     "page": 1,
+     "evidence": "State: NE"
+    },
+    "mailing_zip": {
+     "value": "68193",
+     "page": 1,
+     "evidence": "ZIP: 68193"
+    },
+    "business_description": {
+     "value": "Bar and nightclub with live music, open until 2 a.m.",
+     "page": 1,
+     "evidence": "Bar and nightclub with live music, open until 2 a.m."
+    },
+    "naics_code": {
+     "value": "722410",
+     "page": 1,
+     "evidence": "NAICS: 722410"
+    },
+    "years_in_business": {
+     "value": 15,
+     "page": 1,
+     "evidence": "Yrs in Bus.: 15"
+    },
+    "annual_revenue": {
+     "value": 43490000,
+     "page": 1,
+     "evidence": "Gross Revenue: $43,490,000"
+    },
+    "employee_count": {
+     "value": 261,
+     "page": 1,
+     "evidence": "Employees: 261"
+    },
+    "website": {
+     "value": "www.riverbendtavern.com",
+     "page": 1,
+     "evidence": "Web Address: www.riverbendtavern.com"
+    },
+    "contact_name": {
+     "value": "Elena Johnson",
+     "page": 1,
+     "evidence": "Primary Contact: Elena Johnson"
+    },
+    "contact_phone": {
+     "value": "(216) 706-2206",
+     "page": 1,
+     "evidence": "Contact Phone: (216) 706-2206"
+    },
+    "contact_email": {
+     "value": "ejohnson@riverbendtavern.com",
+     "page": 1,
+     "evidence": "Contact E-mail: ejohnson@riverbendtavern.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Copperfield Risk Advisors",
+     "page": 1,
+     "evidence": "Agency Name: Copperfield Risk Advisors"
+    },
+    "producer_name": {
+     "value": "Elena O'Brien",
+     "page": 1,
+     "evidence": "Producer Name: Elena O'Brien"
+    },
+    "producer_email": {
+     "value": "elena.obrien@copperfieldrisk.com",
+     "page": 1,
+     "evidence": "Producer E-mail: elena.obrien@copperfieldrisk.com"
+    },
+    "producer_phone": {
+     "value": "(348) 444-1529",
+     "page": 1,
+     "evidence": "Producer Phone: (348) 444-1529"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-12-01",
+     "page": 1,
+     "evidence": "Effective Date: 12/01/2026"
+    },
+    "expiration_date": {
+     "value": "2027-12-01",
+     "page": 1,
+     "evidence": "Expiration Date: 12/01/2027"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "New / Renewal: New"
+    },
+    "prior_carrier": {
+     "value": "Great Plains Casualty",
+     "page": 1,
+     "evidence": "Current Carrier: Great Plains Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 23135000,
+     "page": 1,
+     "evidence": "Building: $23,135,000"
+    },
+    "bpp_limit": {
+     "value": 7015000,
+     "page": 1,
+     "evidence": "Business Personal Property: $7,015,000"
+    },
+    "business_income_limit": {
+     "value": 2745000,
+     "page": 1,
+     "evidence": "Business Income: $2,745,000"
+    },
+    "deductible": {
+     "value": 10000,
+     "page": 1,
+     "evidence": "Deductible: $10,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 1,
+     "evidence": "Coinsurance: 90%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "Cause of Loss: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Flood: N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Earthquake: N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 32895000,
+    "page": 1,
+    "evidence": "Total TIV: $32,895,000"
+   },
+   "stated_location_count": {
+    "value": 4,
+    "page": 2,
+    "evidence": "Number of Locations: 4"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "4960 Pine Lane",
+      "page": 2,
+      "evidence": "1   4960 Pine Lane   Omaha   NE   68193"
+     },
+     "city": {
+      "value": "Omaha",
+      "page": 2,
+      "evidence": "4960 Pine Lane   Omaha"
+     },
+     "state": {
+      "value": "NE",
+      "page": 2,
+      "evidence": "Omaha   NE   68193"
+     },
+     "zip": {
+      "value": "68193",
+      "page": 2,
+      "evidence": "NE   68193"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Joisted Masonry   1974   1   70,000"
+     },
+     "year_built": {
+      "value": 1974,
+      "page": 2,
+      "evidence": "Joisted Masonry   1974"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "1974   1   70,000"
+     },
+     "square_feet": {
+      "value": 70000,
+      "page": 2,
+      "evidence": "70,000 N   5"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "70,000 N   5"
+     },
+     "protection_class": {
+      "value": 5,
+      "page": 2,
+      "evidence": "N   5   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Membrane (TPO)   2023"
+     },
+     "roof_year": {
+      "value": 2023,
+      "page": 2,
+      "evidence": "Membrane (TPO)   2023"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2023   Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "4599 Main Lane",
+      "page": 2,
+      "evidence": "2   4599 Main Lane   San Jose   CA   95164"
+     },
+     "city": {
+      "value": "San Jose",
+      "page": 2,
+      "evidence": "4599 Main Lane   San Jose"
+     },
+     "state": {
+      "value": "CA",
+      "page": 2,
+      "evidence": "San Jose   CA   95164"
+     },
+     "zip": {
+      "value": "95164",
+      "page": 2,
+      "evidence": "CA   95164"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Joisted Masonry   1961   3   40,000 Y"
+     },
+     "year_built": {
+      "value": 1961,
+      "page": 2,
+      "evidence": "Joisted Masonry   1961"
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "1961   3   40,000 Y"
+     },
+     "square_feet": {
+      "value": 40000,
+      "page": 2,
+      "evidence": "40,000 Y   4"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "40,000 Y   4"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "Y   4   Built-Up"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Built-Up   2014"
+     },
+     "roof_year": {
+      "value": 2014,
+      "page": 2,
+      "evidence": "Built-Up   2014   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "2014   None"
+     }
+    },
+    {
+     "loc_number": 3,
+     "street": {
+      "value": "6840 Mill Street",
+      "page": 2,
+      "evidence": "3   6840 Mill Street   Seattle   WA   98163"
+     },
+     "city": {
+      "value": "Seattle",
+      "page": 2,
+      "evidence": "6840 Mill Street   Seattle"
+     },
+     "state": {
+      "value": "WA",
+      "page": 2,
+      "evidence": "Seattle   WA   98163"
+     },
+     "zip": {
+      "value": "98163",
+      "page": 2,
+      "evidence": "WA   98163"
+     },
+     "construction": {
+      "value": "fire_resistive",
+      "page": 2,
+      "evidence": "Fire Resistive   2010   8   6,300 Y"
+     },
+     "year_built": {
+      "value": 2010,
+      "page": 2,
+      "evidence": "Fire Resistive   2010"
+     },
+     "stories": {
+      "value": 8,
+      "page": 2,
+      "evidence": "2010   8   6,300 Y"
+     },
+     "square_feet": {
+      "value": 6300,
+      "page": 2,
+      "evidence": "6,300 Y   2"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "6,300 Y   2"
+     },
+     "protection_class": {
+      "value": 2,
+      "page": 2,
+      "evidence": "Y   2   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Membrane (TPO)   2024"
+     },
+     "roof_year": {
+      "value": 2024,
+      "page": 2,
+      "evidence": "Membrane (TPO)   2024   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "2024   Local"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9388,
+  "output_tokens": 3159,
+  "latency_ms": 14995.203379000031,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

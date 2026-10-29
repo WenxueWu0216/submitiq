@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "cb3bc8f4ce52e6708c8beb0dda35e3ee0929893de2032a388b6ecd47e3562c22",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:57.491533+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Blue Ridge Breads, LLC",
+    "page": null,
+    "evidence": "Property submission: Blue Ridge Breads, LLC"
+   },
+   "effective_date": {
+    "value": "2026-12-29",
+    "page": null,
+    "evidence": "effective December 29, 2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-26",
+    "page": null,
+    "evidence": "We need indications by November 26 if at all possible."
+   },
+   "producer_name": {
+    "value": "Grace Silva",
+    "page": null,
+    "evidence": "Grace Silva"
+   },
+   "producer_email": {
+    "value": "grace.silva@copperfieldrisk.com",
+    "page": null,
+    "evidence": "grace.silva@copperfieldrisk.com"
+   },
+   "producer_phone": {
+    "value": "(379) 270-4453",
+    "page": null,
+    "evidence": "(379) 270-4453"
+   },
+   "agency_name": {
+    "value": "Copperfield Risk Advisors",
+    "page": null,
+    "evidence": "Copperfield Risk Advisors"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2068,
+  "output_tokens": 506,
+  "latency_ms": 3174.3488649999563,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

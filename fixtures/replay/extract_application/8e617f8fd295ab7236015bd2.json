@@ -1,0 +1,412 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "b41849cd2eef54ccc72e842a88bb858444f3ecaa312f7d8d2b0dfa878055fbc8",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:38.574217+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Falcon Ridge Lounge LLC",
+     "page": 1,
+     "evidence": "Applicant Name: Falcon Ridge Lounge LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "79-6627474",
+     "page": 1,
+     "evidence": "FEIN/Tax ID: 79-6627474"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "Business Entity: LLC"
+    },
+    "mailing_street": {
+     "value": "7912 Jefferson Drive",
+     "page": 1,
+     "evidence": "Street: 7912 Jefferson Drive"
+    },
+    "mailing_city": {
+     "value": "Houston",
+     "page": 1,
+     "evidence": "City: Houston"
+    },
+    "mailing_state": {
+     "value": "TX",
+     "page": 1,
+     "evidence": "State: TX"
+    },
+    "mailing_zip": {
+     "value": "77007",
+     "page": 1,
+     "evidence": "ZIP: 77007"
+    },
+    "business_description": {
+     "value": "Bar and nightclub with live music, open until 2 a.m.",
+     "page": 1,
+     "evidence": "Bar and nightclub with live music, open until 2 a.m."
+    },
+    "naics_code": {
+     "value": "722410",
+     "page": 1,
+     "evidence": "NAICS: 722410"
+    },
+    "years_in_business": {
+     "value": 24,
+     "page": 1,
+     "evidence": "Yrs in Bus.: 24"
+    },
+    "annual_revenue": {
+     "value": 21850000,
+     "page": 1,
+     "evidence": "Gross Revenue: $21,850,000"
+    },
+    "employee_count": {
+     "value": 136,
+     "page": 1,
+     "evidence": "Employees: 136"
+    },
+    "website": {
+     "value": "www.falconridge.com",
+     "page": 1,
+     "evidence": "Web Address: www.falconridge.com"
+    },
+    "contact_name": {
+     "value": "Grace Yamamoto",
+     "page": 1,
+     "evidence": "Primary Contact: Grace Yamamoto"
+    },
+    "contact_phone": {
+     "value": "(452) 552-8624",
+     "page": 1,
+     "evidence": "Contact Phone: (452) 552-8624"
+    },
+    "contact_email": {
+     "value": "gyamamoto@falconridge.com",
+     "page": 1,
+     "evidence": "Contact E-mail: gyamamoto@falconridge.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Atlas & Reed Insurance Services",
+     "page": 1,
+     "evidence": "Agency Name: Atlas & Reed Insurance Services"
+    },
+    "producer_name": {
+     "value": "Thomas Reyes",
+     "page": 1,
+     "evidence": "Producer Name: Thomas Reyes"
+    },
+    "producer_email": {
+     "value": "thomas.reyes@atlasreed.com",
+     "page": 1,
+     "evidence": "Producer E-mail: thomas.reyes@atlasreed.com"
+    },
+    "producer_phone": {
+     "value": "(299) 534-7186",
+     "page": 1,
+     "evidence": "Producer Phone: (299) 534-7186"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-02-01",
+     "page": 1,
+     "evidence": "Effective Date: 02/01/2027"
+    },
+    "expiration_date": {
+     "value": "2028-02-01",
+     "page": 1,
+     "evidence": "Expiration Date: 01-Feb-2028"
+    },
+    "transaction_type": {
+     "value": "renewal",
+     "page": 1,
+     "evidence": "New / Renewal: Renewal"
+    },
+    "prior_carrier": {
+     "value": "Harborline Indemnity Company",
+     "page": 1,
+     "evidence": "Current Carrier: Harborline Indemnity Company"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 33055000,
+     "page": 1,
+     "evidence": "Building: $33,055,000"
+    },
+    "bpp_limit": {
+     "value": 10810000,
+     "page": 1,
+     "evidence": "Business Personal Property: 10810000"
+    },
+    "business_income_limit": {
+     "value": 3850000,
+     "page": 1,
+     "evidence": "Business Income: $3.85M"
+    },
+    "deductible": {
+     "value": 2500,
+     "page": 1,
+     "evidence": "Deductible: $2,500"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 1,
+     "evidence": "Coinsurance: 90%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "Cause of Loss: Special"
+    },
+    "flood_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "Flood: Y"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Earthquake: N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 47710000,
+    "page": 1,
+    "evidence": "Total TIV: $47.71M"
+   },
+   "stated_location_count": {
+    "value": 8,
+    "page": 2,
+    "evidence": "Number of Locations: 8"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "7912 Jefferson Drive",
+      "page": 2,
+      "evidence": "7912 Jefferson Drive   Houston   TX   77007"
+     },
+     "city": {
+      "value": "Houston",
+      "page": 2,
+      "evidence": "7912 Jefferson Drive   Houston"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "Houston   TX   77007"
+     },
+     "zip": {
+      "value": "77007",
+      "page": 2,
+      "evidence": "TX   77007"
+     },
+     "construction": {
+      "value": "non_combustible",
+      "page": 2,
+      "evidence": "Non-Combustible   2020   2   28,600"
+     },
+     "year_built": {
+      "value": 2020,
+      "page": 2,
+      "evidence": "Non-Combustible   2020   2   28,600"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "Non-Combustible   2020   2   28,600"
+     },
+     "square_feet": {
+      "value": 28600,
+      "page": 2,
+      "evidence": "Non-Combustible   2020   2   28,600"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "28,600 No   6"
+     },
+     "protection_class": {
+      "value": 6,
+      "page": 2,
+      "evidence": "28,600 No   6   Asphalt Shingle"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle   2026"
+     },
+     "roof_year": {
+      "value": 2026,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2026   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2026   Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "7845 Franklin Street",
+      "page": 2,
+      "evidence": "7845 Franklin Street   Atlanta   GA   30339"
+     },
+     "city": {
+      "value": "Atlanta",
+      "page": 2,
+      "evidence": "Atlanta   GA   30339"
+     },
+     "state": {
+      "value": "GA",
+      "page": 2,
+      "evidence": "Atlanta   GA   30339"
+     },
+     "zip": {
+      "value": "30339",
+      "page": 2,
+      "evidence": "GA   30339"
+     },
+     "construction": {
+      "value": "masonry_non_combustible",
+      "page": 2,
+      "evidence": "MNC   2020   4   8,300"
+     },
+     "year_built": {
+      "value": 2020,
+      "page": 2,
+      "evidence": "MNC   2020   4   8,300"
+     },
+     "stories": {
+      "value": 4,
+      "page": 2,
+      "evidence": "MNC   2020   4   8,300"
+     },
+     "square_feet": {
+      "value": 8300,
+      "page": 2,
+      "evidence": "MNC   2020   4   8,300"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "8,300 No   8"
+     },
+     "protection_class": {
+      "value": 8,
+      "page": 2,
+      "evidence": "8,300 No   8   Tile"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Tile   2021   Central Station"
+     },
+     "roof_year": {
+      "value": 2021,
+      "page": 2,
+      "evidence": "Tile   2021   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2021   Central Station"
+     }
+    },
+    {
+     "loc_number": 3,
+     "street": {
+      "value": "1693 Elm Parkway",
+      "page": 2,
+      "evidence": "1693 Elm Parkway   Denver   CO   80270"
+     },
+     "city": {
+      "value": "Denver",
+      "page": 2,
+      "evidence": "Denver   CO   80270"
+     },
+     "state": {
+      "value": "CO",
+      "page": 2,
+      "evidence": "Denver   CO   80270"
+     },
+     "zip": {
+      "value": "80270",
+      "page": 2,
+      "evidence": "CO   80270"
+     },
+     "construction": {
+      "value": "modified_fire_resistive",
+      "page": 2,
+      "evidence": "MFR   2000   4   20,200"
+     },
+     "year_built": {
+      "value": 2000,
+      "page": 2,
+      "evidence": "MFR   2000   4   20,200"
+     },
+     "stories": {
+      "value": 4,
+      "page": 2,
+      "evidence": "MFR   2000   4   20,200"
+     },
+     "square_feet": {
+      "value": 20200,
+      "page": 2,
+      "evidence": "MFR   2000   4   20,200"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "20,200 N   4"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "20,200 N   4   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Membrane (TPO)   2021"
+     },
+     "roof_year": {
+      "value": 2021,
+      "page": 2,
+      "evidence": "Membrane (TPO)   2021   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2021   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9397,
+  "output_tokens": 3217,
+  "latency_ms": 14673.230212999897,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

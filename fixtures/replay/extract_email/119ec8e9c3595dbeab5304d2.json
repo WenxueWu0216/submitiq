@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "45ef4bb812f2058f60447017b113b57ddd222690f8611c549aa63947af2899b8",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:00.302734+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Granite State Bake Shop, Inc.",
+    "page": null,
+    "evidence": "new submission for Granite State Bake Shop, Inc. for a property quote"
+   },
+   "effective_date": {
+    "value": "2026-11-01",
+    "page": null,
+    "evidence": "requested effective date of 11/01/2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-17",
+    "page": null,
+    "evidence": "We need indications by October 17 if at all possible."
+   },
+   "producer_name": {
+    "value": "Chen Patel",
+    "page": null,
+    "evidence": "Thanks,\nChen Patel"
+   },
+   "producer_email": {
+    "value": "chen.patel@atlasreed.com",
+    "page": null,
+    "evidence": "From: Chen Patel <chen.patel@atlasreed.com>"
+   },
+   "producer_phone": {
+    "value": "(948) 926-1003",
+    "page": null,
+    "evidence": "(948) 926-1003"
+   },
+   "agency_name": {
+    "value": "Atlas & Reed Insurance Services",
+    "page": null,
+    "evidence": "Atlas & Reed Insurance Services"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2063,
+  "output_tokens": 530,
+  "latency_ms": 3293.4880469999825,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

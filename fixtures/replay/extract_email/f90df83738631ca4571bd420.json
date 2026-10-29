@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "ae898b7dc7d71c193a5e885b7bfe3dc8346bbf11ea00695f4d7c5f8ac2e8edc4",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:54.431181+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Sunrise Engineering Group Corporation",
+    "page": null,
+    "evidence": "new submission for Sunrise Engineering Group Corporation for property"
+   },
+   "effective_date": {
+    "value": "2027-02-15",
+    "page": null,
+    "evidence": "requested effective date of 02/15/2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-03",
+    "page": null,
+    "evidence": "Quote needed by 02/03/2027."
+   },
+   "producer_name": {
+    "value": "Kevin Patel",
+    "page": null,
+    "evidence": "Kevin Patel"
+   },
+   "producer_email": {
+    "value": "kevin.patel@tidewaterrisk.com",
+    "page": null,
+    "evidence": "kevin.patel@tidewaterrisk.com"
+   },
+   "producer_phone": {
+    "value": "(636) 978-9623",
+    "page": null,
+    "evidence": "(636) 978-9623"
+   },
+   "agency_name": {
+    "value": "Tidewater Risk Partners",
+    "page": null,
+    "evidence": "Tidewater Risk Partners"
+   },
+   "approximate_total_tiv": {
+    "value": 4000000,
+    "page": null,
+    "evidence": "Total values are roughly $4.0M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2087,
+  "output_tokens": 537,
+  "latency_ms": 3075.186333000147,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

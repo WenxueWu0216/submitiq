@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "83e89112109014b49f55c2062140e8fba8b3582219769a65dfa3ad4f3103467f",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:10.630225+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Silver Creek Hospitality LLC",
+     "page": 1,
+     "evidence": "Named Insured: Silver Creek Hospitality LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "90-1782821",
+     "page": 1,
+     "evidence": "FEIN: 90-1782821"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "Entity Type: LLC"
+    },
+    "mailing_street": {
+     "value": "PO Box 846",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 846, San Jose, CA 95106"
+    },
+    "mailing_city": {
+     "value": "San Jose",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 846, San Jose, CA 95106"
+    },
+    "mailing_state": {
+     "value": "CA",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 846, San Jose, CA 95106"
+    },
+    "mailing_zip": {
+     "value": "95106",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 846, San Jose, CA 95106"
+    },
+    "business_description": {
+     "value": "Limited-service hotel with no restaurant",
+     "page": 1,
+     "evidence": "Nature of Business: Limited-service hotel with no restaurant"
+    },
+    "naics_code": {
+     "value": "721110",
+     "page": 1,
+     "evidence": "NAICS Code: 721110"
+    },
+    "years_in_business": {
+     "value": 52,
+     "page": 1,
+     "evidence": "Years in Business: 52"
+    },
+    "annual_revenue": {
+     "value": 4740000,
+     "page": 1,
+     "evidence": "Annual Revenue: $4,740,000"
+    },
+    "employee_count": {
+     "value": 388,
+     "page": 1,
+     "evidence": "Number of Employees: 388"
+    },
+    "website": {
+     "value": "www.silvercreek.com",
+     "page": 1,
+     "evidence": "Website: www.silvercreek.com"
+    },
+    "contact_name": {
+     "value": "Grace Schmidt",
+     "page": 1,
+     "evidence": "Contact Name: Grace Schmidt"
+    },
+    "contact_phone": {
+     "value": "(815) 422-7746",
+     "page": 1,
+     "evidence": "Contact Phone: (815) 422-7746"
+    },
+    "contact_email": {
+     "value": "gschmidt@silvercreek.com",
+     "page": 1,
+     "evidence": "Contact Email: gschmidt@silvercreek.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Tidewater Risk Partners",
+     "page": 1,
+     "evidence": "Agency: Tidewater Risk Partners"
+    },
+    "producer_name": {
+     "value": "Daniel Kim",
+     "page": 1,
+     "evidence": "Producer: Danie! Kim"
+    },
+    "producer_email": {
+     "value": "daniel.kim@tidewaterrisk.com",
+     "page": 1,
+     "evidence": "Producer Email: daniel.kim @tidewaterrisk.com"
+    },
+    "producer_phone": {
+     "value": "(654) 573-3511",
+     "page": 1,
+     "evidence": "Producer Phone: (654) 573-3511"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-12-01",
+     "page": 1,
+     "evidence": "Proposed Effective Date: 12/01/2026"
+    },
+    "expiration_date": {
+     "value": "2027-12-01",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: December 1, 2027"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "Transaction: New"
+    },
+    "prior_carrier": {
+     "value": "Continental Mutual Insurance Co.",
+     "page": 1,
+     "evidence": "Prior Carrier: Continental Mutual Insurance Co."
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 6860000,
+     "page": 2,
+     "evidence": "Building Limit: $6.86M"
+    },
+    "bpp_limit": {
+     "value": 2810000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $2,810,000"
+    },
+    "business_income_limit": {
+     "value": 1190000,
+     "page": 2,
+     "evidence": "Business Income Limit: $1.19M"
+    },
+    "deductible": {
+     "value": 10000,
+     "page": 2,
+     "evidence": "Deductible: $10,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 2,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 100,
+     "page": 2,
+     "evidence": "Coinsurance: 100%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 10855000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $10,855,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "6090 Lake Street",
+      "page": 2,
+      "evidence": "1   6090 Lake Street   San Jose   CA   95106"
+     },
+     "city": {
+      "value": "San Jose",
+      "page": 2,
+      "evidence": "6090 Lake Street   San Jose   CA"
+     },
+     "state": {
+      "value": "CA",
+      "page": 2,
+      "evidence": "San Jose   CA   95106"
+     },
+     "zip": {
+      "value": "95106",
+      "page": 2,
+      "evidence": "CA   95106"
+     },
+     "construction": {
+      "value": "modified_fire_resistive",
+      "page": 2,
+      "evidence": "Mod. Fire Resistive"
+     },
+     "year_built": {
+      "value": 2003,
+      "page": 2,
+      "evidence": "Mod. Fire Resistive   2003"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "2003   1   25,500"
+     },
+     "square_feet": {
+      "value": 25500,
+      "page": 2,
+      "evidence": "25,500 Yes   7"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "25,500 Yes   7"
+     },
+     "protection_class": {
+      "value": 7,
+      "page": 2,
+      "evidence": "Yes   7   Built-Up"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Built-Up   2019"
+     },
+     "roof_year": {
+      "value": 2019,
+      "page": 2,
+      "evidence": "Built-Up   2019   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "6057 Railroad Lane",
+      "page": 2,
+      "evidence": "2   6057 Railroad Lane   Seattle   WA   98152"
+     },
+     "city": {
+      "value": "Seattle",
+      "page": 2,
+      "evidence": "6057 Railroad Lane   Seattle   WA"
+     },
+     "state": {
+      "value": "WA",
+      "page": 2,
+      "evidence": "Seattle   WA   98152"
+     },
+     "zip": {
+      "value": "98152",
+      "page": 2,
+      "evidence": "WA   98152"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "ISO 3"
+     },
+     "year_built": {
+      "value": 1976,
+      "page": 2,
+      "evidence": "ISO 3   1976   5   2,300"
+     },
+     "stories": {
+      "value": 5,
+      "page": 2,
+      "evidence": "1976   5   2,300"
+     },
+     "square_feet": {
+      "value": 2300,
+      "page": 2,
+      "evidence": "5   2,300 N"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "2,300 N"
+     },
+     "protection_class": {
+      "value": null,
+      "page": 2,
+      "evidence": null
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Built-Up   2023   Local"
+     },
+     "roof_year": {
+      "value": 2023,
+      "page": 2,
+      "evidence": "Built-Up   2023   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "Local"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9334,
+  "output_tokens": 2720,
+  "latency_ms": 12576.675233999937,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "194d028c691f63cfc7a085bb72171e0eef3ba862921bde963805b22d34dc7c73",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:11.196122+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Copper Hill Auto Care LLC",
+     "page": 1,
+     "evidence": "Named Insured: Copper Hill Auto Care LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "32-4362749",
+     "page": 1,
+     "evidence": "FEIN: 32-4362749"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "Entity Type: LLC"
+    },
+    "mailing_street": {
+     "value": "PO Box 6654",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 6654, Atlanta, GA 30383"
+    },
+    "mailing_city": {
+     "value": "Atlanta",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 6654, Atlanta, GA 30383"
+    },
+    "mailing_state": {
+     "value": "GA",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 6654, Atlanta, GA 30383"
+    },
+    "mailing_zip": {
+     "value": "30383",
+     "page": 1,
+     "evidence": "Mailing Address: PO Box 6654, Atlanta, GA 30383"
+    },
+    "business_description": {
+     "value": "General automotive repair and maintenance garage",
+     "page": 1,
+     "evidence": "Nature of Business: General automotive repair and maintenance garage"
+    },
+    "naics_code": {
+     "value": "811111",
+     "page": 1,
+     "evidence": "NAICS Code: 811111"
+    },
+    "years_in_business": {
+     "value": 55,
+     "page": 1,
+     "evidence": "Years in Business: 55"
+    },
+    "annual_revenue": {
+     "value": 7860000,
+     "page": 1,
+     "evidence": "Annual Revenue: $7,860,000"
+    },
+    "employee_count": {
+     "value": 364,
+     "page": 1,
+     "evidence": "Number of Employees: 364"
+    },
+    "website": {
+     "value": "www.copperhill.com",
+     "page": 1,
+     "evidence": "Website: www.copperhill.com"
+    },
+    "contact_name": {
+     "value": "Sarah Hughes",
+     "page": 1,
+     "evidence": "Contact Name: Sarah Hughes"
+    },
+    "contact_phone": {
+     "value": "(514) 707-5108",
+     "page": 1,
+     "evidence": "Contact Phone: (514) 707-5108"
+    },
+    "contact_email": {
+     "value": "shughes@copperhill.com",
+     "page": 1,
+     "evidence": "Contact Email: shughes @copperhill.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Granite Peak Insurance Group",
+     "page": 1,
+     "evidence": "Agency: Granite Peak Insurance Group"
+    },
+    "producer_name": {
+     "value": "Maria Reyes",
+     "page": 1,
+     "evidence": "Producer: Maria Reyes"
+    },
+    "producer_email": {
+     "value": "maria.reyes@granitepeakins.com",
+     "page": 1,
+     "evidence": "Producer Email: maria.reyes @granitepeakins.com"
+    },
+    "producer_phone": {
+     "value": "(763) 834-9416",
+     "page": 1,
+     "evidence": "Producer Phone: (763) 834-9416"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-02-15",
+     "page": 1,
+     "evidence": "Proposed Effective Date: 02/15/2027"
+    },
+    "expiration_date": {
+     "value": "2028-02-15",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: February 15, 2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "Transaction: New"
+    },
+    "prior_carrier": {
+     "value": "Continental Mutual Insurance Co.",
+     "page": 1,
+     "evidence": "Prior Carrier: Continental Mutual Insurance Co."
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 11715000,
+     "page": 2,
+     "evidence": "Building Limit: $11,715,000"
+    },
+    "bpp_limit": {
+     "value": 3920000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $3.92M"
+    },
+    "business_income_limit": {
+     "value": 885000,
+     "page": 2,
+     "evidence": "Business Income Limit: $885,000"
+    },
+    "deductible": {
+     "value": 2500,
+     "page": 2,
+     "evidence": "Deductible: $2,500"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 2,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 2,
+     "evidence": "Coinsurance: 90%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: No"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 15150000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $15.15M"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "8560 Enterprise Avenue",
+      "page": 2,
+      "evidence": "1   8560 Enterprise Avenue   Atlanta   GA   30383"
+     },
+     "city": {
+      "value": "Atlanta",
+      "page": 2,
+      "evidence": "8560 Enterprise Avenue   Atlanta   GA   30383"
+     },
+     "state": {
+      "value": "GA",
+      "page": 2,
+      "evidence": "Atlanta   GA   30383"
+     },
+     "zip": {
+      "value": "30383",
+      "page": 2,
+      "evidence": "Atlanta   GA   30383"
+     },
+     "construction": {
+      "value": "non_combustible",
+      "page": 2,
+      "evidence": "Non-Comb.   2017   6   44,900 Y   3"
+     },
+     "year_built": {
+      "value": 2017,
+      "page": 2,
+      "evidence": "Non-Comb.   2017   6   44,900 Y   3"
+     },
+     "stories": {
+      "value": 6,
+      "page": 2,
+      "evidence": "Non-Comb.   2017   6   44,900 Y   3"
+     },
+     "square_feet": {
+      "value": 44900,
+      "page": 2,
+      "evidence": "Non-Comb.   2017   6   44,900 Y   3"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "44,900 Y   3   Built-Up"
+     },
+     "protection_class": {
+      "value": 3,
+      "page": 2,
+      "evidence": "44,900 Y   3   Built-Up"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Built-Up   2022   None"
+     },
+     "roof_year": {
+      "value": 2022,
+      "page": 2,
+      "evidence": "Built-Up   2022   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "Built-Up   2022   None"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "3215 Railroad Parkway",
+      "page": 2,
+      "evidence": "2   3215 Railroad Parkway   Columbus   OH   43209"
+     },
+     "city": {
+      "value": "Columbus",
+      "page": 2,
+      "evidence": "3215 Railroad Parkway   Columbus   OH   43209"
+     },
+     "state": {
+      "value": "OH",
+      "page": 2,
+      "evidence": "Columbus   OH   43209"
+     },
+     "zip": {
+      "value": "43209",
+      "page": 2,
+      "evidence": "Columbus   OH   43209"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "JM   1982   2   28,100. N   6"
+     },
+     "year_built": {
+      "value": 1982,
+      "page": 2,
+      "evidence": "JM   1982   2   28,100. N   6"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "JM   1982   2   28,100. N   6"
+     },
+     "square_feet": {
+      "value": 28100,
+      "page": 2,
+      "evidence": "JM   1982   2   28,100. N   6"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "28,100. N   6   Tile"
+     },
+     "protection_class": {
+      "value": 6,
+      "page": 2,
+      "evidence": "28,100. N   6   Tile"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "6   Tile   2023   Local"
+     },
+     "roof_year": {
+      "value": 2023,
+      "page": 2,
+      "evidence": "Tile   2023   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "Tile   2023   Local"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9326,
+  "output_tokens": 2857,
+  "latency_ms": 14692.716407000034,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

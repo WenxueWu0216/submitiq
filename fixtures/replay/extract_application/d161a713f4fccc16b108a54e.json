@@ -1,0 +1,412 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "1b96ec53f823f17e3820d1a822d86688f82fb2c1909f9750ad5d56322b5d4579",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:24.508479+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Westfield Engineering LLC",
+     "page": 1,
+     "evidence": "Westfield Engineering LLC"
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "12-3756850",
+     "page": 1,
+     "evidence": "12-3756850"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "12-3756850   LLC   541330"
+    },
+    "mailing_street": {
+     "value": "PO Box 6925",
+     "page": 1,
+     "evidence": "PO Box 6925   Houston   TX   77010"
+    },
+    "mailing_city": {
+     "value": "Houston",
+     "page": 1,
+     "evidence": "PO Box 6925   Houston   TX   77010"
+    },
+    "mailing_state": {
+     "value": "TX",
+     "page": 1,
+     "evidence": "PO Box 6925   Houston   TX   77010"
+    },
+    "mailing_zip": {
+     "value": "77010",
+     "page": 1,
+     "evidence": "PO Box 6925   Houston   TX   77010"
+    },
+    "business_description": {
+     "value": "Civil and structural engineering consulting office",
+     "page": 1,
+     "evidence": "Civil and structural engineering consulting office"
+    },
+    "naics_code": {
+     "value": "541330",
+     "page": 1,
+     "evidence": "12-3756850   LLC   541330"
+    },
+    "years_in_business": {
+     "value": 30,
+     "page": 1,
+     "evidence": "30   $42,990,000   162"
+    },
+    "annual_revenue": {
+     "value": 42990000,
+     "page": 1,
+     "evidence": "30   $42,990,000   162"
+    },
+    "employee_count": {
+     "value": 162,
+     "page": 1,
+     "evidence": "30   $42,990,000   162"
+    },
+    "website": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "contact_name": {
+     "value": "Rosa Nguyen",
+     "page": 1,
+     "evidence": "Rosa Nguyen"
+    },
+    "contact_phone": {
+     "value": "(396) 567-1039",
+     "page": 1,
+     "evidence": "(396) 567-1039"
+    },
+    "contact_email": {
+     "value": "rnguyen@westfieldengineering.com",
+     "page": 1,
+     "evidence": "rnguyen@westfieldengineering.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Northstar Commercial Brokerage",
+     "page": 1,
+     "evidence": "Elena Novak   Northstar Commercial Brokerage"
+    },
+    "producer_name": {
+     "value": "Elena Novak",
+     "page": 1,
+     "evidence": "Elena Novak   Northstar Commercial Brokerage"
+    },
+    "producer_email": {
+     "value": "elena.novak@northstarcb.com",
+     "page": 1,
+     "evidence": "elena.novak@northstarcb.com"
+    },
+    "producer_phone": {
+     "value": "(717) 941-8896",
+     "page": 1,
+     "evidence": "(717) 941-8896"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-03-15",
+     "page": 1,
+     "evidence": "2027-03-15   15-Mar-2028   New"
+    },
+    "expiration_date": {
+     "value": "2028-03-15",
+     "page": 1,
+     "evidence": "2027-03-15   15-Mar-2028   New"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "2027-03-15   15-Mar-2028   New"
+    },
+    "prior_carrier": {
+     "value": "Pinecrest Property & Casualty",
+     "page": 1,
+     "evidence": "Pinecrest Property & Casualty   $32.41M   6"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 25315000,
+     "page": 1,
+     "evidence": "$25,315,000   $7,650,000   $2,380,000"
+    },
+    "bpp_limit": {
+     "value": 7650000,
+     "page": 1,
+     "evidence": "$25,315,000   $7,650,000   $2,380,000"
+    },
+    "business_income_limit": {
+     "value": 2380000,
+     "page": 1,
+     "evidence": "$25,315,000   $7,650,000   $2,380,000"
+    },
+    "deductible": {
+     "value": 10000,
+     "page": 1,
+     "evidence": "$10,000   Replacement Cost   90%"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "$10,000   Replacement Cost   90%"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 1,
+     "evidence": "$10,000   Replacement Cost   90%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "Special   Yes   N"
+    },
+    "flood_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "Special   Yes   N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Special   Yes   N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 32410000,
+    "page": 1,
+    "evidence": "$32.41M"
+   },
+   "stated_location_count": {
+    "value": 6,
+    "page": 1,
+    "evidence": "Pinecrest Property & Casualty   $32.41M   6"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "2444 Commerce Way",
+      "page": 2,
+      "evidence": "2444 Commerce Way, Houston, TX 77010"
+     },
+     "city": {
+      "value": "Houston",
+      "page": 2,
+      "evidence": "2444 Commerce Way, Houston, TX 77010"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "2444 Commerce Way, Houston, TX 77010"
+     },
+     "zip": {
+      "value": "77010",
+      "page": 2,
+      "evidence": "2444 Commerce Way, Houston, TX 77010"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Wood Frame   1980   3   2,200"
+     },
+     "year_built": {
+      "value": 1980,
+      "page": 2,
+      "evidence": "Wood Frame   1980   3   2,200"
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "Wood Frame   1980   3   2,200"
+     },
+     "square_feet": {
+      "value": 2200,
+      "page": 2,
+      "evidence": "Wood Frame   1980   3   2,200"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "Yes   Tile   2010   Central Station"
+     },
+     "protection_class": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Yes   Tile   2010   Central Station"
+     },
+     "roof_year": {
+      "value": 2010,
+      "page": 2,
+      "evidence": "Yes   Tile   2010   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Yes   Tile   2010   Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "703 Industrial Road",
+      "page": 2,
+      "evidence": "703 Industrial Road, Atlanta, GA 30342"
+     },
+     "city": {
+      "value": "Atlanta",
+      "page": 2,
+      "evidence": "703 Industrial Road, Atlanta, GA 30342"
+     },
+     "state": {
+      "value": "GA",
+      "page": 2,
+      "evidence": "703 Industrial Road, Atlanta, GA 30342"
+     },
+     "zip": {
+      "value": "30342",
+      "page": 2,
+      "evidence": "703 Industrial Road, Atlanta, GA 30342"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Frame   1989   2   6,800"
+     },
+     "year_built": {
+      "value": 1989,
+      "page": 2,
+      "evidence": "Frame   1989   2   6,800"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "Frame   1989   2   6,800"
+     },
+     "square_feet": {
+      "value": 6800,
+      "page": 2,
+      "evidence": "Frame   1989   2   6,800"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "N   2   Built-Up   2009   Central Station"
+     },
+     "protection_class": {
+      "value": 2,
+      "page": 2,
+      "evidence": "N   2   Built-Up   2009   Central Station"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "N   2   Built-Up   2009   Central Station"
+     },
+     "roof_year": {
+      "value": 2009,
+      "page": 2,
+      "evidence": "N   2   Built-Up   2009   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "N   2   Built-Up   2009   Central Station"
+     }
+    },
+    {
+     "loc_number": 3,
+     "street": {
+      "value": "5531 Madison Boulevard",
+      "page": 2,
+      "evidence": "5531 Madison Boulevard, Houston, TX 77053"
+     },
+     "city": {
+      "value": "Houston",
+      "page": 2,
+      "evidence": "5531 Madison Boulevard, Houston, TX 77053"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "5531 Madison Boulevard, Houston, TX 77053"
+     },
+     "zip": {
+      "value": "77053",
+      "page": 2,
+      "evidence": "5531 Madison Boulevard, Houston, TX 77053"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Frame   2019   1   31,300"
+     },
+     "year_built": {
+      "value": 2019,
+      "page": 2,
+      "evidence": "Frame   2019   1   31,300"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "Frame   2019   1   31,300"
+     },
+     "square_feet": {
+      "value": 31300,
+      "page": 2,
+      "evidence": "Frame   2019   1   31,300"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "Y   5   Built-Up   2025   Central Station"
+     },
+     "protection_class": {
+      "value": 5,
+      "page": 2,
+      "evidence": "Y   5   Built-Up   2025   Central Station"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Y   5   Built-Up   2025   Central Station"
+     },
+     "roof_year": {
+      "value": 2025,
+      "page": 2,
+      "evidence": "Y   5   Built-Up   2025   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Y   5   Built-Up   2025   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9600,
+  "output_tokens": 3368,
+  "latency_ms": 14879.429098999935,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

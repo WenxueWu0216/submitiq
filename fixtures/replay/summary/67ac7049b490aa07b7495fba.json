@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "f3696d7f536a1131cd5a94875142c3dc2dbc393f9c997aeb6c231395cbccc7ec",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:38.306342+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept, per the rules decision [decision]. New business [policy.transaction_type], effective 2027-01-01 [policy.effective_date]. Quote needed by 2026-12-24 [policy.quote_needed_by].\n\n**Why**\n- Zero incurred losses over five years [totals.five_year_incurred] against five-year premium of 137,720 [totals.five_year_premium]. Loss ratio: 0%.\n- No claims in any year 2022\u20132026 [loss_years[2022].claim_count] [loss_years[2023].claim_count] [loss_years[2024].claim_count] [loss_years[2025].claim_count] [loss_years[2026].claim_count].\n- Established insured, 25 years in business [insured.years_in_business].\n\n**Account**\nOak Hollow Office Holdings LLC [insured.named_insured], Sacramento, CA [insured.mailing_address.city]. Owns and leases multi-tenant office buildings [insured.business_description]. Broker: Atlas & Reed Insurance Services [broker.agency_name]. Prior carrier: Continental Mutual [policy.prior_carrier]. Total TIV 16,175,000 [totals.total_tiv] across 3 locations [totals.location_count]. Building limit 11,270,000 [coverage.building_limit], BPP 3,815,000 [coverage.bpp_limit], BI 1,090,000 [coverage.business_income_limit]. Replacement cost, 80% coinsurance, broad form, 2,500 deductible [coverage.valuation] [coverage.coinsurance_pct] [coverage.cause_of_loss_form] [coverage.deductible]. Flood requested [coverage.flood_requested]; earthquake not [coverage.earthquake_requested].\n\n**Locations & COPE**\n1. Sacramento: frame [locations[1].construction], built 1992 [locations[1].year_built], unsprinklered [locations[1].sprinklered], local alarm [locations[1].alarm_type], TIV 6,950,000 [locations[1].tiv].\n2. Dallas, Mill Blvd: joisted masonry [locations[2].construction], built 1981 [locations[2].year_built], unsprinklered [locations[2].sprinklered], central station alarm [locations[2].alarm_type], TIV 4,730,000 [locations[2].tiv].\n3. Dallas, Airport Blvd: modified fire resistive [locations[3].construction], 6 stories [locations[3].stories], 90% sprinklered [locations[3].sprinkler_pct], no alarm [locations[3].alarm_type], TIV 4,495,000 [locations[3].tiv].\n\n**Loss history**\nCarriers were Harborline Indemnity 2022\u20132024 [loss_years[2022].carrier] [loss_years[2024].carrier] and Continental Mutual 2025\u20132026 [loss_years[2025].carrier] [loss_years[2026].carrier]. Incurred was 0.00 each year [loss_years[2026].total_incurred].\n\n**Needs attention**\n- Name variant \"Oak Hollow\" on scan29636.xlsx, treated as the same entity [insured.named_insured].\n- Flood requested [coverage.flood_requested]; locations 1 and 2 are unsprinklered [locations[1].sprinklered] [locations[2].sprinklered]; location 3 has no alarm [locations[3].alarm_type].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2116,
+  "output_tokens": 1160,
+  "latency_ms": 6262.074044000087,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

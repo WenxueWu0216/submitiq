@@ -1,0 +1,276 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "dae6dea98db2934bfc76c4f06147b058a1df380f3246a16f0248fd07be4ebe3d",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:30.987584+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Prairie Wind Properties Inc.",
+     "page": 1,
+     "evidence": "Applicant Name: Prairie Wind Properties Inc."
+    },
+    "dba": {
+     "value": "Prairie Office",
+     "page": 1,
+     "evidence": "DBA / Trade Name: Prairie Office"
+    },
+    "fein": {
+     "value": "41-8708379",
+     "page": 1,
+     "evidence": "FEIN/Tax ID: 41-8708379"
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "Business Entity: Corporation"
+    },
+    "mailing_street": {
+     "value": "5905 Lake Boulevard",
+     "page": 1,
+     "evidence": "Street: 5905 Lake Boulevard"
+    },
+    "mailing_city": {
+     "value": "Charleston",
+     "page": 1,
+     "evidence": "City: Charleston"
+    },
+    "mailing_state": {
+     "value": "SC",
+     "page": 1,
+     "evidence": "State: SC"
+    },
+    "mailing_zip": {
+     "value": "29479",
+     "page": 1,
+     "evidence": "ZIP: 29479"
+    },
+    "business_description": {
+     "value": "Owns and leases multi-tenant office buildings",
+     "page": 1,
+     "evidence": "Owns and leases multi-tenant office buildings"
+    },
+    "naics_code": {
+     "value": "531120",
+     "page": 1,
+     "evidence": "NAICS: 531120"
+    },
+    "years_in_business": {
+     "value": 20,
+     "page": 1,
+     "evidence": "Yrs in Bus.: 20"
+    },
+    "annual_revenue": {
+     "value": 7540000,
+     "page": 1,
+     "evidence": "Gross Revenue: $7,540,000"
+    },
+    "employee_count": {
+     "value": 260,
+     "page": 1,
+     "evidence": "Employees: 260"
+    },
+    "website": {
+     "value": "www.prairiewind.com",
+     "page": 1,
+     "evidence": "Web Address: www.prairiewind.com"
+    },
+    "contact_name": {
+     "value": "Mei Martinez",
+     "page": 1,
+     "evidence": "Primary Contact: Mei Martinez"
+    },
+    "contact_phone": {
+     "value": "(467) 387-6895",
+     "page": 1,
+     "evidence": "Contact Phone: (467) 387-6895"
+    },
+    "contact_email": {
+     "value": "mmartinez@prairiewind.com",
+     "page": 1,
+     "evidence": "Contact E-mail: mmartinez@prairiewind.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Northstar Commercial Brokerage",
+     "page": 1,
+     "evidence": "Agency Name: Northstar Commercial Brokerage"
+    },
+    "producer_name": {
+     "value": "Aisha Martinez",
+     "page": 1,
+     "evidence": "Producer Name: Aisha Martinez"
+    },
+    "producer_email": {
+     "value": "aisha.martinez@northstarcb.com",
+     "page": 1,
+     "evidence": "Producer E-mail: aisha.martinez@northstarcb.com"
+    },
+    "producer_phone": {
+     "value": "(558) 339-5233",
+     "page": 1,
+     "evidence": "Producer Phone: (558) 339-5233"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2026-11-15",
+     "page": 1,
+     "evidence": "Effective Date: November 15, 2026"
+    },
+    "expiration_date": {
+     "value": "2027-11-15",
+     "page": 1,
+     "evidence": "Expiration Date: 15-Nov-2027"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "New / Renewal: New"
+    },
+    "prior_carrier": {
+     "value": "Sterling National Insurance",
+     "page": 1,
+     "evidence": "Current Carrier: Sterling National Insurance"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 12285000,
+     "page": 1,
+     "evidence": "Building: 12285000"
+    },
+    "bpp_limit": {
+     "value": 355000,
+     "page": 1,
+     "evidence": "Business Personal Property: 355000"
+    },
+    "business_income_limit": {
+     "value": 250000,
+     "page": 1,
+     "evidence": "Business Income: $250,000"
+    },
+    "deductible": {
+     "value": 10000,
+     "page": 1,
+     "evidence": "Deductible: $10,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 80,
+     "page": 1,
+     "evidence": "Coinsurance: 80%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 1,
+     "evidence": "Cause of Loss: Broad"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Flood: No"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Earthquake: N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 12890000,
+    "page": 1,
+    "evidence": "Total TIV: $12,890,000"
+   },
+   "stated_location_count": {
+    "value": 1,
+    "page": 2,
+    "evidence": "Number of Locations: 1"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "5905 Lake Boulevard",
+      "page": 2,
+      "evidence": "1   5905 Lake Boulevard   Charleston   SC   29479"
+     },
+     "city": {
+      "value": "Charleston",
+      "page": 2,
+      "evidence": "5905 Lake Boulevard   Charleston   SC"
+     },
+     "state": {
+      "value": "SC",
+      "page": 2,
+      "evidence": "Charleston   SC   29479"
+     },
+     "zip": {
+      "value": "29479",
+      "page": 2,
+      "evidence": "SC   29479"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "Wood Frame"
+     },
+     "year_built": {
+      "value": 1956,
+      "page": 2,
+      "evidence": "Wood Frame   1956"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "1956   1   68,200"
+     },
+     "square_feet": {
+      "value": 68200,
+      "page": 2,
+      "evidence": "68,200 N   7"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "68,200 N   7"
+     },
+     "protection_class": {
+      "value": 7,
+      "page": 2,
+      "evidence": "68,200 N   7   Tile"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Tile   2017"
+     },
+     "roof_year": {
+      "value": 2017,
+      "page": 2,
+      "evidence": "Tile   2017   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9249,
+  "output_tokens": 2176,
+  "latency_ms": 10286.448158999974,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "2022abd1c7761d66fc1f30a4255aec6bb84d9dfd5fabcc0ce63031544fbdb77a",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:49.725337+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Redstone Inn Corp.",
+     "page": 1,
+     "evidence": "Applicant Name: Redstone Inn Corp."
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "13-4318539",
+     "page": 1,
+     "evidence": "FEIN/Tax ID: 13-4318539"
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "Business Entity: Corporation"
+    },
+    "mailing_street": {
+     "value": "2688 Mill Lane",
+     "page": 1,
+     "evidence": "Street: 2688 Mill Lane"
+    },
+    "mailing_city": {
+     "value": "Charlotte",
+     "page": 1,
+     "evidence": "City: Charlotte"
+    },
+    "mailing_state": {
+     "value": "NC",
+     "page": 1,
+     "evidence": "State: NC"
+    },
+    "mailing_zip": {
+     "value": "28211",
+     "page": 1,
+     "evidence": "ZIP: 28211"
+    },
+    "business_description": {
+     "value": "Limited-service hotel with no restaurant",
+     "page": 1,
+     "evidence": "Description of Operations: Limited-service hotel with no restaurant"
+    },
+    "naics_code": {
+     "value": "721110",
+     "page": 1,
+     "evidence": "NAICS: 721110"
+    },
+    "years_in_business": {
+     "value": 58,
+     "page": 1,
+     "evidence": "Yrs in Bus.: 58"
+    },
+    "annual_revenue": {
+     "value": 5210000,
+     "page": 1,
+     "evidence": "Gross Revenue: $5,210,000"
+    },
+    "employee_count": {
+     "value": 144,
+     "page": 1,
+     "evidence": "Employees: 144"
+    },
+    "website": {
+     "value": "www.redstoneinn.com",
+     "page": 1,
+     "evidence": "Web Address: www.redstoneinn.com"
+    },
+    "contact_name": {
+     "value": "James Silva",
+     "page": 1,
+     "evidence": "Primary Contact: James Silva"
+    },
+    "contact_phone": {
+     "value": "(845) 759-1724",
+     "page": 1,
+     "evidence": "Contact Phone: (845) 759-1724"
+    },
+    "contact_email": {
+     "value": "jsiiva@redstoneinn.com",
+     "page": 1,
+     "evidence": "Contact E-mail: jsiiva@redstoneinn.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Granite Peak Insurance Group",
+     "page": 1,
+     "evidence": "Agency Name: Granite Peak Insurance Group"
+    },
+    "producer_name": {
+     "value": "Maria O'Brien",
+     "page": 1,
+     "evidence": "Producer Name: Maria O'Brien"
+    },
+    "producer_email": {
+     "value": "maria.obrien@granitepeakins.com",
+     "page": 1,
+     "evidence": "Producer E-mail: maria.obrien@granitepeakins.com"
+    },
+    "producer_phone": {
+     "value": "(634) 836-5000",
+     "page": 1,
+     "evidence": "Producer Phone: (634) 836-5000"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-01-01",
+     "page": 1,
+     "evidence": "Effective Date: 01/01/2027"
+    },
+    "expiration_date": {
+     "value": "2028-01-01",
+     "page": 1,
+     "evidence": "Expiration Date: 01/01/2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "New / Renewal: New"
+    },
+    "prior_carrier": {
+     "value": "Great Plains Casualty",
+     "page": 1,
+     "evidence": "Current Carrier: Great Plains Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 4055000,
+     "page": 1,
+     "evidence": "Building: $4,055,000"
+    },
+    "bpp_limit": {
+     "value": 900000,
+     "page": 1,
+     "evidence": "Business Personal Property: $900,000"
+    },
+    "business_income_limit": {
+     "value": 400000,
+     "page": 1,
+     "evidence": "Business Income: $400,000"
+    },
+    "deductible": {
+     "value": 1000,
+     "page": 1,
+     "evidence": "Deductible: $1,000"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 90,
+     "page": 1,
+     "evidence": "Coinsurance: 90%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 1,
+     "evidence": "Cause of Loss: Broad"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Flood: N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Earthquake: N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 4497000,
+    "page": 1,
+    "evidence": "Total TIV: $4,497,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "2688 Mill Lane",
+      "page": 2,
+      "evidence": "1   2688 Mill Lane   Charlotte   NC   28211"
+     },
+     "city": {
+      "value": "Charlotte",
+      "page": 2,
+      "evidence": "2688 Mill Lane   Charlotte"
+     },
+     "state": {
+      "value": "NC",
+      "page": 2,
+      "evidence": "Charlotte   NC   28211"
+     },
+     "zip": {
+      "value": "28211",
+      "page": 2,
+      "evidence": "NC   28211"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "Joisted Masonry"
+     },
+     "year_built": {
+      "value": 1972,
+      "page": 2,
+      "evidence": "Joisted Masonry   1972   2   5,600"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "1972   2   5,600"
+     },
+     "square_feet": {
+      "value": 5600,
+      "page": 2,
+      "evidence": "1972   2   5,600 N   8"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "5,600 N   8"
+     },
+     "protection_class": {
+      "value": 8,
+      "page": 2,
+      "evidence": "5,600 N   8   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "Membrane (TPO)"
+     },
+     "roof_year": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "Membrane (TPO)   None"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "9880 Industrial Street",
+      "page": 2,
+      "evidence": "2   9880 Industrial Street   Salt Lake City   UT   84189"
+     },
+     "city": {
+      "value": "Salt Lake City",
+      "page": 2,
+      "evidence": "Salt Lake City   UT   84189"
+     },
+     "state": {
+      "value": "UT",
+      "page": 2,
+      "evidence": "Salt Lake City   UT   84189"
+     },
+     "zip": {
+      "value": "84189",
+      "page": 2,
+      "evidence": "UT   84189"
+     },
+     "construction": {
+      "value": "fire_resistive",
+      "page": 2,
+      "evidence": "Fire Resistive   8   12,100 N   7"
+     },
+     "year_built": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "stories": {
+      "value": 8,
+      "page": 2,
+      "evidence": "Fire Resistive   8   12,100"
+     },
+     "square_feet": {
+      "value": 12100,
+      "page": 2,
+      "evidence": "8   12,100 N   7"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "12,100 N   7"
+     },
+     "protection_class": {
+      "value": 7,
+      "page": 2,
+      "evidence": "12,100 N   7   Built-Up"
+     },
+     "roof_type": {
+      "value": "built_up",
+      "page": 2,
+      "evidence": "Built-Up   2019"
+     },
+     "roof_year": {
+      "value": 2019,
+      "page": 2,
+      "evidence": "Built-Up   2019   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2019   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9304,
+  "output_tokens": 2653,
+  "latency_ms": 12299.193812000112,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

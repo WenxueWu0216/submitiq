@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "c9895b959c134448da12008a91a1453f30f03c26883a1309b90802d211577fbf",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:50.151706+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine flagged POOR_PROTECTION: location 1 is protection class 10 [locations[1].protection_class]. This is a new-business submission [policy.transaction_type] with a quote needed by 2026-10-11 [policy.quote_needed_by]; it was received 2026-10-05 [policy.submission_received_date].\n\n**Why**\nThe only trigger is protection class 10 at the single location [locations[1].protection_class]. The building is also not sprinklered [locations[1].sprinklered].\n\n**Account**\nEvergreen Automotive LLC [insured.named_insured], a general automotive repair and maintenance garage [insured.business_description] in Chicago, IL [insured.mailing_address.city] [insured.mailing_address.state]. In business 44 years [insured.years_in_business]. Broker: Atlas & Reed Insurance Services, producer Elena Hughes [broker.agency_name] [broker.producer_name]. Prior carrier: Great Plains Casualty [policy.prior_carrier]. Requested: building 940,000 [coverage.building_limit], BPP 100,000 [coverage.bpp_limit], BI 100,000 [coverage.business_income_limit], total TIV 1,140,000 [totals.total_tiv]. Deductible 10,000 [coverage.deductible], replacement cost [coverage.valuation], 80% coinsurance [coverage.coinsurance_pct], broad form [coverage.cause_of_loss_form]. No flood or earthquake requested [coverage.flood_requested] [coverage.earthquake_requested].\n\n**Locations & COPE**\nOne location [totals.location_count]: auto repair occupancy [locations[1].occupancy], joisted masonry [locations[1].construction], built 2007 [locations[1].year_built], one story [locations[1].stories], 5,200 sq ft [locations[1].square_feet]. Not sprinklered [locations[1].sprinklered]. Metal roof from 2013 [locations[1].roof_type] [locations[1].roof_year]. Central station alarm [locations[1].alarm_type].\n\n**Loss history**\nTwo closed claims: vandalism, 950 incurred [claims[CL5380074].cause] [claims[CL5380074].incurred], and water damage, 800 incurred [claims[GPC202409675].cause] [claims[GPC202409675].incurred]. Five-year incurred is 1,750 [totals.five_year_incurred] against premium of 15,240 [totals.five_year_premium], for a loss ratio of about 11.5%. Both claims have zero reserves [claims[CL5380074].reserve] [claims[GPC202409675].reserve].\n\n**Needs attention**\n- Effective date conflict: the form shows 2026-11-01, while the email shows 2026-11-15. The form value was kept [policy.effective_date]. Confirm with the broker.\n- Revenue of 1,670,000 [insured.annual_revenue] alongside 270 employees [insured.employee_count] looks inconsistent for this operation; consider verifying.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1866,
+  "output_tokens": 1037,
+  "latency_ms": 6167.796951000014,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

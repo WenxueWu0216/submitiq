@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "2f685eaca9e5d1fae791361b90ab6ada62c5b79305a6f7f281d381167dbd71fe",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:24.220920+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline, per the rules decision [decision]. This is a renewal [policy.transaction_type] with a quote requested by 2026-10-11 [policy.quote_needed_by].\n\n**Why**\n- LOSS_RATIO (decline): the 5-year loss ratio is 255%, above the 100% threshold. It is based on incurred of 290,800 [totals.five_year_incurred] against premium of 114,040 [totals.five_year_premium].\n- LARGE_LOSS (refer): claim SNI-2026-32006 (Vandalism) incurred $290,000 [claims[SNI202632006].incurred].\n\n**Account**\nEvergreen Sports Center LLC, dba Evergreen Fitness Center [insured.named_insured, insured.dba], is a fitness center [insured.business_description] in Boston, MA [insured.mailing_address.city, insured.mailing_address.state]. It has been in business 22 years [insured.years_in_business] with 83 employees [insured.employee_count]. The prior carrier is Sterling National Insurance [policy.prior_carrier]. The broker is Northstar Commercial Brokerage [broker.agency_name].\n\n**Locations & COPE**\nThere is one location [totals.location_count] with TIV of 9,380,000 [totals.total_tiv]. The building is modified fire resistive, 3 stories, 33,300 sq ft [locations[1].construction, locations[1].stories, locations[1].square_feet]. It is 100% sprinklered [locations[1].sprinkler_pct], has a central station alarm [locations[1].alarm_type], and is in protection class 4 [locations[1].protection_class]. The roof is metal, dated 2008 [locations[1].roof_type, locations[1].roof_year]. Year built is 1988 [locations[1].year_built].\n\n**Loss history**\n- 2021: one smoke claim, incurred 800 [claims[22S667191].cause, claims[22S667191].incurred].\n- 2022\u20132024: no claims [loss_years[2022].claim_count, loss_years[2023].claim_count, loss_years[2024].claim_count].\n- 2025: one vandalism claim, incurred 290,000 [loss_years[2025].total_incurred]. It is closed with no reserve [claims[SNI202632006].status, claims[SNI202632006].reserve].\n\n**Needs attention**\nTwo source conflicts were flagged:\n- Year built: one document says 1988 and another says 1977. The 1988 value was kept [locations[1].year_built].\n- Total TIV: one document says 9,380,000 and another says 7,879,000. The 9,380,000 value was kept [totals.total_tiv].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2025,
+  "output_tokens": 900,
+  "latency_ms": 5404.213497000001,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

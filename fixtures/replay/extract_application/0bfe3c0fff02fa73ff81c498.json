@@ -1,0 +1,344 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "bfe12eb4b0d379380240ad465ae3280b9584627674e9e995216e2ce0c104f162",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:38.759068+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Copper Hill Foods Inc.",
+     "page": 1,
+     "evidence": "Applicant Name: Copper Hill Foods Inc."
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "85-5015791",
+     "page": 1,
+     "evidence": "FEIN/Tax ID: 85-5015791"
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "Business Entity: Corporation"
+    },
+    "mailing_street": {
+     "value": "5519 Cedar Way",
+     "page": 1,
+     "evidence": "Street: 5519 Cedar Way"
+    },
+    "mailing_city": {
+     "value": "Galveston",
+     "page": 1,
+     "evidence": "City: Galveston"
+    },
+    "mailing_state": {
+     "value": "TX",
+     "page": 1,
+     "evidence": "State: TX"
+    },
+    "mailing_zip": {
+     "value": "77585",
+     "page": 1,
+     "evidence": "ZIP: 77585"
+    },
+    "business_description": {
+     "value": "Independent grocery store with deli and bakery counter",
+     "page": 1,
+     "evidence": "Description of Operations: Independent grocery store with deli and bakery counter"
+    },
+    "naics_code": {
+     "value": "445110",
+     "page": 1,
+     "evidence": "NAICS: 445110"
+    },
+    "years_in_business": {
+     "value": 25,
+     "page": 1,
+     "evidence": "Yrs in Bus.: 25"
+    },
+    "annual_revenue": {
+     "value": 4900000,
+     "page": 1,
+     "evidence": "Gross Revenue: $4,900,000"
+    },
+    "employee_count": {
+     "value": 296,
+     "page": 1,
+     "evidence": "Employees: 296"
+    },
+    "website": {
+     "value": "www.copperhill.com",
+     "page": 1,
+     "evidence": "Web Address: www.copperhill.com"
+    },
+    "contact_name": {
+     "value": "Brian O'Brien",
+     "page": 1,
+     "evidence": "Primary Contact: Brian O'Brien"
+    },
+    "contact_phone": {
+     "value": "(699) 863-6443",
+     "page": 1,
+     "evidence": "Contact Phone: (699) 863-6443"
+    },
+    "contact_email": {
+     "value": "bobrien@copperhill.com",
+     "page": 1,
+     "evidence": "Contact E-mail: bobrien@copperhill.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Northstar Commercial Brokerage",
+     "page": 1,
+     "evidence": "Agency Name: Northstar Commercial Brokerage"
+    },
+    "producer_name": {
+     "value": "Robert O'Brien",
+     "page": 1,
+     "evidence": "Producer Name: Robert O'Brien"
+    },
+    "producer_email": {
+     "value": "robert.obrien@northstarcb.com",
+     "page": 1,
+     "evidence": "Producer E-mail: robert.obrien@northstarcb.com"
+    },
+    "producer_phone": {
+     "value": "(809) 909-5900",
+     "page": 1,
+     "evidence": "Producer Phone: (809) 909-5900"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-01-15",
+     "page": 1,
+     "evidence": "Effective Date: January 15, 2027"
+    },
+    "expiration_date": {
+     "value": "2028-01-15",
+     "page": 1,
+     "evidence": "Expiration Date: 15-Jan-2028"
+    },
+    "transaction_type": {
+     "value": "renewal",
+     "page": 1,
+     "evidence": "New / Renewal: Renewal"
+    },
+    "prior_carrier": {
+     "value": "Pinecrest Property & Casualty",
+     "page": 1,
+     "evidence": "Current Carrier: Pinecrest Property & Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 4100000,
+     "page": 1,
+     "evidence": "Building: $4.10M"
+    },
+    "bpp_limit": {
+     "value": 1675000,
+     "page": 1,
+     "evidence": "Business Personal Property: $1,675,000"
+    },
+    "business_income_limit": {
+     "value": 440000,
+     "page": 1,
+     "evidence": "Business Income: $440,000"
+    },
+    "deductible": {
+     "value": 2500,
+     "page": 1,
+     "evidence": "Deductible: $2,500"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 100,
+     "page": 1,
+     "evidence": "Coinsurance: 100%"
+    },
+    "cause_of_loss_form": {
+     "value": "special",
+     "page": 1,
+     "evidence": "Cause of Loss: Special"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Flood: N"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "Earthquake: No"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 6215000,
+    "page": 1,
+    "evidence": "Total TIV: $6,215,000"
+   },
+   "stated_location_count": {
+    "value": 2,
+    "page": 2,
+    "evidence": "Number of Locations: 2"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "5519 Cedar Way",
+      "page": 2,
+      "evidence": "1   5519 Cedar Way   Galveston   TX   77585"
+     },
+     "city": {
+      "value": "Galveston",
+      "page": 2,
+      "evidence": "5519 Cedar Way   Galveston"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "Galveston   TX   77585"
+     },
+     "zip": {
+      "value": "77585",
+      "page": 2,
+      "evidence": "TX   77585"
+     },
+     "construction": {
+      "value": "masonry_non_combustible",
+      "page": 2,
+      "evidence": "ISO 2   2021   3   10,200"
+     },
+     "year_built": {
+      "value": 2021,
+      "page": 2,
+      "evidence": "ISO 2   2021   3   10,200"
+     },
+     "stories": {
+      "value": 3,
+      "page": 2,
+      "evidence": "ISO 2   2021   3   10,200"
+     },
+     "square_feet": {
+      "value": 10200,
+      "page": 2,
+      "evidence": "ISO 2   2021   3   10,200 Y   10"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "10,200 Y   10"
+     },
+     "protection_class": {
+      "value": 10,
+      "page": 2,
+      "evidence": "10,200 Y   10"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle   2026"
+     },
+     "roof_year": {
+      "value": 2026,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2026"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2026   Central Station"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "8243 Center Road",
+      "page": 2,
+      "evidence": "2   8243 Center Road   New Orleans   LA   70128"
+     },
+     "city": {
+      "value": "New Orleans",
+      "page": 2,
+      "evidence": "8243 Center Road   New Orleans"
+     },
+     "state": {
+      "value": "LA",
+      "page": 2,
+      "evidence": "New Orleans   LA   70128"
+     },
+     "zip": {
+      "value": "70128",
+      "page": 2,
+      "evidence": "LA   70128"
+     },
+     "construction": {
+      "value": "fire_resistive",
+      "page": 2,
+      "evidence": "Fire-Resistive   2014   10"
+     },
+     "year_built": {
+      "value": 2014,
+      "page": 2,
+      "evidence": "Fire-Resistive   2014   10"
+     },
+     "stories": {
+      "value": 10,
+      "page": 2,
+      "evidence": "Fire-Resistive   2014   10   12,100"
+     },
+     "square_feet": {
+      "value": 12100,
+      "page": 2,
+      "evidence": "10   12,100 Y   6"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "12,100 Y   6"
+     },
+     "protection_class": {
+      "value": 6,
+      "page": 2,
+      "evidence": "12,100 Y   6"
+     },
+     "roof_type": {
+      "value": "tile",
+      "page": 2,
+      "evidence": "Tile   2025"
+     },
+     "roof_year": {
+      "value": 2025,
+      "page": 2,
+      "evidence": "Tile   2025"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2025   Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9316,
+  "output_tokens": 2690,
+  "latency_ms": 12493.383319000031,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "9a14d6c8b43a4b981565c20925446bd3ff80bbe418e7ec9bbf24d8c5357160b1",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:43.797422+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline. The rules engine returned a decline on class grounds [decision: CLASS_PROHIBITED].\n\n**Why**\n- NAICS 722410 (drinking place, bar/nightclub) is a prohibited class [insured.naics_code].\n- Three referral flags were also raised, but the decline is driven by class:\n  - Location 1 is unsprinklered with TIV $16,680,000 [locations[1].sprinklered, locations[1].tiv].\n  - Location 2 is joisted masonry built 1961 in an earthquake zone [locations[2].zip, locations[2].construction, locations[2].year_built].\n  - Location 4 is missing protection class [locations[4].protection_class].\n\n**Account**\nRiverbend Tavern LLC, Omaha NE, runs a bar and nightclub with live music, open until 2 a.m. [insured.named_insured, insured.business_description]. It has 15 years in business and 261 employees [insured.years_in_business, insured.employee_count]. This is new business, effective 2026-12-01, with a quote needed by 2026-11-17 [policy.transaction_type, policy.effective_date, policy.quote_needed_by]. Broker: Copperfield Risk Advisors [broker.agency_name]. Prior carrier: Great Plains Casualty [policy.prior_carrier]. Total TIV is $32,895,000 across 4 locations [totals.total_tiv, totals.location_count].\n\n**Locations & COPE**\n- Loc 1, Omaha: joisted masonry, 1974, unsprinklered, PC 5, central station alarm [locations[1].construction, locations[1].year_built, locations[1].sprinklered, locations[1].protection_class, locations[1].alarm_type].\n- Loc 2, San Jose: joisted masonry, 1961, sprinklered, no alarm [locations[2].construction, locations[2].year_built, locations[2].sprinklered, locations[2].alarm_type].\n- Loc 3, Seattle: fire resistive, 2010, sprinklered [locations[3].construction, locations[3].year_built, locations[3].sprinklered].\n- Loc 4, Omaha: non-combustible, 2004, sprinklered [locations[4].construction, locations[4].year_built, locations[4].sprinklered].\n\n**Loss history**\nOne closed lightning claim, 2024 policy year, incurred $52,800 [claims[25G855947].cause, claims[25G855947].status, claims[25G855947].incurred]. Five-year incurred is $52,800 against five-year premium of $230,450 [totals.five_year_incurred, totals.five_year_premium]. The loss ratio is 22.9%. No other claims appear in 2021\u20132025 [loss_years[2021].claim_count, loss_years[2022].claim_count, loss_years[2023].claim_count, loss_years[2025].claim_count].\n\n**Needs attention**\nProtection class for location 4 is missing and was not found in any document [locations[4].protection_class]. It does not change the class-based decline.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2598,
+  "output_tokens": 1025,
+  "latency_ms": 5953.098522000005,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

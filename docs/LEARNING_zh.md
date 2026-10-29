@@ -139,9 +139,11 @@ LLM 只写叙述文字，每个事实要用 `[字段路径]` 标出来源。**�
 ## 第四部分：面试常用表达（English phrases）
 
 * "Evals before features: I built the dataset and harness first, then improved the system one measured step at a time."
-* "The headline metric is the **silent critical-error rate**. It went from 67.5% to 0% on the held-out test set."
+* "The headline metric is the **silent critical-error rate**. It went from 67.5% to 0% on the held-out test set, and stayed at 0% with Claude."
 * "Rules decide, the LLM explains. Decisions must be reproducible and auditable."
 * "Deterministic parsers give an **independent second reading**. Agreement raises confidence; disagreement goes to a human."
 * "Template C is held out. The overfitting is measured, not hidden."
 * "Infrastructure failures **degrade** gracefully; they don't flood the review queue."
-* "Every number in the README comes from the harness. Model-dependent numbers are marked **pending** until I run them with an API key."
+* "Every number in the README comes from the harness, and each live column names the model that produced it."
+* "With Claude, the held-out template went from 84.5 to 99.8 F1, decision accuracy to 100%, for about seven cents a submission."
+* "My first live run showed a metric that couldn't fail: 39 of 40 narratives were silently replaced by the template while the dashboard said 100%."

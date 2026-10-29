@@ -4,14 +4,12 @@ Each entry covers one change, measured with the same harness (`evals/run.py`) on
 the same data (dev = 80, test = 40; application template C appears only in test).
 I tune on dev and report test.
 
-**How to read the numbers.** This environment has no Anthropic API key and no
-AWS credentials, so every run here uses the `replay` backend. A replay miss
-*abstains*: it returns nothing and never invents an answer. The numbers marked
-**offline** therefore measure only the parts that run without a model (parsers,
-normalization, consistency checks, routing, rules). Every number that needs Claude
-is marked **PENDING**, together with the command that produces it. Nothing in
-this file was typed in by hand. Each figure comes from `evals/results/experiments_replay.json`
-or the timestamped run files next to it.
+**How to read the numbers.** Stages 3–5 were measured with the `replay` backend before any model answers
+were recorded. A replay miss *abstains*: it returns nothing and never invents an answer, so those **offline**
+numbers measure only the parts that run without a model (parsers, normalization, consistency checks, routing,
+rules). Stage 9 adds live runs with Claude on the test split, with the model named in every row. Nothing in this
+file was typed in by hand: each figure comes from `evals/results/` (the `experiments_*.json` files and the
+timestamped run files next to them).
 
 ---
 
@@ -26,7 +24,7 @@ the appetite decision from the model. No tool use, no citations, no cross-checks
 |---|---|---|---|---|
 | dev (offline) | 0.0 | 0.0 | 100.0 | 80/80 extraction calls were replay misses → abstained |
 | test (offline) | 0.0 | 0.0 | 100.0 | 40/40 replay misses |
-| dev / test (Claude) | **PENDING** | **PENDING** | **PENDING** | `make eval-live` |
+| test (Claude Haiku 5.5, live) | 83.3 | 65.0 | 30.0 | 12/40 answers had no usable decision; 5% silent critical errors; no conflict detection |
 
 **What it shows offline:** the harness and plumbing work end to end. Document
 classification by keyword rules alone is 100% on all 120 packages, with no LLM
@@ -72,7 +70,7 @@ The parsed tables take precedence over the LLM for location, claim and loss-year
 |---|---|---|---|---|---|---|
 | dev (offline) | 0.0 → **81.6** | 0.0 → 92.2 | 0 → 94.1 | 0 → 100.0 | 0 → 100.0 | 0 → 97.6 |
 | test (offline) | 0.0 → **80.2** | 0.0 → 90.0 | 0 → 92.8 | 0 → 100.0 | 0 → 100.0 | 0 → 97.1 |
-| with Claude | PENDING | PENDING | | | | |
+| with Claude | not run live (only baseline and final were) | | | | | |
 
 All figures are after the dataset fix described below. Before it, dev locations F1 was 87.7.
 Precision on the parsed groups is ≥ 99.9%. When a parser can't read a cell, the cell comes
@@ -122,7 +120,7 @@ call retries once without `strict`. pydantic validates the output either way.
 |---|---|---|---|---|---|
 | dev (offline) | 81.6 → **98.0** | 92.2 → 97.7 | 97.6 | 98.3 | – |
 | test (offline) | 80.2 → **94.0** | 90.0 → 94.8 | 96.9 | 97.3 | **82.6** |
-| with Claude | PENDING | PENDING | PENDING | PENDING | PENDING |
+| with Claude | not run live (see Stage 9 for the final pipeline) | | | | |
 
 LLM calls per submission (all 120): 1 application + 1 email + 1 decision, plus
 21 SOV fallbacks (17.5% of SOVs failed reconciliation under basic normalization). That
@@ -134,7 +132,7 @@ is 3.2 calls per submission, about 7.8K prompt tokens (chars/4 estimate). Offlin
   above values and no colons. The label parser extracts nothing from it, so insured/policy/coverage
   recall collapses (test: insured 74.3 R, policy 56.2 R, coverage 65.5 R) and
   template C sits at 82.6 F1. Closing that gap is exactly the job of the
-  `record_application` call. **That number is PENDING a live run.**
+  `record_application` call. Live (Stage 9): template C goes to **99.8 F1** with Sonnet 5.5.
 * `policy.quote_needed_by` exists only in the email body, so offline it is 0 (40/40 FN on test).
 * `tests/test_per_doc_extraction.py` drives the tool-use path with a fake "perfect"
   model. On a template-C package it lifts F1 from the offline value to ≥ 97% and gets the
@@ -192,7 +190,7 @@ All offline. Template C (test) goes from 82.6 to 84.5. The decision model calls 
 **Still missing (and why):**
 * Test conflict recall is 50%. Template-C applications don't parse offline, so there is no application
   value to compare against the SOV. Email-vs-application date conflicts need the
-  email LLM call, which abstains offline (5 of 9 missed dev conflicts). PENDING a live run.
+  email LLM call, which abstains offline (5 of 9 missed dev conflicts). Live (Stage 9): test conflict recall 95%.
 * Two planted name conflicts are missed *by design* of the subset rule.
   "Ironwood Logistics Distribution Inc." contains every token of "Ironwood Logistics LLC". The subset rule is what
   lets the email's "Harbor Point" match, so I kept it and listed the miss as a known limitation.
@@ -280,11 +278,11 @@ F1 doesn't change by design: routing never edits values.
 | variant | split | decision acc. | declines → accept | abstained | summary citation validity |
 |---|---|---|---|---|---|
 | v4 (LLM decides) | dev / test (offline) | 0.0 / 0.0 | 0 | 80 / 40 | – |
-| v4 (LLM decides) | with Claude | **PENDING** | PENDING | | |
+| v4 (LLM decides) | with Claude | not run live | | | |
 | **v5 (rules)** | dev (offline) | **100.0** | 0 | 0 | 100.0 (template) |
 | **v5 (rules)** | test (offline) | **87.5** | 0 | 0 | 100.0 (template) |
 
-The LLM call count drops by one per submission (no decision call). The LLM narrative itself is PENDING. Offline,
+The LLM call count drops by one per submission (no decision call). The LLM narrative was measured live in Stage 9. Offline,
 every summary is the template version.
 
 **Reading it:**
@@ -307,22 +305,62 @@ let an LLM narrative with an invented number through.
 
 ---
 
+## Stage 9: Live runs with Claude (test split)
+
+**What:** the first runs against the real API, on the 40 held-out test packages only (dev was used while
+building). Baseline on Haiku 5.5, final pipeline on Sonnet 5.5, everything recorded to `fixtures/replay/`.
+Total spend: **$3.04** (`make eval-smoke` first, 5 packages for $0.03, to catch setup problems cheaply).
+
+| test split | field F1 | critical F1 | template C F1 | decision acc. | review rate | silent crit. err. | conflict P / R | USD / sub |
+|---|---|---|---|---|---|---|---|---|
+| final, offline (deterministic only) | 96.1 | 98.9 | 84.5 | 87.5 | 57.5 | 0.0 | 90.9 / 50.0 | – |
+| baseline, Haiku 5.5 | 83.3 | 84.0 | 96.3 | 65.0 | 30.0 | **5.0** | 0.0 / 0.0 | 0.003 |
+| **final, Sonnet 5.5** | **99.8** | **100.0** | **99.8** | **100.0** | 67.5 | **0.0** | 65.5 / 95.0 | 0.073 |
+
+**What it shows:**
+* Claude closes the template-C gap (84.5 → 99.8) and lifts decision accuracy to 100%. Silent critical errors stay at 0.
+* The single-call baseline is worse on every axis that matters: 12 of 40 answers had no usable decision, it can't
+  detect conflicts, and 5% of packages carry a silent critical error.
+* Review rate rises 57.5 → 67.5%. With template-C applications now readable, the application can be compared with
+  the SOV, so planted conflicts are found (recall 50 → 95%). About a third of conflict flags are false alarms
+  (precision 65.5%). That is the next thing to fix, on dev.
+* Replaying the recordings reproduces every live metric exactly, so CI now runs on real model answers.
+
+**What broke:**
+1. *Strict tool schemas rejected.* The API caps how many nullable / union-typed parameters a strict schema may have
+   (the application schema has 147). The code already fell back to non-strict, but the same 400 error also switched
+   off the server-side refusal fallback, and every call paid for a doomed strict attempt first. Fix: only disable
+   fallbacks when the error is about fallbacks, and remember per tool that strict was refused
+   (`tests/test_anthropic_backend.py`).
+2. *A metric that could not fail.* 39 of 40 Sonnet narratives failed the citation validator and fell back to the
+   template, yet `citation_valid_rate` read 100%, because it scored the final summary. Root cause: Sonnet groups
+   citations (`[a.b; c.d]`, `claims[CL8459682].incurred`), and the validator's regex only accepted one path per bracket
+   with a numeric index. Fix: parse grouped citations and id-style indices; allow a cited empty field when the review
+   flags name it ("missing"); accept numbers from flag messages and the 1-decimal loss ratio. The number-tracing rule is
+   unchanged, and a test proves grouping doesn't loosen it. New metric: `llm_narrative_accept_rate`, re-scored on the
+   recorded answers: **72.5%**. The 11 rejected narratives really do contain uncited numbers (street addresses,
+   a recomputed loss ratio).
+3. *Recordings reused across models.* Before the live run I made the recorder check the model, so a cheap Haiku trial
+   could never stand in for Sonnet in the table.
+
+**Next:** cut false conflict flags on dev; prompt the summary to cite address fields; compare models per document type.
+
+---
+
 ## Where things stand (end of build)
 
 Full offline table for every variant on both splits: `evals/results/experiments_replay.md` (regenerate with `make eval-all`).
-CI reference (`evals/baseline.json`, final pipeline on all 120): field F1 98.21, decision accuracy 95.83.
+CI reference (`evals/baseline.json`, final pipeline on all 120, replaying the recorded test answers): field F1 99.40, decision accuracy 100.0.
 
-**Measured offline (real numbers, deterministic components only):** everything above.
+**Measured offline (deterministic components only):** Stages 3–5.
 
 **Hand-written, not model output:** two replay fixtures for the demo package SUB-0003 (`extract_email`,
 `summary`), stored with `"source": "hand_written"`. They touch one dev submission: one extra email field, and the
 narrative replaces the template summary. Every eval report lists LLM calls by source, so they stay visible.
 
-**PENDING (needs a live model, one command, see README):**
-* baseline (single Claude call) on dev/test: the comparison point for everything else;
-* the final pipeline with Claude: template-C recovery, email-only fields (`quote_needed_by`), email-vs-application
-  date conflicts, LLM-vs-parser agreement as a confidence signal, narrative summary citation validity;
-* real token usage, latency and cost per submission (the deploy cost table then switches from estimate to measured);
-* model comparison (Opus 5.5 vs Sonnet 5.5 vs Haiku 5.5) per document type.
+**Measured live (Stage 9):** baseline (Haiku 5.5) and final (Sonnet 5.5) on the test split, with real token usage,
+latency and cost. The deploy cost table in `docs/deploy.md` now uses measured tokens.
 
-When those runs land, I'll add an entry here with before → after for each, including what broke.
+**Not run live yet:** the dev split, the intermediate variants (v1–v4), Bedrock, and a per-document-type model
+comparison (Opus vs Sonnet vs Haiku).
+

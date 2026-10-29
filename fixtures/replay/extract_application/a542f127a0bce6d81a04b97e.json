@@ -1,0 +1,276 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "e355668ef7775270bb21ed16254eea78169f0f25cd35c9df0fda7aee6391989b",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:03.970364+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Blue Ridge Tool & Die Inc.",
+     "page": 1,
+     "evidence": "Blue Ridge Tool & Die Inc."
+    },
+    "dba": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "fein": {
+     "value": "31-4573472",
+     "page": 1,
+     "evidence": "31-4573472   Corporation   332710"
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "Corporation"
+    },
+    "mailing_street": {
+     "value": "6478 Mill Lane",
+     "page": 1,
+     "evidence": "6478 Mill Lane   Sacramento   CA   95824"
+    },
+    "mailing_city": {
+     "value": "Sacramento",
+     "page": 1,
+     "evidence": "6478 Mill Lane   Sacramento   CA   95824"
+    },
+    "mailing_state": {
+     "value": "CA",
+     "page": 1,
+     "evidence": "6478 Mill Lane   Sacramento   CA   95824"
+    },
+    "mailing_zip": {
+     "value": "95824",
+     "page": 1,
+     "evidence": "6478 Mill Lane   Sacramento   CA   95824"
+    },
+    "business_description": {
+     "value": "CNC machining of metal parts for industrial customers",
+     "page": 1,
+     "evidence": "CNC machining of metal parts for industrial customers"
+    },
+    "naics_code": {
+     "value": "332710",
+     "page": 1,
+     "evidence": "31-4573472   Corporation   332710"
+    },
+    "years_in_business": {
+     "value": 33,
+     "page": 1,
+     "evidence": "YEARS IN OPERATION   ANNUAL SALES   FULL-TIME STAFF 33   $5,810,000"
+    },
+    "annual_revenue": {
+     "value": 5810000,
+     "page": 1,
+     "evidence": "33   $5,810,000"
+    },
+    "employee_count": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "website": {
+     "value": "www.blueridge.com",
+     "page": 1,
+     "evidence": "www.blueridge.com"
+    },
+    "contact_name": {
+     "value": "Mei Levine",
+     "page": 1,
+     "evidence": "INSPECTION CONTACT Mei Levine"
+    },
+    "contact_phone": {
+     "value": "(722) 745-9307",
+     "page": 1,
+     "evidence": "(722) 745-9307"
+    },
+    "contact_email": {
+     "value": "mlevine@blueridge.com",
+     "page": 1,
+     "evidence": "mlevine@blueridge.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Atlas & Reed Insurance Services",
+     "page": 1,
+     "evidence": "Atlas & Reed Insurance Services"
+    },
+    "producer_name": {
+     "value": "Laura O'Brien",
+     "page": 1,
+     "evidence": "Laura O'Brien"
+    },
+    "producer_email": {
+     "value": "laura.obrien@atlasreed.com",
+     "page": 1,
+     "evidence": "laura.obrien@atlasreed.com"
+    },
+    "producer_phone": {
+     "value": "(223) 759-3465",
+     "page": 1,
+     "evidence": "(223) 759-3465"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-01-01",
+     "page": 1,
+     "evidence": "01/01/2027"
+    },
+    "expiration_date": {
+     "value": "2028-01-01",
+     "page": 1,
+     "evidence": "01-Jan-2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "New"
+    },
+    "prior_carrier": {
+     "value": "Continental Mutual Insurance Co.",
+     "page": 1,
+     "evidence": "Continental Mutual Insurance Co."
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 3650000,
+     "page": 1,
+     "evidence": "$3,650,000"
+    },
+    "bpp_limit": {
+     "value": 570000,
+     "page": 1,
+     "evidence": "$570,000"
+    },
+    "business_income_limit": {
+     "value": 515000,
+     "page": 1,
+     "evidence": "$515,000"
+    },
+    "deductible": {
+     "value": 2500,
+     "page": 1,
+     "evidence": "$2,500"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 100,
+     "page": 1,
+     "evidence": "100%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 1,
+     "evidence": "PERILS Broad"
+    },
+    "flood_requested": {
+     "value": false,
+     "page": 1,
+     "evidence": "FLOOD? No"
+    },
+    "earthquake_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "QUAKE? Y"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 4740000,
+    "page": 1,
+    "evidence": "TOTAL VALUES $4.74M"
+   },
+   "stated_location_count": {
+    "value": 1,
+    "page": 1,
+    "evidence": "LOCATIONS 1"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "6478 Mill Lane",
+      "page": 2,
+      "evidence": "6478 Mill Lane, Sacramento, CA 95824"
+     },
+     "city": {
+      "value": "Sacramento",
+      "page": 2,
+      "evidence": "6478 Mill Lane, Sacramento, CA 95824"
+     },
+     "state": {
+      "value": "CA",
+      "page": 2,
+      "evidence": "6478 Mill Lane, Sacramento, CA 95824"
+     },
+     "zip": {
+      "value": "95824",
+      "page": 2,
+      "evidence": "6478 Mill Lane, Sacramento, CA 95824"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "JM"
+     },
+     "year_built": {
+      "value": 1995,
+      "page": 2,
+      "evidence": "JM   1995   1   16,000"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "JM   1995   1   16,000"
+     },
+     "square_feet": {
+      "value": 16000,
+      "page": 2,
+      "evidence": "JM   1995   1   16,000"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "SPRINKLERS ... No"
+     },
+     "protection_class": {
+      "value": 3,
+      "page": 2,
+      "evidence": "No   3   Asphalt Shingle"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle"
+     },
+     "roof_year": {
+      "value": 2014,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2014   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "BURGLAR ALARM None"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9310,
+  "output_tokens": 2172,
+  "latency_ms": 10273.743576000015,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

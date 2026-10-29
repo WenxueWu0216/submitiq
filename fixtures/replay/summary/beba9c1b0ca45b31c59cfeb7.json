@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "8e90ce977f92014d9355354771d7fc3dda79f30319bf5129c15f4427556965bd",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:04.778446+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine flagged UNSPRINKLERED: location 3 is unsprinklered with TIV of $10,120,000 [locations[3].sprinklered] [locations[3].tiv].\n\n**Why**\nLocation 3 (Sacramento, CA) is unsprinklered [locations[3].sprinklered] and carries $10,120,000 TIV [locations[3].tiv], which is most of the account's $16,940,000 total [totals.total_tiv]. It is joisted masonry, built 2012, 28,200 sq ft [locations[3].construction] [locations[3].year_built] [locations[3].square_feet], with protection class 7 [locations[3].protection_class] and a central station alarm [locations[3].alarm_type].\n\n**Account**\nBlue Ridge Breads LLC, a retail bakery [insured.named_insured] [insured.business_description]. New business [policy.transaction_type], effective 2026-12-15 [policy.effective_date]. Quote is needed by 2026-11-26 [policy.quote_needed_by]. The prior carrier is Pinecrest Property & Casualty [policy.prior_carrier]. Building limit is $12,985,000 and BPP is $2,705,000 [coverage.building_limit] [coverage.bpp_limit]. The form is special [coverage.cause_of_loss_form], valued at ACV [coverage.valuation], with a $1,000 deductible [coverage.deductible]. Broker: Copperfield Risk Advisors [broker.agency_name].\n\n**Locations & COPE**\n- Loc 1, Houston TX: fire resistive, 11 stories, built 2015, unsprinklered, PC 4, local alarm, TIV $4,865,000 [locations[1].construction] [locations[1].stories] [locations[1].year_built] [locations[1].sprinklered] [locations[1].protection_class] [locations[1].alarm_type] [locations[1].tiv].\n- Loc 2, Kansas City MO: frame, built 2002, 100% sprinklered, PC 5, local alarm, TIV $1,955,000 [locations[2].construction] [locations[2].year_built] [locations[2].sprinkler_pct] [locations[2].protection_class] [locations[2].alarm_type] [locations[2].tiv].\n- Loc 3: see Why.\n\n**Loss history**\nOne open water damage claim, dated 2026-06-07, with $8,240 paid, $5,810 reserved and $14,050 incurred [claims[CL6807608].date_of_loss] [claims[CL6807608].cause] [claims[CL6807608].status] [claims[CL6807608].paid] [claims[CL6807608].reserve] [claims[CL6807608].incurred]. Five-year incurred is $14,050 against $205,660 premium [totals.five_year_incurred] [totals.five_year_premium]. The other loss years show no claims [loss_years[2021].claim_count] [loss_years[2022].claim_count] [loss_years[2023].claim_count] [loss_years[2024].claim_count].\n\n**Needs attention**\n- Effective date conflict: the ACORD says 2026-12-15 and the email says 2026-12-29. The application value was kept [policy.effective_date].\n- Total TIV conflict: the SOV says 16,940,000 and the ACORD says 14,540,000. The derived value was kept [totals.total_tiv].\n- Low confidence (0.51): coinsurance 80% [coverage.coinsurance_pct] and years in business 27 [insured.years_in_business].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2417,
+  "output_tokens": 1202,
+  "latency_ms": 7269.294617000014,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

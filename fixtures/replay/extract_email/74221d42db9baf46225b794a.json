@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "6f4677b0619721971719136945aacfb26a1828ba2c0fe07fe1adfed1e0fb4d6f",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:55.613114+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Pioneer Valley Industrial Supply, Inc.",
+    "page": null,
+    "evidence": "new submission for Pioneer Valley Industrial Supply, Inc. for property"
+   },
+   "effective_date": {
+    "value": "2026-12-15",
+    "page": null,
+    "evidence": "with an inception date of 12/15/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-12-06",
+    "page": null,
+    "evidence": "Quote needed by 12/06/2026."
+   },
+   "producer_name": {
+    "value": "Daniel Patel",
+    "page": null,
+    "evidence": "Daniel Patel"
+   },
+   "producer_email": {
+    "value": "daniel.patel@brightlineins.com",
+    "page": null,
+    "evidence": "daniel.patel@brightlineins.com"
+   },
+   "producer_phone": {
+    "value": "(726) 845-3630",
+    "page": null,
+    "evidence": "(726) 845-3630"
+   },
+   "agency_name": {
+    "value": "Brightline Insurance Partners",
+    "page": null,
+    "evidence": "Brightline Insurance Partners"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2076,
+  "output_tokens": 517,
+  "latency_ms": 3082.171874000096,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

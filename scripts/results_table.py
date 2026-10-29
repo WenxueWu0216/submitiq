@@ -42,7 +42,7 @@ ROWS = [
     ("Review-queue rate", lambda m: pct(m["review"]["review_rate"])),
     ("Silent critical-error rate", lambda m: pct(m["review"]["silent_critical_error_rate"])),
     ("Conflict detection P / R", lambda m: f"{pct(m['conflicts']['precision'])} / {pct(m['conflicts']['recall'])}"),
-    ("Pipeline latency p50 / p95 (s, excl. LLM)", lambda m: f"{m['latency_ms']['p50'] / 1000:.2f} / {m['latency_ms']['p95'] / 1000:.1f}"),
+    ("Latency p50 / p95 (s; offline columns exclude LLM)", lambda m: f"{m['latency_ms']['p50'] / 1000:.2f} / {m['latency_ms']['p95'] / 1000:.1f}"),
     ("LLM latency per submission (s)", lambda m: f"{m['latency_ms']['llm_recorded_mean'] / 1000:.1f}"),
     ("LLM cost per submission (USD)", lambda m: f"{m['cost']['usd_per_submission']:.3f}"),
     ("LLM calls per submission", lambda m: f"{sum(m['cost']['llm_calls_by_source'].values()) / m['n_submissions']:.1f}"),

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "8286b7468d654c07483feb74169268bd3a18540aae7b02a1a006dd4ee09aae57",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:34.565249+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Copper Hill Sports Center",
+    "page": null,
+    "evidence": "Subject: RE: Copper Hill Sports Center - property quote request"
+   },
+   "effective_date": {
+    "value": "2026-12-01",
+    "page": null,
+    "evidence": "with an inception date of 12/1/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-17",
+    "page": null,
+    "evidence": "We need indications by November 17 if at all possible."
+   },
+   "producer_name": {
+    "value": "Chen Nguyen",
+    "page": null,
+    "evidence": "Chen Nguyen\nLantern Specialty Brokers"
+   },
+   "producer_email": {
+    "value": "chen.nguyen@lanternspecialty.com",
+    "page": null,
+    "evidence": "chen.nguyen@lanternspecialty.com"
+   },
+   "producer_phone": {
+    "value": "(256) 434-1375",
+    "page": null,
+    "evidence": "(256) 434-1375"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": 32900000,
+    "page": null,
+    "evidence": "Total values are roughly $32.9M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2088,
+  "output_tokens": 552,
+  "latency_ms": 3251.3470119999965,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

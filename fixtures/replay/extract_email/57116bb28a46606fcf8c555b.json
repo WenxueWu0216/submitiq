@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "480688839c47ca6335f3eca432d5963ea46137bde1cbdbab90555dbc0000c9da",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:49.399054+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Stonebridge Industrial Supply",
+    "page": null,
+    "evidence": "Property submission: Stonebridge Industrial Supply"
+   },
+   "effective_date": {
+    "value": "2027-02-15",
+    "page": null,
+    "evidence": "effective February 15, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-08",
+    "page": null,
+    "evidence": "Quote needed by 02/08/2027."
+   },
+   "producer_name": {
+    "value": "Thomas Hughes",
+    "page": null,
+    "evidence": "Thomas Hughes"
+   },
+   "producer_email": {
+    "value": "thomas.hughes@tidewaterrisk.com",
+    "page": null,
+    "evidence": "thomas.hughes@tidewaterrisk.com"
+   },
+   "producer_phone": {
+    "value": "(269) 305-3325",
+    "page": null,
+    "evidence": "(269) 305-3325"
+   },
+   "agency_name": {
+    "value": "Tidewater Risk Partners",
+    "page": null,
+    "evidence": "Tidewater Risk Partners"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2067,
+  "output_tokens": 509,
+  "latency_ms": 3048.9321779999727,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

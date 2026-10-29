@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "372b53db1ba42887849ad1b7523df369875ff2c33c0c4e7a286fdc89cd2b5b79",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:22.133463+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "BAYVIEW SPORTS CENTER LLC",
+    "page": null,
+    "evidence": "Please find attached a new submission for BAYVIEW SPORTS CENTER LLC for commercial property"
+   },
+   "effective_date": {
+    "value": "2026-11-01",
+    "page": null,
+    "evidence": "with an inception date of 11/1/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-18",
+    "page": null,
+    "evidence": "Quote needed by 10/18/2026."
+   },
+   "producer_name": {
+    "value": "Maria Rossi",
+    "page": null,
+    "evidence": "Maria Rossi\nTidewater Risk Partners"
+   },
+   "producer_email": {
+    "value": "maria.rossi@tidewaterrisk.com",
+    "page": null,
+    "evidence": "maria.rossi@tidewaterrisk.com"
+   },
+   "producer_phone": {
+    "value": "(574) 410-9356",
+    "page": null,
+    "evidence": "(574) 410-9356"
+   },
+   "agency_name": {
+    "value": "Tidewater Risk Partners",
+    "page": null,
+    "evidence": "Tidewater Risk Partners"
+   },
+   "approximate_total_tiv": {
+    "value": 8300000,
+    "page": null,
+    "evidence": "Total values are roughly $8.3M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2094,
+  "output_tokens": 565,
+  "latency_ms": 3798.7309480000704,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

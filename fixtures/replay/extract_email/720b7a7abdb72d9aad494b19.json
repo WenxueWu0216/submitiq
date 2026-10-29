@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "b0ead95d65331c8f4e7194d88545934ca2f2cb37bc2f5ecfe1e03fd516858ed0",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:18.777224+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "EVERGREEN SPORTS CENTER LLC",
+    "page": null,
+    "evidence": "new submission for EVERGREEN SPORTS CENTER LLC for a property quote"
+   },
+   "effective_date": {
+    "value": "2026-11-01",
+    "page": null,
+    "evidence": "effective November 1, 2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-11",
+    "page": null,
+    "evidence": "Quote needed by 10/11/2026."
+   },
+   "producer_name": {
+    "value": "Kevin Reyes",
+    "page": null,
+    "evidence": "Kevin Reyes"
+   },
+   "producer_email": {
+    "value": "kevin.reyes@northstarcb.com",
+    "page": null,
+    "evidence": "kevin.reyes@northstarcb.com"
+   },
+   "producer_phone": {
+    "value": "(402) 325-9738",
+    "page": null,
+    "evidence": "(402) 325-9738"
+   },
+   "agency_name": {
+    "value": "Northstar Commercial Brokerage",
+    "page": null,
+    "evidence": "Northstar Commercial Brokerage"
+   },
+   "approximate_total_tiv": {
+    "value": 9400000,
+    "page": null,
+    "evidence": "Total values are roughly $9.4M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2099,
+  "output_tokens": 555,
+  "latency_ms": 3449.3175630000223,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

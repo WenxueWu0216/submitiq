@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "65f5019952659631e938b9259228d8d4577586c6955e9308be3f0faab99d3596",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:48:41.562514+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "FALCON RIDGE LOUNGE LLC",
+    "page": null,
+    "evidence": "Subject: New submission - FALCON RIDGE LOUNGE LLC"
+   },
+   "effective_date": {
+    "value": "2027-02-01",
+    "page": null,
+    "evidence": "effective February 1, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-01-16",
+    "page": null,
+    "evidence": "Quote needed by 01/16/2027."
+   },
+   "producer_name": {
+    "value": "Thomas Reyes",
+    "page": null,
+    "evidence": "Thomas Reyes"
+   },
+   "producer_email": {
+    "value": "thomas.reyes@atlasreed.com",
+    "page": null,
+    "evidence": "thomas.reyes@atlasreed.com"
+   },
+   "producer_phone": {
+    "value": "(299) 534-7186",
+    "page": null,
+    "evidence": "(299) 534-7186"
+   },
+   "agency_name": {
+    "value": "Atlas & Reed Insurance Services",
+    "page": null,
+    "evidence": "Atlas & Reed Insurance Services"
+   },
+   "approximate_total_tiv": {
+    "value": 47700000,
+    "page": null,
+    "evidence": "Total values are roughly $47.7M across 8 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2094,
+  "output_tokens": 545,
+  "latency_ms": 2985.851494999906,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "aae49eb351a4de8251994744d558d3ee0c0d9604953e42c6fd032881199af63b",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:59.717863+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "FALCON RIDGE MOTOR WORKS LLC",
+    "page": null,
+    "evidence": "Property submission: FALCON RIDGE MOTOR WORKS LLC"
+   },
+   "effective_date": {
+    "value": "2026-12-15",
+    "page": null,
+    "evidence": "effective December 15, 2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-12-06",
+    "page": null,
+    "evidence": "We need indications by December 6 if at all possible."
+   },
+   "producer_name": {
+    "value": "Brian Carter",
+    "page": null,
+    "evidence": "Brian Carter"
+   },
+   "producer_email": {
+    "value": "brian.carter@lanternspecialty.com",
+    "page": null,
+    "evidence": "brian.carter@lanternspecialty.com"
+   },
+   "producer_phone": {
+    "value": "(285) 328-6978",
+    "page": null,
+    "evidence": "(285) 328-6978"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": 19500000,
+    "page": null,
+    "evidence": "Total values are roughly $19.5M across 3 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2093,
+  "output_tokens": 541,
+  "latency_ms": 3583.338774000026,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

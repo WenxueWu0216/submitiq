@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "6eeaaf02f3e3db80aab0b5f5a8a79eb3c147a89047ae3335d654aa608a8dc379",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:06.804276+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules decision is \"refer\" because location 1 is missing protection_class, which the appetite rules require [locations[1].protection_class; review_flags].\n\n**Why**\n- MISSING_INFO: protection_class for location 1 was not found in any document [review_flags: locations[1].protection_class].\n\n**Account**\n- Granite State Bake Shop Inc. (dba Granite Retail Bakery), a corporation, Houston, TX [insured.named_insured; insured.dba; insured.entity_type; insured.mailing_address.city; insured.mailing_address.state].\n- Retail bakery, 57 years in business, 63 employees [insured.business_description; insured.years_in_business; insured.employee_count].\n- Renewal effective 2026-11-01, quote needed by 2026-10-17; prior carrier Sterling National Insurance [policy.transaction_type; policy.effective_date; policy.quote_needed_by; policy.prior_carrier].\n- Total TIV 6,425,000 across 2 locations; special form, replacement cost, deductible 2,500 [totals.total_tiv; totals.location_count; coverage.cause_of_loss_form; coverage.valuation; coverage.deductible].\n\n**Locations & COPE**\n- Loc 1, Houston TX: fire_resistive, built 2021, 9 stories, 2,200 sq ft, unsprinklered, local alarm, built-up roof (2023), TIV 535,000 [locations[1].city; locations[1].construction; locations[1].year_built; locations[1].stories; locations[1].square_feet; locations[1].sprinklered; locations[1].alarm_type; locations[1].roof_type; locations[1].roof_year; locations[1].tiv].\n- Loc 2, Kansas City MO: modified_fire_resistive, built 2008, 4 stories, 23,500 sq ft, unsprinklered, protection class 5, local alarm, built-up roof (2020), TIV 5,890,000 [locations[2].city; locations[2].construction; locations[2].year_built; locations[2].stories; locations[2].square_feet; locations[2].sprinklered; locations[2].protection_class; locations[2].alarm_type; locations[2].roof_type; locations[2].roof_year; locations[2].tiv].\n\n**Loss history**\n- One closed claim: frozen pipes, date of loss 2022-08-02, paid 10,070, reserve 0 [claims[228518984].cause; claims[228518984].date_of_loss; claims[228518984].status; claims[228518984].paid; claims[228518984].reserve].\n- Five-year incurred 10,070 against five-year premium 73,260 [totals.five_year_incurred; totals.five_year_premium]. Loss ratio is about 13.7%.\n- No claims in 2022\u20132025 [loss_years[2022].claim_count; loss_years[2023].claim_count; loss_years[2024].claim_count; loss_years[2025].claim_count].\n\n**Needs attention**\n- Obtain protection_class for location 1 [locations[1].protection_class].\n- Construction conflicts, with the SOV value retained: loc 1 SOV says fire_resistive vs ACORD \"frame\"; loc 2 SOV says modified_fire_resistive vs ACORD \"joisted_masonry\" [review_flags: locations[1].construction; locations[2].construction]. Confirm both.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2116,
+  "output_tokens": 1146,
+  "latency_ms": 6461.520872999927,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

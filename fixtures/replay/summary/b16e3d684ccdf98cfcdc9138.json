@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "ccdf16883721051470ef3e101b067764a3dbf87765a76561eaaa4234e0354188",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:19.500280+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules decision is \"refer\" under the UNSPRINKLERED rule [decision].\n\n**Why**\nLocation 2 is unsprinklered [locations[2].sprinklered] with TIV of $11,375,000 [locations[2].tiv]. That triggers the referral.\n\n**Account**\nNorthgate Warehousing Corp. (dba Northgate Warehouse), Omaha, NE [insured.named_insured, insured.dba, insured.mailing_address.city, insured.mailing_address.state]. Dry goods warehousing and third-party distribution [insured.business_description], 50 years in business [insured.years_in_business]. New business [policy.transaction_type], effective 2026-12-01 [policy.effective_date]. Prior carrier is Continental Mutual Insurance Co. [policy.prior_carrier]. Broker: Brightline Insurance Partners [broker.agency_name]. Quote needed by 2026-11-18 [policy.quote_needed_by]. Total TIV is $18,520,000 across 2 locations [totals.total_tiv, totals.location_count]. Special form, replacement cost, 90% coinsurance, $2,500 deductible [coverage.cause_of_loss_form, coverage.valuation, coverage.coinsurance_pct, coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested, coverage.earthquake_requested].\n\n**Locations & COPE**\n- Loc 1, Omaha NE: joisted masonry, built 1988, 2 stories, 29,400 sq ft [locations[1].construction, locations[1].year_built, locations[1].stories, locations[1].square_feet]. 100% sprinklered, PC 3, central station alarm, built-up roof from 2020 [locations[1].sprinkler_pct, locations[1].protection_class, locations[1].alarm_type, locations[1].roof_type, locations[1].roof_year]. TIV $7,145,000 [locations[1].tiv].\n- Loc 2, Houston TX: non-combustible, 3 stories, 40,300 sq ft [locations[2].construction, locations[2].stories, locations[2].square_feet]. Unsprinklered (0%), PC 4, local alarm, metal roof from 2023 [locations[2].sprinkler_pct, locations[2].protection_class, locations[2].alarm_type, locations[2].roof_type, locations[2].roof_year]. TIV $11,375,000 [locations[2].tiv].\n\n**Loss history**\nFive-year incurred is $0.00 [totals.five_year_incurred] against five-year premium of $228,900 [totals.five_year_premium]. The loss ratio is 0.0%. Claim counts are 0 in every year from 2021 to 2025 [loss_years[2021].claim_count, loss_years[2022].claim_count, loss_years[2023].claim_count, loss_years[2024].claim_count, loss_years[2025].claim_count].\n\n**Needs attention**\n- Location 2 year built conflicts between sources. One attachment says 1971 and another says 1989. The parsed value of 1971 was kept [locations[2].year_built]. Please confirm.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1949,
+  "output_tokens": 1077,
+  "latency_ms": 5854.16782599998,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "15381dd13742fea9e1bae39f5d521acbe2a4ab1de243b81958b0501e1841c21c",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:40.404652+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline, per the rules decision [decision]. This is a new business submission [policy.transaction_type]. Quote was needed by 2026-10-27 [policy.quote_needed_by].\n\n**Why**\n- HURRICANE_ZONE (decline): Location 1 is a frame building [locations[1].construction] in ZIP 29479 [locations[1].zip], which the rules identify as a tier-1 hurricane zone [decision].\n- UNSPRINKLERED (refer): Location 1 is unsprinklered [locations[1].sprinklered] with TIV of $12,890,000 [locations[1].tiv]. This rule would route to referral, but the decline rule governs the outcome [decision].\n\n**Account**\nPrairie Wind Properties Inc. [insured.named_insured] owns and leases multi-tenant office buildings [insured.business_description]. It has been in business 20 years [insured.years_in_business]. Broker is Northstar Commercial Brokerage [broker.agency_name]. Prior carrier is Sterling National Insurance [policy.prior_carrier]. Requested term is 2026-11-15 to 2027-11-15 [policy.effective_date, policy.expiration_date].\n\n**Locations & COPE**\nOne location [totals.location_count] at 5905 Lake Boulevard, Charleston, SC [locations[1].street, locations[1].city, locations[1].state]. Office occupancy [locations[1].occupancy], frame construction [locations[1].construction], built 1956 [locations[1].year_built], one story [locations[1].stories], 68,200 sq ft [locations[1].square_feet]. No sprinklers [locations[1].sprinkler_pct], protection class 7 [locations[1].protection_class], tile roof from 2017 [locations[1].roof_type, locations[1].roof_year], central station alarm [locations[1].alarm_type]. Total TIV is $12,890,000 [totals.total_tiv]. Requested form is broad [coverage.cause_of_loss_form] at replacement cost [coverage.valuation], with a $10,000 deductible [coverage.deductible]. Flood and earthquake were not requested [coverage.flood_requested, coverage.earthquake_requested].\n\n**Loss history**\nFive-year incurred is $48,130 [totals.five_year_incurred] against five-year premium of $180,810 [totals.five_year_premium], a loss ratio of 26.6%. There is one claim: wind/hail, loss date 2026-09-21, closed, paid $48,130, no reserve [claims[26S316594].cause, claims[26S316594].date_of_loss, claims[26S316594].status, claims[26S316594].paid, claims[26S316594].reserve]. No claims were reported in 2021-2024 [loss_years[2021].claim_count, loss_years[2022].claim_count, loss_years[2023].claim_count, loss_years[2024].claim_count].\n\n**Needs attention**\nNo review flags were raised [review_flags]. One item to note: the claim is tagged to policy year 2025 [claims[26S316594].policy_year] but has a 2026-09-21 loss date [claims[26S316594].date_of_loss]. This does not affect the decline decision.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1751,
+  "output_tokens": 1085,
+  "latency_ms": 6295.701110999971,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "task": "extract_sov",
+ "prompt_version": "v1",
+ "key_material": "26d0cb6fd94e589ca8eac6f6dcd9c7c93619696527e03e2f7a0ebd1c56ed664d",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:07.443149+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   },
+   "stated_total_tiv": {
+    "value": 4735000,
+    "page": null,
+    "evidence": "TOTAL | ... | 4735000"
+   },
+   "locations": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "6478 Mill Lane",
+      "page": null,
+      "evidence": "6478 Mill Lane"
+     },
+     "city": {
+      "value": "Sacramento",
+      "page": null,
+      "evidence": "Sacramento"
+     },
+     "state": {
+      "value": "CA",
+      "page": null,
+      "evidence": "CA"
+     },
+     "zip": {
+      "value": "95824",
+      "page": null,
+      "evidence": "95824"
+     },
+     "occupancy": {
+      "value": "Machine Shop",
+      "page": null,
+      "evidence": "Machine Shop"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": null,
+      "evidence": "JM"
+     },
+     "year_built": {
+      "value": 1995,
+      "page": null,
+      "evidence": "1995"
+     },
+     "stories": {
+      "value": 1,
+      "page": null,
+      "evidence": "1"
+     },
+     "square_feet": {
+      "value": 16000,
+      "page": null,
+      "evidence": "16000"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": null,
+      "evidence": "N"
+     },
+     "sprinkler_pct": {
+      "value": 0,
+      "page": null,
+      "evidence": "0"
+     },
+     "protection_class": {
+      "value": 3,
+      "page": null,
+      "evidence": "3"
+     },
+     "roof_year": {
+      "value": 2014,
+      "page": null,
+      "evidence": "2014"
+     },
+     "building_value": {
+      "value": 3650000,
+      "page": null,
+      "evidence": "3650000"
+     },
+     "contents_value": {
+      "value": 570000,
+      "page": null,
+      "evidence": "570000"
+     },
+     "bi_value": {
+      "value": 515000,
+      "page": null,
+      "evidence": "515000"
+     },
+     "tiv": {
+      "value": 4740000,
+      "page": null,
+      "evidence": "$4.74M"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 3783,
+  "output_tokens": 656,
+  "latency_ms": 3456.0213219999696,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

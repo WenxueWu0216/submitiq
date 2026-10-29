@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "5468711dab5d62d1ffa4fcc51e2c30443e8bfda199f2ee0bf608f89e00871864",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:13.941883+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Silver Creek Hospitality LLC",
+    "page": null,
+    "evidence": "new submission for Silver Creek Hospitality LLC for commercial property"
+   },
+   "effective_date": {
+    "value": "2026-12-01",
+    "page": null,
+    "evidence": "effective December 1, 2026"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-15",
+    "page": null,
+    "evidence": "terms no later than Sunday, November 15, 2026"
+   },
+   "producer_name": {
+    "value": "Daniel Kim",
+    "page": null,
+    "evidence": "Daniel Kim"
+   },
+   "producer_email": {
+    "value": "daniel.kim@tidewaterrisk.com",
+    "page": null,
+    "evidence": "daniel.kim@tidewaterrisk.com"
+   },
+   "producer_phone": {
+    "value": "(654) 573-3511",
+    "page": null,
+    "evidence": "(654) 573-3511"
+   },
+   "agency_name": {
+    "value": "Tidewater Risk Partners",
+    "page": null,
+    "evidence": "Tidewater Risk Partners"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2069,
+  "output_tokens": 515,
+  "latency_ms": 3310.1544510000167,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

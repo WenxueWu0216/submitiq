@@ -1,0 +1,412 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "73739a59d56f5bbfdec15d224f9dea67755876bc40f5daa49fab7c4cb0e94c17",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:28.846288+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Oak Hollow Office Holdings LLC",
+     "page": 1,
+     "evidence": "Named Insured: Oak Hollow Office Holdings LLC"
+    },
+    "dba": {
+     "value": "Oak Office",
+     "page": 1,
+     "evidence": "DBA: Oak Office"
+    },
+    "fein": {
+     "value": "49-3883962",
+     "page": 1,
+     "evidence": "FEIN: 49-3883962"
+    },
+    "entity_type": {
+     "value": "llc",
+     "page": 1,
+     "evidence": "Entity Type: LLC"
+    },
+    "mailing_street": {
+     "value": "9673 Center Road",
+     "page": 1,
+     "evidence": "Mailing Address: 9673 Center Road, Sacramento, CA 95826"
+    },
+    "mailing_city": {
+     "value": "Sacramento",
+     "page": 1,
+     "evidence": "Mailing Address: 9673 Center Road, Sacramento, CA 95826"
+    },
+    "mailing_state": {
+     "value": "CA",
+     "page": 1,
+     "evidence": "Mailing Address: 9673 Center Road, Sacramento, CA 95826"
+    },
+    "mailing_zip": {
+     "value": "95826",
+     "page": 1,
+     "evidence": "Mailing Address: 9673 Center Road, Sacramento, CA 95826"
+    },
+    "business_description": {
+     "value": "Owns and leases multi-tenant office buildings",
+     "page": 1,
+     "evidence": "Nature of Business: Owns and leases multi-tenant office buildings"
+    },
+    "naics_code": {
+     "value": "531120",
+     "page": 1,
+     "evidence": "NAICS Code: 531120"
+    },
+    "years_in_business": {
+     "value": 25,
+     "page": 1,
+     "evidence": "Years in Business: 25"
+    },
+    "annual_revenue": {
+     "value": 22650000,
+     "page": 1,
+     "evidence": "Annual Revenue: $22,650,000"
+    },
+    "employee_count": {
+     "value": 277,
+     "page": 1,
+     "evidence": "Number of Employees: 277"
+    },
+    "website": {
+     "value": "www.oakhollow.com",
+     "page": 1,
+     "evidence": "Website: www.oakhollow.com"
+    },
+    "contact_name": {
+     "value": "Laura Silva",
+     "page": 1,
+     "evidence": "Contact Name: Laura Silva"
+    },
+    "contact_phone": {
+     "value": "(540) 848-8657",
+     "page": 1,
+     "evidence": "Contact Phone: (540) 848-8657"
+    },
+    "contact_email": {
+     "value": "lsilva@oakhollow.com",
+     "page": 1,
+     "evidence": "Contact Email: lsilva@oakhollow.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Atlas & Reed Insurance Services",
+     "page": 1,
+     "evidence": "Agency: Atlas & Reed Insurance Services"
+    },
+    "producer_name": {
+     "value": "James Thompson",
+     "page": 1,
+     "evidence": "Producer: James Thompson"
+    },
+    "producer_email": {
+     "value": "james.thompson@atlasreed.com",
+     "page": 1,
+     "evidence": "Producer Email: james.thompson@atlasreed.com"
+    },
+    "producer_phone": {
+     "value": "(653) 581-5860",
+     "page": 1,
+     "evidence": "Producer Phone: (653) 581-5860"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-01-01",
+     "page": 1,
+     "evidence": "Proposed Effective Date: 01/01/2027"
+    },
+    "expiration_date": {
+     "value": "2028-01-01",
+     "page": 1,
+     "evidence": "Proposed Expiration Date: 01/01/2028"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "Transaction: New"
+    },
+    "prior_carrier": {
+     "value": "Continental Mutual Insurance Co.",
+     "page": 1,
+     "evidence": "Prior Carrier: Continental Mutual Insurance Co."
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 11270000,
+     "page": 2,
+     "evidence": "Building Limit: $11,270,000"
+    },
+    "bpp_limit": {
+     "value": 3815000,
+     "page": 2,
+     "evidence": "Business Personal Property Limit: $3,815,000"
+    },
+    "business_income_limit": {
+     "value": 1090000,
+     "page": 2,
+     "evidence": "Business Income Limit: $1,090,000"
+    },
+    "deductible": {
+     "value": 2500,
+     "page": 2,
+     "evidence": "Deductible: $2,500"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 2,
+     "evidence": "Valuation: Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 80,
+     "page": 2,
+     "evidence": "Coinsurance: 80%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 2,
+     "evidence": "Causes of Loss Form: Broad"
+    },
+    "flood_requested": {
+     "value": true,
+     "page": 2,
+     "evidence": "Flood Coverage Requested: Y"
+    },
+    "earthquake_requested": {
+     "value": false,
+     "page": 2,
+     "evidence": "Earthquake Coverage Requested: N"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 16175000,
+    "page": 2,
+    "evidence": "Total Insured Value (All Locations): $16,175,000"
+   },
+   "stated_location_count": {
+    "value": 3,
+    "page": 2,
+    "evidence": "Number of Locations: 3"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "9673 Center Road",
+      "page": 2,
+      "evidence": "1   9673 Center Road   Sacramento   CA   95826"
+     },
+     "city": {
+      "value": "Sacramento",
+      "page": 2,
+      "evidence": "9673 Center Road   Sacramento   CA"
+     },
+     "state": {
+      "value": "CA",
+      "page": 2,
+      "evidence": "Sacramento   CA   95826"
+     },
+     "zip": {
+      "value": "95826",
+      "page": 2,
+      "evidence": "CA   95826   Frame"
+     },
+     "construction": {
+      "value": "frame",
+      "page": 2,
+      "evidence": "95826   Frame   1992"
+     },
+     "year_built": {
+      "value": 1992,
+      "page": 2,
+      "evidence": "Frame   1992   2   23,900"
+     },
+     "stories": {
+      "value": 2,
+      "page": 2,
+      "evidence": "1992   2   23,900"
+     },
+     "square_feet": {
+      "value": 23900,
+      "page": 2,
+      "evidence": "2   23,900 N"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "23,900 N   5"
+     },
+     "protection_class": {
+      "value": 5,
+      "page": 2,
+      "evidence": "N   5   Asphalt Shingle"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "5   Asphalt Shingle   2024"
+     },
+     "roof_year": {
+      "value": 2024,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2024   Local"
+     },
+     "alarm_type": {
+      "value": "local",
+      "page": 2,
+      "evidence": "2024   Local"
+     }
+    },
+    {
+     "loc_number": 2,
+     "street": {
+      "value": "9432 Mill Boulevard",
+      "page": 2,
+      "evidence": "2   9432 Mill Boulevard   Dallas   TX   75277"
+     },
+     "city": {
+      "value": "Dallas",
+      "page": 2,
+      "evidence": "9432 Mill Boulevard   Dallas   TX"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "Dallas   TX   75277"
+     },
+     "zip": {
+      "value": "75277",
+      "page": 2,
+      "evidence": "TX   75277   Joisted Masonry"
+     },
+     "construction": {
+      "value": "joisted_masonry",
+      "page": 2,
+      "evidence": "75277   Joisted Masonry   1981"
+     },
+     "year_built": {
+      "value": 1981,
+      "page": 2,
+      "evidence": "Joisted Masonry   1981   1"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "1981   1   14,600"
+     },
+     "square_feet": {
+      "value": 14600,
+      "page": 2,
+      "evidence": "1   14,600 N   4"
+     },
+     "sprinklered": {
+      "value": false,
+      "page": 2,
+      "evidence": "14,600 N   4"
+     },
+     "protection_class": {
+      "value": 4,
+      "page": 2,
+      "evidence": "N   4   Asphalt Shingle"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "4   Asphalt Shingle   2012"
+     },
+     "roof_year": {
+      "value": 2012,
+      "page": 2,
+      "evidence": "Asphalt Shingle   2012   Central Station"
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "2012   Central Station"
+     }
+    },
+    {
+     "loc_number": 3,
+     "street": {
+      "value": "8282 Airport Boulevard",
+      "page": 2,
+      "evidence": "3   8282 Airport Boulevard   Dallas   TX   75270"
+     },
+     "city": {
+      "value": "Dallas",
+      "page": 2,
+      "evidence": "8282 Airport Boulevard   Dallas   TX"
+     },
+     "state": {
+      "value": "TX",
+      "page": 2,
+      "evidence": "Dallas   TX   75270"
+     },
+     "zip": {
+      "value": "75270",
+      "page": 2,
+      "evidence": "TX   75270   Modified Fire Resistive"
+     },
+     "construction": {
+      "value": "modified_fire_resistive",
+      "page": 2,
+      "evidence": "75270   Modified Fire Resistive   2012"
+     },
+     "year_built": {
+      "value": 2012,
+      "page": 2,
+      "evidence": "Modified Fire Resistive   2012   6"
+     },
+     "stories": {
+      "value": 6,
+      "page": 2,
+      "evidence": "2012   6   20,200 Y"
+     },
+     "square_feet": {
+      "value": 20200,
+      "page": 2,
+      "evidence": "6   20,200 Y   6"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "20,200 Y   6"
+     },
+     "protection_class": {
+      "value": 6,
+      "page": 2,
+      "evidence": "Y   6   Membrane (TPO)"
+     },
+     "roof_type": {
+      "value": "membrane",
+      "page": 2,
+      "evidence": "6   Membrane (TPO)   2016"
+     },
+     "roof_year": {
+      "value": 2016,
+      "page": 2,
+      "evidence": "Membrane (TPO)   2016   None"
+     },
+     "alarm_type": {
+      "value": "none",
+      "page": 2,
+      "evidence": "Membrane (TPO)   2016   None"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9398,
+  "output_tokens": 3346,
+  "latency_ms": 14946.793094999975,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

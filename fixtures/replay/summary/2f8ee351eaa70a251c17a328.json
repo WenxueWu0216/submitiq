@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "7137e2627afec4394895d45b43de59e0f03b8ad19e5f218a993b9fcf594e8d97",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:41:58.594445+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine flagged an unsprinklered location with high TIV: location 3 is unsprinklered [locations[3].sprinklered] with TIV of $12,795,000 [locations[3].tiv]. No review flags were raised [review_flags].\n\n**Why**\nThe referral is driven solely by location 3 (6426 Pine Drive, Boston, MA) [locations[3].street, locations[3].city, locations[3].state]. It is a 4-story modified fire resistive building [locations[3].stories, locations[3].construction] with 0% sprinkler coverage [locations[3].sprinkler_pct].\n\n**Account**\nSummit Crest Auto Care Corporation, a general automotive repair and maintenance garage [insured.named_insured, insured.business_description], has been in business 19 years [insured.years_in_business]. This is a renewal from Bridgewater Assurance [policy.transaction_type, policy.prior_carrier], effective 2027-03-01 [policy.effective_date]. Quote is needed by 2027-02-16 [policy.quote_needed_by]. Total TIV is $31,340,000 across 4 locations [totals.total_tiv, totals.location_count]. Coverage is special form, actual cash value, 90% coinsurance, $25,000 deductible [coverage.cause_of_loss_form, coverage.valuation, coverage.coinsurance_pct, coverage.deductible]. Flood and earthquake are not requested [coverage.flood_requested, coverage.earthquake_requested].\n\n**Locations & COPE**\n- Loc 1, Atlanta: joisted masonry, built 1963, unsprinklered, local alarm [locations[1].construction, locations[1].year_built, locations[1].sprinklered, locations[1].alarm_type]. TIV $7,620,000 [locations[1].tiv].\n- Loc 2, Minneapolis: frame, 100% sprinklered [locations[2].construction, locations[2].sprinkler_pct]. TIV $5,000,000 [locations[2].tiv].\n- Loc 3, Boston: central station alarm, protection class 6 [locations[3].alarm_type, locations[3].protection_class]. Largest TIV in the schedule.\n- Loc 4, Salt Lake City: 6 stories, unsprinklered, protection class 7 [locations[4].stories, locations[4].sprinklered, locations[4].protection_class]. TIV $5,925,000 [locations[4].tiv].\n\n**Loss history**\nFive-year incurred is $85,360 against $439,440 premium [totals.five_year_incurred, totals.five_year_premium]. That is one closed 2022 wind/hail claim, paid $85,360 with no reserve [claims[BWA202286658].cause, claims[BWA202286658].status, claims[BWA202286658].paid, claims[BWA202286658].reserve]. 2023\u20132026 show no claims [loss_years[2023].claim_count, loss_years[2024].claim_count, loss_years[2025].claim_count, loss_years[2026].claim_count].\n\n**Needs attention**\n- Location 3 sprinkler status and TIV, which are the referral trigger.\n- Location 4 has no roof type provided (field absent: locations[4].roof_type) and no alarm type (field absent: locations[4].alarm_type).\n- Locations 1 and 4 are also unsprinklered [locations[1].sprinklered, locations[4].sprinklered].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2501,
+  "output_tokens": 1169,
+  "latency_ms": 6680.952606999995,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

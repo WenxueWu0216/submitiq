@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "28e8c70d0dd743a44ab9536e82adaaf0d8a1d438a9bb8fdf5ab4cc5549680c97",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:43:09.048253+00:00",
+ "response": {
+  "text": "**Recommendation**\nAccept [decision]. New business [policy.transaction_type], effective 2026-11-01 [policy.effective_date]; quote needed by 2026-10-19 [policy.quote_needed_by].\n\n**Why**\nThe rules engine returned accept [decision]. Five-year incurred is 62,680 [totals.five_year_incurred] against five-year premium of 368,040 [totals.five_year_premium], a loss ratio of 17.0%. Only one claim appears, a closed vandalism loss with zero reserve [claims[PPC202611230].cause, claims[PPC202611230].status, claims[PPC202611230].reserve].\n\n**Account**\nBlue Ridge Properties L.L.C. [insured.named_insured] owns and leases multi-tenant office buildings [insured.business_description], with 20 years in business [insured.years_in_business]. Broker: Lantern Specialty Brokers [broker.agency_name]. Prior carrier: Pinecrest Property & Casualty [policy.prior_carrier]. Requested: special form, replacement cost, 100% coinsurance, 10,000 deductible, flood requested, earthquake not requested [coverage.cause_of_loss_form, coverage.valuation, coverage.coinsurance_pct, coverage.deductible, coverage.flood_requested, coverage.earthquake_requested].\n\n**Locations & COPE**\n12 locations [totals.location_count], all office [locations[1].occupancy]. TIV is 47,410,000 [totals.total_tiv]. Largest is Boston at 6,980,000 [locations[10].tiv], unsprinklered [locations[10].sprinklered]. Chicago 8706 Lake Parkway is six stories and unsprinklered [locations[5].stories, locations[5].sprinklered]. Nashville is a 1955 build, unsprinklered [locations[6].year_built, locations[6].sprinklered]. Several others are also unsprinklered, e.g. locations 1, 4, 8 and 12 [locations[1].sprinklered, locations[4].sprinklered, locations[8].sprinklered, locations[12].sprinklered].\n\n**Loss history**\n2021\u20132024 show zero claims [loss_years[2021].claim_count, loss_years[2022].claim_count, loss_years[2023].claim_count, loss_years[2024].claim_count]. 2025 has one claim, 62,680 incurred [loss_years[2025].claim_count, loss_years[2025].total_incurred]. The loss date is 2026-08-14 [claims[PPC202611230].date_of_loss] but is listed under policy year 2025 [claims[PPC202611230].policy_year].\n\n**Needs attention**\n- TIV conflict: SOV shows 47,410,000 while the application shows 41,959,000. The derived value was kept [review_flags: totals.total_tiv].\n- Confirm the claim's policy year versus its loss date [claims[PPC202611230].policy_year, claims[PPC202611230].date_of_loss].\n- Locations 4, 11 and 12 show zero BI value [locations[4].bi_value, locations[11].bi_value, locations[12].bi_value].",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 4404,
+  "output_tokens": 1069,
+  "latency_ms": 6487.414920999981,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

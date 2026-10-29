@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "abed9fe068dabfbc50cc97d3f8ee3bb09defc9a445eec1077ec50ff592b8d3ca",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:43.610425+00:00",
+ "response": {
+  "text": "**Recommendation**\nDecline, per the rules engine. [decision]. The primary trigger is the 5-year loss ratio of 208%, which exceeds the 100% threshold [totals.five_year_incurred] [totals.five_year_premium].\n\n**Why**\n- LOSS_RATIO (decline): 208% against a 100% limit [totals.five_year_incurred] [totals.five_year_premium].\n- LARGE_LOSS (refer): claim CL5039630, Wind/Hail, incurred $440,000 [claims[CL5039630].incurred].\n- UNSPRINKLERED (refer): Location 1 is unsprinklered with TIV of $11,590,000 [locations[1].sprinklered] [locations[1].tiv].\n\n**Account**\nSilver Creek Foods Inc., an independent grocery with deli and bakery counter [insured.named_insured] [insured.business_description], 57 years in business [insured.years_in_business]. New business [policy.transaction_type], effective 2027-03-01 [policy.effective_date], via Lantern Specialty Brokers [broker.agency_name]. Quote needed by 2027-02-20 [policy.quote_needed_by]. Total TIV is $15,090,000 across 2 locations [totals.total_tiv] [totals.location_count]. Earthquake is requested [coverage.earthquake_requested]; flood is not [coverage.flood_requested]. Prior carrier: Sterling National Insurance [policy.prior_carrier].\n\n**Locations & COPE**\n- Loc 1, Los Angeles, CA: non-combustible, built 2004, 5 stories, 37,200 sq ft, unsprinklered, protection class 6, tile roof from 2013, central station alarm, TIV $11,590,000 [locations[1].city] [locations[1].construction] [locations[1].year_built] [locations[1].stories] [locations[1].square_feet] [locations[1].sprinklered] [locations[1].protection_class] [locations[1].roof_type] [locations[1].roof_year] [locations[1].alarm_type] [locations[1].tiv].\n- Loc 2, Kansas City, MO: joisted masonry, built 1987, 3 stories, 16,900 sq ft, 100% sprinklered, protection class 8, tile roof from 2009, no alarm, TIV $3,500,000 [locations[2].city] [locations[2].construction] [locations[2].year_built] [locations[2].stories] [locations[2].square_feet] [locations[2].sprinkler_pct] [locations[2].protection_class] [locations[2].roof_type] [locations[2].roof_year] [locations[2].alarm_type] [locations[2].tiv].\n\n**Loss history**\nFive-year incurred is $440,000 against $211,450 premium [totals.five_year_incurred] [totals.five_year_premium]. All of it comes from one 2025 claim, closed, paid $440,000, reserve $0 [claims[CL5039630].date_of_loss] [claims[CL5039630].status] [claims[CL5039630].paid] [claims[CL5039630].reserve]. 2022, 2023, 2024 and 2026 show no claims [loss_years[2022].claim_count] [loss_years[2023].claim_count] [loss_years[2024].claim_count] [loss_years[2026].claim_count].\n\n**Needs attention**\nNo review flags were raised [review_flags]. The quote deadline is 2027-02-20 [policy.quote_needed_by], so the broker should be notified of the decline promptly.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2073,
+  "output_tokens": 1194,
+  "latency_ms": 6575.151546999905,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "9ea6120ef224ba823dcd251b134b21e53c4ba54b8314fdd457a10431811e1ccd",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:42:43.845235+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Summit Crest Grocers",
+    "page": null,
+    "evidence": "new submission for Summit Crest Grocers for property"
+   },
+   "effective_date": {
+    "value": "2027-02-01",
+    "page": null,
+    "evidence": "effective February 1, 2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-01-21",
+    "page": null,
+    "evidence": "Quote needed by 01/21/2027."
+   },
+   "producer_name": {
+    "value": "Michael Silva",
+    "page": null,
+    "evidence": "Thanks,\nMichael Silva"
+   },
+   "producer_email": {
+    "value": "michael.silva@northstarcb.com",
+    "page": null,
+    "evidence": "michael.silva@northstarcb.com"
+   },
+   "producer_phone": {
+    "value": "(632) 349-6109",
+    "page": null,
+    "evidence": "(632) 349-6109"
+   },
+   "agency_name": {
+    "value": "Northstar Commercial Brokerage",
+    "page": null,
+    "evidence": "Northstar Commercial Brokerage"
+   },
+   "approximate_total_tiv": {
+    "value": 18900000,
+    "page": null,
+    "evidence": "Total values are roughly $18.9M across 3 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2074,
+  "output_tokens": 524,
+  "latency_ms": 4104.864109999994,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "5f4e6d4d270e2969610941b8721047183e286f3e29e04a4c9fbadaa7660b6b40",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:44:34.092028+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Prairie Wind Properties",
+    "page": null,
+    "evidence": "Property submission: Prairie Wind Properties"
+   },
+   "effective_date": {
+    "value": "2026-11-15",
+    "page": null,
+    "evidence": "with an inception date of 11/15/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-10-27",
+    "page": null,
+    "evidence": "Quote needed by 10/27/2026."
+   },
+   "producer_name": {
+    "value": "Aisha Martinez",
+    "page": null,
+    "evidence": "Aisha Martinez\nNorthstar Commercial Brokerage"
+   },
+   "producer_email": {
+    "value": "aisha.martinez@northstarcb.com",
+    "page": null,
+    "evidence": "From: Aisha Martinez <aisha.martinez@northstarcb.com>"
+   },
+   "producer_phone": {
+    "value": "(558) 339-5233",
+    "page": null,
+    "evidence": "(558) 339-5233"
+   },
+   "agency_name": {
+    "value": "Northstar Commercial Brokerage",
+    "page": null,
+    "evidence": "Northstar Commercial Brokerage"
+   },
+   "approximate_total_tiv": {
+    "value": 12900000,
+    "page": null,
+    "evidence": "Total values are roughly $12.9M across 1 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2083,
+  "output_tokens": 555,
+  "latency_ms": 3103.1415209999977,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

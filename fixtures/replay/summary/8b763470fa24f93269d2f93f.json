@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "509a3f84e3f628a155fa853ff8fe598ac602bf301350b51cf76883f2bd5a6fff",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:49.468839+00:00",
+ "response": {
+  "text": "**Recommendation**\nRefer. The rules engine flagged POOR_PROTECTION: location 1 has protection class 10 [locations[1].protection_class]. This is a renewal [policy.transaction_type] with a quote needed by 2027-01-04 [policy.quote_needed_by]; the submission was received 2026-12-15 [policy.submission_received_date].\n\n**Why**\nLocation 1 (5519 Cedar Way, Galveston, TX) is protection class 10 [locations[1].protection_class]. That is the sole referral trigger in the decision.\n\n**Account**\nCopper Hill Foods Inc., an independent grocery with deli and bakery counter [insured.named_insured][insured.business_description], 25 years in business [insured.years_in_business]. Broker: Northstar Commercial Brokerage [broker.agency_name]. Prior carrier: Pinecrest Property & Casualty [policy.prior_carrier]. Total TIV 6,210,000 [totals.total_tiv] across 2 locations [totals.location_count]. Special form, replacement cost, 100% coinsurance, 2,500 deductible [coverage.cause_of_loss_form][coverage.valuation][coverage.coinsurance_pct][coverage.deductible]. Flood and earthquake not requested [coverage.flood_requested][coverage.earthquake_requested].\n\n**Locations & COPE**\n- Loc 1, Galveston TX: joisted masonry [locations[1].construction], built 2021 [locations[1].year_built], 3 stories [locations[1].stories], 10,200 sq ft [locations[1].square_feet], 100% sprinklered [locations[1].sprinkler_pct], central station alarm [locations[1].alarm_type], asphalt shingle roof from 2026 [locations[1].roof_type][locations[1].roof_year], TIV 3,270,000 [locations[1].tiv].\n- Loc 2, New Orleans LA: fire resistive [locations[2].construction], built 2014 [locations[2].year_built], 10 stories [locations[2].stories], 12,100 sq ft [locations[2].square_feet], 100% sprinklered [locations[2].sprinkler_pct], protection class 6 [locations[2].protection_class], central station alarm [locations[2].alarm_type], tile roof from 2025 [locations[2].roof_type][locations[2].roof_year], TIV 2,940,000 [locations[2].tiv].\n\n**Loss history**\nOne claim in five years: 2023 equipment breakdown, closed, 10,600 paid, no reserve [claims[23P116080].date_of_loss][claims[23P116080].cause][claims[23P116080].status][claims[23P116080].paid][claims[23P116080].reserve]. Five-year incurred is 10,600 against premium of 71,660 [totals.five_year_incurred][totals.five_year_premium], a loss ratio of 14.8%. No claims in other years [loss_years[2022].claim_count][loss_years[2024].claim_count][loss_years[2025].claim_count][loss_years[2026].claim_count].\n\n**Needs attention**\n- Construction conflict at location 1: the SOV says joisted masonry, while the ACORD says masonry non-combustible. The joisted masonry value was kept [locations[1].construction]. Confirm with the broker.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2045,
+  "output_tokens": 1125,
+  "latency_ms": 7462.515124999982,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

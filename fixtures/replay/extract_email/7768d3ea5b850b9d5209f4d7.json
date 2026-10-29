@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "7f6fb8398e42e6be5bb89cd96705edac50791b388427bb60bc1c1e29002c4918",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:45:24.310794+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Magnolia Engineering",
+    "page": null,
+    "evidence": "Subject: New submission - Magnolia Engineering"
+   },
+   "effective_date": {
+    "value": "2027-01-15",
+    "page": null,
+    "evidence": "requested effective date of 01/15/2027"
+   },
+   "quote_needed_by": {
+    "value": "2027-01-04",
+    "page": null,
+    "evidence": "We need indications by January 4 if at all possible."
+   },
+   "producer_name": {
+    "value": "Chen O'Brien",
+    "page": null,
+    "evidence": "Chen O'Brien"
+   },
+   "producer_email": {
+    "value": "chen.obrien@lanternspecialty.com",
+    "page": null,
+    "evidence": "chen.obrien@lanternspecialty.com"
+   },
+   "producer_phone": {
+    "value": "(534) 924-6752",
+    "page": null,
+    "evidence": "(534) 924-6752"
+   },
+   "agency_name": {
+    "value": "Lantern Specialty Brokers",
+    "page": null,
+    "evidence": "Lantern Specialty Brokers"
+   },
+   "approximate_total_tiv": {
+    "value": 77000000,
+    "page": null,
+    "evidence": "Total values are roughly $77.0M across 12 location(s)."
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2080,
+  "output_tokens": 530,
+  "latency_ms": 3307.6050050000276,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,17 @@
+{
+ "task": "summary",
+ "prompt_version": "v1",
+ "key_material": "67978f504b1ffbc52fab637774bf70bae61ad09ee7ae6cf5f85a893176e12a3b",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:46:13.714024+00:00",
+ "response": {
+  "text": "**Recommendation**\nRules decision: accept. This is a new-business submission [policy.transaction_type] for 2027-01-01 to 2028-01-01 [policy.effective_date, policy.expiration_date]. Quote is needed by 2026-12-22 [policy.quote_needed_by].\n\n**Why**\nThe account is a single-location risk [totals.location_count] with total TIV of 4,740,000 [totals.total_tiv]. Five-year incurred is 16,170 [totals.five_year_incurred] against 62,430 premium [totals.five_year_premium], a loss ratio of about 25.9%. Both claims are closed with zero reserves [claims[CMI202265517].status, claims[CL1471273].status, claims[CMI202265517].reserve, claims[CL1471273].reserve].\n\n**Account**\nBlue Ridge Tool & Die Inc., a corporation [insured.named_insured, insured.entity_type], does CNC machining of metal parts [insured.business_description]. It has been in business 33 years [insured.years_in_business] with revenue of 5,810,000 [insured.annual_revenue]. Broker is Atlas & Reed Insurance Services [broker.agency_name]. The prior carrier is Continental Mutual [policy.prior_carrier]. Requested terms: building 3,650,000, BPP 570,000, BI 515,000 [coverage.building_limit, coverage.bpp_limit, coverage.business_income_limit], 2,500 deductible [coverage.deductible], replacement cost [coverage.valuation], 100% coinsurance [coverage.coinsurance_pct].\n\n**Locations & COPE**\n6478 Mill Lane, Sacramento, CA [locations[1].street, locations[1].city, locations[1].state]: machine shop [locations[1].occupancy], joisted masonry, built 1995, one story, 16,000 sq ft [locations[1].construction, locations[1].year_built, locations[1].stories, locations[1].square_feet]. Not sprinklered [locations[1].sprinklered], protection class 3 [locations[1].protection_class], asphalt shingle roof from 2014 [locations[1].roof_type, locations[1].roof_year], alarm type none [locations[1].alarm_type].\n\n**Loss history**\n- 2022 lightning: 9,050 incurred [claims[CMI202265517].cause, claims[CMI202265517].incurred]\n- 2025 roof leak: 7,120 incurred [claims[CL1471273].cause, claims[CL1471273].incurred]\n- No claims in 2023, 2024, or 2026 [loss_years[2023].claim_count, loss_years[2024].claim_count, loss_years[2026].claim_count]\n\n**Needs attention**\n- TIV does not reconcile: the SOV column sums to 4,740,000 against a stated total of 4,735,000 [locations[1].tiv].\n- Low-confidence extractions (0.51) need verification: cause of loss form (broad) [coverage.cause_of_loss_form], earthquake requested [coverage.earthquake_requested], flood requested [coverage.flood_requested], contact name [insured.contact_name], and alarm type [locations[1].alarm_type].\n- Earthquake is requested [coverage.earthquake_requested], so confirm that field before quoting.",
+  "tool_input": null,
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 1993,
+  "output_tokens": 1118,
+  "latency_ms": 6267.748327000049,
+  "stop_reason": "end_turn",
+  "error": null
+ }
+}

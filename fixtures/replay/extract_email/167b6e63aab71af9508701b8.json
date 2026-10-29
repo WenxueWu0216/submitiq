@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "6836817289a619fb1d23390a4645ec1ab68a5cef73ba64fed294f267a5b032b1",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:19.876609+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "COPPER HILL MACHINE WORKS CORPORATION",
+    "page": null,
+    "evidence": "new submission for COPPER HILL MACHINE WORKS CORPORATION for a property quote"
+   },
+   "effective_date": {
+    "value": "2026-12-01",
+    "page": null,
+    "evidence": "with an inception date of 12/1/26"
+   },
+   "quote_needed_by": {
+    "value": "2026-11-24",
+    "page": null,
+    "evidence": "We need indications by November 24 if at all possible."
+   },
+   "producer_name": {
+    "value": "Brian Reyes",
+    "page": null,
+    "evidence": "Brian Reyes\nBrightline Insurance Partners"
+   },
+   "producer_email": {
+    "value": "brian.reyes@brightlineins.com",
+    "page": null,
+    "evidence": "brian.reyes@brightlineins.com"
+   },
+   "producer_phone": {
+    "value": "(433) 480-9888",
+    "page": null,
+    "evidence": "(433) 480-9888"
+   },
+   "agency_name": {
+    "value": "Brightline Insurance Partners",
+    "page": null,
+    "evidence": "Brightline Insurance Partners"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2079,
+  "output_tokens": 538,
+  "latency_ms": 3307.6531169999726,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

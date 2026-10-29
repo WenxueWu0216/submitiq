@@ -1,0 +1,276 @@
+{
+ "task": "extract_application",
+ "prompt_version": "v1",
+ "key_material": "8559b9ae49df970a9776273d5fd6743522eeab4544480425380750908f57183c",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:47:51.353922+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured": {
+    "named_insured": {
+     "value": "Sunrise Engineering Group Corporation",
+     "page": 1,
+     "evidence": "Sunrise Engineering Group Corporation"
+    },
+    "dba": {
+     "value": "Sunrise Engineering Office",
+     "page": 1,
+     "evidence": "Sunrise Engineering Office"
+    },
+    "fein": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "entity_type": {
+     "value": "corporation",
+     "page": 1,
+     "evidence": "ORGANIZATION Corporation"
+    },
+    "mailing_street": {
+     "value": "1617 Main Avenue",
+     "page": 1,
+     "evidence": "1617 Main Avenue"
+    },
+    "mailing_city": {
+     "value": "Sacramento",
+     "page": 1,
+     "evidence": "Sacramento"
+    },
+    "mailing_state": {
+     "value": "CA",
+     "page": 1,
+     "evidence": "CA"
+    },
+    "mailing_zip": {
+     "value": "95810",
+     "page": 1,
+     "evidence": "95810"
+    },
+    "business_description": {
+     "value": "Civil and structural engineering consulting office",
+     "page": 1,
+     "evidence": "Civil and structural engineering consulting office"
+    },
+    "naics_code": {
+     "value": "541330",
+     "page": 1,
+     "evidence": "541330"
+    },
+    "years_in_business": {
+     "value": 9,
+     "page": 1,
+     "evidence": "YEARS IN OPERATION 9"
+    },
+    "annual_revenue": {
+     "value": 4070000,
+     "page": 1,
+     "evidence": "ANNUAL SALES $4.07M"
+    },
+    "employee_count": {
+     "value": null,
+     "page": null,
+     "evidence": null
+    },
+    "website": {
+     "value": "www.sunriseengineering.com",
+     "page": 1,
+     "evidence": "www.sunriseengineering.com"
+    },
+    "contact_name": {
+     "value": "Grace Martinez",
+     "page": 1,
+     "evidence": "INSPECTION CONTACT Grace Martinez"
+    },
+    "contact_phone": {
+     "value": "(493) 615-8054",
+     "page": 1,
+     "evidence": "(493) 615-8054"
+    },
+    "contact_email": {
+     "value": "gmartinez@sunriseengineering.com",
+     "page": 1,
+     "evidence": "gmartinez@sunriseengineering.com"
+    }
+   },
+   "broker": {
+    "agency_name": {
+     "value": "Tidewater Risk Partners",
+     "page": 1,
+     "evidence": "Tidewater Risk Partners"
+    },
+    "producer_name": {
+     "value": "Kevin Patel",
+     "page": 1,
+     "evidence": "Kevin Patel"
+    },
+    "producer_email": {
+     "value": "kevin.patel@tidewaterrisk.com",
+     "page": 1,
+     "evidence": "kevin.patel@tidewaterrisk.com"
+    },
+    "producer_phone": {
+     "value": "(636) 978-9623",
+     "page": 1,
+     "evidence": "(636) 978-9623"
+    }
+   },
+   "policy": {
+    "effective_date": {
+     "value": "2027-02-15",
+     "page": 1,
+     "evidence": "INCEPTION 2027-02-15"
+    },
+    "expiration_date": {
+     "value": "2028-02-15",
+     "page": 1,
+     "evidence": "EXPIRY 2028-02-15"
+    },
+    "transaction_type": {
+     "value": "new",
+     "page": 1,
+     "evidence": "BUSINESS TYPE New"
+    },
+    "prior_carrier": {
+     "value": "Great Plains Casualty",
+     "page": 1,
+     "evidence": "Great Plains Casualty"
+    }
+   },
+   "coverage": {
+    "building_limit": {
+     "value": 3430000,
+     "page": 1,
+     "evidence": "BLDG LIMIT $3,430,000"
+    },
+    "bpp_limit": {
+     "value": 540000,
+     "page": 1,
+     "evidence": "CONTENTS LIMIT $540,000"
+    },
+    "business_income_limit": {
+     "value": 0,
+     "page": 1,
+     "evidence": "TIME ELEMENT $0"
+    },
+    "deductible": {
+     "value": 2500,
+     "page": 1,
+     "evidence": "AOP DEDUCTIBLE $2,500"
+    },
+    "valuation": {
+     "value": "replacement_cost",
+     "page": 1,
+     "evidence": "Replacement Cost"
+    },
+    "coinsurance_pct": {
+     "value": 80,
+     "page": 1,
+     "evidence": "80%"
+    },
+    "cause_of_loss_form": {
+     "value": "broad",
+     "page": 1,
+     "evidence": "PERILS Broad"
+    },
+    "flood_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "FLOOD? Yes"
+    },
+    "earthquake_requested": {
+     "value": true,
+     "page": 1,
+     "evidence": "QUAKE? Yes"
+    }
+   },
+   "stated_total_tiv": {
+    "value": 3970000,
+    "page": 1,
+    "evidence": "TOTAL VALUES $3.97M"
+   },
+   "stated_location_count": {
+    "value": 1,
+    "page": 1,
+    "evidence": "LOCATIONS 1"
+   },
+   "premises": [
+    {
+     "loc_number": 1,
+     "street": {
+      "value": "1617 Main Avenue",
+      "page": 2,
+      "evidence": "1617 Main Avenue, Sacramento, CA 95810"
+     },
+     "city": {
+      "value": "Sacramento",
+      "page": 2,
+      "evidence": "1617 Main Avenue, Sacramento, CA 95810"
+     },
+     "state": {
+      "value": "CA",
+      "page": 2,
+      "evidence": "1617 Main Avenue, Sacramento, CA 95810"
+     },
+     "zip": {
+      "value": "95810",
+      "page": 2,
+      "evidence": "1617 Main Avenue, Sacramento, CA 95810"
+     },
+     "construction": {
+      "value": "non_combustible",
+      "page": 2,
+      "evidence": "Non-Combustible"
+     },
+     "year_built": {
+      "value": 1966,
+      "page": 2,
+      "evidence": "1966"
+     },
+     "stories": {
+      "value": 1,
+      "page": 2,
+      "evidence": "FLOORS 1"
+     },
+     "square_feet": {
+      "value": 17400,
+      "page": 2,
+      "evidence": "17,400"
+     },
+     "sprinklered": {
+      "value": true,
+      "page": 2,
+      "evidence": "SPRINKLERS Yes"
+     },
+     "protection_class": {
+      "value": 6,
+      "page": 2,
+      "evidence": "FIRE PROT. CLASS 6"
+     },
+     "roof_type": {
+      "value": "asphalt_shingle",
+      "page": 2,
+      "evidence": "Asphalt Shingle"
+     },
+     "roof_year": {
+      "value": null,
+      "page": null,
+      "evidence": null
+     },
+     "alarm_type": {
+      "value": "central_station",
+      "page": 2,
+      "evidence": "Central Station"
+     }
+    }
+   ]
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 9322,
+  "output_tokens": 2106,
+  "latency_ms": 9723.703049999813,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}

@@ -1,0 +1,58 @@
+{
+ "task": "extract_email",
+ "prompt_version": "v1",
+ "key_material": "13d433f8970264c892d415083cbd38cf7b715545940982cec5c070c211640102",
+ "source": "recorded",
+ "recorded_at": "2026-10-29T23:41:49.955837+00:00",
+ "response": {
+  "text": null,
+  "tool_input": {
+   "insured_name": {
+    "value": "Old Mill",
+    "page": null,
+    "evidence": "Please find attached a new submission for Old Mill for commercial property"
+   },
+   "effective_date": {
+    "value": "2027-03-01",
+    "page": null,
+    "evidence": "with an inception date of 3/1/27"
+   },
+   "quote_needed_by": {
+    "value": "2027-02-14",
+    "page": null,
+    "evidence": "Quote needed by 02/14/2027."
+   },
+   "producer_name": {
+    "value": "Nina Patel",
+    "page": null,
+    "evidence": "Nina Patel\nAtlas & Reed Insurance Services"
+   },
+   "producer_email": {
+    "value": "nina.patel@atlasreed.com",
+    "page": null,
+    "evidence": "From: Nina Patel <nina.patel@atlasreed.com>"
+   },
+   "producer_phone": {
+    "value": "(957) 858-6281",
+    "page": null,
+    "evidence": "(957) 858-6281"
+   },
+   "agency_name": {
+    "value": "Atlas & Reed Insurance Services",
+    "page": null,
+    "evidence": "Atlas & Reed Insurance Services"
+   },
+   "approximate_total_tiv": {
+    "value": null,
+    "page": null,
+    "evidence": null
+   }
+  },
+  "model": "claude-sonnet-5-5",
+  "input_tokens": 2037,
+  "output_tokens": 524,
+  "latency_ms": 3441.6961360000187,
+  "stop_reason": "tool_use",
+  "error": null
+ }
+}
