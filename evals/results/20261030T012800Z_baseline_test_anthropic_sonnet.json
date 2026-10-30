@@ -1,0 +1,1372 @@
+{
+ "meta": {
+  "pipeline": "baseline",
+  "split": "test",
+  "backend": "anthropic",
+  "tag": "sonnet",
+  "timestamp": "20261030T012800Z",
+  "git_sha": "d18252c",
+  "n": 40,
+  "wall_seconds": 131.3,
+  "model": "claude-sonnet-5-5",
+  "replay_miss_policy": "abstain"
+ },
+ "metrics": {
+  "n_submissions": 40,
+  "fields": {
+   "overall": {
+    "precision": 0.9994,
+    "recall": 0.9592,
+    "f1": 0.9789,
+    "tp": 5098,
+    "fp": 3,
+    "fn": 217
+   },
+   "critical": {
+    "precision": 0.9985,
+    "recall": 0.9639,
+    "f1": 0.9809,
+    "tp": 1334,
+    "fp": 2,
+    "fn": 50
+   },
+   "by_group": {
+    "insured": {
+     "precision": 0.9984,
+     "recall": 0.9458,
+     "f1": 0.9714,
+     "tp": 611,
+     "fp": 1,
+     "fn": 35
+    },
+    "broker": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 152,
+     "fp": 0,
+     "fn": 8
+    },
+    "policy": {
+     "precision": 1.0,
+     "recall": 0.9458,
+     "f1": 0.9722,
+     "tp": 227,
+     "fp": 0,
+     "fn": 13
+    },
+    "coverage": {
+     "precision": 1.0,
+     "recall": 0.9415,
+     "f1": 0.9699,
+     "tp": 338,
+     "fp": 0,
+     "fn": 21
+    },
+    "locations": {
+     "precision": 0.9992,
+     "recall": 0.9692,
+     "f1": 0.9839,
+     "tp": 2452,
+     "fp": 2,
+     "fn": 78
+    },
+    "claims": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 406,
+     "fp": 0,
+     "fn": 14
+    },
+    "loss_years": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 760,
+     "fp": 0,
+     "fn": 40
+    },
+    "totals": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 152,
+     "fp": 0,
+     "fn": 8
+    }
+   },
+   "by_template": {
+    "A": {
+     "precision": 0.9994,
+     "recall": 0.9386,
+     "f1": 0.9681,
+     "tp": 1621,
+     "fp": 1,
+     "fn": 106
+    },
+    "B": {
+     "precision": 0.9991,
+     "recall": 0.9987,
+     "f1": 0.9989,
+     "tp": 2334,
+     "fp": 2,
+     "fn": 3
+    },
+    "C": {
+     "precision": 1.0,
+     "recall": 0.9137,
+     "f1": 0.9549,
+     "tp": 1143,
+     "fp": 0,
+     "fn": 108
+    }
+   },
+   "by_field": {
+    "broker.agency_name": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "broker.producer_email": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "broker.producer_name": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "broker.producer_phone": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "claims[].cause": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 58,
+     "fp": 0,
+     "fn": 2
+    },
+    "claims[].date_of_loss": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 58,
+     "fp": 0,
+     "fn": 2
+    },
+    "claims[].incurred": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 58,
+     "fp": 0,
+     "fn": 2
+    },
+    "claims[].paid": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 58,
+     "fp": 0,
+     "fn": 2
+    },
+    "claims[].policy_year": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 58,
+     "fp": 0,
+     "fn": 2
+    },
+    "claims[].reserve": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 58,
+     "fp": 0,
+     "fn": 2
+    },
+    "claims[].status": {
+     "precision": 1.0,
+     "recall": 0.9667,
+     "f1": 0.9831,
+     "tp": 58,
+     "fp": 0,
+     "fn": 2
+    },
+    "coverage.bpp_limit": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "coverage.building_limit": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "coverage.business_income_limit": {
+     "precision": 1.0,
+     "recall": 0.925,
+     "f1": 0.961,
+     "tp": 37,
+     "fp": 0,
+     "fn": 3
+    },
+    "coverage.cause_of_loss_form": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "coverage.coinsurance_pct": {
+     "precision": 1.0,
+     "recall": 0.9487,
+     "f1": 0.9737,
+     "tp": 37,
+     "fp": 0,
+     "fn": 2
+    },
+    "coverage.deductible": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "coverage.earthquake_requested": {
+     "precision": 1.0,
+     "recall": 0.925,
+     "f1": 0.961,
+     "tp": 37,
+     "fp": 0,
+     "fn": 3
+    },
+    "coverage.flood_requested": {
+     "precision": 1.0,
+     "recall": 0.925,
+     "f1": 0.961,
+     "tp": 37,
+     "fp": 0,
+     "fn": 3
+    },
+    "coverage.valuation": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.annual_revenue": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.business_description": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.contact_email": {
+     "precision": 0.9737,
+     "recall": 0.925,
+     "f1": 0.9487,
+     "tp": 37,
+     "fp": 1,
+     "fn": 3
+    },
+    "insured.contact_name": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.contact_phone": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.dba": {
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "tp": 13,
+     "fp": 0,
+     "fn": 0
+    },
+    "insured.employee_count": {
+     "precision": 1.0,
+     "recall": 0.9189,
+     "f1": 0.9577,
+     "tp": 34,
+     "fp": 0,
+     "fn": 3
+    },
+    "insured.entity_type": {
+     "precision": 1.0,
+     "recall": 0.925,
+     "f1": 0.961,
+     "tp": 37,
+     "fp": 0,
+     "fn": 3
+    },
+    "insured.fein": {
+     "precision": 1.0,
+     "recall": 0.9487,
+     "f1": 0.9737,
+     "tp": 37,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.mailing_address.city": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.mailing_address.state": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.mailing_address.street": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.mailing_address.zip": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.naics_code": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.named_insured": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.website": {
+     "precision": 1.0,
+     "recall": 0.9474,
+     "f1": 0.973,
+     "tp": 36,
+     "fp": 0,
+     "fn": 2
+    },
+    "insured.years_in_business": {
+     "precision": 1.0,
+     "recall": 0.9487,
+     "f1": 0.9737,
+     "tp": 37,
+     "fp": 0,
+     "fn": 2
+    },
+    "locations[].alarm_type": {
+     "precision": 1.0,
+     "recall": 0.9545,
+     "f1": 0.9767,
+     "tp": 84,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].bi_value": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].building_value": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].city": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].construction": {
+     "precision": 0.9852,
+     "recall": 0.9568,
+     "f1": 0.9708,
+     "tp": 133,
+     "fp": 2,
+     "fn": 6
+    },
+    "locations[].contents_value": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].occupancy": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].protection_class": {
+     "precision": 1.0,
+     "recall": 0.9706,
+     "f1": 0.9851,
+     "tp": 132,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].roof_type": {
+     "precision": 1.0,
+     "recall": 0.9545,
+     "f1": 0.9767,
+     "tp": 84,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].roof_year": {
+     "precision": 1.0,
+     "recall": 0.9704,
+     "f1": 0.985,
+     "tp": 131,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].sprinkler_pct": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].sprinklered": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].square_feet": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].state": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].stories": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].street": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].tiv": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].year_built": {
+     "precision": 1.0,
+     "recall": 0.9708,
+     "f1": 0.9852,
+     "tp": 133,
+     "fp": 0,
+     "fn": 4
+    },
+    "locations[].zip": {
+     "precision": 1.0,
+     "recall": 0.9712,
+     "f1": 0.9854,
+     "tp": 135,
+     "fp": 0,
+     "fn": 4
+    },
+    "loss_years[].carrier": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 190,
+     "fp": 0,
+     "fn": 10
+    },
+    "loss_years[].claim_count": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 190,
+     "fp": 0,
+     "fn": 10
+    },
+    "loss_years[].earned_premium": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 190,
+     "fp": 0,
+     "fn": 10
+    },
+    "loss_years[].total_incurred": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 190,
+     "fp": 0,
+     "fn": 10
+    },
+    "policy.effective_date": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "policy.expiration_date": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "policy.prior_carrier": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "policy.quote_needed_by": {
+     "precision": 1.0,
+     "recall": 0.925,
+     "f1": 0.961,
+     "tp": 37,
+     "fp": 0,
+     "fn": 3
+    },
+    "policy.submission_received_date": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "policy.transaction_type": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "totals.five_year_incurred": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "totals.five_year_premium": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "totals.location_count": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    },
+    "totals.total_tiv": {
+     "precision": 1.0,
+     "recall": 0.95,
+     "f1": 0.9744,
+     "tp": 38,
+     "fp": 0,
+     "fn": 2
+    }
+   }
+  },
+  "decision": {
+   "accuracy": 0.85,
+   "abstained": 2,
+   "declines_predicted_accept": 0,
+   "confusion": {
+    "accept->accept": 10,
+    "accept->none": 1,
+    "accept->refer": 2,
+    "decline->decline": 8,
+    "decline->refer": 1,
+    "refer->decline": 1,
+    "refer->none": 1,
+    "refer->refer": 16
+   }
+  },
+  "review": {
+   "review_rate": 0.05,
+   "submissions_with_critical_error": 4,
+   "silent_critical_error_rate": 0.05,
+   "flag_precision": 0.0,
+   "flag_recall_of_errors": 0.0,
+   "wrong_values": 3,
+   "flag_recall_of_wrong_values": 0.0,
+   "flagged_fields_per_submission": 0.0,
+   "degraded_rate": 0.05
+  },
+  "conflicts": {
+   "precision": 0.0,
+   "recall": 0.0,
+   "f1": 0.0,
+   "tp": 0,
+   "fp": 0,
+   "fn": 20
+  },
+  "documents": {
+   "classification_accuracy": 1.0
+  },
+  "latency_ms": {
+   "mean": 8350.9,
+   "p50": 8711.8,
+   "p95": 19927.6,
+   "llm_recorded_mean": 12036.6
+  },
+  "cost": {
+   "usd_per_submission": 0.03819,
+   "input_tokens_per_submission": 7935.5,
+   "output_tokens_per_submission": 2231.9,
+   "est_prompt_tokens_per_submission": 4251.2,
+   "llm_calls_by_source": {
+    "live": 22,
+    "replay:recorded": 18
+   },
+   "llm_calls_by_task": {
+    "baseline_extract": 40
+   }
+  },
+  "summary": {
+   "citation_valid_rate": null,
+   "llm_narrative_accept_rate": null
+  }
+ },
+ "submissions": [
+  {
+   "id": "SUB-0081",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0082",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0083",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0084",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0085",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0086",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0087",
+   "template": "A",
+   "f1": 0.9963,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "insured.entity_type"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0088",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0089",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0090",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0091",
+   "template": "C",
+   "f1": 0.0,
+   "decision_gold": "refer",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "broker.agency_name",
+    "broker.producer_email",
+    "broker.producer_name",
+    "broker.producer_phone",
+    "claims[26G788805].cause",
+    "claims[26G788805].date_of_loss",
+    "claims[26G788805].incurred",
+    "claims[26G788805].paid",
+    "claims[26G788805].policy_year",
+    "claims[26G788805].reserve",
+    "claims[26G788805].status",
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].bi_value",
+    "locations[1].building_value",
+    "locations[1].city"
+   ],
+   "review_reasons": [
+    "extraction model returned no usable output (unparseable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0092",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0093",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0094",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0095",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0096",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0097",
+   "template": "C",
+   "f1": 0.9835,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "coverage.business_income_limit",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "insured.employee_count"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0098",
+   "template": "A",
+   "f1": 0.9903,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [
+    "locations[2].construction"
+   ],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0099",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0100",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0101",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0102",
+   "template": "B",
+   "f1": 0.9945,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [
+    "policy.quote_needed_by"
+   ],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0103",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0104",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0105",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0106",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0107",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0108",
+   "template": "B",
+   "f1": 0.9923,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": true,
+   "wrong": [
+    "locations[2].construction"
+   ],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0109",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0110",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0111",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0112",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0113",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0114",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0115",
+   "template": "A",
+   "f1": 0.0,
+   "decision_gold": "accept",
+   "decision_pred": null,
+   "needs_review": true,
+   "critical_error": true,
+   "wrong": [],
+   "missed": [
+    "broker.agency_name",
+    "broker.producer_email",
+    "broker.producer_name",
+    "broker.producer_phone",
+    "claims[HIC202378503].cause",
+    "claims[HIC202378503].date_of_loss",
+    "claims[HIC202378503].incurred",
+    "claims[HIC202378503].paid",
+    "claims[HIC202378503].policy_year",
+    "claims[HIC202378503].reserve",
+    "claims[HIC202378503].status",
+    "coverage.bpp_limit",
+    "coverage.building_limit",
+    "coverage.business_income_limit",
+    "coverage.cause_of_loss_form",
+    "coverage.coinsurance_pct",
+    "coverage.deductible",
+    "coverage.earthquake_requested",
+    "coverage.flood_requested",
+    "coverage.valuation",
+    "insured.annual_revenue",
+    "insured.business_description",
+    "insured.contact_email",
+    "insured.contact_name",
+    "insured.contact_phone",
+    "insured.employee_count",
+    "insured.entity_type",
+    "insured.fein",
+    "insured.mailing_address.city",
+    "insured.mailing_address.state",
+    "insured.mailing_address.street",
+    "insured.mailing_address.zip",
+    "insured.naics_code",
+    "insured.named_insured",
+    "insured.website",
+    "insured.years_in_business",
+    "locations[1].alarm_type",
+    "locations[1].bi_value",
+    "locations[1].building_value",
+    "locations[1].city"
+   ],
+   "review_reasons": [
+    "extraction model returned no usable output (unparseable)"
+   ],
+   "errors": []
+  },
+  {
+   "id": "SUB-0116",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0117",
+   "template": "B",
+   "f1": 1.0,
+   "decision_gold": "decline",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0118",
+   "template": "B",
+   "f1": 0.9908,
+   "decision_gold": "refer",
+   "decision_pred": "refer",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [
+    "insured.contact_email"
+   ],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0119",
+   "template": "C",
+   "f1": 1.0,
+   "decision_gold": "accept",
+   "decision_pred": "accept",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  },
+  {
+   "id": "SUB-0120",
+   "template": "A",
+   "f1": 1.0,
+   "decision_gold": "refer",
+   "decision_pred": "decline",
+   "needs_review": false,
+   "critical_error": false,
+   "wrong": [],
+   "missed": [],
+   "review_reasons": [],
+   "errors": []
+  }
+ ]
+}

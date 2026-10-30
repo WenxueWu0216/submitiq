@@ -309,18 +309,21 @@ let an LLM narrative with an invented number through.
 
 **What:** the first runs against the real API, on the 40 held-out test packages only (dev was used while
 building). Baseline on Haiku 5.5, final pipeline on Sonnet 5.5, everything recorded to `fixtures/replay/`.
-Total spend: **$3.04** (`make eval-smoke` first, 5 packages for $0.03, to catch setup problems cheaply).
+Total spend: about **$4** ($3.04 for the main runs, then a same-model baseline on Sonnet; that run first stopped halfway when the account ran out of credit, and its invalid result was deleted, not reported) (`make eval-smoke` first, 5 packages for $0.03, to catch setup problems cheaply).
 
 | test split | field F1 | critical F1 | template C F1 | decision acc. | review rate | silent crit. err. | conflict P / R | USD / sub |
 |---|---|---|---|---|---|---|---|---|
 | final, offline (deterministic only) | 96.1 | 98.9 | 84.5 | 87.5 | 57.5 | 0.0 | 90.9 / 50.0 | – |
 | baseline, Haiku 5.5 | 83.3 | 84.0 | 96.3 | 65.0 | 30.0 | **5.0** | 0.0 / 0.0 | 0.003 |
+| baseline, Sonnet 5.5 | 97.9 | 98.1 | 95.5 | 85.0 | 5.0 | **5.0** | 0.0 / 0.0 | 0.038 |
 | **final, Sonnet 5.5** | **99.8** | **100.0** | **99.8** | **100.0** | 67.5 | **0.0** | 65.5 / 95.0 | 0.073 |
 
 **What it shows:**
 * Claude closes the template-C gap (84.5 → 99.8) and lifts decision accuracy to 100%. Silent critical errors stay at 0.
-* The single-call baseline is worse on every axis that matters: 12 of 40 answers had no usable decision, it can't
-  detect conflicts, and 5% of packages carry a silent critical error.
+* Model vs structure: on Haiku the single-call baseline reaches 83.3 F1; on Sonnet, the same model as the final
+  pipeline, it reaches 97.9. So most of the extraction gap was the model. The structure's contribution is the rest:
+  decision accuracy 85 → 100%, silent critical errors 5 → 0%, conflict recall 0 → 95%, and a citation for every
+  value, at about twice the cost per submission ($0.038 → $0.073).
 * Review rate rises 57.5 → 67.5%. With template-C applications now readable, the application can be compared with
   the SOV, so planted conflicts are found (recall 50 → 95%). About a third of conflict flags are false alarms
   (precision 65.5%). That is the next thing to fix, on dev.

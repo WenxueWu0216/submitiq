@@ -134,9 +134,20 @@ What to take from it:
 What the live runs (test split) add:
 * **Template C: 84.5 → 99.8 F1** with Claude reading the unseen layout. Decision accuracy **87.5 → 100%**, silent
   critical errors stay at **0%**, and no decline is ever predicted as accept.
-* **The single-call baseline is clearly worse**: 83.3 field F1, 65% decision accuracy (12 of 40 packages came back
-  with no usable decision), no conflict detection at all, and a **5% silent critical-error rate**. That gap is the
-  case for per-document extraction, cross-checks and rules.
+* **Same model, single call vs the full pipeline.** The baseline column above runs on Haiku. To separate the model from
+  the structure, I also ran the baseline on Sonnet 5.5, the final pipeline's model
+  (`evals/results/*_baseline_test_anthropic_sonnet.json`, recordings in `fixtures/replay_baseline_sonnet/`):
+
+  | test split, Sonnet 5.5 | field F1 | decision acc. | silent crit. err. | conflict recall | review rate | USD / sub |
+  |---|---|---|---|---|---|---|
+  | baseline: one call, model decides | 97.9 | 85.0 | 5.0 | 0.0 | 5.0 | 0.038 |
+  | final pipeline | 99.8 | 100.0 | 0.0 | 95.0 | 67.5 | 0.073 |
+
+  Read it honestly: on extraction alone, a strong model in one call is already close (97.9 vs 99.8 F1), and most of
+  the gap to the Haiku baseline was the model. What the structure buys is everything around extraction: decisions
+  (85 → 100%: of the baseline's 6 misses, 2 gave no usable decision and 4 picked the wrong outcome, including one decline sent to refer), **no silent
+  critical errors** (2 baseline packages had a wrong critical field and nothing flagged them), conflict detection
+  (none → 95% recall), and a citation for every value. It costs about twice as much per submission.
 * **Review rate rose from 57.5% to 67.5%.** Once Claude reads template C, its application values can be compared with
   the SOV, so far more planted conflicts are caught (conflict recall 50 → 95%). But about a third of conflict flags
   are false alarms (precision 65.5%). Cutting those is the next target, measured on dev.
