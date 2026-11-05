@@ -1,0 +1,3 @@
+page     1: p50      9.7 ms   p95     12.3 ms   mean     10.3 ms   (n=50)
+page   100: p50     12.1 ms   p95     13.7 ms   mean     12.4 ms   (n=50)
+page  2500: p50     79.5 ms   p95     95.0 ms   mean     81.4 ms   (n=50)

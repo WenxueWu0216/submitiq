@@ -20,16 +20,18 @@ public sealed class ReviewService(SubmitIqDbContext db, FieldRegistry registry, 
     {
         var query = db.ReviewTasks.AsNoTracking().Where(t => t.Status == status);
         var total = await query.CountAsync(ct);
-        var rows = await query
+        var pageOfTasks = query
             .OrderByDescending(t => t.Priority).ThenBy(t => t.CreatedAt).ThenBy(t => t.Id)
-            .Skip((page - 1) * pageSize).Take(pageSize)
-            .Select(t => new
-            {
-                Task = t,
-                t.Submission!.InsuredName,
-                Field = db.ExtractedFields.FirstOrDefault(f => f.SubmissionId == t.SubmissionId && f.Path == t.FieldPath),
-            })
-            .ToListAsync(ct);
+            .Skip((page - 1) * pageSize).Take(pageSize);
+        // (SubmissionId, Path) is unique, so a plain LEFT JOIN finds each task's field. A FirstOrDefault()
+        // subquery here made EF emit ROW_NUMBER() over the whole ExtractedFields table on every request
+        // (perf/README.md: 3.09M logical reads -> a few dozen).
+        var rows = await (
+                from t in pageOfTasks
+                join f in db.ExtractedFields on new { t.SubmissionId, Path = t.FieldPath } equals new { f.SubmissionId, f.Path } into fields
+                from f in fields.DefaultIfEmpty()
+                select new { Task = t, t.Submission!.InsuredName, Field = f })
+            .ToListAsync(ct);   // EF keeps the page's ORDER BY on the outer query
         return new PagedResult<ReviewTaskView>(rows.Select(r => Views.Task(r.Task, r.InsuredName, r.Field)).ToList(),
                                                page, pageSize, total);
     }

@@ -63,7 +63,11 @@ public class SubmitIqDbContext(DbContextOptions<SubmitIqDbContext> options) : Db
             e.Property(x => x.FieldPath).HasMaxLength(256);
             e.Property(x => x.Reason).HasMaxLength(1000);
             e.Property(x => x.ResolvedBy).HasMaxLength(128);
-            // No index on Status yet: Step 6 measures the review-queue query before adding one.
+            // Serves GET /review-queue: WHERE Status = @s ORDER BY Priority DESC, CreatedAt, Id OFFSET/FETCH,
+            // and its COUNT. Measured in perf/README.md (1M tasks: COUNT 29,847 -> 252 logical reads).
+            e.HasIndex(x => new { x.Status, x.Priority, x.CreatedAt, x.Id })
+                .IsDescending(false, true, false, false)
+                .HasDatabaseName("IX_ReviewTasks_Status_Priority_CreatedAt_Id");
         });
 
         b.Entity<AuditEvent>(e =>

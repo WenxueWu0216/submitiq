@@ -1,0 +1,21 @@
+[COUNT query]
+  logical reads     29,847  ReviewTasks (scans 5)
+  CPU 151 ms, elapsed 39 ms
+[page query]
+  logical reads     29,305  ReviewTasks (scans 1)
+  logical reads  3,088,043  ExtractedFields (scans 1)
+  logical reads         60  Submissions (scans 0)
+  CPU 2,672 ms, elapsed 2,690 ms
+  Sort                                                                       actual rows         20
+  Hash Match                                                                 actual rows         20
+  Nested Loops                                                               actual rows         20
+  Top                                                                        actual rows         20
+  Sort                                                                       actual rows     50,000
+  Clustered Index Scan     [ReviewTasks].[PK_ReviewTasks]                    actual rows     50,000
+  Clustered Index Seek     [Submissions].[PK_Submissions]                    actual rows         20
+  Filter                                                                     actual rows         27
+  Sequence Project                                                           actual rows  1,000,000
+  Segment                                                                    actual rows  1,000,000
+  Nested Loops                                                               actual rows  1,000,000
+  Index Scan               [ExtractedFields].[IX_ExtractedFields_SubmissionId_Path] actual rows  1,000,000
+  Clustered Index Seek     [ExtractedFields].[PK_ExtractedFields]            actual rows  1,000,000

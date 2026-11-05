@@ -1,0 +1,18 @@
+[COUNT query]
+  logical reads        252  ReviewTasks (scans 1)
+  CPU 4 ms, elapsed 4 ms
+[page query]
+  logical reads        140  ExtractedFields (scans 0)
+  logical reads         60  Submissions (scans 0)
+  logical reads         71  ReviewTasks (scans 1)
+  CPU 3 ms, elapsed 3 ms
+  Nested Loops                                                               actual rows         20
+  Nested Loops                                                               actual rows         20
+  Nested Loops                                                               actual rows         20
+  Top                                                                        actual rows         20
+  Nested Loops                                                               actual rows         20
+  Index Seek               [ReviewTasks].[IX_ReviewTasks_Status_Priority_CreatedAt_Id] actual rows         20
+  Clustered Index Seek     [ReviewTasks].[PK_ReviewTasks]                    actual rows         20
+  Clustered Index Seek     [Submissions].[PK_Submissions]                    actual rows         20
+  Index Seek               [ExtractedFields].[IX_ExtractedFields_SubmissionId_Path] actual rows         20
+  Clustered Index Seek     [ExtractedFields].[PK_ExtractedFields]            actual rows         20

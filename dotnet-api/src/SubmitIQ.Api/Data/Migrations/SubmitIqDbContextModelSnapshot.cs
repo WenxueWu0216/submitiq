@@ -226,6 +226,10 @@ namespace SubmitIQ.Api.Data.Migrations
 
                     b.HasIndex("SubmissionId");
 
+                    b.HasIndex("Status", "Priority", "CreatedAt", "Id")
+                        .IsDescending(false, true, false, false)
+                        .HasDatabaseName("IX_ReviewTasks_Status_Priority_CreatedAt_Id");
+
                     b.ToTable("ReviewTasks");
                 });
 
