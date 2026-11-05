@@ -217,7 +217,7 @@ runs on Bedrock (needs AWS credentials and `SUBMITIQ_BEDROCK_MODEL_ID`). Commit 
 | `infra/`, `submitiq/aws_handlers.py` | Stage 7: CDK stack, Lambda handlers |
 | `docs/experiment_log.md`, `runbook.md`, `interview_notes.md`, `LEARNING_zh.md`, `deploy.md` | Stage 8 |
 
-## Design choices in one paragraph
+## Design choices
 
 Rules decide appetite and the LLM never does, because a decision must be reproducible, auditable and changeable by
 editing YAML. The LLM handles the long tail: unseen layouts, free-text email facts, OCR-damaged pages, and the narrative.
