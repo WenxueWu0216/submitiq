@@ -1,0 +1,6 @@
+# python3 perf/bench_http.py http://localhost:5081 --runs 20
+# Original query (FirstOrDefault field lookup), no IX_ReviewTasks_Status_Priority_CreatedAt_Id, Release build.
+# This run printed to the terminal; the lines below are copied verbatim from that output.
+page     1: p50   2463.3 ms   p95   2670.4 ms   mean   2478.3 ms   (n=20)
+page   100: p50   2438.9 ms   p95   2582.0 ms   mean   2439.4 ms   (n=20)
+page  2500: p50   2421.7 ms   p95   2525.6 ms   mean   2431.2 ms   (n=20)
