@@ -6,6 +6,8 @@ Writes dotnet-api/contracts/:
   field_registry.json   field kind, group and 'critical' flag per generic path (from submitiq/fields.py)
   pipeline_results/     a few real PipelineResult JSON files (final pipeline, replay backend),
                         the payload POST /submissions accepts; used by the .NET tests
+  python_decisions.json the Python rules engine's decision on each of the 120 ground-truth records
+                        (data/submissions/*/ground_truth.json); the .NET parity test compares against it
 
 Python stays the source of truth; tests/test_contracts.py fails if these files go stale.
 """
@@ -35,6 +37,28 @@ def write_registry() -> Path:
     return path
 
 
+def python_decisions() -> dict:
+    from submitiq.rules_engine import RulesEngine
+    from submitiq.schema import GroundTruth
+    engine = RulesEngine()
+    out = {}
+    for gt_path in sorted((ROOT / "data" / "submissions").glob("*/*/ground_truth.json")):
+        gt = GroundTruth.model_validate_json(gt_path.read_text())
+        d = engine.evaluate(gt.record)
+        out[gt.record.submission_id] = {
+            "outcome": d.outcome, "rules_version": engine.version,
+            "reasons": [{"rule_id": h.rule_id, "outcome": h.outcome, "fields": h.fields, "message": h.message}
+                        for h in d.reasons],
+        }
+    return out
+
+
+def write_python_decisions() -> Path:
+    path = OUT / "python_decisions.json"
+    path.write_text(json.dumps(python_decisions(), indent=1) + "\n")
+    return path
+
+
 def write_samples() -> list[Path]:
     from submitiq.pipeline import build_pipeline
     pipe = build_pipeline("final", backend="replay")
@@ -52,5 +76,6 @@ def write_samples() -> list[Path]:
 
 if __name__ == "__main__":
     print(write_registry().relative_to(ROOT))
+    print(write_python_decisions().relative_to(ROOT))
     for p in write_samples():
         print(p.relative_to(ROOT), f"{p.stat().st_size // 1024} KB")

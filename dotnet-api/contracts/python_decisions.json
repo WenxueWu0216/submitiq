@@ -1,0 +1,1795 @@
+{
+ "SUB-0001": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "BUILDING_AGE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: built 1912"
+   }
+  ]
+ },
+ "SUB-0002": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "BUILDING_AGE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: built 1927"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[5].zip",
+     "locations[5].tiv"
+    ],
+    "message": "location 5: TIV $7,015,000 in tier-1 hurricane zone (ZIP 70146)"
+   }
+  ]
+ },
+ "SUB-0003": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "ROOF_AGE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].roof_year",
+     "policy.effective_date"
+    ],
+    "message": "location 1: roof 29 years old at inception"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].construction"
+    ],
+    "message": "location 2: frame building in tier-1 hurricane zone (ZIP 29403)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[6].sprinklered",
+     "locations[6].tiv"
+    ],
+    "message": "location 6: unsprinklered with TIV $11,345,000"
+   }
+  ]
+ },
+ "SUB-0004": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[2].protection_class"
+    ],
+    "message": "location 2: missing protection_class"
+   }
+  ]
+ },
+ "SUB-0005": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOCATION_TIV",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].tiv"
+    ],
+    "message": "location 1 TIV $36,630,000 > $25,000,000"
+   }
+  ]
+ },
+ "SUB-0006": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $12,945,000"
+   }
+  ]
+ },
+ "SUB-0007": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "decline",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 116% > 100%"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].zip",
+     "locations[3].tiv"
+    ],
+    "message": "location 3: TIV $5,650,000 in tier-1 hurricane zone (ZIP 70141)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[6].sprinklered",
+     "locations[6].tiv"
+    ],
+    "message": "location 6: unsprinklered with TIV $10,270,000"
+   }
+  ]
+ },
+ "SUB-0008": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0009": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325998 (Chemical product manufacturing) requires referral"
+   }
+  ]
+ },
+ "SUB-0010": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0011": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0012": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 423930 (Recyclable material / scrap yard) is prohibited"
+   }
+  ]
+ },
+ "SUB-0013": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "EARTHQUAKE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].construction",
+     "locations[1].year_built"
+    ],
+    "message": "location 1: joisted masonry built 1976 in earthquake zone"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $12,395,000"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[4].zip",
+     "locations[4].tiv"
+    ],
+    "message": "location 4: TIV $5,635,000 in tier-1 hurricane zone (ZIP 33186)"
+   }
+  ]
+ },
+ "SUB-0014": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325920 (Explosives manufacturing) is prohibited"
+   },
+   {
+    "rule_id": "EARTHQUAKE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].zip",
+     "locations[3].construction",
+     "locations[3].year_built"
+    ],
+    "message": "location 3: joisted masonry built 1973 in earthquake zone"
+   }
+  ]
+ },
+ "SUB-0015": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0016": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0017": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 423930 (Recyclable material / scrap yard) is prohibited"
+   }
+  ]
+ },
+ "SUB-0018": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_FREQUENCY",
+    "outcome": "refer",
+    "fields": [
+     "loss_years[2021].claim_count",
+     "loss_years[2022].claim_count",
+     "loss_years[2023].claim_count",
+     "loss_years[2024].claim_count",
+     "loss_years[2025].claim_count"
+    ],
+    "message": "7 claims in 5 years"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[4].zip",
+     "locations[4].tiv"
+    ],
+    "message": "location 4: TIV $7,725,000 in tier-1 hurricane zone (ZIP 70151)"
+   }
+  ]
+ },
+ "SUB-0019": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "FRAME_POOR_PROTECTION",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].construction",
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: frame construction with protection class 9"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[2].year_built"
+    ],
+    "message": "location 2: missing year_built"
+   }
+  ]
+ },
+ "SUB-0020": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325998 (Chemical product manufacturing) requires referral"
+   }
+  ]
+ },
+ "SUB-0021": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325998 (Chemical product manufacturing) requires referral"
+   }
+  ]
+ },
+ "SUB-0022": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0023": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325920 (Explosives manufacturing) is prohibited"
+   }
+  ]
+ },
+ "SUB-0024": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 722410 (Drinking place (bar / nightclub)) is prohibited"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: TIV $6,280,000 in tier-1 hurricane zone (ZIP 70157)"
+   }
+  ]
+ },
+ "SUB-0025": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 721110 (Hotel / motel) requires referral"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: missing protection_class"
+   }
+  ]
+ },
+ "SUB-0026": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOCATION_TIV",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].tiv"
+    ],
+    "message": "location 1 TIV $28,820,000 > $25,000,000"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].sprinklered",
+     "locations[3].tiv"
+    ],
+    "message": "location 3: unsprinklered with TIV $12,325,000"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[4].protection_class"
+    ],
+    "message": "location 4: missing protection_class"
+   }
+  ]
+ },
+ "SUB-0027": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0028": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0029": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 722511 (Full-service restaurant) requires referral"
+   }
+  ]
+ },
+ "SUB-0030": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0031": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0032": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built",
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: missing year_built, protection_class"
+   }
+  ]
+ },
+ "SUB-0033": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "FRAME_POOR_PROTECTION",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].construction",
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: frame construction with protection class 9"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].zip",
+     "locations[3].tiv"
+    ],
+    "message": "location 3: TIV $11,130,000 in tier-1 hurricane zone (ZIP 70174)"
+   }
+  ]
+ },
+ "SUB-0034": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325920 (Explosives manufacturing) is prohibited"
+   }
+  ]
+ },
+ "SUB-0035": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "FRAME_POOR_PROTECTION",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].construction",
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: frame construction with protection class 9"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[5].zip",
+     "locations[5].tiv"
+    ],
+    "message": "location 5: TIV $5,100,000 in tier-1 hurricane zone (ZIP 70106)"
+   }
+  ]
+ },
+ "SUB-0036": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: TIV $21,610,000 in tier-1 hurricane zone (ZIP 33090)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $21,610,000"
+   }
+  ]
+ },
+ "SUB-0037": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0038": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: missing year_built"
+   }
+  ]
+ },
+ "SUB-0039": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0040": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "ROOF_AGE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].roof_year",
+     "policy.effective_date"
+    ],
+    "message": "location 1: roof 27 years old at inception"
+   }
+  ]
+ },
+ "SUB-0041": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 721110 (Hotel / motel) requires referral"
+   }
+  ]
+ },
+ "SUB-0042": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0043": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0044": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325998 (Chemical product manufacturing) requires referral"
+   }
+  ]
+ },
+ "SUB-0045": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $16,520,000"
+   }
+  ]
+ },
+ "SUB-0046": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "decline",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 200% > 100%"
+   },
+   {
+    "rule_id": "LARGE_LOSS",
+    "outcome": "refer",
+    "fields": [
+     "claims[SNI202449868].incurred"
+    ],
+    "message": "claim SNI-2024-49868 incurred $555,000 (Equipment Breakdown)"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: TIV $19,640,000 in tier-1 hurricane zone (ZIP 77560)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $19,640,000"
+   }
+  ]
+ },
+ "SUB-0047": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325920 (Explosives manufacturing) is prohibited"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $10,735,000"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[4].zip",
+     "locations[4].construction"
+    ],
+    "message": "location 4: frame building in tier-1 hurricane zone (ZIP 33392)"
+   }
+  ]
+ },
+ "SUB-0048": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "BUILDING_AGE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: built 1937"
+   }
+  ]
+ },
+ "SUB-0049": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0050": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0051": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0052": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 721110 (Hotel / motel) requires referral"
+   }
+  ]
+ },
+ "SUB-0053": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].construction"
+    ],
+    "message": "location 1: frame building in tier-1 hurricane zone (ZIP 77528)"
+   }
+  ]
+ },
+ "SUB-0054": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "refer",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 88% > 60%"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].tiv"
+    ],
+    "message": "location 2: TIV $5,300,000 in tier-1 hurricane zone (ZIP 33097)"
+   },
+   {
+    "rule_id": "EARTHQUAKE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[6].zip",
+     "locations[6].construction",
+     "locations[6].year_built"
+    ],
+    "message": "location 6: joisted masonry built 1976 in earthquake zone"
+   }
+  ]
+ },
+ "SUB-0055": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "FRAME_POOR_PROTECTION",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].construction",
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: frame construction with protection class 9"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].construction"
+    ],
+    "message": "location 2: frame building in tier-1 hurricane zone (ZIP 33063)"
+   }
+  ]
+ },
+ "SUB-0056": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "EARTHQUAKE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].construction",
+     "locations[1].year_built"
+    ],
+    "message": "location 1: joisted masonry built 1958 in earthquake zone"
+   }
+  ]
+ },
+ "SUB-0057": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 423930 (Recyclable material / scrap yard) is prohibited"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: missing year_built"
+   }
+  ]
+ },
+ "SUB-0058": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "refer",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 72% > 60%"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].protection_class"
+    ],
+    "message": "location 3: missing protection_class"
+   }
+  ]
+ },
+ "SUB-0059": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 531110 (Lessor of residential buildings (habitational)) requires referral"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: missing protection_class"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].construction"
+    ],
+    "message": "location 2: frame building in tier-1 hurricane zone (ZIP 33327)"
+   }
+  ]
+ },
+ "SUB-0060": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0061": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 722410 (Drinking place (bar / nightclub)) is prohibited"
+   }
+  ]
+ },
+ "SUB-0062": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 722410 (Drinking place (bar / nightclub)) is prohibited"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].construction"
+    ],
+    "message": "location 1: frame building in tier-1 hurricane zone (ZIP 29453)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $10,625,000"
+   }
+  ]
+ },
+ "SUB-0063": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0064": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "refer",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 66% > 60%"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[6].zip",
+     "locations[6].tiv"
+    ],
+    "message": "location 6: TIV $10,060,000 in tier-1 hurricane zone (ZIP 77535)"
+   }
+  ]
+ },
+ "SUB-0065": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[6].sprinklered",
+     "locations[6].tiv"
+    ],
+    "message": "location 6: unsprinklered with TIV $10,865,000"
+   }
+  ]
+ },
+ "SUB-0066": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0067": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0068": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 325920 (Explosives manufacturing) is prohibited"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].construction"
+    ],
+    "message": "location 2: frame building in tier-1 hurricane zone (ZIP 77536)"
+   }
+  ]
+ },
+ "SUB-0069": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0070": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "BUILDING_AGE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: built 1911"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[4].year_built"
+    ],
+    "message": "location 4: missing year_built"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[4].zip",
+     "locations[4].construction"
+    ],
+    "message": "location 4: frame building in tier-1 hurricane zone (ZIP 70151)"
+   }
+  ]
+ },
+ "SUB-0071": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOCATION_TIV",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].tiv"
+    ],
+    "message": "location 1 TIV $32,255,000 > $25,000,000"
+   }
+  ]
+ },
+ "SUB-0072": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "decline",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 189% > 100%"
+   },
+   {
+    "rule_id": "LARGE_LOSS",
+    "outcome": "refer",
+    "fields": [
+     "claims[GPC202297113].incurred"
+    ],
+    "message": "claim GPC-2022-97113 incurred $360,000 (Lightning)"
+   }
+  ]
+ },
+ "SUB-0073": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "BUILDING_AGE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: built 1905"
+   }
+  ]
+ },
+ "SUB-0074": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0075": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0076": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOCATION_TIV",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].tiv"
+    ],
+    "message": "location 1 TIV $33,375,000 > $25,000,000"
+   }
+  ]
+ },
+ "SUB-0077": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 423930 (Recyclable material / scrap yard) is prohibited"
+   }
+  ]
+ },
+ "SUB-0078": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].construction"
+    ],
+    "message": "location 1: frame building in tier-1 hurricane zone (ZIP 29492)"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].tiv"
+    ],
+    "message": "location 2: TIV $8,440,000 in tier-1 hurricane zone (ZIP 33152)"
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[5].zip",
+     "locations[5].tiv"
+    ],
+    "message": "location 5: TIV $6,460,000 in tier-1 hurricane zone (ZIP 29497)"
+   }
+  ]
+ },
+ "SUB-0079": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0080": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0081": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].sprinklered",
+     "locations[3].tiv"
+    ],
+    "message": "location 3: unsprinklered with TIV $12,795,000"
+   }
+  ]
+ },
+ "SUB-0082": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 423930 (Recyclable material / scrap yard) is prohibited"
+   }
+  ]
+ },
+ "SUB-0083": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[2].sprinklered",
+     "locations[2].tiv"
+    ],
+    "message": "location 2: unsprinklered with TIV $11,375,000"
+   }
+  ]
+ },
+ "SUB-0084": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "decline",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 171% > 100%"
+   }
+  ]
+ },
+ "SUB-0085": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: TIV $8,270,000 in tier-1 hurricane zone (ZIP 29447)"
+   }
+  ]
+ },
+ "SUB-0086": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 722410 (Drinking place (bar / nightclub)) is prohibited"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $16,680,000"
+   },
+   {
+    "rule_id": "EARTHQUAKE_ZONE",
+    "outcome": "refer",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].construction",
+     "locations[2].year_built"
+    ],
+    "message": "location 2: joisted masonry built 1961 in earthquake zone"
+   }
+  ]
+ },
+ "SUB-0087": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0088": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0089": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[9].sprinklered",
+     "locations[9].tiv"
+    ],
+    "message": "location 9: unsprinklered with TIV $10,220,000"
+   }
+  ]
+ },
+ "SUB-0090": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0091": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $14,025,000"
+   }
+  ]
+ },
+ "SUB-0092": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0093": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0094": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0095": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "decline",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 208% > 100%"
+   },
+   {
+    "rule_id": "LARGE_LOSS",
+    "outcome": "refer",
+    "fields": [
+     "claims[CL5039630].incurred"
+    ],
+    "message": "claim CL5039630 incurred $440,000 (Wind/Hail)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $11,590,000"
+   }
+  ]
+ },
+ "SUB-0096": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].construction"
+    ],
+    "message": "location 1: frame building in tier-1 hurricane zone (ZIP 29479)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].sprinklered",
+     "locations[1].tiv"
+    ],
+    "message": "location 1: unsprinklered with TIV $12,890,000"
+   }
+  ]
+ },
+ "SUB-0097": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].sprinklered",
+     "locations[3].tiv"
+    ],
+    "message": "location 3: unsprinklered with TIV $10,120,000"
+   }
+  ]
+ },
+ "SUB-0098": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: missing protection_class"
+   }
+  ]
+ },
+ "SUB-0099": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_RATIO",
+    "outcome": "decline",
+    "fields": [
+     "totals.five_year_incurred",
+     "totals.five_year_premium"
+    ],
+    "message": "5-year loss ratio 255% > 100%"
+   },
+   {
+    "rule_id": "LARGE_LOSS",
+    "outcome": "refer",
+    "fields": [
+     "claims[SNI202632006].incurred"
+    ],
+    "message": "claim SNI-2026-32006 incurred $290,000 (Vandalism)"
+   }
+  ]
+ },
+ "SUB-0100": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LARGE_LOSS",
+    "outcome": "refer",
+    "fields": [
+     "claims[HIC202305504].incurred"
+    ],
+    "message": "claim HIC-2023-05504 incurred $285,000 (Water Damage)"
+   }
+  ]
+ },
+ "SUB-0101": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOSS_FREQUENCY",
+    "outcome": "refer",
+    "fields": [
+     "loss_years[2021].claim_count",
+     "loss_years[2022].claim_count",
+     "loss_years[2023].claim_count",
+     "loss_years[2024].claim_count",
+     "loss_years[2025].claim_count"
+    ],
+    "message": "5 claims in 5 years"
+   }
+  ]
+ },
+ "SUB-0102": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "POOR_PROTECTION",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: protection class 10"
+   }
+  ]
+ },
+ "SUB-0103": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0104": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0105": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].sprinklered",
+     "locations[3].tiv"
+    ],
+    "message": "location 3: unsprinklered with TIV $11,525,000"
+   }
+  ]
+ },
+ "SUB-0106": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0107": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].zip",
+     "locations[1].construction"
+    ],
+    "message": "location 1: frame building in tier-1 hurricane zone (ZIP 77596)"
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "fields": [
+     "locations[3].sprinklered",
+     "locations[3].tiv"
+    ],
+    "message": "location 3: unsprinklered with TIV $11,065,000"
+   }
+  ]
+ },
+ "SUB-0108": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "LOCATION_TIV",
+    "outcome": "decline",
+    "fields": [
+     "locations[1].tiv"
+    ],
+    "message": "location 1 TIV $59,180,000 > $50,000,000"
+   }
+  ]
+ },
+ "SUB-0109": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 721110 (Hotel / motel) requires referral"
+   }
+  ]
+ },
+ "SUB-0110": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0111": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: missing protection_class"
+   },
+   {
+    "rule_id": "LOCATION_TIV",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].tiv"
+    ],
+    "message": "location 1 TIV $32,855,000 > $25,000,000"
+   }
+  ]
+ },
+ "SUB-0112": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "POOR_PROTECTION",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: protection class 10"
+   }
+  ]
+ },
+ "SUB-0113": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0114": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 531110 (Lessor of residential buildings (habitational)) requires referral"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].year_built"
+    ],
+    "message": "location 1: missing year_built"
+   }
+  ]
+ },
+ "SUB-0115": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0116": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[1].protection_class"
+    ],
+    "message": "location 1: missing protection_class"
+   }
+  ]
+ },
+ "SUB-0117": {
+  "outcome": "decline",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 722410 (Drinking place (bar / nightclub)) is prohibited"
+   }
+  ]
+ },
+ "SUB-0118": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 721110 (Hotel / motel) requires referral"
+   },
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "fields": [
+     "locations[2].year_built"
+    ],
+    "message": "location 2: missing year_built"
+   }
+  ]
+ },
+ "SUB-0119": {
+  "outcome": "accept",
+  "rules_version": "2026-10-01",
+  "reasons": []
+ },
+ "SUB-0120": {
+  "outcome": "refer",
+  "rules_version": "2026-10-01",
+  "reasons": [
+   {
+    "rule_id": "CLASS_REFER",
+    "outcome": "refer",
+    "fields": [
+     "insured.naics_code"
+    ],
+    "message": "NAICS 722511 (Full-service restaurant) requires referral"
+   }
+  ]
+ }
+}
