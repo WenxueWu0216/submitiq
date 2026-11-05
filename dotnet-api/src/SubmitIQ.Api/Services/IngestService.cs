@@ -11,7 +11,7 @@ namespace SubmitIQ.Api.Services;
 public sealed class SubmissionExistsException(string id) : Exception($"submission {id} already exists");
 
 /// <summary>Turns one Python PipelineResult into rows: submission, fields, review tasks, decision, audit event.</summary>
-public sealed class IngestService(SubmitIqDbContext db, FieldRegistry registry, TimeProvider clock)
+public sealed class IngestService(SubmitIqDbContext db, FieldRegistry registry, DecisionService decider, TimeProvider clock)
 {
     /// <summary>Checks the payload beyond attribute validation. Returns field -> messages (empty when valid).</summary>
     public Dictionary<string, string[]> Validate(PipelineResultDto dto)
@@ -69,7 +69,7 @@ public sealed class IngestService(SubmitIqDbContext db, FieldRegistry registry, 
             }
         }
 
-        // The Python pipeline's own decision is kept as provenance; Step 3's C# engine adds its own.
+        // The Python pipeline's decision is kept for comparison; the C# engine's decision is the newest one.
         if (dto.Decision?.Outcome is { } outcome)
         {
             submission.Decisions.Add(new Decision
@@ -79,6 +79,10 @@ public sealed class IngestService(SubmitIqDbContext db, FieldRegistry registry, 
                     { RuleId = r.RuleId, Outcome = r.Outcome, Message = r.Message, Fields = r.Fields }).ToList(),
             });
         }
+
+        var flagged = submission.ReviewTasks.Select(t => t.FieldPath).ToHashSet();
+        var decision = decider.Decide(submission.Id, record, flagged, now.AddTicks(1));   // after the pipeline's, same request
+        submission.Decisions.Add(decision);
 
         submission.Status = submission.ReviewTasks.Count > 0 || dto.NeedsReview ? SubmissionStatus.NeedsReview : SubmissionStatus.AutoCleared;
         db.Submissions.Add(submission);
@@ -95,7 +99,8 @@ public sealed class IngestService(SubmitIqDbContext db, FieldRegistry registry, 
         {
             throw new SubmissionExistsException(id);   // primary-key violation: lost a race with a concurrent POST of the same id
         }
-        return new IngestResult(id, submission.Status, submission.Fields.Count, submission.ReviewTasks.Count, dto.Decision?.Outcome);
+        return new IngestResult(id, submission.Status, submission.Fields.Count, submission.ReviewTasks.Count, decision.Outcome,
+                                dto.Decision?.Outcome);
     }
 
     /// <summary>Critical fields first, then conflicts/invalid values, then missing, then low confidence.</summary>

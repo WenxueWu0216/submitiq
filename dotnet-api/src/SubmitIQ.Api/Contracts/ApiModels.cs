@@ -16,7 +16,8 @@ public sealed record SubmissionView(string Id, string Pipeline, SubmissionStatus
                                     DateOnly? EffectiveDate, DateTimeOffset ReceivedAt, DateTimeOffset UpdatedAt,
                                     int OpenReviewTasks, DecisionView? LatestDecision, IReadOnlyList<FieldView> Fields);
 
-public sealed record IngestResult(string Id, SubmissionStatus Status, int Fields, int ReviewTasksCreated, DecisionOutcome? Decision);
+public sealed record IngestResult(string Id, SubmissionStatus Status, int Fields, int ReviewTasksCreated, DecisionOutcome Decision,
+                                  DecisionOutcome? PipelineDecision);
 
 public sealed record ReviewTaskView(long Id, string SubmissionId, string? InsuredName, string FieldPath, FieldStatus FieldStatus,
                                     bool IsCritical, string Reason, int Priority, ReviewTaskStatus Status,
@@ -50,4 +51,5 @@ public sealed class ResolveRequest
     public string? Comment { get; set; }
 }
 
-public sealed record ResolveResult(ReviewTaskView Task, SubmissionStatus SubmissionStatus, int OpenReviewTasks);
+public sealed record ResolveResult(ReviewTaskView Task, SubmissionStatus SubmissionStatus, int OpenReviewTasks,
+                                   DecisionOutcome Decision);

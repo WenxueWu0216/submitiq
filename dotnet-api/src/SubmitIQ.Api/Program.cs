@@ -3,6 +3,7 @@ using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Mvc.ModelBinding.Metadata;
 using Microsoft.EntityFrameworkCore;
 using SubmitIQ.Api.Data;
+using SubmitIQ.Api.Rules;
 using SubmitIQ.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -32,6 +33,9 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddSingleton(TimeProvider.System);
 builder.Services.AddSingleton(_ => FieldRegistry.Load(
     builder.Configuration["FieldRegistryPath"] ?? Path.Combine(AppContext.BaseDirectory, "contracts", "field_registry.json")));
+builder.Services.AddSingleton(_ => new RulesEngine(AppetiteRules.Load(
+    builder.Configuration["AppetiteRulesPath"] ?? Path.Combine(AppContext.BaseDirectory, "rules", "appetite.yaml"))));
+builder.Services.AddSingleton<DecisionService>();
 builder.Services.AddScoped<IngestService>();
 builder.Services.AddScoped<ReviewService>();
 

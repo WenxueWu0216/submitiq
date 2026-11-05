@@ -13,12 +13,14 @@
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.33" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+    <PackageReference Include="YamlDotNet" Version="16.3.0" />
   </ItemGroup>
 
   <ItemGroup>
     <!-- Exported from the Python field registry by scripts/export_contracts.py -->
-    <Content Include="..\..\contracts\field_registry.json" Link="contracts\field_registry.json"
-             CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <Content Include="..\..\contracts\field_registry.json" Link="contracts\field_registry.json" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+    <!-- The appetite rules are the Python side's file, read as-is (never copied by hand into C#). -->
+    <Content Include="..\..\..\rules\appetite.yaml" Link="rules\appetite.yaml" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,7 @@ public sealed class ConflictException(string message) : Exception(message);
 
 public sealed class InvalidValueException(string message) : Exception(message);
 
-public sealed class ReviewService(SubmitIqDbContext db, FieldRegistry registry, TimeProvider clock)
+public sealed class ReviewService(SubmitIqDbContext db, FieldRegistry registry, DecisionService decider, TimeProvider clock)
 {
     public async Task<PagedResult<ReviewTaskView>> QueueAsync(ReviewTaskStatus status, int page, int pageSize, CancellationToken ct)
     {
@@ -72,8 +72,10 @@ public sealed class ReviewService(SubmitIqDbContext db, FieldRegistry registry, 
         task.ResolvedBy = reviewer;
         task.Resolution = req.Action == ResolveAction.Correct ? ReviewResolution.Corrected : ReviewResolution.Confirmed;
 
-        var open = await db.ReviewTasks.CountAsync(t => t.SubmissionId == submission.Id && t.Status == ReviewTaskStatus.Open
-                                                        && t.Id != taskId, ct);
+        var stillOpen = await db.ReviewTasks
+            .Where(t => t.SubmissionId == submission.Id && t.Status == ReviewTaskStatus.Open && t.Id != taskId)
+            .Select(t => t.FieldPath).ToListAsync(ct);
+        var open = stillOpen.Count;
         submission.Status = open == 0 ? SubmissionStatus.Approved : SubmissionStatus.NeedsReview;
         submission.UpdatedAt = now;   // bumps the rowversion: two reviewers editing the same submission -> 409
 
@@ -83,6 +85,23 @@ public sealed class ReviewService(SubmitIqDbContext db, FieldRegistry registry, 
             EventType = req.Action == ResolveAction.Correct ? AuditEventType.FieldCorrected : AuditEventType.FieldConfirmed,
             OldValueJson = oldValue, NewValueJson = newValue, Comment = req.Comment, OccurredAt = now,
         });
+
+        // Re-run the rules (after the field event, so the audit trail reads cause -> effect) on the reviewed record: a corrected TIV or year built can change the outcome.
+        var previous = await db.Decisions.AsNoTracking()
+            .Where(d => d.SubmissionId == submission.Id && d.Source == DecisionService.Source)
+            .OrderByDescending(d => d.DecidedAt).ThenByDescending(d => d.Id).FirstOrDefaultAsync(ct);
+        var decision = decider.Decide(submission.Id, JsonNode.Parse(submission.RecordJson)!.AsObject(),
+                                      stillOpen.ToHashSet(), now);
+        db.Decisions.Add(decision);
+        if (previous is null || previous.Outcome != decision.Outcome)
+        {
+            db.AuditEvents.Add(new AuditEvent
+            {
+                SubmissionId = submission.Id, ReviewTaskId = task.Id, Actor = DecisionService.Source,
+                EventType = AuditEventType.DecisionMade, OldValueJson = previous is null ? null : $"\"{Wire(previous.Outcome)}\"",
+                NewValueJson = $"\"{Wire(decision.Outcome)}\"", Comment = $"after review of {task.FieldPath}", OccurredAt = now,
+            });
+        }
         try
         {
             await db.SaveChangesAsync(ct);
@@ -91,8 +110,10 @@ public sealed class ReviewService(SubmitIqDbContext db, FieldRegistry registry, 
         {
             throw new ConflictException($"submission {submission.Id} was changed by someone else; reload and try again");
         }
-        return new ResolveResult(Views.Task(task, submission.InsuredName, field), submission.Status, open);
+        return new ResolveResult(Views.Task(task, submission.InsuredName, field), submission.Status, open, decision.Outcome);
     }
+
+    private static string Wire(DecisionOutcome o) => o.ToString().ToLowerInvariant();
 
     /// <summary>Checks a corrected value against the field's kind and returns it as compact JSON (null clears).</summary>
     public string? NormalizeValue(string path, JsonElement value)
