@@ -9,7 +9,6 @@ namespace SubmitIQ.Api.Controllers;
 
 [ApiController]
 [Route("submissions")]
-[Produces("application/json")]
 public sealed class SubmissionsController(SubmitIqDbContext db, IngestService ingest) : ControllerBase
 {
     /// <summary>Ingest one PipelineResult produced by the Python extraction pipeline.</summary>

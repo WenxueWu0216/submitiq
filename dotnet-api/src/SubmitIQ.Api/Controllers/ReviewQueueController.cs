@@ -7,7 +7,6 @@ namespace SubmitIQ.Api.Controllers;
 
 [ApiController]
 [Route("review-queue")]
-[Produces("application/json")]
 public sealed class ReviewQueueController(ReviewService reviews) : ControllerBase
 {
     public const int MaxPageSize = 100;

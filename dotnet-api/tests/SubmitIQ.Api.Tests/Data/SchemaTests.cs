@@ -17,6 +17,26 @@ public class SchemaTests(SqlServerFixture sql)
     }
 
     [Fact]
+    public async Task Stale_submission_update_is_rejected_by_the_rowversion()
+    {
+        var cs = await sql.CreateDatabaseAsync("concurrency");
+        var now = DateTimeOffset.UtcNow;
+        await using (var db = SqlServerFixture.CreateContext(cs))
+        {
+            db.Submissions.Add(new Submission { Id = "S1", Pipeline = "final", RecordJson = "{}", ReceivedAt = now, UpdatedAt = now });
+            await db.SaveChangesAsync();
+        }
+        await using var reviewerA = SqlServerFixture.CreateContext(cs);
+        await using var reviewerB = SqlServerFixture.CreateContext(cs);
+        var a = await reviewerA.Submissions.SingleAsync();
+        var b = await reviewerB.Submissions.SingleAsync();
+        a.UpdatedAt = now.AddMinutes(1);
+        await reviewerA.SaveChangesAsync();
+        b.UpdatedAt = now.AddMinutes(2);   // B still holds the old rowversion
+        await Assert.ThrowsAsync<DbUpdateConcurrencyException>(() => reviewerB.SaveChangesAsync());
+    }
+
+    [Fact]
     public async Task Submission_graph_round_trips_through_sql_server()
     {
         var cs = await sql.CreateDatabaseAsync("roundtrip");

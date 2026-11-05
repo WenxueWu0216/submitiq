@@ -8,7 +8,6 @@ namespace SubmitIQ.Api.Controllers;
 
 [ApiController]
 [Route("decisions")]
-[Produces("application/json")]
 public sealed class DecisionsController(SubmitIqDbContext db) : ControllerBase
 {
     /// <summary>The latest appetite decision for a submission, plus every earlier one.</summary>

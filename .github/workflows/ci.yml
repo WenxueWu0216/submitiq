@@ -27,3 +27,26 @@ jobs:
         with:
           name: eval-results
           path: evals/results/scratch/
+
+  dotnet-api:
+    runs-on: ubuntu-24.04   # Docker is available, so Testcontainers can start SQL Server 2022
+    defaults:
+      run:
+        working-directory: dotnet-api
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+      - name: Restore
+        run: dotnet restore
+      - name: Build (warnings are errors)
+        run: dotnet build --no-restore -c Release -warnaserror
+      - name: Test (endpoints on real SQL Server, rules parity on 120 submissions)
+        run: dotnet test --no-build -c Release --logger "trx;LogFileName=dotnet-tests.trx" --logger "console;verbosity=normal"
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: dotnet-test-results
+          path: dotnet-api/tests/SubmitIQ.Api.Tests/TestResults/
