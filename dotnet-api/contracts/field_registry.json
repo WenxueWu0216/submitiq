@@ -1,0 +1,352 @@
+{
+ "broker.agency_name": {
+  "group": "broker",
+  "kind": "text",
+  "critical": false
+ },
+ "broker.producer_email": {
+  "group": "broker",
+  "kind": "email",
+  "critical": false
+ },
+ "broker.producer_name": {
+  "group": "broker",
+  "kind": "text",
+  "critical": false
+ },
+ "broker.producer_phone": {
+  "group": "broker",
+  "kind": "phone",
+  "critical": false
+ },
+ "claims[].cause": {
+  "group": "claims",
+  "kind": "fuzzy",
+  "critical": false
+ },
+ "claims[].date_of_loss": {
+  "group": "claims",
+  "kind": "date",
+  "critical": false
+ },
+ "claims[].incurred": {
+  "group": "claims",
+  "kind": "money",
+  "critical": true
+ },
+ "claims[].paid": {
+  "group": "claims",
+  "kind": "money",
+  "critical": false
+ },
+ "claims[].policy_year": {
+  "group": "claims",
+  "kind": "int",
+  "critical": false
+ },
+ "claims[].reserve": {
+  "group": "claims",
+  "kind": "money",
+  "critical": false
+ },
+ "claims[].status": {
+  "group": "claims",
+  "kind": "enum",
+  "critical": false
+ },
+ "coverage.bpp_limit": {
+  "group": "coverage",
+  "kind": "money",
+  "critical": false
+ },
+ "coverage.building_limit": {
+  "group": "coverage",
+  "kind": "money",
+  "critical": false
+ },
+ "coverage.business_income_limit": {
+  "group": "coverage",
+  "kind": "money",
+  "critical": false
+ },
+ "coverage.cause_of_loss_form": {
+  "group": "coverage",
+  "kind": "enum",
+  "critical": false
+ },
+ "coverage.coinsurance_pct": {
+  "group": "coverage",
+  "kind": "int",
+  "critical": false
+ },
+ "coverage.deductible": {
+  "group": "coverage",
+  "kind": "money",
+  "critical": false
+ },
+ "coverage.earthquake_requested": {
+  "group": "coverage",
+  "kind": "bool",
+  "critical": false
+ },
+ "coverage.flood_requested": {
+  "group": "coverage",
+  "kind": "bool",
+  "critical": false
+ },
+ "coverage.valuation": {
+  "group": "coverage",
+  "kind": "enum",
+  "critical": false
+ },
+ "insured.annual_revenue": {
+  "group": "insured",
+  "kind": "money",
+  "critical": false
+ },
+ "insured.business_description": {
+  "group": "insured",
+  "kind": "fuzzy",
+  "critical": false
+ },
+ "insured.contact_email": {
+  "group": "insured",
+  "kind": "email",
+  "critical": false
+ },
+ "insured.contact_name": {
+  "group": "insured",
+  "kind": "text",
+  "critical": false
+ },
+ "insured.contact_phone": {
+  "group": "insured",
+  "kind": "phone",
+  "critical": false
+ },
+ "insured.dba": {
+  "group": "insured",
+  "kind": "text",
+  "critical": false
+ },
+ "insured.employee_count": {
+  "group": "insured",
+  "kind": "int",
+  "critical": false
+ },
+ "insured.entity_type": {
+  "group": "insured",
+  "kind": "enum",
+  "critical": false
+ },
+ "insured.fein": {
+  "group": "insured",
+  "kind": "digits",
+  "critical": false
+ },
+ "insured.mailing_address.city": {
+  "group": "insured",
+  "kind": "text",
+  "critical": false
+ },
+ "insured.mailing_address.state": {
+  "group": "insured",
+  "kind": "state",
+  "critical": false
+ },
+ "insured.mailing_address.street": {
+  "group": "insured",
+  "kind": "text",
+  "critical": false
+ },
+ "insured.mailing_address.zip": {
+  "group": "insured",
+  "kind": "zip",
+  "critical": false
+ },
+ "insured.naics_code": {
+  "group": "insured",
+  "kind": "digits",
+  "critical": true
+ },
+ "insured.named_insured": {
+  "group": "insured",
+  "kind": "text",
+  "critical": true
+ },
+ "insured.website": {
+  "group": "insured",
+  "kind": "url",
+  "critical": false
+ },
+ "insured.years_in_business": {
+  "group": "insured",
+  "kind": "int",
+  "critical": false
+ },
+ "locations[].alarm_type": {
+  "group": "locations",
+  "kind": "enum",
+  "critical": false
+ },
+ "locations[].bi_value": {
+  "group": "locations",
+  "kind": "money",
+  "critical": false
+ },
+ "locations[].building_value": {
+  "group": "locations",
+  "kind": "money",
+  "critical": false
+ },
+ "locations[].city": {
+  "group": "locations",
+  "kind": "text",
+  "critical": false
+ },
+ "locations[].construction": {
+  "group": "locations",
+  "kind": "enum",
+  "critical": true
+ },
+ "locations[].contents_value": {
+  "group": "locations",
+  "kind": "money",
+  "critical": false
+ },
+ "locations[].occupancy": {
+  "group": "locations",
+  "kind": "fuzzy",
+  "critical": false
+ },
+ "locations[].protection_class": {
+  "group": "locations",
+  "kind": "int",
+  "critical": true
+ },
+ "locations[].roof_type": {
+  "group": "locations",
+  "kind": "enum",
+  "critical": false
+ },
+ "locations[].roof_year": {
+  "group": "locations",
+  "kind": "int",
+  "critical": true
+ },
+ "locations[].sprinkler_pct": {
+  "group": "locations",
+  "kind": "int",
+  "critical": false
+ },
+ "locations[].sprinklered": {
+  "group": "locations",
+  "kind": "bool",
+  "critical": true
+ },
+ "locations[].square_feet": {
+  "group": "locations",
+  "kind": "approx_int",
+  "critical": false
+ },
+ "locations[].state": {
+  "group": "locations",
+  "kind": "state",
+  "critical": false
+ },
+ "locations[].stories": {
+  "group": "locations",
+  "kind": "int",
+  "critical": false
+ },
+ "locations[].street": {
+  "group": "locations",
+  "kind": "text",
+  "critical": false
+ },
+ "locations[].tiv": {
+  "group": "locations",
+  "kind": "money",
+  "critical": true
+ },
+ "locations[].year_built": {
+  "group": "locations",
+  "kind": "int",
+  "critical": true
+ },
+ "locations[].zip": {
+  "group": "locations",
+  "kind": "zip",
+  "critical": true
+ },
+ "loss_years[].carrier": {
+  "group": "loss_years",
+  "kind": "text",
+  "critical": false
+ },
+ "loss_years[].claim_count": {
+  "group": "loss_years",
+  "kind": "int",
+  "critical": false
+ },
+ "loss_years[].earned_premium": {
+  "group": "loss_years",
+  "kind": "money",
+  "critical": true
+ },
+ "loss_years[].total_incurred": {
+  "group": "loss_years",
+  "kind": "money",
+  "critical": false
+ },
+ "policy.effective_date": {
+  "group": "policy",
+  "kind": "date",
+  "critical": true
+ },
+ "policy.expiration_date": {
+  "group": "policy",
+  "kind": "date",
+  "critical": false
+ },
+ "policy.prior_carrier": {
+  "group": "policy",
+  "kind": "text",
+  "critical": false
+ },
+ "policy.quote_needed_by": {
+  "group": "policy",
+  "kind": "date",
+  "critical": false
+ },
+ "policy.submission_received_date": {
+  "group": "policy",
+  "kind": "date",
+  "critical": false
+ },
+ "policy.transaction_type": {
+  "group": "policy",
+  "kind": "enum",
+  "critical": false
+ },
+ "totals.five_year_incurred": {
+  "group": "totals",
+  "kind": "money",
+  "critical": false
+ },
+ "totals.five_year_premium": {
+  "group": "totals",
+  "kind": "money",
+  "critical": false
+ },
+ "totals.location_count": {
+  "group": "totals",
+  "kind": "int",
+  "critical": false
+ },
+ "totals.total_tiv": {
+  "group": "totals",
+  "kind": "money",
+  "critical": true
+ }
+}

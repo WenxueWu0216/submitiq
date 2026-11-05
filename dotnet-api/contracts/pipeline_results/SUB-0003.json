@@ -1,0 +1,5089 @@
+{
+ "submission_id": "SUB-0003",
+ "pipeline": "final",
+ "record": {
+  "submission_id": "SUB-0003",
+  "insured": {
+   "named_insured": "Summit Crest Precision Machining LLC",
+   "dba": null,
+   "fein": "53-1181134",
+   "entity_type": "llc",
+   "mailing_address": {
+    "street": "3109 Lake Drive",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98102"
+   },
+   "business_description": "CNC machining of metal parts for industrial customers",
+   "naics_code": "332710",
+   "years_in_business": 8,
+   "annual_revenue": 32220000.0,
+   "employee_count": 319,
+   "website": "www.summitcrest.com",
+   "contact_name": "Kevin Martinez",
+   "contact_phone": "(807) 735-3475",
+   "contact_email": "kmartinez@summitcrest.com"
+  },
+  "broker": {
+   "agency_name": "Atlas & Reed Insurance Services",
+   "producer_name": "Laura Thompson",
+   "producer_email": "laura.thompson@atlasreed.com",
+   "producer_phone": "(263) 418-4284"
+  },
+  "policy": {
+   "effective_date": "2027-01-01",
+   "expiration_date": "2028-01-01",
+   "transaction_type": "new",
+   "prior_carrier": "Continental Mutual Insurance Co.",
+   "quote_needed_by": "2026-12-25",
+   "submission_received_date": "2026-11-23"
+  },
+  "coverage": {
+   "building_limit": 38130000.0,
+   "bpp_limit": 14280000.0,
+   "business_income_limit": 4335000.0,
+   "deductible": 10000.0,
+   "valuation": "replacement_cost",
+   "coinsurance_pct": 80,
+   "cause_of_loss_form": "special",
+   "flood_requested": false,
+   "earthquake_requested": true
+  },
+  "locations": [
+   {
+    "loc_number": 1,
+    "street": "3109 Lake Drive",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98102",
+    "occupancy": "Machine Shop",
+    "construction": "frame",
+    "year_built": 1987,
+    "stories": 3,
+    "square_feet": 25300,
+    "sprinklered": false,
+    "sprinkler_pct": 0,
+    "protection_class": 5,
+    "roof_type": "built_up",
+    "roof_year": 1998,
+    "alarm_type": "local",
+    "building_value": 4555000.0,
+    "contents_value": 795000.0,
+    "bi_value": 1045000.0,
+    "tiv": 6395000.0
+   },
+   {
+    "loc_number": 2,
+    "street": "4805 Madison Lane",
+    "city": "Charleston",
+    "state": "SC",
+    "zip": "29403",
+    "occupancy": "Machine Shop",
+    "construction": "frame",
+    "year_built": 2015,
+    "stories": 1,
+    "square_feet": 10600,
+    "sprinklered": true,
+    "sprinkler_pct": 50,
+    "protection_class": 3,
+    "roof_type": "metal",
+    "roof_year": 2019,
+    "alarm_type": "central_station",
+    "building_value": 2320000.0,
+    "contents_value": 850000.0,
+    "bi_value": 420000.0,
+    "tiv": 3590000.0
+   },
+   {
+    "loc_number": 3,
+    "street": "2241 Technology Way",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "zip": "15207",
+    "occupancy": "Machine Shop",
+    "construction": "joisted_masonry",
+    "year_built": 1977,
+    "stories": 3,
+    "square_feet": 33600,
+    "sprinklered": false,
+    "sprinkler_pct": 0,
+    "protection_class": 4,
+    "roof_type": "metal",
+    "roof_year": 2015,
+    "alarm_type": null,
+    "building_value": 4540000.0,
+    "contents_value": 1190000.0,
+    "bi_value": 65000.0,
+    "tiv": 5795000.0
+   },
+   {
+    "loc_number": 4,
+    "street": "7656 Cedar Boulevard",
+    "city": "Dallas",
+    "state": "TX",
+    "zip": "75273",
+    "occupancy": "Machine Shop",
+    "construction": "modified_fire_resistive",
+    "year_built": 1956,
+    "stories": 4,
+    "square_feet": 57200,
+    "sprinklered": true,
+    "sprinkler_pct": 100,
+    "protection_class": 4,
+    "roof_type": null,
+    "roof_year": 2025,
+    "alarm_type": null,
+    "building_value": 6990000.0,
+    "contents_value": 1660000.0,
+    "bi_value": 1520000.0,
+    "tiv": 10170000.0
+   },
+   {
+    "loc_number": 5,
+    "street": "610 Market Way",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60627",
+    "occupancy": "Machine Shop",
+    "construction": "modified_fire_resistive",
+    "year_built": 2020,
+    "stories": 3,
+    "square_feet": 3900,
+    "sprinklered": false,
+    "sprinkler_pct": 0,
+    "protection_class": 4,
+    "roof_type": null,
+    "roof_year": 2024,
+    "alarm_type": null,
+    "building_value": 580000.0,
+    "contents_value": 195000.0,
+    "bi_value": 30000.0,
+    "tiv": 805000.0
+   },
+   {
+    "loc_number": 6,
+    "street": "8582 Washington Street",
+    "city": "Atlanta",
+    "state": "GA",
+    "zip": "30345",
+    "occupancy": "Machine Shop",
+    "construction": "frame",
+    "year_built": 1961,
+    "stories": 1,
+    "square_feet": 35100,
+    "sprinklered": false,
+    "sprinkler_pct": 0,
+    "protection_class": 2,
+    "roof_type": null,
+    "roof_year": 2020,
+    "alarm_type": null,
+    "building_value": 7100000.0,
+    "contents_value": 3375000.0,
+    "bi_value": 870000.0,
+    "tiv": 11345000.0
+   },
+   {
+    "loc_number": 7,
+    "street": "131 Market Road",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77030",
+    "occupancy": "Machine Shop",
+    "construction": "frame",
+    "year_built": 1991,
+    "stories": 1,
+    "square_feet": 9300,
+    "sprinklered": false,
+    "sprinkler_pct": 0,
+    "protection_class": 2,
+    "roof_type": null,
+    "roof_year": 2007,
+    "alarm_type": null,
+    "building_value": 1455000.0,
+    "contents_value": 760000.0,
+    "bi_value": 90000.0,
+    "tiv": 2305000.0
+   },
+   {
+    "loc_number": 8,
+    "street": "8297 Cedar Lane",
+    "city": "Kansas City",
+    "state": "MO",
+    "zip": "64107",
+    "occupancy": "Machine Shop",
+    "construction": "non_combustible",
+    "year_built": 1968,
+    "stories": 1,
+    "square_feet": 11800,
+    "sprinklered": true,
+    "sprinkler_pct": 90,
+    "protection_class": 3,
+    "roof_type": null,
+    "roof_year": 2024,
+    "alarm_type": null,
+    "building_value": 2145000.0,
+    "contents_value": 1110000.0,
+    "bi_value": 295000.0,
+    "tiv": 3550000.0
+   },
+   {
+    "loc_number": 9,
+    "street": "2583 Washington Drive",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "85018",
+    "occupancy": "Machine Shop",
+    "construction": "non_combustible",
+    "year_built": 1997,
+    "stories": 6,
+    "square_feet": 31100,
+    "sprinklered": false,
+    "sprinkler_pct": 0,
+    "protection_class": 3,
+    "roof_type": null,
+    "roof_year": 2022,
+    "alarm_type": null,
+    "building_value": 5255000.0,
+    "contents_value": 2680000.0,
+    "bi_value": 0.0,
+    "tiv": 7935000.0
+   },
+   {
+    "loc_number": 10,
+    "street": "7657 Cedar Lane",
+    "city": "Los Angeles",
+    "state": "CA",
+    "zip": "90081",
+    "occupancy": "Machine Shop",
+    "construction": "non_combustible",
+    "year_built": 1995,
+    "stories": 5,
+    "square_feet": 18600,
+    "sprinklered": false,
+    "sprinkler_pct": 0,
+    "protection_class": 3,
+    "roof_type": null,
+    "roof_year": 2024,
+    "alarm_type": null,
+    "building_value": 3190000.0,
+    "contents_value": 1665000.0,
+    "bi_value": 0.0,
+    "tiv": 4855000.0
+   }
+  ],
+  "claims": [
+   {
+    "claim_number": "CL2600242",
+    "policy_year": 2024,
+    "date_of_loss": "2024-07-25",
+    "cause": "Wind/Hail",
+    "status": "closed",
+    "paid": 174240.0,
+    "reserve": 0.0,
+    "incurred": 174240.0
+   }
+  ],
+  "loss_years": [
+   {
+    "policy_year": 2022,
+    "carrier": "Continental Mutual Insurance Co.",
+    "earned_premium": 108640.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2023,
+    "carrier": "Continental Mutual Insurance Co.",
+    "earned_premium": 112350.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2024,
+    "carrier": "Continental Mutual Insurance Co.",
+    "earned_premium": 116050.0,
+    "claim_count": 1,
+    "total_incurred": 174240.0
+   },
+   {
+    "policy_year": 2025,
+    "carrier": "Continental Mutual Insurance Co.",
+    "earned_premium": 119760.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2026,
+    "carrier": "Continental Mutual Insurance Co.",
+    "earned_premium": 123460.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   }
+  ],
+  "totals": {
+   "total_tiv": 56745000.0,
+   "location_count": 10,
+   "five_year_incurred": 174240.0,
+   "five_year_premium": 580260.0
+  }
+ },
+ "provenance": {
+  "insured.named_insured": {
+   "path": "insured.named_insured",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "Applicant Name: Summit Crest Precision Machining LLC"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.fein": {
+   "path": "insured.fein",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "FEIN/Tax ID: 53-1181134"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.entity_type": {
+   "path": "insured.entity_type",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "Business Entity: LLC"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.street": {
+   "path": "insured.mailing_address.street",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "Street: 3109 Lake Drive"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.city": {
+   "path": "insured.mailing_address.city",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "City: Seattle"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.state": {
+   "path": "insured.mailing_address.state",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 7",
+     "snippet": "State: WA"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.zip": {
+   "path": "insured.mailing_address.zip",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 7",
+     "snippet": "ZIP: 98102"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.business_description": {
+   "path": "insured.business_description",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "Description of Operations: CNC machining of metal parts for industrial customers"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.naics_code": {
+   "path": "insured.naics_code",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 9",
+     "snippet": "NAICS: 332710"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.years_in_business": {
+   "path": "insured.years_in_business",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 9",
+     "snippet": "Yrs in Bus.: 8"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.annual_revenue": {
+   "path": "insured.annual_revenue",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "Gross Revenue: $32,220,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.employee_count": {
+   "path": "insured.employee_count",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "Employees: 319"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.website": {
+   "path": "insured.website",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 11",
+     "snippet": "Web Address: www.summitcrest.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_name": {
+   "path": "insured.contact_name",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 11",
+     "snippet": "Primary Contact: Kevin Martinez"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_phone": {
+   "path": "insured.contact_phone",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "Contact Phone: (807) 735-3475"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_email": {
+   "path": "insured.contact_email",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "Contact E-mail: kmartinez@summitcrest.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.effective_date": {
+   "path": "policy.effective_date",
+   "confidence": 0.974,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 14",
+     "snippet": "Effective Date: 01/01/2027"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "2027-01-01",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "with an inception date of 1/1/27"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "policy.expiration_date": {
+   "path": "policy.expiration_date",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 14",
+     "snippet": "Expiration Date: 01/01/2028"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.transaction_type": {
+   "path": "policy.transaction_type",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 15",
+     "snippet": "New / Renewal: New"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.prior_carrier": {
+   "path": "policy.prior_carrier",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 15",
+     "snippet": "Current Carrier: Continental Mutual Insurance Co."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.building_limit": {
+   "path": "coverage.building_limit",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 17",
+     "snippet": "Building: $38,130,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.bpp_limit": {
+   "path": "coverage.bpp_limit",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 17",
+     "snippet": "Business Personal Property: $14,280,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.business_income_limit": {
+   "path": "coverage.business_income_limit",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 18",
+     "snippet": "Business Income: $4,335,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.deductible": {
+   "path": "coverage.deductible",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 18",
+     "snippet": "Deductible: $10,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.valuation": {
+   "path": "coverage.valuation",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 19",
+     "snippet": "Valuation: Replacement Cost"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.coinsurance_pct": {
+   "path": "coverage.coinsurance_pct",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 19",
+     "snippet": "Coinsurance: 80%"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.cause_of_loss_form": {
+   "path": "coverage.cause_of_loss_form",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "Cause of Loss: Special"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.flood_requested": {
+   "path": "coverage.flood_requested",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "Flood: N"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.earthquake_requested": {
+   "path": "coverage.earthquake_requested",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 21",
+     "snippet": "Earthquake: Y"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "totals.total_tiv": {
+   "path": "totals.total_tiv",
+   "confidence": 0.95,
+   "status": "conflict",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "sum of location TIV",
+     "snippet": "10 locations"
+    },
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 21",
+     "snippet": "Total TIV: $52,008,000"
+    }
+   ],
+   "reasons": [
+    "totals.total_tiv: statement_of_values.xlsx says 56745000.0, Signed_App.pdf says 52008000.0 (kept the derived value per source-of-truth rules)"
+   ],
+   "alternatives": [
+    {
+     "value": 52008000.0,
+     "extractor": "form_parser",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 1,
+      "locator": "page 1 line 21",
+      "snippet": "Total TIV: $52,008,000"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.agency_name": {
+   "path": "broker.agency_name",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 23",
+     "snippet": "Agency Name: Atlas & Reed Insurance Services"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Atlas & Reed Insurance Services",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "signature line 2",
+      "snippet": "Atlas & Reed Insurance Services"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "Atlas & Reed Insurance Services",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "Atlas & Reed Insurance Services"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_name": {
+   "path": "broker.producer_name",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 23",
+     "snippet": "Producer Name: Laura Thompson"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Laura Thompson",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "header line 1",
+      "snippet": "From: Laura Thompson <laura.thompson@atlasreed.com>"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "Laura Thompson",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "Thanks,\nLaura Thompson"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_phone": {
+   "path": "broker.producer_phone",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 24",
+     "snippet": "Producer Phone: (263) 418-4284"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "(263) 418-4284",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "signature line 3",
+      "snippet": "(263) 418-4284"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "(263) 418-4284",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "(263) 418-4284"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_email": {
+   "path": "broker.producer_email",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 24",
+     "snippet": "Producer E-mail: laura.thompson@atlasreed.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "laura.thompson@atlasreed.com",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "header line 1",
+      "snippet": "From: Laura Thompson <laura.thompson@atlasreed.com>"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "laura.thompson@atlasreed.com",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "laura.thompson@atlasreed.com"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "totals.location_count": {
+   "path": "totals.location_count",
+   "confidence": 0.987,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "row count",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 10,
+     "extractor": "form_parser",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "Number of Locations: 10"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].street": {
+   "path": "locations[1].street",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "3109 Lake Drive",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].city": {
+   "path": "locations[1].city",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Seattle",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].state": {
+   "path": "locations[1].state",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "WA",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].zip": {
+   "path": "locations[1].zip",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "98102",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].construction": {
+   "path": "locations[1].construction",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "frame",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].year_built": {
+   "path": "locations[1].year_built",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1987,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].stories": {
+   "path": "locations[1].stories",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 3,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].square_feet": {
+   "path": "locations[1].square_feet",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 25300,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].sprinklered": {
+   "path": "locations[1].sprinklered",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": false,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].protection_class": {
+   "path": "locations[1].protection_class",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 5,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].roof_type": {
+   "path": "locations[1].roof_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 3",
+     "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].roof_year": {
+   "path": "locations[1].roof_year",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1998,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 3",
+      "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].alarm_type": {
+   "path": "locations[1].alarm_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 3",
+     "snippet": "1   3109 Lake Drive   Seattle   WA   98102   Frame   1987   3   25,300 N   5   Built-Up   1998   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].street": {
+   "path": "locations[2].street",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "4805 Madison Lane",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].city": {
+   "path": "locations[2].city",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Charleston",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].state": {
+   "path": "locations[2].state",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "SC",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].zip": {
+   "path": "locations[2].zip",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "29403",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].construction": {
+   "path": "locations[2].construction",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "frame",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].year_built": {
+   "path": "locations[2].year_built",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2015,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].stories": {
+   "path": "locations[2].stories",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].square_feet": {
+   "path": "locations[2].square_feet",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 10600,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].sprinklered": {
+   "path": "locations[2].sprinklered",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": true,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].protection_class": {
+   "path": "locations[2].protection_class",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 3,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].roof_type": {
+   "path": "locations[2].roof_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].roof_year": {
+   "path": "locations[2].roof_year",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2019,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].alarm_type": {
+   "path": "locations[2].alarm_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "2   4805 Madison Lane   Charleston   SC   29403   Frame   2015   1   10,600 Y   3   Metal   2019   Central Station"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].street": {
+   "path": "locations[3].street",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "2241 Technology Way",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].city": {
+   "path": "locations[3].city",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Pittsburgh",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].state": {
+   "path": "locations[3].state",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "PA",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].zip": {
+   "path": "locations[3].zip",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "15207",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].construction": {
+   "path": "locations[3].construction",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "joisted_masonry",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].year_built": {
+   "path": "locations[3].year_built",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1977,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].stories": {
+   "path": "locations[3].stories",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 3,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].square_feet": {
+   "path": "locations[3].square_feet",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 33600,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].sprinklered": {
+   "path": "locations[3].sprinklered",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": false,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].protection_class": {
+   "path": "locations[3].protection_class",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 4,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].roof_type": {
+   "path": "locations[3].roof_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "Signed_App.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 5",
+     "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].roof_year": {
+   "path": "locations[3].roof_year",
+   "confidence": 0.986,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2015,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "Signed_App.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "3   2241 Technology Way   Pittsburgh   PA   15207   Joisted Masonry   1977   3   33,600 N   4   Metal   2015   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "policy.submission_received_date": {
+   "path": "policy.submission_received_date",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "email_parser",
+   "citations": [
+    {
+     "doc": "email.txt",
+     "doc_type": "email",
+     "page": null,
+     "locator": "header line 3",
+     "snippet": "Date: Mon, 23 Nov 2026 09:47:00 -0500"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.quote_needed_by": {
+   "path": "policy.quote_needed_by",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:email",
+   "citations": [
+    {
+     "doc": "email.txt",
+     "doc_type": "email",
+     "page": null,
+     "locator": "llm",
+     "snippet": "Quote needed by 12/25/2026."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].earned_premium": {
+   "path": "loss_years[2022].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "Policy Period: 01/01/2022 - 01/01/2023   Earned Premium: $108,640.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].carrier": {
+   "path": "loss_years[2022].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "CONTINENTAL MUTUAL INSURANCE CO."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].earned_premium": {
+   "path": "loss_years[2023].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "Policy Period: 01/01/2023 - 01/01/2024   Earned Premium: $112,350.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].carrier": {
+   "path": "loss_years[2023].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "CONTINENTAL MUTUAL INSURANCE CO."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].earned_premium": {
+   "path": "loss_years[2024].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "Policy Period: 01/01/2024 - 01/01/2025   Earned Premium: $116,050.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].carrier": {
+   "path": "loss_years[2024].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "CONTINENTAL MUTUAL INSURANCE CO."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL2600242].policy_year": {
+   "path": "claims[CL2600242].policy_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "CL2600242   07/25/2024   Wind/Hail   Closed   $174,240.00   $0.00   $174,240.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL2600242].date_of_loss": {
+   "path": "claims[CL2600242].date_of_loss",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "CL2600242   07/25/2024   Wind/Hail   Closed   $174,240.00   $0.00   $174,240.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL2600242].cause": {
+   "path": "claims[CL2600242].cause",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "CL2600242   07/25/2024   Wind/Hail   Closed   $174,240.00   $0.00   $174,240.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL2600242].status": {
+   "path": "claims[CL2600242].status",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "CL2600242   07/25/2024   Wind/Hail   Closed   $174,240.00   $0.00   $174,240.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL2600242].paid": {
+   "path": "claims[CL2600242].paid",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "CL2600242   07/25/2024   Wind/Hail   Closed   $174,240.00   $0.00   $174,240.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL2600242].reserve": {
+   "path": "claims[CL2600242].reserve",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "CL2600242   07/25/2024   Wind/Hail   Closed   $174,240.00   $0.00   $174,240.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL2600242].incurred": {
+   "path": "claims[CL2600242].incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "CL2600242   07/25/2024   Wind/Hail   Closed   $174,240.00   $0.00   $174,240.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].earned_premium": {
+   "path": "loss_years[2025].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 14",
+     "snippet": "Policy Period: 01/01/2025 - 01/01/2026   Earned Premium: $119,760.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].carrier": {
+   "path": "loss_years[2025].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "CONTINENTAL MUTUAL INSURANCE CO."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].earned_premium": {
+   "path": "loss_years[2026].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "Policy Period: 01/01/2026 - 01/01/2027   Earned Premium: $123,460.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].carrier": {
+   "path": "loss_years[2026].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "CONTINENTAL MUTUAL INSURANCE CO."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].claim_count": {
+   "path": "loss_years[2022].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2022",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].total_incurred": {
+   "path": "loss_years[2022].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2022",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].claim_count": {
+   "path": "loss_years[2023].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2023",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].total_incurred": {
+   "path": "loss_years[2023].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2023",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].claim_count": {
+   "path": "loss_years[2024].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2024",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].total_incurred": {
+   "path": "loss_years[2024].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2024",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].claim_count": {
+   "path": "loss_years[2025].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2025",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].total_incurred": {
+   "path": "loss_years[2025].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2025",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].claim_count": {
+   "path": "loss_years[2026].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2026",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].total_incurred": {
+   "path": "loss_years[2026].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2026",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].occupancy": {
+   "path": "locations[1].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].sprinkler_pct": {
+   "path": "locations[1].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].building_value": {
+   "path": "locations[1].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].contents_value": {
+   "path": "locations[1].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].bi_value": {
+   "path": "locations[1].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].tiv": {
+   "path": "locations[1].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R5",
+     "snippet": "1 | 3109 Lake Drive | Seattle | WA | 98102 | Machine Shop | Frame | 1987 | 3 | 25300 | N | 0 | 5 | 1998 | 4555000 | 795000 | 1045000 | 6395000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].occupancy": {
+   "path": "locations[2].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].sprinkler_pct": {
+   "path": "locations[2].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].building_value": {
+   "path": "locations[2].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].contents_value": {
+   "path": "locations[2].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].bi_value": {
+   "path": "locations[2].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].tiv": {
+   "path": "locations[2].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R6",
+     "snippet": "2 | 4805 Madison Lane | Charleston | SC | 29403 | Machine Shop | Frame | 2015 | 1 | 10600 | Y | 50 | 3 | 2019 | 2320000 | 850000 | 420000 | 3590000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].occupancy": {
+   "path": "locations[3].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].sprinkler_pct": {
+   "path": "locations[3].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].building_value": {
+   "path": "locations[3].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].contents_value": {
+   "path": "locations[3].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].bi_value": {
+   "path": "locations[3].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].tiv": {
+   "path": "locations[3].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R7",
+     "snippet": "3 | 2241 Technology Way | Pittsburgh | PA | 15207 | Machine Shop | Joisted Masonry | 1977 | 3 | 33600 | N | 0 | 4 | 2015 | 4540000 | 1190000 | 65000 | 5795000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].street": {
+   "path": "locations[4].street",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].city": {
+   "path": "locations[4].city",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].state": {
+   "path": "locations[4].state",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].zip": {
+   "path": "locations[4].zip",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].occupancy": {
+   "path": "locations[4].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].construction": {
+   "path": "locations[4].construction",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].year_built": {
+   "path": "locations[4].year_built",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].stories": {
+   "path": "locations[4].stories",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].square_feet": {
+   "path": "locations[4].square_feet",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].sprinklered": {
+   "path": "locations[4].sprinklered",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].sprinkler_pct": {
+   "path": "locations[4].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].protection_class": {
+   "path": "locations[4].protection_class",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].roof_year": {
+   "path": "locations[4].roof_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].building_value": {
+   "path": "locations[4].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].contents_value": {
+   "path": "locations[4].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].bi_value": {
+   "path": "locations[4].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].tiv": {
+   "path": "locations[4].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R8",
+     "snippet": "4 | 7656 Cedar Boulevard | Dallas | TX | 75273 | Machine Shop | Modified Fire Resistive | 1956 | 4 | 57200 | Y | 100 | 4 | 2025 | 6990000 | 1660000 | 1520000 | 10170000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].street": {
+   "path": "locations[5].street",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].city": {
+   "path": "locations[5].city",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].state": {
+   "path": "locations[5].state",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].zip": {
+   "path": "locations[5].zip",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].occupancy": {
+   "path": "locations[5].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].construction": {
+   "path": "locations[5].construction",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].year_built": {
+   "path": "locations[5].year_built",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].stories": {
+   "path": "locations[5].stories",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].square_feet": {
+   "path": "locations[5].square_feet",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].sprinklered": {
+   "path": "locations[5].sprinklered",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].sprinkler_pct": {
+   "path": "locations[5].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].protection_class": {
+   "path": "locations[5].protection_class",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].roof_year": {
+   "path": "locations[5].roof_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].building_value": {
+   "path": "locations[5].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].contents_value": {
+   "path": "locations[5].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].bi_value": {
+   "path": "locations[5].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[5].tiv": {
+   "path": "locations[5].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R9",
+     "snippet": "5 | 610 Market Way | Chicago | IL | 60627 | Machine Shop | Modified Fire Resistive | 2020 | 3 | 3900 | N | 0 | 4 | 2024 | 580000 | 195000 | 30000 | 805000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].street": {
+   "path": "locations[6].street",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].city": {
+   "path": "locations[6].city",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].state": {
+   "path": "locations[6].state",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].zip": {
+   "path": "locations[6].zip",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].occupancy": {
+   "path": "locations[6].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].construction": {
+   "path": "locations[6].construction",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].year_built": {
+   "path": "locations[6].year_built",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].stories": {
+   "path": "locations[6].stories",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].square_feet": {
+   "path": "locations[6].square_feet",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].sprinklered": {
+   "path": "locations[6].sprinklered",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].sprinkler_pct": {
+   "path": "locations[6].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].protection_class": {
+   "path": "locations[6].protection_class",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].roof_year": {
+   "path": "locations[6].roof_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].building_value": {
+   "path": "locations[6].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].contents_value": {
+   "path": "locations[6].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].bi_value": {
+   "path": "locations[6].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].tiv": {
+   "path": "locations[6].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R10",
+     "snippet": "6 | 8582 Washington Street | Atlanta | GA | 30345 | Machine Shop | Frame | 1961 | 1 | 35100 | N | 0 | 2 | 2020 | 7100000 | 3375000 | 870000 | 11345000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].street": {
+   "path": "locations[7].street",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].city": {
+   "path": "locations[7].city",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].state": {
+   "path": "locations[7].state",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].zip": {
+   "path": "locations[7].zip",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].occupancy": {
+   "path": "locations[7].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].construction": {
+   "path": "locations[7].construction",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].year_built": {
+   "path": "locations[7].year_built",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].stories": {
+   "path": "locations[7].stories",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].square_feet": {
+   "path": "locations[7].square_feet",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].sprinklered": {
+   "path": "locations[7].sprinklered",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].sprinkler_pct": {
+   "path": "locations[7].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].protection_class": {
+   "path": "locations[7].protection_class",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].roof_year": {
+   "path": "locations[7].roof_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].building_value": {
+   "path": "locations[7].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].contents_value": {
+   "path": "locations[7].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].bi_value": {
+   "path": "locations[7].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[7].tiv": {
+   "path": "locations[7].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R11",
+     "snippet": "7 | 131 Market Road | Houston | TX | 77030 | Machine Shop | Frame | 1991 | 1 | 9300 | N | 0 | 2 | 2007 | 1455000 | 760000 | 90000 | 2305000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].street": {
+   "path": "locations[8].street",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].city": {
+   "path": "locations[8].city",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].state": {
+   "path": "locations[8].state",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].zip": {
+   "path": "locations[8].zip",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].occupancy": {
+   "path": "locations[8].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].construction": {
+   "path": "locations[8].construction",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].year_built": {
+   "path": "locations[8].year_built",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].stories": {
+   "path": "locations[8].stories",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].square_feet": {
+   "path": "locations[8].square_feet",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].sprinklered": {
+   "path": "locations[8].sprinklered",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].sprinkler_pct": {
+   "path": "locations[8].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].protection_class": {
+   "path": "locations[8].protection_class",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].roof_year": {
+   "path": "locations[8].roof_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].building_value": {
+   "path": "locations[8].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].contents_value": {
+   "path": "locations[8].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].bi_value": {
+   "path": "locations[8].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[8].tiv": {
+   "path": "locations[8].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R12",
+     "snippet": "8 | 8297 Cedar Lane | Kansas City | MO | 64107 | Machine Shop | Non-Combustible | 1968 | 1 | 11800 | Y | 90 | 3 | 2024 | 2145000 | 1110000 | 295000 | 3550000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].street": {
+   "path": "locations[9].street",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].city": {
+   "path": "locations[9].city",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].state": {
+   "path": "locations[9].state",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].zip": {
+   "path": "locations[9].zip",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].occupancy": {
+   "path": "locations[9].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].construction": {
+   "path": "locations[9].construction",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].year_built": {
+   "path": "locations[9].year_built",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].stories": {
+   "path": "locations[9].stories",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].square_feet": {
+   "path": "locations[9].square_feet",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].sprinklered": {
+   "path": "locations[9].sprinklered",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].sprinkler_pct": {
+   "path": "locations[9].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].protection_class": {
+   "path": "locations[9].protection_class",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].roof_year": {
+   "path": "locations[9].roof_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].building_value": {
+   "path": "locations[9].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].contents_value": {
+   "path": "locations[9].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].bi_value": {
+   "path": "locations[9].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[9].tiv": {
+   "path": "locations[9].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R13",
+     "snippet": "9 | 2583 Washington Drive | Phoenix | AZ | 85018 | Machine Shop | Non-Combustible | 1997 | 6 | 31100 | N | 0 | 3 | 2022 | 5255000 | 2680000 | 0 | 7935000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].street": {
+   "path": "locations[10].street",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].city": {
+   "path": "locations[10].city",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].state": {
+   "path": "locations[10].state",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].zip": {
+   "path": "locations[10].zip",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].occupancy": {
+   "path": "locations[10].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].construction": {
+   "path": "locations[10].construction",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].year_built": {
+   "path": "locations[10].year_built",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].stories": {
+   "path": "locations[10].stories",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].square_feet": {
+   "path": "locations[10].square_feet",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].sprinklered": {
+   "path": "locations[10].sprinklered",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].sprinkler_pct": {
+   "path": "locations[10].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].protection_class": {
+   "path": "locations[10].protection_class",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].roof_year": {
+   "path": "locations[10].roof_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].building_value": {
+   "path": "locations[10].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].contents_value": {
+   "path": "locations[10].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].bi_value": {
+   "path": "locations[10].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[10].tiv": {
+   "path": "locations[10].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "Sheet1!R14",
+     "snippet": "10 | 7657 Cedar Lane | Los Angeles | CA | 90081 | Machine Shop | Non-Combustible | 1995 | 5 | 18600 | N | 0 | 3 | 2024 | 3190000 | 1665000 | 0 | 4855000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "totals.five_year_incurred": {
+   "path": "totals.five_year_incurred",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "sum of claims",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "totals.five_year_premium": {
+   "path": "totals.five_year_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "LossRuns.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "sum of claims",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  }
+ },
+ "decision": {
+  "outcome": "decline",
+  "source": "rules",
+  "reasons": [
+   {
+    "rule_id": "ROOF_AGE",
+    "outcome": "refer",
+    "message": "location 1: roof 29 years old at inception",
+    "fields": [
+     "locations[1].roof_year",
+     "policy.effective_date"
+    ]
+   },
+   {
+    "rule_id": "HURRICANE_ZONE",
+    "outcome": "decline",
+    "message": "location 2: frame building in tier-1 hurricane zone (ZIP 29403)",
+    "fields": [
+     "locations[2].zip",
+     "locations[2].construction"
+    ]
+   },
+   {
+    "rule_id": "UNSPRINKLERED",
+    "outcome": "refer",
+    "message": "location 6: unsprinklered with TIV $11,345,000",
+    "fields": [
+     "locations[6].sprinklered",
+     "locations[6].tiv"
+    ]
+   }
+  ]
+ },
+ "needs_review": true,
+ "review_reasons": [
+  "totals.total_tiv: conflict (totals.total_tiv: statement_of_values.xlsx says 56745000.0, Signed_App.pdf says 52008000.0 (kept the derived value per source-of-truth rules))"
+ ],
+ "degraded_reasons": [
+  "Signed_App.pdf: LLM extraction unavailable (replay miss)"
+ ],
+ "doc_types": {
+  "LossRuns.pdf": "loss_run",
+  "Signed_App.pdf": "application",
+  "email.txt": "email",
+  "statement_of_values.xlsx": "sov"
+ },
+ "llm_calls": [
+  {
+   "task": "extract_application",
+   "source": "replay:miss",
+   "model": null,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "latency_ms": 0.0,
+   "cost_usd": 0.0,
+   "est_input_tokens": 5015
+  },
+  {
+   "task": "extract_email",
+   "source": "replay:hand_written",
+   "model": "hand-written",
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "latency_ms": 0.0,
+   "cost_usd": 0.0,
+   "est_input_tokens": 1044
+  },
+  {
+   "task": "summary",
+   "source": "replay:hand_written",
+   "model": "hand-written",
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "latency_ms": 0.0,
+   "cost_usd": 0.0,
+   "est_input_tokens": 2379
+  }
+ ],
+ "timings_ms": {},
+ "summary": "**Recommendation:** DECLINE under the appetite rules. One field still needs human review before the file is closed.\n\n**Why**\n- Location 2 in Charleston [locations[2].city] is frame construction [locations[2].construction] in tier-1 hurricane ZIP 29403 [locations[2].zip], which the guidelines decline outright.\n- Location 1's roof dates from 1998 [locations[1].roof_year], 29 years old at the 2027-01-01 inception [policy.effective_date] (refer).\n- Location 6 is unsprinklered [locations[6].sprinklered] with a TIV of $11,345,000 [locations[6].tiv] (refer).\n\n**Account**\n- Summit Crest Precision Machining LLC [insured.named_insured]: CNC machining of metal parts [insured.business_description], NAICS 332710 [insured.naics_code].\n- 10 locations [totals.location_count], total TIV $56.75M [totals.total_tiv]. Broker Laura Thompson [broker.producer_name] of Atlas & Reed Insurance Services [broker.agency_name]; quote needed by 2026-12-25 [policy.quote_needed_by].\n\n**Loss history**\n- One closed [claims[CL2600242].status] Wind/Hail claim of $174,240 [claims[CL2600242].incurred] on 2024-07-25 [claims[CL2600242].date_of_loss]. Five-year incurred $174,240 [totals.five_year_incurred] against $580,260 earned premium [totals.five_year_premium]: a 30% loss ratio.\n\n**Needs attention**\n- Total TIV conflict: the SOV total [totals.total_tiv] is higher than the figure on the signed application. The SOV value is used. Ask the broker which schedule is current.",
+ "summary_source": "llm (replay:hand_written)",
+ "summary_citations_valid": true,
+ "errors": []
+}

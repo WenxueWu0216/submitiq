@@ -1,0 +1,3365 @@
+{
+ "submission_id": "SUB-0038",
+ "pipeline": "final",
+ "record": {
+  "submission_id": "SUB-0038",
+  "insured": {
+   "named_insured": "Oak Hollow Market Inc.",
+   "dba": null,
+   "fein": "27-8524217",
+   "entity_type": "corporation",
+   "mailing_address": {
+    "street": "5379 Pine Avenue",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80291"
+   },
+   "business_description": "Independent grocery store with deli and bakery counter",
+   "naics_code": "445110",
+   "years_in_business": 24,
+   "annual_revenue": 48840000.0,
+   "employee_count": 235,
+   "website": "www.oakhollow.com",
+   "contact_name": "Mei Patel",
+   "contact_phone": "(781) 226-3474",
+   "contact_email": "mpatel@oakhollow.com"
+  },
+  "broker": {
+   "agency_name": "Brightline Insurance Partners",
+   "producer_name": "Michael O'Brien",
+   "producer_email": "michael.obrien@brightlineins.com",
+   "producer_phone": "(208) 817-1336"
+  },
+  "policy": {
+   "effective_date": "2027-01-01",
+   "expiration_date": "2028-01-01",
+   "transaction_type": "new",
+   "prior_carrier": "Pinecrest Property & Casualty",
+   "quote_needed_by": null,
+   "submission_received_date": "2026-11-19"
+  },
+  "coverage": {
+   "building_limit": 30320000.0,
+   "bpp_limit": 8660000.0,
+   "business_income_limit": 640000.0,
+   "deductible": 25000.0,
+   "valuation": "replacement_cost",
+   "coinsurance_pct": 100,
+   "cause_of_loss_form": "basic",
+   "flood_requested": true,
+   "earthquake_requested": false
+  },
+  "locations": [
+   {
+    "loc_number": 1,
+    "street": "5379 Pine Avenue",
+    "city": "Denver",
+    "state": "CO",
+    "zip": "80291",
+    "occupancy": "Grocery Store",
+    "construction": "joisted_masonry",
+    "year_built": null,
+    "stories": 2,
+    "square_feet": 16000,
+    "sprinklered": false,
+    "sprinkler_pct": null,
+    "protection_class": 3,
+    "roof_type": "tile",
+    "roof_year": 2014,
+    "alarm_type": "local",
+    "building_value": 2900000.0,
+    "contents_value": 470000.0,
+    "bi_value": 555000.0,
+    "tiv": 3920000.0
+   },
+   {
+    "loc_number": 2,
+    "street": "2810 Jefferson Parkway",
+    "city": "Chicago",
+    "state": "IL",
+    "zip": "60682",
+    "occupancy": "Grocery Store",
+    "construction": "joisted_masonry",
+    "year_built": 1955,
+    "stories": 2,
+    "square_feet": 14800,
+    "sprinklered": false,
+    "sprinkler_pct": null,
+    "protection_class": 7,
+    "roof_type": "metal",
+    "roof_year": 2010,
+    "alarm_type": "local",
+    "building_value": 3620000.0,
+    "contents_value": 1330000.0,
+    "bi_value": 0.0,
+    "tiv": 4955000.0
+   },
+   {
+    "loc_number": 3,
+    "street": "8805 Lincoln Way",
+    "city": "Charlotte",
+    "state": "NC",
+    "zip": "28217",
+    "occupancy": "Grocery Store",
+    "construction": "joisted_masonry",
+    "year_built": 1998,
+    "stories": 2,
+    "square_feet": 36000,
+    "sprinklered": true,
+    "sprinkler_pct": null,
+    "protection_class": 4,
+    "roof_type": "asphalt_shingle",
+    "roof_year": 2012,
+    "alarm_type": "central_station",
+    "building_value": 7160000.0,
+    "contents_value": 2000000.0,
+    "bi_value": 0.0,
+    "tiv": 9160000.0
+   },
+   {
+    "loc_number": 4,
+    "street": "22 Lake Way",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "zip": "15231",
+    "occupancy": "Grocery Store",
+    "construction": "masonry_non_combustible",
+    "year_built": 2003,
+    "stories": 6,
+    "square_feet": 47400,
+    "sprinklered": true,
+    "sprinkler_pct": null,
+    "protection_class": 5,
+    "roof_type": null,
+    "roof_year": 2019,
+    "alarm_type": null,
+    "building_value": 5805000.0,
+    "contents_value": 2865000.0,
+    "bi_value": null,
+    "tiv": 8755000.0
+   },
+   {
+    "loc_number": 6,
+    "street": "3431, Maple Lane",
+    "city": "Phoenix",
+    "state": "AZ",
+    "zip": "85010",
+    "occupancy": "Grocery Store",
+    "construction": "frame",
+    "year_built": 1968,
+    "stories": 3,
+    "square_feet": 22100,
+    "sprinklered": false,
+    "sprinkler_pct": null,
+    "protection_class": 7,
+    "roof_type": null,
+    "roof_year": 2018,
+    "alarm_type": null,
+    "building_value": 4890000.0,
+    "contents_value": 1145000.0,
+    "bi_value": null,
+    "tiv": 6035000.0
+   }
+  ],
+  "claims": [
+   {
+    "claim_number": "PPC-2023-50142",
+    "policy_year": 2023,
+    "date_of_loss": "2023-04-12",
+    "cause": "Roof Leak",
+    "status": "closed",
+    "paid": 148140.0,
+    "reserve": 0.0,
+    "incurred": 148140.0
+   }
+  ],
+  "loss_years": [
+   {
+    "policy_year": 2022,
+    "carrier": "Pinecrest Property & Casualty",
+    "earned_premium": 88100.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2023,
+    "carrier": "Pinecrest Property & Casualty",
+    "earned_premium": 91110.0,
+    "claim_count": 1,
+    "total_incurred": 148140.0
+   },
+   {
+    "policy_year": 2024,
+    "carrier": "Pinecrest Property & Casualty",
+    "earned_premium": 94110.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2025,
+    "carrier": "Pinecrest Property & Casualty",
+    "earned_premium": 97110.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2026,
+    "carrier": "Pinecrest Property & Casualty",
+    "earned_premium": 100120.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   }
+  ],
+  "totals": {
+   "total_tiv": 32825000.0,
+   "location_count": 5,
+   "five_year_incurred": 148140.0,
+   "five_year_premium": 470550.0
+  }
+ },
+ "provenance": {
+  "broker.producer_name": {
+   "path": "broker.producer_name",
+   "confidence": 0.981,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "Producer: Michael O'Brien"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Michael O'Brien",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "header line 1",
+      "snippet": "From: Michael O'Brien <michael.obrien@brightlineins.com>"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_email": {
+   "path": "broker.producer_email",
+   "confidence": 0.981,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "Producer Email: michael.obrien@brightlineins.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "michael.obrien@brightlineins.com",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "header line 1",
+      "snippet": "From: Michael O'Brien <michael.obrien@brightlineins.com>"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "policy.submission_received_date": {
+   "path": "policy.submission_received_date",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "email_parser",
+   "citations": [
+    {
+     "doc": "email.txt",
+     "doc_type": "email",
+     "page": null,
+     "locator": "header line 3",
+     "snippet": "Date: Thu, 19 Nov 2026 09:39:00 -0500"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "broker.agency_name": {
+   "path": "broker.agency_name",
+   "confidence": 0.981,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "Agency: Brightline Insurance Partners"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Brightline Insurance Partners",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "signature line 2",
+      "snippet": "Brightline Insurance Partners"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_phone": {
+   "path": "broker.producer_phone",
+   "confidence": 0.981,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "Producer Phone: (208) 817-1336"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "(208) 817-1336",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "signature line 3",
+      "snippet": "(208) 817-1336"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "insured.named_insured": {
+   "path": "insured.named_insured",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "Named Insured: Oak Hollow Market Inc."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.fein": {
+   "path": "insured.fein",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "FEIN: 27-8524217"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.entity_type": {
+   "path": "insured.entity_type",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "Entity Type: Corporation"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.street": {
+   "path": "insured.mailing_address.street",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 11",
+     "snippet": "Mailing Address: 5379 Pine Avenue, Denver, CO 80291"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.city": {
+   "path": "insured.mailing_address.city",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 11",
+     "snippet": "Mailing Address: 5379 Pine Avenue, Denver, CO 80291"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.state": {
+   "path": "insured.mailing_address.state",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 11",
+     "snippet": "Mailing Address: 5379 Pine Avenue, Denver, CO 80291"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.zip": {
+   "path": "insured.mailing_address.zip",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 11",
+     "snippet": "Mailing Address: 5379 Pine Avenue, Denver, CO 80291"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.business_description": {
+   "path": "insured.business_description",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "Nature of Business: Independent grocery store with deli and bakery counter"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.naics_code": {
+   "path": "insured.naics_code",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 13",
+     "snippet": "NAICS Code: 445110"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.years_in_business": {
+   "path": "insured.years_in_business",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 13",
+     "snippet": "Years in Business: 24"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.annual_revenue": {
+   "path": "insured.annual_revenue",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 14",
+     "snippet": "Annual Revenue: $48.84M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.employee_count": {
+   "path": "insured.employee_count",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 14",
+     "snippet": "Number of Employees: 235"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.website": {
+   "path": "insured.website",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 15",
+     "snippet": "Website: www.oakhollow.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_name": {
+   "path": "insured.contact_name",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "Contact Name: Mei Patel"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_phone": {
+   "path": "insured.contact_phone",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "Contact Phone: (781) 226-3474"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_email": {
+   "path": "insured.contact_email",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 17",
+     "snippet": "Contact Email: mpatel@oakhollow.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.effective_date": {
+   "path": "policy.effective_date",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 19",
+     "snippet": "Proposed Effective Date: 2027-01-01"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.expiration_date": {
+   "path": "policy.expiration_date",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 19",
+     "snippet": "Proposed Expiration Date: 2028-01-01"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.transaction_type": {
+   "path": "policy.transaction_type",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "Transaction: New"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.prior_carrier": {
+   "path": "policy.prior_carrier",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "Prior Carrier: Pinecrest Property & Casualty"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "totals.location_count": {
+   "path": "totals.location_count",
+   "confidence": 0.95,
+   "status": "conflict",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "row count",
+     "snippet": null
+    },
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 8",
+     "snippet": "Number of Locations: 6"
+    }
+   ],
+   "reasons": [
+    "totals.location_count: scan40233.pdf says 5, scan16895.pdf says 6 (kept the derived value per source-of-truth rules)"
+   ],
+   "alternatives": [
+    {
+     "value": 6,
+     "extractor": "form_parser",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 8",
+      "snippet": "Number of Locations: 6"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "totals.total_tiv": {
+   "path": "totals.total_tiv",
+   "confidence": 0.442,
+   "status": "conflict",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "sum of location TIV",
+     "snippet": "5 locations"
+    },
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 8",
+     "snippet": "Total Insured Value (All Locations): $39.62M"
+    }
+   ],
+   "reasons": [
+    "totals.total_tiv: scan40233.pdf says 32825000.0, scan16895.pdf says 39620000.0 (kept the derived value per source-of-truth rules)",
+    "table_parser:local read 39615000.0 from the same document"
+   ],
+   "alternatives": [
+    {
+     "value": 39620000.0,
+     "extractor": "form_parser",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 8",
+      "snippet": "Total Insured Value (All Locations): $39.62M"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": 39615000.0,
+     "extractor": "table_parser:local",
+     "citation": {
+      "doc": "scan40233.pdf",
+      "doc_type": "sov",
+      "page": null,
+      "locator": null,
+      "snippet": null
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "coverage.building_limit": {
+   "path": "coverage.building_limit",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 10",
+     "snippet": "Building Limit: $30.32M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.bpp_limit": {
+   "path": "coverage.bpp_limit",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 10",
+     "snippet": "Business Personal Property Limit: $8.66M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.business_income_limit": {
+   "path": "coverage.business_income_limit",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 11",
+     "snippet": "Business Income Limit: $640,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.deductible": {
+   "path": "coverage.deductible",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 11",
+     "snippet": "Deductible: $25,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.valuation": {
+   "path": "coverage.valuation",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 12",
+     "snippet": "Valuation: Replacement Cost"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.coinsurance_pct": {
+   "path": "coverage.coinsurance_pct",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 12",
+     "snippet": "Coinsurance: 100%"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.cause_of_loss_form": {
+   "path": "coverage.cause_of_loss_form",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 13",
+     "snippet": "Causes of Loss Form: Basic"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.flood_requested": {
+   "path": "coverage.flood_requested",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 14",
+     "snippet": "Flood Coverage Requested: Y"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.earthquake_requested": {
+   "path": "coverage.earthquake_requested",
+   "confidence": 0.92,
+   "status": "ok",
+   "extractor": "form_parser",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 14",
+     "snippet": "Earthquake Coverage Requested: No"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].street": {
+   "path": "locations[1].street",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "5379 Pine Avenue",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].city": {
+   "path": "locations[1].city",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Denver",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].state": {
+   "path": "locations[1].state",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "CO",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].zip": {
+   "path": "locations[1].zip",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "80291",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].construction": {
+   "path": "locations[1].construction",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "joisted_masonry",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].stories": {
+   "path": "locations[1].stories",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].square_feet": {
+   "path": "locations[1].square_feet",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 16000,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].sprinklered": {
+   "path": "locations[1].sprinklered",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": false,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].protection_class": {
+   "path": "locations[1].protection_class",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 3,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].roof_type": {
+   "path": "locations[1].roof_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].roof_year": {
+   "path": "locations[1].roof_year",
+   "confidence": 0.97,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2014,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 4",
+      "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].alarm_type": {
+   "path": "locations[1].alarm_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   CO   80291   Joisted Masonry   2   16,000 No   3   Tile   2014   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].street": {
+   "path": "locations[2].street",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "2810 Jefferson Parkway",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].city": {
+   "path": "locations[2].city",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Chicago",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].state": {
+   "path": "locations[2].state",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "IL",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].zip": {
+   "path": "locations[2].zip",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "60682",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].construction": {
+   "path": "locations[2].construction",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "joisted_masonry",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].year_built": {
+   "path": "locations[2].year_built",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1955,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].stories": {
+   "path": "locations[2].stories",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].square_feet": {
+   "path": "locations[2].square_feet",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 14800,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].sprinklered": {
+   "path": "locations[2].sprinklered",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": false,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].protection_class": {
+   "path": "locations[2].protection_class",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 7,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].roof_type": {
+   "path": "locations[2].roof_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].roof_year": {
+   "path": "locations[2].roof_year",
+   "confidence": 0.968,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2010,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 5",
+      "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].alarm_type": {
+   "path": "locations[2].alarm_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   JM   1955   2   14,800 N   7   Metal   2010   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].street": {
+   "path": "locations[3].street",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "8805 Lincoln Way",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].city": {
+   "path": "locations[3].city",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Charlotte",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].state": {
+   "path": "locations[3].state",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "NC",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].zip": {
+   "path": "locations[3].zip",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "28217",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].construction": {
+   "path": "locations[3].construction",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "joisted_masonry",
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].year_built": {
+   "path": "locations[3].year_built",
+   "confidence": 0.888,
+   "status": "conflict",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    },
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+    }
+   ],
+   "reasons": [
+    "locations[3].year_built: scan40233.pdf says 1998, scan16895.pdf says 2009 (kept the table_parser:local value per source-of-truth rules)"
+   ],
+   "alternatives": [
+    {
+     "value": 2009,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].stories": {
+   "path": "locations[3].stories",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].square_feet": {
+   "path": "locations[3].square_feet",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].sprinklered": {
+   "path": "locations[3].sprinklered",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": true,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].protection_class": {
+   "path": "locations[3].protection_class",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 4,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].roof_type": {
+   "path": "locations[3].roof_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].roof_year": {
+   "path": "locations[3].roof_year",
+   "confidence": 0.969,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2012,
+     "extractor": "form_parser:premises",
+     "citation": {
+      "doc": "scan16895.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "page 2 line 6",
+      "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[3].alarm_type": {
+   "path": "locations[3].alarm_type",
+   "confidence": 0.9,
+   "status": "ok",
+   "extractor": "form_parser:premises",
+   "citations": [
+    {
+     "doc": "scan16895.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "page 2 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Brick/Joisted   2009   2   36,000 Y   4   Asphalt Shingle   2012   Central Station"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].earned_premium": {
+   "path": "loss_years[2022].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "Policy Period: 01/01/2022 - 01/01/2023   Earned Premium: $88,100.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].carrier": {
+   "path": "loss_years[2022].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "PINECREST PROPERTY & CASUALTY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].earned_premium": {
+   "path": "loss_years[2023].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "Policy Period: 01/01/2023 - 01/01/2024   Earned Premium: $91,110.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].carrier": {
+   "path": "loss_years[2023].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "PINECREST PROPERTY & CASUALTY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[PPC202350142].policy_year": {
+   "path": "claims[PPC202350142].policy_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "PPC-2023-50142   04/12/2023   Roof Leak   Closed   $148,140.00   $0.00   $148,140.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[PPC202350142].date_of_loss": {
+   "path": "claims[PPC202350142].date_of_loss",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "PPC-2023-50142   04/12/2023   Roof Leak   Closed   $148,140.00   $0.00   $148,140.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[PPC202350142].cause": {
+   "path": "claims[PPC202350142].cause",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "PPC-2023-50142   04/12/2023   Roof Leak   Closed   $148,140.00   $0.00   $148,140.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[PPC202350142].status": {
+   "path": "claims[PPC202350142].status",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "PPC-2023-50142   04/12/2023   Roof Leak   Closed   $148,140.00   $0.00   $148,140.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[PPC202350142].paid": {
+   "path": "claims[PPC202350142].paid",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "PPC-2023-50142   04/12/2023   Roof Leak   Closed   $148,140.00   $0.00   $148,140.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[PPC202350142].reserve": {
+   "path": "claims[PPC202350142].reserve",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "PPC-2023-50142   04/12/2023   Roof Leak   Closed   $148,140.00   $0.00   $148,140.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[PPC202350142].incurred": {
+   "path": "claims[PPC202350142].incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "PPC-2023-50142   04/12/2023   Roof Leak   Closed   $148,140.00   $0.00   $148,140.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].earned_premium": {
+   "path": "loss_years[2024].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "Policy Period: 01/01/2024 - 01/01/2025   Earned Premium: $94,110.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].carrier": {
+   "path": "loss_years[2024].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "PINECREST PROPERTY & CASUALTY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].earned_premium": {
+   "path": "loss_years[2025].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 14",
+     "snippet": "Policy Period: 01/01/2025 - 01/01/2026   Earned Premium: $97,110.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].carrier": {
+   "path": "loss_years[2025].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "PINECREST PROPERTY & CASUALTY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].earned_premium": {
+   "path": "loss_years[2026].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "Policy Period: 01/01/2026 - 01/01/2027   Earned Premium: $100,120.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].carrier": {
+   "path": "loss_years[2026].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "PINECREST PROPERTY & CASUALTY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].claim_count": {
+   "path": "loss_years[2022].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2022",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].total_incurred": {
+   "path": "loss_years[2022].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2022",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].claim_count": {
+   "path": "loss_years[2023].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2023",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].total_incurred": {
+   "path": "loss_years[2023].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2023",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].claim_count": {
+   "path": "loss_years[2024].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2024",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].total_incurred": {
+   "path": "loss_years[2024].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2024",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].claim_count": {
+   "path": "loss_years[2025].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2025",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].total_incurred": {
+   "path": "loss_years[2025].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2025",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].claim_count": {
+   "path": "loss_years[2026].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2026",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].total_incurred": {
+   "path": "loss_years[2026].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2026",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].occupancy": {
+   "path": "locations[1].occupancy",
+   "confidence": 0.893,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].building_value": {
+   "path": "locations[1].building_value",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].contents_value": {
+   "path": "locations[1].contents_value",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].bi_value": {
+   "path": "locations[1].bi_value",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].tiv": {
+   "path": "locations[1].tiv",
+   "confidence": 0.446,
+   "status": "invalid",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 4",
+     "snippet": "1   5379 Pine Avenue   Denver   co 80291   Grocery Store   Joisted Masonry   2   16,000 N   0%   3   2014   $2.90M   470000   $555,000   $3.92M"
+    }
+   ],
+   "reasons": [
+    "sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000"
+   ],
+   "alternatives": []
+  },
+  "locations[2].occupancy": {
+   "path": "locations[2].occupancy",
+   "confidence": 0.884,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].building_value": {
+   "path": "locations[2].building_value",
+   "confidence": 0.983,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].contents_value": {
+   "path": "locations[2].contents_value",
+   "confidence": 0.983,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].bi_value": {
+   "path": "locations[2].bi_value",
+   "confidence": 0.983,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].tiv": {
+   "path": "locations[2].tiv",
+   "confidence": 0.442,
+   "status": "invalid",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 5",
+     "snippet": "2   2810 Jefferson Parkway   Chicago   IL   60682   Grocery Store   Joisted Masonry   1955   2   14,800 N   0%   7   2010   $3.62M   $1,330,000   $0   $4,955,000"
+    }
+   ],
+   "reasons": [
+    "sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000"
+   ],
+   "alternatives": []
+  },
+  "locations[3].occupancy": {
+   "path": "locations[3].occupancy",
+   "confidence": 0.888,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].building_value": {
+   "path": "locations[3].building_value",
+   "confidence": 0.983,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].contents_value": {
+   "path": "locations[3].contents_value",
+   "confidence": 0.983,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].bi_value": {
+   "path": "locations[3].bi_value",
+   "confidence": 0.983,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[3].tiv": {
+   "path": "locations[3].tiv",
+   "confidence": 0.444,
+   "status": "invalid",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "3   8805 Lincoln Way   Charlotte   NC   28217   Grocery Store   Joisted Masonry   1998   2   36,000. Y   100%   4   2012   $7.16M   $2M   $0   $9,160,000"
+    }
+   ],
+   "reasons": [
+    "sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000"
+   ],
+   "alternatives": []
+  },
+  "locations[4].street": {
+   "path": "locations[4].street",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].city": {
+   "path": "locations[4].city",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].state": {
+   "path": "locations[4].state",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].zip": {
+   "path": "locations[4].zip",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].occupancy": {
+   "path": "locations[4].occupancy",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].construction": {
+   "path": "locations[4].construction",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].year_built": {
+   "path": "locations[4].year_built",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].stories": {
+   "path": "locations[4].stories",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].square_feet": {
+   "path": "locations[4].square_feet",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].sprinklered": {
+   "path": "locations[4].sprinklered",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].protection_class": {
+   "path": "locations[4].protection_class",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].roof_year": {
+   "path": "locations[4].roof_year",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].building_value": {
+   "path": "locations[4].building_value",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].contents_value": {
+   "path": "locations[4].contents_value",
+   "confidence": 0.887,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[4].tiv": {
+   "path": "locations[4].tiv",
+   "confidence": 0.443,
+   "status": "invalid",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 2",
+     "snippet": "4   22 Lake Way   Pittsburgh   PA   15231   Grocery Store   Masonry Non-Comb. 2003   6   47,400 Y   100%   5   2019   5805000   $2,865,000   $85,000   $8,755,000"
+    }
+   ],
+   "reasons": [
+    "sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000"
+   ],
+   "alternatives": []
+  },
+  "locations[6].street": {
+   "path": "locations[6].street",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].city": {
+   "path": "locations[6].city",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].state": {
+   "path": "locations[6].state",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].zip": {
+   "path": "locations[6].zip",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].occupancy": {
+   "path": "locations[6].occupancy",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].construction": {
+   "path": "locations[6].construction",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].year_built": {
+   "path": "locations[6].year_built",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].stories": {
+   "path": "locations[6].stories",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].square_feet": {
+   "path": "locations[6].square_feet",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].sprinklered": {
+   "path": "locations[6].sprinklered",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].protection_class": {
+   "path": "locations[6].protection_class",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].roof_year": {
+   "path": "locations[6].roof_year",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].building_value": {
+   "path": "locations[6].building_value",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].contents_value": {
+   "path": "locations[6].contents_value",
+   "confidence": 0.885,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[6].tiv": {
+   "path": "locations[6].tiv",
+   "confidence": 0.442,
+   "status": "invalid",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "scan40233.pdf",
+     "doc_type": "sov",
+     "page": 2,
+     "locator": "page 2 line 4",
+     "snippet": "6   3431, Maple Lane   Phoenix   AZ   85010   Grocery Store   Frame (1)   1968   3   22,100 No   0%   7   2018   $4,890,000   $1,145,000   $0   6035000"
+    }
+   ],
+   "reasons": [
+    "sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000"
+   ],
+   "alternatives": []
+  },
+  "totals.five_year_incurred": {
+   "path": "totals.five_year_incurred",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "sum of claims",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "totals.five_year_premium": {
+   "path": "totals.five_year_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "file77662.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "sum of claims",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].year_built": {
+   "path": "locations[1].year_built",
+   "confidence": 0.0,
+   "status": "missing",
+   "extractor": null,
+   "citations": [],
+   "reasons": [
+    "required for the appetite rules but not found in any document"
+   ],
+   "alternatives": []
+  }
+ },
+ "decision": {
+  "outcome": "refer",
+  "source": "rules",
+  "reasons": [
+   {
+    "rule_id": "MISSING_INFO",
+    "outcome": "refer",
+    "message": "location 1: missing year_built (depends on fields under review: locations[1].year_built)",
+    "fields": [
+     "locations[1].year_built"
+    ]
+   }
+  ]
+ },
+ "needs_review": true,
+ "review_reasons": [
+  "locations[1].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+  "locations[1].year_built: missing (required for the appetite rules but not found in any document)",
+  "locations[2].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+  "locations[3].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+  "locations[3].year_built: conflict (locations[3].year_built: scan40233.pdf says 1998, scan16895.pdf says 2009 (kept the table_parser:local value per source-of-truth rules))",
+  "locations[4].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+  "locations[6].tiv: invalid (sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000)",
+  "totals.location_count: conflict (totals.location_count: scan40233.pdf says 5, scan16895.pdf says 6 (kept the derived value per source-of-truth rules))",
+  "totals.total_tiv: conflict (totals.total_tiv: scan40233.pdf says 32825000.0, scan16895.pdf says 39620000.0 (kept the derived value per source-of-truth rules); table_parser:local read 39615000.0 from the same document)"
+ ],
+ "degraded_reasons": [
+  "email.txt: LLM extraction unavailable (replay miss)",
+  "scan16895.pdf: LLM extraction unavailable (replay miss)",
+  "scan40233.pdf: LLM extraction unavailable (replay miss)",
+  "narrative summary model unavailable; template summary used"
+ ],
+ "doc_types": {
+  "email.txt": "email",
+  "file77662.pdf": "loss_run",
+  "scan16895.pdf": "application",
+  "scan40233.pdf": "sov"
+ },
+ "llm_calls": [
+  {
+   "task": "extract_email",
+   "source": "replay:miss",
+   "model": null,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "latency_ms": 0.0,
+   "cost_usd": 0.0,
+   "est_input_tokens": 1054
+  },
+  {
+   "task": "extract_application",
+   "source": "replay:miss",
+   "model": null,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "latency_ms": 0.0,
+   "cost_usd": 0.0,
+   "est_input_tokens": 5039
+  },
+  {
+   "task": "extract_sov",
+   "source": "replay:miss",
+   "model": null,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "latency_ms": 0.0,
+   "cost_usd": 0.0,
+   "est_input_tokens": 2180
+  },
+  {
+   "task": "summary",
+   "source": "replay:miss",
+   "model": null,
+   "input_tokens": 0,
+   "output_tokens": 0,
+   "latency_ms": 0.0,
+   "cost_usd": 0.0,
+   "est_input_tokens": 1772
+  }
+ ],
+ "timings_ms": {},
+ "summary": "## Triage summary: Oak Hollow Market Inc. [insured.named_insured]\n\n**Recommendation: REFER** (deterministic rules engine)\nPending human review of 9 flagged field(s) before this is final.\n\n**Why**\n- MISSING_INFO (refer): location 1: missing year_built (depends on fields under review: locations[1].year_built)\n\n**Account**\n- Independent grocery store with deli and bakery counter [insured.business_description]; NAICS 445110 [insured.naics_code]\n- Effective 2027-01-01 [policy.effective_date]; broker Brightline Insurance Partners [broker.agency_name]\n- 5 location(s) [totals.location_count], total TIV $32.83M [totals.total_tiv]\n\n**Locations & COPE** (largest three by TIV)\n- Loc 3: Charlotte, NC [locations[3].city]; joisted masonry [locations[3].construction], built 1998 [locations[3].year_built], PPC 4 [locations[3].protection_class], sprinklered [locations[3].sprinklered]; TIV $9.16M [locations[3].tiv]\n- Loc 4: Pittsburgh, PA [locations[4].city]; masonry non combustible [locations[4].construction], built 2003 [locations[4].year_built], PPC 5 [locations[4].protection_class], sprinklered [locations[4].sprinklered]; TIV $8.76M [locations[4].tiv]\n- Loc 6: Phoenix, AZ [locations[6].city]; frame [locations[6].construction], built 1968 [locations[6].year_built], PPC 7 [locations[6].protection_class], not sprinklered [locations[6].sprinklered]; TIV $6.04M [locations[6].tiv]\n\n**Loss history**\n- 1 claim(s), $148,140 incurred [totals.five_year_incurred] on $470,550 earned premium [totals.five_year_premium]: loss ratio 31%; 0 open\n- Largest: $148,140 [claims[PPC202350142].incurred] Roof Leak 2023-04-12 [claims[PPC202350142].date_of_loss]\n\n**Needs attention**\n- `locations[1].tiv`: invalid, sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000\n- `locations[1].year_built`: missing, required for the appetite rules but not found in any document\n- `locations[2].tiv`: invalid, sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000\n- `locations[3].tiv`: invalid, sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000\n- `locations[3].year_built`: conflict, locations[3].year_built: scan40233.pdf says 1998, scan16895.pdf says 2009 (kept the table_parser:local value per source-of-truth rules)\n- `locations[4].tiv`: invalid, sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000\n- `locations[6].tiv`: invalid, sov_total_reconciles: sum of TIV column 32,825,000 vs stated total 39,615,000\n- `totals.location_count`: conflict, totals.location_count: scan40233.pdf says 5, scan16895.pdf says 6 (kept the derived value per source-of-truth rules)\n- `totals.total_tiv`: conflict, table_parser:local read 39615000.0 from the same document",
+ "summary_source": "template",
+ "summary_citations_valid": true,
+ "errors": []
+}

@@ -1,0 +1,2722 @@
+{
+ "submission_id": "SUB-0082",
+ "pipeline": "final",
+ "record": {
+  "submission_id": "SUB-0082",
+  "insured": {
+   "named_insured": "Old Mill Salvage L.L.C.",
+   "dba": "Old Scrap Yard",
+   "fein": "92-9790147",
+   "entity_type": "llc",
+   "mailing_address": {
+    "street": "8619 Mill Street",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77073"
+   },
+   "business_description": "Scrap metal recycling yard with shredding equipment",
+   "naics_code": "423930",
+   "years_in_business": 28,
+   "annual_revenue": 13480000.0,
+   "employee_count": 57,
+   "website": null,
+   "contact_name": "Michael Novak",
+   "contact_phone": "(511) 754-7034",
+   "contact_email": "mnovak@oldmill.com"
+  },
+  "broker": {
+   "agency_name": "Atlas & Reed Insurance Services",
+   "producer_name": "Nina Patel",
+   "producer_email": "nina.patel@atlasreed.com",
+   "producer_phone": "(957) 858-6281"
+  },
+  "policy": {
+   "effective_date": "2027-03-01",
+   "expiration_date": "2028-03-01",
+   "transaction_type": "renewal",
+   "prior_carrier": "Harborline Indemnity Company",
+   "quote_needed_by": "2027-02-14",
+   "submission_received_date": "2027-01-01"
+  },
+  "coverage": {
+   "building_limit": 7685000.0,
+   "bpp_limit": 3470000.0,
+   "business_income_limit": 455000.0,
+   "deductible": 1000.0,
+   "valuation": "replacement_cost",
+   "coinsurance_pct": 80,
+   "cause_of_loss_form": "special",
+   "flood_requested": false,
+   "earthquake_requested": false
+  },
+  "locations": [
+   {
+    "loc_number": 1,
+    "street": "8619 Mill Street",
+    "city": "Houston",
+    "state": "TX",
+    "zip": "77073",
+    "occupancy": "Scrap Yard",
+    "construction": "frame",
+    "year_built": 1998,
+    "stories": 3,
+    "square_feet": 37900,
+    "sprinklered": true,
+    "sprinkler_pct": 100,
+    "protection_class": 4,
+    "roof_type": "built_up",
+    "roof_year": 2015,
+    "alarm_type": "local",
+    "building_value": 6730000.0,
+    "contents_value": 3210000.0,
+    "bi_value": 265000.0,
+    "tiv": 10205000.0
+   },
+   {
+    "loc_number": 2,
+    "street": "4882 Elm Way",
+    "city": "Miami",
+    "state": "FL",
+    "zip": "33135",
+    "occupancy": "Scrap Yard",
+    "construction": "joisted_masonry",
+    "year_built": 1964,
+    "stories": 1,
+    "square_feet": 7000,
+    "sprinklered": true,
+    "sprinkler_pct": 100,
+    "protection_class": 3,
+    "roof_type": "membrane",
+    "roof_year": 2025,
+    "alarm_type": "none",
+    "building_value": 955000.0,
+    "contents_value": 260000.0,
+    "bi_value": 190000.0,
+    "tiv": 1405000.0
+   }
+  ],
+  "claims": [
+   {
+    "claim_number": "CL8230651",
+    "policy_year": 2022,
+    "date_of_loss": "2022-03-30",
+    "cause": "Equipment Breakdown",
+    "status": "closed",
+    "paid": 5060.0,
+    "reserve": 0.0,
+    "incurred": 5060.0
+   },
+   {
+    "claim_number": "25H641863",
+    "policy_year": 2025,
+    "date_of_loss": "2025-03-18",
+    "cause": "Water Damage",
+    "status": "closed",
+    "paid": 6830.0,
+    "reserve": 0.0,
+    "incurred": 6830.0
+   },
+   {
+    "claim_number": "HIC-2027-68782",
+    "policy_year": 2026,
+    "date_of_loss": "2027-01-04",
+    "cause": "Theft/Burglary",
+    "status": "closed",
+    "paid": 1990.0,
+    "reserve": 0.0,
+    "incurred": 1990.0
+   }
+  ],
+  "loss_years": [
+   {
+    "policy_year": 2022,
+    "carrier": "Harborline Indemnity Company",
+    "earned_premium": 23950.0,
+    "claim_count": 1,
+    "total_incurred": 5060.0
+   },
+   {
+    "policy_year": 2023,
+    "carrier": "Harborline Indemnity Company",
+    "earned_premium": 24770.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2024,
+    "carrier": "Harborline Indemnity Company",
+    "earned_premium": 25590.0,
+    "claim_count": 0,
+    "total_incurred": 0.0
+   },
+   {
+    "policy_year": 2025,
+    "carrier": "Harborline Indemnity Company",
+    "earned_premium": 26400.0,
+    "claim_count": 1,
+    "total_incurred": 6830.0
+   },
+   {
+    "policy_year": 2026,
+    "carrier": "Harborline Indemnity Company",
+    "earned_premium": 27220.0,
+    "claim_count": 1,
+    "total_incurred": 1990.0
+   }
+  ],
+  "totals": {
+   "total_tiv": 11610000.0,
+   "location_count": 2,
+   "five_year_incurred": 13880.0,
+   "five_year_premium": 127930.0
+  }
+ },
+ "provenance": {
+  "insured.named_insured": {
+   "path": "insured.named_insured",
+   "confidence": 0.85,
+   "status": "conflict",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Old Mill Salvage L.L.C."
+    },
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 3",
+     "snippet": "Insured: Old Mill Distribution Inc."
+    }
+   ],
+   "reasons": [
+    "name variant on email.txt: 'Old Mill' (treated as the same entity)",
+    "insured.named_insured: application says 'Old Mill Salvage L.L.C.', Loss_History.pdf says 'Old Mill Distribution Inc.'",
+    "name variant on statement_of_values.xlsx: 'Old Mill' (treated as the same entity)"
+   ],
+   "alternatives": []
+  },
+  "insured.dba": {
+   "path": "insured.dba",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Old Scrap Yard"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.fein": {
+   "path": "insured.fein",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "92-9790147"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.entity_type": {
+   "path": "insured.entity_type",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "ORGANIZATION LLC"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "insured.mailing_address.street": {
+   "path": "insured.mailing_address.street",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "8619 Mill Street   Houston   TX   77073"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.city": {
+   "path": "insured.mailing_address.city",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "8619 Mill Street   Houston   TX   77073"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.state": {
+   "path": "insured.mailing_address.state",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "8619 Mill Street   Houston   TX   77073"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.mailing_address.zip": {
+   "path": "insured.mailing_address.zip",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "8619 Mill Street   Houston   TX   77073"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.business_description": {
+   "path": "insured.business_description",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Scrap metal recycling yard with shredding equipment"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.naics_code": {
+   "path": "insured.naics_code",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "INDUSTRY CODE 423930"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "insured.years_in_business": {
+   "path": "insured.years_in_business",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "YEARS IN OPERATION   ANNUAL SALES   FULL-TIME STAFF 28"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.annual_revenue": {
+   "path": "insured.annual_revenue",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "$13,480,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.employee_count": {
+   "path": "insured.employee_count",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "FULL-TIME STAFF 57"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "insured.contact_name": {
+   "path": "insured.contact_name",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "INSPECTION CONTACT Michael Novak"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_phone": {
+   "path": "insured.contact_phone",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "(511) 754-7034"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "insured.contact_email": {
+   "path": "insured.contact_email",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "mnovak@oldmill.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "broker.agency_name": {
+   "path": "broker.agency_name",
+   "confidence": 0.988,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Atlas & Reed Insurance Services"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Atlas & Reed Insurance Services",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "signature line 2",
+      "snippet": "Atlas & Reed Insurance Services"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "Atlas & Reed Insurance Services",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "Atlas & Reed Insurance Services"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_name": {
+   "path": "broker.producer_name",
+   "confidence": 0.988,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Nina Patel"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Nina Patel",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "header line 1",
+      "snippet": "From: Nina Patel <nina.patel@atlasreed.com>"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "Nina Patel",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "Nina Patel\nAtlas & Reed Insurance Services"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_email": {
+   "path": "broker.producer_email",
+   "confidence": 0.988,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "nina.patel@atlasreed.com"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "nina.patel@atlasreed.com",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "header line 1",
+      "snippet": "From: Nina Patel <nina.patel@atlasreed.com>"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "nina.patel@atlasreed.com",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "From: Nina Patel <nina.patel@atlasreed.com>"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "broker.producer_phone": {
+   "path": "broker.producer_phone",
+   "confidence": 0.988,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "(957) 858-6281"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "(957) 858-6281",
+     "extractor": "email_parser",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "signature line 3",
+      "snippet": "(957) 858-6281"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": "(957) 858-6281",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "(957) 858-6281"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "policy.effective_date": {
+   "path": "policy.effective_date",
+   "confidence": 0.571,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "INCEPTION 03/01/2027"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.57 < 0.8"
+   ],
+   "alternatives": [
+    {
+     "value": "2027-03-01",
+     "extractor": "llm:email",
+     "citation": {
+      "doc": "email.txt",
+      "doc_type": "email",
+      "page": null,
+      "locator": "llm",
+      "snippet": "with an inception date of 3/1/27"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "policy.expiration_date": {
+   "path": "policy.expiration_date",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "EXPIRY 03/01/2028"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "policy.transaction_type": {
+   "path": "policy.transaction_type",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Renewal"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.prior_carrier": {
+   "path": "policy.prior_carrier",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Harborline Indemnity Company"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.building_limit": {
+   "path": "coverage.building_limit",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "$7,685,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.bpp_limit": {
+   "path": "coverage.bpp_limit",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "$3,470,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.business_income_limit": {
+   "path": "coverage.business_income_limit",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "$455,000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.deductible": {
+   "path": "coverage.deductible",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "AOP DEDUCTIBLE $1,000"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "coverage.valuation": {
+   "path": "coverage.valuation",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "Replacement Cost"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.coinsurance_pct": {
+   "path": "coverage.coinsurance_pct",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "80%"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "coverage.cause_of_loss_form": {
+   "path": "coverage.cause_of_loss_form",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "PERILS Special"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "coverage.flood_requested": {
+   "path": "coverage.flood_requested",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "FLOOD? N"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "coverage.earthquake_requested": {
+   "path": "coverage.earthquake_requested",
+   "confidence": 0.51,
+   "status": "low_confidence",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 1,
+     "locator": "llm",
+     "snippet": "QUAKE? N"
+    }
+   ],
+   "reasons": [
+    "LLM evidence quote not found in the document",
+    "confidence 0.51 < 0.8"
+   ],
+   "alternatives": []
+  },
+  "totals.total_tiv": {
+   "path": "totals.total_tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "sum of location TIV",
+     "snippet": "2 locations"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 11610000.0,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 1,
+      "locator": "llm",
+      "snippet": "TOTAL VALUES $11,610,000"
+     },
+     "confidence": 1.0
+    },
+    {
+     "value": 11610000.0,
+     "extractor": "table_parser:local",
+     "citation": {
+      "doc": "statement_of_values.xlsx",
+      "doc_type": "sov",
+      "page": null,
+      "locator": null,
+      "snippet": null
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "totals.location_count": {
+   "path": "totals.location_count",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "row count",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 1,
+      "locator": "llm",
+      "snippet": "LOCATIONS 2"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].street": {
+   "path": "locations[1].street",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "8619 Mill Street",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "8619 Mill Street, Houston, TX 77073"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].city": {
+   "path": "locations[1].city",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Houston",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "8619 Mill Street, Houston, TX 77073"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].state": {
+   "path": "locations[1].state",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "TX",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "8619 Mill Street, Houston, TX 77073"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].zip": {
+   "path": "locations[1].zip",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "77073",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "8619 Mill Street, Houston, TX 77073"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].construction": {
+   "path": "locations[1].construction",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "frame",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Frame   1998   3   37,900"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].year_built": {
+   "path": "locations[1].year_built",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1998,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Frame   1998   3   37,900"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].stories": {
+   "path": "locations[1].stories",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 3,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Frame   1998   3   37,900"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].square_feet": {
+   "path": "locations[1].square_feet",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 37900,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Frame   1998   3   37,900"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].sprinklered": {
+   "path": "locations[1].sprinklered",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": true,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Y   4   Built-Up   2015   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].protection_class": {
+   "path": "locations[1].protection_class",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 4,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Y   4   Built-Up   2015   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].roof_type": {
+   "path": "locations[1].roof_type",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "llm",
+     "snippet": "Y   4   Built-Up   2015   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].roof_year": {
+   "path": "locations[1].roof_year",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2015,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Y   4   Built-Up   2015   Local"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[1].alarm_type": {
+   "path": "locations[1].alarm_type",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "llm",
+     "snippet": "Y   4   Built-Up   2015   Local"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].street": {
+   "path": "locations[2].street",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "4882 Elm Way",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "4882 Elm Way, Miami, FL 33135"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].city": {
+   "path": "locations[2].city",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "Miami",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "4882 Elm Way, Miami, FL 33135"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].state": {
+   "path": "locations[2].state",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "FL",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "4882 Elm Way, Miami, FL 33135"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].zip": {
+   "path": "locations[2].zip",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "33135",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "4882 Elm Way, Miami, FL 33135"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].construction": {
+   "path": "locations[2].construction",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": "joisted_masonry",
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Joisted Masonry   1964   1   7,000"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].year_built": {
+   "path": "locations[2].year_built",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1964,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Joisted Masonry   1964   1   7,000"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].stories": {
+   "path": "locations[2].stories",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 1,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Joisted Masonry   1964   1   7,000"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].square_feet": {
+   "path": "locations[2].square_feet",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 7000,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Joisted Masonry   1964   1   7,000"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].sprinklered": {
+   "path": "locations[2].sprinklered",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": true,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Y   3   Membrane (TPO)   2025   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].protection_class": {
+   "path": "locations[2].protection_class",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 3,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Y   3   Membrane (TPO)   2025   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].roof_type": {
+   "path": "locations[2].roof_type",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "llm",
+     "snippet": "Y   3   Membrane (TPO)   2025   None"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].roof_year": {
+   "path": "locations[2].roof_year",
+   "confidence": 0.984,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": [
+    {
+     "value": 2025,
+     "extractor": "llm:application",
+     "citation": {
+      "doc": "ACORD_125_140.pdf",
+      "doc_type": "application",
+      "page": 2,
+      "locator": "llm",
+      "snippet": "Y   3   Membrane (TPO)   2025   None"
+     },
+     "confidence": 1.0
+    }
+   ]
+  },
+  "locations[2].alarm_type": {
+   "path": "locations[2].alarm_type",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:application",
+   "citations": [
+    {
+     "doc": "ACORD_125_140.pdf",
+     "doc_type": "application",
+     "page": 2,
+     "locator": "llm",
+     "snippet": "Y   3   Membrane (TPO)   2025   None"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.submission_received_date": {
+   "path": "policy.submission_received_date",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "email_parser",
+   "citations": [
+    {
+     "doc": "email.txt",
+     "doc_type": "email",
+     "page": null,
+     "locator": "header line 3",
+     "snippet": "Date: Fri, 01 Jan 2027 09:21:00 -0500"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "policy.quote_needed_by": {
+   "path": "policy.quote_needed_by",
+   "confidence": 0.85,
+   "status": "ok",
+   "extractor": "llm:email",
+   "citations": [
+    {
+     "doc": "email.txt",
+     "doc_type": "email",
+     "page": null,
+     "locator": "llm",
+     "snippet": "Quote needed by 02/14/2027."
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].earned_premium": {
+   "path": "loss_years[2022].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 6",
+     "snippet": "Policy Period: 03/01/2022 - 03/01/2023   Earned Premium: $23,950.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].carrier": {
+   "path": "loss_years[2022].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "HARBORLINE INDEMNITY COMPANY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL8230651].policy_year": {
+   "path": "claims[CL8230651].policy_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "CL8230651   03/30/2022   Equipment Breakdown   Closed   $5,060.00   $0.00   $5,060.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL8230651].date_of_loss": {
+   "path": "claims[CL8230651].date_of_loss",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "CL8230651   03/30/2022   Equipment Breakdown   Closed   $5,060.00   $0.00   $5,060.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL8230651].cause": {
+   "path": "claims[CL8230651].cause",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "CL8230651   03/30/2022   Equipment Breakdown   Closed   $5,060.00   $0.00   $5,060.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL8230651].status": {
+   "path": "claims[CL8230651].status",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "CL8230651   03/30/2022   Equipment Breakdown   Closed   $5,060.00   $0.00   $5,060.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL8230651].paid": {
+   "path": "claims[CL8230651].paid",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "CL8230651   03/30/2022   Equipment Breakdown   Closed   $5,060.00   $0.00   $5,060.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL8230651].reserve": {
+   "path": "claims[CL8230651].reserve",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "CL8230651   03/30/2022   Equipment Breakdown   Closed   $5,060.00   $0.00   $5,060.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[CL8230651].incurred": {
+   "path": "claims[CL8230651].incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 8",
+     "snippet": "CL8230651   03/30/2022   Equipment Breakdown   Closed   $5,060.00   $0.00   $5,060.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].earned_premium": {
+   "path": "loss_years[2023].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 10",
+     "snippet": "Policy Period: 03/01/2023 - 03/01/2024   Earned Premium: $24,770.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].carrier": {
+   "path": "loss_years[2023].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "HARBORLINE INDEMNITY COMPANY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].earned_premium": {
+   "path": "loss_years[2024].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 12",
+     "snippet": "Policy Period: 03/01/2024 - 03/01/2025   Earned Premium: $25,590.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].carrier": {
+   "path": "loss_years[2024].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "HARBORLINE INDEMNITY COMPANY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].earned_premium": {
+   "path": "loss_years[2025].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 14",
+     "snippet": "Policy Period: 03/01/2025 - 03/01/2026   Earned Premium: $26,400.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].carrier": {
+   "path": "loss_years[2025].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "HARBORLINE INDEMNITY COMPANY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[25H641863].policy_year": {
+   "path": "claims[25H641863].policy_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "25H641863   03/18/2025   Water Damage   Closed   $6,830.00   $0.00   $6,830.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[25H641863].date_of_loss": {
+   "path": "claims[25H641863].date_of_loss",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "25H641863   03/18/2025   Water Damage   Closed   $6,830.00   $0.00   $6,830.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[25H641863].cause": {
+   "path": "claims[25H641863].cause",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "25H641863   03/18/2025   Water Damage   Closed   $6,830.00   $0.00   $6,830.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[25H641863].status": {
+   "path": "claims[25H641863].status",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "25H641863   03/18/2025   Water Damage   Closed   $6,830.00   $0.00   $6,830.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[25H641863].paid": {
+   "path": "claims[25H641863].paid",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "25H641863   03/18/2025   Water Damage   Closed   $6,830.00   $0.00   $6,830.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[25H641863].reserve": {
+   "path": "claims[25H641863].reserve",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "25H641863   03/18/2025   Water Damage   Closed   $6,830.00   $0.00   $6,830.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[25H641863].incurred": {
+   "path": "claims[25H641863].incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 16",
+     "snippet": "25H641863   03/18/2025   Water Damage   Closed   $6,830.00   $0.00   $6,830.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].earned_premium": {
+   "path": "loss_years[2026].earned_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 18",
+     "snippet": "Policy Period: 03/01/2026 - 03/01/2027   Earned Premium: $27,220.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].carrier": {
+   "path": "loss_years[2026].carrier",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 1",
+     "snippet": "HARBORLINE INDEMNITY COMPANY"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[HIC202768782].policy_year": {
+   "path": "claims[HIC202768782].policy_year",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "HIC-2027-68782   01/04/2027   Theft/Burglary   Closed   $1,990.00   $0.00   $1,990.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[HIC202768782].date_of_loss": {
+   "path": "claims[HIC202768782].date_of_loss",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "HIC-2027-68782   01/04/2027   Theft/Burglary   Closed   $1,990.00   $0.00   $1,990.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[HIC202768782].cause": {
+   "path": "claims[HIC202768782].cause",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "HIC-2027-68782   01/04/2027   Theft/Burglary   Closed   $1,990.00   $0.00   $1,990.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[HIC202768782].status": {
+   "path": "claims[HIC202768782].status",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "HIC-2027-68782   01/04/2027   Theft/Burglary   Closed   $1,990.00   $0.00   $1,990.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[HIC202768782].paid": {
+   "path": "claims[HIC202768782].paid",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "HIC-2027-68782   01/04/2027   Theft/Burglary   Closed   $1,990.00   $0.00   $1,990.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[HIC202768782].reserve": {
+   "path": "claims[HIC202768782].reserve",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "HIC-2027-68782   01/04/2027   Theft/Burglary   Closed   $1,990.00   $0.00   $1,990.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "claims[HIC202768782].incurred": {
+   "path": "claims[HIC202768782].incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": 1,
+     "locator": "page 1 line 20",
+     "snippet": "HIC-2027-68782   01/04/2027   Theft/Burglary   Closed   $1,990.00   $0.00   $1,990.00"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].claim_count": {
+   "path": "loss_years[2022].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2022",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2022].total_incurred": {
+   "path": "loss_years[2022].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2022",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].claim_count": {
+   "path": "loss_years[2023].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2023",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2023].total_incurred": {
+   "path": "loss_years[2023].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2023",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].claim_count": {
+   "path": "loss_years[2024].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2024",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2024].total_incurred": {
+   "path": "loss_years[2024].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2024",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].claim_count": {
+   "path": "loss_years[2025].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2025",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2025].total_incurred": {
+   "path": "loss_years[2025].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2025",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].claim_count": {
+   "path": "loss_years[2026].claim_count",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2026",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "loss_years[2026].total_incurred": {
+   "path": "loss_years[2026].total_incurred",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "policy year 2026",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].occupancy": {
+   "path": "locations[1].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].sprinkler_pct": {
+   "path": "locations[1].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].building_value": {
+   "path": "locations[1].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].contents_value": {
+   "path": "locations[1].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].bi_value": {
+   "path": "locations[1].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[1].tiv": {
+   "path": "locations[1].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R5",
+     "snippet": "1 | 8619 Mill Street | Houston | TX | 77073 | Scrap Yard | Frame | 1998 | 3 | 37900 | Y | 100 | 4 | 2015 | 6730000 | 3210000 | 265000 | 10205000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].occupancy": {
+   "path": "locations[2].occupancy",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].sprinkler_pct": {
+   "path": "locations[2].sprinkler_pct",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].building_value": {
+   "path": "locations[2].building_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].contents_value": {
+   "path": "locations[2].contents_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].bi_value": {
+   "path": "locations[2].bi_value",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "locations[2].tiv": {
+   "path": "locations[2].tiv",
+   "confidence": 0.99,
+   "status": "ok",
+   "extractor": "table_parser:local",
+   "citations": [
+    {
+     "doc": "statement_of_values.xlsx",
+     "doc_type": "sov",
+     "page": null,
+     "locator": "SOV!R6",
+     "snippet": "2 | 4882 Elm Way | Miami | FL | 33135 | Scrap Yard | Joisted Masonry | 1964 | 1 | 7000 | Y | 100 | 3 | 2025 | 955000 | 260000 | 190000 | 1405000"
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "totals.five_year_incurred": {
+   "path": "totals.five_year_incurred",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "sum of claims",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  },
+  "totals.five_year_premium": {
+   "path": "totals.five_year_premium",
+   "confidence": 0.95,
+   "status": "ok",
+   "extractor": "derived",
+   "citations": [
+    {
+     "doc": "Loss_History.pdf",
+     "doc_type": "loss_run",
+     "page": null,
+     "locator": "sum of claims",
+     "snippet": null
+    }
+   ],
+   "reasons": [],
+   "alternatives": []
+  }
+ },
+ "decision": {
+  "outcome": "decline",
+  "source": "rules",
+  "reasons": [
+   {
+    "rule_id": "CLASS_PROHIBITED",
+    "outcome": "decline",
+    "message": "NAICS 423930 (Recyclable material / scrap yard) is prohibited (depends on fields under review: insured.naics_code)",
+    "fields": [
+     "insured.naics_code"
+    ]
+   }
+  ]
+ },
+ "needs_review": true,
+ "review_reasons": [
+  "ACORD_125_140.pdf: no known form labels found (unfamiliar layout?)",
+  "insured.naics_code: low_confidence (LLM evidence quote not found in the document; confidence 0.51 < 0.8)",
+  "insured.named_insured: conflict (insured.named_insured: application says 'Old Mill Salvage L.L.C.', Loss_History.pdf says 'Old Mill Distribution Inc.'; name variant on statement_of_values.xlsx: 'Old Mill' (treated as the same entity))",
+  "policy.effective_date: low_confidence (LLM evidence quote not found in the document; confidence 0.57 < 0.8)"
+ ],
+ "degraded_reasons": [],
+ "doc_types": {
+  "ACORD_125_140.pdf": "application",
+  "Loss_History.pdf": "loss_run",
+  "email.txt": "email",
+  "statement_of_values.xlsx": "sov"
+ },
+ "llm_calls": [
+  {
+   "task": "extract_application",
+   "source": "replay:recorded",
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 9454,
+   "output_tokens": 2761,
+   "latency_ms": 12713.57333499998,
+   "cost_usd": 0.046518,
+   "est_input_tokens": 4973
+  },
+  {
+   "task": "extract_email",
+   "source": "replay:recorded",
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 2037,
+   "output_tokens": 524,
+   "latency_ms": 3441.6961360000187,
+   "cost_usd": 0.009314,
+   "est_input_tokens": 1026
+  },
+  {
+   "task": "summary",
+   "source": "replay:recorded",
+   "model": "claude-sonnet-5-5",
+   "input_tokens": 2548,
+   "output_tokens": 1258,
+   "latency_ms": 7377.182537000067,
+   "cost_usd": 0.017676,
+   "est_input_tokens": 1443
+  }
+ ],
+ "timings_ms": {},
+ "summary": "## Triage summary: Old Mill Salvage L.L.C. [insured.named_insured]\n\n**Recommendation: DECLINE** (deterministic rules engine)\nPending human review of 10 flagged field(s) before this is final.\n\n**Why**\n- CLASS_PROHIBITED (decline): NAICS 423930 (Recyclable material / scrap yard) is prohibited (depends on fields under review: insured.naics_code) [insured.naics_code]\n\n**Account**\n- Scrap metal recycling yard with shredding equipment [insured.business_description]; NAICS 423930 [insured.naics_code]\n- Effective 2027-03-01 [policy.effective_date]; broker Atlas & Reed Insurance Services [broker.agency_name]\n- 2 location(s) [totals.location_count], total TIV $11.61M [totals.total_tiv]\n\n**Locations & COPE** (largest three by TIV)\n- Loc 1: Houston, TX [locations[1].city]; frame [locations[1].construction], built 1998 [locations[1].year_built], PPC 4 [locations[1].protection_class], sprinklered [locations[1].sprinklered]; TIV $10.21M [locations[1].tiv]\n- Loc 2: Miami, FL [locations[2].city]; joisted masonry [locations[2].construction], built 1964 [locations[2].year_built], PPC 3 [locations[2].protection_class], sprinklered [locations[2].sprinklered]; TIV $1.41M [locations[2].tiv]\n\n**Loss history**\n- 3 claim(s), $13,880 incurred [totals.five_year_incurred] on $127,930 earned premium [totals.five_year_premium]: loss ratio 11%; 0 open\n- Largest: $6,830 [claims[25H641863].incurred] Water Damage 2025-03-18 [claims[25H641863].date_of_loss]\n\n**Needs attention**\n- `coverage.cause_of_loss_form`: low_confidence, confidence 0.51 < 0.8\n- `coverage.deductible`: low_confidence, confidence 0.51 < 0.8\n- `coverage.earthquake_requested`: low_confidence, confidence 0.51 < 0.8\n- `coverage.flood_requested`: low_confidence, confidence 0.51 < 0.8\n- `insured.employee_count`: low_confidence, confidence 0.51 < 0.8\n- `insured.entity_type`: low_confidence, confidence 0.51 < 0.8\n- `insured.naics_code`: low_confidence, confidence 0.51 < 0.8\n- `insured.named_insured`: conflict, name variant on statement_of_values.xlsx: 'Old Mill' (treated as the same entity)\n- `policy.effective_date`: low_confidence, confidence 0.57 < 0.8\n- `policy.expiration_date`: low_confidence, confidence 0.51 < 0.8",
+ "summary_source": "template (LLM summary failed validation)",
+ "summary_citations_valid": true,
+ "errors": []
+}
